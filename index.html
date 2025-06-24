@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>KukuFM - Stream Anywhere</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #ff4b2b;
+      --primary-dark: #e63946;
+      --secondary: #ff6b47;
+      --bg-primary: #0a0a0a;
+      --bg-secondary: #141414;
+      --bg-card: #1a1a1a;
+      --text-primary: #ffffff;
+      --text-secondary: #b3b3b3;
+      --text-muted: #8a8a8a;
+      --border: #333333;
+      --success: #00d4aa;
+      --warning: #ffa726;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+      padding: 0.75rem 1rem;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      flex-shrink: 0;
+    }
+
+    .search-container {
+      flex: 1;
+      position: relative;
+      max-width: 500px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.75rem 1rem 0.75rem 2.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      color: var(--text-primary);
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(255, 75, 43, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    /* Continue Watching Section */
+    .continue-section {
+      padding: 1.5rem 1rem 0;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .continue-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .continue-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+
+    .continue-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary);
+      box-shadow: 0 8px 25px rgba(255, 75, 43, 0.2);
+    }
+
+    .continue-card-content {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .continue-thumb {
+      width: 80px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .continue-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .continue-title {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .continue-episode {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 3px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+
+    /* Shows Grid */
+    .main-content {
+      padding: 1.5rem 1rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .shows-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+
+    .show-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      position: relative;
+    }
+
+    .show-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: 0 12px 30px rgba(255, 75, 43, 0.25);
+    }
+
+    .show-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .show-card:hover .show-image {
+      transform: scale(1.05);
+    }
+
+    .show-info {
+      padding: 1rem;
+    }
+
+    .show-title {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .show-episodes {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    /* Player Overlay */
+    .player-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.98);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      display: none;
+      flex-direction: column;
+    }
+
+    .player-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      background: rgba(20, 20, 20, 0.9);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .player-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      flex: 1;
+      margin-right: 1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .close-btn {
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+    }
+
+    .close-btn:hover {
+      background: var(--bg-card);
+    }
+
+    .player-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .video-container {
+      position: relative;
+      background: #000;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-player {
+      width: 100%;
+      height: 100%;
+      max-height: 70vh;
+      object-fit: contain;
+    }
+
+    .player-controls {
+      background: var(--bg-secondary);
+      padding: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .controls-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      flex: 1;
+      min-width: 120px;
+    }
+
+    .control-label {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .control-select {
+      padding: 0.75rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+    }
+
+    .control-select:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .auto-play-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 44px;
+      height: 24px;
+      background: var(--border);
+      border-radius: 12px;
+      transition: background 0.3s ease;
+    }
+
+    .toggle-switch.active {
+      background: var(--primary);
+    }
+
+    .toggle-knob {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    .toggle-switch.active .toggle-knob {
+      transform: translateX(20px);
+    }
+
+    /* Loading States */
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid var(--border);
+      border-top: 3px solid var(--primary);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Empty States */
+    .empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-secondary);
+    }
+
+    .empty-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      opacity: 0.5;
+    }
+
+    /* Mobile Optimizations */
+    @media (max-width: 768px) {
+      .header-content {
+        gap: 0.75rem;
+      }
+
+      .logo {
+        font-size: 1.25rem;
+      }
+
+      .search-input {
+        font-size: 16px; /* Prevents zoom on iOS */
+      }
+
+      .shows-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 0.75rem;
+      }
+
+      .show-image {
+        height: 180px;
+      }
+
+      .continue-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .controls-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .control-group {
+        min-width: auto;
+      }
+
+      .video-player {
+        max-height: 50vh;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .shows-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .show-info {
+        padding: 0.75rem;
+      }
+
+      .show-title {
+        font-size: 0.85rem;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .show-card {
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    /* Utility Classes */
+    .hidden { display: none !important; }
+    .visible { display: block !important; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">KukuFM</div>
+      <div class="search-container">
+        <div class="search-icon">🔍</div>
+        <input 
+          type="search" 
+          class="search-input" 
+          placeholder="Search shows, episodes..." 
+          id="searchInput"
+          autocomplete="off"
+        >
+      </div>
+    </div>
+  </header>
+
+  <!-- Continue Watching Section -->
+  <section class="continue-section" id="continueSection">
+    <h2 class="section-title">Continue Watching</h2>
+    <div class="continue-grid" id="continueGrid"></div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <h2 class="section-title">All Shows</h2>
+    <div class="loading" id="loadingState">
+      <div class="spinner"></div>
+    </div>
+    <div class="shows-grid" id="showsGrid"></div>
+    <div class="empty-state hidden" id="emptyState">
+      <div class="empty-icon">📺</div>
+      <p>No shows found</p>
+    </div>
+  </main>
+
+  <!-- Player Overlay -->
+  <div class="player-overlay" id="playerOverlay">
+    <header class="player-header">
+      <h3 class="player-title" id="playerTitle">Loading...</h3>
+      <button class="close-btn" onclick="closePlayer()" aria-label="Close player">×</button>
+    </header>
+    
+    <div class="player-content">
+      <div class="video-container">
+        <video 
+          id="videoPlayer" 
+          class="video-player" 
+          controls 
+          preload="metadata"
+          playsinline
+        ></video>
+      </div>
+      
+      <div class="player-controls">
+        <div class="controls-row">
+          <div class="control-group">
+            <label class="control-label">Episode</label>
+            <select id="episodeSelect" class="control-select"></select>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Quality</label>
+            <select id="qualitySelect" class="control-select">
+              <option value="video_1080p">1080p HD</option>
+              <option value="video_720p" selected>720p HD</option>
+              <option value="video_480p">480p SD</option>
+            </select>
+          </div>
+        </div>
+        <div class="controls-row">
+          <div class="auto-play-toggle" onclick="toggleAutoPlay()">
+            <div class="toggle-switch" id="autoPlayToggle">
+              <div class="toggle-knob"></div>
+            </div>
+            <span>Auto-play next episode</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Global variables
+    let allShows = [];
+    let filteredShows = [];
+    let currentShow = null;
+    let currentEpisodes = [];
+    let hls = null;
+    let autoPlayEnabled = true;
+    let watchHistory = {};
+    let searchTimeout = null;
+
+    // DOM elements
+    const showsGrid = document.getElementById('showsGrid');
+    const continueGrid = document.getElementById('continueGrid');
+    const continueSection = document.getElementById('continueSection');
+    const playerOverlay = document.getElementById('playerOverlay');
+    const videoPlayer = document.getElementById('videoPlayer');
+    const episodeSelect = document.getElementById('episodeSelect');
+    const qualitySelect = document.getElementById('qualitySelect');
+    const playerTitle = document.getElementById('playerTitle');
+    const searchInput = document.getElementById('searchInput');
+    const loadingState = document.getElementById('loadingState');
+    const emptyState = document.getElementById('emptyState');
+    const autoPlayToggle = document.getElementById('autoPlayToggle');
+
+    // Initialize app
+    document.addEventListener('DOMContentLoaded', () => {
+      loadWatchHistory();
+      setupEventListeners();
+      loadShows();
+    });
+
+    // Load watch history from localStorage
+    function loadWatchHistory() {
+      try {
+        watchHistory = JSON.parse(localStorage.getItem('kukufm_watch_history') || '{}');
+      } catch (e) {
+        console.warn('Failed to load watch history:', e);
+        watchHistory = {};
+      }
+    }
+
+    // Save watch history to localStorage
+    function saveWatchHistory() {
+      try {
+        localStorage.setItem('kukufm_watch_history', JSON.stringify(watchHistory));
+      } catch (e) {
+        console.warn('Failed to save watch history:', e);
+      }
+    }
+
+    // Setup event listeners
+    function setupEventListeners() {
+      // Search functionality
+      searchInput.addEventListener('input', (e) => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+          handleSearch(e.target.value);
+        }, 300);
+      });
+
+      // Player controls
+      episodeSelect.addEventListener('change', (e) => {
+        const episodeIndex = parseInt(e.target.value);
+        loadEpisode(episodeIndex);
+      });
+
+      qualitySelect.addEventListener('change', (e) => {
+        const currentIndex = parseInt(episodeSelect.value) || 0;
+        loadEpisode(currentIndex, e.target.value);
+      });
+
+      // Video ended event
+      videoPlayer.addEventListener('ended', handleVideoEnded);
+      
+      // Save progress periodically
+      videoPlayer.addEventListener('timeupdate', saveProgress);
+
+      // Close player on escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && playerOverlay.style.display === 'flex') {
+          closePlayer();
+        }
+      });
+
+      // Handle back button on mobile
+      window.addEventListener('popstate', (e) => {
+        if (playerOverlay.style.display === 'flex') {
+          closePlayer();
+          history.pushState(null, null, window.location.href);
+        }
+      });
+    }
+
+    // Load all shows
+    async function loadShows() {
+      const files = [
+        "merged_json/7 Assasins.json",
+        "merged_json/A Vow of Joy and Sorrow.json",
+        "merged_json/After Divorce , the ex-wife of the big shot  stirs up the world.json",
+        "merged_json/After divorce, my wife become a trillionaire.json",
+        "merged_json/After Divorcing my Star Wife, I became famous.json",
+        "merged_json/Alien Opponent.json",
+        "merged_json/Alpha's Perfect Love.json",
+        "merged_json/Alpha, She Wasn't the One.json",
+        "merged_json/As You Wish.json",
+        "merged_json/Aunt is not easy to provoke.json",
+        "merged_json/Aval Varuvaala.json",
+        "merged_json/Avanum Naanum.json",
+        "merged_json/Back to 1990.json",
+        "merged_json/BACK TO 1994.json",
+        "merged_json/Becoming Light.json",
+        "merged_json/Betrayed Heiress - Vengeance Reborn.json",
+        "merged_json/Billionaire Daddy, the Hunt is On.json",
+        "merged_json/Black Widow.json",
+        "merged_json/Boss And the Sweet Wife.json",
+        "merged_json/Charming Son-in-Law.json",
+        "merged_json/Chen Yi - The Rich Man's Secret.json",
+        "merged_json/Chinese New Year - The Hidden Dragon Returns to the Village.json",
+        "merged_json/Contract Pregnant wife.json",
+        "merged_json/Crowned in Love.json",
+        "merged_json/Cubicle Cupid's Twist.json",
+        "merged_json/Cursed Daughter.json",
+        "merged_json/Desperate Cage - Miss Sun Fights Back.json",
+        "merged_json/Desperate Husband's Revenge.json",
+        "merged_json/Destined to Meet You.json",
+        "merged_json/Divorced Billionaire Heiress.json",
+        "merged_json/Divorced But Doted Upon by the Trio.json",
+        "merged_json/Divorced Single Mother.json",
+        "merged_json/Don't Get Your Heart Fluttering for Me.json",
+        "merged_json/Don't Mess With Super DAD.json",
+        "merged_json/Don't Speak.json",
+        "merged_json/Don't touch my Daughter.json",
+        "merged_json/Dracula's Curse.json",
+        "merged_json/Dual Plants' Decision.json",
+        "merged_json/Emperor Yan.json",
+        "merged_json/Enemies with Benefits - The CEO's Matchmaker Strikes.json",
+        "merged_json/Eye without a face.json",
+        "merged_json/Fake boyfriend.json",
+        "merged_json/First Light of Love.json",
+        "merged_json/Flash Marriage with a Big Shot.json",
+        "merged_json/Flash Marriage.json",
+        "merged_json/Forbidden Bonds with My Brothers.json",
+        "merged_json/Forever Love.json",
+        "merged_json/FROM ZERO TO HERO Breaking the chains of Fate.json",
+        "merged_json/Ghost Killer Vs Bloody Marry.json",
+        "merged_json/Give me a Hug.json",
+        "merged_json/Gone, Yet Loved by Him.json",
+        "merged_json/Guardian Angel Mom on the Move.json",
+        "merged_json/Hansel vs Gretel.json",
+        "merged_json/Happily Never After.json",
+        "merged_json/Harvest of ambition, a CEO's odyssey.json",
+        "merged_json/Held for Ransom.json",
+        "merged_json/Hidden Billionaire.json",
+        "merged_json/In search of Jade.json",
+        "merged_json/Ithayaththil Ethovondru.json",
+        "merged_json/Jurassic Shark.json",
+        "merged_json/Justice & The Beast.json",
+        "merged_json/Kanden Kathalai.json",
+        "merged_json/King's Wrath - Blood and Betrayal.json",
+        "merged_json/Late Love.json",
+        "merged_json/Later Days.json",
+        "merged_json/Let Me Go, My Queen.json",
+        "merged_json/Losing My Virginity.json",
+        "merged_json/Lost in Love.json",
+        "merged_json/Love is Right In front of You.json",
+        "merged_json/Love Mafia.json",
+        "merged_json/Madam Wants to Sell Fish.json",
+        "merged_json/Madison County picked up a billionaire.json",
+        "merged_json/Malibu Crush.json",
+        "merged_json/MIGRANT WORKERS LOVE STORY.json",
+        "merged_json/Mind-Reading Game.json",
+        "merged_json/Mine 9.json",
+        "merged_json/Misty Medical Immortal.json",
+        "merged_json/Mother's Revenge.json",
+        "merged_json/Mr. Idiot, Hero Husband.json",
+        "merged_json/Mr. Ji, See Clearly, I'm Your Bodyguard.json",
+        "merged_json/My Brother - You can't afford to mess with.json",
+        "merged_json/My Call Boy Billionaire Daddy.json",
+        "merged_json/My Handsome Bodyguard.json",
+        "merged_json/My Husband Locked Me in an Underwater Prison.json",
+        "merged_json/My Tycoon husband Spoils Me.json",
+        "merged_json/Nee Varuvaai ena.json",
+        "merged_json/Old Man Returns.json",
+        "merged_json/Once Upon a Divorce - The Double Life of Lady Diana.json",
+        "merged_json/Primal.json",
+        "merged_json/Prisoned Sparrow.json",
+        "merged_json/Ragasiya Snegithane.json",
+        "merged_json/Rebirth - Hunting Crimes Album.json",
+        "merged_json/Rebirth of the City's Mad Doctor.json",
+        "merged_json/Restart - The Peak.json",
+        "merged_json/Return of His Majesty.json",
+        "merged_json/RETURN OF THE SUPREME.json",
+        "merged_json/Revenge Of My Fake Boyfriend.json",
+        "merged_json/Ruthless Comeback Of The Reborn Heiress.json",
+        "merged_json/Saga Doctor The Secret Journey.json",
+        "merged_json/Say You Remember, Say You Love.json",
+        "merged_json/Secret Mrs CEO.json",
+        "merged_json/Shelter in the mafia.json",
+        "merged_json/Single but Pregnant An Unexpected Husband.json",
+        "merged_json/Single Mother's Counterattack with Adorable Twins.json",
+        "merged_json/Sinister Squad.json",
+        "merged_json/Spark my fire.json",
+        "merged_json/Spicy Robbery.json",
+        "merged_json/Spy Girl.json",
+        "merged_json/Star Moon Romance - Rejected And Reborn As Alpha.json",
+        "merged_json/Study God.json",
+        "merged_json/Super Can Pick Up the Missing King.json",
+        "merged_json/Supreme Master asks you to believe in Science.json",
+        "merged_json/Supreme Wealth.json",
+        "merged_json/Tangled Ties and Tipsy Vows.json",
+        "merged_json/Terror tales.json",
+        "merged_json/The ardent scholar from a poor family.json",
+        "merged_json/The Arrogant Tyrant's Runaway Wife.json",
+        "merged_json/The Billionaire in the Slum.json",
+        "merged_json/The Bridge to nowhere.json",
+        "merged_json/The Crowned Consort of the Empress.json",
+        "merged_json/The Dark Prison.json",
+        "merged_json/The Devil wears Desire.json",
+        "merged_json/The Divorced Housewife Turned CEO.json",
+        "merged_json/The Dragon's Bride.json",
+        "merged_json/The Final Boss.json",
+        "merged_json/The First Prince of DAXIA.json",
+        "merged_json/The God King Returns.json",
+        "merged_json/The Hand Behind the Scenes.json",
+        "merged_json/The Immortal Doctor Dragon Xiang Nine Days.json",
+        "merged_json/The Immortal Emperor Returns - My Wife Pulled Out My Oxygen Tube.json",
+        "merged_json/The last recipe.json",
+        "merged_json/The officer fell for me.json",
+        "merged_json/The Peerless Emperor.json",
+        "merged_json/The Possession Experiment.json",
+        "merged_json/The Princess Married to my Waistcoat can not stop.json",
+        "merged_json/The Royal Secret.json",
+        "merged_json/The Runaway CEO has Two Babies.json",
+        "merged_json/The Sage Doctor.json",
+        "merged_json/The Stars Know my Heart.json",
+        "merged_json/The Stay.json",
+        "merged_json/The Storm.json",
+        "merged_json/The Substitute Bride.json",
+        "merged_json/The Subtle Fragrance from the Deep Forest.json",
+        "merged_json/The Taste of Miss Yun's Kiss.json",
+        "merged_json/The Westward Anime Season 2.json",
+        "merged_json/The Westward.json",
+        "merged_json/The World in my grasp.json",
+        "merged_json/The Wronged Mother.json",
+        "merged_json/There is none under heaven to equal her.json",
+        "merged_json/This Girl Is a Martial Master.json",
+        "merged_json/Three Brothers Dote on Me.json",
+        "merged_json/TRAVEL BACK IN TIME - 1991.json",
+        "merged_json/True and false dragon commander.json",
+        "merged_json/Ulanskaya Ballada.json",
+        "merged_json/Unrivalled in the Imperial Harem.json",
+        "merged_json/Unscripted Romance - In Love With My Substitute Wife.json",
+        "merged_json/Vamperifica.json",
+        "merged_json/Vicious Son in Law, Don't Mess with Me.json",
+        "merged_json/Villa Paradise.json",
+        "merged_json/Vortex.json",
+        "merged_json/Wealthy Hero.json",
+        "merged_json/When the Sun Sets on Us.json",
+        "merged_json/Where is my Home.json",
+        "merged_json/WILD YOUNG MASTER SON-IN-LAW.json",
+        "merged_json/Witch Stars.json",
+        "merged_json/Women Can Hold up Half the Sky.json",
+        "merged_json/Wonder Boy Parth.json",
+        "merged_json/Yama Ling - Tamil.json",
+        "merged_json/You Are like the Wind Passing by My Pillow.json"
+      ];
+
+      let loadedCount = 0;
+      const totalCount = files.length;
+
+      try {
+        const promises = files.map(async (file) => {
+          try {
+            const response = await fetch(file);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const data = await response.json();
+            loadedCount++;
+            updateLoadingProgress(loadedCount, totalCount);
+            return data;
+          } catch (error) {
+            console.warn(`Failed to load ${file}:`, error);
+            loadedCount++;
+            updateLoadingProgress(loadedCount, totalCount);
+            return null;
+          }
+        });
+
+        const results = await Promise.all(promises);
+        allShows = results.filter(show => show !== null);
+        filteredShows = [...allShows];
+        
+      } catch (error) {
+        console.error('Error loading shows:', error);
+      }
+
+      hideLoading();
+      renderShows();
+      renderContinueWatching();
+    }
+
+    // Update loading progress
+    function updateLoadingProgress(loaded, total) {
+      const percentage = Math.round((loaded / total) * 100);
+      loadingState.innerHTML = `
+        <div class="spinner"></div>
+        <p style="margin-top: 1rem; color: var(--text-secondary);">
+          Loading shows... ${percentage}%
+        </p>
+      `;
+    }
+
+    // Hide loading state
+    function hideLoading() {
+      loadingState.classList.add('hidden');
+    }
+
+    // Show loading state
+    function showLoading() {
+      loadingState.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+    }
+
+    // Handle search
+    function handleSearch(query) {
+      const searchTerm = query.toLowerCase().trim();
+      
+      if (!searchTerm) {
+        filteredShows = [...allShows];
+      } else {
+        filteredShows = allShows.filter(show => {
+          const info = show.show || show;
+          const title = info.title?.toLowerCase() || '';
+          const description = info.description?.toLowerCase() || '';
+          
+          return title.includes(searchTerm) || description.includes(searchTerm);
+        });
+      }
+      
+      renderShows();
+    }
+
+    // Render shows grid
+    function renderShows() {
+      showsGrid.innerHTML = '';
+      
+      if (filteredShows.length === 0) {
+        emptyState.classList.remove('hidden');
+        return;
+      }
+      
+      emptyState.classList.add('hidden');
+      
+      filteredShows.forEach((show, index) => {
+        setTimeout(() => renderShowCard(show), index * 50); // Stagger animation
+      });
+    }
+
+    // Render individual show card
+    function renderShowCard(show) {
+      const info = show.show || show;
+      const imageUrl = info.image || info.share_image_url || info.original_image || 
+                      `https://via.placeholder.com/300x220/1a1a1a/666666?text=${encodeURIComponent(info.title || 'No Title')}`;
+      const title = info.title || 'Untitled Show';
+      const episodeCount = show.episodes ? show.episodes.length : 0;
+
+      const card = document.createElement('div');
+      card.className = 'show-card';
+      card.innerHTML = `
+        <img src="${imageUrl}" alt="${title}" class="show-image" loading="lazy">
+        <div class="show-info">
+          <h3 class="show-title" title="${title}">${title}</h3>
+          <p class="show-episodes">${episodeCount} episodes</p>
+        </div>
+      `;
+      
+      card.addEventListener('click', () => openPlayer(show));
+      showsGrid.appendChild(card);
+    }
+
+    // Render continue watching section
+    function renderContinueWatching() {
+      continueGrid.innerHTML = '';
+      
+      const continueItems = Object.entries(watchHistory)
+        .filter(([slug, data]) => data.progress > 0 && data.progress < 0.95)
+        .sort(([,a], [,b]) => b.lastWatched - a.lastWatched)
+        .slice(0, 10);
+      
+      if (continueItems.length === 0) {
+        continueSection.classList.add('hidden');
+        return;
+      }
+      
+      continueSection.classList.remove('hidden');
+      
+      continueItems.forEach(([slug, data]) => {
+        const show = allShows.find(s => (s.show || s).slug === slug);
+        if (show) {
+          renderContinueCard(show, data);
+        }
+      });
+    }
+
+    // Render continue watching card
+    function renderContinueCard(show, watchData) {
+      const info = show.show || show;
+      const imageUrl = info.image || info.share_image_url || info.original_image || 
+                      `https://via.placeholder.com/80x60/1a1a1a/666666?text=${encodeURIComponent(info.title || 'Show')}`;
+      const title = info.title || 'Untitled Show';
+      const episode = show.episodes?.[watchData.episodeIndex];
+      const episodeTitle = episode ? `Episode ${episode.episode_index}: ${episode.title}` : 'Unknown Episode';
+      const progress = Math.round(watchData.progress * 100);
+
+      const card = document.createElement('div');
+      card.className = 'continue-card';
+      card.innerHTML = `
+        <div class="continue-card-content">
+          <img src="${imageUrl}" alt="${title}" class="continue-thumb" loading="lazy">
+          <div class="continue-info">
+            <h4 class="continue-title" title="${title}">${title}</h4>
+            <p class="continue-episode">${episodeTitle}</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: ${progress}%"></div>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      card.addEventListener('click', () => {
+        openPlayer(show, watchData.episodeIndex);
+      });
+      
+      continueGrid.appendChild(card);
+    }
+
+    // Get base URL for M3U8 files
+    function getBaseUrl(url) {
+      const lastSlashIndex = url.lastIndexOf('/');
+      return lastSlashIndex !== -1 ? url.substring(0, lastSlashIndex + 1) : '';
+    }
+
+    // Open video player
+    function openPlayer(show, startEpisodeIndex = null) {
+      const info = show.show || show;
+      currentShow = show;
+      currentEpisodes = show.episodes || [];
+      
+      if (currentEpisodes.length === 0) {
+        alert('No episodes available for this show.');
+        return;
+      }
+
+      // Determine starting episode
+      let episodeIndex = 0;
+      if (startEpisodeIndex !== null) {
+        episodeIndex = startEpisodeIndex;
+      } else {
+        const watchData = watchHistory[info.slug];
+        if (watchData && watchData.episodeIndex < currentEpisodes.length) {
+          episodeIndex = watchData.episodeIndex;
+        }
+      }
+
+      // Populate episode selector
+      episodeSelect.innerHTML = '';
+      currentEpisodes.forEach((episode, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = `Episode ${episode.episode_index}: ${episode.title}`;
+        if (index === episodeIndex) option.selected = true;
+        episodeSelect.appendChild(option);
+      });
+
+      // Set player title
+      playerTitle.textContent = info.title || 'Unknown Show';
+      
+      // Show player overlay
+      playerOverlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      
+      // Add to browser history for back button support
+      history.pushState(null, null, window.location.href);
+      
+      // Load the episode
+      loadEpisode(episodeIndex);
+    }
+
+    // Load specific episode
+    function loadEpisode(episodeIndex, quality = null) {
+      if (!currentEpisodes || episodeIndex >= currentEpisodes.length) {
+        console.error('Invalid episode index:', episodeIndex);
+        return;
+      }
+
+      const episode = currentEpisodes[episodeIndex];
+      const selectedQuality = quality || qualitySelect.value;
+      const m3u8Url = episode.content?.[selectedQuality];
+
+      if (!m3u8Url) {
+        console.error('No video URL found for quality:', selectedQuality);
+        // Try fallback qualities
+        const fallbackQualities = ['video_720p', 'video_480p', 'video_1080p'];
+        for (const fallbackQuality of fallbackQualities) {
+          if (episode.content?.[fallbackQuality]) {
+            qualitySelect.value = fallbackQuality;
+            loadEpisode(episodeIndex, fallbackQuality);
+            return;
+          }
+        }
+        alert('No video available for this episode.');
+        return;
+      }
+
+      // Clean up previous HLS instance
+      if (hls) {
+        hls.destroy();
+        hls = null;
+      }
+
+      // Update episode selector
+      episodeSelect.value = episodeIndex;
+      
+      // Get base URL for relative segments
+      const baseUrl = getBaseUrl(m3u8Url);
+
+      // Initialize HLS
+      if (Hls.isSupported()) {
+        hls = new Hls({
+          xhrSetup: function(xhr, url) {
+            // Handle CORS if needed
+            xhr.withCredentials = false;
+          },
+          pLoader: class extends Hls.DefaultConfig.loader {
+            load(context, config, callbacks) {
+              // Convert relative URLs to absolute
+              if (context.type === 'fragment' && context.url && !context.url.startsWith('http')) {
+                context.url = baseUrl + context.url;
+              }
+              super.load(context, config, callbacks);
+            }
+          }
+        });
+
+        hls.loadSource(m3u8Url);
+        hls.attachMedia(videoPlayer);
+        
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+          // Restore saved progress
+          const info = currentShow.show || currentShow;
+          const watchData = watchHistory[info.slug];
+          if (watchData && watchData.episodeIndex === episodeIndex && watchData.currentTime > 0) {
+            videoPlayer.currentTime = watchData.currentTime;
+          }
+          
+          // Auto-play if not on mobile or if user has interacted
+          if (videoPlayer.paused) {
+            const playPromise = videoPlayer.play();
+            if (playPromise) {
+              playPromise.catch(e => {
+                console.log('Auto-play prevented:', e);
+              });
+            }
+          }
+        });
+
+        hls.on(Hls.Events.ERROR, (event, data) => {
+          console.error('HLS error:', data);
+          if (data.fatal) {
+            switch (data.type) {
+              case Hls.ErrorTypes.NETWORK_ERROR:
+                console.log('Network error, trying to recover...');
+                hls.startLoad();
+                break;
+              case Hls.ErrorTypes.MEDIA_ERROR:
+                console.log('Media error, trying to recover...');
+                hls.recoverMediaError();
+                break;
+              default:
+                console.log('Fatal error, destroying HLS...');
+                hls.destroy();
+                break;
+            }
+          }
+        });
+      } else if (videoPlayer.canPlayType('application/vnd.apple.mpegurl')) {
+        // Native HLS support (Safari)
+        videoPlayer.src = m3u8Url;
+      } else {
+        alert('HLS is not supported in this browser.');
+      }
+    }
+
+    // Handle video ended
+    function handleVideoEnded() {
+      if (!autoPlayEnabled) return;
+      
+      const currentIndex = parseInt(episodeSelect.value) || 0;
+      if (currentIndex + 1 < currentEpisodes.length) {
+        // Auto-play next episode
+        setTimeout(() => {
+          loadEpisode(currentIndex + 1);
+        }, 1000);
+      }
+    }
+
+    // Save viewing progress
+    function saveProgress() {
+      if (!currentShow || !videoPlayer.duration || videoPlayer.duration === 0) return;
+      
+      const info = currentShow.show || currentShow;
+      const progress = videoPlayer.currentTime / videoPlayer.duration;
+      const episodeIndex = parseInt(episodeSelect.value) || 0;
+      
+      // Only save if we've watched more than 5% and less than 95%
+      if (progress > 0.05 && progress < 0.95) {
+        watchHistory[info.slug] = {
+          episodeIndex: episodeIndex,
+          currentTime: videoPlayer.currentTime,
+          progress: progress,
+          lastWatched: Date.now(),
+          title: info.title
+        };
+        saveWatchHistory();
+      } else if (progress >= 0.95) {
+        // Mark as completed and move to next episode
+        const nextEpisodeIndex = episodeIndex + 1;
+        if (nextEpisodeIndex < currentEpisodes.length) {
+          watchHistory[info.slug] = {
+            episodeIndex: nextEpisodeIndex,
+            currentTime: 0,
+            progress: 0,
+            lastWatched: Date.now(),
+            title: info.title
+          };
+        }
+        saveWatchHistory();
+      }
+    }
+
+    // Toggle auto-play
+    function toggleAutoPlay() {
+      autoPlayEnabled = !autoPlayEnabled;
+      autoPlayToggle.classList.toggle('active', autoPlayEnabled);
+      
+      // Save preference
+      try {
+        localStorage.setItem('kukufm_autoplay', autoPlayEnabled.toString());
+      } catch (e) {
+        console.warn('Failed to save autoplay preference:', e);
+      }
+    }
+
+    // Close player
+    function closePlayer() {
+      if (hls) {
+        hls.destroy();
+        hls = null;
+      }
+      
+      videoPlayer.src = '';
+      playerOverlay.style.display = 'none';
+      document.body.style.overflow = ''; // Restore scrolling
+      
+      // Update continue watching after closing
+      setTimeout(() => {
+        renderContinueWatching();
+      }, 100);
+    }
+
+    // Load autoplay preference
+    function loadAutoPlayPreference() {
+      try {
+        const saved = localStorage.getItem('kukufm_autoplay');
+        if (saved !== null) {
+          autoPlayEnabled = saved === 'true';
+          autoPlayToggle.classList.toggle('active', autoPlayEnabled);
+        }
+      } catch (e) {
+        console.warn('Failed to load autoplay preference:', e);
+      }
+    }
+
+    // Initialize autoplay preference
+    loadAutoPlayPreference();
+
+    // Handle orientation change on mobile
+    window.addEventListener('orientationchange', () => {
+      setTimeout(() => {
+        if (playerOverlay.style.display === 'flex') {
+          // Adjust video player size after orientation change
+          videoPlayer.style.height = window.innerHeight < window.innerWidth ? '100vh' : '50vh';
+        }
+      }, 100);
+    });
+
+    // Prevent zoom on double tap for better mobile experience
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function (event) {
+      const now = (new Date()).getTime();
+      if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
+
+    // Service Worker for offline caching (if needed)
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        // Uncomment to enable service worker
+        // navigator.serviceWorker.register('/sw.js').catch(console.error);
+      });
+    }
+  </script>
+</body>
+</html>
