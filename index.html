@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>KukuFM - Stream Anywhere</title>
+  <title>Meow - Stream Anywhere</title>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="manifest" href="/meow/manifest.json">
+  <meta name="theme-color" content="#ff4b2b">
+  <link rel="icon" href="/meow/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -503,7 +506,7 @@
   <!-- Header -->
   <header class="header">
     <div class="header-content">
-      <div class="logo">KukuFM</div>
+      <div class="logo">🐱e⭕w</div>
       <div class="search-container">
         <div class="search-icon">🔍</div>
         <input 
@@ -1289,11 +1292,45 @@
 
     // Service Worker for offline caching (if needed)
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        // Uncomment to enable service worker
-        // navigator.serviceWorker.register('/sw.js').catch(console.error);
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/meow/service-worker.js')
+      .then(reg => {
+        console.log('[App] Service Worker registered:', reg);
+
+        if (reg.waiting) {
+          // SW is waiting to activate
+          updateServiceWorker(reg.waiting);
+        }
+
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              updateServiceWorker(newWorker);
+            }
+          });
+        });
+      })
+      .catch(error => {
+        console.error('[App] Service Worker registration failed:', error);
       });
-    }
+
+    // Reload page when the new SW takes control
+    let refreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!refreshing) {
+        window.location.reload();
+        refreshing = true;
+      }
+    });
+  });
+
+  function updateServiceWorker(worker) {
+    console.log('[App] Sending SKIP_WAITING to new SW');
+    worker.postMessage({ type: 'SKIP_WAITING' });
+  }
+}
+
   </script>
 </body>
 </html>

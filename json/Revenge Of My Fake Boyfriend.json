@@ -13,7 +13,7 @@
     "language": "tamil",
     "published_on": "2025-05-22T12:46:39.116557+00:00",
     "status": "live",
-    "n_listens": 1907272,
+    "n_listens": 1946477,
     "is_verified": false,
     "dynamic_link": "https://links.kukufm.com/3GknAF",
     "uri": "app://kukufm/show/revenge-of-the-loyal-bf/",
@@ -150,8 +150,8 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 93692,
-      "n_listens": 93692,
+      "n_plays": 96761,
+      "n_listens": 96761,
       "n_comments": 35,
       "cover_type": null,
       "content": {
@@ -165,7 +165,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": false,
       "is_fictional": true,
       "index": 1,
@@ -175,7 +175,6 @@
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/video-thumbnails/show_270430_episode_1210775_b85f4b82e33148778c1fb6ec5061a326.jpg",
       "media_size": 371854447,
       "published_on": "2025-05-22T12:38:48.163743+00:00",
-      "hide_download_icon": true,
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -184,6 +183,8 @@
     "is_show_page_skip": true,
     "is_self": false,
     "ad_enabled": false,
+    "can_download_all": true,
+    "is_added": false,
     "genre": {
       "id": 80,
       "title": "नाटक",
@@ -201,7 +202,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/fc8b307462de450a924a93bb855dcf0e.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/fc8b307462de450a924a93bb855dcf0e.jpeg"
           },
-          "n_followers": 70,
+          "n_followers": 71,
           "contribution_type": "dubbing_studio",
           "is_primary_creator": false,
           "is_followed": false
@@ -216,7 +217,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/766ec03b54e44f2a9eb390c564d6dbaf.8bpG4gdFLfZI5CnAn068",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/766ec03b54e44f2a9eb390c564d6dbaf.8bpG4gdFLfZI5CnAn068"
           },
-          "n_followers": 1991,
+          "n_followers": 1996,
           "contribution_type": "production_manager",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -232,7 +233,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/107fc3040e0e4776adabf218ee0c379a.png",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/107fc3040e0e4776adabf218ee0c379a.png"
           },
-          "n_followers": 26,
+          "n_followers": 27,
           "contribution_type": "director",
           "is_primary_creator": true,
           "is_followed": false
@@ -240,9 +241,16 @@
       ]
     },
     "media_size": 9375381057,
-    "is_play_locked": true,
+    "is_play_locked": false,
     "hide_download_all_icon": null,
-    "growth_engine_audio_cue_info": {}
+    "last_unlocked_episode_index": 3,
+    "first_locked_episode_title": "EP 4",
+    "growth_engine_audio_cue_info": {},
+    "social_proofing": {
+      "review": null
+    },
+    "physical_book_data": {},
+    "show_unlocked_nudge_text": "Unlocked with Premium"
   },
   "episodes": [
     {
@@ -262,7 +270,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 93898,
+      "n_listens": 97704,
       "n_comments": 35,
       "cover_type": null,
       "content": {
@@ -283,13 +291,18 @@
       "media_size": 371854447,
       "published_on": "2025-05-22T12:38:48.163743+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-1-958",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
       "view_type": "default",
       "has_srt": false,
       "has_liked": false,
-      "seek_position": 0
+      "seek_position": 0,
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210784,
@@ -308,7 +321,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 44652,
+      "n_listens": 46262,
       "n_comments": 8,
       "cover_type": null,
       "content": {
@@ -329,13 +342,18 @@
       "media_size": 307747270,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-2-917",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
       "view_type": "default",
       "has_srt": false,
       "has_liked": false,
-      "seek_position": 0
+      "seek_position": 0,
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210785,
@@ -354,7 +372,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 33798,
+      "n_listens": 35034,
       "n_comments": 4,
       "cover_type": null,
       "content": {
@@ -375,6 +393,7 @@
       "media_size": 199790169,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-3-847",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -382,7 +401,11 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "last_base_unlock": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "last_base_unlock": true,
+      "transcript": {}
     },
     {
       "id": 1210789,
@@ -401,7 +424,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 27409,
+      "n_listens": 27906,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -411,7 +434,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 4,
@@ -419,10 +442,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210789_8b576e0ffe724eed9689dccc6022df3a.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 305761049,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-4-836",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -430,7 +454,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210790,
@@ -449,7 +476,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 27969,
+      "n_listens": 28929,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -459,7 +486,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 5,
@@ -467,10 +494,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210790_7637656ce9e5405a96fa4cbf2bba62d7.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 141438776,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-5-815",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -478,7 +506,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210795,
@@ -497,7 +528,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 27398,
+      "n_listens": 28434,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -507,7 +538,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 6,
@@ -515,10 +546,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210795_ff5166dc0ebf444b8f32d14955b6ad06.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 278761868,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-6-776",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -526,7 +558,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210796,
@@ -545,7 +580,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 27144,
+      "n_listens": 28216,
       "n_comments": 3,
       "cover_type": null,
       "content": {
@@ -555,7 +590,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 7,
@@ -563,10 +598,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210796_c779031ae80c4747809c1da523ba2536.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 152288587,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-7-743",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -574,7 +610,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210890,
@@ -593,7 +632,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 25524,
+      "n_listens": 26578,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -603,7 +642,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 8,
@@ -611,10 +650,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210890_b6063cbf30bb40a5816697588bcd7feb.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 169949772,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-8-706",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -622,7 +662,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210897,
@@ -641,7 +684,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 24013,
+      "n_listens": 25052,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -651,7 +694,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 9,
@@ -659,10 +702,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210897_6ee30f4f428c46f1a424855464dc6054.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 262852188,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-9-649",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -670,7 +714,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210898,
@@ -689,7 +736,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 22923,
+      "n_listens": 23786,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -699,7 +746,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 10,
@@ -707,10 +754,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210898_97d37b050e3440efb6e4411b5f81d1ff.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 85217004,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-10-925",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -718,7 +766,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210899,
@@ -737,7 +788,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 27260,
+      "n_listens": 28256,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -747,7 +798,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 11,
@@ -755,10 +806,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210899_b1ceba5df1a14498ae02383b9fc87989.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 172763426,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-11-710",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -766,7 +818,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210900,
@@ -785,7 +840,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 25548,
+      "n_listens": 25969,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -795,7 +850,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 12,
@@ -803,10 +858,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210900_92ddb377a03a4192b5e13eddc67aed5a.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 154617550,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-12-648",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -814,7 +870,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210902,
@@ -833,7 +892,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 32572,
+      "n_listens": 33186,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -843,7 +902,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 13,
@@ -851,10 +910,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210902_7054cc29805a49ec8f00012fefb83b3b.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 286823784,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-13-612",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -862,7 +922,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210903,
@@ -881,7 +944,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 42201,
+      "n_listens": 43625,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -891,7 +954,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 14,
@@ -899,10 +962,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210903_a69d58e5af6c418eb96f10a60d4ecce0.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 108718200,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-14-584",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -910,7 +974,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210904,
@@ -929,7 +996,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 39250,
+      "n_listens": 39928,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -939,7 +1006,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 15,
@@ -947,10 +1014,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210904_ab8d35c846054793b5e7d418324fdbac.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 168572798,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-15-564",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -958,7 +1026,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210905,
@@ -977,7 +1048,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 38099,
+      "n_listens": 39416,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -987,7 +1058,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 16,
@@ -995,10 +1066,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210905_76ab1c7b1732428a8bbb6cde62fac233.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 133053857,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-16-530",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1006,7 +1078,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210909,
@@ -1025,7 +1100,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 37593,
+      "n_listens": 38896,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1035,7 +1110,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 17,
@@ -1043,10 +1118,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210909_d6ad2ba9633b4f7295106360201c5c80.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 160103301,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-17-511",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1054,7 +1130,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210910,
@@ -1073,7 +1152,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 38316,
+      "n_listens": 39728,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1083,7 +1162,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 18,
@@ -1091,10 +1170,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210910_b604fc06e07b4be18f3c32986e3eb4cd.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 115130383,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-18-509",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1102,7 +1182,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210911,
@@ -1121,7 +1204,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 39416,
+      "n_listens": 40969,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1131,7 +1214,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 19,
@@ -1139,10 +1222,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210911_5eb187d64a0c4264be69ff5b0783f200.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 184496235,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-19-504",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1150,7 +1234,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210912,
@@ -1169,7 +1256,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 35708,
+      "n_listens": 36812,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1179,7 +1266,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 20,
@@ -1187,10 +1274,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210912_262b212e9df54769aa940ceb44d66f3c.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 186303057,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-20-486",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1198,7 +1286,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210913,
@@ -1217,7 +1308,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 40552,
+      "n_listens": 42159,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -1227,7 +1318,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 21,
@@ -1235,10 +1326,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210913_251787644b5343599c10b2b02a8e3cba.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 161746956,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-21-433",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1246,7 +1338,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210916,
@@ -1265,7 +1360,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 38924,
+      "n_listens": 40183,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1275,7 +1370,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 22,
@@ -1283,10 +1378,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210916_c9e352429dd6447683105a3c620eaab1.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 151437120,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-22-423",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1294,7 +1390,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210917,
@@ -1313,7 +1412,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 39933,
+      "n_listens": 41369,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -1323,7 +1422,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 23,
@@ -1331,10 +1430,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210917_c0998940a2264699b34a3206cc98e7b5.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 184183084,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-23-407",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1342,7 +1442,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210918,
@@ -1361,7 +1464,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 37523,
+      "n_listens": 38811,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -1371,7 +1474,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 24,
@@ -1379,10 +1482,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210918_2ca81c576a1840fb8f26b8e70f4ef7c2.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 135202298,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-24-396",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1390,7 +1494,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210919,
@@ -1409,7 +1516,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 38665,
+      "n_listens": 39845,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1419,7 +1526,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 25,
@@ -1427,10 +1534,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210919_f63213e345c843bba0904f33f1ed8ea3.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 93955566,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-25-383",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1438,7 +1546,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210920,
@@ -1457,7 +1568,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 37716,
+      "n_listens": 38952,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1467,7 +1578,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 26,
@@ -1475,10 +1586,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210920_524777d5a09b4f3fa3e5be8f822060ef.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 101055449,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-26-384",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1486,7 +1598,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210921,
@@ -1505,7 +1620,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 37554,
+      "n_listens": 38756,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1515,7 +1630,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 27,
@@ -1523,10 +1638,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210921_c73e4d0200a04644be48b3fb8a074895.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 121457567,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-27-365",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1534,7 +1650,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210922,
@@ -1553,7 +1672,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 37673,
+      "n_listens": 38314,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1563,7 +1682,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 28,
@@ -1571,10 +1690,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210922_9833a0911ff7446f821e8e88b9b88dca.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 158444962,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-28-359",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1582,7 +1702,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210923,
@@ -1601,8 +1724,8 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 36549,
-      "n_comments": 0,
+      "n_listens": 37796,
+      "n_comments": 1,
       "cover_type": null,
       "content": {
         "video_1080p": "https://kukufm.akamaized.net/video-episode/c60d7954-89a6-48cb-8a77-7e75bd636aeb/12109231080p.m3u8",
@@ -1611,7 +1734,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 29,
@@ -1619,10 +1742,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210923_1e988438a6a2428bbd16273d57f47f3a.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 135351862,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-29-341",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1630,7 +1754,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210924,
@@ -1649,7 +1776,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 34918,
+      "n_listens": 36206,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1659,7 +1786,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 30,
@@ -1667,10 +1794,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210924_89ac3f6a736e4913aa0cfe4ed9b1d555.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 180906396,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-30-337",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1678,7 +1806,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210925,
@@ -1697,7 +1828,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 33658,
+      "n_listens": 34887,
       "n_comments": 3,
       "cover_type": null,
       "content": {
@@ -1707,7 +1838,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 31,
@@ -1715,10 +1846,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210925_d2128d8fbbf3409b9f19d0a8b2192823.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 189908598,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-31-304",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1726,7 +1858,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210926,
@@ -1745,7 +1880,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 34308,
+      "n_listens": 35549,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1755,7 +1890,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 32,
@@ -1763,10 +1898,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210926_62760ed115e3481fb05e20cb487000d3.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 166549013,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-32-295",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1774,7 +1910,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210927,
@@ -1793,7 +1932,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 33053,
+      "n_listens": 34183,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1803,7 +1942,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 33,
@@ -1811,10 +1950,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210927_855415564b9c4b6f84448af6a76e4f07.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 178676341,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-33-291",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1822,7 +1962,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210928,
@@ -1841,7 +1984,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 34829,
+      "n_listens": 35383,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1851,7 +1994,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 34,
@@ -1859,10 +2002,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210928_c59c089f92074e95a8fc4130a614fa67.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 137936769,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-34-290",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1870,7 +2014,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210929,
@@ -1889,7 +2036,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 34031,
+      "n_listens": 34664,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1899,7 +2046,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 35,
@@ -1907,10 +2054,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210929_62c53cf5d32e4c39bacbc2572b7a4ca2.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 257106242,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-35-282",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1918,7 +2066,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210930,
@@ -1937,7 +2088,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 33010,
+      "n_listens": 33602,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1947,7 +2098,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 36,
@@ -1955,10 +2106,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210930_1805eec5f78f48108dd3eb2bfdeedf89.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 142748812,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-36-276",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -1966,7 +2118,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210931,
@@ -1985,7 +2140,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 33910,
+      "n_listens": 35059,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -1995,7 +2150,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 37,
@@ -2003,10 +2158,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210931_b869e7363a454f3f819a12618b0addb0.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 147069621,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-37-263",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2014,7 +2170,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210932,
@@ -2033,7 +2192,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 35345,
+      "n_listens": 36009,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -2043,7 +2202,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 38,
@@ -2051,10 +2210,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210932_8cd64b2166934386bc66a712d554d6ba.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 137034261,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-38-260",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2062,7 +2222,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210933,
@@ -2081,7 +2244,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 41904,
+      "n_listens": 42630,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -2091,7 +2254,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 39,
@@ -2099,10 +2262,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210933_281f70174def4beeac0d12c64cbece95.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 164475826,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-39-257",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2110,7 +2274,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210934,
@@ -2129,7 +2296,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 38410,
+      "n_listens": 39506,
       "n_comments": 3,
       "cover_type": null,
       "content": {
@@ -2139,7 +2306,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 40,
@@ -2147,10 +2314,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210934_0c22d7f065514afba9f315a8d17710a9.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 170345716,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-40-256",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2158,7 +2326,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210935,
@@ -2177,7 +2348,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 42202,
+      "n_listens": 43652,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -2187,7 +2358,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 41,
@@ -2195,10 +2366,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210935_060e4c4136ea4f3ab883653be6024c7b.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 168705510,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-41-235",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2206,7 +2378,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210936,
@@ -2225,7 +2400,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 45759,
+      "n_listens": 47133,
       "n_comments": 13,
       "cover_type": null,
       "content": {
@@ -2235,7 +2410,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 42,
@@ -2243,10 +2418,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210936_8a7ade4b8b4c4a7ca71b407b483e5b41.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 188953569,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-42-227",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2254,7 +2430,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210937,
@@ -2273,7 +2452,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 46141,
+      "n_listens": 47341,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -2283,17 +2462,18 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 43,
       "show_id": 270430,
       "season_no": 1,
       "is_demo_premium": false,
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 85842255,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-43-226",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2301,7 +2481,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210938,
@@ -2320,7 +2503,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 49267,
+      "n_listens": 49934,
       "n_comments": 8,
       "cover_type": null,
       "content": {
@@ -2330,7 +2513,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 44,
@@ -2338,10 +2521,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210938_abbbc8464a064304be685121cf5eea12.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 108738888,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-44-222",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2349,7 +2533,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1210939,
@@ -2368,7 +2555,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 123733,
+      "n_listens": 124462,
       "n_comments": 143,
       "cover_type": null,
       "content": {
@@ -2378,7 +2565,7 @@
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 45,
@@ -2386,10 +2573,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1210939_676b6495a8aa4cbe9167d45a3fdcba46.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 119472354,
       "published_on": "2025-05-23T03:02:58.348108+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-45-214",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2397,7 +2585,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259025,
@@ -2416,17 +2607,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 9156,
+      "n_listens": 10993,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/ec586a12-8a1b-40fa-a599-84fd616e681e/12590251080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/ec586a12-8a1b-40fa-a599-84fd616e681e/1259025720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/ec586a12-8a1b-40fa-a599-84fd616e681e/1259025480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 46,
@@ -2434,10 +2625,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259025_19e877dc172a444d930847df9107c3a3.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 125217014,
       "published_on": "2025-06-19T05:55:21.495084+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-46-334",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2445,7 +2637,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259026,
@@ -2464,17 +2659,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 8964,
+      "n_listens": 9790,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/df87ff0f-548b-46af-ab9a-bdef1d53d5ba/12590261080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/df87ff0f-548b-46af-ab9a-bdef1d53d5ba/1259026720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/df87ff0f-548b-46af-ab9a-bdef1d53d5ba/1259026480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 47,
@@ -2482,10 +2677,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259026_8e887937c9ac49cea022b8ed69c4ea97.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 212978215,
       "published_on": "2025-06-19T05:55:21.506926+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-47-327",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2493,7 +2689,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259027,
@@ -2512,17 +2711,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 7411,
+      "n_listens": 8885,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/0e26d901-689a-4ed5-9b7a-e3e8ad7490cf/12590271080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/0e26d901-689a-4ed5-9b7a-e3e8ad7490cf/1259027720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/0e26d901-689a-4ed5-9b7a-e3e8ad7490cf/1259027480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 48,
@@ -2530,10 +2729,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259027_832983f50d814b748ec7b1baf9e970da.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 37599255,
       "published_on": "2025-06-19T05:55:21.517187+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-48-325",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2541,7 +2741,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259028,
@@ -2560,17 +2763,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 7707,
+      "n_listens": 9298,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/4e70728e-cfdd-48e0-8b73-d8749e600efc/12590281080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/4e70728e-cfdd-48e0-8b73-d8749e600efc/1259028720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/4e70728e-cfdd-48e0-8b73-d8749e600efc/1259028480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 49,
@@ -2578,10 +2781,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259028_cfc3080d16904cdda0f7bf4e9eb273c4.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 82155942,
       "published_on": "2025-06-19T05:55:21.528937+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-49-323",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2589,7 +2793,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259029,
@@ -2608,17 +2815,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 7778,
+      "n_listens": 9415,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/6a580a58-28ba-4328-85b5-2dbd2b7a12de/12590291080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/6a580a58-28ba-4328-85b5-2dbd2b7a12de/1259029720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/6a580a58-28ba-4328-85b5-2dbd2b7a12de/1259029480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 50,
@@ -2626,10 +2833,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259029_c00269e9f4ce4e8a94d090fb9043da84.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 186801118,
       "published_on": "2025-06-19T05:55:21.538950+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-50-311",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2637,7 +2845,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259030,
@@ -2656,17 +2867,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 8485,
+      "n_listens": 9203,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/40734a33-0112-4a92-ac18-921e0ee7da33/12590301080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/40734a33-0112-4a92-ac18-921e0ee7da33/1259030720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/40734a33-0112-4a92-ac18-921e0ee7da33/1259030480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 51,
@@ -2674,10 +2885,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259030_3bd7100be79540d094c595c610f03794.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 116368076,
       "published_on": "2025-06-19T05:56:22.678426+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-51-299",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2685,7 +2897,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259031,
@@ -2704,17 +2919,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 8397,
+      "n_listens": 9210,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/24d95b08-45b2-4b3f-9556-bc760ed9bfca/12590311080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/24d95b08-45b2-4b3f-9556-bc760ed9bfca/1259031720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/24d95b08-45b2-4b3f-9556-bc760ed9bfca/1259031480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 52,
@@ -2722,10 +2937,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259031_860ab22823dc44b285489a7ad558f197.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 131756255,
       "published_on": "2025-06-19T05:56:22.688758+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-52-287",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2733,7 +2949,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259032,
@@ -2752,17 +2971,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 7989,
+      "n_listens": 9786,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/388a1784-5268-4fe8-a4b5-6da2a3f88275/12590321080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/388a1784-5268-4fe8-a4b5-6da2a3f88275/1259032720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/388a1784-5268-4fe8-a4b5-6da2a3f88275/1259032480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 53,
@@ -2770,10 +2989,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259032_a349147331fc4a609bbf390503ddbad3.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 99996371,
       "published_on": "2025-06-19T05:56:22.699361+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-53-278",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2781,7 +3001,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259033,
@@ -2800,17 +3023,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 9107,
+      "n_listens": 10002,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/aa6785e9-89f9-4195-889f-2e8b274f879b/12590331080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/aa6785e9-89f9-4195-889f-2e8b274f879b/1259033720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/aa6785e9-89f9-4195-889f-2e8b274f879b/1259033480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 54,
@@ -2818,10 +3041,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259033_8816d39fee2e45d7b41be35d36044253.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 107505913,
       "published_on": "2025-06-19T05:56:22.713134+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-54-282",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2829,7 +3053,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259034,
@@ -2848,17 +3075,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 9067,
+      "n_listens": 10962,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/f8abf0b0-418a-4ae9-bf68-0aab1c1aa223/12590341080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/f8abf0b0-418a-4ae9-bf68-0aab1c1aa223/1259034720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/f8abf0b0-418a-4ae9-bf68-0aab1c1aa223/1259034480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 55,
@@ -2866,10 +3093,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259034_07ac33084f0647d5b3afb5d04613fb7c.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 95588810,
       "published_on": "2025-06-19T05:56:22.723479+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-55-289",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2877,7 +3105,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259035,
@@ -2896,17 +3127,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 9147,
+      "n_listens": 10980,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/c8562032-b6d3-41e6-bd04-9d5249334644/12590351080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/c8562032-b6d3-41e6-bd04-9d5249334644/1259035720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/c8562032-b6d3-41e6-bd04-9d5249334644/1259035480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 56,
@@ -2914,10 +3145,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259035_62310d8028e3461ca8309552897d3f05.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 95735916,
       "published_on": "2025-06-19T05:56:22.734094+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-56-279",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2925,7 +3157,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259036,
@@ -2944,17 +3179,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 8968,
-      "n_comments": 0,
+      "n_listens": 10900,
+      "n_comments": 1,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/c033b24e-8699-4429-99b5-c5ab40aee4d7/12590361080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/c033b24e-8699-4429-99b5-c5ab40aee4d7/1259036720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/c033b24e-8699-4429-99b5-c5ab40aee4d7/1259036480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 57,
@@ -2962,10 +3197,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259036_73d4d9dc76214c2fa0b1b1e20f77dfba.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 102947679,
       "published_on": "2025-06-19T05:56:22.744620+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-57-274",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -2973,7 +3209,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259037,
@@ -2992,17 +3231,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 9800,
+      "n_listens": 10654,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/537e9ebe-6141-4fbc-99df-be7c39ff9b9c/12590371080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/537e9ebe-6141-4fbc-99df-be7c39ff9b9c/1259037720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/537e9ebe-6141-4fbc-99df-be7c39ff9b9c/1259037480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 58,
@@ -3010,10 +3249,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259037_5d98aa8989504f43900848b68bbee8fe.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 62547903,
       "published_on": "2025-06-19T05:56:22.754264+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-58-271",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -3021,7 +3261,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259038,
@@ -3040,17 +3283,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 9968,
+      "n_listens": 10835,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/98f5f29f-ac0f-47cd-88f9-3f0d22abc915/12590381080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/98f5f29f-ac0f-47cd-88f9-3f0d22abc915/1259038720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/98f5f29f-ac0f-47cd-88f9-3f0d22abc915/1259038480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 59,
@@ -3058,10 +3301,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259038_e3324a781aa04e6e9fa023a43cd9e6a0.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 95856851,
       "published_on": "2025-06-19T05:56:22.765935+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-59-271",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -3069,7 +3313,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     },
     {
       "id": 1259039,
@@ -3088,17 +3335,17 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 13243,
-      "n_comments": 2,
+      "n_listens": 16058,
+      "n_comments": 5,
       "cover_type": null,
       "content": {
-        "url": "",
-        "hls_url": "",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1ca9120f-1021-4a21-ac6e-d77b5f9f1dcb.m3u8"
+        "video_1080p": "https://kukufm.akamaized.net/video-episode/06025f6c-30a7-425b-a4b0-b6971ab3efe2/12590391080p.m3u8",
+        "video_720p": "https://kukufm.akamaized.net/video-episode/06025f6c-30a7-425b-a4b0-b6971ab3efe2/1259039720p.m3u8",
+        "video_480p": "https://kukufm.akamaized.net/video-episode/06025f6c-30a7-425b-a4b0-b6971ab3efe2/1259039480p.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
-      "is_play_locked": true,
+      "is_play_locked": false,
       "is_locked": true,
       "is_fictional": true,
       "index": 60,
@@ -3106,10 +3353,11 @@
       "season_no": 1,
       "is_demo_premium": false,
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://kukufm.s3.ap-south-1.amazonaws.com/video-thumbnails/show_270430_episode_1259039_e666c1b91c52490584a3391dbf5984c5.jpg",
-      "is_free_unlocked": null,
+      "is_free_unlocked": true,
       "media_size": 88776983,
       "published_on": "2025-06-19T05:56:22.775180+00:00",
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674013af1a38468a94010b4936c10a2f.png",
+      "web_uri": "/episode/ep-60-268",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cea6bb2d0de49e4b909890e63052866_reel_635.png"
       },
@@ -3117,7 +3365,10 @@
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
-      "hide_download_icon": true
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     }
   ],
   "has_more": false,
@@ -3127,6 +3378,9 @@
   "support_sticker": "",
   "is_skip_show_page": false,
   "season_n_episodes": 60,
+  "last_unlocked_episode_index": 3,
+  "first_locked_episode_title": "EP 4",
+  "seo_description": "",
   "ads_info": {
     "interstitial_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Interstitial2.1750061859",
     "reward_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Rewarded2.1750061900"

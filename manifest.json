@@ -1,0 +1,129 @@
+{
+  "name": "Meow - Stream Anywhere",
+  "short_name": "Meow",
+  "description": "Stream your favorite shows and episodes anywhere, anytime with KukuFM.",
+  "version": "1.0.0",
+  "start_url": "/meow/index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#ff4b2b",
+  "background_color": "#0a0a0a",
+  "lang": "en",
+  "scope": "/meow/",
+  "categories": ["entertainment", "multimedia"],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Continue Watching",
+      "short_name": "Continue",
+      "description": "Resume your recently watched shows",
+      "url": "/?section=continue",
+      "icons": [
+        {
+          "src": "/meow/icons/favicon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Browse Shows",
+      "short_name": "Browse",
+      "description": "Discover new shows and episodes",
+      "url": "/?section=browse",
+      "icons": [
+        {
+          "src": "/meow/icons/favicon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "icons": [
+	{
+      "src": "/meow/icons/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },  
+    {
+      "src": "/meow/icons/favicon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/meow/icons/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/meow/icons/favicon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/meow/icons/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/meow/icons/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/badge-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "monochrome"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile-1.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Browse shows on mobile"
+    },
+    {
+      "src": "/screenshot-mobile-2.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Video player on mobile"
+    },
+    {
+      "src": "/screenshot-desktop-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop browsing experience"
+    }
+  ],
+  "related_applications": [],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "file_handlers": [
+    {
+      "action": "/player",
+      "accept": {
+        "video/*": [".mp4", ".webm", ".m3u8"],
+        "application/vnd.apple.mpegurl": [".m3u8"]
+      }
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+kukufm",
+      "url": "/?play=%s"
+    }
+  ]
+}
