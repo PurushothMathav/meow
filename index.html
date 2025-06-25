@@ -969,7 +969,26 @@
       continueGrid.innerHTML = '';
       
       const continueItems = Object.entries(watchHistory)
-        .filter(([slug, data]) => data.progress > 0 && data.progress < 0.95)
+        .filter(([slug, data]) => {
+  const show = allShows.find(s => (s.show || s).slug === slug);
+  if (!show || !Array.isArray(show.episodes) || show.episodes.length === 0) return false;
+
+  const totalEpisodes = show.episodes.length;
+  const lastWatched = data.episodeIndex;
+  const watchedEnough = data.progress >= 0.95;
+
+  const isLastEpisode = lastWatched >= totalEpisodes - 1;
+
+  if (isLastEpisode && watchedEnough) {
+    console.log(`Removing ${slug} from watch history (completed).`);
+    delete watchHistory[slug];
+    saveWatchHistory();
+    return false;
+  }
+
+  return true;
+})
+
         .sort(([,a], [,b]) => b.lastWatched - a.lastWatched)
         .slice(0, 10);
       
@@ -1209,19 +1228,19 @@
         };
         saveWatchHistory();
       } else if (progress >= 0.95) {
-        // Mark as completed and move to next episode
-        const nextEpisodeIndex = episodeIndex + 1;
-        if (nextEpisodeIndex < currentEpisodes.length) {
-          watchHistory[info.slug] = {
-            episodeIndex: nextEpisodeIndex,
-            currentTime: 0,
-            progress: 0,
-            lastWatched: Date.now(),
-            title: info.title
-          };
-        }
-        saveWatchHistory();
-      }
+  if (episodeIndex >= currentEpisodes.length - 1) {
+    delete watchHistory[info.slug]; // ✅ remove if last episode
+  } else {
+    watchHistory[info.slug] = {
+      episodeIndex: episodeIndex + 1,
+      currentTime: 0,
+      progress: 0,
+      lastWatched: Date.now(),
+      title: info.title
+    };
+  }
+  saveWatchHistory();
+}
     }
 
     // Toggle auto-play
