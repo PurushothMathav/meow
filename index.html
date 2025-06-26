@@ -1044,6 +1044,50 @@
       const lastSlashIndex = url.lastIndexOf('/');
       return lastSlashIndex !== -1 ? url.substring(0, lastSlashIndex + 1) : '';
     }
+	
+	function setupSwipeGestures() {
+  let touchStartY = 0;
+  let touchEndY = 0;
+
+  const threshold = 50; // Minimum swipe distance to trigger
+
+  const videoArea = document.querySelector('.video-container');
+
+  videoArea.addEventListener('touchstart', (e) => {
+    touchStartY = e.changedTouches[0].clientY;
+  });
+
+  videoArea.addEventListener('touchend', (e) => {
+    touchEndY = e.changedTouches[0].clientY;
+    handleSwipeGesture();
+  });
+
+  function handleSwipeGesture() {
+  const deltaY = touchStartY - touchEndY;
+
+  if (Math.abs(deltaY) < threshold) {
+    // Treat as a tap → let native video toggle play/pause
+    videoPlayer.click(); // simulates a user tap
+    return;
+  }
+
+  const currentIndex = parseInt(episodeSelect.value) || 0;
+
+  if (deltaY > 0) {
+    // Swipe up → next episode
+    if (currentIndex + 1 < currentEpisodes.length) {
+      loadEpisode(currentIndex + 1);
+    }
+  } else {
+    // Swipe down → previous episode
+    if (currentIndex - 1 >= 0) {
+      loadEpisode(currentIndex - 1);
+    }
+  }
+}
+
+}
+
 
     // Open video player
     function openPlayer(show, startEpisodeIndex = null) {
@@ -1089,6 +1133,7 @@
       
       // Load the episode
       loadEpisode(episodeIndex);
+	  setupSwipeGestures();
     }
 
     // Load specific episode
