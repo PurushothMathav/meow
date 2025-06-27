@@ -12,512 +12,545 @@
   <link rel="icon" href="/meow/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --primary: #ff4b2b;
-      --primary-dark: #e63946;
-      --secondary: #ff6b47;
-      --bg-primary: #0a0a0a;
-      --bg-secondary: #141414;
-      --bg-card: #1a1a1a;
-      --text-primary: #ffffff;
-      --text-secondary: #b3b3b3;
-      --text-muted: #8a8a8a;
-      --border: #333333;
-      --success: #00d4aa;
-      --warning: #ffa726;
-    }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* Header */
-    .header {
-      position: sticky;
-      top: 0;
-      background: rgba(10, 10, 10, 0.95);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      z-index: 100;
-      padding: 0.75rem 1rem;
-    }
-
-    .header-content {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      flex-shrink: 0;
-    }
-
-    .search-container {
-      flex: 1;
-      position: relative;
-      max-width: 500px;
-    }
-
-    .search-input {
-      width: 100%;
-      padding: 0.75rem 1rem 0.75rem 2.5rem;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 50px;
-      color: var(--text-primary);
-      font-size: 0.9rem;
-      transition: all 0.3s ease;
-    }
-
-    .search-input:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(255, 75, 43, 0.1);
-    }
-
-    .search-icon {
-      position: absolute;
-      left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--text-muted);
-      font-size: 1rem;
-    }
-
-    /* Continue Watching Section */
-    .continue-section {
-      padding: 1.5rem 1rem 0;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    .section-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-    }
-
-    .continue-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .continue-card {
-      background: var(--bg-card);
-      border-radius: 12px;
-      overflow: hidden;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border: 1px solid transparent;
-    }
-
-    .continue-card:hover {
-      transform: translateY(-2px);
-      border-color: var(--primary);
-      box-shadow: 0 8px 25px rgba(255, 75, 43, 0.2);
-    }
-
-    .continue-card-content {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 1rem;
-    }
-
-    .continue-thumb {
-      width: 80px;
-      height: 60px;
-      border-radius: 8px;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-
-    .continue-info {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .continue-title {
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--text-primary);
-      margin-bottom: 0.25rem;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .continue-episode {
-      font-size: 0.8rem;
-      color: var(--text-secondary);
-      margin-bottom: 0.5rem;
-    }
-
-    .progress-bar {
-      width: 100%;
-      height: 3px;
-      background: var(--border);
-      border-radius: 2px;
-      overflow: hidden;
-    }
-
-    .progress-fill {
-      height: 100%;
-      background: linear-gradient(90deg, var(--primary), var(--secondary));
-      border-radius: 2px;
-      transition: width 0.3s ease;
-    }
-
-    /* Shows Grid */
-    .main-content {
-      padding: 1.5rem 1rem;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    .shows-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 1rem;
-    }
-
-    .show-card {
-      background: var(--bg-card);
-      border-radius: 12px;
-      overflow: hidden;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border: 1px solid transparent;
-      position: relative;
-    }
-
-    .show-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--primary);
-      box-shadow: 0 12px 30px rgba(255, 75, 43, 0.25);
-    }
-
-    .show-image {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .show-card:hover .show-image {
-      transform: scale(1.05);
-    }
-
-    .show-info {
-      padding: 1rem;
-    }
-
-    .show-title {
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--text-primary);
-      margin-bottom: 0.5rem;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .show-episodes {
-      font-size: 0.8rem;
-      color: var(--text-secondary);
-    }
-
-    /* Player Overlay */
-    .player-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.98);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-      display: none;
-      flex-direction: column;
-    }
-
-    .player-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem;
-      background: rgba(20, 20, 20, 0.9);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .player-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      flex: 1;
-      margin-right: 1rem;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .close-btn {
-      background: none;
-      border: none;
-      color: var(--text-primary);
-      font-size: 1.5rem;
-      cursor: pointer;
-      padding: 0.5rem;
-      border-radius: 50%;
-      transition: background 0.3s ease;
-    }
-
-    .close-btn:hover {
-      background: var(--bg-card);
-    }
-
-    .player-content {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-    }
-
-    .video-container {
-      position: relative;
-      background: #000;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .video-player {
-      width: 100%;
-      height: 100%;
-      max-height: 70vh;
-      object-fit: contain;
-    }
-
-    .player-controls {
-      background: var(--bg-secondary);
-      padding: 1rem;
-      border-top: 1px solid var(--border);
-    }
-
-    .controls-row {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .control-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      flex: 1;
-      min-width: 120px;
-    }
-
-    .control-label {
-      font-size: 0.8rem;
-      color: var(--text-secondary);
-      font-weight: 500;
-    }
-
-    .control-select {
-      padding: 0.75rem;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      color: var(--text-primary);
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: border-color 0.3s ease;
-    }
-
-    .control-select:focus {
-      outline: none;
-      border-color: var(--primary);
-    }
-
-    .auto-play-toggle {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      cursor: pointer;
-      user-select: none;
-    }
-
-    .toggle-switch {
-      position: relative;
-      width: 44px;
-      height: 24px;
-      background: var(--border);
-      border-radius: 12px;
-      transition: background 0.3s ease;
-    }
-
-    .toggle-switch.active {
-      background: var(--primary);
-    }
-
-    .toggle-knob {
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      width: 20px;
-      height: 20px;
-      background: white;
-      border-radius: 50%;
-      transition: transform 0.3s ease;
-    }
-
-    .toggle-switch.active .toggle-knob {
-      transform: translateX(20px);
-    }
-
-    /* Loading States */
-    .loading {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-    }
-
-    .spinner {
-      width: 40px;
-      height: 40px;
-      border: 3px solid var(--border);
-      border-top: 3px solid var(--primary);
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    /* Empty States */
-    .empty-state {
-      text-align: center;
-      padding: 3rem 1rem;
-      color: var(--text-secondary);
-    }
-
-    .empty-icon {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      opacity: 0.5;
-    }
-	
-	.language-tag {
-		position: absolute;
-		top: 8px;
-		right: 8px;
-		background: rgba(0,0,0,0.7);
-		color: #fff;
-		padding: 2px 6px;
-		border-radius: 4px;
-		font-size: 12px;
-		text-transform: capitalize;
-	}
-
-	.control-select[disabled] {
-		opacity: 0.5;
-		pointer-events: none;
-		cursor: not-allowed;
-	}
-	
-    /* Mobile Optimizations */
-    @media (max-width: 768px) {
-      .header-content {
-        gap: 0.75rem;
-      }
-
-      .logo {
-        font-size: 1.25rem;
-      }
-
-      .search-input {
-        font-size: 16px; /* Prevents zoom on iOS */
-      }
-
-      .shows-grid {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-        gap: 0.75rem;
-      }
-
-      .show-image {
-        height: 180px;
-      }
-
-      .continue-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .controls-row {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .control-group {
-        min-width: auto;
-      }
-
-      .video-player {
-        max-height: 50vh;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .shows-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .show-info {
-        padding: 0.75rem;
-      }
-
-      .show-title {
-        font-size: 0.85rem;
-      }
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .show-card {
-      animation: fadeIn 0.5s ease forwards;
-    }
-
-    /* Utility Classes */
-    .hidden { display: none !important; }
-    .visible { display: block !important; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ff4b2b;
+  --primary-dark: #e63946;
+  --secondary: #ff6b47;
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-card: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-muted: #8a8a8a;
+  --border: #333333;
+  --success: #00d4aa;
+  --warning: #ffa726;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 0.75rem 1rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex-shrink: 0;
+}
+
+.search-container {
+  flex: 1;
+  position: relative;
+  max-width: 500px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 75, 43, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+/* Shows Grid */
+.main-content {
+  padding: 1.5rem 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.shows-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 3fr));
+  gap: 1rem;
+}
+
+.show-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.show-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 12px 30px rgba(255, 75, 43, 0.25);
+}
+
+.show-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.show-card:hover .show-image {
+  transform: scale(1.05);
+}
+
+.show-info {
+  padding: 1rem;
+}
+
+.show-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.show-episodes {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Player Overlay */
+.player-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.98);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+}
+
+.player-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: rgba(20, 20, 20, 0.9);
+  border-bottom: 1px solid var(--border);
+}
+
+.player-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  flex: 1;
+  margin-right: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+  background: var(--bg-card);
+}
+
+.player-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  background: #000;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.player-controls {
+  background: var(--bg-secondary);
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.controls-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 120px;
+}
+
+.control-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.control-select {
+  padding: 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.control-select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.auto-play-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: var(--border);
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.toggle-switch.active {
+  background: var(--primary);
+}
+
+.toggle-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggle-switch.active .toggle-knob {
+  transform: translateX(20px);
+}
+
+/* Loading States */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border);
+  border-top: 3px solid var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Empty States */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-secondary);
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.language-tag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.control-select[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.continue-thumbnail-wrapper {
+  position: relative;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: red;
+}
+
+/* Aligns Continue Watching section like All Shows */
+.continue-section {
+  padding: 1.5rem 1rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#continueGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.continue-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.continue-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 12px 30px rgba(255, 75, 43, 0.25);
+}
+
+.continue-thumbnail-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4; /* Same as show posters */
+  overflow: hidden;
+}
+
+.continue-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.continue-title,
+.continue-episode {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.progress-bar {
+  height: 3px;
+  background: var(--border);
+  margin: 0 0.5rem 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  padding: 0 16px;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .header-content {
+    gap: 0.75rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .search-input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .shows-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .show-image {
+    height: 180px;
+  }
+
+  .continue-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .controls-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .control-group {
+    min-width: auto;
+  }
+
+  .video-player {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .shows-grid,
+  .continue-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .show-info {
+    padding: 0.75rem;
+  }
+
+  .show-title {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .continue-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.show-card {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none !important;
+}
+.visible {
+  display: block !important;
+}
+
   </style>
 </head>
 <body>
@@ -545,6 +578,9 @@
   <option value="English">English</option>
   <option value="Bengali">Bengali</option>
 </select>
+<button onclick="localStorage.removeItem('cached_kukufm_shows'); location.reload();">
+  🔄
+</button>
 
 <!-- Toast message container (optional but looks better than alert) -->
 <div id="toast" style="
@@ -564,10 +600,12 @@
   </header>
 
   <!-- Continue Watching Section -->
-  <section class="continue-section" id="continueSection">
-    <h2 class="section-title">Continue Watching</h2>
-    <div class="continue-grid" id="continueGrid"></div>
-  </section>
+  <section id="continueSection" class="continue-section" style="display: none;">
+  <h2 class="section-title">Continue Watching</h2>
+  <div id="continueGrid"></div>
+</section>
+
+
 
   <!-- Main Content -->
   <main class="main-content">
@@ -775,9 +813,58 @@ function showToast(message) {
         }
       });
     }
+	
+	
+	function loadShowsFromCache() {
+  try {
+    const cached = localStorage.getItem('cached_kukufm_shows');
+    if (cached) {
+      const data = JSON.parse(cached);
+      allShows = data;
+      filteredShows = [...allShows];
+      hideLoading();
+      renderShows();
+      renderContinueWatching();
+      dataLoaded = true;
+      document.getElementById('languageFilter').disabled = false;
+      return true;
+    }
+  } catch (e) {
+    console.warn('Failed to parse cached data:', e);
+  }
+  return false;
+}
 
-    // Load all shows
-    async function loadShows() {
+	
+	
+async function loadShows() {
+  const cacheKey = 'cached_kukufm_shows';
+
+  // ✅ Try loading parsed shows from localStorage
+  try {
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) {
+      console.log('📦 Using cached show data from localStorage');
+      const data = JSON.parse(cached);
+      allShows = data;
+      filteredShows = [...allShows];
+
+      hideLoading();
+      renderShows();
+      renderContinueWatching();
+      dataLoaded = true;
+
+      document.getElementById('languageFilter').disabled = false;
+      return;
+    }
+  } catch (e) {
+    console.warn('❌ Failed to parse local cache, falling back to network.', e);
+  }
+
+  // 👇 Load from network if cache is not present or failed
+  console.log('🌐 Fetching show JSON files from network...');
+  
+		// 👇 Only proceed if cache not available
       const files = [
     "/meow/json/7 Assasins-Tamil.json",
     "/meow/json/A Vow of Joy and Sorrow-Bengali.json",
@@ -1352,45 +1439,89 @@ function showToast(message) {
     "/meow/json/Yama Ling - Tamil-Tamil.json",
     "/meow/json/You Are like The Wind Passing By My Pillow-Hindi.json",
     "/meow/json/You Are like the Wind Passing by My Pillow-Tamil.json",
-    "/meow/json/You Are like the Wind Passing by My Pillow-Telugu.json"
+    "/meow/json/You Are like the Wind Passing by My Pillow-Telugu.json",
+	"/meow/json/Billionaire Playboy's Replacement Bride-Bengali.json",
+    "/meow/json/Billionaire Playboy's Replacement Bride-English.json",
+    "/meow/json/Billionaire Playboy's Replacement Bride-Hindi.json",
+    "/meow/json/Billionaire Playboy's Replacement Bride-Tamil.json",
+    "/meow/json/Billionaire Playboys Replacement Bride-Telugu.json",
+    "/meow/json/Blossoms 2003-Malayalam.json",
+    "/meow/json/Blossoms 2003-Tamil.json",
+    "/meow/json/Blossoms 2003-Telugu.json",
+    "/meow/json/Don't mess With blind heiress-Malayalam.json",
+    "/meow/json/Don't Mess with Blind Heiress-Tamil.json",
+    "/meow/json/Eternal Life for Three Millennia-Malayalam.json",
+    "/meow/json/Eternal Life for Three Millennia-Tamil.json",
+    "/meow/json/Eternal life for Three Millennia-Telugu.json",
+    "/meow/json/Father’s Kindness, Son’s Filial Piety-Tamil.json",
+    "/meow/json/Hero of Construction Site-Tamil.json",
+    "/meow/json/Hollywood Staged Romance Live 24_7-Hindi.json",
+    "/meow/json/Hollywood Staged Romance Live 24_7-Kannada.json",
+    "/meow/json/Hollywood Staged Romance Live 24_7-Malayalam.json",
+    "/meow/json/Hollywood Staged Romance Live 24_7-Tamil.json",
+    "/meow/json/Hollywood Staged Romance Live 24_7-Telugu.json",
+    "/meow/json/Hollywood Staged Romance_ Live 24_7-Bengali.json",
+    "/meow/json/Hollywood Staged Romance_ Live 24_7-English.json",
+    "/meow/json/Iruvar-Tamil.json",
+    "/meow/json/Kaatru Veliyidai-Tamil.json",
+    "/meow/json/Kanave Kalaiyaathe-Tamil.json",
+    "/meow/json/Legend-Tamil.json",
+    "/meow/json/Maayavan-Tamil.json",
+    "/meow/json/Minnale-Tamil.json",
+    "/meow/json/Mistaken Millionaire Husband-Tamil.json",
+    "/meow/json/Nee Thanae En pon vasantham-Tamil.json",
+    "/meow/json/Nenjam Marappathillai-Tamil.json",
+    "/meow/json/Overcoming Obstacles_ The Counter attack On The Twin Babies-Tamil.json",
+    "/meow/json/PALACE SECRETS-Tamil.json",
+    "/meow/json/The Awakening-Bengali.json",
+    "/meow/json/The Awakening-Hindi.json",
+    "/meow/json/The Awakening-Malayalam.json",
+    "/meow/json/The Awakening-Tamil.json",
+    "/meow/json/Triumphant Returns-Tamil.json",
+    "/meow/json/Where Love Fades Away-Bengali.json",
+    "/meow/json/Where Love Fades Away-Tamil.json",
+    "/meow/json/Where Love Fades Away-Telugu.json",
+    "/meow/json/Why Must the Boss Contractually Marry-Malayalam.json",
+    "/meow/json/Why Must the Boss Contractually Marry-Tamil.json"
       ];
-
+	
       let loadedCount = 0;
-      const totalCount = files.length;
+  const totalCount = files.length;
+  const fetchedShows = [];
 
+  try {
+    const promises = files.map(async (file) => {
       try {
-        const promises = files.map(async (file) => {
-          try {
-            const response = await fetch(file);
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
-            const data = await response.json();
-            loadedCount++;
-            updateLoadingProgress(loadedCount, totalCount);
-            return data;
-          } catch (error) {
-            console.warn(`Failed to load ${file}:`, error);
-            loadedCount++;
-            updateLoadingProgress(loadedCount, totalCount);
-            return null;
-          }
-        });
-
-        const results = await Promise.all(promises);
-        allShows = results.filter(show => show !== null);
-        filteredShows = [...allShows];
-        
-      } catch (error) {
-        console.error('Error loading shows:', error);
+        const response = await fetch(file);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        fetchedShows.push(data);
+      } catch (err) {
+        console.warn(`⚠️ Failed to fetch ${file}:`, err);
+      } finally {
+        loadedCount++;
+        updateLoadingProgress(loadedCount, totalCount);
       }
+    });
 
-      hideLoading();
-      renderShows();
-      renderContinueWatching();
-	  dataLoaded = true;
-	  const langFilter = document.getElementById('languageFilter');
-      langFilter.disabled = false;
-      langFilter.classList.remove('loading');
-    }
+    await Promise.all(promises);
+
+    allShows = fetchedShows;
+    filteredShows = [...allShows];
+
+    // ✅ Cache parsed data for future loads
+    localStorage.setItem(cacheKey, JSON.stringify(allShows));
+
+  } catch (error) {
+    console.error('❌ Error loading shows:', error);
+  }
+
+  hideLoading();
+  renderShows();
+  renderContinueWatching();
+  dataLoaded = true;
+  document.getElementById('languageFilter').disabled = false;
+}
 
     // Update loading progress
     function updateLoadingProgress(loaded, total) {
@@ -1423,17 +1554,17 @@ function showToast(message) {
     const info = show.show || show;
     const title = info.title?.toLowerCase() || '';
     const description = info.description?.toLowerCase() || '';
-    const matchesSearch = !searchTerm || title.includes(searchTerm) || description.includes(searchTerm);
+    const showLanguage = (info.language || '').trim().toLowerCase();
 
-    // Use only `language` field for filtering
-    const showLanguage = (info.language || 'unknown').trim().toLowerCase();
-    const matchesLanguage = filterLanguage === 'all' || showLanguage === filterLanguage;
-
-    return matchesSearch && matchesLanguage;
+    return (
+      (!searchTerm || title.includes(searchTerm) || description.includes(searchTerm)) &&
+      (filterLanguage === 'all' || showLanguage === filterLanguage)
+    );
   });
 
   renderShows();
 }
+
 
     // Render shows grid
     function renderShows() {
@@ -1480,46 +1611,63 @@ function showToast(message) {
 
     // Render continue watching section
     function renderContinueWatching() {
-      continueGrid.innerHTML = '';
-      
-      const continueItems = Object.entries(watchHistory)
-        .filter(([slug, data]) => {
-  const show = allShows.find(s => (s.show || s).slug === slug);
-  if (!show || !Array.isArray(show.episodes) || show.episodes.length === 0) return false;
+  const container = document.getElementById('continueGrid');
+  container.innerHTML = '';
 
-  const totalEpisodes = show.episodes.length;
-  const lastWatched = data.episodeIndex;
-  const watchedEnough = data.progress >= 0.95;
-
-  const isLastEpisode = lastWatched >= totalEpisodes - 1;
-
-  if (isLastEpisode && watchedEnough) {
-    console.log(`Removing ${slug} from watch history (completed).`);
-    delete watchHistory[slug];
-    saveWatchHistory();
-    return false;
+  const items = Object.entries(watchHistory);
+  if (items.length === 0) {
+    continueSection.style.display = 'none';
+    return;
   }
 
-  return true;
-})
+  continueSection.style.display = 'block';
 
-        .sort(([,a], [,b]) => b.lastWatched - a.lastWatched)
-        .slice(0, 10);
-      
-      if (continueItems.length === 0) {
-        continueSection.classList.add('hidden');
-        return;
-      }
-      
-      continueSection.classList.remove('hidden');
-      
-      continueItems.forEach(([slug, data]) => {
-        const show = allShows.find(s => (s.show || s).slug === slug);
-        if (show) {
-          renderContinueCard(show, data);
-        }
-      });
-    }
+  items.forEach(([slug, item]) => {
+    const show = allShows.find(s => (s.show || s).slug === slug);
+    if (!show) return; // Skip if show not found
+
+    const info = show.show || show;
+    const imageUrl = info.image || info.share_image_url || info.original_image ||
+                     `https://via.placeholder.com/80x60/1a1a1a/666666?text=${encodeURIComponent(info.title || 'Show')}`;
+    const title = info.title || 'Untitled Show';
+    const episodeIndex = item.episodeIndex || 0;
+    const episode = show.episodes?.[episodeIndex];
+    const episodeTitle = episode ? `Ep ${episode.episode_index}: ${episode.title}` : `Episode ${episodeIndex + 1}`;
+    const progress = Math.round((item.progress || 0) * 100);
+
+    const card = document.createElement('div');
+    card.className = 'continue-card';
+    card.innerHTML = `
+      <div class="continue-thumbnail-wrapper">
+        <img src="${imageUrl}" alt="${title}" class="continue-thumbnail" />
+        <button class="remove-btn" title="Remove" data-slug="${slug}">✖</button>
+      </div>
+      <div class="continue-title">${title}</div>
+      <div class="continue-episode">${episodeTitle}</div>
+      <div class="progress-bar"><div class="progress-fill" style="width: ${progress}%;"></div></div>
+    `;
+
+    card.addEventListener('click', (e) => {
+      if (e.target.classList.contains('remove-btn')) return;
+      openPlayer(show, episodeIndex);
+    });
+
+    container.appendChild(card);
+  });
+
+  // Add remove button logic
+  container.querySelectorAll('.remove-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const slug = btn.getAttribute('data-slug');
+      delete watchHistory[slug];
+      saveWatchHistory();
+      renderContinueWatching();
+    });
+  });
+}
+
+
 
     // Render continue watching card
     function renderContinueCard(show, watchData) {
