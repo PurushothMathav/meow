@@ -739,10 +739,10 @@ body {
 
   <!-- Main Content -->
   <main class="main-content">
-    <h2 class="section-title">Bengali Shows</h2>
+    <h2 class="section-title">Tamil Shows</h2>
     <div class="loading" id="loadingState">
       <div class="spinner"></div>
-      <div class="loading-text">Loading Bengali shows...</div>
+      <div class="loading-text">Loading Tamil shows...</div>
     </div>
     <div class="shows-grid" id="showsGrid"></div>
     <div class="empty-state hidden" id="emptyState">
@@ -811,115 +811,25 @@ let hls = null;
 let autoPlayEnabled = true;
 let watchHistory = {};
 let searchTimeout = null;
-let currentLanguage = 'bengali'; // Default language
+let currentLanguage = 'tamil'; // Default language
 
 // Get current page language
 function getCurrentLanguage() {
   const path = window.location.pathname;
-  const filename = path.split('/').pop() || 'bengali.html';
+  const filename = path.split('/').pop() || 'index.html';
   
-  if (filename === 'bengali.html') return 'bengali';
+  if (filename === 'index.html') return 'tamil';
   return filename.replace('.html', '');
 }
 
 // Get JSON files for current language
 function getLanguageFiles() {
   return [
-  "/meow/json/A Vow of Joy and Sorrow-Bengali.json",
-  "/meow/json/After Divorcing my Star Wife, I became famous-Bengali.json",
-  "/meow/json/Alpha's Perfect Love-Bengali.json",
-  "/meow/json/Alpha, She Wasn't the One-Bengali.json",
-  "/meow/json/As You Wish-Bengali.json",
-  "/meow/json/Aunt is not easy to provoke-Bengali.json",
-  "/meow/json/Back to 1990-Bengali.json",
-  "/meow/json/Becoming Light-Bengali.json",
-  "/meow/json/Betrayed Heiress - Vengeance Reborn-Bengali.json",
-  "/meow/json/Billionaire Daddy, the Hunt is On-Bengali.json",
-  "/meow/json/Billionaire Playboy's Replacement Bride-Bengali.json",
-  "/meow/json/Black Widow-Bengali.json",
-  "/meow/json/Boss And the Sweet Wife-Bengali.json",
-  "/meow/json/Chinese New Year - The Hidden Dragon Returns to the Village-Bengali.json",
-  "/meow/json/Cursed Daughter-Bengali.json",
-  "/meow/json/Cute Baby Assists_ I Help My Mom Marry the President Tycoon-Bengali.json",
-  "/meow/json/Defying Destiny-Bengali.json",
-  "/meow/json/Desperate Cage - Miss Sun Fights Back-Bengali.json",
-  "/meow/json/Desperate Husband's Revenge-Bengali.json",
-  "/meow/json/Destined to Meet You-Bengali.json",
-  "/meow/json/Divorced Single Mother-Bengali.json",
-  "/meow/json/Don't Get Your Heart Fluttering for Me-Bengali.json",
-  "/meow/json/Don't Mess With Super DAD-Bengali.json",
-  "/meow/json/Don't touch my Daughter-Bengali.json",
-  "/meow/json/Double Life CEO_ Chasing Love-Bengali.json",
-  "/meow/json/Ek Anjani Shaadi-Bengali.json",
-  "/meow/json/Fake boyfriend-Bengali.json",
-  "/meow/json/Fallen Angel-Bengali.json",
-  "/meow/json/Flash Marriage with a Big Shot-Bengali.json",
-  "/meow/json/Fleeing Husband Please Love Me All Over Again-Bengali.json",
-  "/meow/json/Forbidden Bonds with My Brothers-Bengali.json",
-  "/meow/json/Forever Love-Bengali.json",
-  "/meow/json/Give me a Hug-Bengali.json",
-  "/meow/json/Gone, Yet Loved by Him-Bengali.json",
-  "/meow/json/Got you Mr. Always Right-Bengali.json",
-  "/meow/json/Happily Never After-Bengali.json",
-  "/meow/json/Harvest of ambition, a CEO's odyssey-Bengali.json",
-  "/meow/json/Hollywood Staged Romance_ Live 24_7-Bengali.json",
-  "/meow/json/Late Love-Bengali.json",
-  "/meow/json/Let Me Go, My Queen-Bengali.json",
-  "/meow/json/Losing My Virginity-Bengali.json",
-  "/meow/json/Lost in Love-Bengali.json",
-  "/meow/json/Love is Right In front of You-Bengali.json",
-  "/meow/json/LOVE TEASE-Bengali.json",
-  "/meow/json/LUCIFER, MY BOYFRIEND FROM HELL-Bengali.json",
-  "/meow/json/Madam Wants To Sell Fish-Bengali.json",
-  "/meow/json/Migrant Worker's Love Story-Bengali.json",
-  "/meow/json/Misty Medical Immortal-Bengali.json",
-  "/meow/json/Mr. Ji, See Clearly, I'm Your Bodyguard-Bengali.json",
-  "/meow/json/My Brother, You Can't Afford to Mess With-Bengali.json",
-  "/meow/json/My Call Boy Billionaire Daddy-Bengali.json",
-  "/meow/json/Once Upon a Divorce_ The Double Life of Lady Diana-Bengali.json",
-  "/meow/json/Phoenix Rising-Bengali.json",
-  "/meow/json/Rebirth_ Hunting Crimes Album-Bengali.json",
-  "/meow/json/Return of His Majesty-Bengali.json",
-  "/meow/json/Return of the Supreme-Bengali.json",
-  "/meow/json/Romance with My Vampire Brother-Bengali.json",
-  "/meow/json/Secret Billionaire Villager-Bengali.json",
-  "/meow/json/Secret Husband-Bengali.json",
-  "/meow/json/Secret Mrs CEO-Bengali.json",
-  "/meow/json/Shelter In The Mafia-Bengali.json",
-  "/meow/json/Spark My Fire-Bengali.json",
-  "/meow/json/Star Moon Romance_ Rejected And Reborn As Alpha-Bengali.json",
-  "/meow/json/Study God-Bengali.json",
-  "/meow/json/Supreme Master Asks You to Believe in Science-Bengali.json",
-  "/meow/json/Supreme Wealth-Bengali.json",
-  "/meow/json/Tangled Ties and Tipsy Vows-Bengali.json",
-  "/meow/json/Tenacious Healer-Bengali.json",
-  "/meow/json/The Ardent Scholar from a Poor Family-Bengali.json",
-  "/meow/json/The Awakening-Bengali.json",
-  "/meow/json/The First Prince of Daxia-Bengali.json",
-  "/meow/json/The God King returns-Bengali.json",
-  "/meow/json/The Immortal Emperor Returns My Wife Pulled Out My Oxygen Tube-Bengali.json",
-  "/meow/json/The Last Recipe-Bengali.json",
-  "/meow/json/The Love That Kills-Bengali.json",
-  "/meow/json/The Officer Fell for Me-Bengali.json",
-  "/meow/json/The Runaway CEO has Two Babies-Bengali.json",
-  "/meow/json/The Sage Doctor-Bengali.json",
-  "/meow/json/The Stars Know My Heart-Bengali.json",
-  "/meow/json/The Storm-Bengali.json",
-  "/meow/json/The Substitute Bride-Bengali.json",
-  "/meow/json/The World in my grasp-Bengali.json",
-  "/meow/json/The Wronged Mother-Bengali.json",
-  "/meow/json/There Is None Under Heaven to Equal Her-Bengali.json",
-  "/meow/json/Three Brothers Dote on Me-Bengali.json",
-  "/meow/json/Too Heavy To Handle-Bengali.json",
-  "/meow/json/True and False Dragon Commander-Bengali.json",
-  "/meow/json/Unrivalled in the Imperial Harem-Bengali.json",
-  "/meow/json/Vicious Son in Law, Don't Mess with Me-Bengali.json",
-  "/meow/json/Waiting for Love-Bengali.json",
-  "/meow/json/Wake Up, Dad Wedding Time-Bengali.json",
-  "/meow/json/Wealthy Hero-Bengali.json",
-  "/meow/json/When the Sun Sets on Us-Bengali.json",
-  "/meow/json/Where Love Fades Away-Bengali.json",
-  "/meow/json/Wonder Boy Parth-Bengali.json"	
+  "json/7 Assasins-Tamil.json",
+  "json/A Vow of Joy and Sorrow-Tamil.json",
+  "json/After Divorce , the ex-wife of the big shot  stirs up the world-Tamil.json",
+  "json/After divorce, my wife become a trillionaire-Tamil.json",
+  "json/After Divorcing my Star Wife, I became famous-Tamil.json",	
   ];
 }
 
@@ -1050,7 +960,7 @@ qualitySelect.addEventListener('change', (e) => {
 
 // Load shows for current language
 async function loadShows() {
-  const cacheKey = `cached_kukufm_shows_bengali`;
+  const cacheKey = `cached_kukufm_shows_tamil`;
   
   // Try loading from cache first
   try {
@@ -1261,7 +1171,7 @@ function removeFromContinue(showId) {
   saveWatchHistory();
   
   // Clear cache to prevent reload issues - ADD THESE LINES
-  const cacheKey = `cached_kukufm_shows_bengali`;
+  const cacheKey = `cached_kukufm_shows_tamil`;
   localStorage.removeItem(cacheKey);
   
   renderContinueWatching();

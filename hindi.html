@@ -1475,7 +1475,7 @@ function handleVideoEnded() {
     showToast(`Auto-playing Episode ${nextIndex + 1}`);
     setTimeout(() => {
       loadEpisode(nextIndex);
-    }, 2000);
+    }, 500);
   } else {
     showToast('Series completed!');
     
