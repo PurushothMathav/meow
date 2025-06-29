@@ -616,6 +616,11 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.75rem;
   }
+  
+  #continueGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }  
 
   .show-image {
     height: 180px;
@@ -1084,6 +1089,53 @@ qualitySelect.addEventListener('change', (e) => {
       history.pushState(null, null, window.location.href);
     }
   });
+  
+  // Touch/Swipe handling for episode navigation
+  let touchStartY = 0;
+  let touchEndY = 0;
+  let isSwipeActive = false;
+
+  videoPlayer.addEventListener('touchstart', (e) => {
+    touchStartY = e.changedTouches[0].screenY;
+    isSwipeActive = true;
+  }, { passive: true });
+
+  videoPlayer.addEventListener('touchmove', (e) => {
+    if (!isSwipeActive) return;
+    touchEndY = e.changedTouches[0].screenY;
+  }, { passive: true });
+
+  videoPlayer.addEventListener('touchend', (e) => {
+    if (!isSwipeActive) return;
+    isSwipeActive = false;
+    
+    const swipeDistance = touchStartY - touchEndY;
+    const minSwipeDistance = 50;
+    
+    if (Math.abs(swipeDistance) >= minSwipeDistance) {
+      const currentIndex = parseInt(episodeSelect.value) || 0;
+      
+      if (swipeDistance > 0) {
+        // Swipe up - Next episode
+        const nextIndex = currentIndex + 1;
+        if (nextIndex < currentEpisodes.length) {
+          loadEpisode(nextIndex);
+          showToast(`Episode ${nextIndex + 1}`);
+        } else {
+          showToast('Last episode');
+        }
+      } else {
+        // Swipe down - Previous episode
+        const prevIndex = currentIndex - 1;
+        if (prevIndex >= 0) {
+          loadEpisode(prevIndex);
+          showToast(`Episode ${prevIndex + 1}`);
+        } else {
+          showToast('First episode');
+        }
+      }
+    }
+  }, { passive: true });  
 }
 
 // Load shows for current language
