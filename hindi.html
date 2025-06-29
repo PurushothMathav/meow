@@ -1090,52 +1090,139 @@ qualitySelect.addEventListener('change', (e) => {
     }
   });
   
-  // Touch/Swipe handling for episode navigation
-  let touchStartY = 0;
-  let touchEndY = 0;
-  let isSwipeActive = false;
+  // Touch/Swipe handling for episode navigation - UPDATED VERSION
+let touchStartY = 0;
+let touchEndY = 0;
+let touchStartX = 0;
+let touchEndX = 0;
+let touchStartTime = 0;
+let isSwipeActive = false;
 
-  videoPlayer.addEventListener('touchstart', (e) => {
-    touchStartY = e.changedTouches[0].screenY;
-    isSwipeActive = true;
-  }, { passive: true });
-
-  videoPlayer.addEventListener('touchmove', (e) => {
-    if (!isSwipeActive) return;
-    touchEndY = e.changedTouches[0].screenY;
-  }, { passive: true });
-
-  videoPlayer.addEventListener('touchend', (e) => {
-    if (!isSwipeActive) return;
+videoPlayer.addEventListener('touchstart', (e) => {
+  // Ignore touches on video controls
+  if (e.target.closest('.player-controls')) {
     isSwipeActive = false;
-    
-    const swipeDistance = touchStartY - touchEndY;
-    const minSwipeDistance = 50;
-    
-    if (Math.abs(swipeDistance) >= minSwipeDistance) {
-      const currentIndex = parseInt(episodeSelect.value) || 0;
-      
-      if (swipeDistance > 0) {
-        // Swipe up - Next episode
-        const nextIndex = currentIndex + 1;
-        if (nextIndex < currentEpisodes.length) {
-          loadEpisode(nextIndex);
-          showToast(`Episode ${nextIndex + 1}`);
-        } else {
-          showToast('Last episode');
-        }
-      } else {
-        // Swipe down - Previous episode
-        const prevIndex = currentIndex - 1;
-        if (prevIndex >= 0) {
-          loadEpisode(prevIndex);
-          showToast(`Episode ${prevIndex + 1}`);
-        } else {
-          showToast('First episode');
-        }
-      }
+    return;
+  }
+  
+  // Only handle single finger touches
+  if (e.touches.length !== 1) {
+    isSwipeActive = false;
+    return;
+  }
+  
+  const touch = e.changedTouches[0];
+  touchStartY = touch.clientY;
+  touchStartX = touch.clientX;
+  touchStartTime = Date.now();
+  isSwipeActive = true;
+}, { passive: true });
+
+videoPlayer.addEventListener('touchmove', (e) => {
+  if (!isSwipeActive || e.touches.length !== 1) return;
+  
+  const touch = e.changedTouches[0];
+  touchEndY = touch.clientY;
+  touchEndX = touch.clientX;
+}, { passive: true });
+
+videoPlayer.addEventListener('touchend', (e) => {
+  if (!isSwipeActive) return;
+  isSwipeActive = false;
+  
+  // Check swipe duration (must be between 100ms and 1000ms)
+  const swipeDuration = Date.now() - touchStartTime;
+  if (swipeDuration < 100 || swipeDuration > 1000) {
+    return;
+  }
+  
+  // Calculate distances
+  const verticalDistance = touchStartY - touchEndY;
+  const horizontalDistance = Math.abs(touchEndX - touchStartX);
+  
+  // Minimum swipe distance and maximum horizontal movement
+  const minSwipeDistance = 100; // Increased from 50
+  const maxHorizontalMovement = 50;
+  
+  // Ignore if not enough vertical movement or too much horizontal movement
+  if (Math.abs(verticalDistance) < minSwipeDistance || horizontalDistance > maxHorizontalMovement) {
+    return;
+  }
+  
+  // Prevent default to avoid any unwanted behaviors
+  e.preventDefault();
+  
+  const currentIndex = parseInt(episodeSelect.value) || 0;
+  
+  if (verticalDistance > 0) {
+    // Swipe up - Next episode
+    const nextIndex = currentIndex + 1;
+    if (nextIndex < currentEpisodes.length) {
+      loadEpisode(nextIndex);
+      showToast(`Episode ${nextIndex + 1}`);
+    } else {
+      showToast('Last episode');
     }
-  }, { passive: true });  
+  } else {
+    // Swipe down - Previous episode
+    const prevIndex = currentIndex - 1;
+    if (prevIndex >= 0) {
+      loadEpisode(prevIndex);
+      showToast(`Episode ${prevIndex + 1}`);
+    } else {
+      showToast('First episode');
+    }
+  }
+}, { passive: false }); // Changed to false to allow preventDefault
+
+// BONUS: Add left/right click for episode navigation (desktop)
+videoPlayer.addEventListener('click', (e) => {
+  // Only on desktop (not touch devices)
+  if ('ontouchstart' in window) return;
+  
+  // Ignore if video controls are visible/clicked
+  if (videoPlayer.controls || e.target.closest('.player-controls')) return;
+  
+  const rect = videoPlayer.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+  const videoWidth = rect.width;
+  
+  // Divide video into left and right halves
+  const currentIndex = parseInt(episodeSelect.value) || 0;
+  
+  if (clickX < videoWidth / 2) {
+    // Left side click - Previous episode
+    const prevIndex = currentIndex - 1;
+    if (prevIndex >= 0) {
+      loadEpisode(prevIndex);
+      showToast(`Episode ${prevIndex + 1}`);
+    } else {
+      showToast('First episode');
+    }
+  } else {
+    // Right side click - Next episode
+    const nextIndex = currentIndex + 1;
+    if (nextIndex < currentEpisodes.length) {
+      loadEpisode(nextIndex);
+      showToast(`Episode ${nextIndex + 1}`);
+    } else {
+      showToast('Last episode');
+    }
+  }
+});
+
+// Optional: Add visual feedback for swipe areas (you can remove this)
+videoPlayer.addEventListener('touchstart', (e) => {
+  if (!isSwipeActive) return;
+  
+  // Add a subtle visual indicator
+  videoPlayer.style.filter = 'brightness(0.9)';
+}, { passive: true });
+
+videoPlayer.addEventListener('touchend', () => {
+  // Remove visual indicator
+  videoPlayer.style.filter = '';
+}, { passive: true });  
 }
 
 // Load shows for current language
