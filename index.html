@@ -1363,6 +1363,13 @@ async function loadShows() {
     await Promise.all(promises);
     
     allShows = fetchedShows;
+	
+	allShows.sort((a, b) => {
+		const titleA = (a.show?.title || '').toLowerCase();
+		const titleB = (b.show?.title || '').toLowerCase();
+		return titleA.localeCompare(titleB);
+	});
+
     filteredShows = [...allShows];
     
     // Cache the data
@@ -1403,6 +1410,13 @@ function handleSearch(query) {
       show.show?.title?.toLowerCase().includes(searchTerm) ||
       show.show?.description?.toLowerCase().includes(searchTerm)
     );
+    
+    // Sort search results too
+    filteredShows.sort((a, b) => {
+      const titleA = (a.show?.title || '').toLowerCase();
+      const titleB = (b.show?.title || '').toLowerCase();
+      return titleA.localeCompare(titleB);
+    });
   }
   renderShows();
 }
