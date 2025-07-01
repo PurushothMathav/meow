@@ -22,6 +22,9 @@ Each page corresponds to a different language and presents its own list of shows
 - 🗂 JSON-based content loading
 - 🌙 Dark-themed UI
 - 📲 PWA-ready via `manifest.json` and `service-worker.js`
+- ✋ Swipe-only episode navigation (single-tap no longer changes episode)
+- 🆕 Auto-update prompt when new service worker is available
+- 🧠 Intelligent caching strategies (network-first JSON, cache-first static)
 
 ## 📁 Project Structure
 
@@ -48,15 +51,17 @@ Each page corresponds to a different language and presents its own list of shows
   - Fonts, icons, and HLS.js script
   - Manifest and images
 - Manifest enables installability on mobile and desktop.
+- Auto-update logic notifies the user and reloads the app in place.
+- Background cache updates notify clients silently or visually.
 
 ## 🚀 How to Run Locally
 
 ```bash
 # 1. Serve files using any static server
-python -m http.server { [Port_Number] = Optional }
+python -m http.server 8080
 ```
 
-Make sure your paths are correct (`/meow/...`) or update them if serving from the root.
+> ⚠️ Make sure your paths are correct (`/meow/...`) or update them if serving from root (`./`).
 
 ## 📄 manifest.json Highlights
 
@@ -67,18 +72,42 @@ Make sure your paths are correct (`/meow/...`) or update them if serving from th
 
 ## 🔧 Service Worker Strategies
 
-- `Cache First` for static assets (HTML, CSS, fonts)
-- `Cache First` for JSON files
-- `Network Only` for video streams
-- Auto update check every 30 seconds
+- `Cache First` for:
+  - Static HTML
+  - Fonts
+  - Icons
+  - Images
+- `Network First` for:
+  - JSON show data (with background updates)
+- `Network Only` for:
+  - HLS and video stream files
+- Periodic update check every 30 seconds
+- Push notification & sync support included
+- Auto-prompts user when a new version is available
 
 ## 📌 To-Do / Improvements
 
 - ✅ Unified language menu across all pages
-- ⏳ Add language-based filtering of JSON dynamically
+- ✅ Service worker with auto-update and messaging
+- ✅ Swipe-only episode switching (disable single tap change)
 - ⏳ Offline playback support
 - ⏳ UI improvements and animations
 - ⏳ Analytics & error reporting
+
+## 📝 Changelog
+
+### [v1.1.1] – 2025-07-01
+
+- ✋ Disabled single-tap episode switching to avoid accidental changes
+- 🚀 Added advanced service worker update logic with:
+  - Update prompts
+  - Background cache refresh
+  - Periodic update polling
+- ✅ `FORCE_UPDATE`, `CLEAR_CACHE`, and `GET_CACHE_INFO` message handlers added
+- ✅ New toast and notification UI for update status
+- 📦 Improved caching logic for dynamic and static assets
+
+---
 
 ## 📃 License
 
