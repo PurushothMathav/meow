@@ -1077,7 +1077,7 @@ qualitySelect.addEventListener('change', (e) => {
     }
   });
   
-  // Touch/Swipe handling for episode navigation - UPDATED VERSION
+// Touch/Swipe handling for episode navigation - UPDATED FOR LEFT/RIGHT
 let touchStartY = 0;
 let touchEndY = 0;
 let touchStartX = 0;
@@ -1123,16 +1123,16 @@ videoPlayer.addEventListener('touchend', (e) => {
     return;
   }
   
-  // Calculate distances
-  const verticalDistance = touchStartY - touchEndY;
-  const horizontalDistance = Math.abs(touchEndX - touchStartX);
+  // Calculate distances - SWAPPED FOR HORIZONTAL NAVIGATION
+  const horizontalDistance = touchStartX - touchEndX;
+  const verticalDistance = Math.abs(touchEndY - touchStartY);
   
-  // Minimum swipe distance and maximum horizontal movement
-  const minSwipeDistance = 100; // Increased from 50
-  const maxHorizontalMovement = 50;
+  // Minimum swipe distance and maximum vertical movement
+  const minSwipeDistance = 100;
+  const maxVerticalMovement = 50;
   
-  // Ignore if not enough vertical movement or too much horizontal movement
-  if (Math.abs(verticalDistance) < minSwipeDistance || horizontalDistance > maxHorizontalMovement) {
+  // Ignore if not enough horizontal movement or too much vertical movement
+  if (Math.abs(horizontalDistance) < minSwipeDistance || verticalDistance > maxVerticalMovement) {
     return;
   }
   
@@ -1141,28 +1141,38 @@ videoPlayer.addEventListener('touchend', (e) => {
   
   const currentIndex = parseInt(episodeSelect.value) || 0;
   
-  if (verticalDistance > 0) {
-    // Swipe up - Next episode
+  if (horizontalDistance > 0) {
+    // Swipe left - Next episode
     const nextIndex = currentIndex + 1;
     if (nextIndex < currentEpisodes.length) {
       loadEpisode(nextIndex);
-      showToast(`Episode ${nextIndex + 1}`);
+      showToast(`Next Episode ${nextIndex + 1}`);
     } else {
       showToast('Last episode');
     }
   } else {
-    // Swipe down - Previous episode
+    // Swipe right - Previous episode
     const prevIndex = currentIndex - 1;
     if (prevIndex >= 0) {
       loadEpisode(prevIndex);
-      showToast(`Episode ${prevIndex + 1}`);
+      showToast(`Previous Episode ${prevIndex + 1}`);
     } else {
       showToast('First episode');
     }
   }
-}, { passive: false }); // Changed to false to allow preventDefault
+}, { passive: false });
 
-// BONUS: Add left/right click for episode navigation (desktop)
+// Visual feedback for swipe areas
+videoPlayer.addEventListener('touchstart', (e) => {
+  if (!isSwipeActive) return;
+  videoPlayer.style.filter = 'brightness(0.9)';
+}, { passive: true });
+
+videoPlayer.addEventListener('touchend', () => {
+  videoPlayer.style.filter = '';
+}, { passive: true });
+
+// PC Navigation - Left/Right click for episode navigation
 videoPlayer.addEventListener('click', (e) => {
   // Only on desktop (not touch devices)
   if ('ontouchstart' in window) return;
@@ -1182,7 +1192,7 @@ videoPlayer.addEventListener('click', (e) => {
     const prevIndex = currentIndex - 1;
     if (prevIndex >= 0) {
       loadEpisode(prevIndex);
-      showToast(`Episode ${prevIndex + 1}`);
+      showToast(`Previous Episode ${prevIndex + 1}`);
     } else {
       showToast('First episode');
     }
@@ -1191,25 +1201,95 @@ videoPlayer.addEventListener('click', (e) => {
     const nextIndex = currentIndex + 1;
     if (nextIndex < currentEpisodes.length) {
       loadEpisode(nextIndex);
-      showToast(`Episode ${nextIndex + 1}`);
+      showToast(`Next Episode ${nextIndex + 1}`);
     } else {
       showToast('Last episode');
     }
   }
 });
 
-// Optional: Add visual feedback for swipe areas (you can remove this)
-videoPlayer.addEventListener('touchstart', (e) => {
-  if (!isSwipeActive) return;
-  
-  // Add a subtle visual indicator
-  videoPlayer.style.filter = 'brightness(0.9)';
-}, { passive: true });
-
-videoPlayer.addEventListener('touchend', () => {
-  // Remove visual indicator
-  videoPlayer.style.filter = '';
-}, { passive: true });  
+// PC Keyboard shortcuts - UPDATED
+document.addEventListener('keydown', (e) => {
+  if (playerOverlay.style.display === 'flex') {
+    switch(e.key) {
+      case ' ':
+        e.preventDefault();
+        if (videoPlayer.paused) {
+          videoPlayer.play();
+        } else {
+          videoPlayer.pause();
+        }
+        break;
+      case 'ArrowLeft':
+        e.preventDefault();
+        // Check if Shift is pressed for episode navigation
+        if (e.shiftKey) {
+          const currentIndex = parseInt(episodeSelect.value) || 0;
+          const prevIndex = currentIndex - 1;
+          if (prevIndex >= 0) {
+            loadEpisode(prevIndex);
+            showToast(`Previous Episode ${prevIndex + 1}`);
+          } else {
+            showToast('First episode');
+          }
+        } else {
+          // Normal seek backward
+          videoPlayer.currentTime = Math.max(0, videoPlayer.currentTime - 10);
+        }
+        break;
+      case 'ArrowRight':
+        e.preventDefault();
+        // Check if Shift is pressed for episode navigation
+        if (e.shiftKey) {
+          const currentIndex = parseInt(episodeSelect.value) || 0;
+          const nextIndex = currentIndex + 1;
+          if (nextIndex < currentEpisodes.length) {
+            loadEpisode(nextIndex);
+            showToast(`Next Episode ${nextIndex + 1}`);
+          } else {
+            showToast('Last episode');
+          }
+        } else {
+          // Normal seek forward
+          videoPlayer.currentTime = Math.min(videoPlayer.duration, videoPlayer.currentTime + 10);
+        }
+        break;
+      case 'ArrowUp':
+        e.preventDefault();
+        videoPlayer.volume = Math.min(1, videoPlayer.volume + 0.1);
+        break;
+      case 'ArrowDown':
+        e.preventDefault();
+        videoPlayer.volume = Math.max(0, videoPlayer.volume - 0.1);
+        break;
+      // Additional episode navigation keys
+      case 'n':
+      case 'N':
+        e.preventDefault();
+        const currentIndex = parseInt(episodeSelect.value) || 0;
+        const nextIndex = currentIndex + 1;
+        if (nextIndex < currentEpisodes.length) {
+          loadEpisode(nextIndex);
+          showToast(`Next Episode ${nextIndex + 1}`);
+        } else {
+          showToast('Last episode');
+        }
+        break;
+      case 'p':
+      case 'P':
+        e.preventDefault();
+        const currentIdx = parseInt(episodeSelect.value) || 0;
+        const prevIndex = currentIdx - 1;
+        if (prevIndex >= 0) {
+          loadEpisode(prevIndex);
+          showToast(`Previous Episode ${prevIndex + 1}`);
+        } else {
+          showToast('First episode');
+        }
+        break;
+    }
+  }
+});  
 }
 
 // Load shows for current language
