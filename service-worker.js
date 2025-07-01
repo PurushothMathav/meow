@@ -1,7 +1,7 @@
-const CACHE_NAME = 'kukufm-v0107251700';
+const CACHE_NAME = 'kukufm-v0107252000';
 const STATIC_CACHE = `${CACHE_NAME}-static`;
 const DYNAMIC_CACHE = `${CACHE_NAME}-dynamic`;
-const UPDATE_CHECK_INTERVAL = 30000; // Check for updates every 30 seconds
+const UPDATE_CHECK_INTERVAL = 30000;
 
 // Files to cache immediately
 const STATIC_ASSETS = [
@@ -45,7 +45,7 @@ self.addEventListener('install', event => {
       })
       .then(() => {
         console.log('[SW] Static assets cached successfully');
-        // Force activation of new service worker
+        // Force activation immediately
         return self.skipWaiting();
       })
       .catch(error => {
@@ -80,15 +80,19 @@ self.addEventListener('activate', event => {
     ])
     .then(() => {
       console.log('[SW] Service worker activated and ready');
-      // Notify all clients about the update
-      return self.clients.matchAll();
+      // Force reload of all clients to ensure they use the new service worker
+      return self.clients.matchAll({ type: 'window' });
     })
     .then(clients => {
       clients.forEach(client => {
+        // Send update message to client
         client.postMessage({
-          type: 'SW_ACTIVATED',
-          message: 'Service worker updated successfully'
+          type: 'SW_UPDATED',
+          message: 'Service worker updated - reloading content'
         });
+        
+        // Force reload the client to ensure new service worker takes control
+        client.navigate(client.url);
       });
     })
   );
@@ -122,16 +126,10 @@ async function handleFetch(request) {
       return await cacheFirst(request, STATIC_CACHE);
     }
 	
-	/*
+    // Strategy 2: JSON files - Network First (CHANGED from cacheFirst)
     if (CACHE_PATTERNS.json.test(url.pathname)) {
-      return await networkFirstWithUpdate(request, DYNAMIC_CACHE);
-    } */
-	
-	// Strategy 2: JSON files - Network First with fallback
-	if (CACHE_PATTERNS.json.test(url.pathname)) {
-	  return await cacheFirst(request, DYNAMIC_CACHE); 
-	}
-
+      return await networkFirstWithUpdate(request, DYNAMIC_CACHE); 
+    }
 
     // Strategy 3: Images - Cache First with network fallback
     if (CACHE_PATTERNS.images.test(url.pathname)) {
@@ -162,7 +160,7 @@ async function handleFetch(request) {
     // Return offline fallback if available
     if (url.origin === self.location.origin) {
       const cache = await caches.open(STATIC_CACHE);
-      const cachedResponse = await cache.match('/index.html');
+      const cachedResponse = await cache.match('/meow/index.html'); // Fixed path
       return cachedResponse || new Response('Offline', { status: 503 });
     }
     
@@ -181,22 +179,48 @@ function isStaticAsset(request) {
   });
 }
 
-// Cache First Strategy
+// Cache First Strategy with TTL check
 async function cacheFirst(request, cacheName) {
   const cache = await caches.open(cacheName);
   const cachedResponse = await cache.match(request);
   
   if (cachedResponse) {
-    // Update cache in background if it's old
-    updateCacheInBackground(request, cache);
-    return cachedResponse;
+    // Check if cache is stale (older than 1 hour for dynamic content)
+    const cacheDate = cachedResponse.headers.get('sw-cache-date');
+    const isStale = cacheDate && (Date.now() - parseInt(cacheDate)) > 3600000; // 1 hour
+    
+    if (!isStale || cacheName === STATIC_CACHE) {
+      // Update cache in background for dynamic content
+      if (cacheName === DYNAMIC_CACHE) {
+        updateCacheInBackground(request, cache);
+      }
+      return cachedResponse;
+    }
   }
   
-  const networkResponse = await fetch(request);
-  if (networkResponse.ok) {
-    cache.put(request, networkResponse.clone());
+  try {
+    const networkResponse = await fetch(request);
+    if (networkResponse.ok) {
+      // Add cache timestamp
+      const responseToCache = networkResponse.clone();
+      const headers = new Headers(responseToCache.headers);
+      headers.set('sw-cache-date', Date.now().toString());
+      
+      const cachedResponse = new Response(responseToCache.body, {
+        status: responseToCache.status,
+        statusText: responseToCache.statusText,
+        headers: headers
+      });
+      
+      cache.put(request, cachedResponse);
+    }
+    return networkResponse;
+  } catch (error) {
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+    throw error;
   }
-  return networkResponse;
 }
 
 // Network First Strategy
@@ -205,7 +229,17 @@ async function networkFirst(request, cacheName) {
     const networkResponse = await fetch(request);
     if (networkResponse.ok) {
       const cache = await caches.open(cacheName);
-      cache.put(request, networkResponse.clone());
+      const responseToCache = networkResponse.clone();
+      const headers = new Headers(responseToCache.headers);
+      headers.set('sw-cache-date', Date.now().toString());
+      
+      const cachedResponse = new Response(responseToCache.body, {
+        status: responseToCache.status,
+        statusText: responseToCache.statusText,
+        headers: headers
+      });
+      
+      cache.put(request, cachedResponse);
     }
     return networkResponse;
   } catch (error) {
@@ -225,10 +259,20 @@ async function networkFirstWithUpdate(request, cacheName) {
   try {
     const networkResponse = await fetch(request);
     if (networkResponse.ok) {
-      cache.put(request, networkResponse.clone());
+      const responseToCache = networkResponse.clone();
+      const headers = new Headers(responseToCache.headers);
+      headers.set('sw-cache-date', Date.now().toString());
+      
+      const cachedResponse = new Response(responseToCache.body, {
+        status: responseToCache.status,
+        statusText: responseToCache.statusText,
+        headers: headers
+      });
+      
+      cache.put(request, cachedResponse);
       
       // Notify clients about updated content
-      const clients = await self.clients.matchAll();
+      const clients = await self.clients.matchAll({ type: 'window' });
       clients.forEach(client => {
         client.postMessage({
           type: 'CONTENT_UPDATED',
@@ -256,7 +300,26 @@ async function updateCacheInBackground(request, cache) {
   try {
     const networkResponse = await fetch(request);
     if (networkResponse.ok) {
-      await cache.put(request, networkResponse);
+      const responseToCache = networkResponse.clone();
+      const headers = new Headers(responseToCache.headers);
+      headers.set('sw-cache-date', Date.now().toString());
+      
+      const cachedResponse = new Response(responseToCache.body, {
+        status: responseToCache.status,
+        statusText: responseToCache.statusText,
+        headers: headers
+      });
+      
+      await cache.put(request, cachedResponse);
+      
+      // Notify clients about background update
+      const clients = await self.clients.matchAll({ type: 'window' });
+      clients.forEach(client => {
+        client.postMessage({
+          type: 'CACHE_UPDATED',
+          url: request.url
+        });
+      });
     }
   } catch (error) {
     console.log('[SW] Background update failed:', error);
@@ -280,6 +343,11 @@ self.addEventListener('message', event => {
       clearCache(data?.cacheName);
       break;
       
+    case 'FORCE_UPDATE':
+      // Force update and reload
+      self.skipWaiting();
+      break;
+      
     case 'GET_CACHE_INFO':
       getCacheInfo().then(info => {
         event.ports[0].postMessage(info);
@@ -288,12 +356,12 @@ self.addEventListener('message', event => {
   }
 });
 
-// Check for updates periodically
+// Enhanced update checking
 let updateCheckInterval;
 
 function startUpdateCheck() {
-  updateCheckInterval = setInterval(() => {
-    checkForUpdates();
+  updateCheckInterval = setInterval(async () => {
+    await checkForUpdates();
   }, UPDATE_CHECK_INTERVAL);
 }
 
@@ -308,6 +376,17 @@ async function checkForUpdates() {
   try {
     const registration = await self.registration;
     await registration.update();
+    
+    // If there's a waiting service worker, notify clients
+    if (registration.waiting) {
+      const clients = await self.clients.matchAll({ type: 'window' });
+      clients.forEach(client => {
+        client.postMessage({
+          type: 'SW_UPDATE_AVAILABLE',
+          message: 'New version available'
+        });
+      });
+    }
   } catch (error) {
     console.log('[SW] Update check failed:', error);
   }
@@ -359,18 +438,17 @@ if ('sync' in self.registration) {
 }
 
 async function doBackgroundSync() {
-  // Implement background sync logic here
   console.log('[SW] Background sync triggered');
 }
 
-// Push notifications (if needed)
+// Push notifications
 self.addEventListener('push', event => {
   if (event.data) {
     const data = event.data.json();
     const options = {
       body: data.body,
-      icon: '/meow/icon/icon-192x192.png',
-      badge: '/meow/icon/badge-72x72.png',
+      icon: '/meow/icons/favicon-192x192.png', // Fixed path
+      badge: '/meow/icons/favicon-72x72.png',  // Fixed path
       actions: data.actions,
       data: data.data
     };
@@ -386,11 +464,11 @@ self.addEventListener('notificationclick', event => {
   event.notification.close();
   
   event.waitUntil(
-    self.clients.matchAll().then(clients => {
+    self.clients.matchAll({ type: 'window' }).then(clients => {
       if (clients.length > 0) {
         return clients[0].focus();
       }
-      return self.clients.openWindow('/');
+      return self.clients.openWindow('/meow/');
     })
   );
 });
