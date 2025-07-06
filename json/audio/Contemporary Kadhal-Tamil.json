@@ -13,7 +13,7 @@
     "language": "tamil",
     "published_on": "2025-06-17T06:11:55.879988+00:00",
     "status": "live",
-    "n_listens": 4390,
+    "n_listens": 6543,
     "is_verified": false,
     "dynamic_link": "https://links.kukufm.com/gEwKE8",
     "uri": "app://kukufm/show/contemporary-kadhal/",
@@ -22,10 +22,10 @@
     "cover_type": null,
     "is_premium": true,
     "overall_rating": 4.666,
-    "n_reviews": 3,
+    "n_reviews": 4,
     "is_fictional": true,
-    "duration_s": 6402,
-    "n_episodes": 15,
+    "duration_s": 7185,
+    "n_episodes": 17,
     "n_comments": 0,
     "is_transcript_available": null,
     "n_impressions": 0,
@@ -60,7 +60,16 @@
         "256": "https://images.cdn.kukufm.com/w:256/f:jpg/q:90/https://kukufm.s3.amazonaws.com/avatars/5739db3e4c48471c9f66bbdeb3458265.png"
       },
       "bio": "Play What You Love",
-      "incognito_mode": false
+      "incognito_mode": false,
+      "is_profile_complete": true,
+      "dynamic_link": "https://links.kukufm.com/T7NAma",
+      "gender": "M",
+      "has_premium": false,
+      "is_user_anonymous": false,
+      "is_suspended": false,
+      "is_phone_verified": false,
+      "is_email_verified": true,
+      "uuid": "76034f1c8e184c0e8cc50e70bc286759"
     },
     "lang": {
       "id": 8,
@@ -148,8 +157,8 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 1584,
-      "n_listens": 1584,
+      "n_plays": 1987,
+      "n_listens": 1987,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -193,23 +202,8 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/794f975d746f4dc29dc128184f626c39.png",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/794f975d746f4dc29dc128184f626c39.png"
           },
-          "n_followers": 24,
+          "n_followers": 27,
           "contribution_type": "production_manager",
-          "is_primary_creator": true,
-          "is_followed": false
-        }
-      ],
-      "production_houses": [
-        {
-          "id": 80623304,
-          "full_name": "Msproductionhouse Ms media",
-          "avatar": {
-            "16": "https://images.cdn.kukufm.com/w:16/q:85/https://kukufm.s3.amazonaws.com/avatars/5f603b199119476e905b348130f452e.ACg8ocJmCP9msLdz_tjLDxGLtHmCbALApUd5AuPuc75tuw6yq41ZphAs96-c",
-            "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/5f603b199119476e905b348130f452e.ACg8ocJmCP9msLdz_tjLDxGLtHmCbALApUd5AuPuc75tuw6yq41ZphAs96-c",
-            "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/5f603b199119476e905b348130f452e.ACg8ocJmCP9msLdz_tjLDxGLtHmCbALApUd5AuPuc75tuw6yq41ZphAs96-c"
-          },
-          "n_followers": 238,
-          "contribution_type": "production_house",
           "is_primary_creator": true,
           "is_followed": false
         }
@@ -238,14 +232,29 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/89c91ce9ab9f48989b09afd18747bfaf.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/89c91ce9ab9f48989b09afd18747bfaf.jpeg"
           },
-          "n_followers": 1999,
+          "n_followers": 2001,
           "contribution_type": "writer",
           "is_primary_creator": true,
           "is_followed": false
         }
+      ],
+      "voice_artists": [
+        {
+          "id": 80623304,
+          "full_name": "Msproductionhouse Ms media",
+          "avatar": {
+            "16": "https://images.cdn.kukufm.com/w:16/q:85/https://kukufm.s3.amazonaws.com/avatars/5f603b199119476e905b348130f452e.ACg8ocJmCP9msLdz_tjLDxGLtHmCbALApUd5AuPuc75tuw6yq41ZphAs96-c",
+            "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/5f603b199119476e905b348130f452e.ACg8ocJmCP9msLdz_tjLDxGLtHmCbALApUd5AuPuc75tuw6yq41ZphAs96-c",
+            "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/5f603b199119476e905b348130f452e.ACg8ocJmCP9msLdz_tjLDxGLtHmCbALApUd5AuPuc75tuw6yq41ZphAs96-c"
+          },
+          "n_followers": 239,
+          "contribution_type": "voice_artist",
+          "is_primary_creator": false,
+          "is_followed": false
+        }
       ]
     },
-    "media_size": 132832850,
+    "media_size": 159609607,
     "is_play_locked": false,
     "hide_download_all_icon": null,
     "growth_engine_audio_cue_info": {},
@@ -273,7 +282,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1544,
+      "n_listens": 2116,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -322,7 +331,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 547,
+      "n_listens": 749,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -371,7 +380,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 342,
+      "n_listens": 480,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -420,7 +429,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 290,
+      "n_listens": 411,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -469,7 +478,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 271,
+      "n_listens": 383,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -518,7 +527,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 235,
+      "n_listens": 345,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -567,7 +576,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 220,
+      "n_listens": 322,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -616,7 +625,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 208,
+      "n_listens": 319,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -665,7 +674,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 175,
+      "n_listens": 263,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -714,7 +723,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 98,
+      "n_listens": 181,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -763,7 +772,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 100,
+      "n_listens": 207,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -812,7 +821,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 96,
+      "n_listens": 202,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -861,7 +870,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 66,
+      "n_listens": 158,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -910,7 +919,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 62,
+      "n_listens": 155,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -959,8 +968,8 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 0,
-      "n_comments": 0,
+      "n_listens": 129,
+      "n_comments": 1,
       "cover_type": null,
       "content": {
         "converted_hls_url": "https://kukufm.akamaized.net/audio/80d82ff0-a316-4bf6-9fbb-644542c6db24/1293115.m3u8",
@@ -990,15 +999,113 @@
       "is_downloaded": false,
       "is_self": false,
       "transcript": {}
+    },
+    {
+      "id": 1293116,
+      "title": "16. Shruthi worry about Vishnu ",
+      "slug": "contemporary-kadhal-ep-16-v1-1",
+      "status": "live",
+      "image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+      "original_image": "https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+      "duration_s": 423,
+      "image_sizes": {
+        "100": "https://images.cdn.kukufm.com/w:100/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+        "150": "https://images.cdn.kukufm.com/w:150/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+        "200": "https://images.cdn.kukufm.com/w:200/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+        "300": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png"
+      },
+      "n_likes": 0,
+      "n_shares": 0,
+      "n_plays": null,
+      "n_listens": 105,
+      "n_comments": 2,
+      "cover_type": null,
+      "content": {
+        "converted_hls_url": "https://kukufm.akamaized.net/audio/e1e8c514-21cb-4d6d-ab8b-e9a5a7746120/1293116.m3u8",
+        "audio_128kb": "https://kukufm.akamaized.net/audio/e1e8c514-21cb-4d6d-ab8b-e9a5a7746120/1293116128kb.m3u8",
+        "audio_64kb": "https://kukufm.akamaized.net/audio/e1e8c514-21cb-4d6d-ab8b-e9a5a7746120/129311664kb.m3u8",
+        "audio_24kb": "https://kukufm.akamaized.net/audio/e1e8c514-21cb-4d6d-ab8b-e9a5a7746120/129311624kb.m3u8"
+      },
+      "dynamic_link": null,
+      "is_premium": true,
+      "is_play_locked": false,
+      "is_locked": true,
+      "is_fictional": true,
+      "index": 16,
+      "show_id": 271999,
+      "season_no": 1,
+      "is_demo_premium": false,
+      "is_free_unlocked": true,
+      "media_size": 9430214,
+      "published_on": "2025-07-04T13:29:00.023332+00:00",
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+      "web_uri": "/episode/contemporary-kadhal-ep-16-v1-1",
+      "view_type": "default",
+      "has_srt": false,
+      "has_liked": false,
+      "seek_position": 0,
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
+    },
+    {
+      "id": 1293117,
+      "title": "17. Vishnu’s accusation",
+      "slug": "contemporary-kadhal-ep-17-v1-1",
+      "status": "live",
+      "image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+      "original_image": "https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+      "duration_s": 360,
+      "image_sizes": {
+        "100": "https://images.cdn.kukufm.com/w:100/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+        "150": "https://images.cdn.kukufm.com/w:150/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+        "200": "https://images.cdn.kukufm.com/w:200/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+        "300": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png"
+      },
+      "n_likes": 0,
+      "n_shares": 0,
+      "n_plays": null,
+      "n_listens": 47,
+      "n_comments": 1,
+      "cover_type": null,
+      "content": {
+        "converted_hls_url": "https://kukufm.akamaized.net/audio/9bcdd07e-40ad-4952-9758-ea4a30929b26/1293117.m3u8",
+        "audio_128kb": "https://kukufm.akamaized.net/audio/9bcdd07e-40ad-4952-9758-ea4a30929b26/1293117128kb.m3u8",
+        "audio_64kb": "https://kukufm.akamaized.net/audio/9bcdd07e-40ad-4952-9758-ea4a30929b26/129311764kb.m3u8",
+        "audio_24kb": "https://kukufm.akamaized.net/audio/9bcdd07e-40ad-4952-9758-ea4a30929b26/129311724kb.m3u8"
+      },
+      "dynamic_link": null,
+      "is_premium": true,
+      "is_play_locked": false,
+      "is_locked": true,
+      "is_fictional": true,
+      "index": 17,
+      "show_id": 271999,
+      "season_no": 1,
+      "is_demo_premium": false,
+      "is_free_unlocked": true,
+      "media_size": 7854983,
+      "published_on": "2025-07-05T13:29:00.020923+00:00",
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/015c6a8dbf1349498808c1979c5d161b.png",
+      "web_uri": "/episode/contemporary-kadhal-ep-17-v1-1",
+      "view_type": "default",
+      "has_srt": false,
+      "has_liked": false,
+      "seek_position": 0,
+      "can_download": true,
+      "is_downloaded": false,
+      "is_self": false,
+      "transcript": {}
     }
   ],
   "has_more": false,
-  "n_episodes": 15,
+  "n_episodes": 17,
   "n_pages": 1,
   "page": 1,
   "support_sticker": "",
   "is_skip_show_page": false,
-  "season_n_episodes": 15,
+  "season_n_episodes": 17,
   "last_unlocked_episode_index": null,
   "first_locked_episode_title": "",
   "seo_description": "",

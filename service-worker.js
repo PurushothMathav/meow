@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kukufm-v0407251900';
+const CACHE_NAME = 'kukufm-v0607251600';
 const STATIC_CACHE = `${CACHE_NAME}-static`;
 const DYNAMIC_CACHE = `${CACHE_NAME}-dynamic`;
 const UPDATE_CHECK_INTERVAL = 30000;

@@ -1,0 +1,147 @@
+{
+  "show": {
+    "id": 18908,
+    "slug": "no-1",
+    "title": "No",
+    "image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/28c35acc29d64aabbf83ba4c74e8b5ec.jpeg",
+    "original_image": "https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/28c35acc29d64aabbf83ba4c74e8b5ec.jpeg",
+    "image_sizes": {
+      "100": "https://images.cdn.kukufm.com/w:100/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/28c35acc29d64aabbf83ba4c74e8b5ec.jpeg",
+      "200": "https://images.cdn.kukufm.com/w:200/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/28c35acc29d64aabbf83ba4c74e8b5ec.jpeg",
+      "300": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/28c35acc29d64aabbf83ba4c74e8b5ec.jpeg"
+    },
+    "language": "marathi",
+    "published_on": "",
+    "status": "draft",
+    "n_listens": 33,
+    "is_verified": false,
+    "dynamic_link": "https://applinks.kukufm.com/wDc81weMmHtvTVKU9",
+    "uri": "app://kukufm/show/no-1/",
+    "web_uri": "/show/no-1",
+    "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/28c35acc29d64aabbf83ba4c74e8b5ec.jpeg",
+    "cover_type": null,
+    "is_premium": false,
+    "overall_rating": null,
+    "n_reviews": 0,
+    "is_fictional": null,
+    "duration_s": null,
+    "n_episodes": 0,
+    "n_comments": 0,
+    "is_transcript_available": null,
+    "n_impressions": 0,
+    "recommendation_score": 0,
+    "users_completion_p": 0,
+    "daily_unlock_count": 0,
+    "thumbnail_color": null,
+    "is_daily_unlock_enabled": false,
+    "n_seasons": 1,
+    "is_coin_based": false,
+    "monetization_type": "subscription",
+    "is_coin_premium": false,
+    "show_label_info": {},
+    "is_coming_soon": null,
+    "show_type": "cu_show",
+    "is_comments_exposure_enabled": false,
+    "is_adult_content": false,
+    "sharing_text": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा",
+    "sharing_text_v2": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा \nhttps://applinks.kukufm.com/wDc81weMmHtvTVKU9",
+    "description": "Asdassbsbshsh",
+    "description_secondary": "Asdassbsbshsh",
+    "author": {
+      "id": 4253722,
+      "name": "Pankaj",
+      "avatar_cdn": "https://images.cdn.kukufm.com/https://kukufm.s3.amazonaws.com/avatars/8348e743e5a04956a03fa4aab06cf6a8.jpeg",
+      "original_avatar": "https://kukufm.s3.amazonaws.com/avatars/8348e743e5a04956a03fa4aab06cf6a8.jpeg",
+      "avatar": {
+        "32": "https://images.cdn.kukufm.com/w:32/f:jpg/q:90/https://kukufm.s3.amazonaws.com/avatars/8348e743e5a04956a03fa4aab06cf6a8.jpeg",
+        "64": "https://images.cdn.kukufm.com/w:64/f:jpg/q:90/https://kukufm.s3.amazonaws.com/avatars/8348e743e5a04956a03fa4aab06cf6a8.jpeg",
+        "128": "https://images.cdn.kukufm.com/w:128/f:jpg/q:90/https://kukufm.s3.amazonaws.com/avatars/8348e743e5a04956a03fa4aab06cf6a8.jpeg",
+        "256": "https://images.cdn.kukufm.com/w:256/f:jpg/q:90/https://kukufm.s3.amazonaws.com/avatars/8348e743e5a04956a03fa4aab06cf6a8.jpeg"
+      },
+      "bio": "Listen to what you Love",
+      "incognito_mode": false,
+      "badge_type": "popular"
+    },
+    "lang": {
+      "id": 4,
+      "title": "मराठी",
+      "title_secondary": "Marathi",
+      "image": "https://images.cdn.kukufm.com/https://kukufm.s3.ap-south-1.amazonaws.com/icons/marathi_1.png",
+      "slug": "marathi",
+      "color": "#349DD5",
+      "uri": "app://kukufm/home-lang/marathi",
+      "web_uri": "/home-lang/marathi",
+      "color_info": {
+        "bg_color": "#BAF0E4",
+        "text_color": "#007A49"
+      },
+      "short_title": "म",
+      "svg_icon": "https://d1l07mcd18xic4.cloudfront.net/lang_icons/marathi.svg",
+      "icon_sizes": {
+        "16": "https://images.cdn.kukufm.com/w:16/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/icons/marathi_1.png",
+        "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/icons/marathi_1.png",
+        "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/icons/marathi_1.png"
+      }
+    },
+    "content_type": {
+      "id": 3,
+      "title": "न्यूज़",
+      "slug": "news",
+      "uri": "app://kukufm/content-types/news",
+      "web_uri": "/content-types/news",
+      "color_info": {
+        "bg_color": "#F34F4F",
+        "text_color": "#F34F4F"
+      }
+    },
+    "other_images": {},
+    "thumbnail_data": {},
+    "labels": [],
+    "is_top_10": false,
+    "is_reel": false,
+    "ever_been_vip_show": false,
+    "is_self": false,
+    "ad_enabled": false,
+    "can_download_all": true,
+    "is_added": false,
+    "genre": null,
+    "is_play_locked": false,
+    "hide_download_all_icon": null,
+    "trailer": {
+      "id": 1495,
+      "slug": "",
+      "content": {
+        "type": "",
+        "medium": "",
+        "video_hls_url": "https://media.cdn.kukufm.com/video-trailer/e6073dfc-51df-4c3f-807e-0535d1dd6818.m3u8",
+        "video_url": "",
+        "duration": 31000
+      },
+      "duration_s": 31000,
+      "media_type": "video",
+      "status": "live",
+      "title": "TRAILER-No"
+    },
+    "growth_engine_audio_cue_info": {},
+    "social_proofing": {
+      "review": null
+    },
+    "physical_book_data": {},
+    "show_unlocked_nudge_text": "Unlocked with Premium"
+  },
+  "episodes": [],
+  "has_more": false,
+  "n_episodes": 0,
+  "n_pages": 1,
+  "page": 1,
+  "support_sticker": "",
+  "is_skip_show_page": false,
+  "season_n_episodes": 0,
+  "last_unlocked_episode_index": null,
+  "first_locked_episode_title": "",
+  "seo_description": null,
+  "ads_info": {
+    "interstitial_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Interstitial2.1750061859",
+    "reward_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Rewarded2.1750061900"
+  }
+}
