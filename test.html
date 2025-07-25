@@ -233,12 +233,14 @@ body {
   color: var(--text-primary);
 }
 
+<!--
 /* Shows Grid */
 .main-content {
   padding: 1.5rem 1rem;
   max-width: 1400px;
   margin: 0 auto;
 }
+
 
 .shows-grid {
   display: grid;
@@ -286,6 +288,8 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+-->
 
 .show-episodes {
   font-size: 0.8rem;
@@ -679,6 +683,70 @@ body {
   display: block !important;
 }
 
+/* Category Section */
+.category-section {
+  margin-bottom: 30px;
+}
+
+.shows-grid {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 20px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.shows-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.category-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 20px;
+  color: #fff;
+}
+
+.show-card {
+  width: 120px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+}
+
+.show-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.show-info {
+  padding: 6px;
+  background-color: #222;
+  text-align: center;
+}
+
+.show-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
   </style>
 </head>
 <body>
@@ -746,16 +814,7 @@ body {
 
   <!-- Main Content -->
   <main class="main-content">
-    <h2 class="section-title">Hindi Shows</h2>
-    <div class="loading" id="loadingState">
-      <div class="spinner"></div>
-      <div class="loading-text">Loading Hindi shows...</div>
-    </div>
-    <div class="shows-grid" id="showsGrid"></div>
-    <div class="empty-state hidden" id="emptyState">
-      <div class="empty-icon">📺</div>
-      <p>No shows found</p>
-    </div>
+    <div id="showsGrid"></div>
   </main>
 
   <!-- Player Overlay -->
@@ -818,360 +877,81 @@ let hls = null;
 let autoPlayEnabled = true;
 let watchHistory = {};
 let searchTimeout = null;
-let currentLanguage = 'hindi'; // Default language
+let currentLanguage = 'tamil'; // Default language
 
 // Get current page language
 function getCurrentLanguage() {
   const path = window.location.pathname;
-  const filename = path.split('/').pop() || 'hindi.html';
+  const filename = path.split('/').pop() || 'index.html';
   
-  if (filename === 'hindi.html') return 'hindi';
+  if (filename === 'index.html') return 'tamil';
   return filename.replace('.html', '');
 }
 
-// Get JSON files for current language
-function getLanguageFiles() {
-  return [
-  "/meow/json/A Billionaire Love Triangle-Hindi.json",
-  "/meow/json/A Heartbeat Away-Hindi.json",
-  "/meow/json/A Vow of Joy and Sorrow-Hindi.json",
-  "/meow/json/After Being Dumped,I Married a Rich Heir in a Flash-Hindi.json",
-  "/meow/json/After Divorce , the ex-wife of the big shot  stirs up the world-Hindi.json",
-  "/meow/json/After Divorce, the Ex-wife of the Big Shot Stirs up the World-Hindi.json",
-  "/meow/json/After Divorcing my Star Wife, I became famous-Hindi.json",
-  "/meow/json/Agent Ki Dulhan-Hindi.json",
-  "/meow/json/Agent Maa Returns-Hindi.json",
-  "/meow/json/Ajnabi Varis-Hindi.json",
-  "/meow/json/Alien Opponent-Hindi.json",
-  "/meow/json/Alpha's Perfect Love-Hindi.json",
-  "/meow/json/Alpha, She Wasn't the One-Hindi.json",
-  "/meow/json/American Badger-Hindi.json",
-  "/meow/json/Arabpati Gaonwala-Hindi.json",
-  "/meow/json/Arabpati ka Badla-Hindi.json",
-  "/meow/json/As You Wish-Hindi.json",
-  "/meow/json/Aunt is not easy to provoke-Hindi.json",
-  "/meow/json/Back to 1990-Hindi.json",
-  "/meow/json/Bada Pachtaoge-Hindi.json",
-  "/meow/json/Badge of Honor-Hindi.json",
-  "/meow/json/Battle of the Babes-Hindi.json",
-  "/meow/json/Became Rich, After Divorce-Hindi.json",
-  "/meow/json/Becoming Light-Hindi.json",
-  "/meow/json/Bepanah Ishq-Hindi.json",
-  "/meow/json/Betrayed Heiress - Vengeance Reborn-Hindi.json",
-  "/meow/json/Better Without You-Hindi.json",
-  "/meow/json/Billion Dollar Wife-Hindi.json",
-  "/meow/json/Billionaire Daddy, the Hunt is On-Hindi.json",
-  "/meow/json/Billionaire Playboy's Replacement Bride-Hindi.json",
-  "/meow/json/Billionaire's Memory Loss Wife-Hindi.json",
-  "/meow/json/Black Kiln Dragon-Hindi.json",
-  "/meow/json/Black Widow-Hindi.json",
-  "/meow/json/Boss And the Sweet Wife-Hindi.json",
-  "/meow/json/Boss Ya Bhediya-Hindi.json",
-  "/meow/json/Bride on the Run-Hindi.json",
-  "/meow/json/CEO'S SIN-Hindi.json",
-  "/meow/json/Ceo's Wife-Hindi.json",
-  "/meow/json/CEO, Those Twins Look Like You-Hindi.json",
-  "/meow/json/CEO’s Super Kick-Hindi.json",
-  "/meow/json/Charming Son-in-Law-Hindi.json",
-  "/meow/json/Chhalawaa-Hindi.json",
-  "/meow/json/Cleopatra-Hindi.json",
-  "/meow/json/Clouds By The Sea-Hindi.json",
-  "/meow/json/Come Home Our Heart-Hindi.json",
-  "/meow/json/Confrontation In The Courtroom-Hindi.json",
-  "/meow/json/Contract Pregnant wife-Hindi.json",
-  "/meow/json/Counterattacked To Become A Tycoon-Hindi.json",
-  "/meow/json/Crowned in Revenge - Born To Rule-Hindi.json",
-  "/meow/json/Cubicle Cupid's Twist-Hindi.json",
-  "/meow/json/Cursed Daughter-Hindi.json",
-  "/meow/json/Cute Baby Assists_ I Help My Mom Marry the President Tycoon-Hindi.json",
-  "/meow/json/Damn You're Hot, Professor-Hindi.json",
-  "/meow/json/Darinda Damad-Hindi.json",
-  "/meow/json/Defying Destiny-Hindi.json",
-  "/meow/json/Desperate Cage Miss Sun Fights Back-Hindi.json",
-  "/meow/json/Destined to Meet You-Hindi.json",
-  "/meow/json/Detective Ajay Challenger Killer-Hindi.json",
-  "/meow/json/Detective of the Republic_ Chasing the Killer-Hindi.json",
-  "/meow/json/Devil Wears Desire-Hindi.json",
-  "/meow/json/Dhokha On The Wedding Day-Hindi.json",
-  "/meow/json/Dil Ka Sauda-Hindi.json",
-  "/meow/json/Divorce A Billionaire To Marry Him-Hindi.json",
-  "/meow/json/Divorce But Doted Upon By The Trio-Hindi.json",
-  "/meow/json/Divorce Ka Punchnama-Hindi.json",
-  "/meow/json/Divorced Billionaire Heiress-Hindi.json",
-  "/meow/json/Divorced Single Mother-Hindi.json",
-  "/meow/json/Doctor Ka Badla-Hindi.json",
-  "/meow/json/Don't Forget I Love You-Hindi.json",
-  "/meow/json/Don't Get Your Heart Fluttering for Me-Hindi.json",
-  "/meow/json/Don't Mess With Super DAD-Hindi.json",
-  "/meow/json/Don't Mess With The Blind Heiress-Hindi.json",
-  "/meow/json/Don't Speak-Hindi.json",
-  "/meow/json/Don't touch my Daughter-Hindi.json",
-  "/meow/json/Double Life CEO_ Chasing Love-Hindi.json",
-  "/meow/json/Dracula's Curse-Hindi.json",
-  "/meow/json/Dracula's Kiss _ Spellbound By A Doppelganger-Hindi.json",
-  "/meow/json/Dragon Warrior-Hindi.json",
-  "/meow/json/Dumping Mr. Billionaire-Hindi.json",
-  "/meow/json/Ek Anjani Shaadi-Hindi.json",
-  "/meow/json/Ek Raat Billionaire Ke Sath-Hindi.json",
-  "/meow/json/Ek Thi Villain-Hindi.json",
-  "/meow/json/Enemies with Benefits - The CEO's Matchmaker Strikes-Hindi.json",
-  "/meow/json/Ex-Wali Aashiqui-Hindi.json",
-  "/meow/json/Eye without a face-Hindi.json",
-  "/meow/json/Fake boyfriend-Hindi.json",
-  "/meow/json/Fall Into Sweet Trap-Hindi.json",
-  "/meow/json/Fallen Angel-Hindi.json",
-  "/meow/json/Farewell To Old Love-Hindi.json",
-  "/meow/json/First Light of Love-Hindi.json",
-  "/meow/json/Flash Marriage to the President_ Mrs. Gu is Actually a Hidden Tycoon-Hindi.json",
-  "/meow/json/Fleeing Husband Please Love Me All Over Again-Hindi.json",
-  "/meow/json/Forbidden Bonds with My Brothers-Hindi.json",
-  "/meow/json/Forced to Marry a Prisoner-Hindi.json",
-  "/meow/json/Forever Love-Hindi.json",
-  "/meow/json/FROM ZERO TO HERO Breaking the chains of Fate-Hindi.json",
-  "/meow/json/Ghost Killer Vs Bloody Marry-Hindi.json",
-  "/meow/json/Give Me A Hug-Hindi.json",
-  "/meow/json/Gone, Yet Loved by Him-Hindi.json",
-  "/meow/json/Guardian Angel Mom on the Move-Hindi.json",
-  "/meow/json/Hansel vs Gretel-Hindi.json",
-  "/meow/json/Happily Never After-Hindi.json",
-  "/meow/json/Harvest of ambition, a CEO's odyssey-Hindi.json",
-  "/meow/json/Held for Ransom-Hindi.json",
-  "/meow/json/Hidden Billionaire-Hindi.json",
-  "/meow/json/Hidden Love Surges-Hindi.json",
-  "/meow/json/Hidden Talent-Hindi.json",
-  "/meow/json/Holiday Monday-Hindi.json",
-  "/meow/json/Hollywood Staged Romance Live 24_7-Hindi.json",
-  "/meow/json/Hollywood Star's Fake Girlfriend-Hindi.json",
-  "/meow/json/How I Became The Alpha Queen-Hindi.json",
-  "/meow/json/I Am The Woman Of The Jianghu-Hindi.json",
-  "/meow/json/I Fell For My Army Man-Hindi.json",
-  "/meow/json/I Have a Pinduoduo-Hindi.json",
-  "/meow/json/I'm Obsessed With My Boss Part I-Hindi.json",
-  "/meow/json/Immortal Island-Hindi.json",
-  "/meow/json/Imperial Concubine Cultivation Manual-Hindi.json",
-  "/meow/json/In Search Of Jade-Hindi.json",
-  "/meow/json/Ishq Bana Junoon-Hindi.json",
-  "/meow/json/Jack Of All Cons-Hindi.json",
-  "/meow/json/Jerk Punishment Club-Hindi.json",
-  "/meow/json/Jurassic Shark-Hindi.json",
-  "/meow/json/Kanden Kathalai-Hindi.json",
-  "/meow/json/Karzz-Hindi.json",
-  "/meow/json/Kismat Connection-Hindi.json",
-  "/meow/json/Kiss and Switch The Cursed Vampire-Hindi.json",
-  "/meow/json/Kolkata Medical College Case-Hindi.json",
-  "/meow/json/Kung Fu Master-Hindi.json",
-  "/meow/json/Lapata Vaaris-Hindi.json",
-  "/meow/json/Late Love-Hindi.json",
-  "/meow/json/Later Days-Hindi.json",
-  "/meow/json/Let Me Go, My Queen-Hindi.json",
-  "/meow/json/Like A Dragon-Hindi.json",
-  "/meow/json/Little Poor Thing Rises by Bearing Children, Reigns Over the Electronics Factory-Hindi.json",
-  "/meow/json/Lord of the North-Hindi.json",
-  "/meow/json/Lost in Love-Hindi.json",
-  "/meow/json/Love is Right In front of You-Hindi.json",
-  "/meow/json/Love Me Not-Hindi.json",
-  "/meow/json/Lucifer My Boyfriend from Hell-Hindi.json",
-  "/meow/json/Madam Don't Run-Hindi.json",
-  "/meow/json/Madam Wants To Sell Fish-Hindi.json",
-  "/meow/json/Mafia Contract Marriage-Hindi.json",
-  "/meow/json/Mafia Lord's Son Has Secret Love For His Stepmom-Hindi.json",
-  "/meow/json/Mafia Se Mohabbat-Hindi.json",
-  "/meow/json/Malibu Crush-Hindi.json",
-  "/meow/json/Marriage _ A Debt-Hindi.json",
-  "/meow/json/Marriage Over-Hindi.json",
-  "/meow/json/Married But Available_ Perfume And Moon-Hindi.json",
-  "/meow/json/Married To The Enemy-Hindi.json",
-  "/meow/json/Martial Divine Warrior_ Awakening of the Fighting Emperor-Hindi.json",
-  "/meow/json/Meri Anjaani Girlfriend-Hindi.json",
-  "/meow/json/Mine 9-Hindi.json",
-  "/meow/json/Mistaken Millionaire Husband-Hindi.json",
-  "/meow/json/Misty Medical Immortal-Hindi.json",
-  "/meow/json/Mohini Ka Shraapit Pyar-Hindi.json",
-  "/meow/json/Mom is not Ugly-Hindi.json",
-  "/meow/json/Moonlight Of His Regret-Hindi.json",
-  "/meow/json/Mr Jee I am not your bodyguard-Hindi.json",
-  "/meow/json/Mr. Cricketer, We Are Pregnant-Hindi.json",
-  "/meow/json/Mr. Idiot, Hero Husband-Hindi.json",
-  "/meow/json/Mr. Mittal Vs Vikram-Hindi.json",
-  "/meow/json/My 2 Fiances-Hindi.json",
-  "/meow/json/My Bodyguard Is Very Strong In Combat-Hindi.json",
-  "/meow/json/My Brother, You Can't Afford to Mess With-Hindi.json",
-  "/meow/json/My CEO made me Pregnant-Hindi.json",
-  "/meow/json/My Cold Blooded Alpha King-Hindi.json",
-  "/meow/json/My Crorepati Husband-Hindi.json",  
-  "/meow/json/My Dad's Boss-Hindi.json",
-  "/meow/json/My Ex-Husband's Breakdown After Divorce-Hindi.json",
-  "/meow/json/My Groom A Billionaire-Hindi.json",
-  "/meow/json/My Handsome Bodyguard-Hindi.json",
-  "/meow/json/My Husband locked me in an underwater prison-Hindi.json",
-  "/meow/json/MY MYSTERIOUS PATIDEV-Hindi.json",
-  "/meow/json/My Top Secret Desire-Hindi.json",
-  "/meow/json/My Tycoon Husband Spoils Me-Hindi.json",
-  "/meow/json/My Vampire Highness-Hindi.json",
-  "/meow/json/No Remarriage-Hindi.json",
-  "/meow/json/Once Upon a Divorce _ The Double Life of Lady Diana-Hindi.json",
-  "/meow/json/One Last Kiss-Hindi.json",
-  "/meow/json/One night stand-Hindi.json",
-  "/meow/json/Oops I'm His Wife-Hindi.json",
-  "/meow/json/Orca - The Killer Whale-Hindi.json",
-  "/meow/json/Paap Ka Devta-Hindi.json",
-  "/meow/json/Peak Showdown_ Shatter the Dragon King-Hindi.json",
-  "/meow/json/Pehle Badla Phir Mohabbat-Hindi.json",
-  "/meow/json/Phoenix Rising-Hindi.json",
-  "/meow/json/Portal-Hindi.json",
-  "/meow/json/Power Punch-Hindi.json",
-  "/meow/json/Pregnant with Twins_ Daddy Pretends to Be Poor Every Day-Hindi.json",
-  "/meow/json/PRESIDENT MOM-Hindi.json",
-  "/meow/json/Primal-Hindi.json",
-  "/meow/json/Pyaar Aur Fareb-Hindi.json",
-  "/meow/json/Pyaar Ka Second Round-Hindi.json",
-  "/meow/json/Pyaar Ke Liye-Hindi.json",
-  "/meow/json/Pyaar Once Again-Hindi.json",
-  "/meow/json/Pyaar, Dhokha Aur Badla-Hindi.json",
-  "/meow/json/Qaatil Ki Talaash-Hindi.json",
-  "/meow/json/Raising A Kid Or A Cultivator-Hindi.json",
-  "/meow/json/Rebirth_ My Cheat Code Life-Hindi.json",
-  "/meow/json/Rebirth_ Starting to Get Rich-Hindi.json",
-  "/meow/json/Rented Husband-Hindi.json",
-  "/meow/json/Restart - The Peak-Hindi.json",
-  "/meow/json/Return of his Majesty-Hindi.json",
-  "/meow/json/Return Of Snow King-Hindi.json",
-  "/meow/json/Return of the Supreme-Hindi.json",
-  "/meow/json/Returning from Immortal Cultivation as a Dad-Hindi.json",
-  "/meow/json/Revenge in Second Life-Hindi.json",
-  "/meow/json/Revenge On My Cheating Fiance-Hindi.json",
-  "/meow/json/Risky Ishq-Hindi.json",
-  "/meow/json/Rok sako to roko-Hindi.json",
-  "/meow/json/Rosy Psycho-Hindi.json",
-  "/meow/json/Royal Affair-Hindi.json",
-  "/meow/json/Royal Betrayal-Hindi.json",
-  "/meow/json/Royal Gaonwali-Hindi.json",
-  "/meow/json/Ruined By Riches-Hindi.json",
-  "/meow/json/Ruthless Comeback of the Reborn Heiress-Hindi.json",
-  "/meow/json/Sasural Murder Ka-Hindi.json",
-  "/meow/json/Say I Love You When We Meet Again-Hindi.json",
-  "/meow/json/Say You Remember, Say You Love Me-Hindi.json",
-  "/meow/json/School Hall-Hindi.json",
-  "/meow/json/Secret Chronicles of the Republic-Hindi.json",
-  "/meow/json/Secret Girlfriend-Hindi.json",
-  "/meow/json/secret love-Hindi.json",
-  "/meow/json/Secret Mrs CEO-Hindi.json",
-  "/meow/json/Secret Pariwar-Hindi.json",
-  "/meow/json/Secret Rishta-Hindi.json",
-  "/meow/json/Shaitaan ki Baahon Mein-Hindi.json",
-  "/meow/json/She Is A Billionaire-Hindi.json",
-  "/meow/json/Shehzaada-Hindi.json",
-  "/meow/json/Shelter In The Mafia-Hindi.json",
-  "/meow/json/Sinful Love-Hindi.json",
-  "/meow/json/Single but Pregnant_ An Unexpected Husband-Hindi.json",
-  "/meow/json/Single Mother's Counterattack with Adorable Twins-Hindi.json",
-  "/meow/json/Sinister Squad-Hindi.json",
-  "/meow/json/Slay Madam-Hindi.json",
-  "/meow/json/Son of an MP-Hindi.json",
-  "/meow/json/Song Of Transformation-Hindi.json",
-  "/meow/json/Spark My Fire-Hindi.json",
-  "/meow/json/Sparta-Hindi.json",
-  "/meow/json/Spectrophobia-Hindi.json",
-  "/meow/json/Spicy Robbery-Hindi.json",
-  "/meow/json/Spy Girl-Hindi.json",
-  "/meow/json/Star Moon Romance_ Rejected And Reborn As Alpha-Hindi.json",
-  "/meow/json/Study God-Hindi.json",
-  "/meow/json/Supreme-Hindi.json",
-  "/meow/json/Supreme Bai Emperor-Hindi.json",
-  "/meow/json/Supreme Beauty-Hindi.json",
-  "/meow/json/Supreme Master-Hindi.json",
-  "/meow/json/Supreme Revenge-Hindi.json",
-  "/meow/json/Supreme Wealth-Hindi.json",
-  "/meow/json/Tangled Ties and Tipsy Vows-Hindi.json",
-  "/meow/json/Terror Tales-Hindi.json",
-  "/meow/json/The Ardent Scholar From A Poor Family-Hindi.json",
-  "/meow/json/The Arrogant Tyrant's Runaway Wife-Hindi.json",
-  "/meow/json/The Awakening-Hindi.json",
-  "/meow/json/The Barge People-Hindi.json",
-  "/meow/json/The Bridge To Nowhere-Hindi.json",
-  "/meow/json/The CEO’s Hidden Desires-Hindi.json",
-  "/meow/json/The CEO’s Secret Wife-Hindi.json",
-  "/meow/json/The Contract father-Hindi.json",
-  "/meow/json/The Couple Came from Hell-Hindi.json",
-  "/meow/json/The Crown-Hindi.json",
-  "/meow/json/The Crowned Consort of the Empress-Hindi.json",
-  "/meow/json/The Devil Took Me Home-Hindi.json",
-  "/meow/json/The Divine Doctor-Hindi.json",
-  "/meow/json/The Divorced Housewife Turned CEO-Hindi.json",
-  "/meow/json/The Dumb Billionaire Heiress In Love Part 2-Hindi.json",
-  "/meow/json/The Dumb Billionaire Heiress In Love Part I-Hindi.json",
-  "/meow/json/The Exchange-Hindi.json",
-  "/meow/json/The Female Lead Is The Strongest Mouthpiece Substitute-Hindi.json",
-  "/meow/json/The Final Boss-Hindi.json",
-  "/meow/json/The First Prince of Daxia-Hindi.json",
-  "/meow/json/The Immortal Doctor Dragon Xiang Nine Days-Hindi.json",
-  "/meow/json/The Last Recipe-Hindi.json",
-  "/meow/json/The Little Doctor-Hindi.json",
-  "/meow/json/The Love That Kills-Hindi.json",
-  "/meow/json/The Mind-Reading Game-Hindi.json",
-  "/meow/json/The Officer Fell For Me-Hindi.json",
-  "/meow/json/The Peerless Emperor-Hindi.json",
-  "/meow/json/The Possession Experiment-Hindi.json",
-  "/meow/json/The Price of Betrayal-Hindi.json",
-  "/meow/json/The Princess Married To My Waistcoat Can Not Stop-Hindi.json",
-  "/meow/json/The Proud World-Defying Dragon God-Hindi.json",
-  "/meow/json/The Return of the God King-Hindi.json",
-  "/meow/json/The Road Ahead-Hindi.json",
-  "/meow/json/The Royal Secret-Hindi.json",
-  "/meow/json/The Sage Doctor-Hindi.json",
-  "/meow/json/The Shadow's Counter Attack-Hindi.json",
-  "/meow/json/The Son-In-Law Who Saved the Wealthy Family-Hindi.json",
-  "/meow/json/The Stars Know My Heart-Hindi.json",
-  "/meow/json/The Stay-Hindi.json",
-  "/meow/json/The Storm-Hindi.json",
-  "/meow/json/The Substitute Bride-Hindi.json",
-  "/meow/json/The Substitute Bride_ Unveiling Her Countless Secrets-Hindi.json",
-  "/meow/json/The World In My Grasp-Hindi.json",
-  "/meow/json/The Wrong Womb-Hindi.json",
-  "/meow/json/The Wronged Mother-Hindi.json",
-  "/meow/json/Thirst-Hindi.json",
-  "/meow/json/This Girl Is a Martial Master-Hindi.json",
-  "/meow/json/Three Brothers Dote On Me-Hindi.json",
-  "/meow/json/Time-Traveling Cute Baby-Hindi.json",
-  "/meow/json/Too Heavy To Handle-Hindi.json",
-  "/meow/json/Too Late-Hindi.json",
-  "/meow/json/True and False Dragon Commander-Hindi.json",
-  "/meow/json/Truth Or Dare-Hindi.json",
-  "/meow/json/Two Dragons Crossing the River-Hindi.json",
-  "/meow/json/Ulanskaya Ballada-Hindi.json",
-  "/meow/json/Ultimate Khiladi-Hindi.json",
-  "/meow/json/Unchained Love-Hindi.json",
-  "/meow/json/Unforgivable-Hindi.json",
-  "/meow/json/Unparalleled Son-in-Law-Hindi.json",
-  "/meow/json/Unrivalled in the Imperial Harem-Hindi.json",
-  "/meow/json/Unscripted Romance_ In Love With My Substitute Wife-Hindi.json",
-  "/meow/json/Urban King of Soldiers-Hindi.json",
-  "/meow/json/Urban Top-Notch Divine Doctor-Hindi.json",
-  "/meow/json/Vamperifica-Hindi.json",
-  "/meow/json/Vicious Son in Law, Don't Mess with Me-Hindi.json",
-  "/meow/json/Video Cam Scam-Hindi.json",
-  "/meow/json/Villa Paradise-Hindi.json",
-  "/meow/json/Virgin Dulhan-Hindi.json",
-  "/meow/json/Waiting for Love-Hindi.json",
-  "/meow/json/Wake Up Dad, Wedding Time-Hindi.json",
-  "/meow/json/Waking Up As The Richest-Hindi.json",
-  "/meow/json/Waking Up Together-Hindi.json",
-  "/meow/json/Wealth And Honour Are In Heaven-Hindi.json",
-  "/meow/json/When Silence Breaks-Hindi.json",
-  "/meow/json/When the Sun Sets on Us-Hindi.json",
-  "/meow/json/Where Is Home-Hindi.json",
-  "/meow/json/Wild Young Master Son-in-Law-Hindi.json",
-  "/meow/json/Witch Stars-Hindi.json",
-  "/meow/json/Women Can Hold Half Of The Sky-Hindi.json",
-  "/meow/json/Wonder Boy Parth-Hindi.json",
-  "/meow/json/Yama Ling-Hindi.json",
-  "/meow/json/Yes Mr. CEO, We Have A Baby-Hindi.json",
-  "/meow/json/You Are like The Wind Passing By My Pillow-Hindi.json",
-  "/meow/json/You Are My Ultimate Taste In The World-Hindi.json",
-  "/meow/json/You were Always Mine-Hindi.json",
-  "/meow/json/Ziddi-Hindi.json",  
-  ];
-}
+const categoryGroups = {
+  "❤️ Romance": [
+  "/meow/json/7 Assasins-Tamil.json",
+  "/meow/json/A Vow of Joy and Sorrow-Tamil.json",
+  "/meow/json/After Being Dumped, I Married a Rich Heir in a Flash-Tamil.json",
+  "/meow/json/After Divorce , the ex-wife of the big shot  stirs up the world-Tamil.json",
+  "/meow/json/After divorce, my wife become a trillionaire-Tamil.json",
+  "/meow/json/After Divorcing my Star Wife, I became famous-Tamil.json",
+  "/meow/json/Alien Opponent-Tamil.json",
+  "/meow/json/Alpha's Perfect Love-Tamil.json",
+  "/meow/json/Alpha, She Wasn't the One-Tamil.json",
+  "/meow/json/As You Wish-Tamil.json",
+  "/meow/json/Aunt is not easy to provoke-Tamil.json",
+  "/meow/json/Aval Varuvaala-Tamil.json",
+  "/meow/json/Avanum Naanum-Tamil.json",
+  ],
+  "💼 CEO & Billionaire": [
+  "/meow/json/Back to 1990-Tamil.json",
+  "/meow/json/BACK TO 1994-Tamil.json",
+  "/meow/json/Becoming Light-Tamil.json",
+  "/meow/json/Betrayed Heiress - Vengeance Reborn-Tamil.json",
+  "/meow/json/Billionaire Daddy, the Hunt is On-Tamil.json",
+  "/meow/json/Billionaire Playboy's Replacement Bride-Tamil.json",
+  "/meow/json/Black Kiln Dragon-Tamil.json",
+  "/meow/json/Black Widow-Tamil.json",
+  "/meow/json/Blossoms 2003-Tamil.json",
+  "/meow/json/Boss And the Sweet Wife-Tamil.json",
+  ],
+  "🧨 Thriller": [
+  "/meow/json/CEO, Those Twins Look Like You-Tamil.json",
+  "/meow/json/Charming Son-in-Law-Tamil.json",
+  "/meow/json/Chen Yi - The Rich Man's Secret-Tamil.json",
+  "/meow/json/Chinese New Year - The Hidden Dragon Returns to the Village-Tamil.json",
+  "/meow/json/Chinese New Year_ The Hidden Dragon Returns to the Village-Tamil.json",
+  "/meow/json/Cloaked in Power_ His Secret Identity-Tamil.json",
+  "/meow/json/Clouds by the sea-Tamil.json",
+  "/meow/json/Come Home, Our Heart-Tamil.json",
+  "/meow/json/Contract Pregnant wife-Tamil.json",
+  "/meow/json/Crowned in Love-Tamil.json",
+  "/meow/json/Cubicle Cupid's Twist-Tamil.json",
+  "/meow/json/Cursed Daughter-Tamil.json",
+  "/meow/json/Cute Baby Assists_ I Help My Mom Marry the President Tycoon-Tamil.json",
+  ],
+  "Crime": [
+  "/meow/json/Desperate Cage - Miss Sun Fights Back-Tamil.json",
+  "/meow/json/Desperate Cage_ Miss Sun Fights Back-Tamil.json",
+  "/meow/json/Desperate Husband's Revenge-Tamil.json",
+  "/meow/json/Destined to Meet You-Tamil.json",
+  "/meow/json/Divorce a Billionaire to Marry Him-Tamil.json",
+  "/meow/json/Divorced Billionaire Heiress-Tamil.json",
+  "/meow/json/Divorced But Doted Upon by the Trio-Tamil.json",
+  "/meow/json/Divorced Single Mother-Tamil.json",
+  "/meow/json/Don't Get Your Heart Fluttering for Me-Tamil.json",
+  "/meow/json/Don't Mess with Blind Heiress-Tamil.json",
+  "/meow/json/Don't Mess With Super DAD-Tamil.json",
+  "/meow/json/Don't Speak-Tamil.json",
+  "/meow/json/Don't touch my Daughter-Tamil.json",
+  "/meow/json/Double Life CEO_ Chasing Love-Tamil.json",
+  "/meow/json/Dracula's Curse-Tamil.json",
+  "/meow/json/Dracula's Kiss_ Spellbound by a Doppelganger-Tamil.json",
+  "/meow/json/Dual Plants' Decision-Tamil.json",
+  ]
+  // Add more sections easily
+};
 
 // DOM elements
 const showsGrid = document.getElementById('showsGrid');
@@ -1198,6 +978,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupMobileMenu();
   updateActiveNavigation();
   loadShows();
+  renderContinueWatching();
 });
 
 // Setup mobile menu
@@ -1296,7 +1077,7 @@ qualitySelect.addEventListener('change', (e) => {
       history.pushState(null, null, window.location.href);
     }
   });
-  
+
 // Touch/Swipe handling for episode navigation - UPDATED FOR LEFT/RIGHT
 let touchStartY = 0;
 let touchEndY = 0;
@@ -1473,87 +1254,112 @@ document.addEventListener('keydown', (e) => {
         break;
     }
   }
-});  
+});
 }
+
+function createCard(v) {
+  const card = document.createElement("div");
+  card.className = "show-card";
+
+  const img = document.createElement("img");
+  img.className = "show-image";
+  img.src = v.show?.image || v.show?.image_sizes?.["300"] || '';
+  img.alt = v.show?.title || "Untitled";
+
+  const info = document.createElement("div");
+  info.className = "show-info";
+
+  const title = document.createElement("div");
+  title.className = "show-title";
+  title.textContent = v.show?.title || "Untitled";
+
+  info.appendChild(title);
+  card.appendChild(img);
+  card.appendChild(info);
+
+  card.addEventListener("click", () => {
+    if (v.show?.id) {
+      openShow(v.show.id.toString());
+    } else {
+      showToast("Invalid show ID");
+    }
+  });
+
+  return card;
+}
+
+searchInput.addEventListener("input", function () {
+  const keyword = this.value.trim().toLowerCase();
+  const container = document.getElementById("showsGrid");
+  container.innerHTML = '';
+
+  if (!keyword) {
+    // Restore category layout
+    loadShows();
+    return;
+  }
+
+  const heading = document.createElement("h2");
+  heading.className = "category-title";
+  heading.textContent = `🔍 Search Results`;
+
+  const grid = document.createElement("div");
+  grid.className = "shows-grid";
+
+  allShows.forEach(show => {
+    const title = show.show?.title?.toLowerCase() || '';
+    if (title.includes(keyword)) {
+      const card = createCard(show);
+      grid.appendChild(card);
+    }
+  });
+
+  container.appendChild(heading);
+  container.appendChild(grid);
+});
 
 // Load shows for current language
 async function loadShows() {
-  const cacheKey = `cached_kukufm_shows_hindi`;
-  
-  // Try loading from cache first
-  try {
-    const cached = localStorage.getItem(cacheKey);
-    if (cached) {
-      const data = JSON.parse(cached);
-      allShows = data;
-      filteredShows = [...allShows];
-      hideLoading();
-      renderShows();
-      renderContinueWatching();
-      return;
-    }
-  } catch (e) {
-    console.warn('Failed to parse cached data:', e);
-  }
+  const container = document.getElementById("showsGrid");
+  container.innerHTML = '';
 
-  // Load from network
-  const files = getLanguageFiles(currentLanguage);
-  let loadedCount = 0;
-  const totalCount = files.length;
-  const fetchedShows = [];
+  for (const [categoryTitle, fileList] of Object.entries(categoryGroups)) {
+    const section = document.createElement('div');
+    section.className = 'category-section';
 
-  try {
-    updateLoadingProgress(0, totalCount);
-    
-    const promises = files.map(async (file) => {
+    const heading = document.createElement('h2');
+    heading.className = 'category-title';
+    heading.textContent = categoryTitle;
+
+    const grid = document.createElement('div');
+    grid.className = 'shows-grid';
+
+    for (const file of fileList) {
       try {
-        const response = await fetch(file);
-        if (!response.ok) throw new Error(`Failed to fetch ${file}`);
-        const data = await response.json();
-        
-        // Handle both single show object and array of shows
-        if (Array.isArray(data)) {
-          fetchedShows.push(...data);
-        } else {
-          fetchedShows.push(data);
+        const res = await fetch(file);
+        const show = await res.json();
+
+        // Avoid duplicate entries
+        if (!allShows.find(s => s.show?.id === show.show?.id)) {
+          allShows.push(show);
         }
-        
-        loadedCount++;
-        updateLoadingProgress(loadedCount, totalCount);
-      } catch (error) {
-        console.warn(`Failed to load ${file}:`, error);
-        loadedCount++;
-        updateLoadingProgress(loadedCount, totalCount);
+
+        const card = createCard(show);
+        grid.appendChild(card);
+      } catch (err) {
+        console.warn(`Error loading ${file}`, err);
       }
-    });
-
-    await Promise.all(promises);
-    
-    allShows = fetchedShows;
-	
-	allShows.sort((a, b) => {
-		const titleA = (a.show?.title || '').toLowerCase();
-		const titleB = (b.show?.title || '').toLowerCase();
-		return titleA.localeCompare(titleB);
-	});
-
-    filteredShows = [...allShows];
-    
-    // Cache the data
-    try {
-      localStorage.setItem(cacheKey, JSON.stringify(allShows));
-    } catch (e) {
-      console.warn('Failed to cache data:', e);
     }
-    
-  } catch (error) {
-    console.error('Failed to load shows:', error);
-    showToast('Failed to load shows. Please try again.');
-  } finally {
-    hideLoading();
-    renderShows();
-    renderContinueWatching();
+
+    section.appendChild(heading);
+    section.appendChild(grid);
+    container.appendChild(section);
   }
+
+  document.getElementById("loadingState").style.display = "none";
+
+  // Also rerender continue watching properly
+  renderContinueWatching();
 }
 
 function updateLoadingProgress(loaded, total) {
@@ -1617,41 +1423,39 @@ function renderShows() {
 
 // Render continue watching
 function renderContinueWatching() {
-  const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
-    data.progress > 0 && data.progress < 0.95
-  );
+  const container = document.getElementById("continueSection");
+  container.innerHTML = '';
 
-  if (watchingShows.length === 0) {
-    continueSection.style.display = 'none';
+  const watchList = Object.entries(watchHistory)
+    .map(([id, data]) => {
+      const show = allShows.find(s => s.show.id.toString() === id);
+      if (!show) return null;
+      return { show, data };
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.data.updatedAt - a.data.updatedAt);
+
+  if (watchList.length === 0) {
+    container.style.display = 'none';
     return;
   }
 
-  continueSection.style.display = 'block';
-  
-  continueGrid.innerHTML = watchingShows.map(([showId, data]) => {
-    const show = allShows.find(s => s.show.id.toString() === showId);
-    if (!show) return '';
+  container.style.display = '';
 
-    return `
-      <div class="continue-card" onclick="continueWatching('${showId}')">
-        <div class="continue-thumbnail-wrapper">
-          <img 
-            src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
-            alt="${show.show.title}"
-            class="continue-thumbnail"
-            loading="lazy"
-            onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
-          >
-          <button class="remove-btn" onclick="event.stopPropagation(); removeFromContinue('${showId}')" title="Remove">×</button>
-        </div>
-        <div class="continue-title" title="${show.show.title}">${show.show.title}</div>
-        <div class="continue-episode">Episode ${data.episode + 1}</div>
-        <div class="progress-bar">
-          <div class="progress-fill" style="width: ${data.progress * 100}%"></div>
-        </div>
-      </div>
-    `;
-  }).join('');
+  const heading = document.createElement('h2');
+  heading.className = 'category-title';
+  heading.textContent = '⏯ Continue Watching';
+
+  const grid = document.createElement('div');
+  grid.className = 'shows-grid'; // <-- horizontal style same as others
+
+  watchList.forEach(({ show }) => {
+    const card = createCard(show);
+    grid.appendChild(card);
+  });
+
+  container.appendChild(heading);
+  container.appendChild(grid);
 }
 
 // Open show
@@ -1703,7 +1507,7 @@ function removeFromContinue(showId) {
   saveWatchHistory();
   
   // Clear cache to prevent reload issues - ADD THESE LINES
-  const cacheKey = `cached_kukufm_shows_hindi`;
+  const cacheKey = `cached_kukufm_shows_tamil`;
   localStorage.removeItem(cacheKey);
   
   renderContinueWatching();
@@ -2063,8 +1867,8 @@ window.addEventListener('beforeunload', () => {
   }
 });
   </script>
-  
- <script>
+ 
+  <script>
 
 // Service Worker Registration and Update Handling
 if ('serviceWorker' in navigator) {
@@ -2336,6 +2140,7 @@ async function getCacheInfo() {
 // Example usage:
 // getCacheInfo().then(info => console.log('Cache info:', info));
 
-</script>  
+</script>
+  
 </body>
 </html>
