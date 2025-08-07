@@ -63,7 +63,7 @@ body {
 
 /* Mobile Menu Button */
 .mobile-menu-btn {
-  display: block;
+  display: none;
   background: none;
   border: none;
   color: var(--text-primary);
@@ -91,7 +91,7 @@ body {
 
 /* Desktop Navigation */
 .desktop-nav {
-  display: none;
+  display: flex;
   gap: 2rem;
   flex: 1;
   margin-left: 2rem;
@@ -407,16 +407,10 @@ body {
   margin-bottom: 2rem;
 }
 
-.section-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
 .section-title {
   font-size: 1.25rem;
   font-weight: 600;
+  margin-bottom: 1rem;
   color: var(--text-primary);
   display: flex;
   align-items: center;
@@ -426,89 +420,6 @@ body {
 .section-icon {
   font-size: 1rem;
   opacity: 0.8;
-}
-
-.view-all-btn {
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--text-secondary);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.view-all-btn:hover {
-  background: var(--bg-card);
-  border-color: var(--primary);
-  color: var(--text-primary);
-}
-
-.view-all-btn.active {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: white;
-}
-
-.section-grid {
-  display: none;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.section-grid.active {
-  display: grid;
-}
-
-/* Section visibility states */
-.section.hidden-for-view-all {
-  display: none !important;
-}
-
-.section.view-all-active {
-  margin-top: 0;
-}
-
-.section.view-all-active .section-header {
-  position: sticky;
-  top: 70px;
-  background: var(--bg-primary);
-  z-index: 50;
-  padding: 1rem 0;
-  margin-bottom: 1rem;
-}
-
-/* Back to sections button */
-.back-to-sections {
-  display: none;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  color: var(--text-primary);
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.back-to-sections:hover {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: white;
-}
-
-.back-to-sections.visible {
-  display: flex;
 }
 
 /* Horizontal Scroll */
@@ -583,7 +494,7 @@ body {
 /* Search Results Grid */
 .search-results-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -800,108 +711,6 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Netflix-style numbered cards */
-.show-card.numbered {
-  position: relative;
-  overflow: visible;
-}
-
-.show-card.numbered::before {
-  content: attr(data-rank);
-  position: absolute;
-  bottom: -10px;
-  left: -15px;
-  font-size: 6rem;
-  font-weight: 900;
-  color: transparent;
-  -webkit-text-stroke: 3px var(--primary);
-  text-stroke: 3px var(--primary);
-  z-index: -1;
-  line-height: 1;
-  pointer-events: none;
-  font-family: 'Inter', sans-serif;
-}
-
-.show-card.numbered .show-image {
-  position: relative;
-  z-index: 2;
-}
-
-.show-card.numbered .show-info {
-  position: relative;
-  z-index: 2;
-}
-
-/* Hover effect for numbered cards */
-.show-card.numbered:hover::before {
-  -webkit-text-stroke: 3px var(--secondary);
-  text-stroke: 3px var(--secondary);
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-
-/* Alternative solid number style */
-.show-card.numbered.solid-number::before {
-  color: var(--primary);
-  -webkit-text-stroke: none;
-  text-stroke: none;
-  opacity: 0.9;
-  font-size: 4.5rem;
-  bottom: -5px;
-  left: -10px;
-}
-
-.show-card.numbered.solid-number:hover::before {
-  opacity: 0.5;
-  color: var(--secondary);
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .show-card.numbered::before {
-    font-size: 4rem;
-    bottom: -5px;
-    left: -10px;
-    -webkit-text-stroke: 2px var(--primary);
-    text-stroke: 2px var(--primary);
-  }
-
-  .show-card.numbered.solid-number::before {
-    font-size: 3.5rem;
-    bottom: -2px;
-    left: -8px;
-  }
-}
-
-/* Custom colors for top ranks 
-.show-card.numbered[data-rank="1"]::before {
-  -webkit-text-stroke: 3px #ffd700;
-  text-stroke: 3px #ffd700;
-}
-
-.show-card.numbered[data-rank="2"]::before {
-  -webkit-text-stroke: 3px #c0c0c0;
-  text-stroke: 3px #c0c0c0;
-}
-
-.show-card.numbered[data-rank="3"]::before {
-  -webkit-text-stroke: 3px #cd7f32;
-  text-stroke: 3px #cd7f32;
-}
-
-/* Solid number versions */
-.show-card.numbered.solid-number[data-rank="1"]::before {
-  color: #ffd700;
-}
-
-.show-card.numbered.solid-number[data-rank="2"]::before {
-  color: #c0c0c0;
-}
-
-.show-card.numbered.solid-number[data-rank="3"]::before {
-  color: #cd7f32;
-} */
-
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .mobile-menu-btn {
@@ -944,7 +753,7 @@ body {
   }
 
   .show-card {
-    width: auto;
+    width: 120px;
   }
 
   .show-image {
@@ -965,44 +774,6 @@ body {
 
   .search-results-header {
     padding: 1rem;
-  }
-
-  .section-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
-
-  .search-results-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
-
-  .view-all-btn {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
-  }
-
-  .section-header {
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  
-  .section.view-all-active .section-header {
-    top: 60px;
-    padding: 0.75rem 0;
-  }
-  
-  .back-to-sections {
-    padding: 0.6rem 0.8rem;
-    font-size: 0.85rem;
-    margin-bottom: 0.75rem;
-  }
-}
-
-@media (min-width: 769px) {
-  .mobile-menu-btn {
-    display: none;
-  }
-  .desktop-nav {
-    display: flex;
   }
 }
 
@@ -1118,11 +889,6 @@ body {
 
   <!-- Main Content -->
   <main class="main-content" id="mainContent">
-    <!-- Back to sections button -->
-    <button class="back-to-sections" id="backToSections" onclick="exitViewAllMode()">
-	  <span>←</span>
-      <span>Back to All Sections</span>
-    </button>  
     <div class="loading" id="loadingState">
       <div class="spinner"></div>
       <div class="loading-text">Loading Tamil shows...</div>
@@ -1238,9 +1004,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Get current page language
 function getCurrentLanguage() {
   const path = window.location.pathname;
-  const filename = path.split('/').pop() || 'index.html';
+  const filename = path.split('/').pop() || 'enhanced_meow_app.html';
   
-  if (filename === 'index.html') return 'tamil';
+  if (filename === 'enhanced_meow_app.html') return 'tamil';
   return filename.replace('.html', '');
 }
 
@@ -1736,11 +1502,6 @@ function hideLoading() {
 
 // Handle search
 function handleSearch(query) {
-  // Exit view all mode when searching
-  if (currentViewAllSection !== null) {
-    exitViewAllMode();
-  }
-  
   if (!query.trim()) {
     isSearchMode = false;
     searchResultsHeader.style.display = 'none';
@@ -1750,23 +1511,18 @@ function handleSearch(query) {
     isSearchMode = true;
     const searchTerm = query.toLowerCase();
     const filteredShows = allShows.filter(show => 
-  show.show?.title?.toLowerCase().includes(searchTerm) ||
-  show.show?.description?.toLowerCase().includes(searchTerm)
-);
-
-// Remove duplicates based on show ID
-const uniqueShows = filteredShows.filter((show, index, self) => 
-  index === self.findIndex(s => s.show?.id === show.show?.id)
-);
+      show.show?.title?.toLowerCase().includes(searchTerm) ||
+      show.show?.description?.toLowerCase().includes(searchTerm)
+    );
     
     // Sort search results
-uniqueShows.sort((a, b) => {
-  const titleA = (a.show?.title || '').toLowerCase();
-  const titleB = (b.show?.title || '').toLowerCase();
-  return titleA.localeCompare(titleB);
-});
-
-renderSearchResults(query, uniqueShows);
+    filteredShows.sort((a, b) => {
+      const titleA = (a.show?.title || '').toLowerCase();
+      const titleB = (b.show?.title || '').toLowerCase();
+      return titleA.localeCompare(titleB);
+    });
+    
+    renderSearchResults(query, filteredShows);
   }
 }
 
@@ -1783,16 +1539,8 @@ function renderSearchResults(query, shows) {
       </div>
     `;
   } else {
-    // Check if we should show numbers for search results
-    const showNumbers = query.toLowerCase().includes('top') || 
-                       query.toLowerCase().includes('trending') ||
-                       query.toLowerCase().includes('popular');
-    const displayShows = showNumbers ? shows.slice(0, 10) : shows;
-    
-    searchResultsGrid.innerHTML = displayShows.map((show, index) => `
-      <div class="show-card ${showNumbers ? 'numbered' : ''}" 
-           ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-           onclick="openShow('${show.show.id}')">
+    searchResultsGrid.innerHTML = shows.map(show => `
+      <div class="show-card" onclick="openShow('${show.show.id}')">
         <img 
           src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
           alt="${show.show.title}"
@@ -1812,74 +1560,27 @@ function renderSearchResults(query, shows) {
   mainContent.style.display = 'none';
 }
 
-// Check if a section should have numbered cards
-function shouldShowNumbers(sectionTitle) {
-  const numberedSections = [
-    'top 10',
-    'trending',
-    'most popular',
-    'top rated',
-    'most watched',
-    'popular this week',
-    'trending now',
-    'top picks',
-	'newly & hot',
-	'new releases'
-  ];
-  
-  return numberedSections.some(keyword => 
-    sectionTitle.toLowerCase().includes(keyword.toLowerCase())
-  );
-}
-
-// Check if section should use solid numbers instead of outlined
-function shouldUseSolidNumbers(sectionTitle) {
-  const solidNumberSections = [
-    'top 10',
-    'top rated'
-  ];
-  
-  return solidNumberSections.some(keyword => 
-    sectionTitle.toLowerCase().includes(keyword.toLowerCase())
-  );
-}
-
 // Render sections
 function renderSections() {
   if (isSearchMode) return;
   
-  sectionsContainer.innerHTML = sectionsData.map((section, sectionIndex) => {
+  sectionsContainer.innerHTML = sectionsData.map(section => {
     const sectionShows = getShowsForSection(section);
     
     if (sectionShows.length === 0) return '';
     
     const sectionIcon = getSectionIcon(section.title);
-    const showNumbers = shouldShowNumbers(section.title);
-    const useSolidNumbers = shouldUseSolidNumbers(section.title);
-    
-    // Limit to 10 items for numbered sections
-    const displayShows = showNumbers ? sectionShows.slice(0, 100) : sectionShows;
     
     return `
-      <div class="section" id="section-${sectionIndex}">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-icon">${sectionIcon}</span>
-            ${section.title}
-          </h2>
-          <button class="view-all-btn" onclick="toggleSectionView(${sectionIndex})">
-            <span class="view-all-text">View All</span>
-            <span class="view-all-icon">→</span>
-          </button>
-        </div>
-        
-        <!-- Horizontal Scroll View (Default) -->
-        <div class="shows-wrapper" id="shows-wrapper-${sectionIndex}">
+      <div class="section">
+        <h2 class="section-title">
+          <span class="section-icon">${sectionIcon}</span>
+          ${section.title}
+        </h2>
+        <div class="shows-wrapper">
           <div class="shows-scroll">
-            ${displayShows.map((show, index) => `
-              <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
-                   ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-                   onclick="openShow('${show.show.id}')">
+            ${sectionShows.map(show => `
+              <div class="show-card" onclick="openShow('${show.show.id}')">
                 <img 
                   src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
                   alt="${show.show.title}"
@@ -1895,151 +1596,12 @@ function renderSections() {
             `).join('')}
           </div>
         </div>
-        
-        <!-- Grid View (Hidden by default) -->
-        <div class="section-grid" id="section-grid-${sectionIndex}">
-          ${displayShows.map((show, index) => `
-            <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
-                 ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-                 onclick="openShow('${show.show.id}')">
-              <img 
-                src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
-                alt="${show.show.title}"
-                class="show-image"
-                loading="lazy"
-                onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
-              >
-              <div class="show-info">
-                <div class="show-title" title="${show.show.title}">${show.show.title}</div>
-                <div class="show-episodes">${show.episodes?.length || 0} episodes</div>
-              </div>
-            </div>
-          `).join('')}
-        </div>
       </div>
     `;
   }).join('');
 }
 
-// Track view all state
-let currentViewAllSection = null;
-
-// Toggle section view between horizontal scroll and grid
-function toggleSectionView(sectionIndex) {
-  const section = document.getElementById(`section-${sectionIndex}`);
-  const horizontalWrapper = document.getElementById(`shows-wrapper-${sectionIndex}`);
-  const gridWrapper = document.getElementById(`section-grid-${sectionIndex}`);
-  const viewAllBtn = section.querySelector('.view-all-btn');
-  const viewAllText = viewAllBtn.querySelector('.view-all-text');
-  const viewAllIcon = viewAllBtn.querySelector('.view-all-icon');
-  const backToSections = document.getElementById('backToSections');
-  
-  const isGridView = gridWrapper.classList.contains('active');
-  
-  if (isGridView) {
-    // Exit view all mode
-    exitViewAllMode();
-  } else {
-    // Enter view all mode
-    enterViewAllMode(sectionIndex);
-  }
-}
-
-// Enter view all mode
-function enterViewAllMode(sectionIndex) {
-  const section = document.getElementById(`section-${sectionIndex}`);
-  const horizontalWrapper = document.getElementById(`shows-wrapper-${sectionIndex}`);
-  const gridWrapper = document.getElementById(`section-grid-${sectionIndex}`);
-  const viewAllBtn = section.querySelector('.view-all-btn');
-  const viewAllText = viewAllBtn.querySelector('.view-all-text');
-  const viewAllIcon = viewAllBtn.querySelector('.view-all-icon');
-  const backToSections = document.getElementById('backToSections');
-  
-  // Hide all other sections
-  const allSections = document.querySelectorAll('.section');
-  allSections.forEach((sec, index) => {
-    if (index !== sectionIndex) {
-      sec.classList.add('hidden-for-view-all');
-    }
-  });
-  
-  // Show grid view for current section
-  gridWrapper.classList.add('active');
-  horizontalWrapper.style.display = 'none';
-  section.classList.add('view-all-active');
-  
-  // Update button
-  viewAllBtn.classList.add('active');
-  viewAllText.textContent = 'View Less';
-  viewAllIcon.textContent = '←';
-  
-  // Show back button
-  backToSections.classList.add('visible');
-  
-  // Hide continue watching section
-  const continueSection = document.getElementById('continueSection');
-  if (continueSection) {
-    continueSection.style.display = 'none';
-  }
-  
-  // Set current view all section
-  currentViewAllSection = sectionIndex;
-  
-  // Scroll to top
-  window.scrollTo({ 
-    top: 0, 
-    behavior: 'smooth' 
-  });
-}
-
-// Exit view all mode
-function exitViewAllMode() {
-  if (currentViewAllSection === null) return;
-  
-  const section = document.getElementById(`section-${currentViewAllSection}`);
-  const horizontalWrapper = document.getElementById(`shows-wrapper-${currentViewAllSection}`);
-  const gridWrapper = document.getElementById(`section-grid-${currentViewAllSection}`);
-  const viewAllBtn = section.querySelector('.view-all-btn');
-  const viewAllText = viewAllBtn.querySelector('.view-all-text');
-  const viewAllIcon = viewAllBtn.querySelector('.view-all-icon');
-  const backToSections = document.getElementById('backToSections');
-  
-  // Show all sections
-  const allSections = document.querySelectorAll('.section');
-  allSections.forEach(sec => {
-    sec.classList.remove('hidden-for-view-all');
-    sec.classList.remove('view-all-active');
-  });
-  
-  // Switch back to horizontal scroll
-  gridWrapper.classList.remove('active');
-  horizontalWrapper.style.display = 'block';
-  
-  // Update button
-  viewAllBtn.classList.remove('active');
-  viewAllText.textContent = 'View All';
-  viewAllIcon.textContent = '→';
-  
-  // Hide back button
-  backToSections.classList.remove('visible');
-  
-  // Show continue watching section if it has content
-  const continueSection = document.getElementById('continueSection');
-  const continueGrid = document.getElementById('continueGrid');
-  if (continueSection && continueGrid && continueGrid.children.length > 0) {
-    continueSection.style.display = 'block';
-  }
-  
-  // Reset current section
-  currentViewAllSection = null;
-  
-  // Scroll to the section
-  section.scrollIntoView({ 
-    behavior: 'smooth', 
-    block: 'start' 
-  });
-}
-
+// Get shows for a specific section
 // Get shows for a specific section
 function getShowsForSection(section) {
   const sectionShows = [];
@@ -2090,23 +1652,10 @@ function getSectionIcon(title) {
     'Action': '⚡',
     'Drama': '🎭',
     'Horror': '👻',
-    'Thriller': '😱',
-    'Top 10': '🏆',
-    'Top Rated': '🥇',
-    'Most Popular': '⭐',
-    'Most Watched': '👁️'
+    'Thriller': '😱'
   };
   
-  // Try exact match first
-  if (icons[title]) return icons[title];
-  
-  // Try partial matches
-  const lowerTitle = title.toLowerCase();
-  if (lowerTitle.includes('top')) return '🏆';
-  if (lowerTitle.includes('trending')) return '🔥';
-  if (lowerTitle.includes('popular')) return '⭐';
-  
-  return '📺';
+  return icons[title] || '📺';
 }
 
 // Render continue watching

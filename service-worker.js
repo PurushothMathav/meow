@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kukufm-v0708250200';
+const CACHE_NAME = 'kukufm-v0708251900';
 const STATIC_CACHE = `${CACHE_NAME}-static`;
 const DYNAMIC_CACHE = `${CACHE_NAME}-dynamic`;
 const UPDATE_CHECK_INTERVAL = 30000;
@@ -15,6 +15,7 @@ const STATIC_ASSETS = [
   "/meow/english.html",
   "/meow/audio.html",
   "/meow/manifest.json",
+  "/meow/master_tamil.json",
   "/meow/service-worker.js",
   "/meow/icons/favicon-48x48.png",
   "/meow/icons/favicon-72x72.png",

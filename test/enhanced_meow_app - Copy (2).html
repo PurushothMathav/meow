@@ -63,7 +63,7 @@ body {
 
 /* Mobile Menu Button */
 .mobile-menu-btn {
-  display: block;
+  display: none;
   background: none;
   border: none;
   color: var(--text-primary);
@@ -91,7 +91,7 @@ body {
 
 /* Desktop Navigation */
 .desktop-nav {
-  display: none;
+  display: flex;
   gap: 2rem;
   flex: 1;
   margin-left: 2rem;
@@ -457,7 +457,7 @@ body {
 
 .section-grid {
   display: none;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -583,7 +583,7 @@ body {
 /* Search Results Grid */
 .search-results-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -800,108 +800,6 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Netflix-style numbered cards */
-.show-card.numbered {
-  position: relative;
-  overflow: visible;
-}
-
-.show-card.numbered::before {
-  content: attr(data-rank);
-  position: absolute;
-  bottom: -10px;
-  left: -15px;
-  font-size: 6rem;
-  font-weight: 900;
-  color: transparent;
-  -webkit-text-stroke: 3px var(--primary);
-  text-stroke: 3px var(--primary);
-  z-index: -1;
-  line-height: 1;
-  pointer-events: none;
-  font-family: 'Inter', sans-serif;
-}
-
-.show-card.numbered .show-image {
-  position: relative;
-  z-index: 2;
-}
-
-.show-card.numbered .show-info {
-  position: relative;
-  z-index: 2;
-}
-
-/* Hover effect for numbered cards */
-.show-card.numbered:hover::before {
-  -webkit-text-stroke: 3px var(--secondary);
-  text-stroke: 3px var(--secondary);
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-
-/* Alternative solid number style */
-.show-card.numbered.solid-number::before {
-  color: var(--primary);
-  -webkit-text-stroke: none;
-  text-stroke: none;
-  opacity: 0.9;
-  font-size: 4.5rem;
-  bottom: -5px;
-  left: -10px;
-}
-
-.show-card.numbered.solid-number:hover::before {
-  opacity: 0.5;
-  color: var(--secondary);
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .show-card.numbered::before {
-    font-size: 4rem;
-    bottom: -5px;
-    left: -10px;
-    -webkit-text-stroke: 2px var(--primary);
-    text-stroke: 2px var(--primary);
-  }
-
-  .show-card.numbered.solid-number::before {
-    font-size: 3.5rem;
-    bottom: -2px;
-    left: -8px;
-  }
-}
-
-/* Custom colors for top ranks 
-.show-card.numbered[data-rank="1"]::before {
-  -webkit-text-stroke: 3px #ffd700;
-  text-stroke: 3px #ffd700;
-}
-
-.show-card.numbered[data-rank="2"]::before {
-  -webkit-text-stroke: 3px #c0c0c0;
-  text-stroke: 3px #c0c0c0;
-}
-
-.show-card.numbered[data-rank="3"]::before {
-  -webkit-text-stroke: 3px #cd7f32;
-  text-stroke: 3px #cd7f32;
-}
-
-/* Solid number versions */
-.show-card.numbered.solid-number[data-rank="1"]::before {
-  color: #ffd700;
-}
-
-.show-card.numbered.solid-number[data-rank="2"]::before {
-  color: #c0c0c0;
-}
-
-.show-card.numbered.solid-number[data-rank="3"]::before {
-  color: #cd7f32;
-} */
-
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .mobile-menu-btn {
@@ -944,7 +842,7 @@ body {
   }
 
   .show-card {
-    width: auto;
+    width: 120px;
   }
 
   .show-image {
@@ -968,11 +866,7 @@ body {
   }
 
   .section-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
-
-  .search-results-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 
   .view-all-btn {
@@ -994,15 +888,6 @@ body {
     padding: 0.6rem 0.8rem;
     font-size: 0.85rem;
     margin-bottom: 0.75rem;
-  }
-}
-
-@media (min-width: 769px) {
-  .mobile-menu-btn {
-    display: none;
-  }
-  .desktop-nav {
-    display: flex;
   }
 }
 
@@ -1238,9 +1123,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Get current page language
 function getCurrentLanguage() {
   const path = window.location.pathname;
-  const filename = path.split('/').pop() || 'index.html';
+  const filename = path.split('/').pop() || 'enhanced_meow_app.html';
   
-  if (filename === 'index.html') return 'tamil';
+  if (filename === 'enhanced_meow_app.html') return 'tamil';
   return filename.replace('.html', '');
 }
 
@@ -1750,23 +1635,18 @@ function handleSearch(query) {
     isSearchMode = true;
     const searchTerm = query.toLowerCase();
     const filteredShows = allShows.filter(show => 
-  show.show?.title?.toLowerCase().includes(searchTerm) ||
-  show.show?.description?.toLowerCase().includes(searchTerm)
-);
-
-// Remove duplicates based on show ID
-const uniqueShows = filteredShows.filter((show, index, self) => 
-  index === self.findIndex(s => s.show?.id === show.show?.id)
-);
+      show.show?.title?.toLowerCase().includes(searchTerm) ||
+      show.show?.description?.toLowerCase().includes(searchTerm)
+    );
     
     // Sort search results
-uniqueShows.sort((a, b) => {
-  const titleA = (a.show?.title || '').toLowerCase();
-  const titleB = (b.show?.title || '').toLowerCase();
-  return titleA.localeCompare(titleB);
-});
-
-renderSearchResults(query, uniqueShows);
+    filteredShows.sort((a, b) => {
+      const titleA = (a.show?.title || '').toLowerCase();
+      const titleB = (b.show?.title || '').toLowerCase();
+      return titleA.localeCompare(titleB);
+    });
+    
+    renderSearchResults(query, filteredShows);
   }
 }
 
@@ -1783,16 +1663,8 @@ function renderSearchResults(query, shows) {
       </div>
     `;
   } else {
-    // Check if we should show numbers for search results
-    const showNumbers = query.toLowerCase().includes('top') || 
-                       query.toLowerCase().includes('trending') ||
-                       query.toLowerCase().includes('popular');
-    const displayShows = showNumbers ? shows.slice(0, 10) : shows;
-    
-    searchResultsGrid.innerHTML = displayShows.map((show, index) => `
-      <div class="show-card ${showNumbers ? 'numbered' : ''}" 
-           ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-           onclick="openShow('${show.show.id}')">
+    searchResultsGrid.innerHTML = shows.map(show => `
+      <div class="show-card" onclick="openShow('${show.show.id}')">
         <img 
           src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
           alt="${show.show.title}"
@@ -1812,38 +1684,7 @@ function renderSearchResults(query, shows) {
   mainContent.style.display = 'none';
 }
 
-// Check if a section should have numbered cards
-function shouldShowNumbers(sectionTitle) {
-  const numberedSections = [
-    'top 10',
-    'trending',
-    'most popular',
-    'top rated',
-    'most watched',
-    'popular this week',
-    'trending now',
-    'top picks',
-	'newly & hot',
-	'new releases'
-  ];
-  
-  return numberedSections.some(keyword => 
-    sectionTitle.toLowerCase().includes(keyword.toLowerCase())
-  );
-}
-
-// Check if section should use solid numbers instead of outlined
-function shouldUseSolidNumbers(sectionTitle) {
-  const solidNumberSections = [
-    'top 10',
-    'top rated'
-  ];
-  
-  return solidNumberSections.some(keyword => 
-    sectionTitle.toLowerCase().includes(keyword.toLowerCase())
-  );
-}
-
+// Render sections
 // Render sections
 function renderSections() {
   if (isSearchMode) return;
@@ -1854,11 +1695,6 @@ function renderSections() {
     if (sectionShows.length === 0) return '';
     
     const sectionIcon = getSectionIcon(section.title);
-    const showNumbers = shouldShowNumbers(section.title);
-    const useSolidNumbers = shouldUseSolidNumbers(section.title);
-    
-    // Limit to 10 items for numbered sections
-    const displayShows = showNumbers ? sectionShows.slice(0, 100) : sectionShows;
     
     return `
       <div class="section" id="section-${sectionIndex}">
@@ -1876,10 +1712,8 @@ function renderSections() {
         <!-- Horizontal Scroll View (Default) -->
         <div class="shows-wrapper" id="shows-wrapper-${sectionIndex}">
           <div class="shows-scroll">
-            ${displayShows.map((show, index) => `
-              <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
-                   ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-                   onclick="openShow('${show.show.id}')">
+            ${sectionShows.map(show => `
+              <div class="show-card" onclick="openShow('${show.show.id}')">
                 <img 
                   src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
                   alt="${show.show.title}"
@@ -1898,10 +1732,8 @@ function renderSections() {
         
         <!-- Grid View (Hidden by default) -->
         <div class="section-grid" id="section-grid-${sectionIndex}">
-          ${displayShows.map((show, index) => `
-            <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
-                 ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-                 onclick="openShow('${show.show.id}')">
+          ${sectionShows.map(show => `
+            <div class="show-card" onclick="openShow('${show.show.id}')">
               <img 
                 src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
                 alt="${show.show.title}"
@@ -2090,23 +1922,10 @@ function getSectionIcon(title) {
     'Action': '⚡',
     'Drama': '🎭',
     'Horror': '👻',
-    'Thriller': '😱',
-    'Top 10': '🏆',
-    'Top Rated': '🥇',
-    'Most Popular': '⭐',
-    'Most Watched': '👁️'
+    'Thriller': '😱'
   };
   
-  // Try exact match first
-  if (icons[title]) return icons[title];
-  
-  // Try partial matches
-  const lowerTitle = title.toLowerCase();
-  if (lowerTitle.includes('top')) return '🏆';
-  if (lowerTitle.includes('trending')) return '🔥';
-  if (lowerTitle.includes('popular')) return '⭐';
-  
-  return '📺';
+  return icons[title] || '📺';
 }
 
 // Render continue watching
