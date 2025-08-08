@@ -457,7 +457,7 @@ body {
 
 .section-grid {
   display: none;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(3, 1fr) !important;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -583,7 +583,7 @@ body {
 /* Search Results Grid */
 .search-results-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(3, 1fr) !important;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -1058,7 +1058,7 @@ body {
         <a href="bengali.html" class="nav-item" data-lang="bengali">Bengali</a>
         <a href="hindi.html" class="nav-item" data-lang="hindi">Hindi</a>
         <a href="english.html" class="nav-item" data-lang="english">English</a>
-        <a href="audio.html" class="nav-item" data-lang="tamil_audio">Kukufm (Tamil)</a>
+        <a href="tamilaudio.html" class="nav-item" data-lang="tamil_audio">Kukufm (Tamil)</a>
       </nav>
       
       <!-- Search Container -->
@@ -1093,7 +1093,7 @@ body {
       <a href="bengali.html" class="mobile-nav-item" data-lang="bengali">Bengali</a>
       <a href="hindi.html" class="mobile-nav-item" data-lang="hindi">Hindi</a>
       <a href="english.html" class="mobile-nav-item" data-lang="english">English</a>
-      <a href="audio.html" class="mobile-nav-item" data-lang="tamil_audio">Kukufm (Tamil)</a>
+      <a href="tamilaudio.html" class="mobile-nav-item" data-lang="tamil_audio">Kukufm (Tamil)</a>
       <a href="https://t.me/panguplay_chat" target="_blank" class="mobile-nav-item telegram-link"><i class="fab fa-telegram-plane"></i>Join Us</a>
     </nav>
   </div>
@@ -1149,6 +1149,7 @@ body {
           controls 
           preload="metadata"
           playsinline
+		  style="background: url('Meow_Watch_KUKU_TV_Free.png') center center / cover no-repeat; height: 60vh; border-radius: 12px;"
         ></video>
       </div>
       
@@ -1161,11 +1162,9 @@ body {
           <div class="control-group">
             <label class="control-label">Quality</label>
             <select id="qualitySelect" class="control-select">
-              <option value="video_1080p">1080p HD</option>
-              <option value="video_720p" selected>720p HD</option>
-              <option value="video_480p">480p SD</option>
-              <option value="video_360p">360p SD</option>
-              <option value="video_240p">240p SD</option>
+              <option value="audio_128kb" selected>128 KB</option>
+              <option value="audio_64kb">64 KB</option>
+              <option value="audio_24kb">24 KB</option>
             </select>
           </div>
         </div>
@@ -1194,7 +1193,7 @@ let hls = null;
 let autoPlayEnabled = true;
 let watchHistory = {};
 let searchTimeout = null;
-let currentLanguage = 'tamil';
+let currentLanguage = 'tamil_audio';
 let isSearchMode = false;
 
 // Master data structure for different languages - will be loaded dynamically
@@ -1238,9 +1237,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Get current page language
 function getCurrentLanguage() {
   const path = window.location.pathname;
-  const filename = path.split('/').pop() || 'index.html';
+  const filename = path.split('/').pop() || 'tamilaudio.html';
   
-  if (filename === 'index.html') return 'tamil';
+  if (filename === 'tamilaudio.html') return 'tamil_audio';
   return filename.replace('.html', '');
 }
 
