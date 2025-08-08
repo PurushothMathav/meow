@@ -1199,13 +1199,6 @@ let isSearchMode = false;
 // Master data structure for different languages - will be loaded dynamically
 let masterData = {};
 
-// Service Worker Registration and Update Handling
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    registerServiceWorker();
-  });
-}
-
 // DOM elements
 const showsGrid = document.getElementById('showsGrid');
 const continueGrid = document.getElementById('continueGrid');
@@ -2439,16 +2432,21 @@ window.addEventListener('beforeunload', () => {
   }
 });
 
+// Service Worker Registration and Update Handling
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    registerServiceWorker();
+  });
+}
+
 async function registerServiceWorker() {
   try {
     const registration = await navigator.serviceWorker.register('/meow/service-worker.js', {
-      scope: '/meow/',
-      updateViaCache: 'none' // Always check for SW updates
+      scope: '/meow/'
     });
     
     console.log('SW registered:', registration);
     
-    // Enhanced update handling
     registration.addEventListener('updatefound', () => {
       const newWorker = registration.installing;
       
@@ -2467,17 +2465,9 @@ async function registerServiceWorker() {
     
     navigator.serviceWorker.addEventListener('message', handleServiceWorkerMessage);
     
-    // More frequent update checks for better performance
     setInterval(() => {
       registration.update();
-    }, 30000); // Check every 30 seconds instead of 60 seconds
-    
-    // Preload critical resources after SW is ready
-    if (registration.active) {
-      preloadCriticalResources();
-    } else {
-      registration.addEventListener('activate', preloadCriticalResources);
-    }
+    }, 60000);
     
   } catch (error) {
     console.error('SW registration failed:', error);
@@ -2485,7 +2475,7 @@ async function registerServiceWorker() {
 }
 
 function handleServiceWorkerMessage(event) {
-  const { type, message, url, timestamp } = event.data;
+  const { type, message, url } = event.data;
   
   switch (type) {
     case 'SW_UPDATED':
@@ -2500,9 +2490,9 @@ function handleServiceWorkerMessage(event) {
       showUpdateNotification();
       break;
       
-    case 'JSON_UPDATED': // Handle the new JSON_UPDATED message type
-      console.log('JSON content updated:', url);
-      handleJsonUpdate(url);
+    case 'CONTENT_UPDATED':
+      console.log('Content updated:', url);
+      refreshContent(url);
       break;
       
     case 'CACHE_UPDATED':
@@ -2512,214 +2502,10 @@ function handleServiceWorkerMessage(event) {
       
     case 'SW_ACTIVATED':
       console.log('Service worker activated:', message);
-      preloadCriticalResources();
       break;
   }
 }
 
-// New function to handle JSON updates
-function handleJsonUpdate(url) {
-  // If it's a master file, consider reloading the app data
-  if (url.includes('master_')) {
-    const urlParts = url.split('/');
-    const filename = urlParts[urlParts.length - 1];
-    const language = filename.replace('master_', '').replace('.json', '');
-    
-    // If it's the current language, refresh the data
-    if (language === currentLanguage) {
-      console.log('Current language master file updated, refreshing data...');
-      
-      // Clear cached data and reload
-      const cacheKey = `cached_master_${currentLanguage}`;
-      localStorage.removeItem(cacheKey);
-      
-      const showsCacheKey = `cached_kukufm_shows_${currentLanguage}`;
-      localStorage.removeItem(showsCacheKey);
-      
-      // Show update notification
-      showToast('New content available! Refreshing...');
-      
-      // Reload the shows after a short delay
-      setTimeout(() => {
-        loadShows();
-      }, 1000);
-    }
-  }
-}
-
-// Preload critical resources for better performance
-function preloadCriticalResources() {
-  if (!navigator.serviceWorker.controller) return;
-  
-  // Preload current language section data
-  const masterData = masterData?.[currentLanguage];
-  if (masterData?.sections) {
-    const sectionFiles = masterData.sections.flatMap(section => section.shows || []).slice(0, 20);
-    
-    navigator.serviceWorker.controller.postMessage({
-      type: 'PRELOAD_SECTION',
-      data: {
-        language: currentLanguage,
-        sectionFiles: sectionFiles
-      }
-    });
-  }
-  
-  // Prefetch popular/trending shows based on continue watching
-  const popularShows = Object.keys(watchHistory).slice(0, 10);
-  if (popularShows.length > 0) {
-    navigator.serviceWorker.controller.postMessage({
-      type: 'PREFETCH_SHOWS',
-      data: {
-        urls: popularShows.map(showId => {
-          const show = allShows.find(s => s.show.id.toString() === showId);
-          return show ? `${show.show.filename}` : null;
-        }).filter(Boolean)
-      }
-    });
-  }
-}
-
-// Enhanced performance optimizations
-function setupPerformanceOptimizations() {
-  // Enable network information API if available
-  if ('connection' in navigator) {
-    const connection = navigator.connection;
-    
-    // Adjust quality based on connection
-    connection.addEventListener('change', () => {
-      adjustQualityBasedOnConnection(connection);
-    });
-    
-    // Initial adjustment
-    adjustQualityBasedOnConnection(connection);
-  }
-  
-  // Preload next episode when current is 50% complete
-  videoPlayer.addEventListener('timeupdate', () => {
-    if (videoPlayer.duration && videoPlayer.currentTime / videoPlayer.duration > 0.5) {
-      preloadNextEpisode();
-    }
-  });
-  
-  // Intersection Observer for lazy loading improvements
-  if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          if (img.dataset.src) {
-            img.src = img.dataset.src;
-            img.removeAttribute('data-src');
-            imageObserver.unobserve(img);
-          }
-        }
-      });
-    }, { rootMargin: '50px' });
-    
-    // Apply to dynamically created images
-    const originalCreateElement = document.createElement;
-    document.createElement = function(tagName) {
-      const element = originalCreateElement.call(this, tagName);
-      if (tagName.toLowerCase() === 'img') {
-        imageObserver.observe(element);
-      }
-      return element;
-    };
-  }
-}
-
-// Adjust video quality based on connection
-function adjustQualityBasedOnConnection(connection) {
-  if (!connection) return;
-  
-  const { effectiveType, downlink } = connection;
-  let recommendedQuality = 'audio_128kb'; // default
-  
-  if (effectiveType === '4g' && downlink > 5) {
-    recommendedQuality = 'audio_128kb';
-  } else if (effectiveType === '3g' || downlink < 2) {
-    recommendedQuality = 'audio_64kb';
-  } else if (effectiveType === '2g' || downlink < 1) {
-    recommendedQuality = 'audio_24kb';
-  }
-  
-  // Update quality select if different
-  if (qualitySelect.value !== recommendedQuality) {
-    const option = qualitySelect.querySelector(`option[value="${recommendedQuality}"]`);
-    if (option) {
-      qualitySelect.value = recommendedQuality;
-      console.log(`Quality adjusted to ${recommendedQuality} based on connection`);
-    }
-  }
-}
-
-// Preload next episode for smoother playback
-let nextEpisodePreloaded = false;
-function preloadNextEpisode() {
-  if (nextEpisodePreloaded || !currentEpisodes || !autoPlayEnabled) return;
-  
-  const currentIndex = parseInt(episodeSelect.value) || 0;
-  const nextIndex = currentIndex + 1;
-  
-  if (nextIndex < currentEpisodes.length) {
-    const nextEpisode = currentEpisodes[nextIndex];
-    const quality = qualitySelect.value;
-    const source = nextEpisode.content?.[quality] || nextEpisode.content?.[Object.keys(nextEpisode.content)[0]];
-    
-    if (source) {
-      // Create invisible video element for preloading
-      const preloadVideo = document.createElement('video');
-      preloadVideo.src = source;
-      preloadVideo.preload = 'metadata';
-      preloadVideo.style.display = 'none';
-      document.body.appendChild(preloadVideo);
-      
-      // Remove after preload
-      setTimeout(() => {
-        document.body.removeChild(preloadVideo);
-      }, 5000);
-      
-      nextEpisodePreloaded = true;
-      console.log(`Preloaded next episode: ${nextIndex + 1}`);
-    }
-  }
-}
-
-// Enhanced cache management
-function getCacheStatus() {
-  if (!navigator.serviceWorker.controller) return;
-  
-  const channel = new MessageChannel();
-  channel.port1.onmessage = (event) => {
-    console.log('Cache status:', event.data);
-  };
-  
-  navigator.serviceWorker.controller.postMessage({
-    type: 'GET_CACHE_INFO'
-  }, [channel.port2]);
-}
-
-// Clear specific caches if needed
-function clearAppCache() {
-  if (!navigator.serviceWorker.controller) return;
-  
-  navigator.serviceWorker.controller.postMessage({
-    type: 'CLEAR_CACHE'
-  });
-  
-  // Also clear localStorage caches
-  Object.keys(localStorage).forEach(key => {
-    if (key.startsWith('cached_kukufm_') || key.startsWith('cached_master_')) {
-      localStorage.removeItem(key);
-    }
-  });
-  
-  showToast('Cache cleared! Refreshing...');
-  setTimeout(() => window.location.reload(), 1000);
-}
-
-// Enhanced update notification with more options
 function showUpdateNotification() {
   const notification = document.createElement('div');
   notification.id = 'sw-update-notification';
@@ -2728,71 +2514,54 @@ function showUpdateNotification() {
       position: fixed;
       top: 20px;
       right: 20px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      background: #007bff;
       color: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 8px 25px rgba(255, 75, 43, 0.3);
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       z-index: 10000;
-      max-width: 320px;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      animation: slideInRight 0.3s ease;
+      max-width: 300px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     ">
-      <div style="font-weight: 600; margin-bottom: 8px; font-size: 16px;">
-        🚀 New Version Available!
+      <div style="font-weight: 600; margin-bottom: 8px;">
+        Update Available
       </div>
-      <div style="font-size: 14px; margin-bottom: 15px; opacity: 0.9;">
-        Enhanced features and performance improvements are ready.
+      <div style="font-size: 14px; margin-bottom: 12px;">
+        A new version is available. Click to update.
       </div>
-      <div style="display: flex; gap: 8px;">
-        <button onclick="applyUpdate()" style="
-          background: white;
-          color: var(--primary);
-          border: none;
-          padding: 8px 16px;
-          border-radius: 6px;
-          cursor: pointer;
-          font-weight: 600;
-          font-size: 14px;
-          flex: 1;
-        ">
-          Update Now
-        </button>
-        <button onclick="dismissUpdateNotification()" style="
-          background: rgba(255,255,255,0.2);
-          color: white;
-          border: none;
-          padding: 8px 12px;
-          border-radius: 6px;
-          cursor: pointer;
-          font-size: 14px;
-        ">
-          Later
-        </button>
-      </div>
+      <button onclick="applyUpdate()" style="
+        background: white;
+        color: #007bff;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        margin-right: 8px;
+      ">
+        Update Now
+      </button>
+      <button onclick="dismissUpdateNotification()" style="
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+      ">
+        Later
+      </button>
     </div>
-    <style>
-      @keyframes slideInRight {
-        from { transform: translateX(100%); opacity: 0; }
-        to { transform: translateX(0); opacity: 1; }
-      }
-    </style>
   `;
   
   const existing = document.getElementById('sw-update-notification');
-  if (existing) existing.remove();
+  if (existing) {
+    existing.remove();
+  }
   
   document.body.appendChild(notification);
-  
-  // Auto-dismiss after 10 seconds
-  setTimeout(() => {
-    if (document.getElementById('sw-update-notification')) {
-      dismissUpdateNotification();
-    }
-  }, 10000);
 }
 
-// Rest of the existing functions remain the same...
 function showCacheUpdateNotification() {
   const notification = document.createElement('div');
   notification.innerHTML = `
@@ -2800,19 +2569,16 @@ function showCacheUpdateNotification() {
       position: fixed;
       bottom: 20px;
       left: 20px;
-      background: var(--success);
+      background: #28a745;
       color: white;
-      padding: 12px 18px;
-      border-radius: 8px;
+      padding: 10px 15px;
+      border-radius: 6px;
       font-size: 14px;
       z-index: 10000;
       opacity: 0;
       transition: opacity 0.3s ease;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     ">
-      ✅ Content updated in background
+      Content updated in background
     </div>
   `;
   
@@ -2835,12 +2601,11 @@ function showCacheUpdateNotification() {
 function applyUpdate() {
   if (navigator.serviceWorker.controller) {
     navigator.serviceWorker.controller.postMessage({
-      type: 'SKIP_WAITING'
+      type: 'FORCE_UPDATE'
     });
   }
   
   dismissUpdateNotification();
-  showToast('Updating app...');
   
   setTimeout(() => {
     window.location.reload();
@@ -2850,233 +2615,23 @@ function applyUpdate() {
 function dismissUpdateNotification() {
   const notification = document.getElementById('sw-update-notification');
   if (notification) {
-    notification.style.animation = 'slideInRight 0.3s ease reverse';
-    setTimeout(() => notification.remove(), 300);
+    notification.remove();
   }
 }
 
-// Performance monitoring
-function monitorPerformance() {
-  // Monitor largest contentful paint
-  new PerformanceObserver((entryList) => {
-    const entries = entryList.getEntries();
-    const lastEntry = entries[entries.length - 1];
-    console.log('LCP:', lastEntry.startTime);
-  }).observe({ entryTypes: ['largest-contentful-paint'] });
-  
-  // Monitor cumulative layout shift
-  new PerformanceObserver((entryList) => {
-    let cls = 0;
-    for (const entry of entryList.getEntries()) {
-      if (!entry.hadRecentInput) {
-        cls += entry.value;
-      }
-    }
-    console.log('CLS:', cls);
-  }).observe({ entryTypes: ['layout-shift'] });
-}
-
-// Enhanced content refresh function
 function refreshContent(url) {
   if (url.includes('.json')) {
     console.log('JSON content updated, consider refreshing data');
-    
-    // If it's a master file for current language, refresh immediately
-    if (url.includes(`master_${currentLanguage}.json`)) {
-      console.log('Current language master updated, refreshing...');
-      
-      // Clear caches
-      const masterCacheKey = `cached_master_${currentLanguage}`;
-      const showsCacheKey = `cached_kukufm_shows_${currentLanguage}`;
-      localStorage.removeItem(masterCacheKey);
-      localStorage.removeItem(showsCacheKey);
-      
-      // Show notification and reload
-      showToast('New content available! Updating...');
-      setTimeout(() => {
-        loadShows();
-      }, 1000);
-    }
   }
   
   if (url.includes('.html')) {
     console.log('HTML content updated, consider page refresh');
-    
-    // Only refresh if it's the current page
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    if (url.includes(currentPage)) {
-      showToast('App updated! Refreshing page...');
-      setTimeout(() => {
-        window.location.reload();
-      }, 2000);
-    }
   }
 }
 
-// Enhanced video protection (keep this - it's good UX)
+// Prevent right-click on video (optional)
 videoPlayer.addEventListener('contextmenu', (e) => {
   e.preventDefault();
-  // Optional: Show custom context menu or toast
-  showToast('Right-click disabled on video');
-});
-
-// Enhanced fullscreen handling with better mobile support
-document.addEventListener('fullscreenchange', handleFullscreenChange);
-document.addEventListener('webkitfullscreenchange', handleFullscreenChange); // Safari
-document.addEventListener('mozfullscreenchange', handleFullscreenChange); // Firefox
-document.addEventListener('msfullscreenchange', handleFullscreenChange); // IE/Edge
-
-function handleFullscreenChange() {
-  const isFullscreen = document.fullscreenElement === videoPlayer || 
-                      document.webkitFullscreenElement === videoPlayer ||
-                      document.mozFullScreenElement === videoPlayer ||
-                      document.msFullscreenElement === videoPlayer;
-  
-  if (isFullscreen) {
-    videoPlayer.style.maxHeight = '100vh';
-    videoPlayer.style.width = '100vw';
-    
-    // Hide player controls header in fullscreen for better experience
-    const playerHeader = document.querySelector('.player-header');
-    if (playerHeader) {
-      playerHeader.style.display = 'none';
-    }
-    
-    // Lock orientation to landscape if possible
-    if (screen.orientation && screen.orientation.lock) {
-      screen.orientation.lock('landscape').catch(() => {});
-    }
-  } else {
-    videoPlayer.style.maxHeight = '70vh';
-    videoPlayer.style.width = '100%';
-    
-    // Show player controls header
-    const playerHeader = document.querySelector('.player-header');
-    if (playerHeader) {
-      playerHeader.style.display = 'flex';
-    }
-    
-    // Unlock orientation
-    if (screen.orientation && screen.orientation.unlock) {
-      screen.orientation.unlock();
-    }
-  }
-}
-
-// Enhanced network status handling with retry functionality
-let isOffline = false;
-let retryAttempts = 0;
-const maxRetries = 3;
-
-window.addEventListener('online', () => {
-  isOffline = false;
-  retryAttempts = 0;
-  showToast('🌐 Connection restored! Syncing data...', 'success');
-  
-  // Try to refresh current content when back online
-  if (currentShow && videoPlayer.error) {
-    console.log('Retrying video load after reconnection');
-    const currentIndex = parseInt(episodeSelect.value) || 0;
-    loadEpisode(currentIndex, null, true);
-  }
-  
-  // Sync any pending watch history
-  saveWatchHistory();
-  
-  // Refresh sections if in search mode
-  if (isSearchMode) {
-    const query = searchInput.value;
-    if (query) {
-      handleSearch(query);
-    }
-  }
-});
-
-window.addEventListener('offline', () => {
-  isOffline = true;
-  showToast('📡 Connection lost. Using cached content.', 'warning');
-  
-  // Switch to lower quality if video is playing
-  if (videoPlayer && !videoPlayer.paused) {
-    const currentQuality = qualitySelect.value;
-    if (currentQuality === 'video_1080p' || currentQuality === 'video_720p') {
-      qualitySelect.value = 'video_480p';
-      showToast('Quality reduced to save bandwidth');
-    }
-  }
-});
-
-// Enhanced error handling for network requests
-function handleNetworkError(error, context = '') {
-  if (isOffline || !navigator.onLine) {
-    showToast('📡 Offline - Using cached content', 'warning');
-    return;
-  }
-  
-  retryAttempts++;
-  if (retryAttempts <= maxRetries) {
-    //showToast(`⚠️ Network error. Retrying... (${retryAttempts}/${maxRetries})`, 'warning');
-    
-    setTimeout(() => {
-      // Retry based on context
-      if (context === 'video') {
-        const currentIndex = parseInt(episodeSelect.value) || 0;
-        loadEpisode(currentIndex);
-      } else if (context === 'shows') {
-        loadShows();
-      }
-    }, 2000 * retryAttempts); // Exponential backoff
-  } else {
-    showToast('❌ Connection failed. Check your internet.', 'error');
-    retryAttempts = 0;
-  }
-}
-
-// Enhanced toast function with types
-function showToast(message, type = 'info') {
-  const toast = document.getElementById('toast');
-  
-  // Remove existing type classes
-  toast.className = '';
-  
-  // Add type-specific styling
-  const typeStyles = {
-    success: 'background: var(--success); color: white;',
-    warning: 'background: var(--warning); color: white;',
-    error: 'background: var(--primary-dark); color: white;',
-    info: 'background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border);'
-  };
-  
-  toast.style.cssText = `
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    ${typeStyles[type]}
-    padding: 12px 20px;
-    border-radius: 8px;
-    display: block;
-    font-size: 14px;
-    z-index: 9999;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    max-width: 90vw;
-    text-align: center;
-  `;
-  
-  toast.textContent = message;
-  
-  // Auto-hide based on message type
-  const duration = type === 'error' ? 5000 : type === 'warning' ? 4000 : 3000;
-  
-  setTimeout(() => {
-    toast.style.display = 'none';
-  }, duration);
-}
-
-// Add video error handling
-videoPlayer.addEventListener('error', (e) => {
-  console.error('Video error:', e);
-  handleNetworkError(e, 'video');
 });
 
 // Handle fullscreen changes
@@ -3086,6 +2641,15 @@ document.addEventListener('fullscreenchange', () => {
   } else {
     videoPlayer.style.maxHeight = '70vh';
   }
+});
+
+// Handle network status
+window.addEventListener('online', () => {
+  showToast('Connection restored');
+});
+
+window.addEventListener('offline', () => {
+  showToast('Connection lost. Some features may not work.');
 });
   </script>
 </body>
