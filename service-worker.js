@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kukufm-v0808251120';
+const CACHE_NAME = 'kukufm-v0808251130';
 const STATIC_CACHE = `${CACHE_NAME}-static`;
 const DYNAMIC_CACHE = `${CACHE_NAME}-dynamic`;
 const UPDATE_CHECK_INTERVAL = 30000;
@@ -133,7 +133,7 @@ async function handleFetch(request) {
 	
     // Strategy 2: JSON files - Network First (CHANGED from cacheFirst)
     if (CACHE_PATTERNS.json.test(url.pathname)) {
-      return await networkFirstWithUpdate(request, DYNAMIC_CACHE); 
+      return await cacheFirst(request, DYNAMIC_CACHE); 
     }
 
     // Strategy 3: Images - Cache First with network fallback
