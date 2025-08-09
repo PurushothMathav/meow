@@ -1072,7 +1072,9 @@ body {
   pointer-events: none;
 }
 
-/* Mobile Responsive */
+/* Replace the existing mobile responsive section with this improved version */
+
+/* Mobile Responsive - Updated */
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: block;
@@ -1113,6 +1115,7 @@ body {
     max-height: 50vh;
   }
 
+  /* FIXED: Horizontal scroll cards remain the same size */
   .show-card {
     width: 120px;
   }
@@ -1137,15 +1140,39 @@ body {
     padding: 1rem;
   }
 
+  /* FIXED: Grid cards should be responsive and fit screen */
   .section-grid {
     grid-template-columns: repeat(3, 1fr) !important;
-	gap: 0.5rem; /* Reduced gap */
-    padding-left: 0.5rem; /* Add padding to container */
-    padding-right: 0.5rem;
+    gap: 0.75rem; /* Increased gap for better spacing */
+    padding: 0 0.5rem;
+  }
+
+  /* FIXED: Grid cards should adapt to available space */
+  .section-grid .show-card {
+    width: 100%; /* Let grid control the width */
+    min-width: 0; /* Allow shrinking below content size */
+  }
+
+  .section-grid .show-image {
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 3/4; /* Consistent aspect ratio */
   }
 
   .search-results-grid {
     grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+  }
+
+  /* FIXED: Search grid cards should also be responsive */
+  .search-results-grid .show-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .search-results-grid .show-image {
+    height: auto;
+    aspect-ratio: 3/4;
   }
 
   .view-all-btn {
@@ -1168,6 +1195,55 @@ body {
     font-size: 0.85rem;
     margin-bottom: 0.75rem;
   }
+
+  /* FIXED: Numbered cards positioning for mobile grid */
+  .section-grid .show-card.numbered::before {
+    font-size: 2rem; /* Smaller size for grid view */
+    bottom: 60px;
+    left: 6px;
+  }
+
+  .section-grid .show-card.numbered.solid-number::before {
+    font-size: 1.5rem;
+    bottom: 60px;
+    left: 8px;
+  }
+}
+
+/* Additional fix for very small screens */
+@media (max-width: 480px) {
+  .section-grid {
+    grid-template-columns: repeat(2, 1fr) !important; /* 2 columns on very small screens */
+    gap: 0.5rem;
+  }
+
+  .search-results-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem;
+  }
+}
+
+/* FIXED: Ensure grid cards don't overflow */
+.section-grid .show-card,
+.search-results-grid .show-card {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.section-grid .show-info,
+.search-results-grid .show-info {
+  padding: 0.5rem; /* Reduce padding on smaller cards */
+}
+
+.section-grid .show-title,
+.search-results-grid .show-title {
+  font-size: 0.8rem; /* Slightly smaller text */
+  line-height: 1.2;
+}
+
+.section-grid .show-episodes,
+.search-results-grid .show-episodes {
+  font-size: 0.7rem;
 }
 
 @media (min-width: 769px) {
@@ -1209,6 +1285,55 @@ body {
 
 .visible {
   display: block !important;
+}
+
+.show-card {
+  position: relative; /* Make sure this exists */
+}
+
+.show-card .share-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.show-card:hover .share-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.show-card .share-btn:hover {
+  background: var(--primary);
+  transform: scale(1.1);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .show-card .share-btn {
+    opacity: 1; /* Always visible on mobile */
+    visibility: visible;
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    top: 6px;
+    right: 6px;
+  }
 }
 </style>
 </head>
@@ -1410,6 +1535,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateActiveNavigation();
   handleUrlSearch();
   setupLazyLoading();
+  initializeShareButtons();
   loadShows();
 });
 
@@ -1764,7 +1890,118 @@ async function loadMasterData() {
   }
 }
 
-// Load shows with optimized lazy loading strategy
+// Enhanced URL parameter handling
+function handleUrlParameters() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchQuery = urlParams.get('s');
+  const playParam = urlParams.get('play');
+  
+  // Handle search parameter
+  if (searchQuery) {
+    searchInput.value = searchQuery;
+    clearSearch.classList.add('visible');
+  }
+  
+  // Handle direct play parameter
+  if (playParam) {
+    handleDirectPlay(playParam);
+  }
+}
+
+// Handle direct play functionality
+async function handleDirectPlay(playParam) {
+  try {
+    // Show loading toast
+    showToast('Loading show for direct play...');
+    
+    // First, load all master data if not loaded
+    if (!masterData[currentLanguage] || Object.keys(masterData[currentLanguage]).length === 0) {
+      await loadMasterData();
+    }
+    
+    // Load all sections to ensure we have all shows available
+    await loadAllSectionsForSearch();
+    
+    // Parse play parameter - it can be:
+    // 1. Show ID: ?play=268531
+    // 2. Show slug: ?play=7-assasins
+    // 3. Show ID with episode: ?play=268531:5 (episode 6, 0-indexed)
+    // 4. Show slug with episode: ?play=7-assasins:5
+    
+    let showIdentifier = playParam;
+    let episodeIndex = 0;
+    
+    // Check if episode number is specified
+    if (playParam.includes(':')) {
+      const parts = playParam.split(':');
+      showIdentifier = parts[0];
+      episodeIndex = parseInt(parts[1]) || 0;
+    }
+    
+    // Find the show by ID or slug
+    const targetShow = findShowByIdentifier(showIdentifier);
+    
+    if (!targetShow) {
+      showToast(`Show not found: ${showIdentifier}`);
+      console.error('Direct play: Show not found:', showIdentifier);
+      return;
+    }
+    
+    // Validate episode index
+    if (episodeIndex >= targetShow.episodes.length) {
+      console.warn(`Episode ${episodeIndex} not found, starting from episode 0`);
+      episodeIndex = 0;
+    }
+    
+    // Set up the player
+    currentShow = targetShow;
+    currentEpisodes = targetShow.episodes;
+    
+    setupPlayer();
+    
+    // Load the specified episode
+    loadEpisode(episodeIndex);
+    
+    // Show the player
+    showPlayer();
+    
+    showToast(`Playing: ${targetShow.show.title} - Episode ${episodeIndex + 1}`);
+    
+    // Clean up URL parameter after successful play
+    const cleanUrl = new URL(window.location);
+    cleanUrl.searchParams.delete('play');
+    window.history.replaceState({}, '', cleanUrl);
+    
+  } catch (error) {
+    console.error('Direct play error:', error);
+    showToast('Failed to load show for direct play');
+  }
+}
+
+// Find show by ID or slug
+function findShowByIdentifier(identifier) {
+  // Check if identifier is numeric (ID)
+  const isNumericId = /^\d+$/.test(identifier);
+  
+  for (const show of allShows) {
+    if (isNumericId) {
+      // Search by ID
+      if (show.show.id.toString() === identifier) {
+        return show;
+      }
+    } else {
+      // Search by slug
+      if (show.show.slug === identifier || 
+          show.show.title.toLowerCase().replace(/[^a-z0-9]/g, '-') === identifier) {
+        return show;
+      }
+    }
+  }
+  
+  return null;
+}
+
+// Enhanced show loading with direct play support
 async function loadShows() {
   try {
     // First load the master data
@@ -1793,11 +2030,13 @@ async function loadShows() {
     // Render continue watching
     renderContinueWatching();
     
-    // Handle URL search after initial load
+    // Handle URL parameters after initial load
+    handleUrlParameters();
+    
+    // If there's a search query, load all sections for search
     const urlParams = new URLSearchParams(window.location.search);
     const searchQuery = urlParams.get('s');
     if (searchQuery) {
-      // Load all sections for search, but in background
       await loadAllSectionsForSearch();
       handleSearch(searchQuery);
     }
@@ -1807,6 +2046,46 @@ async function loadShows() {
     showToast('Failed to load shows. Please try again.');
     hideLoading();
     emptyState.classList.remove('hidden');
+  }
+}
+
+// Generate shareable direct play URLs
+function generateDirectPlayUrl(show, episodeIndex = 0) {
+  const baseUrl = window.location.origin + window.location.pathname;
+  const playParam = episodeIndex > 0 ? `${show.show.id}:${episodeIndex}` : show.show.id.toString();
+  return `${baseUrl}?play=${playParam}`;
+}
+
+// Example usage functions for generating URLs:
+
+// Get direct play URL for a show (starts from episode 1)
+function getShowDirectPlayUrl(showId) {
+  const show = allShows.find(s => s.show.id.toString() === showId.toString());
+  if (!show) return null;
+  return generateDirectPlayUrl(show, 0);
+}
+
+// Get direct play URL for specific episode
+function getEpisodeDirectPlayUrl(showId, episodeIndex) {
+  const show = allShows.find(s => s.show.id.toString() === showId.toString());
+  if (!show) return null;
+  return generateDirectPlayUrl(show, episodeIndex);
+}
+
+// Copy direct play URL to clipboard (can be used in context menus)
+async function copyDirectPlayUrl(showId, episodeIndex = 0) {
+  const url = getEpisodeDirectPlayUrl(showId, episodeIndex);
+  if (!url) {
+    showToast('Could not generate URL');
+    return;
+  }
+  
+  try {
+    await navigator.clipboard.writeText(url);
+    showToast('Direct play URL copied to clipboard!');
+  } catch (error) {
+    console.error('Failed to copy URL:', error);
+    showToast('Failed to copy URL');
   }
 }
 
@@ -1968,6 +2247,10 @@ function renderSingleSection(sectionIndex, sectionShows) {
         loading="lazy"
         onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
       >
+      <!-- Share Button -->
+      <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.show.id}')" title="Share">
+        📤
+      </button>
       <div class="show-info">
         <div class="show-title" title="${show.show.title}">${show.show.title}</div>
         <div class="show-episodes">${show.episodes?.length || 0} episodes</div>
@@ -2056,6 +2339,10 @@ function renderSearchResults(query, shows) {
           loading="lazy"
           onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
         >
+        <!-- Share Button -->
+        <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.show.id}')" title="Share">
+          📤
+        </button>
         <div class="show-info">
           <div class="show-title" title="${show.show.title}">${show.show.title}</div>
           <div class="show-episodes">${show.episodes?.length || 0} episodes</div>
@@ -2611,5 +2898,82 @@ window.addEventListener('offline', () => {
   showToast('Connection lost. Some features may not work.');
 });
   </script>
+  <script>
+// Share functionality using Web Share API or fallback
+async function shareDirectPlayUrl(showId, episodeIndex = 0) {
+  const url = getEpisodeDirectPlayUrl(showId, episodeIndex);
+  const show = allShows.find(s => s.show.id.toString() === showId.toString());
+  
+  if (!url || !show) {
+    showToast('Could not generate share URL');
+    return;
+  }
+  
+  const shareData = {
+    title: show.show.title,
+    text: `Watch "${show.show.title}" on Meow`,
+    url: url
+  };
+  
+  try {
+    // Try Web Share API first (mobile browsers)
+    if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
+      await navigator.share(shareData);
+      showToast('Shared successfully!');
+    } else {
+      // Fallback to clipboard
+      await navigator.clipboard.writeText(url);
+      showToast('Share URL copied to clipboard!');
+    }
+  } catch (error) {
+    console.error('Share failed:', error);
+    // Final fallback - create a temporary input to copy text
+    try {
+      const textArea = document.createElement('textarea');
+      textArea.value = url;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      showToast('Share URL copied to clipboard!');
+    } catch (fallbackError) {
+      showToast('Share failed - please copy URL manually');
+      console.error('All share methods failed:', fallbackError);
+    }
+  }
+}
+
+// Optional: Add timestamp parameter for resuming at specific time
+// URL format: ?play=268531:4:120 (show 268531, episode 5, start at 2 minutes)
+function handleDirectPlayWithTimestamp(playParam) {
+  let showIdentifier = playParam;
+  let episodeIndex = 0;
+  let startTime = 0;
+  
+  const parts = playParam.split(':');
+  if (parts.length >= 2) {
+    showIdentifier = parts[0];
+    episodeIndex = parseInt(parts[1]) || 0;
+  }
+  if (parts.length >= 3) {
+    startTime = parseInt(parts[2]) || 0;
+  }
+  
+  // Use this startTime when calling loadEpisode
+  // loadEpisode(episodeIndex, null, false, startTime);
+}
+
+// Initialize additional features (call this in DOMContentLoaded if you want them)
+function initializeAdditionalFeatures() {
+  addShareButtonToCards();
+  addContextMenuToCards();
+}
+
+function initializeShareButtons() {
+  console.log('Share buttons initialized - CSS already in main stylesheet');
+}
+</script>
 </body>
 </html>
