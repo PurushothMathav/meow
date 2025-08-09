@@ -770,6 +770,54 @@ body {
   font-size: 0.9rem;
 }
 
+/* Lazy Loading Skeleton */
+.skeleton {
+  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-secondary) 50%, var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.skeleton-card {
+  flex-shrink: 0;
+  width: 140px;
+  height: 280px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  overflow: hidden;
+}
+
+.skeleton-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-secondary) 50%, var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+.skeleton-text {
+  margin: 0.75rem;
+  height: 12px;
+  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-secondary) 50%, var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 6px;
+}
+
+.skeleton-text.short {
+  width: 60%;
+  margin-top: 0.5rem;
+  height: 10px;
+}
+
 /* Empty States */
 .empty-state {
   text-align: center;
@@ -800,23 +848,24 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Netflix-style numbered cards */
+/* Netflix-style numbered cards - NUMBERS INSIDE CARDS */
 .show-card.numbered {
   position: relative;
-  overflow: visible;
+  overflow: hidden; /* Changed to hidden to keep numbers inside */
+  /* Remove external margins since numbers stay inside */
 }
 
 .show-card.numbered::before {
   content: attr(data-rank);
   position: absolute;
-  bottom: -10px;
-  left: -15px;
-  font-size: 6rem;
+  bottom: 70px; /* Moved inside the card */
+  left: 10px;  /* Moved inside the card */
+  font-size: 3rem; /* Smaller size to fit inside */
   font-weight: 900;
   color: transparent;
-  -webkit-text-stroke: 3px var(--primary);
-  text-stroke: 3px var(--primary);
-  z-index: -1;
+  -webkit-text-stroke: 2px var(--primary);
+  text-stroke: 2px var(--primary);
+  z-index: 3; /* Above image and info */
   line-height: 1;
   pointer-events: none;
   font-family: 'Inter', sans-serif;
@@ -824,83 +873,204 @@ body {
 
 .show-card.numbered .show-image {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .show-card.numbered .show-info {
   position: relative;
   z-index: 2;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(5px);
 }
 
 /* Hover effect for numbered cards */
 .show-card.numbered:hover::before {
-  -webkit-text-stroke: 3px var(--secondary);
-  text-stroke: 3px var(--secondary);
+  -webkit-text-stroke: 2px var(--secondary);
+  text-stroke: 2px var(--secondary);
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
 
 /* Alternative solid number style */
 .show-card.numbered.solid-number::before {
-  color: var(--primary);
+  color: rgba(255, 75, 43, 0.9); /* Semi-transparent */
   -webkit-text-stroke: none;
   text-stroke: none;
-  opacity: 0.9;
-  font-size: 4.5rem;
-  bottom: -5px;
-  left: -10px;
+  font-size: 2.5rem;
+  bottom: 70px;
+  left: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
 }
 
 .show-card.numbered.solid-number:hover::before {
-  opacity: 0.5;
-  color: var(--secondary);
+  color: rgba(255, 107, 71, 0.9);
+  transform: scale(1.2);
+}
+
+/* Alternative: Number in top-right corner */
+.show-card.numbered.top-right::before {
+  top: 10px;
+  right: 10px;
+  left: auto;
+  bottom: auto;
+  background: var(--primary);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-text-stroke: none;
+  text-stroke: none;
+  min-width: 25px;
+  text-align: center;
+}
+
+.show-card.numbered.top-right:hover::before {
+  background: var(--secondary);
+  transform: scale(1.1);
+}
+
+/* Alternative: Number badge style */
+.show-card.numbered.badge::before {
+  top: 10px;
+  left: 10px;
+  bottom: auto;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  -webkit-text-stroke: none;
+  text-stroke: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.show-card.numbered.badge:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(255, 75, 43, 0.4);
+}
+
+/* Custom colors for top ranks - ONLY for Top 10 and Top Rated sections */
+.section.top-tier .show-card.numbered[data-rank="1"]::before {
+  -webkit-text-stroke: 2px #ffd700 !important;
+  text-stroke: 2px #ffd700 !important;
+}
+
+.section.top-tier .show-card.numbered[data-rank="2"]::before {
+  -webkit-text-stroke: 2px #c0c0c0 !important;
+  text-stroke: 2px #c0c0c0 !important;
+}
+
+.section.top-tier .show-card.numbered[data-rank="3"]::before {
+  -webkit-text-stroke: 2px #cd7f32 !important;
+  text-stroke: 2px #cd7f32 !important;
+}
+
+/* Solid number versions with custom colors - ONLY for top tier sections */
+.section.top-tier .show-card.numbered.solid-number[data-rank="1"]::before {
+  color: #ffd700 !important;
+  -webkit-text-stroke: none !important;
+  text-stroke: none !important;
+}
+
+.section.top-tier .show-card.numbered.solid-number[data-rank="2"]::before {
+  color: #c0c0c0 !important;
+  -webkit-text-stroke: none !important;
+  text-stroke: none !important;
+}
+
+.section.top-tier .show-card.numbered.solid-number[data-rank="3"]::before {
+  color: #cd7f32 !important;
+  -webkit-text-stroke: none !important;
+  text-stroke: none !important;
+}
+
+/* Badge versions with custom colors - ONLY for top tier sections */
+.section.top-tier .show-card.numbered.badge[data-rank="1"]::before {
+  background: linear-gradient(135deg, #ffd700, #ffed4e) !important;
+}
+
+.section.top-tier .show-card.numbered.badge[data-rank="2"]::before {
+  background: linear-gradient(135deg, #c0c0c0, #e8e8e8) !important;
+}
+
+.section.top-tier .show-card.numbered.badge[data-rank="3"]::before {
+  background: linear-gradient(135deg, #cd7f32, #daa55a) !important;
+}
+
+/* Top-right versions with custom colors - ONLY for top tier sections */
+.section.top-tier .show-card.numbered.top-right[data-rank="1"]::before {
+  background: #ffd700 !important;
+  color: #000 !important;
+}
+
+.section.top-tier .show-card.numbered.top-right[data-rank="2"]::before {
+  background: #c0c0c0 !important;
+  color: #000 !important;
+}
+
+.section.top-tier .show-card.numbered.top-right[data-rank="3"]::before {
+  background: #cd7f32 !important;
+  color: #fff !important;
+}
+
+/* Hover effects for top ranks - ONLY for top tier sections */
+.section.top-tier .show-card.numbered[data-rank="1"]:hover::before,
+.section.top-tier .show-card.numbered[data-rank="2"]:hover::before,
+.section.top-tier .show-card.numbered[data-rank="3"]:hover::before {
+  transform: scale(1.2) !important;
 }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .show-card.numbered::before {
-    font-size: 4rem;
-    bottom: -5px;
-    left: -10px;
-    -webkit-text-stroke: 2px var(--primary);
-    text-stroke: 2px var(--primary);
+    font-size: 2.5rem;
+    bottom: 70px;
+    left: 8px;
+    -webkit-text-stroke: 1.5px var(--primary);
+    text-stroke: 1.5px var(--primary);
   }
 
   .show-card.numbered.solid-number::before {
-    font-size: 3.5rem;
-    bottom: -2px;
-    left: -8px;
+    font-size: 2rem;
+    bottom: 70px;
+    left: 12px;
+  }
+
+  .show-card.numbered.top-right::before {
+    top: 8px;
+    right: 8px;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    min-width: 22px;
+  }
+
+  .show-card.numbered.badge::before {
+    top: 8px;
+    left: 8px;
+    font-size: 0.8rem;
+    padding: 3px 6px;
   }
 }
 
-/* Custom colors for top ranks 
-.show-card.numbered[data-rank="1"]::before {
-  -webkit-text-stroke: 3px #ffd700;
-  text-stroke: 3px #ffd700;
+/* Ensure numbers don't interfere with title */
+.show-card.numbered .show-title {
+  padding-right: 0; /* Reset if needed */
 }
 
-.show-card.numbered[data-rank="2"]::before {
-  -webkit-text-stroke: 3px #c0c0c0;
-  text-stroke: 3px #c0c0c0;
+/* Optional: Add slight overlay to make numbers more visible */
+.show-card.numbered::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  z-index: 1;
+  pointer-events: none;
 }
-
-.show-card.numbered[data-rank="3"]::before {
-  -webkit-text-stroke: 3px #cd7f32;
-  text-stroke: 3px #cd7f32;
-}
-
-/* Solid number versions */
-.show-card.numbered.solid-number[data-rank="1"]::before {
-  color: #ffd700;
-}
-
-.show-card.numbered.solid-number[data-rank="2"]::before {
-  color: #c0c0c0;
-}
-
-.show-card.numbered.solid-number[data-rank="3"]::before {
-  color: #cd7f32;
-} */
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
@@ -944,7 +1114,7 @@ body {
   }
 
   .show-card {
-    width: auto;
+    width: 120px;
   }
 
   .show-image {
@@ -969,6 +1139,9 @@ body {
 
   .section-grid {
     grid-template-columns: repeat(3, 1fr) !important;
+	gap: 0.5rem; /* Reduced gap */
+    padding-left: 0.5rem; /* Add padding to container */
+    padding-right: 0.5rem;
   }
 
   .search-results-grid {
@@ -1184,6 +1357,9 @@ body {
   <!-- Toast Message -->
   <div id="toast"></div>
 
+  <!-- Service Worker Registration -->
+  <script src="/meow/sw-register.js"></script>
+
   <script>
 // Global variables
 let allShows = [];
@@ -1196,6 +1372,8 @@ let watchHistory = {};
 let searchTimeout = null;
 let currentLanguage = 'tamil';
 let isSearchMode = false;
+let lazyLoadObserver = null;
+let loadedSections = new Set();
 
 // Master data structure for different languages - will be loaded dynamically
 let masterData = {};
@@ -1232,6 +1410,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupMobileMenu();
   updateActiveNavigation();
   handleUrlSearch();
+  setupLazyLoading();
   loadShows();
 });
 
@@ -1252,7 +1431,6 @@ function handleUrlSearch() {
   if (searchQuery) {
     searchInput.value = searchQuery;
     clearSearch.classList.add('visible');
-    // Search will be triggered after shows are loaded
   }
 }
 
@@ -1314,6 +1492,24 @@ function saveWatchHistory() {
     localStorage.setItem(key, JSON.stringify(watchHistory));
   } catch (e) {
     console.warn('Failed to save watch history:', e);
+  }
+}
+
+// Setup lazy loading
+function setupLazyLoading() {
+  if ('IntersectionObserver' in window) {
+    lazyLoadObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionIndex = parseInt(entry.target.dataset.sectionIndex);
+          loadSectionData(sectionIndex);
+          lazyLoadObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '200px 0px',
+      threshold: 0.1
+    });
   }
 }
 
@@ -1539,26 +1735,10 @@ function setupKeyboardControls() {
   });
 }
 
-
-// Load master data for current language
+// Load master data for current language (cached via service worker)
 async function loadMasterData() {
   const masterFile = `master_${currentLanguage}.json`;
-  const cacheKey = `cached_master_${currentLanguage}`;
   
-  // Try loading from cache first
-  try {
-    const cached = localStorage.getItem(cacheKey);
-    if (cached) {
-      const data = JSON.parse(cached);
-      masterData[currentLanguage] = data;
-      console.log(`Loaded master data from cache for ${currentLanguage}`);
-      return data;
-    }
-  } catch (e) {
-    console.warn('Failed to parse cached master data:', e);
-  }
-
-  // Load from network
   try {
     const response = await fetch(masterFile);
     if (!response.ok) {
@@ -1568,15 +1748,7 @@ async function loadMasterData() {
     const data = await response.json();
     masterData[currentLanguage] = data;
     
-    // Cache the master data
-    try {
-      localStorage.setItem(cacheKey, JSON.stringify(data));
-      console.log(`Cached master data for ${currentLanguage}`);
-    } catch (e) {
-      console.warn('Failed to cache master data:', e);
-    }
-    
-    console.log(`Loaded master data from network for ${currentLanguage}:`, {
+    console.log(`Loaded master data for ${currentLanguage}:`, {
       sections: data.sections?.length || 0,
       totalShows: data.sections?.reduce((total, section) => total + (section.shows?.length || 0), 0) || 0
     });
@@ -1593,145 +1765,231 @@ async function loadMasterData() {
   }
 }
 
-// Load shows for current language
+// Load shows with optimized lazy loading strategy
 async function loadShows() {
-  const cacheKey = `cached_kukufm_shows_${currentLanguage}`;
-  
-  // First load the master data
-  const masterDataForLanguage = await loadMasterData();
-  
-  // Try loading from cache first
   try {
-    const cached = localStorage.getItem(cacheKey);
-    if (cached) {
-      const data = JSON.parse(cached);
-      allShows = data;
-      sectionsData = masterDataForLanguage?.sections || [];
+    // First load the master data
+    const masterDataForLanguage = await loadMasterData();
+    sectionsData = masterDataForLanguage?.sections || [];
+    
+    if (sectionsData.length === 0) {
+      console.warn(`No sections found for ${currentLanguage}`);
       hideLoading();
-      renderSections();
-      renderContinueWatching();
-      
-      // Handle URL search after loading
-      const urlParams = new URLSearchParams(window.location.search);
-      const searchQuery = urlParams.get('s');
-      if (searchQuery) {
-        handleSearch(searchQuery);
-      }
+      emptyState.classList.remove('hidden');
       return;
     }
-  } catch (e) {
-    console.warn('Failed to parse cached data:', e);
-  }
-
-  // Load from network
-  const sections = masterDataForLanguage?.sections || [];
-  const allFiles = sections.flatMap(section => section.shows || []);
-  
-  if (allFiles.length === 0) {
-    console.warn(`No show files found for ${currentLanguage}`);
+    
+    // Initialize allShows array to track loaded content
+    allShows = [];
+    
+    // Render sections with skeleton loaders first
+    renderSectionsWithSkeletons();
+    
+    // Load first 2 sections immediately for instant visibility
+    await loadInitialSections();
+    
+    // Hide loading state
     hideLoading();
-    emptyState.classList.remove('hidden');
-    return;
-  }
-  
-  let loadedCount = 0;
-  const totalCount = allFiles.length;
-  const fetchedShows = [];
-
-  try {
-    updateLoadingProgress(0, totalCount);
     
-    const promises = allFiles.map(async (file) => {
-      try {
-        const response = await fetch(file);
-        if (!response.ok) throw new Error(`Failed to fetch ${file}`);
-        const data = await response.json();
-        
-        // Store filename in the show data for easier matching
-        if (data.show) {
-          data.show.filename = file.split('/').pop();
-        }
-        
-        if (Array.isArray(data)) {
-          // If it's an array, add filename to each show
-          data.forEach(show => {
-            if (show.show) {
-              show.show.filename = file.split('/').pop();
-            }
-          });
-          fetchedShows.push(...data);
-        } else {
-          fetchedShows.push(data);
-        }
-        
-        loadedCount++;
-        updateLoadingProgress(loadedCount, totalCount);
-      } catch (error) {
-        console.warn(`Failed to load ${file}:`, error);
-        loadedCount++;
-        updateLoadingProgress(loadedCount, totalCount);
-      }
-    });
-
-    await Promise.all(promises);
+    // Render continue watching
+    renderContinueWatching();
     
-    allShows = fetchedShows;
-    console.log(`Loaded ${allShows.length} shows for ${currentLanguage}`);
-    
-    // Log first few shows for debugging
-    console.log('Sample shows:', allShows.slice(0, 3).map(s => ({
-      title: s.show?.title,
-      id: s.show?.id,
-      filename: s.show?.filename,
-      episodes: s.episodes?.length || 0
-    })));
-    
-    allShows.sort((a, b) => {
-      const titleA = (a.show?.title || '').toLowerCase();
-      const titleB = (b.show?.title || '').toLowerCase();
-      return titleA.localeCompare(titleB);
-    });
-
-    sectionsData = sections;
-    
-    // Cache the data
-    try {
-      localStorage.setItem(cacheKey, JSON.stringify(allShows));
-    } catch (e) {
-      console.warn('Failed to cache data:', e);
+    // Handle URL search after initial load
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchQuery = urlParams.get('s');
+    if (searchQuery) {
+      // Load all sections for search, but in background
+      await loadAllSectionsForSearch();
+      handleSearch(searchQuery);
     }
     
   } catch (error) {
     console.error('Failed to load shows:', error);
     showToast('Failed to load shows. Please try again.');
-  } finally {
     hideLoading();
-    
-    if (allShows.length === 0) {
-      emptyState.classList.remove('hidden');
-    } else {
-      renderSections();
-      renderContinueWatching();
-    }
-    
-    // Handle URL search after loading
-    const urlParams = new URLSearchParams(window.location.search);
-    const searchQuery = urlParams.get('s');
-    if (searchQuery) {
-      handleSearch(searchQuery);
-    }
+    emptyState.classList.remove('hidden');
   }
 }
 
-function updateLoadingProgress(loaded, total) {
-  const loadingText = document.querySelector('.loading-text');
-  if (loadingText) {
-    loadingText.textContent = `Loading ${currentLanguage} shows... (${loaded}/${total})`;
+// Load initial sections (first 2) for instant visibility
+async function loadInitialSections() {
+  const initialSections = sectionsData.slice(0, 2);
+  
+  for (let i = 0; i < initialSections.length; i++) {
+    await loadSectionData(i);
+  }
+}
+
+// Load section data on demand
+async function loadSectionData(sectionIndex) {
+  if (loadedSections.has(sectionIndex) || !sectionsData[sectionIndex]) {
+    return;
+  }
+  
+  const section = sectionsData[sectionIndex];
+  const sectionShows = [];
+  
+  try {
+    // Load shows for this section with limited concurrency
+    const batchSize = 5;
+    const showFiles = section.shows || [];
+    
+    for (let i = 0; i < showFiles.length; i += batchSize) {
+      const batch = showFiles.slice(i, i + batchSize);
+      const batchPromises = batch.map(async (file) => {
+        try {
+          const response = await fetch(file);
+          if (!response.ok) return null;
+          
+          const data = await response.json();
+          if (data.show) {
+            data.show.filename = file.split('/').pop();
+          }
+          return data;
+        } catch (error) {
+          console.warn(`Failed to load ${file}:`, error);
+          return null;
+        }
+      });
+      
+      const results = await Promise.all(batchPromises);
+      sectionShows.push(...results.filter(Boolean));
+    }
+    
+    // Add loaded shows to global array
+    allShows.push(...sectionShows);
+    
+    // Mark section as loaded
+    loadedSections.add(sectionIndex);
+    
+    // Re-render this specific section
+    renderSingleSection(sectionIndex, sectionShows);
+    
+    console.log(`Loaded section ${sectionIndex}: ${sectionShows.length} shows`);
+    
+  } catch (error) {
+    console.error(`Failed to load section ${sectionIndex}:`, error);
+  }
+}
+
+// Load all sections for search functionality
+async function loadAllSectionsForSearch() {
+  const unloadedSections = sectionsData.map((_, index) => index)
+    .filter(index => !loadedSections.has(index));
+  
+  // Load remaining sections in parallel but with controlled concurrency
+  const concurrencyLimit = 3;
+  for (let i = 0; i < unloadedSections.length; i += concurrencyLimit) {
+    const batch = unloadedSections.slice(i, i + concurrencyLimit);
+    await Promise.all(batch.map(loadSectionData));
   }
 }
 
 function hideLoading() {
   loadingState.style.display = 'none';
+}
+
+// Render sections with skeleton loaders initially
+function renderSectionsWithSkeletons() {
+  if (isSearchMode) return;
+  
+  sectionsContainer.innerHTML = sectionsData.map((section, sectionIndex) => {
+    const sectionIcon = getSectionIcon(section.title);
+    
+    return `
+      <div class="section ${isTopTierSection(section.title) ? 'top-tier' : ''}" id="section-${sectionIndex}" data-section-index="${sectionIndex}">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-icon">${sectionIcon}</span>
+            ${section.title}
+          </h2>
+          <button class="view-all-btn" onclick="toggleSectionView(${sectionIndex})">
+            <span class="view-all-text">View All</span>
+            <span class="view-all-icon">→</span>
+          </button>
+        </div>
+        
+        <!-- Horizontal Scroll View (Default) -->
+        <div class="shows-wrapper" id="shows-wrapper-${sectionIndex}">
+          <div class="shows-scroll">
+            ${createSkeletonCards()}
+          </div>
+        </div>
+        
+        <!-- Grid View (Hidden by default) -->
+        <div class="section-grid" id="section-grid-${sectionIndex}">
+          ${createSkeletonCards()}
+        </div>
+      </div>
+    `;
+  }).join('');
+  
+  // Setup intersection observer for lazy loading
+  if (lazyLoadObserver) {
+    document.querySelectorAll('[data-section-index]').forEach(element => {
+      const sectionIndex = parseInt(element.dataset.sectionIndex);
+      if (sectionIndex >= 2) { // Skip first 2 sections (already loading)
+        lazyLoadObserver.observe(element);
+      }
+    });
+  }
+}
+
+// Create skeleton loading cards
+function createSkeletonCards(count = 8) {
+  return Array(count).fill(0).map(() => `
+    <div class="skeleton-card">
+      <div class="skeleton-image"></div>
+      <div class="skeleton-text"></div>
+      <div class="skeleton-text short"></div>
+    </div>
+  `).join('');
+}
+
+// Render single section after data is loaded
+function renderSingleSection(sectionIndex, sectionShows) {
+  if (isSearchMode) return;
+  
+  const section = sectionsData[sectionIndex];
+  const showNumbers = shouldShowNumbers(section.title);
+  const useSolidNumbers = shouldUseSolidNumbers(section.title);
+  
+  // Limit to 100 items for numbered sections, 20 for others
+  const maxItems = showNumbers ? 100 : 20;
+  const displayShows = sectionShows.slice(0, maxItems);
+  
+  const showCardsHTML = displayShows.map((show, index) => `
+    <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
+         ${showNumbers ? `data-rank="${index + 1}"` : ''} 
+         onclick="openShow('${show.show.id}')">
+      <img 
+        src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
+        alt="${show.show.title}"
+        class="show-image"
+        loading="lazy"
+        onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
+      >
+      <div class="show-info">
+        <div class="show-title" title="${show.show.title}">${show.show.title}</div>
+        <div class="show-episodes">${show.episodes?.length || 0} episodes</div>
+      </div>
+    </div>
+  `).join('');
+  
+  // Update horizontal scroll view
+  const horizontalWrapper = document.getElementById(`shows-wrapper-${sectionIndex}`);
+  if (horizontalWrapper) {
+    const showsScroll = horizontalWrapper.querySelector('.shows-scroll');
+    if (showsScroll) {
+      showsScroll.innerHTML = showCardsHTML;
+    }
+  }
+  
+  // Update grid view
+  const gridWrapper = document.getElementById(`section-grid-${sectionIndex}`);
+  if (gridWrapper) {
+    gridWrapper.innerHTML = showCardsHTML;
+  }
 }
 
 // Handle search
@@ -1745,28 +2003,27 @@ function handleSearch(query) {
     isSearchMode = false;
     searchResultsHeader.style.display = 'none';
     mainContent.style.display = 'block';
-    renderSections();
   } else {
     isSearchMode = true;
     const searchTerm = query.toLowerCase();
     const filteredShows = allShows.filter(show => 
-  show.show?.title?.toLowerCase().includes(searchTerm) ||
-  show.show?.description?.toLowerCase().includes(searchTerm)
-);
+      show.show?.title?.toLowerCase().includes(searchTerm) ||
+      show.show?.description?.toLowerCase().includes(searchTerm)
+    );
 
-// Remove duplicates based on show ID
-const uniqueShows = filteredShows.filter((show, index, self) => 
-  index === self.findIndex(s => s.show?.id === show.show?.id)
-);
+    // Remove duplicates based on show ID
+    const uniqueShows = filteredShows.filter((show, index, self) => 
+      index === self.findIndex(s => s.show?.id === show.show?.id)
+    );
     
     // Sort search results
-uniqueShows.sort((a, b) => {
-  const titleA = (a.show?.title || '').toLowerCase();
-  const titleB = (b.show?.title || '').toLowerCase();
-  return titleA.localeCompare(titleB);
-});
+    uniqueShows.sort((a, b) => {
+      const titleA = (a.show?.title || '').toLowerCase();
+      const titleB = (b.show?.title || '').toLowerCase();
+      return titleA.localeCompare(titleB);
+    });
 
-renderSearchResults(query, uniqueShows);
+    renderSearchResults(query, uniqueShows);
   }
 }
 
@@ -1844,81 +2101,48 @@ function shouldUseSolidNumbers(sectionTitle) {
   );
 }
 
-// Render sections
-function renderSections() {
-  if (isSearchMode) return;
+// Add this function to check if section should have gold/silver/bronze colors
+function isTopTierSection(sectionTitle) {
+  const topTierSections = [
+    'top 10',
+    'top rated',
+    'most popular',
+    'trending now'
+  ];
   
-  sectionsContainer.innerHTML = sectionsData.map((section, sectionIndex) => {
-    const sectionShows = getShowsForSection(section);
-    
-    if (sectionShows.length === 0) return '';
-    
-    const sectionIcon = getSectionIcon(section.title);
-    const showNumbers = shouldShowNumbers(section.title);
-    const useSolidNumbers = shouldUseSolidNumbers(section.title);
-    
-    // Limit to 10 items for numbered sections
-    const displayShows = showNumbers ? sectionShows.slice(0, 100) : sectionShows;
-    
-    return `
-      <div class="section" id="section-${sectionIndex}">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-icon">${sectionIcon}</span>
-            ${section.title}
-          </h2>
-          <button class="view-all-btn" onclick="toggleSectionView(${sectionIndex})">
-            <span class="view-all-text">View All</span>
-            <span class="view-all-icon">→</span>
-          </button>
-        </div>
-        
-        <!-- Horizontal Scroll View (Default) -->
-        <div class="shows-wrapper" id="shows-wrapper-${sectionIndex}">
-          <div class="shows-scroll">
-            ${displayShows.map((show, index) => `
-              <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
-                   ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-                   onclick="openShow('${show.show.id}')">
-                <img 
-                  src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
-                  alt="${show.show.title}"
-                  class="show-image"
-                  loading="lazy"
-                  onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
-                >
-                <div class="show-info">
-                  <div class="show-title" title="${show.show.title}">${show.show.title}</div>
-                  <div class="show-episodes">${show.episodes?.length || 0} episodes</div>
-                </div>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-        
-        <!-- Grid View (Hidden by default) -->
-        <div class="section-grid" id="section-grid-${sectionIndex}">
-          ${displayShows.map((show, index) => `
-            <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
-                 ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-                 onclick="openShow('${show.show.id}')">
-              <img 
-                src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
-                alt="${show.show.title}"
-                class="show-image"
-                loading="lazy"
-                onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
-              >
-              <div class="show-info">
-                <div class="show-title" title="${show.show.title}">${show.show.title}</div>
-                <div class="show-episodes">${show.episodes?.length || 0} episodes</div>
-              </div>
-            </div>
-          `).join('')}
-        </div>
-      </div>
-    `;
-  }).join('');
+  return topTierSections.some(keyword => 
+    sectionTitle.toLowerCase().includes(keyword.toLowerCase())
+  );
+}
+
+// Get section icon based on title
+function getSectionIcon(title) {
+  const icons = {
+    'Newly Added': '🆕',
+    'Romantic Dramas': '💕',
+    'Trending Now': '🔥',
+    'Popular': '⭐',
+    'Comedy': '😂',
+    'Action': '⚡',
+    'Drama': '🎭',
+    'Horror': '👻',
+    'Thriller': '😱',
+    'Top 10': '🏆',
+    'Top Rated': '🥇',
+    'Most Popular': '⭐',
+    'Most Watched': '👁️'
+  };
+  
+  // Try exact match first
+  if (icons[title]) return icons[title];
+  
+  // Try partial matches
+  const lowerTitle = title.toLowerCase();
+  if (lowerTitle.includes('top')) return '🏆';
+  if (lowerTitle.includes('trending')) return '🔥';
+  if (lowerTitle.includes('popular')) return '⭐';
+  
+  return '📺';
 }
 
 // Track view all state
@@ -1932,7 +2156,6 @@ function toggleSectionView(sectionIndex) {
   const viewAllBtn = section.querySelector('.view-all-btn');
   const viewAllText = viewAllBtn.querySelector('.view-all-text');
   const viewAllIcon = viewAllBtn.querySelector('.view-all-icon');
-  const backToSections = document.getElementById('backToSections');
   
   const isGridView = gridWrapper.classList.contains('active');
   
@@ -1940,8 +2163,14 @@ function toggleSectionView(sectionIndex) {
     // Exit view all mode
     exitViewAllMode();
   } else {
-    // Enter view all mode
-    enterViewAllMode(sectionIndex);
+    // Load section data if not already loaded
+    if (!loadedSections.has(sectionIndex)) {
+      loadSectionData(sectionIndex).then(() => {
+        enterViewAllMode(sectionIndex);
+      });
+    } else {
+      enterViewAllMode(sectionIndex);
+    }
   }
 }
 
@@ -2040,75 +2269,6 @@ function exitViewAllMode() {
   });
 }
 
-// Get shows for a specific section
-function getShowsForSection(section) {
-  const sectionShows = [];
-  
-  section.shows.forEach(showPath => {
-    const show = allShows.find(s => {
-      // Extract filename from path
-      const pathFile = showPath.split('/').pop();
-      
-      // Try multiple matching strategies
-      // 1. Direct filename match
-      if (s.show?.filename === pathFile) return true;
-      
-      // 2. Check if the show title matches the filename (removing .json and language suffix)
-      const baseFilename = pathFile.replace('-Tamil.json', '').replace('.json', '');
-      const showTitle = s.show?.title || '';
-      if (showTitle === baseFilename) return true;
-      
-      // 3. Check if filename contains show ID
-      if (showPath.includes(s.show?.id)) return true;
-      
-      // 4. Fuzzy match on title (case insensitive)
-      if (showTitle.toLowerCase().includes(baseFilename.toLowerCase()) || 
-          baseFilename.toLowerCase().includes(showTitle.toLowerCase())) return true;
-      
-      return false;
-    });
-    
-    if (show) {
-      sectionShows.push(show);
-    } else {
-      // For debugging - log unmatched files
-      console.warn(`No show found for file: ${showPath}`);
-    }
-  });
-  
-  return sectionShows;
-}
-
-// Get section icon based on title
-function getSectionIcon(title) {
-  const icons = {
-    'Newly Added': '🆕',
-    'Romantic Dramas': '💕',
-    'Trending Now': '🔥',
-    'Popular': '⭐',
-    'Comedy': '😂',
-    'Action': '⚡',
-    'Drama': '🎭',
-    'Horror': '👻',
-    'Thriller': '😱',
-    'Top 10': '🏆',
-    'Top Rated': '🥇',
-    'Most Popular': '⭐',
-    'Most Watched': '👁️'
-  };
-  
-  // Try exact match first
-  if (icons[title]) return icons[title];
-  
-  // Try partial matches
-  const lowerTitle = title.toLowerCase();
-  if (lowerTitle.includes('top')) return '🏆';
-  if (lowerTitle.includes('trending')) return '🔥';
-  if (lowerTitle.includes('popular')) return '⭐';
-  
-  return '📺';
-}
-
 // Render continue watching
 function renderContinueWatching() {
   const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
@@ -2188,10 +2348,6 @@ function continueWatching(showId) {
 function removeFromContinue(showId) {
   delete watchHistory[showId];
   saveWatchHistory();
-  
-  const cacheKey = `cached_kukufm_shows_${currentLanguage}`;
-  localStorage.removeItem(cacheKey);
-  
   renderContinueWatching();
   showToast('Removed from continue watching');
 }
@@ -2432,203 +2588,6 @@ window.addEventListener('beforeunload', () => {
     hls.destroy();
   }
 });
-
-// Service Worker Registration and Update Handling
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    registerServiceWorker();
-  });
-}
-
-async function registerServiceWorker() {
-  try {
-    const registration = await navigator.serviceWorker.register('/meow/service-worker.js', {
-      scope: '/meow/'
-    });
-    
-    console.log('SW registered:', registration);
-    
-    registration.addEventListener('updatefound', () => {
-      const newWorker = registration.installing;
-      
-      newWorker.addEventListener('statechange', () => {
-        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-          console.log('New service worker available');
-          showUpdateNotification();
-        }
-      });
-    });
-    
-    navigator.serviceWorker.addEventListener('controllerchange', () => {
-      console.log('Service worker controller changed');
-      window.location.reload();
-    });
-    
-    navigator.serviceWorker.addEventListener('message', handleServiceWorkerMessage);
-    
-    setInterval(() => {
-      registration.update();
-    }, 60000);
-    
-  } catch (error) {
-    console.error('SW registration failed:', error);
-  }
-}
-
-function handleServiceWorkerMessage(event) {
-  const { type, message, url } = event.data;
-  
-  switch (type) {
-    case 'SW_UPDATED':
-      console.log('Service worker updated:', message);
-      setTimeout(() => {
-        window.location.reload();
-      }, 1000);
-      break;
-      
-    case 'SW_UPDATE_AVAILABLE':
-      console.log('Service worker update available:', message);
-      showUpdateNotification();
-      break;
-      
-    case 'CONTENT_UPDATED':
-      console.log('Content updated:', url);
-      refreshContent(url);
-      break;
-      
-    case 'CACHE_UPDATED':
-      console.log('Cache updated in background:', url);
-      showCacheUpdateNotification();
-      break;
-      
-    case 'SW_ACTIVATED':
-      console.log('Service worker activated:', message);
-      break;
-  }
-}
-
-function showUpdateNotification() {
-  const notification = document.createElement('div');
-  notification.id = 'sw-update-notification';
-  notification.innerHTML = `
-    <div style="
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: #007bff;
-      color: white;
-      padding: 15px 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      z-index: 10000;
-      max-width: 300px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    ">
-      <div style="font-weight: 600; margin-bottom: 8px;">
-        Update Available
-      </div>
-      <div style="font-size: 14px; margin-bottom: 12px;">
-        A new version is available. Click to update.
-      </div>
-      <button onclick="applyUpdate()" style="
-        background: white;
-        color: #007bff;
-        border: none;
-        padding: 6px 12px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: 600;
-        margin-right: 8px;
-      ">
-        Update Now
-      </button>
-      <button onclick="dismissUpdateNotification()" style="
-        background: transparent;
-        color: white;
-        border: 1px solid white;
-        padding: 6px 12px;
-        border-radius: 4px;
-        cursor: pointer;
-      ">
-        Later
-      </button>
-    </div>
-  `;
-  
-  const existing = document.getElementById('sw-update-notification');
-  if (existing) {
-    existing.remove();
-  }
-  
-  document.body.appendChild(notification);
-}
-
-function showCacheUpdateNotification() {
-  const notification = document.createElement('div');
-  notification.innerHTML = `
-    <div style="
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      background: #28a745;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 6px;
-      font-size: 14px;
-      z-index: 10000;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    ">
-      Content updated in background
-    </div>
-  `;
-  
-  document.body.appendChild(notification);
-  
-  setTimeout(() => {
-    notification.firstElementChild.style.opacity = '1';
-  }, 100);
-  
-  setTimeout(() => {
-    notification.firstElementChild.style.opacity = '0';
-    setTimeout(() => {
-      if (notification.parentNode) {
-        notification.parentNode.removeChild(notification);
-      }
-    }, 300);
-  }, 3000);
-}
-
-function applyUpdate() {
-  if (navigator.serviceWorker.controller) {
-    navigator.serviceWorker.controller.postMessage({
-      type: 'FORCE_UPDATE'
-    });
-  }
-  
-  dismissUpdateNotification();
-  
-  setTimeout(() => {
-    window.location.reload();
-  }, 500);
-}
-
-function dismissUpdateNotification() {
-  const notification = document.getElementById('sw-update-notification');
-  if (notification) {
-    notification.remove();
-  }
-}
-
-function refreshContent(url) {
-  if (url.includes('.json')) {
-    console.log('JSON content updated, consider refreshing data');
-  }
-  
-  if (url.includes('.html')) {
-    console.log('HTML content updated, consider page refresh');
-  }
-}
 
 // Prevent right-click on video (optional)
 videoPlayer.addEventListener('contextmenu', (e) => {

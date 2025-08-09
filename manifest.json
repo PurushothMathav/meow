@@ -1,7 +1,7 @@
 {
   "name": "Meow - Stream Anywhere",
   "short_name": "Meow",
-  "description": "Stream your favorite shows and episodes anywhere, anytime with KukuFM.",
+  "description": "Stream your favorite shows and episodes anywhere, anytime with Meow.",
   "version": "1.0.0",
   "start_url": "/meow/index.html",
   "display_override": ["fullscreen", "minimal-ui"],

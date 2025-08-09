@@ -1,481 +1,524 @@
-const CACHE_NAME = 'kukufm-v0808251350';
-const STATIC_CACHE = `${CACHE_NAME}-static`;
-const DYNAMIC_CACHE = `${CACHE_NAME}-dynamic`;
-const UPDATE_CHECK_INTERVAL = 30000;
+// Optimized Service Worker for Meow Streaming Site
+// service-worker.js
 
-// Files to cache immediately
-const STATIC_ASSETS = [
-  "/meow/",
-  "/meow/index.html",
-  "/meow/telugu.html",
-  "/meow/malayalam.html",
-  "/meow/kannada.html",
-  "/meow/bengali.html",
-  "/meow/hindi.html",
-  "/meow/english.html",
-  "/meow/tamilaudio.html",
-  "/meow/manifest.json",
-  "/meow/master_tamil.json",
-  "/meow/master_tamil_audio.json",
-  "/meow/service-worker.js",
-  "/meow/icons/favicon-48x48.png",
-  "/meow/icons/favicon-72x72.png",
-  "/meow/icons/favicon-96x96.png",
-  "/meow/icons/favicon-144x144.png",
-  "/meow/icons/favicon-192x192.png",
-  "/meow/icons/favicon-512x512.png",
-  "/meow/Meow_Watch_KUKU_TV_Free.png",
-  'https://cdn.jsdelivr.net/npm/hls.js@latest',
-  'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
+const CACHE_VERSION = 'v0908251840';
+const CACHE_NAMES = {
+  STATIC: `meow-static-${CACHE_VERSION}`,
+  DYNAMIC: `meow-dynamic-${CACHE_VERSION}`,
+  IMAGES: `meow-images-${CACHE_VERSION}`,
+  JSON: `meow-json-${CACHE_VERSION}`,
+  FONTS: `meow-fonts-${CACHE_VERSION}`
+};
+
+// Static assets to cache immediately
+const STATIC_CACHE_URLS = [
+  '/meow/',
+  '/meow/index.html',
+  '/meow/telugu.html',
+  '/meow/malayalam.html',
+  '/meow/kannada.html',
+  '/meow/hindi.html',
+  '/meow/bengali.html',
+  '/meow/english.html',
+  '/meow/tamilaudio.html',
+  '/meow/sw-register.js',
+  '/meow/manifest.json',
+  '/meow/favicon.ico'
 ];
 
-// Dynamic cache patterns
-const CACHE_PATTERNS = {
-  json: /\.json$/,
-  images: /\.(jpg|jpeg|png|gif|webp|svg)$/,
-  fonts: /\.(woff|woff2|ttf|eot)$/,
-  videos: /\.(mp4|webm|m3u8|ts)$/
+// Dynamic assets that should be cached on first request
+const DYNAMIC_CACHE_PATTERNS = [
+  /\.html$/,
+  /\.css$/,
+  /\.js$/,
+  /master_.*\.json$/
+];
+
+// Image cache patterns
+const IMAGE_CACHE_PATTERNS = [
+  /\.(jpg|jpeg|png|gif|webp|svg|ico)$/i,
+  /share_image_url/,
+  /placeholder/
+];
+
+// JSON cache patterns (for show data)
+const JSON_CACHE_PATTERNS = [
+  /\.json$/,
+  /master_/
+];
+
+// External resources to cache
+const EXTERNAL_CACHE_PATTERNS = [
+  /fonts\.googleapis\.com/,
+  /fonts\.gstatic\.com/,
+  /cdnjs\.cloudflare\.com/,
+  /cdn\.jsdelivr\.net/
+];
+
+// Network-first resources (videos)
+const NETWORK_FIRST_PATTERNS = [
+  /\.m3u8$/,
+  /\.ts$/,
+  /\.mp4$/,
+  /\.webm$/,
+  /video/
+];
+
+// Cache size limits
+const CACHE_LIMITS = {
+  IMAGES: 5000, // Maximum 100 images
+  JSON: 5000,   // Maximum 200 JSON files
+  DYNAMIC: 50  // Maximum 50 dynamic resources
 };
 
 // Install event - cache static assets
-self.addEventListener('install', event => {
-  console.log('[SW] Installing service worker...');
+self.addEventListener('install', (event) => {
+  console.log('Service Worker installing...');
   
   event.waitUntil(
-    caches.open(STATIC_CACHE)
-      .then(cache => {
-        console.log('[SW] Caching static assets');
-        return cache.addAll(STATIC_ASSETS);
-      })
-      .then(() => {
-        console.log('[SW] Static assets cached successfully');
-        // Force activation immediately
-        return self.skipWaiting();
-      })
-      .catch(error => {
-        console.error('[SW] Failed to cache static assets:', error);
-      })
+    Promise.all([
+      // Cache static assets
+      caches.open(CACHE_NAMES.STATIC).then((cache) => {
+        console.log('Caching static assets');
+        return cache.addAll(STATIC_CACHE_URLS.map(url => new Request(url, { cache: 'reload' })));
+      }),
+      
+      // Skip waiting to activate immediately
+      self.skipWaiting()
+    ]).then(() => {
+      console.log('Service Worker installed successfully');
+      broadcastMessage('SW_ACTIVATED', 'Service Worker activated');
+    }).catch((error) => {
+      console.error('Service Worker installation failed:', error);
+    })
   );
 });
 
-// Activate event - clean up old caches and claim clients
-self.addEventListener('activate', event => {
-  console.log('[SW] Activating service worker...');
-
+// Activate event - clean up old caches
+self.addEventListener('activate', (event) => {
+  console.log('Service Worker activating...');
+  
   event.waitUntil(
     Promise.all([
       // Clean up old caches
-      caches.keys().then(cacheNames => {
-        return Promise.all(
-          cacheNames
-            .filter(cacheName => {
-              return cacheName.startsWith('kukufm-') && 
-                     cacheName !== STATIC_CACHE && 
-                     cacheName !== DYNAMIC_CACHE;
-            })
-            .map(cacheName => {
-              console.log('[SW] Deleting old cache:', cacheName);
-              return caches.delete(cacheName);
-            })
-        );
-      }),
-      // Take control of all clients immediately
-      self.clients.claim()
-    ])
-    .then(() => {
-      console.log('[SW] Service worker activated and ready');
-      // Force reload of all clients to ensure they use the new service worker
-      return self.clients.matchAll({ type: 'window' });
-    })
-    .then(clients => {
-      clients.forEach(client => {
-        // Send update message to client
-        client.postMessage({
-          type: 'SW_UPDATED',
-          message: 'Service worker updated - reloading content'
+      caches.keys().then((cacheNames) => {
+        const deletePromises = cacheNames.map((cacheName) => {
+          if (cacheName.startsWith('meow-') && !Object.values(CACHE_NAMES).includes(cacheName)) {
+            console.log('Deleting old cache:', cacheName);
+            return caches.delete(cacheName);
+          }
         });
-        
-        // Force reload the client to ensure new service worker takes control
-        client.navigate(client.url);
-      });
+        return Promise.all(deletePromises);
+      }),
+      
+      // Claim all clients
+      self.clients.claim()
+    ]).then(() => {
+      console.log('Service Worker activated successfully');
+      broadcastMessage('SW_ACTIVATED', 'Service Worker is now controlling all pages');
     })
   );
 });
 
-// Fetch event - implement caching strategies
-self.addEventListener('fetch', event => {
-  const { request } = event;
+// Fetch event - handle all network requests
+self.addEventListener('fetch', (event) => {
+  const request = event.request;
   const url = new URL(request.url);
-
+  
   // Skip non-GET requests
   if (request.method !== 'GET') {
     return;
   }
-
-  // Skip chrome-extension and other non-http requests
+  
+  // Skip chrome-extension and other protocols
   if (!url.protocol.startsWith('http')) {
     return;
   }
-
-  event.respondWith(handleFetch(request));
+  
+  // Route to appropriate strategy
+  if (NETWORK_FIRST_PATTERNS.some(pattern => pattern.test(url.pathname + url.search))) {
+    event.respondWith(networkFirstStrategy(request));
+  } else if (IMAGE_CACHE_PATTERNS.some(pattern => pattern.test(url.pathname + url.search))) {
+    event.respondWith(cacheFirstStrategy(request, CACHE_NAMES.IMAGES));
+  } else if (JSON_CACHE_PATTERNS.some(pattern => pattern.test(url.pathname))) {
+    event.respondWith(staleWhileRevalidateStrategy(request, CACHE_NAMES.JSON));
+  } else if (EXTERNAL_CACHE_PATTERNS.some(pattern => pattern.test(url.hostname))) {
+    event.respondWith(cacheFirstStrategy(request, CACHE_NAMES.FONTS));
+  } else if (DYNAMIC_CACHE_PATTERNS.some(pattern => pattern.test(url.pathname))) {
+    event.respondWith(staleWhileRevalidateStrategy(request, CACHE_NAMES.DYNAMIC));
+  } else {
+    event.respondWith(networkFirstStrategy(request));
+  }
 });
 
-// Handle fetch requests with appropriate caching strategy
-async function handleFetch(request) {
-  const url = new URL(request.url);
-  
+// Cache-first strategy (for images, fonts)
+async function cacheFirstStrategy(request, cacheName) {
   try {
-    // Strategy 1: Static assets - Cache First
-    if (isStaticAsset(request)) {
-      return await cacheFirst(request, STATIC_CACHE);
-    }
-	
-    // Strategy 2: JSON files - Network First (CHANGED from cacheFirst)
-    if (CACHE_PATTERNS.json.test(url.pathname)) {
-      return await cacheFirst(request, DYNAMIC_CACHE); 
-    }
-
-    // Strategy 3: Images - Cache First with network fallback
-    if (CACHE_PATTERNS.images.test(url.pathname)) {
-      return await cacheFirst(request, DYNAMIC_CACHE);
-    }
-
-    // Strategy 4: Fonts - Cache First
-    if (CACHE_PATTERNS.fonts.test(url.pathname) || url.hostname.includes('googleapis') || url.hostname.includes('gstatic')) {
-      return await cacheFirst(request, STATIC_CACHE);
-    }
-
-    // Strategy 5: Video streams - Network only (don't cache)
-    if (CACHE_PATTERNS.videos.test(url.pathname) || url.pathname.includes('.m3u8') || url.pathname.includes('.ts')) {
-      return await networkOnly(request);
-    }
-
-    // Strategy 6: Same origin - Network First
-    if (url.origin === self.location.origin) {
-      return await networkFirstWithUpdate(request, DYNAMIC_CACHE);
-    }
-
-    // Strategy 7: External resources - Network First
-    return await networkFirst(request, DYNAMIC_CACHE);
-
-  } catch (error) {
-    console.error('[SW] Fetch error:', error);
+    const cache = await caches.open(cacheName);
+    const cachedResponse = await cache.match(request);
     
-    // Return offline fallback if available
-    if (url.origin === self.location.origin) {
-      const cache = await caches.open(STATIC_CACHE);
-      const cachedResponse = await cache.match('/meow/index.html'); // Fixed path
-      return cachedResponse || new Response('Offline', { status: 503 });
+    if (cachedResponse) {
+      // Optionally update in background
+      updateInBackground(request, cache);
+      return cachedResponse;
+    }
+    
+    const networkResponse = await fetch(request);
+    
+    if (networkResponse.ok) {
+      // Clone and cache the response
+      const responseToCache = networkResponse.clone();
+      await cache.put(request, responseToCache);
+      
+      // Manage cache size
+      await manageCacheSize(cache, cacheName);
+      
+      broadcastMessage('CACHE_UPDATED', 'Resource cached', request.url);
+    }
+    
+    return networkResponse;
+    
+  } catch (error) {
+    console.error('Cache-first strategy failed:', error, request.url);
+    broadcastMessage('CACHE_ERROR', error.message, request.url);
+    
+    // Return offline fallback for images
+    if (IMAGE_CACHE_PATTERNS.some(pattern => pattern.test(request.url))) {
+      return new Response(
+        '<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400"><rect width="300" height="400" fill="#1a1a1a"/><text x="150" y="200" text-anchor="middle" fill="#666" font-family="Arial" font-size="16">Image Unavailable</text></svg>',
+        { headers: { 'Content-Type': 'image/svg+xml' } }
+      );
     }
     
     throw error;
   }
 }
 
-// Check if request is for static assets
-function isStaticAsset(request) {
-  const url = new URL(request.url);
-  return STATIC_ASSETS.some(asset => {
-    if (typeof asset === 'string') {
-      return url.pathname === asset || url.href === asset;
+// Network-first strategy (for videos, real-time data)
+async function networkFirstStrategy(request) {
+  try {
+    const networkResponse = await fetch(request);
+    return networkResponse;
+    
+  } catch (error) {
+    console.error('Network-first strategy failed:', error, request.url);
+    
+    // Try cache as fallback
+    const cache = await caches.open(CACHE_NAMES.DYNAMIC);
+    const cachedResponse = await cache.match(request);
+    
+    if (cachedResponse) {
+      broadcastMessage('OFFLINE_FALLBACK', 'Serving cached version', request.url);
+      return cachedResponse;
     }
-    return false;
-  });
+    
+    // Return offline page for HTML requests
+    if (request.headers.get('accept')?.includes('text/html')) {
+      return new Response(
+        `<!DOCTYPE html>
+        <html>
+        <head>
+          <title>Offline - Meow</title>
+          <style>
+            body { font-family: Arial; text-align: center; padding: 50px; background: #0a0a0a; color: white; }
+            .offline { font-size: 48px; margin-bottom: 20px; }
+          </style>
+        </head>
+        <body>
+          <div class="offline">📱</div>
+          <h1>You're Offline</h1>
+          <p>Check your connection and try again</p>
+        </body>
+        </html>`,
+        { headers: { 'Content-Type': 'text/html' } }
+      );
+    }
+    
+    throw error;
+  }
 }
 
-// Cache First Strategy with TTL check
-async function cacheFirst(request, cacheName) {
+// Stale-while-revalidate strategy (for JSON, dynamic content)
+async function staleWhileRevalidateStrategy(request, cacheName) {
   const cache = await caches.open(cacheName);
   const cachedResponse = await cache.match(request);
   
-  if (cachedResponse) {
-    // Check if cache is stale (older than 1 hour for dynamic content)
-    const cacheDate = cachedResponse.headers.get('sw-cache-date');
-    const isStale = cacheDate && (Date.now() - parseInt(cacheDate)) > 3600000; // 1 hour
-    
-    if (!isStale || cacheName === STATIC_CACHE) {
-      // Update cache in background for dynamic content
-      if (cacheName === DYNAMIC_CACHE) {
-        updateCacheInBackground(request, cache);
+  // Always try to update from network
+  const networkPromise = fetch(request).then(async (networkResponse) => {
+    if (networkResponse.ok) {
+      const responseToCache = networkResponse.clone();
+      await cache.put(request, responseToCache);
+      
+      // Manage cache size
+      await manageCacheSize(cache, cacheName);
+      
+      // Notify about update if content changed
+      if (cachedResponse) {
+        const cachedText = await cachedResponse.clone().text();
+        const networkText = await networkResponse.clone().text();
+        
+        if (cachedText !== networkText) {
+          broadcastMessage('CONTENT_UPDATED', 'Content updated', request.url);
+        }
+      } else {
+        broadcastMessage('CACHE_UPDATED', 'New content cached', request.url);
       }
-      return cachedResponse;
     }
+    return networkResponse;
+  }).catch((error) => {
+    console.error('Network update failed:', error, request.url);
+    broadcastMessage('CACHE_ERROR', error.message, request.url);
+    return cachedResponse;
+  });
+  
+  // Return cached response immediately if available
+  if (cachedResponse) {
+    return cachedResponse;
   }
   
+  // Otherwise wait for network
+  return networkPromise;
+}
+
+// Update resource in background without blocking response
+async function updateInBackground(request, cache) {
   try {
     const networkResponse = await fetch(request);
     if (networkResponse.ok) {
-      // Add cache timestamp
-      const responseToCache = networkResponse.clone();
-      const headers = new Headers(responseToCache.headers);
-      headers.set('sw-cache-date', Date.now().toString());
-      
-      const cachedResponse = new Response(responseToCache.body, {
-        status: responseToCache.status,
-        statusText: responseToCache.statusText,
-        headers: headers
+      await cache.put(request, networkResponse.clone());
+      broadcastMessage('CACHE_UPDATED', 'Background update completed', request.url, {
+        showNotification: false
       });
-      
-      cache.put(request, cachedResponse);
     }
-    return networkResponse;
   } catch (error) {
-    if (cachedResponse) {
-      return cachedResponse;
-    }
-    throw error;
+    // Silently fail background updates
+    console.warn('Background update failed:', error, request.url);
   }
 }
 
-// Network First Strategy
-async function networkFirst(request, cacheName) {
-  try {
-    const networkResponse = await fetch(request);
-    if (networkResponse.ok) {
-      const cache = await caches.open(cacheName);
-      const responseToCache = networkResponse.clone();
-      const headers = new Headers(responseToCache.headers);
-      headers.set('sw-cache-date', Date.now().toString());
-      
-      const cachedResponse = new Response(responseToCache.body, {
-        status: responseToCache.status,
-        statusText: responseToCache.statusText,
-        headers: headers
-      });
-      
-      cache.put(request, cachedResponse);
-    }
-    return networkResponse;
-  } catch (error) {
-    const cache = await caches.open(cacheName);
-    const cachedResponse = await cache.match(request);
-    if (cachedResponse) {
-      return cachedResponse;
-    }
-    throw error;
-  }
-}
-
-// Network First with Update Strategy
-async function networkFirstWithUpdate(request, cacheName) {
-  const cache = await caches.open(cacheName);
+// Manage cache size to prevent unlimited growth
+async function manageCacheSize(cache, cacheName) {
+  const limit = CACHE_LIMITS[cacheName.split('-')[1]?.toUpperCase()] || 50;
+  const keys = await cache.keys();
   
-  try {
-    const networkResponse = await fetch(request);
-    if (networkResponse.ok) {
-      const responseToCache = networkResponse.clone();
-      const headers = new Headers(responseToCache.headers);
-      headers.set('sw-cache-date', Date.now().toString());
-      
-      const cachedResponse = new Response(responseToCache.body, {
-        status: responseToCache.status,
-        statusText: responseToCache.statusText,
-        headers: headers
-      });
-      
-      cache.put(request, cachedResponse);
-      
-      // Notify clients about updated content
-      const clients = await self.clients.matchAll({ type: 'window' });
-      clients.forEach(client => {
-        client.postMessage({
-          type: 'CONTENT_UPDATED',
-          url: request.url
-        });
-      });
-    }
-    return networkResponse;
-  } catch (error) {
-    const cachedResponse = await cache.match(request);
-    if (cachedResponse) {
-      return cachedResponse;
-    }
-    throw error;
+  if (keys.length > limit) {
+    const deleteCount = keys.length - limit;
+    const keysToDelete = keys.slice(0, deleteCount);
+    
+    await Promise.all(keysToDelete.map(key => cache.delete(key)));
+    console.log(`Cleaned up ${deleteCount} old entries from ${cacheName}`);
   }
 }
 
-// Network Only Strategy
-async function networkOnly(request) {
-  return await fetch(request);
-}
-
-// Update cache in background
-async function updateCacheInBackground(request, cache) {
-  try {
-    const networkResponse = await fetch(request);
-    if (networkResponse.ok) {
-      const responseToCache = networkResponse.clone();
-      const headers = new Headers(responseToCache.headers);
-      headers.set('sw-cache-date', Date.now().toString());
-      
-      const cachedResponse = new Response(responseToCache.body, {
-        status: responseToCache.status,
-        statusText: responseToCache.statusText,
-        headers: headers
-      });
-      
-      await cache.put(request, cachedResponse);
-      
-      // Notify clients about background update
-      const clients = await self.clients.matchAll({ type: 'window' });
-      clients.forEach(client => {
-        client.postMessage({
-          type: 'CACHE_UPDATED',
-          url: request.url
-        });
-      });
-    }
-  } catch (error) {
-    console.log('[SW] Background update failed:', error);
-  }
-}
-
-// Handle messages from clients
-self.addEventListener('message', event => {
+// Handle messages from the main thread
+self.addEventListener('message', (event) => {
   const { type, data } = event.data;
-
+  
   switch (type) {
-    case 'SKIP_WAITING':
-      self.skipWaiting();
-      break;
-      
-    case 'CHECK_UPDATE':
-      checkForUpdates();
+    case 'FORCE_UPDATE':
+      handleForceUpdate();
       break;
       
     case 'CLEAR_CACHE':
-      clearCache(data?.cacheName);
-      break;
-      
-    case 'FORCE_UPDATE':
-      // Force update and reload
-      self.skipWaiting();
+      handleClearCache(data?.cacheName);
       break;
       
     case 'GET_CACHE_INFO':
-      getCacheInfo().then(info => {
-        event.ports[0].postMessage(info);
-      });
+      handleGetCacheInfo(event);
+      break;
+      
+    case 'PREFETCH_RESOURCES':
+      handlePrefetchResources(data?.urls || []);
       break;
   }
 });
 
-// Enhanced update checking
-let updateCheckInterval;
-
-function startUpdateCheck() {
-  updateCheckInterval = setInterval(async () => {
-    await checkForUpdates();
-  }, UPDATE_CHECK_INTERVAL);
-}
-
-function stopUpdateCheck() {
-  if (updateCheckInterval) {
-    clearInterval(updateCheckInterval);
-    updateCheckInterval = null;
-  }
-}
-
-async function checkForUpdates() {
+// Handle force update request
+async function handleForceUpdate() {
   try {
-    const registration = await self.registration;
-    await registration.update();
-    
-    // If there's a waiting service worker, notify clients
-    if (registration.waiting) {
-      const clients = await self.clients.matchAll({ type: 'window' });
-      clients.forEach(client => {
-        client.postMessage({
-          type: 'SW_UPDATE_AVAILABLE',
-          message: 'New version available'
-        });
-      });
-    }
-  } catch (error) {
-    console.log('[SW] Update check failed:', error);
-  }
-}
-
-// Clear specific cache
-async function clearCache(cacheName) {
-  if (cacheName) {
-    await caches.delete(cacheName);
-  } else {
+    // Clear all caches
     const cacheNames = await caches.keys();
     await Promise.all(
       cacheNames
-        .filter(name => name.startsWith('kukufm-'))
+        .filter(name => name.startsWith('meow-'))
         .map(name => caches.delete(name))
     );
+    
+    // Notify clients about update
+    broadcastMessage('SW_UPDATED', 'Service Worker updated, please reload');
+    
+    // Skip waiting and claim clients
+    await self.skipWaiting();
+    
+  } catch (error) {
+    console.error('Force update failed:', error);
   }
 }
 
-// Get cache information
-async function getCacheInfo() {
-  const cacheNames = await caches.keys();
-  const info = {};
-  
-  for (const cacheName of cacheNames) {
-    if (cacheName.startsWith('kukufm-')) {
+// Handle cache clearing
+async function handleClearCache(cacheName) {
+  try {
+    if (cacheName) {
+      await caches.delete(cacheName);
+      console.log('Cache cleared:', cacheName);
+    } else {
+      const cacheNames = await caches.keys();
+      await Promise.all(
+        cacheNames
+          .filter(name => name.startsWith('meow-'))
+          .map(name => caches.delete(name))
+      );
+      console.log('All caches cleared');
+    }
+    
+    broadcastMessage('CACHE_UPDATED', 'Cache cleared successfully');
+    
+  } catch (error) {
+    console.error('Clear cache failed:', error);
+  }
+}
+
+// Handle cache info request
+async function handleGetCacheInfo(event) {
+  try {
+    const cacheInfo = {};
+    
+    for (const [key, cacheName] of Object.entries(CACHE_NAMES)) {
       const cache = await caches.open(cacheName);
       const keys = await cache.keys();
-      info[cacheName] = {
-        size: keys.length,
-        urls: keys.map(req => req.url)
+      cacheInfo[key] = {
+        name: cacheName,
+        count: keys.length,
+        urls: keys.slice(0, 5).map(req => req.url) // First 5 URLs as sample
       };
     }
+    
+    event.ports[0].postMessage({
+      type: 'CACHE_INFO',
+      data: cacheInfo
+    });
+    
+  } catch (error) {
+    console.error('Get cache info failed:', error);
+    event.ports[0].postMessage({
+      type: 'CACHE_ERROR',
+      error: error.message
+    });
   }
-  
-  return info;
 }
 
-// Start periodic update checks
-startUpdateCheck();
+// Handle prefetch requests
+async function handlePrefetchResources(urls) {
+  try {
+    const prefetchPromises = urls.map(async (url) => {
+      try {
+        const response = await fetch(url);
+        if (response.ok) {
+          // Cache based on resource type
+          let cacheName = CACHE_NAMES.DYNAMIC;
+          
+          if (IMAGE_CACHE_PATTERNS.some(pattern => pattern.test(url))) {
+            cacheName = CACHE_NAMES.IMAGES;
+          } else if (JSON_CACHE_PATTERNS.some(pattern => pattern.test(url))) {
+            cacheName = CACHE_NAMES.JSON;
+          }
+          
+          const cache = await caches.open(cacheName);
+          await cache.put(url, response.clone());
+          
+          console.log('Prefetched and cached:', url);
+        }
+      } catch (error) {
+        console.warn('Prefetch failed:', url, error);
+      }
+    });
+    
+    await Promise.all(prefetchPromises);
+    broadcastMessage('CACHE_UPDATED', `Prefetched ${urls.length} resources`, null, {
+      showNotification: true,
+      message: `${urls.length} resources cached for offline use`
+    });
+    
+  } catch (error) {
+    console.error('Prefetch failed:', error);
+  }
+}
+
+// Broadcast message to all clients
+async function broadcastMessage(type, message, url = null, data = null) {
+  const clients = await self.clients.matchAll();
+  
+  const messageData = {
+    type,
+    message,
+    url,
+    data,
+    timestamp: Date.now()
+  };
+  
+  clients.forEach(client => {
+    client.postMessage(messageData);
+  });
+}
 
 // Background sync for failed requests (if supported)
 if ('sync' in self.registration) {
-  self.addEventListener('sync', event => {
-    if (event.tag === 'background-sync') {
-      event.waitUntil(doBackgroundSync());
+  self.addEventListener('sync', (event) => {
+    if (event.tag === 'retry-failed-requests') {
+      event.waitUntil(retryFailedRequests());
     }
   });
 }
 
-async function doBackgroundSync() {
-  console.log('[SW] Background sync triggered');
+// Retry failed requests (basic implementation)
+async function retryFailedRequests() {
+  console.log('Retrying failed requests...');
+  // Implementation would depend on how you store failed requests
+  // This is a placeholder for the functionality
 }
 
-// Push notifications
-self.addEventListener('push', event => {
-  if (event.data) {
-    const data = event.data.json();
-    const options = {
-      body: data.body,
-      icon: '/meow/icons/favicon-192x192.png', // Fixed path
-      badge: '/meow/icons/favicon-72x72.png',  // Fixed path
-      actions: data.actions,
-      data: data.data
-    };
+// Periodic cache cleanup
+async function performPeriodicCleanup() {
+  try {
+    console.log('Performing periodic cache cleanup...');
     
-    event.waitUntil(
-      self.registration.showNotification(data.title, options)
-    );
-  }
-});
-
-// Handle notification clicks
-self.addEventListener('notificationclick', event => {
-  event.notification.close();
-  
-  event.waitUntil(
-    self.clients.matchAll({ type: 'window' }).then(clients => {
-      if (clients.length > 0) {
-        return clients[0].focus();
+    // Clean up each cache
+    for (const cacheName of Object.values(CACHE_NAMES)) {
+      const cache = await caches.open(cacheName);
+      await manageCacheSize(cache, cacheName);
+    }
+    
+    // Clean up expired entries (older than 7 days)
+    const sevenDaysAgo = Date.now() - (7 * 24 * 60 * 60 * 1000);
+    
+    for (const cacheName of Object.values(CACHE_NAMES)) {
+      const cache = await caches.open(cacheName);
+      const keys = await cache.keys();
+      
+      for (const request of keys) {
+        const response = await cache.match(request);
+        const dateHeader = response?.headers.get('date');
+        
+        if (dateHeader) {
+          const responseDate = new Date(dateHeader).getTime();
+          if (responseDate < sevenDaysAgo) {
+            await cache.delete(request);
+            console.log('Deleted expired cache entry:', request.url);
+          }
+        }
       }
-      return self.clients.openWindow('/meow/');
-    })
-  );
-});
+    }
+    
+    console.log('Periodic cleanup completed');
+    
+  } catch (error) {
+    console.error('Periodic cleanup failed:', error);
+  }
+}
 
-console.log('[SW] Service worker script loaded');
+// Schedule periodic cleanup (every 24 hours when service worker is active)
+setInterval(() => {
+  performPeriodicCleanup();
+}, 24 * 60 * 60 * 1000);
+
+console.log(`Service Worker ${CACHE_VERSION} loaded successfully`);
