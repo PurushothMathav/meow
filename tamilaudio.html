@@ -1641,28 +1641,27 @@ function setupLazyLoading() {
 // Setup event listeners
 function setupEventListeners() {
   // Search functionality
-  searchInput.addEventListener('input', (e) => {
-    const query = e.target.value;
-    
-    // Show/hide clear button
-    clearSearch.classList.toggle('visible', query.length > 0);
-    
-    // Update URL
-    updateUrlSearch(query);
-    
-    clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(() => {
-      handleSearch(query);
-    }, 300);
-  });
+searchInput.addEventListener('input', (e) => {
+  const query = e.target.value;
+  
+  // Show/hide clear button
+  clearSearch.classList.toggle('visible', query.length > 0);
+  
+  // Update URL
+  updateUrlSearch(query);
+  
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(() => {
+    handleSearch(query);
+  }, 300);
+});
 
-  // Clear search
-  clearSearch.addEventListener('click', () => {
-    searchInput.value = '';
-    clearSearch.classList.remove('visible');
-    updateUrlSearch('');
-    handleSearch('');
-  });
+clearSearch.addEventListener('click', () => {
+  searchInput.value = '';
+  clearSearch.classList.remove('visible');
+  updateUrlSearch('');
+  handleSearch('');
+});
 
   // Player controls
   episodeSelect.addEventListener('change', (e) => {
@@ -2037,8 +2036,7 @@ async function loadShows() {
     const urlParams = new URLSearchParams(window.location.search);
     const searchQuery = urlParams.get('s');
     if (searchQuery) {
-      await loadAllSectionsForSearch();
-      handleSearch(searchQuery);
+      await handleSearch(searchQuery);
     }
     
   } catch (error) {
@@ -2285,28 +2283,46 @@ function handleSearch(query) {
     isSearchMode = false;
     searchResultsHeader.style.display = 'none';
     mainContent.style.display = 'block';
-  } else {
-    isSearchMode = true;
-    const searchTerm = query.toLowerCase();
-    const filteredShows = allShows.filter(show => 
-      show.show?.title?.toLowerCase().includes(searchTerm) ||
-      show.show?.description?.toLowerCase().includes(searchTerm)
-    );
-
-    // Remove duplicates based on show ID
-    const uniqueShows = filteredShows.filter((show, index, self) => 
-      index === self.findIndex(s => s.show?.id === show.show?.id)
-    );
-    
-    // Sort search results
-    uniqueShows.sort((a, b) => {
-      const titleA = (a.show?.title || '').toLowerCase();
-      const titleB = (b.show?.title || '').toLowerCase();
-      return titleA.localeCompare(titleB);
-    });
-
-    renderSearchResults(query, uniqueShows);
+    return;
   }
+
+  isSearchMode = true;
+  const searchTerm = query.toLowerCase();
+  
+  // Search in already loaded shows first
+  let filteredShows = allShows.filter(show => 
+    show.show?.title?.toLowerCase().includes(searchTerm) ||
+    show.show?.description?.toLowerCase().includes(searchTerm)
+  );
+
+  // Remove duplicates
+  const uniqueShows = filteredShows.filter((show, index, self) => 
+    index === self.findIndex(s => s.show?.id === show.show?.id)
+  );
+  
+  // Sort results
+  uniqueShows.sort((a, b) => {
+    const titleA = (a.show?.title || '').toLowerCase();
+    const titleB = (b.show?.title || '').toLowerCase();
+    return titleA.localeCompare(titleB);
+  });
+
+  // If no results found and not all sections loaded, load all and search again
+  if (uniqueShows.length === 0 && loadedSections.size < sectionsData.length) {
+    searchResultsTitle.textContent = `Searching for "${query}"...`;
+    searchResultsCount.textContent = 'Searching all content...';
+    searchResultsGrid.innerHTML = '<div class="loading"><div class="spinner"></div><div class="loading-text">Loading more content...</div></div>';
+    searchResultsHeader.style.display = 'block';
+    mainContent.style.display = 'none';
+    
+    // Load all sections and search again
+    loadAllSectionsForSearch().then(() => {
+      handleSearch(query); // Recursive call after loading
+    });
+    return;
+  }
+
+  renderSearchResults(query, uniqueShows);
 }
 
 // Render search results
