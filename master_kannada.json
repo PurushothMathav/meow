@@ -3,229 +3,3706 @@
     {
       "title": "Uncategory1",
       "shows": [
-        "/meow/json/A Beam of Light in the Darkness_ Mother's Love-Kannada.json",
-        "/meow/json/A Heartbeat Away-Kannada.json",
-        "/meow/json/After Being Dumped, I Married a Rich Heir in a Flash-Kannada.json",
-        "/meow/json/After Divorce , the ex-wife of the big shot  stirs up the world-Kannada.json",
-        "/meow/json/After Divorce, the Ex-wife of the Big Shot Stirs up the World-Kannada.json",
-        "/meow/json/Alpha's Perfect Love-Kannada.json",
-        "/meow/json/Alpha, She Wasn't the One-Kannada.json",
-        "/meow/json/American Badger-Kannada.json",
-        "/meow/json/As You Wish-Kannada.json",
-        "/meow/json/Back to 1990-Kannada.json",
-        "/meow/json/Badge of Honour-Kannada.json",
-        "/meow/json/Bagkok Hell-Kannada.json",
-        "/meow/json/Becoming Light-Kannada.json",
-        "/meow/json/Billionaire Daddy, the Hunt is On-Kannada.json",
-        "/meow/json/Billionaire Playboy's Replacement Bride-Kannada.json",
-        "/meow/json/Boss vs Wolf-Kannada.json",
-        "/meow/json/Busaba Bold And Beautiful-Kannada.json",
-        "/meow/json/CEO those twins look like you-Kannada.json",
-        "/meow/json/Charming Son-in-Law-Kannada.json",
-        "/meow/json/Chinese New Year _ The Hidden Dragon Returns to the Village-Kannada.json"
+        {
+          "id": "272014",
+          "title": "A Beam of Light in the Darkness: Mother's Love",
+          "slug": "a-beam-of-light-in-the-darkness-mothers-love-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 89,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6df7c460b9964491b15c9da2df637c8b.png",
+          "description": "A Beam of Light in the Darkness ",
+          "link": "/meow/json/A Beam of Light in the Darkness_ Mother's Love-Kannada.json"
+        },
+        {
+          "id": "271193",
+          "title": "A Heartbeat Away",
+          "slug": "a-heartbeat-away-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 63,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/35c9a35ab31f4aa4ae68b770babf0fd3.png",
+          "description": "Katie heartlessly abandoned her boyfriend Sean because she looked down on his lack of wealth. Years later, Sean becomes a young CEO and stands before Katie. He wants her to see her mistake in choosing, but he gradually realizes that the girl before him has actually always loved him.",
+          "link": "/meow/json/A Heartbeat Away-Kannada.json"
+        },
+        {
+          "id": "271633",
+          "title": "After Being Dumped, I Married a Rich Heir in a Flash",
+          "slug": "after-being-dumped-i-married-a-rich-heir-in-a-flash-2",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 96,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c2eaabb524da47e0b0c64d311d473202.png",
+          "description": "After Being Dumped : Kannada ",
+          "link": "/meow/json/After Being Dumped, I Married a Rich Heir in a Flash-Kannada.json"
+        },
+        {
+          "id": "270349",
+          "title": "After Divorce, the Ex-wife of the Big Shot Stirs up the World",
+          "slug": "after-divorce-the-ex-wife-of-the-big-shot-stirs-up-the-world-1",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/93044bd3edcd443ab429d21f6c3a7eeb.png",
+          "description": "ಸೀಕ್ರೆಟ್ ಮ್ಯಾರೇಜ್ ಮಾಡಿಕೊಂಡ ಸಾರಾ ಮತ್ತು ಅಲೆಕ್ಸ್, ಮುಂದೆ ಬೇರೆಯಾಗೋ ಪ್ರಮೇಯ ಎದುರಾಗುತ್ತೆ! ಅಲೆಕ್ಸ್ ದರ್ಪಕ್ಕೆ ಸರಿಯಾದ ಪೆಟ್ಟು ಕೊಡ್ಬೇಕು ಅಂತಾ ರೆಡಿಯಾದ ಸಾರಾ, ಮುಂದೆ ಇಡೋ ಹೆಜ್ಜೆಯೇನು? ನೋಡಿ ಬೆಸ್ಟ್ ಡ್ರಾಮಾ ಶೋ' After Divorce, the Ex-wife of the Big Shot Stirs up the World'.",
+          "link": "/meow/json/After Divorce , the ex-wife of the big shot  stirs up the world-Kannada.json"
+        },
+        {
+          "id": "270349",
+          "title": "After Divorce, the Ex-wife of the Big Shot Stirs up the World",
+          "slug": "after-divorce-the-ex-wife-of-the-big-shot-stirs-up-the-world-1",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/93044bd3edcd443ab429d21f6c3a7eeb.png",
+          "description": "ಸೀಕ್ರೆಟ್ ಮ್ಯಾರೇಜ್ ಮಾಡಿಕೊಂಡ ಸಾರಾ ಮತ್ತು ಅಲೆಕ್ಸ್, ಮುಂದೆ ಬೇರೆಯಾಗೋ ಪ್ರಮೇಯ ಎದುರಾಗುತ್ತೆ! ಅಲೆಕ್ಸ್ ದರ್ಪಕ್ಕೆ ಸರಿಯಾದ ಪೆಟ್ಟು ಕೊಡ್ಬೇಕು ಅಂತಾ ರೆಡಿಯಾದ ಸಾರಾ, ಮುಂದೆ ಇಡೋ ಹೆಜ್ಜೆಯೇನು? ನೋಡಿ ಬೆಸ್ಟ್ ಡ್ರಾಮಾ ಶೋ' After Divorce, the Ex-wife of the Big Shot Stirs up the World'.",
+          "link": "/meow/json/After Divorce, the Ex-wife of the Big Shot Stirs up the World-Kannada.json"
+        },
+        {
+          "id": "268828",
+          "title": "Alpha's Perfect Love ",
+          "slug": "alphas-perfect-love-6",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5bf33da7437e41369baa2eeda0832fbd.png",
+          "description": "A passionate romance between Liam, the powerful alpha of a werewolf pack, and Rachel, a mysterious hybrid unaware of her true identity. Drawn to each other by an unexplainable pull, they marry in secret, defying his family and igniting Rachel’s deadly jealousy. As sparks fly and secrets unravel, forgotten memories resurface — revealing a forbidden night of love that was stolen from them. Now, desire, danger, and destiny collide in a battle for their love.",
+          "link": "/meow/json/Alpha's Perfect Love-Kannada.json"
+        },
+        {
+          "id": "270442",
+          "title": "Alpha, She Wasn't the One",
+          "slug": "alpha-she-wasnt-the-one-1",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 70,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8e33551c6cc744edac1650aa477e53e6.png",
+          "description": "ತನ್ನ ಪ್ರೀತಿಯ ಹುಡುಕಾಟದಲ್ಲಿದ್ದ ಕಥಾನಾಯಕ, ಕೊನೆಗೂ  ಸೋಲ್ ಮೆಟ್ ಸಿಕ್ಕಿದ್ಲು ಅಂತಾ ಖುಷಿಯಾಗ್ತನೆ. ಆದ್ರೆ ಕೆಲವೇ ಸಮಯದಲ್ಲಿ ತನ್ನ ಬದುಕಿನ ಸಂಗಾತಿ ಈಕೆಯಲ್ಲಾ ಅನ್ನೋದು ಆತನಿಗೆ ಮನದಟ್ಟಾಗುತ್ತೆ. ಹಾಗಾದ್ರೆ ಮುಂದೆ ವಿಧಿಯ ಆಟವೇನು? ನೋಡಿ 'Alpha She Wasn't The One' ಶೋ\r\n",
+          "link": "/meow/json/Alpha, She Wasn't the One-Kannada.json"
+        },
+        {
+          "id": "267467",
+          "title": "American Badger",
+          "slug": "american-badger-1",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 27,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/84c29da4446f4cdd8336de500e2dd908.png",
+          "description": "He goes by the name Badger because his real name is Dean, and that's the lamest name ever for a hit-man. But really, it was his ex-wife that gave him that name before she died. Since her death he has been a recluse; like all American Badgers. In fact he has hardly spoken a word to anyone except his Handler in 4451 days.",
+          "link": "/meow/json/American Badger-Kannada.json"
+        },
+        {
+          "id": "267530",
+          "title": "As you wish ",
+          "slug": "as-you-wish-6",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 79,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/638ef44797ad4fc9ad9a9907445f16d6.png",
+          "description": "Desperate to escape his crushing debt, Song Mingzhe makes a dark choice, selling his fiancée Zhou Qing to the mafia as collateral for freedom.",
+          "link": "/meow/json/As You Wish-Kannada.json"
+        },
+        {
+          "id": "267553",
+          "title": "Back to 1990 ",
+          "slug": "back-to-1990-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 100,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/2df47119122142d2a494a2e47e352e0e.png",
+          "description": "Back to 1990 ",
+          "link": "/meow/json/Back to 1990-Kannada.json"
+        },
+        {
+          "id": "267560",
+          "title": "Badge of Honour ",
+          "slug": "badge-of-honour-1",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 33,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/3ebea214ab22491e98dfa0b3dd14ca03.png",
+          "description": "Badge of Honour ",
+          "link": "/meow/json/Badge of Honour-Kannada.json"
+        },
+        {
+          "id": "267430",
+          "title": "Bagkok Hell",
+          "slug": "bagkok-hell",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 37,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e589c04dbbdf42abba9b81f6540162eb.png",
+          "description": "Ray's life is turned upside down when he is jailed for the accidental vehicular homicide. Life behind bars is bitter and violent. Over crowding, male rape, and drug abuse are the order of the day. The warden offers him a way out from this daily torment by working for him. He does his job well but he soon begins to realize that many of those incarcerated are innocent or victims of bad circumstances - but what can he do to help and how much danger is he placing himself in?",
+          "link": "/meow/json/Bagkok Hell-Kannada.json"
+        },
+        {
+          "id": "266179",
+          "title": "Becoming Light",
+          "slug": "becoming-light-3",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 90,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/36966a1e4e2f42ce8a5fdb8b594103d4.png",
+          "description": "ಒಂದು ವಿಚಿತ್ರ ತಿರುಗುಬಾಣದಲ್ಲಿ, ತನ್ನ ಕುಟುಂಬದ ವಂಚನೆಯಿಂದ ಪೀಡಿತಳಾದ ಸು ಯಾನ್ರಾನ್, ತಾಯಿಯ ಅನಾರೋಗ್ಯವನ್ನು ಗುಣಪಡಿಸಲು ಹತಾಶಳಾಗಿದ್ದಾಳೆ. ಇದೇ ಸಮಯದಲ್ಲಿ, ತನ್ನ ಅಳಿಯನ ಅನುಮಾನಾಸ್ಪದ ಸಾವಿನ ಬಗ್ಗೆ ತನಿಖೆ ನಡೆಸುತ್ತಿರುವ ಶ್ರೀಮಂತ ವಾರಸುದಾರ ಫು ಹಾನ್ಶೆಂಗ್, ಅವಳಿಗೆ ಅಪೇಕ್ಷಿತ ಗಂಡನಂತೆ ನಟಿಸುತ್ತಾನೆ. ಇದರಿಂದ ಪ್ರೇಮ ಮತ್ತು ಪರಿಹಾರದ ಒಂದು ಅದ್ಭುತ ಪ್ರಯಾಣ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+          "link": "/meow/json/Becoming Light-Kannada.json"
+        },
+        {
+          "id": "270658",
+          "title": "Billionaire Daddy : The hunt is on",
+          "slug": "billionaire-daddy-the-hunt-is-on-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 59,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/43642116f8fa4440af022045f5706c4a.png",
+          "description": "Billionaire Daddy : The hunt is on",
+          "link": "/meow/json/Billionaire Daddy, the Hunt is On-Kannada.json"
+        },
+        {
+          "id": "271464",
+          "title": "Billionaire Playboy's Replacement Bride",
+          "slug": "billionaire-playboys-replacement-bride-5",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 70,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f41d1c1a7ae845628a3b014d1cefcfec.png",
+          "description": " Under her stepmother's pressure, substitutes her sister to marry a stranger. Disheartened, she finds solace in Lucius's company for a night. Later, at the wedding, she discovers Lucius is the groom, sparking an unexpected love story.",
+          "link": "/meow/json/Billionaire Playboy's Replacement Bride-Kannada.json"
+        },
+        {
+          "id": "271475",
+          "title": "Boss vs Wolf",
+          "slug": "boss-vs-wolf",
+          "language": "kannada",
+          "genre": {
+            "id": 2,
+            "title": "डरावनी",
+            "slug": "horror",
+            "uri": "app://app/genres/horror",
+            "web_uri": "/genres/horror"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/07f26c3bdaaa49b3bc68e0f4bc13bb78.png",
+          "description": "A fearless young lawyer unknowingly marries a powerful werewolf while investigating supernatural attacks. As love, danger, and destiny collide, she must choose between justice and a mysterious world hidden in the shadows.",
+          "link": "/meow/json/Boss vs Wolf-Kannada.json"
+        },
+        {
+          "id": "267536",
+          "title": "Busaba Bold And Beautiful ",
+          "slug": "busaba-bold-and-beautiful",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 15,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/ae7989af51bd4f0e996da0ddcdd806dc.png",
+          "description": "Busaba Bold And Beautiful ",
+          "link": "/meow/json/Busaba Bold And Beautiful-Kannada.json"
+        },
+        {
+          "id": "271042",
+          "title": "CEO those twins look like you",
+          "slug": "ceo-those-twins-look-like-you-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 96,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f0942cf6c961492f835d2ebe7ef1e09d.png",
+          "description": "A young CEO who discovers that two twins, one he is caring for and the other he finds on the street, look remarkably similar to his late fiancée. This discovery leads to a series of events that unravel the past, including the circumstances surrounding his fiancée's death and the mysterious connection between the twins and his life",
+          "link": "/meow/json/CEO those twins look like you-Kannada.json"
+        },
+        {
+          "id": "271557",
+          "title": "Fearless Son in Law",
+          "slug": "silent-power-1",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/439161f941944b7d8973a398011075a9.png",
+          "description": "When legendary CEO takes over a powerful group and plans to invest in agriculture in his small hometown, he must navigate corporate rivalries, hidden agendas, and personal wounds as he fights to fulfill his vision and reunite with his estranged family.",
+          "link": "/meow/json/Charming Son-in-Law-Kannada.json"
+        },
+        {
+          "id": "272619",
+          "title": "Chinese New Year : The Hidden Dragon Returns to the Village",
+          "slug": "chinese-new-year-the-hidden-dragon-returns-to-the-village-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 81,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/25a3980f6afc4487a04add4eeb38f43c.png",
+          "description": "Chinese New Year: The Hidden Dragon Returns to the Village is a thrilling tale of mystery, legacy, and redemption. Set against the backdrop of tradition and change, it promises emotion, intrigue, and unforgettable moments.",
+          "link": "/meow/json/Chinese New Year _ The Hidden Dragon Returns to the Village-Kannada.json"
+        }
       ]
     },
     {
       "title": "Uncategory2",
       "shows": [
-        "/meow/json/Cloaked In Power _ His Secret Identity-Kannada.json",
-        "/meow/json/Clouds by the Sea-Kannada.json",
-        "/meow/json/Come Home, Our Heart-Kannada.json",
-        "/meow/json/Contract Pregnant wife-Kannada.json",
-        "/meow/json/Cubicle Cupid's Twist-Kannada.json",
-        "/meow/json/Cursed Daughter-Kannada.json",
-        "/meow/json/Cute Baby Assists _ I Help My Mom Marry the President Tycoon-Kannada.json",
-        "/meow/json/Defying Destiny-Kannada.json",
-        "/meow/json/Destined to Meet You-Kannada.json",
-        "/meow/json/Detective of the Republic_ Chasing the Killer-Kannada.json",
-        "/meow/json/Disappeared Wife-Kannada.json",
-        "/meow/json/Divine Doctor, Protector of Beauties-Kannada.json",
-        "/meow/json/Divine Doctor_ Son-In-Law-Kannada.json",
-        "/meow/json/Divorce a Billionaire to Marry Him-Kannada.json",
-        "/meow/json/Divorced But Doted Upon by the Trio-Kannada.json",
-        "/meow/json/Divorced Single Mother-Kannada.json",
-        "/meow/json/Don't Mess With Super DAD-Kannada.json",
-        "/meow/json/Don't touch my Daughter-Kannada.json",
-        "/meow/json/Dracula's Curse-Kannada.json",
-        "/meow/json/Dracula's Kiss _ Spellbound by a Doppelganger-Kannada.json"
+        {
+          "id": "272159",
+          "title": "Cloaked In Power : His Secret Identity",
+          "slug": "cloaked-in-power-his-secret-identity-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 100,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/da8d6d84e5814c7d962e87b6f194c031.png",
+          "description": "He is no ordinary man; he has a mysterious past where he had superpower. But in the daily life he wishes to live an ordinary life as a driver. He accidentally meets a beautiful woman, a CEO, and that eventually leads to a one nightstand, leading towards thrilling twists and turns.",
+          "link": "/meow/json/Cloaked In Power _ His Secret Identity-Kannada.json"
+        },
+        {
+          "id": "271861",
+          "title": "Clouds by the Sea",
+          "slug": "clouds-by-the-sea-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 101,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/77609e4934ae49dba932afd95c257178.png",
+          "description": "Clouds by the Sea",
+          "link": "/meow/json/Clouds by the Sea-Kannada.json"
+        },
+        {
+          "id": "271463",
+          "title": "Come Home, Our Heart",
+          "slug": "come-home-our-heart-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 79,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/06f411f6837a4d3ca817673ccc14a838.png",
+          "description": "Come Home, Our Heart",
+          "link": "/meow/json/Come Home, Our Heart-Kannada.json"
+        },
+        {
+          "id": "271558",
+          "title": "Contract Pregnant Wife",
+          "slug": "contract-pregnant-wife-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/acbb9cbaaff74a6483523acf683d3fa6.png",
+          "description": "After a one-night stand with a billionaire who insists he’s infertile, a young woman finds herself pregnant with twins. As hidden truths surface and powerful enemies emerge, love and betrayal ignite a battle of destiny and desire.\r\n",
+          "link": "/meow/json/Contract Pregnant wife-Kannada.json"
+        },
+        {
+          "id": "270862",
+          "title": "Cubicle Cupid's Twist",
+          "slug": "cubicle-cupids-twist-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 87,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9b1fa0c97db349f38f54a4ae8b4ebe45.png",
+          "description": "One wedding… Two breakups… The boss's life takes an unexpected turn with the entry of a third girl!\" A middle-class designer, is fighting for her grandmother's life while paying off a debt of three lakhs. At the same time, the entry of a new boss, Queen, becomes a hot topic in the office. The story of a couple who got married but did not live together is confusing between scenes. That boss is no one… her husband! Obstacles, wrongdoers, betrayals in love, company stakes, design competitions – how did a smart girl face it all? Did the truth come out in the design theft case? Did she find love?",
+          "link": "/meow/json/Cubicle Cupid's Twist-Kannada.json"
+        },
+        {
+          "id": "267535",
+          "title": "Cursed Daughter ",
+          "slug": "curse-daughter",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 55,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d27321ab13cd46b5b7b5237e1b86da4e.png",
+          "description": "An orphan girl, searching for her lost family, enters a house cursed by restless spirits. As she helps them resolve their lingering sorrows, she uncovers a shocking truth—this haunted place is her own family's home, and the spirits are the loved ones she had been seeking all along.",
+          "link": "/meow/json/Cursed Daughter-Kannada.json"
+        },
+        {
+          "id": "271794",
+          "title": "Cute Baby Assists : I Help My Mom Marry the President Tycoon",
+          "slug": "cute-baby-assists-i-help-my-mom-marry-the-president-tycoon-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 72,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/2456686ade604635a5300d6e3a640f5c.png",
+          "description": "A cute baby becomes the cupid and gets his mom married to a billionaire.",
+          "link": "/meow/json/Cute Baby Assists _ I Help My Mom Marry the President Tycoon-Kannada.json"
+        },
+        {
+          "id": "271347",
+          "title": "Defying Destiny",
+          "slug": "defying-destiny-2",
+          "language": "kannada",
+          "genre": {
+            "id": 14,
+            "title": "पौराणिक कथा",
+            "slug": "mythology",
+            "uri": "app://app/genres/mythology",
+            "web_uri": "/genres/mythology"
+          },
+          "n_episodes": 40,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/94ef0aa73f324c5495376b6a32813417.png",
+          "description": "An ambitious disciple accidentally unlocks the path to immortality, challenging centuries of sacred traditions. As his powers grow, so do the forces determined to silence him forever.\r\n",
+          "link": "/meow/json/Defying Destiny-Kannada.json"
+        },
+        {
+          "id": "271904",
+          "title": "Destined to Meet You",
+          "slug": "destined-to-meet-you-5",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c6e604a254c54f1e97b856c97f1ade05.png",
+          "description": "Blessy was betrayed by her sister, spent one night with a stranger, and gave birth to two kids. But when her sister finds out that the father of those kids was so rich and handsome, she abducted one kid without Blessy knowing. years after when Blessy finds truth, what will she do? Watch Now!",
+          "link": "/meow/json/Destined to Meet You-Kannada.json"
+        },
+        {
+          "id": "272151",
+          "title": "Detective of the Republic: Chasing the Killer",
+          "slug": "detective-of-the-republic-chasing-the-killer-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 88,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c7479429e88d4ae1a7eee9646ea61bb7.png",
+          "description": "Detective of the Republic: Chasing the Killer",
+          "link": "/meow/json/Detective of the Republic_ Chasing the Killer-Kannada.json"
+        },
+        {
+          "id": "267532",
+          "title": "Disappeared Wife",
+          "slug": "disappeared-wife-1",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 70,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0c25a0b13daf44079af62b6128fe6209.png",
+          "description": "When Tong Xue is murdered by her husband and his lover, her long-lost twin sister, Qiao An'an, steps in. Disguised as Tong Xue, she seeks to uncover the truth behind the betrayal. A journey of deception, revenge, and justice begins.",
+          "link": "/meow/json/Disappeared Wife-Kannada.json"
+        },
+        {
+          "id": "271891",
+          "title": "Divine Doctor, Protector of Beauties",
+          "slug": "divine-doctor-protector-of-beauties",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 53,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0b8c8ead60f9481295ccd24dca47376d.png",
+          "description": "A brilliant doctor with secret powers returns to city life, trying to stay out of trouble. But when beautiful women around him face danger, he can’t just walk away. Using his healing skills and hidden strength, he protects them from powerful enemies. He may not want attention, but being a hero seems to follow him everywhere.",
+          "link": "/meow/json/Divine Doctor, Protector of Beauties-Kannada.json"
+        },
+        {
+          "id": "271605",
+          "title": "Divine Doctor: Son-In-Law",
+          "slug": "divine-doctor-son-in-law",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5642c8ab94874c2da0fc74d44d885f36.png",
+          "description": "Divine Doctor: Son-In-Law",
+          "link": "/meow/json/Divine Doctor_ Son-In-Law-Kannada.json"
+        },
+        {
+          "id": "272415",
+          "title": "Divorce a Billionaire to Marry Him!",
+          "slug": "divorce-a-billionaire-to-marry-him-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 73,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/80e475131a7a44d38aeeaadc593d936f.png",
+          "description": "Alex Blackwell and Lydia Bale were 'married by decree.' After signing a contract, they had no further connection. A year later, Lydia was assigned to Alex as a personal assistant. Unbeknownst to them, they were actually husband and wife. As they gradually developed feelings for each other, they found themselves drifting apart due to their married status. Watch Now!",
+          "link": "/meow/json/Divorce a Billionaire to Marry Him-Kannada.json"
+        },
+        {
+          "id": "270645",
+          "title": "Divorced But Doted Upon by the Trio",
+          "slug": "divorced-but-doted-upon-by-the-trio-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 81,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1fdb04c3386642f69b1e4a98f6b19b13.png",
+          "description": "Unbeknownst to him, Anastasiya is the sole heir of the famous AS Group.\r\nShe has three brothers – one of whom loves her more than his own life!\r\nThis is a story of love, betrayal, and the bonds of family – an emotional rollercoaster soaked in tears.\r\nListen now!",
+          "link": "/meow/json/Divorced But Doted Upon by the Trio-Kannada.json"
+        },
+        {
+          "id": "271538",
+          "title": "Divorced Single Mother",
+          "slug": "divorced-single-mother-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": true,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b71ddc1f105641fc9a91c865024d6242.png",
+          "description": "divorced single mother",
+          "link": "/meow/json/Divorced Single Mother-Kannada.json"
+        },
+        {
+          "id": "269531",
+          "title": "Don't Mess With Super Dad",
+          "slug": "dont-mess-with-super-dad-5",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 91,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f2eb6b26721245dc874a61cf6ce76e78.png",
+          "description": "Chu Tao, a former Dragon General turned single father and security guard, navigates secrets of the past while entering a contractual marriage with Lin Wan'er, an ambitious leader seeking vengeance.",
+          "link": "/meow/json/Don't Mess With Super DAD-Kannada.json"
+        },
+        {
+          "id": "269692",
+          "title": "Dont Touch My Daughter ",
+          "slug": "dont-touch-my-daughter-6",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 70,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1ae6ffe2f2c34b65b71cb606a7103bd8.png",
+          "description": "Dont Touch My Daughter ",
+          "link": "/meow/json/Don't touch my Daughter-Kannada.json"
+        },
+        {
+          "id": "258660",
+          "title": "Dracula's Curse",
+          "slug": "draculas-curse-2",
+          "language": "kannada",
+          "genre": {
+            "id": 79,
+            "title": "फैंटसी",
+            "slug": "fantasy",
+            "uri": "app://app/genres/fantasy",
+            "web_uri": "/genres/fantasy"
+          },
+          "n_episodes": 40,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1e1d3169521944da9f0097f02cec62cc.png",
+          "description": "  ಸೈತಾನರು ಭೂಮಿಗೆ ಬಂದ್ರೆ ಏನಾಗುತ್ತೆ? ಮನುಷ್ಯರೊಂದಿಗೆ ಅವರು ಬೆರೆತು ಮಾಡೋ ಅನಾಹುತಗಳು ಎಂಥವು? ಇವರನ್ನು ನಾಶ ಮಾಡಲು ಮಾನವ ಪಡೋ‌ ಪಾಡು ಎಂಥದ್ದು? ನೋಡಿ 'ಡ್ರಾಕುಲಾಸ್ ಕರ್ಸ್' ಕುಕು ಎಫ್ ಎಂ ಕನ್ನಡದಲ್ಲಿ..",
+          "link": "/meow/json/Dracula's Curse-Kannada.json"
+        },
+        {
+          "id": "272072",
+          "title": "Dracula's Kiss : Spellbound by a Doppelganger",
+          "slug": "draculas-kiss-spellbound-by-a-doppelganger-5",
+          "language": "kannada",
+          "genre": {
+            "id": 2,
+            "title": "डरावनी",
+            "slug": "horror",
+            "uri": "app://app/genres/horror",
+            "web_uri": "/genres/horror"
+          },
+          "n_episodes": 72,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/38fa45f646f04bc29681c13f2e6c4a4c.png",
+          "description": "After her boyfriend Neil’s betrayal, Flora seeks revenge by impulsively marrying his enigmatic elder relative, Vittorio. But Vittorio is no ordinary man — he’s a vampire with a dark past and a secret obsession. In his study, Flora finds a photo of a woman who looks exactly like her… taken eighty years ago.",
+          "link": "/meow/json/Dracula's Kiss _ Spellbound by a Doppelganger-Kannada.json"
+        }
       ]
     },
     {
       "title": "Uncategory3",
       "shows": [
-        "/meow/json/Dragon Warrior-Kannada.json",
-        "/meow/json/Dumping Mr.Billionaire-Kannada.json",
-        "/meow/json/Enemies with Benefits - The CEO's Matchmaker Strikes-Kannada.json",
-        "/meow/json/Eye without a face-Kannada.json",
-        "/meow/json/Fake boyfriend-Kannada.json",
-        "/meow/json/Fall into Sweet Trap-Kannada.json",
-        "/meow/json/Farewell to Old Love-Kannada.json",
-        "/meow/json/First Light of Love-Kannada.json",
-        "/meow/json/First Prince of daxruia-Kannada.json",
-        "/meow/json/Flash Marriage-Kannada.json",
-        "/meow/json/FLASH MARRIAGE WITH A BIGSHOT-Kannada.json",
-        "/meow/json/Fog of Revenge-Kannada.json",
-        "/meow/json/Forbidden Bonds with My Brothers-Kannada.json",
-        "/meow/json/Forever Love-Kannada.json",
-        "/meow/json/Ghost Killer Vs Bloody Marry-Kannada.json",
-        "/meow/json/Give me a Hug-Kannada.json",
-        "/meow/json/Got you Mr. Always Right-Kannada.json",
-        "/meow/json/Guardian Angel Mom on the Move-Kannada.json",
-        "/meow/json/Happily Never After-Kannada.json",
-        "/meow/json/Harvest of ambition, a CEO's odyssey-Kannada.json"
+        {
+          "id": "267542",
+          "title": "Dragon Warrior",
+          "slug": "dragon-warrior-1",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 18,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/63e8533958254f8c8f30f5e698f86073.png",
+          "description": "A soldier finds himself thrust into the heart of an ancient war between mankind and dragons. Prophesied as the next Dragon Warrior, our hero must fight through an army of creatures to reach his target; the mother of all dragons.",
+          "link": "/meow/json/Dragon Warrior-Kannada.json"
+        },
+        {
+          "id": "272637",
+          "title": "Dumping Mr.Billionaire",
+          "slug": "dumping-mrbillionaire-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/bc1784ce4a174f689f2f9beba57e2e3e.png",
+          "description": "Dumping Mr.Billionaire",
+          "link": "/meow/json/Dumping Mr.Billionaire-Kannada.json"
+        },
+        {
+          "id": "270555",
+          "title": "Enemies with Benefits The CEOs Matchmaker Strikes",
+          "slug": "enemies-with-benefits-the-ceos-matchmaker-strikes-1",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7278e0c2ed8d4981a1008795a5335ce7.png",
+          "description": "Enemies with Benefits The CEOs Matchmaker Strikes",
+          "link": "/meow/json/Enemies with Benefits - The CEO's Matchmaker Strikes-Kannada.json"
+        },
+        {
+          "id": "265795",
+          "title": "Eye Without a Face",
+          "slug": "eye-without-a-face-3",
+          "language": "kannada",
+          "genre": {
+            "id": 65,
+            "title": "सनसनीखेज़",
+            "slug": "thriller",
+            "uri": "app://app/genres/thriller",
+            "web_uri": "/genres/thriller"
+          },
+          "n_episodes": 20,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/924b15ee42e14dc5877918125de6c238.png",
+          "description": "ಅಗೊರಾಫೋಬಿಯಾದಿಂದ ಬಳಲುತ್ತಿರುವ ಯುವಕ (ಹೆನ್ರಿ), ಯೂಟ್ಯೂಬರ್ ಮತ್ತು ಆಕ್ಟಿಂಗ್ ಪ್ರಯತ್ನಗಳ್ಲಲಿ  ಇರುವ ಸ್ನೇಹಿತ (ಎರಿಕ್) ಜೊತೆ ಒಟ್ಟಿಗೆ ವಾಸಿಸುತ್ತಾನೆ. ಅವನು ಯುವತಿಯರ ವೆಬ್‌ಕ್ಯಾಮ್‌ಗಳನ್ನು ಹ್ಯಾಕ್ ಮಾಡುತ್ತಾನೆ ಮತ್ತು ಅವರಲ್ಲಿ ಒಬ್ಬಳು ಸೀರಿಯಲ್ ಕಿಲ್ಲರ್ ಎಂಬ ಅನುಮಾನ ಉಂಟಾಗುತ್ತದೆ. ",
+          "link": "/meow/json/Eye without a face-Kannada.json"
+        },
+        {
+          "id": "270182",
+          "title": "Fake Boyfriend",
+          "slug": "fake-boyfriend-5",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 42,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/080d11727b9b4b5399d0dcc09ea3f9d5.png",
+          "description": "ಒಂದು ದೊಡ್ಡ ಕಂಪನಿಯ ಸಿಇಓ ಆಗಿದ್ದ ಹುಡುಗನಿಗೆ ತನ್ನ ಗರ್ಲ್‌ಫ್ರೆಂಡ್ ಫ್ಯಾಮಿಲಿಯಿಂದ ಅಪಮಾನಗಳು ಎದುರಾಗ್ತವೆ. ಅವರು ಮಾಡಿದ ಅವಮಾನಗಳು ಯಾವುವು..? ಅವಳು ನಿಜವಾಗಿಯೂ ಅವನನ್ನು ಪ್ರೀತಿಸಿದ್ದಳಾ..? ಅವನು ನಿಜವಾಗಿಯೂ ದೊಡ್ಡ ಕಂಪನಿಯ ಸಿಇಓನಾ..? ನೋಡಿ 'Fake Boyfriend'. ",
+          "link": "/meow/json/Fake boyfriend-Kannada.json"
+        },
+        {
+          "id": "270634",
+          "title": "Fall into Sweet Trap",
+          "slug": "fall-into-sweet-trap-2",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/28026eccf5d244e4bb7659513c840047.png",
+          "description": "ಬಾಲ್ಯ ಸ್ನೇಹಿತರಾಗಿದ್ದ ಕಥಾನಾಯಕ ಮತ್ತು ಕಥಾನಾಯಕಿ , ಮುಂದೆ ಒಬ್ಬರನ್ನ ಕಂಡ್ರೆ ಮತ್ತೊಬ್ಬರಿಗೆ ಆಗದಂತಹ ದ್ವೇಷವನ್ನ ಬೆಳೆಸಿಕೊಳ್ತಾರೆ. ಇದ್ರಿಂದ ಮುಂದೆ ಅವರ ಬದುಕಲ್ಲಿ ಊಹಿಸಲಾಗದ ಟರ್ನಿಂಗ್ ಪಾಯಿಂಟ್ ಎದುರಾಗುತ್ತೆ. 'ಪ್ರೇಮ ಮತ್ತು ದ್ವೇಷ'ದ ಕಥೆ ಈ 'Fall into Sweet Trap' ಶೋ.",
+          "link": "/meow/json/Fall into Sweet Trap-Kannada.json"
+        },
+        {
+          "id": "270333",
+          "title": "Farewell to Old Love",
+          "slug": "farewell-to-old-love-3",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 92,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/2fa137e452b84268910fe50a3206c99a.png",
+          "description": "ಮದುವೆ ದಿನವೇ ಮಂಟಪದಿಂದ ಓಡಿ ಹೋದ ವರ. ತನ್ನ ಹಣೆಬರಹದ ಬಗ್ಗೆ ಚಿಂತೆ ಮಾಡ್ತಿದ್ದ ವಧು ಕೈಯಲ್ಲಿತ್ತು ಮ್ಯಾರೇಜ್ ಸರ್ಟಿಫಿಕೇಟ್! ಹಾಗಾದ್ರೆ ಮುಂದೆ ಇವರ ಬದುಕು ಹೇಗೆ ತಿರುವು ತೆಗೆದುಕೊಳ್ಳುತ್ತೆ? ನೋಡಿ 'Farewell to Old Love' ಶೋ.",
+          "link": "/meow/json/Farewell to Old Love-Kannada.json"
+        },
+        {
+          "id": "270441",
+          "title": "First Light Of Love",
+          "slug": "first-light-of-love-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 89,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7244fc21f5eb4ac6af26a5521c22d19b.png",
+          "description": "First Sight of Love\" is a heartwarming journey of unexpected connections, second chances, and the magic of love that blooms when least expected. Sometimes, a single glance is all it takes to change a lifetime.\r\n\r\n",
+          "link": "/meow/json/First Light of Love-Kannada.json"
+        },
+        {
+          "id": "267549",
+          "title": "First Prince of daxruia",
+          "slug": "first-prince-of-daxruia",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 108,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d5a4d273ecf748f292707cb65fbc12b7.jpeg",
+          "description": "Seeg",
+          "link": "/meow/json/First Prince of daxruia-Kannada.json"
+        },
+        {
+          "id": "267018",
+          "title": "Flash marriage: The All – purpose Dad",
+          "slug": "flash-marriage-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 73,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/2e0d8578228f477cbc422402b088c26b.png",
+          "description": "Flash Marriage",
+          "link": "/meow/json/Flash Marriage-Kannada.json"
+        },
+        {
+          "id": "270757",
+          "title": "FLASH MARRIAGE WITH A BIGSHOT",
+          "slug": "flash-marriage-with-a-bigshot",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 82,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/565608a106e34f778ebeccdcbff617cc.png",
+          "description": "FLASH MARRIAGE WITH A BIGSHOT",
+          "link": "/meow/json/FLASH MARRIAGE WITH A BIGSHOT-Kannada.json"
+        },
+        {
+          "id": "267558",
+          "title": "Fog of Revenge ",
+          "slug": "fog-of-revenge-1",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 12,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f264a82fa53b4947af9a05799e0e8ef9.png",
+          "description": "In Jiangzhou, the disgraced scion of the Li family, Li Xiaoyun, was framed by the four major clans and imprisoned. Behind bars, he became the disciple of the top-tier powerhouse, the Black Emperor. After five years of mastering his divine skills, he caused a massive uproar in the prison and made a triumphant return. Li Xiaoyun returned to Jiangzhou, determined to uncover the mastermind behind his downfall. Upon hearing that his sister, Li Xue, who was believed to be dead, was being bullied by the Wu family, Li Xiaoyun rushed to her rescue and embarked on a path of vengeance.",
+          "link": "/meow/json/Fog of Revenge-Kannada.json"
+        },
+        {
+          "id": "271147",
+          "title": "Forbidden Bonds With My Brothers",
+          "slug": "forbidden-bonds-with-my-brothers-6",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 56,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a4ab227857b841dc8f9b95b1499e8541.png",
+          "description": "Forbidden Bonds With My Brothers",
+          "link": "/meow/json/Forbidden Bonds with My Brothers-Kannada.json"
+        },
+        {
+          "id": "267544",
+          "title": "Forever Love ",
+          "slug": "forever-love-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 50,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9844ccb17356425a88612455f79f601d.png",
+          "description": "A young woman defies family pressure, marries into prestige, and battles deceit and jealousy to protect her family legacy, ultimately finding love and strength by her partner's side.",
+          "link": "/meow/json/Forever Love-Kannada.json"
+        },
+        {
+          "id": "266917",
+          "title": "Ghost Killer vs Bloody Marry",
+          "slug": "ghost-killer-vs-bloody-marry-1",
+          "language": "kannada",
+          "genre": {
+            "id": 2,
+            "title": "डरावनी",
+            "slug": "horror",
+            "uri": "app://app/genres/horror",
+            "web_uri": "/genres/horror"
+          },
+          "n_episodes": 35,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/02ef030b8c7a48f895330d2e499c71a2.png",
+          "description": "\tFour YouTubers with expertise in supernatural events are seeking recognition from the audience whilst solving the urban legend of the Bathroom Blonde Case: the spirit that haunts the schools' bathroom in Brazil.",
+          "link": "/meow/json/Ghost Killer Vs Bloody Marry-Kannada.json"
+        },
+        {
+          "id": "272506",
+          "title": "Give me a Hug ",
+          "slug": "give-me-a-hug-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 76,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e4733d5762784f679fdd5437d7b7fe9c.png",
+          "description": "After fleeing an abusive home as a child, a young girl disappears without a trace. Her elder brother, bound by love and regret, spends twenty years searching for her and finally brings her back.\r\nBut the home she returns to has changed. Her mother, younger brother, and foster sister reject her presence, unwilling to accept the past she carries. This is a story of enduring love, painful reunions, and the quiet resilience of a family learning to heal one fractured bond at a time.",
+          "link": "/meow/json/Give me a Hug-Kannada.json"
+        },
+        {
+          "id": "271038",
+          "title": "Got You! Mr. Always Right",
+          "slug": "got-you-mr-always-right-5",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 69,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f6af14fa4658438c814bb618ba21918c.png",
+          "description": "When Jane's ex and rival invite her to their engagement just to humiliate her, she hires a fake husband — charming driver Mike. What she doesn’t know: Mike is secretly wealthy and already knows who she is. As Jane steps into high society, love, jealousy, and family secrets collide in a whirlwind of drama.",
+          "link": "/meow/json/Got you Mr. Always Right-Kannada.json"
+        },
+        {
+          "id": "270608",
+          "title": "Guardian Angel: Mom on the Move",
+          "slug": "guardian-angel-mom-on-the-move-3",
+          "language": "kannada",
+          "genre": {
+            "id": 79,
+            "title": "फैंटसी",
+            "slug": "fantasy",
+            "uri": "app://app/genres/fantasy",
+            "web_uri": "/genres/fantasy"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c7f8435696264c84867ddb8705c1d6c4.png",
+          "description": "Guardian Angel: Mom on the Move",
+          "link": "/meow/json/Guardian Angel Mom on the Move-Kannada.json"
+        },
+        {
+          "id": "269506",
+          "title": "Happily Never After",
+          "slug": "happily-never-after-3",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 35,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/74251bee28114098b72f46f4fa9acfd5.jpg",
+          "description": "'ರಾಜ್ ವೀರ್ ಮತ್ತು ವೇದ' ಒಬ್ಬರನ್ನೊಬ್ಬರು ತುಂಬಾ ಪ್ರೀತಿಸೋ ಜೋಡಿ. ಆದ್ರೆ ರಾಜ್ ವೀರ್ ಬಗ್ಗೆ ಮೂಡಿದ ಒಂದೇ ಒಂದು ಸಂಶಯದಿಂದ ಇವರಿಬ್ಬರ ನಡುವೆ ಬಿರುಕು ಉಂಟಾಗುತ್ತೆ‌. ಅಷ್ಟಕ್ಕೂ ರಾಜ್ ವೀರ್ ಮುಚ್ಚಿಟ್ಟಿರೋ ಆ ಸೀಕ್ರೆಟ್ ಏನು? ಮುಂದೆ ವೇದ ಏನ್ ಮಾಡ್ತಳೆ? ನೋಡಿ 'Happily Never After' ಶೋ.",
+          "link": "/meow/json/Happily Never After-Kannada.json"
+        },
+        {
+          "id": "268886",
+          "title": "Harvest of ambition, a CEO's odyssey",
+          "slug": "harvest-of-ambition-a-ceos-odyssey-5",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 60,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47424127c62044778649e41a40edc502.png",
+          "description": "From humble beginnings, a man builds a global empire driven by ambition and grit. In a world of power and betrayal, every choice could make or break him. A sharp, emotional journey of success, sacrifice, and the price of greatness.",
+          "link": "/meow/json/Harvest of ambition, a CEO's odyssey-Kannada.json"
+        }
       ]
     },
     {
       "title": "Uncategory4",
       "shows": [
-        "/meow/json/Hidden Billionaire-Kannada.json",
-        "/meow/json/Hidden Talent-Kannada.json",
-        "/meow/json/Holiday Monday-Kannada.json",
-        "/meow/json/Hollywood Staged Romance Live 24_7-Kannada.json",
-        "/meow/json/How I Became The Alpha Queen-Kannada.json",
-        "/meow/json/Hrudayadali Idhenidhu-Kannada.json",
-        "/meow/json/I AM THE WOMEN OF THE JIANGHU-Kannada.json",
-        "/meow/json/I Love Mafia-Kannada.json",
-        "/meow/json/Immortal Island-Kannada.json",
-        "/meow/json/Jack Of All Cons-Kannada.json",
-        "/meow/json/Jerk Punishment Club-Kannada.json",
-        "/meow/json/Just Married-Kannada.json",
-        "/meow/json/King's Counter Attack-Kannada.json",
-        "/meow/json/Kiss and Switch - The Cursed Vampire-Kannada.json",
-        "/meow/json/Late Love-Kannada.json",
-        "/meow/json/Later Days-Kannada.json",
-        "/meow/json/Let Me Go, My Queen-Kannada.json",
-        "/meow/json/Love is Right In front of You-Kannada.json",
-        "/meow/json/Love Lies and Revenge-Kannada.json",
-        "/meow/json/Love Tease-Kannada.json"
+        {
+          "id": "270407",
+          "title": "Hidden Billionaire",
+          "slug": "hidden-billionaire",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 25,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e4bce2aaff9342b3b6058f91913c5aa4.png",
+          "description": "\"Hidden Billionaire\" follows Rohit, a boy from the slums , who rises from poverty and betrayal to reclaim his legacy as the heir to Kulkarni Industries, wielding a mysterious power to protect his family from ruthless enemies. This gripping tale of resilience, revenge, and reunion unfolds over decades, blending emotional drama with supernatural intrigue.",
+          "link": "/meow/json/Hidden Billionaire-Kannada.json"
+        },
+        {
+          "id": "270292",
+          "title": "Hidden Talent",
+          "slug": "hidden-talent-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/ace5ff9f086f40178eb87dbfddef304b.png",
+          "description": "ತನ್ನ ಜ್ಞಾಪಕ ಶಕ್ತಿಯನ್ನು ಕಳೆದುಕೊಂಡ ಕಥಾನಾಯಕ, ತನ್ನ‌ ಸತ್ಯವನ್ನು ಅರಿಯಲು ಬೀದಿಬೀದಿ ಅಲೆಯುತ್ತಿರ್ತಾನೆ. ತಾನೊಬ್ಬ ಮಾರ್ಷಲ್ ಆರ್ಟ್ ಆರ್ಟಿಸ್ಟ್ ಅನ್ನೋದು ಅವನಿಗೆ ನೆನಪಿಗೆ ಬರುತ್ತಾ? ಆತನ ಈ ಸ್ಥಿತಿಗೆ ಕಾರಣವೇನು ಅನ್ನೋದೇ 'Hidden Talent' ಸ್ಟೋರಿ. ನೋಡಿ ಎಂಜಾಯ್ ಮಾಡಿ.",
+          "link": "/meow/json/Hidden Talent-Kannada.json"
+        },
+        {
+          "id": "266783",
+          "title": "Holiday Monday",
+          "slug": "holiday-monday-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 36,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/df6c446c7a7d4f8ca152107d9a2442c9.png",
+          "description": "sdd\r\n\r\n",
+          "link": "/meow/json/Holiday Monday-Kannada.json"
+        },
+        {
+          "id": "270601",
+          "title": "Hollywood Staged Romance Live 24/7 ",
+          "slug": "hollywood-staged-romance-live-247-2",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 66,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/2ab4b1c3292a4b649d5e0ec8bbb7ee98.png",
+          "description": "ಹೀರೋಯಿನ್ ಆಗ್ಬೇಕು ಅಂತಾ ಕನಸು ಇಟ್ಕೊಂಡು ಬಣ್ಣದ ಜಗತ್ತಿಗೆ ಕಾಲಿಟ್ಟಿದ್ದ ಕಥಾನಾಯಕಿ, ಒಂದಿನ ಫೇಮಸ್ ಬ್ಯುಸಿನೆಸ್ ಮ್ಯಾನ್ ರೂಮಿನಲ್ಲಿ ಸಿಕ್ಕಾಕೊಳ್ತಾಳೆ. ಮುಂದೆ ಇದ್ರಿಂದ ಈ ಇಬ್ಬರ ಬದುಕೇ ಬದಲಾಗುತ್ತೆ? ಹೇಗೆ ಅಂತಾ ತಿಳಿಯಲು ನೋಡಿ 'Hollywood Staged Romance Live 24/7'",
+          "link": "/meow/json/Hollywood Staged Romance Live 24_7-Kannada.json"
+        },
+        {
+          "id": "270560",
+          "title": "How I Became The Alpha Queen",
+          "slug": "how-i-became-the-alpha-queen-4",
+          "language": "kannada",
+          "genre": {
+            "id": 79,
+            "title": "फैंटसी",
+            "slug": "fantasy",
+            "uri": "app://app/genres/fantasy",
+            "web_uri": "/genres/fantasy"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/aff353431b78432fa122d42a19ed01a7.png",
+          "description": "Lilith was set to lead the Silver Claw pack, but her sister Serena betrayed her, killing their parents and framing Lilith to steal the Alpha title. Branded a rogue, Lilith finds safety—and love—with Tristan, the kind Alpha of the Starlight pack. Together, they uncover Serena’s lies, bring her down, and unite their packs.\r\n",
+          "link": "/meow/json/How I Became The Alpha Queen-Kannada.json"
+        },
+        {
+          "id": "258406",
+          "title": "Hrudayadali Idhenidhu",
+          "slug": "hrudayadali-idhenidhu",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 120,
+          "n_seasons": 1,
+          "show_type": "audio",
+          "is_adult_content": true,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/4e5af5f90995477d9b25af4d27efa07c.png",
+          "description": "ಅಭಿಷೇಕ್‌ ತನ್ನ ಗೆಳತಿ ಐಶ್ವರ್ಯಾಳ ಹುಟ್ಟುಹಬ್ಬದ ಸಂಭ್ರಮದಲ್ಲಿ ಆಕಸ್ಮಿಕವಾಗಿ ಪೂರ್ವಿ ಜೊತೆ ಆ ರಾತ್ರಿ ಕಳೆದ ನಂತರ ಅವರೆಲ್ಲರ ಜೀವನವು ಬದಲಾಗುತ್ತದೆ. ಈ ಘಟನೆಯು ಅವನಿಗೆ ಒಂದು ದೊಡ್ಡ ಮತ್ತು   ತೀವ್ರ ನಿರ್ಧಾರವನ್ನು ತೆಗೆದುಕೊಳ್ಳಲು ಒತ್ತಾಯಿಸುತ್ತದೆ – ತನ್ನ ಬಹುದಿನದ ಪ್ರೇಯಸಿ ಐಶ್ವರ್ಯಾಳ ಜೊತೆಗಿನ ಸಂಬಂಧವನ್ನು ಮುರಿದು, ಪೂರ್ವಿಯನ್ನು ಮದುವೆ ಆಗುತ್ತಾನೆ. ಈ ಅವಾಂತಾರದ ಬೆಳವಣಿಗೆಯು ಅವನ ಎಲ್ಲಾ ಫ್ಯೂಚರ್ ಪ್ಲಾನ್ ಅನ್ನು ಅಸ್ಪಷ್ಟಗೊಳಿಸುತ್ತದೆ, ಆತನ ಭಾವನೆಗಳು ಮತ್ತು ಆಕಾಂಕ್ಷೆಗಳ ನಡುವೆ ಸಂಕಟವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಕೇಳಿ ಹೃದಯದಲಿ ಇದೇನಿದು ನಿಮ್ಮ ಕುಕು FM ಅಲ್ಲಿ.",
+          "link": "/meow/json/Hrudayadali Idhenidhu-Kannada.json"
+        },
+        {
+          "id": "272460",
+          "title": "I AM THE WOMEN OF THE JIANGHU",
+          "slug": "i-am-the-women-of-the-jianghu",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 96,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b557893faf6049b59224bc1f280b9a92.png",
+          "description": "I AM THE WOMEN OF THE JIANGHU",
+          "link": "/meow/json/I AM THE WOMEN OF THE JIANGHU-Kannada.json"
+        },
+        {
+          "id": "270659",
+          "title": "I Love Mafia",
+          "slug": "i-love-mafia",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d190055d6e8143309cc929e35d5aea27.png",
+          "description": "A Don's world is turned upside down after a mysterious night with Sahana leads to an unexpected pregnancy. As secrets unravel and enemies close in, love, blood ties, and betrayal collide in this gripping saga.",
+          "link": "/meow/json/I Love Mafia-Kannada.json"
+        },
+        {
+          "id": "266799",
+          "title": "Immortal Island",
+          "slug": "immortal-island-1",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 23,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/722598bf59c74e9badd138f15b455e8a.png",
+          "description": "\tDEA agents respond to a beach crime scene and find a missing college girl on a drug-runners' boat. As she recounts her spring break trip turned nightmare, the investigation delves into drugs, betrayal, and murder. Pursuing smugglers and missing teens, the agents uncover the dark legend of Immortal Island.",
+          "link": "/meow/json/Immortal Island-Kannada.json"
+        },
+        {
+          "id": "272796",
+          "title": "Jack Of All Cons",
+          "slug": "jack-of-all-cons-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 37,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/ca583645b5014881b5ad10845ac83158.png",
+          "description": "Jack Of All Cons",
+          "link": "/meow/json/Jack Of All Cons-Kannada.json"
+        },
+        {
+          "id": "270751",
+          "title": "Jerk Punishment Club ",
+          "slug": "jerk-punishment-club-3",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/751f3414a7de401a90fbacc56fb86b14.png",
+          "description": "A young woman, known for her bravery, forms a secret society to punish those who mistreat women, to avenge the injustice done to her older sister.",
+          "link": "/meow/json/Jerk Punishment Club-Kannada.json"
+        },
+        {
+          "id": "271474",
+          "title": "Just Married",
+          "slug": "ek-anjaani-shaadi",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 51,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/20e36f9062bc471d9f157318e9ba65bc.png",
+          "description": "Just Married - A woman starts falling for her charming boss while adjusting to a new job, but a hidden truth complicates everything — she’s already married to a man she barely knows. Their rare encounters have left their relationship a forgotten shadow of a commitment.",
+          "link": "/meow/json/Just Married-Kannada.json"
+        },
+        {
+          "id": "272162",
+          "title": "King's Counter Attack ",
+          "slug": "kings-counter-attack-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 108,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/25665e73171c4f89a02fdc048cc4481f.png",
+          "description": "A girl is forced into doing something wrong, but she tries to escape. In that critical moment, a brave boy rescues her. They fall in love at first sight, and soon begin living together, bound by a deep and instant connection.",
+          "link": "/meow/json/King's Counter Attack-Kannada.json"
+        },
+        {
+          "id": "270846",
+          "title": "Kiss and Switch - The Cursed Vampire",
+          "slug": "kiss-and-switch-the-cursed-vampire-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c443d4ec84f549519445ddb47123b192.png",
+          "description": "A powerful vampire king has been struck by a mysterious curse. His only hope to be freed from this dark curse lies in a chance encounter with an innocent human maiden whom he meets unexpectedly. Will the forbidden love that grows between them break the ancient curse and grant freedom to the vampire king? Or will their dangerous bond push them both to the brink of destruction?",
+          "link": "/meow/json/Kiss and Switch - The Cursed Vampire-Kannada.json"
+        },
+        {
+          "id": "267529",
+          "title": "Late Love ",
+          "slug": "late-love-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 48,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0542fd5a01a64a0ebd3f1d6e31dcbef4.png",
+          "description": "\tWhen Jiang Yueqing's daughter dies in a kindergarten collapse, her husband, Ji Bo Ran, prioritizes saving his first love's child instead. Devastated by his absence at the funeral and uncovering his betrayal, Jiang Yueqing files for divorce and plots her revenge.",
+          "link": "/meow/json/Late Love-Kannada.json"
+        },
+        {
+          "id": "267540",
+          "title": "Later days ",
+          "slug": "later-days-3",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 30,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5339fe1463fe4e4b9303ce1110fec8c4.png",
+          "description": "\tNostalgic for his glory days, a frustrated stay-at-home dad invites all of his high school Facebook friends to an 80s-themed surprise party for his exhausted corporate wife.",
+          "link": "/meow/json/Later Days-Kannada.json"
+        },
+        {
+          "id": "268813",
+          "title": "Let Me Go, My Queen!",
+          "slug": "let-me-go-my-queen-5",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 92,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f388d97e5d144706b3dbcbc1f425640f.png",
+          "description": "Let Me Go, My Queen! - ಈ ಕಥೆಯಲ್ಲಿ ಒಬ್ಬ ಆಧುನಿಕ ಕಲಾವಿದ, ರೋಮನ್ ಅಧಿಪತ್ಯದ ಹೊಸ ಜಗತ್ತಿಗೆ ಪ್ರಯಾಣ ಬೆಳೆಸುತ್ತಾನೆ. ಅಲ್ಲಿ ಅವನಿಗೆ ಬದುಕಿನ ಪ್ರೀತಿ ಸಿಗುತ್ತಾ? ಮರಳಿ ತನ್ನ ಲೋಕಕ್ಕೆ ಬರ್ತಾನಾ? ಅನ್ನೋದೇ ಕಥಾಹಂದರ. ನೋಡಿ ಈ ಸೀರೀಸ್.",
+          "link": "/meow/json/Let Me Go, My Queen-Kannada.json"
+        },
+        {
+          "id": "267543",
+          "title": "Love is right in front of you ",
+          "slug": "love-is-right-in-front-of-you-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 60,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/277caf4764e04408bfd2881d0cdf5440.png",
+          "description": "Love is right in front of you ",
+          "link": "/meow/json/Love is Right In front of You-Kannada.json"
+        },
+        {
+          "id": "271665",
+          "title": "Love Lies and Revenge",
+          "slug": "love-lies-and-revenge",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5f2664f477444591a05945f507e559a6.png",
+          "description": "After being betrayed and left to die by the man she loved, Priya is mysteriously sent back eight years in time. Now, with knowledge of the future, she plots revenge against those who destroyed her—starting with her ex-fiancé Arjun.\r\n",
+          "link": "/meow/json/Love Lies and Revenge-Kannada.json"
+        },
+        {
+          "id": "272333",
+          "title": "Love Tease",
+          "slug": "love-tease-4",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 43,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/14537b0985764eca89bdfa85c7053619.png",
+          "description": "A passionate romantic drama about Rohan and Ananya: their love story begins in college, ends in a breakup, and eight years later they collide again—this time with a secret child between them. When Rohan returns as a superstar cricketer, a hidden truth emerges—his son. This story is woven with love, revenge, guilt, and second chances, where emotions flare as intensely as any match on the pitch. But after facing the truth, will their love triumph once more? Watch Now!",
+          "link": "/meow/json/Love Tease-Kannada.json"
+        }
       ]
     },
     {
       "title": "Uncategory5",
       "shows": [
-        "/meow/json/Lucky Dragon_ Heavenly Fortune-Kannada.json",
-        "/meow/json/Madam Wants To Sell Fish-Kannada.json",
-        "/meow/json/Madam, Your CEO Husband Will Save Your Village-Kannada.json",
-        "/meow/json/Migrant Workers Love Story-Kannada.json",
-        "/meow/json/Mistaken Millionaire Husband-Kannada.json",
-        "/meow/json/Mom is not Ugly-Kannada.json",
-        "/meow/json/Mr Idiot, Hero Husband-Kannada.json",
-        "/meow/json/Mr. Santa, I Want You-Kannada.json",
-        "/meow/json/Murder in In-Laws Home-Kannada.json",
-        "/meow/json/My 2 Fiances-Kannada.json",
-        "/meow/json/My Brother, You Can't Afford to Mess with_-Kannada.json",
-        "/meow/json/My Ex-Husband's Breakdown After Divorce-Kannada.json",
-        "/meow/json/My Groom A Billionaire-Kannada.json",
-        "/meow/json/My Handsome Bodyguard-Kannada.json",
-        "/meow/json/My Secret Billionaire Boyfriend-Kannada.json",
-        "/meow/json/My Tycoon Husband Spoils Me-Kannada.json",
-        "/meow/json/My Vampire Highness-Kannada.json",
-        "/meow/json/My Wife's Best Friend is in Love with Me-Kannada.json",
-        "/meow/json/Orca - The Killer Whale-Kannada.json",
-        "/meow/json/Overcoming Obstacles _ The Counter Attack of Twin Babies-Kannada.json"
+        {
+          "id": "272019",
+          "title": "Lucky Dragon: Heavenly Fortune",
+          "slug": "lucky-dragon-heavenly-fortune",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 74,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/2c71ff51c20848b5987f0f20ac437118.png",
+          "description": "A millionaire working undercover as a food delivery man tries to reclaim his wealth after revealing his true identity, but his relatives try to stop him. The story unfolds around who ultimately wins in the end.",
+          "link": "/meow/json/Lucky Dragon_ Heavenly Fortune-Kannada.json"
+        },
+        {
+          "id": "268710",
+          "title": "Madam Wants To Sell Fish",
+          "slug": "madam-wants-to-sell-fish-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 20,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/479042136af9495780886ad3a1cc6ab8.png",
+          "description": "\"A humble fishmonger unknowingly shelters a billionaire CEO on the run. As secrets unravel, she shows him that love isn’t measured in wealth but in heart.\"",
+          "link": "/meow/json/Madam Wants To Sell Fish-Kannada.json"
+        },
+        {
+          "id": "269503",
+          "title": "Madam, Your CEO Husband Will Save Your Village",
+          "slug": "madam-your-ceo-husband-will-save-your-village-1",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 74,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/3d2adc48d8fc4100b6e6199136c3cfdd.png",
+          "description": "Madam, Your CEO Husband Will Save Your Village",
+          "link": "/meow/json/Madam, Your CEO Husband Will Save Your Village-Kannada.json"
+        },
+        {
+          "id": "272104",
+          "title": "Migrant Workers Love Story ",
+          "slug": "migrant-workers-love-story-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 39,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6fcef13948c04820904389e26a26e97b.png",
+          "description": "Migrant Workers Love Story- Kannada",
+          "link": "/meow/json/Migrant Workers Love Story-Kannada.json"
+        },
+        {
+          "id": "273002",
+          "title": "Mistaken Millionaire Husband",
+          "slug": "mistaken-millionaire-husband-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 30,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/bd2e1e40975e498689f4fba65431c16e.jpeg",
+          "description": "Ms. Sriram na boyfriend Deepak kodsida dhokakkeinta kuda, Rohit Muralitharan na preeti nijavagittu. Ee chanda love story nodi enjoy maadi!",
+          "link": "/meow/json/Mistaken Millionaire Husband-Kannada.json"
+        },
+        {
+          "id": "267189",
+          "title": "Mom is not Ugly",
+          "slug": "mom-is-not-ugly-3",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 69,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b0e2460e78cf44dbbe98fa657ad41b93.png",
+          "description": "A self-sacrificing mother confronts her ungrateful son and his disdainful family, with help from the man she once saved, leading to a powerful lesson in humility and redemption.",
+          "link": "/meow/json/Mom is not Ugly-Kannada.json"
+        },
+        {
+          "id": "265982",
+          "title": "Mr Idiot, Hero Husband",
+          "slug": "mr-idiot-hero-husband-5",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 94,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/62d26f86ef42491b849175542d1050ee.png",
+          "description": "ಮೂರ್ಖನು ಜಗತ್ತಿನಲ್ಲೇ ಅತ್ಯಂತ ಶ್ರೀಮಂತನಾಗಿದ್ದಾನೆ, ಮತ್ತು ಅವನು ತನ್ನ ಹೆಂಡತಿಗೆ ಎಲ್ಲಾ ಉತ್ತಮ ಸಂಪನ್ಮೂಲಗಳನ್ನು ನೀಡುತ್ತಾನೆ!",
+          "link": "/meow/json/Mr Idiot, Hero Husband-Kannada.json"
+        },
+        {
+          "id": "272422",
+          "title": "Mr. Santa, I Want You!",
+          "slug": "mr-santa-i-want-you-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/505d89fcb78f42fb92cca67423b1ffee.png",
+          "description": "A young woman named Bridget meets a mysterious man who claims to be Santa Claus. Bridget is struggling with her financial situation and the expectations of her family, while \"Mr. Santa\" offers her a glimpse into a different, more magical reality. The film explores themes of love, fate, and finding happiness even amid life's challenges.",
+          "link": "/meow/json/Mr. Santa, I Want You-Kannada.json"
+        },
+        {
+          "id": "272029",
+          "title": "Murder in In-Laws Home",
+          "slug": "murder-in-in-laws-home",
+          "language": "kannada",
+          "genre": {
+            "id": 33,
+            "title": "अपराध",
+            "slug": "crime",
+            "uri": "app://app/genres/crime",
+            "web_uri": "/genres/crime"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a0f2eb11f1e242778a4fce63541bc53f.png",
+          "description": "Murder in In-Laws Home",
+          "link": "/meow/json/Murder in In-Laws Home-Kannada.json"
+        },
+        {
+          "id": "271343",
+          "title": " My 2 Fiances",
+          "slug": "my-2-fiances-3",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 77,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0f65ffbfd0104a96823ac9cb656d00cc.png",
+          "description": "As Iris and her wealthy boyfriend Rick prepare to marry after seven years together, she sees news of him announcing marriage to another woman. Is Rick being manipulated, or is there more to the story?",
+          "link": "/meow/json/My 2 Fiances-Kannada.json"
+        },
+        {
+          "id": "272213",
+          "title": "My Brother, You Can't Afford to Mess with?",
+          "slug": "my-brother-you-cant-afford-to-mess-with-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 60,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6cc500d1057c4d9e9cf214e511c16022.png",
+          "description": "My Brother- You can't afford to mess with :  The rich elder brother is like a shadow to his younger brother. He did a lot of good for the people in his brother's village—pretty much changed their lives. He was like a king to them. But then, because of his brother's enemies, trouble started coming his way. He dealt with those who caused problems, got his revenge, and finally found some peace.But just when things seemed settled, a huge unexpected tragedy hit him.\r\nWhat was it? And what happened next?  ",
+          "link": "/meow/json/My Brother, You Can't Afford to Mess with_-Kannada.json"
+        },
+        {
+          "id": "272215",
+          "title": "My Ex-Husband's Breakdown After Divorce",
+          "slug": "my-ex-husbands-breakdown-after-divorce-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 90,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/ac7dabd8394540e9a8e60b5ea36ffdce.png",
+          "description": "When she walked away, he thought she’d crumble. But as she flourished, his world collapsed. My Ex-Husband's Breakdown After Divorce is a raw tale of toxic love, missed chances, and a man haunted by the woman he let go. Watch Now!",
+          "link": "/meow/json/My Ex-Husband's Breakdown After Divorce-Kannada.json"
+        },
+        {
+          "id": "270760",
+          "title": "My Groom A Billionaire",
+          "slug": "my-groom-a-billionaire-2",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/63103d7e11b043558fb0fdba56a7be5b.png",
+          "description": "ಒಂದು ಕಡೆ ಮದುವೆ ಬೇಡ ಅಂತಾ ಓಡಿ ಬಂದ ಬಿಲಿಯನೇರ್, ಮತ್ತೊಂದು ಕಡೆ ತನ್ನ ಪ್ರಿಯಕರನಿಂದಲೇ ಮೋಸಕ್ಕೊಳಗಾದ ಹುಡುಗಿ! ಹೀಗೆ ಎರಡು ದಾರಿಯಲ್ಲಿ ಸಾಗ್ತಿದ್ದವರು ಜೊತೆಯಾಗೋ‌ ಕಥೆಯೇ 'My Groom : A Billionaire'",
+          "link": "/meow/json/My Groom A Billionaire-Kannada.json"
+        },
+        {
+          "id": "267465",
+          "title": "My Handsome Bodyguard",
+          "slug": "my-handsome-bodyguard-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 91,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/302dbf5427974c7baaedb48ced614a7e.png",
+          "description": "Chu Tao, a former Dragon General turned single father and security guard, navigates secrets of the past while entering a contractual marriage with Lin Wan'er, an ambitious leader seeking vengeance.",
+          "link": "/meow/json/My Handsome Bodyguard-Kannada.json"
+        },
+        {
+          "id": "272031",
+          "title": "My Secret Billionaire Boyfriend",
+          "slug": "the-billionaires-fake-boyfriend",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d801eb640e6b40438a32f77521ed23cc.png",
+          "description": "This is a  romantic drama following the classic premise of love across socio-economic divides. The story centers on a wealthy heir who, tired of being valued only for his riches, goes undercover as a common man. In this guise, he meets a beautiful heiress burdened by an arranged marriage driven by family expectations. What begins as a pragmatic contract evolves into genuine affection, as both discover authenticity and kindness beneath their privileged facades",
+          "link": "/meow/json/My Secret Billionaire Boyfriend-Kannada.json"
+        },
+        {
+          "id": "268893",
+          "title": "My Tycoon Husband Spoils Me",
+          "slug": "my-tycoon-husband-spoils-me-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 97,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/37374ef41db2420f9b825bf690507eae.png",
+          "description": "My Tycoon Husband Spoils Me",
+          "link": "/meow/json/My Tycoon Husband Spoils Me-Kannada.json"
+        },
+        {
+          "id": "271723",
+          "title": "My Vampire Highness",
+          "slug": "my-vampire-highness-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 51,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c0a1b36df09443e1b72878caf6e5a287.png",
+          "description": "A wealthy man returns after years to reclaim his legacy, only to uncover deep-rooted betrayals, family secrets, and dangerous conspiracies—leading him on a relentless quest for truth, justice, and redemption.",
+          "link": "/meow/json/My Vampire Highness-Kannada.json"
+        },
+        {
+          "id": "271859",
+          "title": "My Wife's Best Friend is in Love with Me",
+          "slug": "my-wifes-best-friend-is-in-love-with-me",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 100,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/25cf6f22e29a41c9961daccfd039236b.png",
+          "description": "My Wife's Best Friend is in Love with Me",
+          "link": "/meow/json/My Wife's Best Friend is in Love with Me-Kannada.json"
+        },
+        {
+          "id": "266794",
+          "title": "Orca - The Killer Whale",
+          "slug": "orca-the-killer-whale-1",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 24,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b9a19eee9a994641a6e656db0abe8fad.png",
+          "description": "Orca, the whale, who lost its wife and child at the hands of Captain Nolan, took revenge. Its anger intensified, devastating the harbor in the fishing village and pushing the fishing community into a dire crisis. Find out what happens next by watching this video.",
+          "link": "/meow/json/Orca - The Killer Whale-Kannada.json"
+        },
+        {
+          "id": "272507",
+          "title": "Overcoming Obstacles : The Counter Attack of Twin Babies",
+          "slug": "overcoming-obstacles-the-counter-attack-of-twin-babies",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 76,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7c1921458a7c478a9576b8f7027cabd6.png",
+          "description": "Once torn apart by betrayal, a young mother and her newborn twins were left to face a cruel fate. Thought to be lost, the children survive  growing up far from the love they deserved. But destiny has other plans. Years later, the twins return. Behind their innocent smiles lie brave hearts filled with love for the mother they never knew  and a quiet determination to make things right. As they search for the truth and fight for justice, they cross paths with a kind stranger who becomes their strongest ally. This is a heartfelt journey of hope, healing, and the unbreakable bond between a mother and her children  told through the eyes of two remarkable little souls who refuse to let go of love.",
+          "link": "/meow/json/Overcoming Obstacles _ The Counter Attack of Twin Babies-Kannada.json"
+        }
       ]
     },
     {
       "title": "Uncategory6",
       "shows": [
-        "/meow/json/Paapi Gudia-Kannada.json",
-        "/meow/json/Peak Showdown_ Shatter the Dragon King-Kannada.json",
-        "/meow/json/Peerless Emperor-Kannada.json",
-        "/meow/json/Phoenix Rising-Kannada.json",
-        "/meow/json/Power Punch-Kannada.json",
-        "/meow/json/Raising a Kid or Cultivator-Kannada.json",
-        "/meow/json/Rebirth _ My Cheat Code Life-Kannada.json",
-        "/meow/json/Rebirth of the City's Mad Doctor-Kannada.json",
-        "/meow/json/Rented Husband-Kannada.json",
-        "/meow/json/Restart the Peak-Kannada.json",
-        "/meow/json/Return of His Majesty-Kannada.json",
-        "/meow/json/Revenge Of My Fake Boyfriend-Kannada.json",
-        "/meow/json/Romance With My Vampire Brother-Kannada.json",
-        "/meow/json/Royal Village Girl-Kannada.json",
-        "/meow/json/SAMARITANS-Kannada.json",
-        "/meow/json/Say You Remember, Say You Love-Kannada.json",
-        "/meow/json/Secret Baby-Kannada.json",
-        "/meow/json/Secret Billionaire Villager-Kannada.json",
-        "/meow/json/Secret Husband-Kannada.json",
-        "/meow/json/Single Mother's Counterattack with Adorable Twins-Kannada.json"
+        {
+          "id": "266798",
+          "title": "Paapi Gudia",
+          "slug": "paapi-gudia",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 31,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/798d89bfc89d4964b08aad74f6218aee.png",
+          "description": "A small doll harbors a terrifying spirit, thirsty for blood! This story unfolds a series of horror and dread that will keep you awake all night. When a mother buys an old doll for her son, she has no idea that this doll is about to bring the shadow of death into their home. A thrilling journey filled with spirits, ghosts, and witches—watch it only in *Paapi Gudiya*.",
+          "link": "/meow/json/Paapi Gudia-Kannada.json"
+        },
+        {
+          "id": "272117",
+          "title": "Peak Showdown: Shatter the Dragon King",
+          "slug": "peak-showdown-shatter-the-dragon-king-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 93,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/445a9aa75f7d408d9c385a06265a380a.png",
+          "description": "\"Can any human break the immortal power of the Dragon King?'Peak Showdown' is an epic tale of fantasy, battles, and impossible victories.With thrilling twists of magic and revenge, it transports you to an entirely different world.If fantasy and power clashes are your style, then this show is perfect for you!\"",
+          "link": "/meow/json/Peak Showdown_ Shatter the Dragon King-Kannada.json"
+        },
+        {
+          "id": "267538",
+          "title": "Peerless Emperor ",
+          "slug": "peerless-emperor",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 102,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9cf2b24a56594f73a92360149c6bc3bc.png",
+          "description": "Peerless Emperor \r\n",
+          "link": "/meow/json/Peerless Emperor-Kannada.json"
+        },
+        {
+          "id": "269511",
+          "title": "Phoenix Rising",
+          "slug": "phoenix-rising-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 60,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5d794e5acbed4ac799c2181e413c0713.png",
+          "description": "Because of a car accident, she went into a coma. Taking it as a good opportunity, her husband started behaving however he liked. Will she realize that the husband she thought was good is actually a bad person?",
+          "link": "/meow/json/Phoenix Rising-Kannada.json"
+        },
+        {
+          "id": "272686",
+          "title": "Power Punch",
+          "slug": "power-punch-3",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a29dee9050c84db4b550cfe40478d15d.png",
+          "description": "Ordinary laborer is suddenly gifted with extraordinary strength, turning him into a local legend. But admiration turns to betrayal when his girlfriend Tanya schemes to steal his family’s secret formula. With his mentor in danger, Yash must rise — not just with power, but with purpose — to reclaim his honor.",
+          "link": "/meow/json/Power Punch-Kannada.json"
+        },
+        {
+          "id": "270098",
+          "title": "Raising a Kid or Cultivator",
+          "slug": "raising-a-kid-or-cultivator",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 54,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/2ed6548ff1314c3eb03886409d46b896.png",
+          "description": "Cultivator are described as Immortals or mythical martial artist, this show is about one such Cultivator and his Adventures in the real world when he comes to city from his Master's Home",
+          "link": "/meow/json/Raising a Kid or Cultivator-Kannada.json"
+        },
+        {
+          "id": "271550",
+          "title": "Rebirth : My Cheat Code Life",
+          "slug": "rebirth-my-cheat-code-life-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 71,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/53aa48ec12ef42289774dcb201213ab6.png",
+          "description": "After a bitter divorce, a once-submissive wife rises from the ashes—crushing enemies and shocking the elite world with her fearless power. But her ex-husband soon realizes… letting her go was the biggest mistake of his life.",
+          "link": "/meow/json/Rebirth _ My Cheat Code Life-Kannada.json"
+        },
+        {
+          "id": "272205",
+          "title": "Rebirth of the City's Mad Doctor ",
+          "slug": "rebirth-of-the-citys-mad-doctor-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 100,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/de1936d0ff4740358e5313be5cceaf7c.png",
+          "description": "When San became addicted to gambling and lost all his money, his daughter's life was at stake. His wife was not able to tolerate the situation, attempted suicide, and died. Heartbroken, San also dies, but only to find out he got another chance to change his destiny. Will his fate change?",
+          "link": "/meow/json/Rebirth of the City's Mad Doctor-Kannada.json"
+        },
+        {
+          "id": "272770",
+          "title": "Rented Husband",
+          "slug": "rented-boyfriend-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 44,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f4d04383c2d34d1eb8843d5b1570c85c.png",
+          "description": "'Rented Husband' is a romantic drama that begins with a bold, independent woman who hires a charming stranger to pose as her Husband for a family wedding. What starts as a simple transactional arrangement soon spirals into a whirlwind of unexpected emotions, buried secrets, and undeniable chemistry. As the line between pretend and reality begins to blur, both are forced to confront their pasts and question what love truly means.\r\n",
+          "link": "/meow/json/Rented Husband-Kannada.json"
+        },
+        {
+          "id": "267537",
+          "title": "Restart the Peak ",
+          "slug": "restart-the-peak-3",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 92,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8f71a8c276864e3682a8fd3dd913c2b2.png",
+          "description": "After being mocked and abandoned by his girlfriend for being poor, he rises to success, only for her to realize too late what she lost.",
+          "link": "/meow/json/Restart the Peak-Kannada.json"
+        },
+        {
+          "id": "268899",
+          "title": "Return of His Majesty",
+          "slug": "return-of-his-majesty-3",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 63,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d70e878edf51455d8797131c427e1358.png",
+          "description": "ತನ್ನ ಹೆಂಡತಿಗಾಗಿ, ಅಧಿಕಾರಕ್ಕೆ ಮರಳೋ ನಾಯಕ. ಹೊಸ ಸಾಮ್ರಾಜ್ಯ ಕಟ್ಟಿದ ನಂತರ, ಆತನ ಪ್ರೀತಿಯನ್ನ ಕಟ್ಟುವಲ್ಲಿ ಸಾಕಷ್ಟು ಸವಾಲುಗಳು ಎದುರಾಗ್ತವೆ. ಅಧಿಕಾರ-ಪ್ರೀತಿಯ ನಡುವಿನ ಹೋರಾಟದ ಕಥೆಯೇ 'Return of his Majesty'.",
+          "link": "/meow/json/Return of His Majesty-Kannada.json"
+        },
+        {
+          "id": "270415",
+          "title": "Revenge Of My Fake Boyfriend",
+          "slug": "revenge-of-my-fake-boyfriend-2",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 60,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b1e1832e52db4ae5aa3815e61484cc68.png",
+          "description": "ತಾನು ಪ್ರೀತಿಸಿದ ಹುಡುಗಿಯಿಂದಲೇ ಮೋಸಗೊಂಡ ಕಥಾನಾಯಕ. ದುಡ್ಡೇ ದೊಡ್ಡಪ್ಪ ಅಂತಾ ನಂಬಿರೋ ನಮ್ ಕಥಾನಾಯಕಿ. ಇವರಿಬ್ಬರ ಅದೊಂದು ಭೇಟಿ, ಇಬ್ಬರ ಬದುಕನ್ನೇ ಬದಲಿಸಿಬಿಡುತ್ತೆ! ಹೇಗೆ ಅಂತಾ ತಿಳಿಯೋಕೆ ನೋಡಿ 'Revenge Of My Fake Boyfriend' ಶೋ",
+          "link": "/meow/json/Revenge Of My Fake Boyfriend-Kannada.json"
+        },
+        {
+          "id": "270775",
+          "title": "Romance With My Vampire Brother",
+          "slug": "romance-with-my-vampire-brother-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 69,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b0467f7c2bf74c0eb1d5a910b8af68dd.png",
+          "description": "Romance With My Vampire Brother",
+          "link": "/meow/json/Romance With My Vampire Brother-Kannada.json"
+        },
+        {
+          "id": "272332",
+          "title": "Royal Village Girl",
+          "slug": "royal-village-girl-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 43,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c297bc247a094e5e883b3d6ac58c6a17.png",
+          "description": "A girl names Raksha arrives in the city from her village with her mother to stay with her sister Nisha, but Nisha refuses to acknowledge them due to social status. Hiding her true identity, Raksha reinvents herself as a wealthy heiress. An old pendant leads Rksha to Mrs. Patel, the mother she lost long ago. When an attack on her mother unfolds, secrets come to light—and a DNA test reveals the truth: Raksha is the real CEO. Nisha’s lies are exposed before the media, and Raksha regains her true identity, mother, and dignity.",
+          "link": "/meow/json/Royal Village Girl-Kannada.json"
+        },
+        {
+          "id": "266864",
+          "title": "SAMARITANS",
+          "slug": "samaritans",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 26,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/867b81393ed84c8ca506e72a97c88e5d.png",
+          "description": "When a group of four co-workers meet face to face for the first time to work on a new app, a mysterious entity pits them against each other in a game of truth or dare forcing them to reveal their darkest secrets about each other.",
+          "link": "/meow/json/SAMARITANS-Kannada.json"
+        },
+        {
+          "id": "270765",
+          "title": "Say You Remember, Say You Love",
+          "slug": "say-you-remember-say-you-love-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 68,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/3bb381ab750c4768add4a92030402974.png",
+          "description": "Say You Remember, Say You Love",
+          "link": "/meow/json/Say You Remember, Say You Love-Kannada.json"
+        },
+        {
+          "id": "271695",
+          "title": "Secret Baby",
+          "slug": "secret-baby-2",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b932f8ba810740208634247c4c338ac3.png",
+          "description": "Leena, working as the secretary to CEO Sameer under a secret identity, is deeply in love with him. When the company faces a cyber attack, she takes matters into her own hands, secretly handling the crisis. But her world shatters when she learns of Sameer’s engagement to Maya, leaving her torn and awestruck by the unexpected turn of events.\r\n",
+          "link": "/meow/json/Secret Baby-Kannada.json"
+        },
+        {
+          "id": "272235",
+          "title": "Secret Billionaire Villager",
+          "slug": "secret-billionaire-villager-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fbedf5e4d18a46e5b1d950042ff5fd04.png",
+          "description": "A simple and innocent poor villager is cheated on by his long-term girlfriend for a rich man. With the help of a divine power, the villager becomes rich and handsome, and returns to take revenge on his unfaithful girlfriend.",
+          "link": "/meow/json/Secret Billionaire Villager-Kannada.json"
+        },
+        {
+          "id": "271693",
+          "title": "Secret Husband",
+          "slug": "secret-husband-7",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb3367df9fd2422599120c1feb623f41.png",
+          "description": "Secret Husband\r\n",
+          "link": "/meow/json/Secret Husband-Kannada.json"
+        },
+        {
+          "id": "271462",
+          "title": "Single Mother's Counterattack with Adorable Twins",
+          "slug": "single-mothers-counterattack-with-adorable-twins-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d94d53a399da4c5ca96df8cf2a42274b.png",
+          "description": "Single Mother’s Counterattack with Adorable Twins",
+          "link": "/meow/json/Single Mother's Counterattack with Adorable Twins-Kannada.json"
+        }
       ]
     },
     {
       "title": "Uncategory7",
       "shows": [
-        "/meow/json/Sinnister Squad-Kannada.json",
-        "/meow/json/Slay, Madam-Kannada.json",
-        "/meow/json/Son of an MP-Kannada.json",
-        "/meow/json/Song of transformation-Kannada.json",
-        "/meow/json/Spark My Fire-Kannada.json",
-        "/meow/json/SPARTA-Kannada.json",
-        "/meow/json/Star Moon Romance_ Rejected & Reborn as Alpha-Kannada.json",
-        "/meow/json/Stop pretending -Miss gu will expose everything-Kannada.json",
-        "/meow/json/Study God-Kannada.json",
-        "/meow/json/Supreme-Kannada.json",
-        "/meow/json/Supreme Bai Emperor-Kannada.json",
-        "/meow/json/Supreme Wealth-Kannada.json",
-        "/meow/json/TENACIOUS HEALER-Kannada.json",
-        "/meow/json/The arrival of a young lady-Kannada.json",
-        "/meow/json/The Arrogant Tyrant's Runaway Wife-Kannada.json",
-        "/meow/json/The Barge People-Kannada.json",
-        "/meow/json/The Crowned Consort of the Empress-Kannada.json",
-        "/meow/json/The Devil Wears Desire-Kannada.json",
-        "/meow/json/The Divorced Billionaire Heiress-Kannada.json",
-        "/meow/json/The Divorced Housewife Turned CEO-Kannada.json"
+        {
+          "id": "266782",
+          "title": "Sinnister Squad",
+          "slug": "sinnister-squad",
+          "language": "kannada",
+          "genre": {
+            "id": 79,
+            "title": "फैंटसी",
+            "slug": "fantasy",
+            "uri": "app://app/genres/fantasy",
+            "web_uri": "/genres/fantasy"
+          },
+          "n_episodes": 10,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8bf219982f10484e90bf35db45330029.png",
+          "description": "When a supernatural cult threatens Earth, Alice must assemble a team of fairy tale villains to face the literal forces of Death.",
+          "link": "/meow/json/Sinnister Squad-Kannada.json"
+        },
+        {
+          "id": "270370",
+          "title": "Slay, Madam",
+          "slug": "slay-madam-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 87,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b400eadcf97a4b63b0b32532556e1272.png",
+          "description": "Driven by envy and a relentless need to outshine Christina, Reena schemed to shatter her world. But in the chaos she created, Christina crossed paths with Alex—an encounter that lasted just one unforgettable night. Five years later, destiny intervenes, and their lives collide once more. What fueled Reena’s deep-rooted jealousy? And how did that single night alter the course of Christina and Alex’s lives forever?",
+          "link": "/meow/json/Slay, Madam-Kannada.json"
+        },
+        {
+          "id": "272636",
+          "title": "Son of an MP",
+          "slug": "son-of-an-mp-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5c25ad9acb714cc68e776501f635287a.png",
+          "description": "The troubled son of powerful MLA, is trapped beneath a legacy of emotional abuse and political expectations. But everything changes when he crosses paths with his mother, a fierce and self-made orphan from a foster home whose only family is her younger brother. Their connection sparks a series of confrontations — with class, love, identity, and the rotten roots of systemic power. As secrets unravel,  discovers her true lineage. ",
+          "link": "/meow/json/Son of an MP-Kannada.json"
+        },
+        {
+          "id": "267547",
+          "title": "Song of transformation ",
+          "slug": "song-of-transformation-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 90,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/eea7345da618474f96402f4cb42bd5e6.png",
+          "description": "Song of transformation ",
+          "link": "/meow/json/Song of transformation-Kannada.json"
+        },
+        {
+          "id": "271843",
+          "title": "Spark My Fire",
+          "slug": "spark-my-fire-4",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/68c7148f218e4cf8b00cd611da346a95.png",
+          "description": "A powerful CEO is searching for one girl willing to submit to his rules. Dozens wait in line, but only one will be chosen for this secret contract. It’s not just a job, it’s a life of luxury, control, and emotional surrender. Behind closed doors, a dangerous game of power and passion begins. She must live by his word… or walk away from everything.",
+          "link": "/meow/json/Spark My Fire-Kannada.json"
+        },
+        {
+          "id": "269691",
+          "title": "SPARTA",
+          "slug": "sparta-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 32,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8d7d8b6e87f9420783a41de538df0c49.png",
+          "description": "Sparta",
+          "link": "/meow/json/SPARTA-Kannada.json"
+        },
+        {
+          "id": "272339",
+          "title": "Star Moon Romance: Rejected & Reborn as Alpha ",
+          "slug": "star-moon-romance-rejected-reborn-as-alpha",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 79,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e380653790dd4c7385ff62b9dc9b09c4.png",
+          "description": "She lost her parents, was rejected by her brother, and had her heart shattered by Asta — the one who once called her “Luna.” Branded a loser and treated like nothing more than a blood bank, she rose when the Moon Goddess awakened the Alpha within her. Star Moon Romance is a fierce tale of transformation — from rejection to redemption, and a girl’s rise to become the Alpha no one saw coming.\r\n",
+          "link": "/meow/json/Star Moon Romance_ Rejected & Reborn as Alpha-Kannada.json"
+        },
+        {
+          "id": "270635",
+          "title": "Stop pretending -Miss gu will expose everything",
+          "slug": "stop-pretending-miss-gu-will-expose-everything-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 87,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/413edb8cabc34faab152f801da42f157.png",
+          "description": "In a world where legacy and ambition collide, the heiress of the powerful Kings Corp joins Stream Corp as an undercover intern to prove her worth. But her journey takes a sharp turn when two mysterious interns show up—sharing the same identity. As secrets unravel and loyalties blur, corporate games become a dangerous masquerade.",
+          "link": "/meow/json/Stop pretending -Miss gu will expose everything-Kannada.json"
+        },
+        {
+          "id": "267565",
+          "title": "Study God",
+          "slug": "study-god-6",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 79,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/681af7c31b9147819c30e4c61b90bd2c.png",
+          "description": "Ning Xiaoyao pursues a fragment of an outer god's soul to the mortal realm, saving Zhong Qing and aiding her family. Misunderstood by the Bai family and his former fiancée, Bai Zhiqiu, he uncovers a traitor within their ranks. After slaying the outer god, the Bai family realizes his true status and regrets their past disrespect.",
+          "link": "/meow/json/Study God-Kannada.json"
+        },
+        {
+          "id": "270331",
+          "title": "Supreme",
+          "slug": "supreme-6",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 96,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/dc10c0c7965c41fc89d8c89c0a8c9322.png",
+          "description": "Supreme is a fantasy-romance tale of an aspiring hero’s journey to become a celestial master. He faces powerful enemies, overcomes mystical challenges, and discovers ancient secrets. Amidst it all, love blossoms, shaping his destiny in unexpected ways.",
+          "link": "/meow/json/Supreme-Kannada.json"
+        },
+        {
+          "id": "271200",
+          "title": "Supreme Bai Emperor",
+          "slug": "supreme-bai-emperor-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 95,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/834cf63084ec497a96a36202ba24cdec.png",
+          "description": "\"John returned after seven years… but the house didn’t recognize him, and love didn’t wait. All around, there were only accusations, humiliation, and a painful truth. Will he be able to reclaim his love and true identity?\"",
+          "link": "/meow/json/Supreme Bai Emperor-Kannada.json"
+        },
+        {
+          "id": "268673",
+          "title": "Supreme Wealth ",
+          "slug": "supreme-wealth-5",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 33,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/87ab6056b0e645c48fc0b91114fd1fca.png",
+          "description": "Supreme Wealth ",
+          "link": "/meow/json/Supreme Wealth-Kannada.json"
+        },
+        {
+          "id": "272021",
+          "title": "TENACIOUS HEALER",
+          "slug": "tenacious-healer-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 85,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/87b870328eb648d8930d17b057de6bad.png",
+          "description": "TENACIOUS HEALER",
+          "link": "/meow/json/TENACIOUS HEALER-Kannada.json"
+        },
+        {
+          "id": "272267",
+          "title": "The arrival of a young lady",
+          "slug": "the-arrival-of-a-young-lady",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 76,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/78eee64e726c497b879fab36468579ea.png",
+          "description": "The arrival of the young lady",
+          "link": "/meow/json/The arrival of a young lady-Kannada.json"
+        },
+        {
+          "id": "268833",
+          "title": "The Arrogant Tyrant's Runaway Wife",
+          "slug": "the-arrogant-tyrants-runaway-wife-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 98,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/4a98c252648c4de995fdc51ae764adc1.png",
+          "description": "The Arrogant Tyrant's Runaway Wife",
+          "link": "/meow/json/The Arrogant Tyrant's Runaway Wife-Kannada.json"
+        },
+        {
+          "id": "268711",
+          "title": "The Barge People",
+          "slug": "the-barge-people-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 28,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5facf0c8e62c429f99a3dba9067ed47a.png",
+          "description": "\tSet on the canals amid the glorious British countryside, two sisters and their boyfriends head off for a relaxing weekend away on a barge, unaware of the flesh-eating fish mutants lurking in the water, ready and waiting to feed.",
+          "link": "/meow/json/The Barge People-Kannada.json"
+        },
+        {
+          "id": "272239",
+          "title": "The Crowned Consort of the Empress",
+          "slug": "the-crowned-consort-of-the-empress-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 60,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b84b10750fc24b1bbe57a7b7d8828ee7.png",
+          "description": "The story of a woman who rises from a lower position in the palace to become the Empress's consort, a journey of ambition, love, and political maneuvering.",
+          "link": "/meow/json/The Crowned Consort of the Empress-Kannada.json"
+        },
+        {
+          "id": "270612",
+          "title": "The Devil Wears Desire",
+          "slug": "the-devil-wears-desire-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7c7f9dab9ab14b8085af7ec291edae6b.png",
+          "description": "Anna becomes CEO Ian’s secret lover to save her boyfriend, Louis, but is abandoned by Ian and later dates playboy David. After being forced into marriage with crime lord Domenico, Anna is kidnapped, prompting Ian and Louis to team up and rescue her. Amid dark secrets and intense rivalries, Anna must choose between four men to find true love.\r\n",
+          "link": "/meow/json/The Devil Wears Desire-Kannada.json"
+        },
+        {
+          "id": "268802",
+          "title": "The Divorced Billionaire Heiress",
+          "slug": "the-divorced-billionaire-heiress-3",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 60,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9d1ab09428be471b8bc6e4c4b753073f.png",
+          "description": "ಕಥಾನಾಯಕಿ 'ಮೋರ್', ಆಗರ್ಭ ಶ್ರೀಮಂತೆ. ಆಕೆಯ ಗಂಡ 'ಕಾರ್ಸನ್' ಅಂದ್ರೆ ತುಂಬಾನೇ ಇಷ್ಟ. ಆದ್ರೆ ಕಾರ್ಸನ್, ದುಡ್ಡಿಗಾಗಿ ತನ್ನ ಪತ್ನಿಗೆ ಮೋಸ ಮಾಡ್ತನೆ. ಈ ಸಮಯದಲ್ಲಿ ಪರಿಚಯ ಆಗುವ ವ್ಯಕ್ತಿಯೇ 'ರಾಯನ್ ಜೇಕಬ್ಸ್'. ಈ ಮೂವರ ಬದುಕಲ್ಲಿ ಪ್ರೀತಿ ಮತ್ತು ಹಣಕ್ಕಾಗಿ ಏನೆಲ್ಲಾ ಆಗುತ್ತೆ? ಮೋರ್ ತನ್ನ ನಿಜವಾದ ಐಡೆಂಟಿಟಿಯನ್ನ ಯಾಕೆ ಮರೆ ಮಾಚಿದ್ಲು ಅನ್ನೋದೇ 'The Divorced Billionaire Heiress' ಕಥೆ.",
+          "link": "/meow/json/The Divorced Billionaire Heiress-Kannada.json"
+        },
+        {
+          "id": "268818",
+          "title": "The Divorced Housewife Turned CEO",
+          "slug": "the-divorced-housewife-turned-ceo-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 59,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/13a06a55592a432aa3807260ba9ac76c.png",
+          "description": "ಶಾರನ್ ಒಬ್ಬ ಸೀಕ್ರೆಟ್ ಸಿಇಓ. ತನ್ನ ಗಂಡನಿಗಾಗಿ ನಿಜವಾದ ಐಡೆಂಟಿಟಿಯನ್ನ ಮರೆಮಾಚಿರ್ತಾಳೆ‌. ಆದ್ರೆ ತಾನು ಪ್ರೀತಿಸೋ ಪತಿಯಿಂದಲೇ ಮೋಸಗೊಂಡ ಶಾರನ್, ಮುಂದೆ ಏನ್ ಮಾಡ್ತಳೆ? ಡಿವೋರ್ಸ್ ಹೇಗೆ ಆಕೆಯ ಬದುಕನ್ನ ಬದಲಿಸುತ್ತೆ ಅನ್ನೋದೇ 'The Divorced Housewife Turned CEO' ಕಥಾಹಂದರ.",
+          "link": "/meow/json/The Divorced Housewife Turned CEO-Kannada.json"
+        }
       ]
     },
     {
       "title": "Uncategory8",
       "shows": [
-        "/meow/json/The End of Us-Kannada.json",
-        "/meow/json/The Final Boss-Kannada.json",
-        "/meow/json/The Hand Behind the Scenes-Kannada.json",
-        "/meow/json/The Intruder-Kannada.json",
-        "/meow/json/The Last Recipe-Kannada.json",
-        "/meow/json/The Love That Kills-Kannada.json",
-        "/meow/json/The Officer Fell For Me-Kannada.json",
-        "/meow/json/The Old man Returns-Kannada.json",
-        "/meow/json/The Possession Experiment-Kannada.json",
-        "/meow/json/The Road ahead-Kannada.json",
-        "/meow/json/THE ROYAL BETRAYAL-Kannada.json",
-        "/meow/json/The Runaway CEO has Two Babies-Kannada.json",
-        "/meow/json/The Sage Doctor-Kannada.json",
-        "/meow/json/The Shadows Counter attack-Kannada.json",
-        "/meow/json/The Sinful Dragon Enters the World-Kannada.json",
-        "/meow/json/The Stars Know My Heart-Kannada.json",
-        "/meow/json/The Strongest Curse Master-Kannada.json",
-        "/meow/json/The Substitute Bride_ Unveiling Her Countless Secrets-Kannada.json",
-        "/meow/json/The Villain-Kannada.json",
-        "/meow/json/The World in my grasp-Kannada.json"
+        {
+          "id": "270174",
+          "title": "The End of Us",
+          "slug": "the-end-of-us",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/905f14b191b047458df62ec1e0929d63.jpg",
+          "description": "When Dhruva has to end his 10 year marriage contract with his Wife Swapna, he has to end many things which had stopped him to be on his own, why did he get into this contract marriage in first place and what surprise awaits him for all the sacrifice he has done for the past 10 years. Watch Kannada's First Micro Series \"The End of Us\" only on KUKU TV.",
+          "link": "/meow/json/The End of Us-Kannada.json"
+        },
+        {
+          "id": "271470",
+          "title": "The Final Boss",
+          "slug": "the-final-boss-3",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/636a3cd4e9954ca69abaff6d7bb2f55d.png",
+          "description": "5 ವರ್ಷಗಳ‌ ನಂತ್ರ ತನ್ನ ಪ್ರೇಯಸಿ ಮೇನಕಾಳನ್ನ ಭೇಟಿ‌ ಮಾಡೋದಕ್ಕೆ ಬಂದ ಸಿಇಓ ಕುಮಾರ್! ಆದ್ರೆ ನೇಮ್ ಅಂಡ್ ಫೇಮ್ ಬಂದಾಕ್ಷಣ ಬ್ರೇಕಪ್ ಮಾಡಿಕೊಂಡ ಆತನ ಗರ್ಲ್ ಫ್ರೆಂಡ್! ಮುಂದೆ ಅವಳಿಗೆ ಸರಿಯಾದ ಪಾಠ ಕಲಿಸ್ತಾನಾ ನಮ್ ಬಾಸ್? ನೋಡಿ 'The Final Boss' ಶೋ",
+          "link": "/meow/json/The Final Boss-Kannada.json"
+        },
+        {
+          "id": "271840",
+          "title": "The Hand Behind the Scenes",
+          "slug": "the-hand-behind-the-scenes",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 106,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/eda54a5156de40848c00d7cc019787fe.png",
+          "description": "The Hand Behind the Scenes",
+          "link": "/meow/json/The Hand Behind the Scenes-Kannada.json"
+        },
+        {
+          "id": "267130",
+          "title": "The Intruder",
+          "slug": "the-intruder",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 31,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fa91ce27d6fd46acb70a57b41f57ea1b.png",
+          "description": "A young married couple buy a beautiful house on several acres of land, only to find out that the man they bought it from refuses to let go of the property.",
+          "link": "/meow/json/The Intruder-Kannada.json"
+        },
+        {
+          "id": "270756",
+          "title": "The Last Recipe",
+          "slug": "the-last-recipe-3",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b11e00e0c818431182dfe672fe4f59b9.png",
+          "description": "The Last Recipe",
+          "link": "/meow/json/The Last Recipe-Kannada.json"
+        },
+        {
+          "id": "271736",
+          "title": "The Love That Kills",
+          "slug": "the-love-that-kills-5",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 30,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9d3e17fbcce446beac9bd23656fa1cfc.png",
+          "description": "\"The Love That Kills\" is a gripping drama that follows the unraveling of Raghav's family due to the unchecked entitlement of his son Sid and father Vijay, sparked by Sid's destructive act at a luxury hotel. As tensions with Raghav's boss Srishti  escalate, the series explores accountability, family dynamics, and the devastating cost of pride.",
+          "link": "/meow/json/The Love That Kills-Kannada.json"
+        },
+        {
+          "id": "270973",
+          "title": "The Officer Fell For Me",
+          "slug": "the-officer-fell-for-me-3",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/04973ceec5494933bc03b808a670184b.png",
+          "description": "The Officer Fell For Me",
+          "link": "/meow/json/The Officer Fell For Me-Kannada.json"
+        },
+        {
+          "id": "267546",
+          "title": "The Old man Returns ",
+          "slug": "the-old-man-returns",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 71,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c9d30db80bcb4f9ab42f1e1889c61f8b.png",
+          "description": "The Old man Returns ",
+          "link": "/meow/json/The Old man Returns-Kannada.json"
+        },
+        {
+          "id": "267555",
+          "title": "The Possession Experiment ",
+          "slug": "the-possession-experiment-2",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 29,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a1345cab2a3b410e9129feed11025734.png",
+          "description": "The possession experiment ",
+          "link": "/meow/json/The Possession Experiment-Kannada.json"
+        },
+        {
+          "id": "267539",
+          "title": "The Road ahead",
+          "slug": "the-road-ahead-1",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 35,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/186d23f5bb5947f7a32f466e617ec3d8.png",
+          "description": "The Road ahead",
+          "link": "/meow/json/The Road ahead-Kannada.json"
+        },
+        {
+          "id": "272312",
+          "title": "THE ROYAL BETRAYAL",
+          "slug": "the-royal-betrayal-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/3bc2684941f74a52bb17f3881419988b.png",
+          "description": "In the chaos of a deadly warzone, a woman crosses paths with the royal heir who shattered her heart — now forced to trust him for survival. As danger closes in, love and revenge collide in a race against death.",
+          "link": "/meow/json/THE ROYAL BETRAYAL-Kannada.json"
+        },
+        {
+          "id": "268838",
+          "title": "The Runaway CEO has Two Babies",
+          "slug": "the-runaway-ceo-has-two-babies-5",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/dd24975098934de695f90de10787b71a.png",
+          "description": "After divorcing his ex-wife, he never got involved with any other woman. He refused to acknowledge that he had once loved her. However, upon reuniting, he realized that, both physically and emotionally, his true love was his ex-wife, not his first love.",
+          "link": "/meow/json/The Runaway CEO has Two Babies-Kannada.json"
+        },
+        {
+          "id": "266786",
+          "title": "The Sage Doctor",
+          "slug": "the-sage-doctor-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 87,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e8e6b0294bca4fdb9ed4669716c59b9c.png",
+          "description": "A gifted doctor with mysterious supernatural vision must choose between revealing his powers to save lives or protecting himself from those who would exploit his gift.",
+          "link": "/meow/json/The Sage Doctor-Kannada.json"
+        },
+        {
+          "id": "267556",
+          "title": "The Shadows Counter attack ",
+          "slug": "the-shadows-counter-attack-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 31,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7646de3e247545e9aa44ef346f309c09.png",
+          "description": "A rising beauty queen’s victory sparks jealousy in her rival, who ruins her face out of spite. Left struggling and hopeless, she works tirelessly until she can afford surgery to restore her looks. Now bearing the face of her enemy, she embarks on a path of calculated revenge.",
+          "link": "/meow/json/The Shadows Counter attack-Kannada.json"
+        },
+        {
+          "id": "272694",
+          "title": "The Sinful Dragon Enters the World",
+          "slug": "the-sinful-dragon-enters-the-world-1",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 95,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7fa652cf38224130ae0f4f19b9b068bd.png",
+          "description": "The Sinful Dragon Enters the World",
+          "link": "/meow/json/The Sinful Dragon Enters the World-Kannada.json"
+        },
+        {
+          "id": "266785",
+          "title": "The Stars Know My Heart",
+          "slug": "the-stars-know-my-heart-4",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/494d2ab3d033425d8c3f2ebffd99dbaf.png",
+          "description": "The Stars Know My Heart",
+          "link": "/meow/json/The Stars Know My Heart-Kannada.json"
+        },
+        {
+          "id": "272200",
+          "title": "The Strongest Curse Master",
+          "slug": "the-strongest-curse-master-2",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 64,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/4888976e0444414f87f349e8907d3471.png",
+          "description": "A story of a man who is dumped, humiliated, and left for dead, only to be granted cursed power by a mysterious sage. He returns stronger and deadlier, unrecognizable to those who previously wronged him, now possessing the power of the \"Strongest Curse Master\". Watch Now!",
+          "link": "/meow/json/The Strongest Curse Master-Kannada.json"
+        },
+        {
+          "id": "271684",
+          "title": "The Substitute Bride: Unveiling Her Countless Secrets",
+          "slug": "the-substitute-bride-unveiling-her-countless-secrets-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 85,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/580a01c14a3d46dc95adadec98b3fab0.png",
+          "description": "\"A girl from a village who just came to be a substitute bride, but with every step she takes, secrets begin to unravel—secrets powerful enough to change everyone’s lives. In this game of love, betrayal, and politics, who is the real bride, and who will emerge victorious? Watch now this gripping tale where behind every secret lies an even bigger twist.\"",
+          "link": "/meow/json/The Substitute Bride_ Unveiling Her Countless Secrets-Kannada.json"
+        },
+        {
+          "id": "272628",
+          "title": "The Villain ",
+          "slug": "ek-thi-villain-3",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b86069d514594ffc89d172f8e5f62040.png",
+          "description": "\"ISO scientist Anjali worships the dark demon and sacrifices children, but to win her 'soul-mate' Vikram Sharma during the Mars mission, she goes to the extent of bloodshed, accusations, and black magic. What will happen when another scientist, Priya, comes in the way of Anjali and Vikram?\"",
+          "link": "/meow/json/The Villain-Kannada.json"
+        },
+        {
+          "id": "268808",
+          "title": "The World in my grasp",
+          "slug": "the-world-in-my-grasp-4",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 77,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/cb24aab8554e4a949f8f60a6b202133b.png",
+          "description": "The World in my Grasp - ಫಿನ್ ಒಬ್ಬ ಸಾಮಾನ್ಯ ಕಾರ್ಮಿಕ. ಆದ್ರೆ ತನ್ನ ಗರ್ಲ್ ಫ್ರೆಂಡಿಗಾಗಿ ಜಗತ್ತಿನ‌ ಅತ್ಯಂತ ಶಕ್ತಿಶಾಲಿ ವ್ಯಕ್ತಿಯಾಗ್ಬೇಕು ಅಂತಾ ನಿರ್ಧಾರ ಮಾಡ್ತನೆ. ಈ ಸಮಯದಲ್ಲಿ ಅವನು ಎದುರಿಸೋ ಸವಾಲುಗಳೇನು ಎನ್ನುವುದೇ ಈ ಸೀರೀಸಿನ ಕಥಾಹಂದರ.",
+          "link": "/meow/json/The World in my grasp-Kannada.json"
+        }
       ]
     },
     {
       "title": "Uncategory9",
       "shows": [
-        "/meow/json/The Wronged Mother-Kannada.json",
-        "/meow/json/THIRST-Kannada.json",
-        "/meow/json/This Girl Is a Martial Master-Kannada.json",
-        "/meow/json/Thousand Years of Immortality-Kannada.json",
-        "/meow/json/Time-Travelling Cute Baby-Kannada.json",
-        "/meow/json/Too Heavy to Handle-Kannada.json",
-        "/meow/json/Too Late-Kannada.json",
-        "/meow/json/Travel Back in Time _ 1991-Kannada.json",
-        "/meow/json/Truth or Dare-Kannada.json",
-        "/meow/json/Unforgivable-Kannada.json",
-        "/meow/json/Unriveled in Emperial Harrem-Kannada.json",
-        "/meow/json/Unwed but Pregnant An Unexpected Husband-Kannada.json",
-        "/meow/json/Urban King of Soldiers-Kannada.json",
-        "/meow/json/Urban Top-Notch Divine Doctor-Kannada.json",
-        "/meow/json/Vamperifica-Kannada.json",
-        "/meow/json/Vicious Son-in-Law Don't Mess With Me-Kannada.json",
-        "/meow/json/Waiting for Love-Kannada.json",
-        "/meow/json/When the Sun Sets on Us-Kannada.json",
-        "/meow/json/Where is Home-Kannada.json",
-        "/meow/json/Wild Young Master Son-in-Law-Kannada.json",
-        "/meow/json/Witch Stars-Kannada.json",
-        "/meow/json/Wonder Boy Parth-Kannada.json",
-        "/meow/json/Yes Mr. CEO, We Have A Baby-Kannada.json"		
+        {
+          "id": "270081",
+          "title": "The Wronged Mother",
+          "slug": "the-wronged-mother-5",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 76,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/50fdff07bfbf4f2ab1993de5d6b147f5.png",
+          "description": "Kaylene Larsen's dream finally came true: beautiful twins from an in vitro procedure. But when Kaylene needs home care, the nurse she hires is none other than the egg donor herself -- and the crazy woman has come to claim \"her\" babies.\r\n",
+          "link": "/meow/json/The Wronged Mother-Kannada.json"
+        },
+        {
+          "id": "267063",
+          "title": "THIRST",
+          "slug": "thirst-2",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 15,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/44f1476115ec41e79acb64a8e988ba4d.png",
+          "description": "Insomnia spreads in a small town, causing fear and panic. As the situation becomes dire, two couples find salvation on an abandoned ranch, but as nefarious characters descend upon the land, claiming it as their own, and chaos ensues.",
+          "link": "/meow/json/THIRST-Kannada.json"
+        },
+        {
+          "id": "270764",
+          "title": "This Girl Is a Martial Master",
+          "slug": "this-girl-is-a-martial-master-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 73,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1ffbad2e55374066ab929ad5efb9bf99.png",
+          "description": "A young woman, with her martial arts skills, relentlessly attacks her enemies. She steps onto the battlefield to save her family. Her only goal is to settle the feud. In that pursuit, she becomes an unstoppable force.",
+          "link": "/meow/json/This Girl Is a Martial Master-Kannada.json"
+        },
+        {
+          "id": "271867",
+          "title": "Thousand Years of Immortality",
+          "slug": "thousand-years-of-immortality-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 90,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6686d859449348418c194f861d4297ba.png",
+          "description": "Hero, after having cultivated in isolation for three thousand years, awakens to find that the tide of history has shifted, and the world has undergone tremendous changes. Right before his ascension, his final tribulation, the \"Heart-Tempering in the Mundane World,\" begins to unfold in the modern city. He dressed in ragged clothes and with vacant eyes, wanders the streets, marveling at the new technological world. He happens upon the head of the Harold family, who is training with his bodyguards during their morning exercises. Then he settles down in the city, navigating the urban conflicts with a path of extraordinary ability.",
+          "link": "/meow/json/Thousand Years of Immortality-Kannada.json"
+        },
+        {
+          "id": "272307",
+          "title": "Time-Travelling Cute Baby",
+          "slug": "time-travelling-cute-baby",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 90,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/909c40802a914c8097cd86f2e02a64e5.png",
+          "description": "At the moment of a wealthy tycoon's wedding, a group of children suddenly appears, claiming to be his offspring. The astonished man cannot recall anything, but they identify themselves as his twin children. This dramatic revelation unveils a mysterious past that changes everything.\r\n",
+          "link": "/meow/json/Time-Travelling Cute Baby-Kannada.json"
+        },
+        {
+          "id": "272086",
+          "title": "Too Heavy to Handle",
+          "slug": "too-heavy-to-handle-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 48,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/eb14650c586a48d597eb4dbe728e538e.png",
+          "description": "\"Too Heavy to Handle\" is a dramatic revenge saga that follows Priya, a woman mocked and betrayed for her weight, who transforms into the fierce and confident Avni to reclaim her dignity and bring down those who wronged her. Blending emotion, transformation, and empowerment, the show is a rollercoaster of heartbreak, healing, and high-stakes drama.",
+          "link": "/meow/json/Too Heavy to Handle-Kannada.json"
+        },
+        {
+          "id": "267313",
+          "title": "Too Late",
+          "slug": "too-late-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 26,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/aec8a4dd8e3547b5bffe70f5d2552dbf.png",
+          "description": "\tA lonely assistant finally finds love and must escape her monster of a boss before she and her new love become his next meal.",
+          "link": "/meow/json/Too Late-Kannada.json"
+        },
+        {
+          "id": "270223",
+          "title": "Travel Back in Time : 1991",
+          "slug": "travel-back-in-time-1991",
+          "language": "kannada",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 102,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/3710c8bda5c8464dac0120c39058989a.png",
+          "description": "ತಾನು ಪ್ರೀತಿಸಿದ ಹುಡುಗಿಯನ್ನ ಮದುವೆಯಾಗಲು ರೆಡಿಯಾಗಿರೋ ಹೀರೋ. ಈ ಸಂದರ್ಭದಲ್ಲೇ ತನ್ನ ಹಿಂದಿನ ಜನ್ಮದ ಕೆಲವು ಘಟನೆಗಳು ಆತನಿಗೆ ನೆನಪಾಗಿ ಕಾಡೋದಕ್ಕೆ ಶುರುವಾಗ್ತವೆ. ತನ್ನ ಹತ್ತಿರದವರಿಂದಲೇ ಮೋಸಕ್ಕೊಳಗಾಗಿದ್ದ ಕಥಾನಾಯಕ, ಈ ಜನ್ಮದಲ್ಲಿ ಏನ್ ಮಾಡ್ತನೆ? ನೋಡಿ ಫೇಮಸ್ ಡ್ರಾಮಾ 'Travel Back in Time : 1991'.",
+          "link": "/meow/json/Travel Back in Time _ 1991-Kannada.json"
+        },
+        {
+          "id": "266784",
+          "title": "Truth or Dare",
+          "slug": "truth-or-dare-3",
+          "language": "kannada",
+          "genre": {
+            "id": 2,
+            "title": "डरावनी",
+            "slug": "horror",
+            "uri": "app://app/genres/horror",
+            "web_uri": "/genres/horror"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b986c939904d418d91a64e2ce57874b2.png",
+          "description": "Some young people who live an outgoing life say that a grand festival is going to take place and travel to a secluded hut in a forest. But their dreams of fun turn into nightmares because they come face to face with a man there. He begins a hunt to take revenge for his younger brother's death.",
+          "link": "/meow/json/Truth or Dare-Kannada.json"
+        },
+        {
+          "id": "267534",
+          "title": "Unforgivable ",
+          "slug": "unforgivable-3",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 70,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f35a1c9daabb4e45b0b4d36071b9decd.png",
+          "description": "Unforgivable ",
+          "link": "/meow/json/Unforgivable-Kannada.json"
+        },
+        {
+          "id": "267559",
+          "title": "Unriveled in Emperial Harrem ",
+          "slug": "unriveled-in-emperial-harrem",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 83,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1f4f72dcb45849359da23e3606b6f7a0.png",
+          "description": "Unriveled in Emperial Harrem \r\n",
+          "link": "/meow/json/Unriveled in Emperial Harrem-Kannada.json"
+        },
+        {
+          "id": "271250",
+          "title": "Unwed but Pregnant An Unexpected Husband",
+          "slug": "unwed-but-pregnant-an-unexpected-husband-4",
+          "language": "kannada",
+          "genre": {
+            "id": 79,
+            "title": "फैंटसी",
+            "slug": "fantasy",
+            "uri": "app://app/genres/fantasy",
+            "web_uri": "/genres/fantasy"
+          },
+          "n_episodes": 50,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5327d61bc01a406c9e38fc0f3807925e.png",
+          "description": "After getting pregnant with the empire’s heir, a young woman faces surprising challenges and growing affection from everyone. Suddenly, she's at the center of attention, caught between love and political intrigue.",
+          "link": "/meow/json/Unwed but Pregnant An Unexpected Husband-Kannada.json"
+        },
+        {
+          "id": "272337",
+          "title": "Urban King of Soldiers",
+          "slug": "urban-king-of-soldiers-3",
+          "language": "kannada",
+          "genre": {
+            "id": 79,
+            "title": "फैंटसी",
+            "slug": "fantasy",
+            "uri": "app://app/genres/fantasy",
+            "web_uri": "/genres/fantasy"
+          },
+          "n_episodes": 85,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a53845f54c2a4e11a971218dec15c270.png",
+          "description": "Urban king soldiers",
+          "link": "/meow/json/Urban King of Soldiers-Kannada.json"
+        },
+        {
+          "id": "272396",
+          "title": "Urban Top-Notch Divine Doctor",
+          "slug": "urban-top-notch-divine-doctor-1",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 100,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0ea57eb87ad74cbca5c3111b70360343.png",
+          "description": "Imagine a doctor who doesn’t just treat humans, but magical creatures too! This story is a thrilling blend of fantasy, romance, and comedy. The show takes you into a world where healing itself is a superpower. If you're looking for a combination of supernatural and medical drama, then this show is made for you!",
+          "link": "/meow/json/Urban Top-Notch Divine Doctor-Kannada.json"
+        },
+        {
+          "id": "267314",
+          "title": "Vamperifica",
+          "slug": "vamperifica-2",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 29,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/120ac8bf26044a4bac3dc1d59ad3aa58.png",
+          "description": "A clueless, flamboyant college kid discovers that the soul of a great vampire king resides within him. Now he must choose between his friends and his destiny.",
+          "link": "/meow/json/Vamperifica-Kannada.json"
+        },
+        {
+          "id": "268843",
+          "title": "Vicious Son-in-Law Don't Mess With Me",
+          "slug": "vicious-son-in-law-dont-mess-with-me-5",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c1a46304100a472988a0873acf80d91d.png",
+          "description": "After losing her daughter and son-in-law in a tragic twist, a grieving woman is betrayed once again—this time by the very family that caused her pain. As they scheme to steal her property, she rises with unshakable courage. In a battle for justice and dignity, she fights not just for what’s hers—but for her soul’s redemption.",
+          "link": "/meow/json/Vicious Son-in-Law Don't Mess With Me-Kannada.json"
+        },
+        {
+          "id": "271931",
+          "title": "Waiting for Love ❤️",
+          "slug": "waiting-for-love-2",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/af27143437c64267918f198bccecc42a.png",
+          "description": "Aditya Deshpandey  is a wealthy yet lonely businessman, and Roohi is a self-made woman who runs a food stall, battling the scars of broken relationships, a cruel daughter-in-law, and past humiliations. Their paths cross through Aditya’s daughter, Taanvi where a simple matchmaking attempt turns into a profound tale. Aditya hides his true identity, wanting to see if Roohi loves him or merely his wealth. But for Roohi, this relationship goes far beyond love — during this journey, she finds the daughter she lost five years ago.\r\n\r\n\r\n",
+          "link": "/meow/json/Waiting for Love-Kannada.json"
+        },
+        {
+          "id": "268823",
+          "title": "When the Sun Sets on Us",
+          "slug": "when-the-sun-sets-on-us-5",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 41,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e7ad466c46584dac922887670a353ca4.png",
+          "description": "When the Sun Sets on Us",
+          "link": "/meow/json/When the Sun Sets on Us-Kannada.json"
+        },
+        {
+          "id": "266788",
+          "title": "Where is Home",
+          "slug": "where-is-home-5",
+          "language": "kannada",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 70,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/43d7344a68bc46c9b81036cf929a8c43.png",
+          "description": "This story is about the lives of two women who were switched at birth. As a result of this switch, one woman lives a different life, away from her biological parents, while the other burns with thoughts of revenge. When the truth comes to light, their lives become entangled with love, revenge, and long-hidden secrets.",
+          "link": "/meow/json/Where is Home-Kannada.json"
+        },
+        {
+          "id": "271356",
+          "title": "Wild Young Master Son-in-Law",
+          "slug": "wild-young-master-son-in-law",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 100,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c9ee7aaebf594f8c9190fc9e21a3bd7c.png",
+          "description": " A young man with extraordinary martial arts skills who becomes a son-in-law by marrying into a powerful family. The show follows his adventures as he protects his family and rises to become a powerful figure in the martial arts world ",
+          "link": "/meow/json/Wild Young Master Son-in-Law-Kannada.json"
+        },
+        {
+          "id": "266990",
+          "title": "Witch Stars",
+          "slug": "witch-stars-1",
+          "language": "kannada",
+          "genre": {
+            "id": 2,
+            "title": "डरावनी",
+            "slug": "horror",
+            "uri": "app://app/genres/horror",
+            "web_uri": "/genres/horror"
+          },
+          "n_episodes": 29,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c026be0f4e8246779c3e69dc6ac88f1a.png",
+          "description": "On Halloween, with the help of some sexy girls, four friends must confront an alien invasion that will force them to face monsters of any kinds, including the ones from their past....",
+          "link": "/meow/json/Witch Stars-Kannada.json"
+        },
+        {
+          "id": "270266",
+          "title": "Wonder Boy Parth ",
+          "slug": "wonder-boy-parth-4",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 39,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e47f31b59e2946e3b3bd95b519d83f91.png",
+          "description": "In a tale of betrayal and redemption, a visually impaired man named Parth harnesses ancient mystical powers from his mother’s locket to seek justice against those who wronged him, uncovering priceless treasures and battling dark forces in a city ruled by greed and deception.",
+          "link": "/meow/json/Wonder Boy Parth-Kannada.json"
+        },
+        {
+          "id": "271274",
+          "title": "Yes Mr. CEO, We Have A Baby",
+          "slug": "yes-mr-ceo-we-have-a-baby-5",
+          "language": "kannada",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/95ba65413b994773935608fa3ee8420c.png",
+          "description": "Her life as a respected business scion ended abruptly with an accidental pregnancy, leading to her family's swift disownment and public disgrace. Vanished for six years, she was presumed broken, forgotten. But she returns, not as a victim, but as a silent force of nature. Forged by hardship, she now eyes the very step-sister who built an empire on her ruin. This is a high-stakes saga of betrayal, resilience, and a calculated quest for vengeance set to reshape the powerful world she once lost.",
+          "link": "/meow/json/Yes Mr. CEO, We Have A Baby-Kannada.json"
+        }
       ]
     }
   ]

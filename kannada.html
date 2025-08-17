@@ -342,7 +342,7 @@ body {
 .continue-thumbnail {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fit;
 }
 
 .remove-btn {
@@ -1356,7 +1356,7 @@ body {
         <a href="bengali.html" class="nav-item" data-lang="bengali">Bengali</a>
         <a href="hindi.html" class="nav-item" data-lang="hindi">Hindi</a>
         <a href="english.html" class="nav-item" data-lang="english">English</a>
-        <a href="tamilaudio.html" class="nav-item" data-lang="tamil_audio">Kukufm (Tamil)</a>
+        <a href="tamilaudio.html" class="nav-item" data-lang="tamilaudio">Kukufm (Tamil)</a>
       </nav>
       
       <!-- Search Container -->
@@ -1391,7 +1391,7 @@ body {
       <a href="bengali.html" class="mobile-nav-item" data-lang="bengali">Bengali</a>
       <a href="hindi.html" class="mobile-nav-item" data-lang="hindi">Hindi</a>
       <a href="english.html" class="mobile-nav-item" data-lang="english">English</a>
-      <a href="tamilaudio.html" class="mobile-nav-item" data-lang="tamil_audio">Kukufm (Tamil)</a>
+      <a href="tamilaudio.html" class="mobile-nav-item" data-lang="tamilaudio">Kukufm (Tamil)</a>
       <a href="https://t.me/panguplay_chat" target="_blank" class="mobile-nav-item telegram-link"><i class="fab fa-telegram-plane"></i>Join Us</a>
     </nav>
   </div>
@@ -1661,7 +1661,21 @@ clearSearch.addEventListener('click', () => {
   searchInput.value = '';
   clearSearch.classList.remove('visible');
   updateUrlSearch('');
-  handleSearch('');
+  //handleSearch('');
+  isSearchMode = false;
+  searchResultsHeader.style.display = 'none';
+  mainContent.style.display = 'block';
+
+	// Only show continue watching if it has content
+	const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
+		data.progress > 0 && data.progress < 0.95
+	);
+  
+	if (watchingShows.length > 0) {
+		continueSection.style.display = 'block';
+	} else {
+		continueSection.style.display = 'none';
+	}
 });
 
   // Player controls
@@ -1873,20 +1887,21 @@ async function loadMasterData() {
     const data = await response.json();
     masterData[currentLanguage] = data;
     
-    console.log(`Loaded master data for ${currentLanguage}:`, {
-      sections: data.sections?.length || 0,
-      totalShows: data.sections?.reduce((total, section) => total + (section.shows?.length || 0), 0) || 0
+    // Extract all shows from sections for faster access
+    allShows = [];
+    data.sections.forEach(section => {
+      section.shows.forEach(show => {
+        allShows.push({
+          show: show,
+          episodes: [] // Episodes will be loaded on-demand
+        });
+      });
     });
     
     return data;
-    
   } catch (error) {
     console.error(`Failed to load master data for ${currentLanguage}:`, error);
-    
-    // Fallback to empty structure
-    const fallbackData = { sections: [] };
-    masterData[currentLanguage] = fallbackData;
-    return fallbackData;
+    return { sections: [] };
   }
 }
 
@@ -1911,27 +1926,16 @@ function handleUrlParameters() {
 // Handle direct play functionality
 async function handleDirectPlay(playParam) {
   try {
-    // Show loading toast
     showToast('Loading show for direct play...');
     
-    // First, load all master data if not loaded
+    // Load master data if not loaded
     if (!masterData[currentLanguage] || Object.keys(masterData[currentLanguage]).length === 0) {
       await loadMasterData();
     }
     
-    // Load all sections to ensure we have all shows available
-    await loadAllSectionsForSearch();
-    
-    // Parse play parameter - it can be:
-    // 1. Show ID: ?play=268531
-    // 2. Show slug: ?play=7-assasins
-    // 3. Show ID with episode: ?play=268531:5 (episode 6, 0-indexed)
-    // 4. Show slug with episode: ?play=7-assasins:5
-    
     let showIdentifier = playParam;
     let episodeIndex = 0;
     
-    // Check if episode number is specified
     if (playParam.includes(':')) {
       const parts = playParam.split(':');
       showIdentifier = parts[0];
@@ -1939,35 +1943,52 @@ async function handleDirectPlay(playParam) {
     }
     
     // Find the show by ID or slug
-    const targetShow = findShowByIdentifier(showIdentifier);
+    const targetShowData = allShows.find(showData => {
+      const isNumericId = /^\d+$/.test(showIdentifier);
+      if (isNumericId) {
+        return showData.show.id.toString() === showIdentifier;
+      } else {
+        return showData.show.slug === showIdentifier || 
+               showData.show.title.toLowerCase().replace(/[^a-z0-9]/g, '-') === showIdentifier;
+      }
+    });
     
-    if (!targetShow) {
+    if (!targetShowData) {
       showToast(`Show not found: ${showIdentifier}`);
-      console.error('Direct play: Show not found:', showIdentifier);
+      return;
+    }
+    
+    // Load episodes from JSON file
+    if (!targetShowData.episodes || targetShowData.episodes.length === 0) {
+      const response = await fetch(targetShowData.show.link);
+      if (!response.ok) throw new Error('Failed to load episodes');
+      
+      const fullShowData = await response.json();
+      targetShowData.episodes = fullShowData.episodes || [];
+    }
+    
+    if (targetShowData.episodes.length === 0) {
+      showToast('No episodes available');
       return;
     }
     
     // Validate episode index
-    if (episodeIndex >= targetShow.episodes.length) {
+    if (episodeIndex >= targetShowData.episodes.length) {
       console.warn(`Episode ${episodeIndex} not found, starting from episode 0`);
       episodeIndex = 0;
     }
     
     // Set up the player
-    currentShow = targetShow;
-    currentEpisodes = targetShow.episodes;
+    currentShow = targetShowData;
+    currentEpisodes = targetShowData.episodes;
     
     setupPlayer();
-    
-    // Load the specified episode
     loadEpisode(episodeIndex);
-    
-    // Show the player
     showPlayer();
     
-    showToast(`Playing: ${targetShow.show.title} - Episode ${episodeIndex + 1}`);
+    showToast(`Playing: ${targetShowData.show.title} - Episode ${episodeIndex + 1}`);
     
-    // Clean up URL parameter after successful play
+    // Clean up URL parameter
     const cleanUrl = new URL(window.location);
     cleanUrl.searchParams.delete('play');
     window.history.replaceState({}, '', cleanUrl);
@@ -1980,20 +2001,17 @@ async function handleDirectPlay(playParam) {
 
 // Find show by ID or slug
 function findShowByIdentifier(identifier) {
-  // Check if identifier is numeric (ID)
   const isNumericId = /^\d+$/.test(identifier);
   
-  for (const show of allShows) {
+  for (const showData of allShows) {
     if (isNumericId) {
-      // Search by ID
-      if (show.show.id.toString() === identifier) {
-        return show;
+      if (showData.show.id.toString() === identifier) {
+        return showData;
       }
     } else {
-      // Search by slug
-      if (show.show.slug === identifier || 
-          show.show.title.toLowerCase().replace(/[^a-z0-9]/g, '-') === identifier) {
-        return show;
+      if (showData.show.slug === identifier || 
+          showData.show.title.toLowerCase().replace(/[^a-z0-9]/g, '-') === identifier) {
+        return showData;
       }
     }
   }
@@ -2004,40 +2022,28 @@ function findShowByIdentifier(identifier) {
 // Enhanced show loading with direct play support
 async function loadShows() {
   try {
-    // First load the master data
+    // Load master data (contains all show metadata)
     const masterDataForLanguage = await loadMasterData();
     sectionsData = masterDataForLanguage?.sections || [];
     
     if (sectionsData.length === 0) {
-      console.warn(`No sections found for ${currentLanguage}`);
       hideLoading();
       emptyState.classList.remove('hidden');
       return;
     }
     
-    // Initialize allShows array to track loaded content
-    allShows = [];
+    // Render all sections immediately (no lazy loading needed)
+    renderSections();
     
-    // Render sections with skeleton loaders first
-    renderSectionsWithSkeletons();
-    
-    // Load first 2 sections immediately for instant visibility
-    await loadInitialSections();
-    
-    // Hide loading state
     hideLoading();
-    
-    // Render continue watching
     renderContinueWatching();
-    
-    // Handle URL parameters after initial load
     handleUrlParameters();
     
-    // If there's a search query, load all sections for search
+    // Handle search if URL has search parameter
     const urlParams = new URLSearchParams(window.location.search);
     const searchQuery = urlParams.get('s');
     if (searchQuery) {
-      await handleSearch(searchQuery);
+      handleSearch(searchQuery);
     }
     
   } catch (error) {
@@ -2166,50 +2172,61 @@ function hideLoading() {
   loadingState.style.display = 'none';
 }
 
-// Render sections with skeleton loaders initially
-function renderSectionsWithSkeletons() {
-  if (isSearchMode) return;
-  
-  sectionsContainer.innerHTML = sectionsData.map((section, sectionIndex) => {
+// Render sections
+function renderSections() {
+  sectionsContainer.innerHTML = '';
+  sectionsData.forEach((section, sectionIndex) => {
     const sectionIcon = getSectionIcon(section.title);
+    const showNumbers = shouldShowNumbers(section.title);
+    const useSolidNumbers = shouldUseSolidNumbers(section.title);
     
-    return `
-      <div class="section ${isTopTierSection(section.title) ? 'top-tier' : ''}" id="section-${sectionIndex}" data-section-index="${sectionIndex}">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-icon">${sectionIcon}</span>
-            ${section.title}
-          </h2>
-          <button class="view-all-btn" onclick="toggleSectionView(${sectionIndex})">
-            <span class="view-all-text">View All</span>
-            <span class="view-all-icon">→</span>
-          </button>
-        </div>
-        
-        <!-- Horizontal Scroll View (Default) -->
-        <div class="shows-wrapper" id="shows-wrapper-${sectionIndex}">
-          <div class="shows-scroll">
-            ${createSkeletonCards()}
-          </div>
-        </div>
-        
-        <!-- Grid View (Hidden by default) -->
-        <div class="section-grid" id="section-grid-${sectionIndex}">
-          ${createSkeletonCards()}
+    const showCardsHTML = section.shows.slice(0, 20).map((show, index) => `
+      <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
+           ${showNumbers ? `data-rank="${index + 1}"` : ''} 
+           onclick="openShow('${show.id}')">
+        <img 
+          src="${show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
+          alt="${show.title}"
+          class="show-image"
+          loading="lazy"
+          onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
+        >
+        <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.id}')" title="Share">
+          🔤
+        </button>
+        <div class="show-info">
+          <div class="show-title" title="${show.title}">${show.title}</div>
+          <div class="show-episodes">${show.n_episodes || 0} episodes</div>
         </div>
       </div>
-    `;
-  }).join('');
-  
-  // Setup intersection observer for lazy loading
-  if (lazyLoadObserver) {
-    document.querySelectorAll('[data-section-index]').forEach(element => {
-      const sectionIndex = parseInt(element.dataset.sectionIndex);
-      if (sectionIndex >= 2) { // Skip first 2 sections (already loading)
-        lazyLoadObserver.observe(element);
-      }
-    });
-  }
+    `).join('');
+    
+    // Render section with actual data immediately
+    sectionsContainer.innerHTML += `
+  <div class="section ${isTopTierSection(section.title) ? 'top-tier' : ''}" id="section-${sectionIndex}">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="section-icon">${sectionIcon}</span>
+        ${section.title}
+      </h2>
+      <button class="view-all-btn" onclick="toggleSectionView(${sectionIndex})">
+        <span class="view-all-text">View All</span>
+        <span class="view-all-icon">→</span>
+      </button>
+    </div>
+    
+    <div class="shows-wrapper" id="shows-wrapper-${sectionIndex}">
+      <div class="shows-scroll">
+        ${showCardsHTML}
+      </div>
+    </div>
+    
+    <div class="section-grid" id="section-grid-${sectionIndex}">
+      ${showCardsHTML}
+    </div>
+  </div>
+`;
+  });
 }
 
 // Create skeleton loading cards
@@ -2274,7 +2291,7 @@ function renderSingleSection(sectionIndex, sectionShows) {
 }
 
 // Handle search
-function handleSearch(query) {
+async function handleSearch(query) {
   // Exit view all mode when searching
   if (currentViewAllSection !== null) {
     exitViewAllMode();
@@ -2284,44 +2301,46 @@ function handleSearch(query) {
     isSearchMode = false;
     searchResultsHeader.style.display = 'none';
     mainContent.style.display = 'block';
+
+	// Only show continue watching if it has content
+	const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
+		data.progress > 0 && data.progress < 0.95
+	);
+  
+	if (watchingShows.length > 0) {
+		continueSection.style.display = 'block';
+	} else {
+		continueSection.style.display = 'none';
+	}
     return;
   }
 
   isSearchMode = true;
+  
+  // If allShows is empty (other pages), load master data first
+  if (allShows.length === 0) {
+    try {
+      const masterDataForLanguage = await loadMasterData();
+      // allShows is populated in loadMasterData now
+    } catch (error) {
+      showToast('Search failed to load data');
+      return;
+    }
+  }
+  
   const searchTerm = query.toLowerCase();
   
-  // Search in already loaded shows first
-  let filteredShows = allShows.filter(show => 
-    show.show?.title?.toLowerCase().includes(searchTerm) ||
-    show.show?.description?.toLowerCase().includes(searchTerm)
+  const filteredShows = allShows.filter(showData => 
+    showData.show.title.toLowerCase().includes(searchTerm) ||
+    showData.show.description?.toLowerCase().includes(searchTerm) ||
+    showData.show.genre?.title?.toLowerCase().includes(searchTerm)
   );
 
-  // Remove duplicates
   const uniqueShows = filteredShows.filter((show, index, self) => 
-    index === self.findIndex(s => s.show?.id === show.show?.id)
+    index === self.findIndex(s => s.show.id === show.show.id)
   );
   
-  // Sort results
-  uniqueShows.sort((a, b) => {
-    const titleA = (a.show?.title || '').toLowerCase();
-    const titleB = (b.show?.title || '').toLowerCase();
-    return titleA.localeCompare(titleB);
-  });
-
-  // If no results found and not all sections loaded, load all and search again
-  if (uniqueShows.length === 0 && loadedSections.size < sectionsData.length) {
-    searchResultsTitle.textContent = `Searching for "${query}"...`;
-    searchResultsCount.textContent = 'Searching all content...';
-    searchResultsGrid.innerHTML = '<div class="loading"><div class="spinner"></div><div class="loading-text">Loading more content...</div></div>';
-    searchResultsHeader.style.display = 'block';
-    mainContent.style.display = 'none';
-    
-    // Load all sections and search again
-    loadAllSectionsForSearch().then(() => {
-      handleSearch(query); // Recursive call after loading
-    });
-    return;
-  }
+  uniqueShows.sort((a, b) => a.show.title.localeCompare(b.show.title));
 
   renderSearchResults(query, uniqueShows);
 }
@@ -2339,30 +2358,21 @@ function renderSearchResults(query, shows) {
       </div>
     `;
   } else {
-    // Check if we should show numbers for search results
-    const showNumbers = query.toLowerCase().includes('top') || 
-                       query.toLowerCase().includes('trending') ||
-                       query.toLowerCase().includes('popular');
-    const displayShows = showNumbers ? shows.slice(0, 10) : shows;
-    
-    searchResultsGrid.innerHTML = displayShows.map((show, index) => `
-      <div class="show-card ${showNumbers ? 'numbered' : ''}" 
-           ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-           onclick="openShow('${show.show.id}')">
+    searchResultsGrid.innerHTML = shows.map((showData, index) => `
+      <div class="show-card" onclick="openShow('${showData.show.id}')">
         <img 
-          src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
-          alt="${show.show.title}"
+          src="${showData.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
+          alt="${showData.show.title}"
           class="show-image"
           loading="lazy"
           onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
         >
-        <!-- Share Button -->
-        <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.show.id}')" title="Share">
-          📤
+        <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${showData.show.id}')" title="Share">
+          🔤
         </button>
         <div class="show-info">
-          <div class="show-title" title="${show.show.title}">${show.show.title}</div>
-          <div class="show-episodes">${show.episodes?.length || 0} episodes</div>
+          <div class="show-title" title="${showData.show.title}">${showData.show.title}</div>
+          <div class="show-episodes">${showData.show.n_episodes || 0} episodes</div>
         </div>
       </div>
     `).join('');
@@ -2370,6 +2380,7 @@ function renderSearchResults(query, shows) {
   
   searchResultsHeader.style.display = 'block';
   mainContent.style.display = 'none';
+  continueSection.style.display = 'none'; // Hide continue watching
 }
 
 // Check if a section should have numbered cards
@@ -2456,24 +2467,13 @@ function toggleSectionView(sectionIndex) {
   const section = document.getElementById(`section-${sectionIndex}`);
   const horizontalWrapper = document.getElementById(`shows-wrapper-${sectionIndex}`);
   const gridWrapper = document.getElementById(`section-grid-${sectionIndex}`);
-  const viewAllBtn = section.querySelector('.view-all-btn');
-  const viewAllText = viewAllBtn.querySelector('.view-all-text');
-  const viewAllIcon = viewAllBtn.querySelector('.view-all-icon');
   
   const isGridView = gridWrapper.classList.contains('active');
   
   if (isGridView) {
-    // Exit view all mode
     exitViewAllMode();
   } else {
-    // Load section data if not already loaded
-    if (!loadedSections.has(sectionIndex)) {
-      loadSectionData(sectionIndex).then(() => {
-        enterViewAllMode(sectionIndex);
-      });
-    } else {
-      enterViewAllMode(sectionIndex);
-    }
+    enterViewAllMode(sectionIndex);
   }
 }
 
@@ -2612,35 +2612,70 @@ function renderContinueWatching() {
 }
 
 // Open show
-function openShow(showId) {
-  const show = allShows.find(s => s.show.id.toString() === showId);
-  if (!show || !show.episodes || show.episodes.length === 0) {
-    showToast('No episodes available for this show');
+async function openShow(showId) {
+  const showData = allShows.find(s => s.show.id.toString() === showId);
+  if (!showData) {
+    showToast('Show not found');
     return;
   }
 
-  currentShow = show;
-  currentEpisodes = show.episodes;
+  showToast('Loading episodes...');
   
-  // Load from continue watching or start from beginning
-  const watchData = watchHistory[showId];
-  const startEpisode = watchData?.episode || 0;
-  
-  setupPlayer();
-  loadEpisode(startEpisode);
-  showPlayer();
+  try {
+    // Load episodes only when needed
+    if (!showData.episodes || showData.episodes.length === 0) {
+      const response = await fetch(showData.show.link);
+      if (!response.ok) throw new Error('Failed to load episodes');
+      
+      const fullShowData = await response.json();
+      showData.episodes = fullShowData.episodes || [];
+    }
+
+    if (showData.episodes.length === 0) {
+      showToast('No episodes available');
+      return;
+    }
+
+    currentShow = showData;
+    currentEpisodes = showData.episodes;
+    
+    const watchData = watchHistory[showId];
+    const startEpisode = watchData?.episode || 0;
+    
+    setupPlayer();
+    loadEpisode(startEpisode);
+    showPlayer();
+    
+  } catch (error) {
+    console.error('Failed to load show:', error);
+    showToast('Failed to load episodes');
+  }
 }
 
 // Continue watching
-function continueWatching(showId) {
+async function continueWatching(showId) {
   const watchData = watchHistory[showId];
   if (!watchData) return;
 
-  const show = allShows.find(s => s.show.id.toString() === showId);
-  if (!show) return;
+  const showData = allShows.find(s => s.show.id.toString() === showId);
+  if (!showData) return;
 
-  currentShow = show;
-  currentEpisodes = show.episodes;
+  // Load episodes if not loaded
+  if (!showData.episodes || showData.episodes.length === 0) {
+    try {
+      const response = await fetch(showData.show.link);
+      if (!response.ok) throw new Error('Failed to load episodes');
+      
+      const fullShowData = await response.json();
+      showData.episodes = fullShowData.episodes || [];
+    } catch (error) {
+      showToast('Failed to load episodes');
+      return;
+    }
+  }
+
+  currentShow = showData;
+  currentEpisodes = showData.episodes;
   
   setupPlayer();
   loadEpisode(watchData.episode, null, false, watchData.currentTime);
@@ -2852,6 +2887,27 @@ function closePlayer() {
   
   renderContinueWatching();
   
+  // Exit search mode and return to normal view
+  if (isSearchMode) {
+    searchInput.value = '';
+    clearSearch.classList.remove('visible');
+    updateUrlSearch('');
+    isSearchMode = false;
+    searchResultsHeader.style.display = 'none';
+    mainContent.style.display = 'block';
+
+	// Only show continue watching if it has content
+	const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
+		data.progress > 0 && data.progress < 0.95
+	);
+  
+	if (watchingShows.length > 0) {
+		continueSection.style.display = 'block';
+	} else {
+		continueSection.style.display = 'none';
+	}
+  }
+  
   if (history.state?.player) {
     history.back();
   }
@@ -2992,5 +3048,6 @@ function initializeShareButtons() {
   console.log('Share buttons initialized - CSS already in main stylesheet');
 }
 </script>
+  
 </body>
 </html>

@@ -3,195 +3,3121 @@
     {
       "title": "Uncategory1",
       "shows": [
-        "/meow/json/A Heartbeat Away-Malayalam.json",
-        "/meow/json/After Being Dumped, I Married a Rich Heir in a Flash-Malayalam.json",
-        "/meow/json/After Divorce , the ex-wife of the big shot  stirs up the world-Malayalam.json",
-        "/meow/json/After Divorce, the Ex-wife of the Big Shot Stirs up the World-Malayalam.json",
-        "/meow/json/After dumping that scumbag, my three elder brothers spoil me like crazy-Malayalam.json",
-        "/meow/json/Alpha's Perfect Love-Malayalam.json",
-        "/meow/json/Alpha, She Wasn't the One-Malayalam.json",
-        "/meow/json/BETREYED HEIRESS; VENGEANCE REBORN-Malayalam.json",
-        "/meow/json/Billionaire Daddy, the Hunt is On-Malayalam.json",
-        "/meow/json/Billionaire Playboy's Replacement Bride-Malayalam.json",
-        "/meow/json/Blossoms 2003-Malayalam.json",
-        "/meow/json/Boss And the Sweet Wife-Malayalam.json",
-        "/meow/json/Celestial Master’s Dragon-Malayalam.json",
-        "/meow/json/Cloaked in Power_ His Secret Identity-Malayalam.json",
-        "/meow/json/Clouds by the Sea-Malayalam.json",
-        "/meow/json/Come Home, Our Heart-Malayalam.json",
-        "/meow/json/Contract Pregnant wife-Malayalam.json",
-        "/meow/json/CUBICLE CUPIDS TEST-Malayalam.json",
-        "/meow/json/Cute Baby Assists _ I Help my Mom Marry the President Tycoon-Malayalam.json",
-        "/meow/json/Defying Destiny-Malayalam.json"
+        {
+          "id": "270717",
+          "title": "A Heartbeat Away",
+          "slug": "a-heartbeat-away-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 63,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6c8a1b98f6354f36a2d773b7311721ec.png",
+          "description": "Katie dumped Sean years ago, judging him for his lack of money. But now, Sean is a young CEO, standing in front of her. He’s ready to make her regret her decision, but as he looks at her, he starts to realize something—she’s always loved him, even back then.",
+          "link": "/meow/json/A Heartbeat Away-Malayalam.json"
+        },
+        {
+          "id": "270362",
+          "title": "After Being Dumped, I Married a Rich Heir in a Flash ",
+          "slug": "after-being-dumped-i-married-a-rich-heir-in-a-flash",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 96,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a4e241ae3a044782a72339772538ba5d.png",
+          "description": "After Being Dumped by her unloving partner. She seeks a divorce and marries a rich heir in a flash, a shocking twist unfolds, leading to unexpected revelations and a new beginning filled with intrigue and drama.",
+          "link": "/meow/json/After Being Dumped, I Married a Rich Heir in a Flash-Malayalam.json"
+        },
+        {
+          "id": "270171",
+          "title": "After Divorce, the Ex-wife of the Big Shot Stirs up the World",
+          "slug": "after-divorce-the-ex-wife-of-the-big-shot-stirs-up-the-world",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a0b35c4a184c46c6891e89e40289a289.png",
+          "description": "After Mike divorced her following his grandfather's death, Emma revealed her true identity — she was, in fact, a millionaire and the head of Smith's Group.",
+          "link": "/meow/json/After Divorce , the ex-wife of the big shot  stirs up the world-Malayalam.json"
+        },
+        {
+          "id": "270171",
+          "title": "After Divorce, the Ex-wife of the Big Shot Stirs up the World",
+          "slug": "after-divorce-the-ex-wife-of-the-big-shot-stirs-up-the-world",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a0b35c4a184c46c6891e89e40289a289.png",
+          "description": "After Mike divorced her following his grandfather's death, Emma revealed her true identity — she was, in fact, a millionaire and the head of Smith's Group.",
+          "link": "/meow/json/After Divorce, the Ex-wife of the Big Shot Stirs up the World-Malayalam.json"
+        },
+        {
+          "id": "270510",
+          "title": "After dumping that scumbag, my three elder brothers spoil me like crazy",
+          "slug": "after-dumping-that-scumbag-my-three-elder-brothers-spoil-me-like-crazy",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/613ef498516c4b3dab069acaf6b6a2d3.png",
+          "description": "After walking away from a toxic relationship, she swore she'd never depend on anyone again. But her three over-the-top elder brothers step in, showering her with outrageous love and protection.\r\nBetween chaos, comfort, and sibling drama, healing has never been this entertaining.\r\n\r\n",
+          "link": "/meow/json/After dumping that scumbag, my three elder brothers spoil me like crazy-Malayalam.json"
+        },
+        {
+          "id": "268827",
+          "title": "Alpha's Perfect Love ",
+          "slug": "alphas-perfect-love-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f8774be6b10f478ba810965685d85b66.png",
+          "description": "A passionate romance between Leo, the powerful alpha of a werewolf pack, and Dora, a mysterious hybrid unaware of her true identity. Drawn to each other by an unexplainable pull, they marry in secret, defying his family and igniting Rachel’s deadly jealousy. As sparks fly and secrets unravel, forgotten memories resurface — revealing a forbidden night of love that was stolen from them. Now, desire, danger, and destiny collide in a battle for their love.",
+          "link": "/meow/json/Alpha's Perfect Love-Malayalam.json"
+        },
+        {
+          "id": "271626",
+          "title": "Alpha, She Wasn't the One",
+          "slug": "alpha-she-wasnt-the-one-5",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 70,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/870853ce738e4c1c9e5431585f3191b4.png",
+          "description": "Annie, an ordinary girl, crosses paths with Leon, a werewolf leader, bound by a prophecy from the Moon Goddess. Mistaking her sister for his fated mate, Leon falls for Annie as boss and subordinate. When Annie’s memories and powers awaken, their love is tested by secrets, fate, and the truth of her true identity.",
+          "link": "/meow/json/Alpha, She Wasn't the One-Malayalam.json"
+        },
+        {
+          "id": "270227",
+          "title": "BETREYED HEIRESS; VENGEANCE REBORN",
+          "slug": "betreyed-heiress-vengeance-reborn",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 69,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a0224733c0624c0ba0e39a698134e60f.png",
+          "description": "Josline was raised in warmth by stepparents who loved her as their own. Her life shatters when she learns her real parents—powerful and ruthless elites—want her back. Trapped in a world of secrets and cruelty, Josline dies… only to return with one goal: uncover the truth and rewrite her fate.",
+          "link": "/meow/json/BETREYED HEIRESS; VENGEANCE REBORN-Malayalam.json"
+        },
+        {
+          "id": "270677",
+          "title": "Billionaire Daddy, the Hunt is On!",
+          "slug": "billionaire-daddy-the-hunt-is-on-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 59,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/dbbe837ffaf2400f912650c7ecf44be9.png",
+          "description": "Miranda, a dedicated single mother, works hard to support her son, but constantly clashes with her cold, distant boss, Lemon. Little does she know, he’s actually the boy’s biological father—and beneath his tough exterior, he’s hiding a warm heart.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Billionaire Daddy, the Hunt is On-Malayalam.json"
+        },
+        {
+          "id": "272431",
+          "title": "Billionaire Playboy's Replacement Bride",
+          "slug": "billionaire-playboys-replacement-bride-6",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 70,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/bd7a32ddf2a0456aaca91da0047ee214.png",
+          "description": "A fake wedding, a fiery attraction, and a woman the world misjudged. What starts as a contract between Alicia and Lucius soon ignites into something undeniable. “Billionaire Playboy’s Replacement Bride” delivers heat, heartbreak, and a love that defies the rules.\r\n\r\n",
+          "link": "/meow/json/Billionaire Playboy's Replacement Bride-Malayalam.json"
+        },
+        {
+          "id": "271797",
+          "title": "Blossoms 2003",
+          "slug": "blossoms-2003-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f2f0cb315d6d43c58c496cb3d378d1c7.png",
+          "description": "A young girl struggles with the guilt of her father's mistakes that caused her mother's death, caught between love, cruelty, and responsibilities. The tragic events and forced circumstances in her life ultimately lead her to a profound emotional turning point.",
+          "link": "/meow/json/Blossoms 2003-Malayalam.json"
+        },
+        {
+          "id": "270350",
+          "title": "Boss and the Sweet Wife",
+          "slug": "boss-and-the-sweet-wife-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 81,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/476b2fab06e045c896d351bf7b0b0b14.png",
+          "description": "Eve, a humble cleaner with only a high school education, accidentally spends a night with the enigmatic CEO, Mr. Noa. Mistaken identity leads Noa to believe his partner was the glamorous Layla —until fate intervenes with an arranged marriage. To his shock, his bride is none other than Eve, and amidst secrets and misunderstandings, an unexpected love begins to bloom.",
+          "link": "/meow/json/Boss And the Sweet Wife-Malayalam.json"
+        },
+        {
+          "id": "272598",
+          "title": "Celestial Master’s Dragon",
+          "slug": "celestial-masters-dragon-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 91,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/92ef9c47803b4901901b43c3b2a54d10.png",
+          "description": "A young man with the sixth sense to perceive paranormal activity enters a long-abandoned hospital with his girlfriend and a nurse — only to awaken an unspeakable horror that blurs the lines between life, death, and insanity.",
+          "link": "/meow/json/Celestial Master’s Dragon-Malayalam.json"
+        },
+        {
+          "id": "270384",
+          "title": "Cloaked in Power: His Secret Identity",
+          "slug": "cloaked-in-power-his-secret-identity",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 100,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/bfec05e9516248be86e3aabb5e4d4479.png",
+          "description": "He is no ordinary man; he has a mysterious past where he had superpower. But in the daily life he wishes to live an ordinary life as a driver. He accidentally meets a beautiful woman, a CEO, and that eventually leads to a one nightstand, leading towards thrilling twists and turns.",
+          "link": "/meow/json/Cloaked in Power_ His Secret Identity-Malayalam.json"
+        },
+        {
+          "id": "272146",
+          "title": "Clouds by the Sea",
+          "slug": "clouds-by-the-sea-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 101,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a2a8ecb4f4564afab472b4317df6a6c7.png",
+          "description": "A brave and intelligent woman, navigates a labyrinth of love, fate, and human nature, deeply intertwined with her unfulfilled bond with James. Amidst trials and destiny’s cruel twists, she faces not only the challenges of love but also explores deep friendships and familial devotion. This tale reflects on life’s impermanence and the resilience of the human spirit.",
+          "link": "/meow/json/Clouds by the Sea-Malayalam.json"
+        },
+        {
+          "id": "269431",
+          "title": "Come Home, Our Heart",
+          "slug": "come-home-our-heart",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 85,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f83901f41d6c469fbe7c8acc0985d9d5.png",
+          "description": "Banished by his master, he must gather seven children in three years to save his lineage.  But to fulfill his destiny, he must also confront the ruthless betrayal within his own family.",
+          "link": "/meow/json/Come Home, Our Heart-Malayalam.json"
+        },
+        {
+          "id": "271842",
+          "title": "Contract Pregnant Wife",
+          "slug": "contract-pregnant-wife-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/eebdff24b4804fe8ab7cc4516d03ff07.png",
+          "description": "After a one-night stand with a billionaire who insists he’s infertile, a young woman finds herself pregnant with twins. As hidden truths surface and powerful enemies emerge, love and betrayal ignite a battle of destiny and desire.\r\n\r\n",
+          "link": "/meow/json/Contract Pregnant wife-Malayalam.json"
+        },
+        {
+          "id": "269455",
+          "title": "CUBICLE CUPIDS TEST",
+          "slug": "cubicle-cupids-test",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 87,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0113f28b50a54e67aaa916259ef0c773.png",
+          "description": "To save her ailing grandmother, she made an unthinkable sacrifice — selling herself for three hundred thousand Yuan. Bound by a contract, she married a complete stranger. But what began as an act of desperation soon spiraled into a whirlwind of unexpected trials that would change her destiny forever.",
+          "link": "/meow/json/CUBICLE CUPIDS TEST-Malayalam.json"
+        },
+        {
+          "id": "272040",
+          "title": "Cute Baby Assists : I Help my Mom Marry the President Tycoon",
+          "slug": "cute-baby-assists-i-help-my-mom-marry-the-president-tycoon-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 72,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/02bd7213232b422a93e1c846a250cf9b.png",
+          "description": "When a charming and clever baby takes matters into his tiny hands, he becomes the ultimate cupid, orchestrating his single mom’s romance with a powerful billionaire president tycoon. With heartwarming antics and witty schemes, this adorable little matchmaker brings love, laughter, and unexpected twists to the world of high society. Will his master plan succeed in uniting two worlds—and two hearts—against all odds?",
+          "link": "/meow/json/Cute Baby Assists _ I Help my Mom Marry the President Tycoon-Malayalam.json"
+        },
+        {
+          "id": "271675",
+          "title": "Defying Destiny",
+          "slug": "defying-destiny-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 40,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/bb540a5cc8b7480d88e39ec0e2cf20a5.png",
+          "description": "An ambitious disciple accidentally unlocks the path to immortality, challenging centuries of sacred traditions. As his powers grow, so do the forces determined to silence him forever.\r\n",
+          "link": "/meow/json/Defying Destiny-Malayalam.json"
+        }
       ]
     },
     {
       "title": "Uncategory2",
       "shows": [
-        "/meow/json/Destined to Meet You-Malayalam.json",
-        "/meow/json/Detective of the Republic_ Chasing the Killer-Malayalam.json",
-        "/meow/json/Divine Doctor, Son-In-Law-Malayalam.json",
-        "/meow/json/Divorce A Billionaire To Marry Him-Malayalam.json",
-        "/meow/json/Divorced Billionaire Heiress-Malayalam.json",
-        "/meow/json/Divorced Single Mother-Malayalam.json",
-        "/meow/json/Don't mess With blind heiress-Malayalam.json",
-        "/meow/json/Don't Mess With Super DAD-Malayalam.json",
-        "/meow/json/Don't touch my Daughter-Malayalam.json",
-        "/meow/json/Double Life CEO_ Chasing Love-Malayalam.json",
-        "/meow/json/Dracula's Kiss_ Spellbound by a Doppelganger-Malayalam.json",
-        "/meow/json/DUMPING MR.BILLIONAIRE-Malayalam.json",
-        "/meow/json/Ek Anjani Shaadi-Malayalam.json",
-        "/meow/json/Ek Thi Villain-Malayalam.json",
-        "/meow/json/Eternal Life for Three Millennia-Malayalam.json",
-        "/meow/json/Eye without a face-Malayalam.json",
-        "/meow/json/Fake boyfriend-Malayalam.json",
-        "/meow/json/Fall Into Sweet Trap-Malayalam.json",
-        "/meow/json/Fallen Angel-Malayalam.json",
-        "/meow/json/Farewell to old Love-Malayalam.json"
+        {
+          "id": "270056",
+          "title": "Destined to Meet You",
+          "slug": "destined-to-meet-you-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 78,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7b842114de244c4299631782f1126b5d.png",
+          "description": "She was betrayed by her sister and left with twins after a night with a stranger. Her sister, jealous of the wealthy father, secretly took one child. Years later, the truth comes out—and everything changes.",
+          "link": "/meow/json/Destined to Meet You-Malayalam.json"
+        },
+        {
+          "id": "272496",
+          "title": "Detective of the Republic: Chasing the Killer",
+          "slug": "detective-of-the-republic-chasing-the-killer-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 88,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d35a38a3f8124837ada8fe0e29fa6173.png",
+          "description": "A struggling young man is suddenly transported into his favorite crime novel — and reborn as its legendary detective. When a dancer is murdered at the Phoenix Dance Hall, a chilling link to an unsolved case from six years ago emerges. Now, armed with fiction’s brilliance and real stakes, he must crack the mystery before the past strikes again.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Detective of the Republic_ Chasing the Killer-Malayalam.json"
+        },
+        {
+          "id": "272730",
+          "title": "Divine Doctor, Son-In-Law",
+          "slug": "divine-doctor-son-in-law-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b09de9ba7fff4e3c80c9e17ab4da2065.png",
+          "description": "Divine Doctor, Son-In-Law",
+          "link": "/meow/json/Divine Doctor, Son-In-Law-Malayalam.json"
+        },
+        {
+          "id": "272626",
+          "title": "Divorce A Billionaire To Marry Him",
+          "slug": "divorce-a-billionaire-to-marry-him-5",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 73,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/573eb7a47c2f4eeba1c61cdc4dba93bc.png",
+          "description": "Bound by a forgotten contract, they were strangers... yet legally husband and wife. When fate brings Lydia back into Alex’s life as his assistant, sparks fly—without either knowing the truth.\r\nThe show is a slow-burn romance where hidden ties test newfound love in the most ironic way.",
+          "link": "/meow/json/Divorce A Billionaire To Marry Him-Malayalam.json"
+        },
+        {
+          "id": "268800",
+          "title": "Divorced Billionaire Heiress",
+          "slug": "divorced-billionaire-heiress-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 75,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e602001f983f46fa9da5627e682468be.png",
+          "description": "On our third wedding anniversary, my husband humiliated me and threw me away for his mistress. They thought I was powerless—but they didn’t know I’m the daughter of the richest man in the country. His entire fortune came from me. That same day, fate led me to a powerful billionaire who changed everything. Now, I have wealth, influence, and a new identity. Let the tables turn.",
+          "link": "/meow/json/Divorced Billionaire Heiress-Malayalam.json"
+        },
+        {
+          "id": "272045",
+          "title": "Divorced Single Mother",
+          "slug": "divorced-single-mother-5",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/2c3d174fa53a4cbdb881b0a26e24dace.png",
+          "description": "A single mother raises three brilliant sons — now leaders in their fields. But when she returns to her childhood home, she's met not with love, but with humiliation and neglect.\r\nAmidst pain and prejudice, she sets out to rediscover herself — not just as a mother, but as a woman.",
+          "link": "/meow/json/Divorced Single Mother-Malayalam.json"
+        },
+        {
+          "id": "271721",
+          "title": "Don't mess With blind heiress",
+          "slug": "dont-mess-with-blind-heiress",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 75,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5c570937f7ec48e18bd7c8aff9458b2a.png",
+          "description": "When the president of Stewart Group mysteriously dies at home, his daughter Florence is left blind and determined to uncover the truth. Suspecting her father's protector, Walt, of being the culprit, she embarks on an investigation that unravels hidden secrets—and leads her to unexpected love.",
+          "link": "/meow/json/Don't mess With blind heiress-Malayalam.json"
+        },
+        {
+          "id": "269437",
+          "title": "DONT MESS WITH SUPER DAD",
+          "slug": "dont-mess-with-super-dad-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 91,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b624fb36803f4c6492759f735939e711.png",
+          "description": "Chu Tao, a former Dragon General turned single father and security guard, navigates secrets of the past while entering a contractual marriage with Lin Wan'er, an ambitious leader seeking vengeance.",
+          "link": "/meow/json/Don't Mess With Super DAD-Malayalam.json"
+        },
+        {
+          "id": "269550",
+          "title": "Don't Touch My Daughter",
+          "slug": "dont-touch-my-daughter-5",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 70,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/57e0e1f0db854b5fb851247ebe65ae0f.png",
+          "description": "Rhea Chow, Daxia's female marshal, stabilizes the economy and promotes major families, but tragedy strikes when her daughter's violation leads to suicide.",
+          "link": "/meow/json/Don't touch my Daughter-Malayalam.json"
+        },
+        {
+          "id": "270423",
+          "title": "Double Life CEO: Chasing Love",
+          "slug": "double-life-ceo-chasing-love-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb64026d60ab42869663cbbb4a65b4a6.png",
+          "description": "On her wedding day, a stranger takes the groom’s place — and marries her instead. No one knows who he is or why he did it, but his silence hides a stormy past. What begins as a shocking twist unravels into a tale of secrets, fate, and forbidden love.",
+          "link": "/meow/json/Double Life CEO_ Chasing Love-Malayalam.json"
+        },
+        {
+          "id": "271456",
+          "title": "Dracula's Kiss: Spellbound by a Doppelganger",
+          "slug": "draculas-kiss-spellbound-by-a-doppelganger-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 72,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/769bc02b6bfb4199bd7ab3f36e3dbce6.png",
+          "description": "After her boyfriend Neil’s betrayal, Flora seeks revenge by impulsively marrying his enigmatic elder relative, Vittorio. But Vittorio is no ordinary man — he’s a vampire with a dark past and a secret obsession. In his study, Flora finds a photo of a woman who looks exactly like her… taken eighty years ago.",
+          "link": "/meow/json/Dracula's Kiss_ Spellbound by a Doppelganger-Malayalam.json"
+        },
+        {
+          "id": "272406",
+          "title": "DUMPING MR.BILLIONAIRE",
+          "slug": "dumping-mrbillionaire",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5f21f7eccc374c7c96690c089d88b8b8.png",
+          "description": "What happens when a fierce survivor is forced into a marriage with a billionaire she never chose? Dumping Mr. Billionaire unravels a world of secret agendas, fake vows, and dangerously real emotions. This isn’t just love — it’s revenge, with a heart.",
+          "link": "/meow/json/DUMPING MR.BILLIONAIRE-Malayalam.json"
+        },
+        {
+          "id": "271295",
+          "title": "Ek Anjani Shaadi",
+          "slug": "ek-anjani-shadi-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 51,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6dcc9e8b64ec461497ad1c3fd8e059b6.png",
+          "description": "A woman falls for her charming boss while starting a new job—only to discover she’s already married to a stranger she barely knows. As their forgotten bond resurfaces, love and secrets collide.\r\n\r\n",
+          "link": "/meow/json/Ek Anjani Shaadi-Malayalam.json"
+        },
+        {
+          "id": "272779",
+          "title": "Ek Thi Villain",
+          "slug": "ek-thi-villain-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/05be4c40604f43c3a8151ee29cdaa35a.png",
+          "description": "Anjali, a top scientist at ISO, secretly worships the dark deity Kaal Asur and sacrifices children in his name. But her obsession isn’t limited to the occult — she uses blood rituals, blame games, and black magic to possess her “soul-mate,” Vikram Sharma, a fellow Mars mission scientist. Just when everything seems within her grasp, another brilliant scientist, Priya, enters the scene. Will she become the final obstacle in Anjali’s twisted path, or the key to Vikram’s salvation?",
+          "link": "/meow/json/Ek Thi Villain-Malayalam.json"
+        },
+        {
+          "id": "272397",
+          "title": "Eternal Life for Three Millennia",
+          "slug": "eternal-life-for-three-millennia-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 90,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/905315b47df54784b93a70d982d019a0.png",
+          "description": "What if a man had been alive for three thousand years? What secrets would he carry, what truths would he bury? To unravel the mystery, you have to watch this series.",
+          "link": "/meow/json/Eternal Life for Three Millennia-Malayalam.json"
+        },
+        {
+          "id": "266553",
+          "title": "Eye Without a Face",
+          "slug": "eye-without-a-face-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 33,
+            "title": "अपराध",
+            "slug": "crime",
+            "uri": "app://app/genres/crime",
+            "web_uri": "/genres/crime"
+          },
+          "n_episodes": 10,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": true,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8d02054600e3437a9564006a2eac894e.png",
+          "description": "An agoraphobic young man, living with a Youtuber and struggling actor, hacks the webcams of young women, and suspects that one of them is a serial killer.",
+          "link": "/meow/json/Eye without a face-Malayalam.json"
+        },
+        {
+          "id": "269702",
+          "title": "Fake Boyfriend",
+          "slug": "fake-boyfriend-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 42,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d2825a7607274572ba6c6530553ac6fc.png",
+          "description": "\"A powerful CEO, mistaken for a waiter at his girlfriend’s family gathering, faces ridicule from her relatives. But by the end of the night, he earns their respect and wins her love.\"",
+          "link": "/meow/json/Fake boyfriend-Malayalam.json"
+        },
+        {
+          "id": "270595",
+          "title": "Fall Into Sweet Trap",
+          "slug": "fall-into-sweet-trap-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0787dac2a80943a28843e7cbef0486cc.png",
+          "description": "A contract marriage, two hearts drawing closer. Caitlin, struggling to survive office politics and her ex-husband's betrayal. Simon, tasked with revitalizing his family's business. When fate leads them into a loveless marriage, will they continue to abide by the contract or bravely pursue their true feelings?",
+          "link": "/meow/json/Fall Into Sweet Trap-Malayalam.json"
+        },
+        {
+          "id": "270489",
+          "title": "Fallen Angel",
+          "slug": "fallen-angel-treasure-huntress-steals-her-victims-heart-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/15ec6c130cf246ee92fe13ece289c764.png",
+          "description": "Controlled by a deadly chip and forced to obey the Viper crime syndicate, Agent Bertha infiltrates the nation's grandest wedding to steal a legendary diamond ring. But a shocking secret affair between the groom’s best friend and the bride throws her mission into chaos. When the betrayed groom catches them—and mistakes Bertha for a guest—he cancels the wedding and declares she will be his new bride.",
+          "link": "/meow/json/Fallen Angel-Malayalam.json"
+        },
+        {
+          "id": "271756",
+          "title": "Farewell to old Love",
+          "slug": "farewell-to-old-love-5",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 92,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/53e9b174077340d78ebcdd9d4e276afc.png",
+          "description": "A woman abandoned by her husband rises to power, but behind her composed exterior lies a storm of pain and pride. When their paths cross again, will the past consume her or set her free?\r\n\r\n",
+          "link": "/meow/json/Farewell to old Love-Malayalam.json"
+        }
       ]
     },
     {
       "title": "Uncategory3",
       "shows": [
-        "/meow/json/Fearless Son-in-law-Malayalam.json",
-        "/meow/json/First Light of Love-Malayalam.json",
-        "/meow/json/Flashback Fiancée_ Have We Met_-Malayalam.json",
-        "/meow/json/Fleeing Husband Please Love Me All Over Again-Malayalam.json",
-        "/meow/json/Forbidden Bonds with My Brothers-Malayalam.json",
-        "/meow/json/FROM ZERO TO HERO Breaking the chains of Fate-Malayalam.json",
-        "/meow/json/Give me a Hug-Malayalam.json",
-        "/meow/json/Gone, Yet Loved by Him-Malayalam.json",
-        "/meow/json/Got you Mr. Always Right-Malayalam.json",
-        "/meow/json/Guardian Angel Mom on the Move-Malayalam.json",
-        "/meow/json/Harvest of ambition, a CEO's odyssey-Malayalam.json",
-        "/meow/json/Hidden Talent-Malayalam.json",
-        "/meow/json/Hollywood Staged Romance Live 24_7-Malayalam.json",
-        "/meow/json/How I Became the Alpha Queen-Malayalam.json",
-        "/meow/json/Jack of all Cons-Malayalam.json",
-        "/meow/json/Kanden Kathalai-Malayalam.json",
-        "/meow/json/Kiss and Switch The Cursed Vampire-Malayalam.json",
-        "/meow/json/LATE LOVE-Malayalam.json",
-        "/meow/json/Let Me Go, My Queen-Malayalam.json",
-        "/meow/json/Losing My Virginity-Malayalam.json"
+        {
+          "id": "271851",
+          "title": "Fearless Son-in-law",
+          "slug": "fearless-son-in-law",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/425b2e965ac64d2fa9ece946c6764c15.png",
+          "description": "A humble village man returns as the powerful CEO of a billion-dollar company, only to have his truth questioned and his family turn against him. A web of lies begins to unravel, threatening to destroy everything he’s built. With honor, love, and a secret weapon, he must fight to reclaim his dignity and expose the real imposter behind it all.",
+          "link": "/meow/json/Fearless Son-in-law-Malayalam.json"
+        },
+        {
+          "id": "269413",
+          "title": "First Light of Love",
+          "slug": "first-light-of-love",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 89,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/37115415fe4f45c193e8867c4541136e.png",
+          "description": "First Sight of Love\" is a heartwarming journey of unexpected connections, second chances, and the magic of love that blooms when least expected. Sometimes, a single glance is all it takes to change a lifetime.\r\n\r\n",
+          "link": "/meow/json/First Light of Love-Malayalam.json"
+        },
+        {
+          "id": "270886",
+          "title": "Flashback Fiancée: Have We Met?",
+          "slug": "flashback-fiancee-have-we-met-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 79,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/128b1ce71d2f4915927db81510dd7fb9.png",
+          "description": "Amnesiac heiress Nina reunites with her first love, CEO Alex, who tricks her into a contract marriage. What begins as a trap slowly turns into real love. Their hearts find each other again.",
+          "link": "/meow/json/Flashback Fiancée_ Have We Met_-Malayalam.json"
+        },
+        {
+          "id": "270584",
+          "title": "Fleeing Husband Please Love Me All Over Again ",
+          "slug": "fleeing-husband-please-love-me-all-over-again-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 68,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/597f926d935147b4926a8ffb501032bf.png",
+          "description": "After deciding to divorce from the business tycoon Alexis due to her inability to tolerate their contractual marriage, the wealthy heiress Vylina fell into the lowest point of her life. Yet, after enduring the heavy blows of life's darkest moments, she ultimately achieved abundant success in both her career and love life.",
+          "link": "/meow/json/Fleeing Husband Please Love Me All Over Again-Malayalam.json"
+        },
+        {
+          "id": "270446",
+          "title": "Forbidden Bonds with My Brothers",
+          "slug": "forbidden-bonds-with-my-brothers-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 56,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/322c9e821a9f4860befe9d93f3778d0c.png",
+          "description": "After a tragic accident erases her memory, heiress Vera is raised as Samantha by a poor family, unaware of her true lineage. Years later, she returns to the Smith Group as an underdog, unknowingly falling for her own brother, Joseph. As her forgotten past resurfaces, a forbidden love teeters on the edge of revelation and ruin.",
+          "link": "/meow/json/Forbidden Bonds with My Brothers-Malayalam.json"
+        },
+        {
+          "id": "271097",
+          "title": "From Zero to Hero: Breaking the Chains of Fate",
+          "slug": "from-zero-to-hero-breaking-the-chains-of-fate-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 69,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1083fac3d30b469283dd4cac30673d58.png",
+          "description": "\"From Zero to Hero\" is a drama that follows the inspiring journey of an ordinary young man who rises from humble beginnings to achieve remarkable success through hard work, resilience, and determination. Blending elements of sports, motivation, and personal growth, the story emphasizes the value of perseverance in the face of challenges. The drama showcases emotional relationships, life lessons, and the transformation of the protagonist from an underdog to a celebrated figure.",
+          "link": "/meow/json/FROM ZERO TO HERO Breaking the chains of Fate-Malayalam.json"
+        },
+        {
+          "id": "271457",
+          "title": "Give Me a Hug",
+          "slug": "give-me-a-hug-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 76,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/dbc35b0c3fea4dce9554990bbd81494e.png",
+          "description": "After escaping an abusive home, a young girl vanishes — until her devoted brother finds her twenty years later. But the family she returns to is cold, fractured, and unwilling to face the past.\r\nIn this heartfelt tale of love and healing, one lost bond may be the key to mending them all.",
+          "link": "/meow/json/Give me a Hug-Malayalam.json"
+        },
+        {
+          "id": "271242",
+          "title": "Gone, yet loved by him",
+          "slug": "gone-yet-loved-by-him-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 30,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e5f82411b8b74f41914d65301b804494.png",
+          "description": "For three years, Bellway Zouch loved Eason Gold — but she was only a substitute for his childhood sweetheart. When the truth breaks her, she decides to leave the country, giving herself one month to let go. Just as she finds the strength to move on, Eason realizes too late that his true love was Bellway all along.",
+          "link": "/meow/json/Gone, Yet Loved by Him-Malayalam.json"
+        },
+        {
+          "id": "270858",
+          "title": "Got you! Mr. Always Right",
+          "slug": "got-you-mr-always-right-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 69,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9720ed1e7e454694ac6f16a1031bf199.png",
+          "description": "When Jane's ex and rival invite her to their engagement just to humiliate her, she hires a fake husband — charming driver Mike. What she doesn’t know: Mike is secretly wealthy and already knows who she is. As Jane steps into high society, love, jealousy, and family secrets collide in a whirlwind of drama.",
+          "link": "/meow/json/Got you Mr. Always Right-Malayalam.json"
+        },
+        {
+          "id": "270382",
+          "title": "Guardian Angel Mom On The Move ",
+          "slug": "guardian-angel-mom-on-the-move-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f8e33d4f21a444958d017ebf08bc0793.png",
+          "description": "Selena was tricked into having a child with Louis, but her sister Dayana took the baby and lied about its death. Years later, Selena returns and reunites with Yusuf and the child. When Dyana's abuse of the child is uncovered, she causes a car accident in a panic. Louis then learns that Selena is the biological mother of his child, and the family comes together to live happily.",
+          "link": "/meow/json/Guardian Angel Mom on the Move-Malayalam.json"
+        },
+        {
+          "id": "268885",
+          "title": "Harvest of Ambition, a CEO's Odyssey",
+          "slug": "harvest-of-ambition-a-ceos-odyssey-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 60,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5dc3217aa14a49db8fc702464448ba0c.png",
+          "description": "From humble beginnings, a man builds a global empire driven by ambition and grit. In a world of power and betrayal, every choice could make or break him. A sharp, emotional journey of success, sacrifice, and the price of greatness.",
+          "link": "/meow/json/Harvest of ambition, a CEO's odyssey-Malayalam.json"
+        },
+        {
+          "id": "270354",
+          "title": "Hidden Talent",
+          "slug": "hidden-talent-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f8b44aee860f4552b4e20496d4f9aed0.png",
+          "description": "Betrayed by his sworn brother, Ajay — a fallen martial artist with no memory — rises from the streets to reclaim his true identity as the rightful leader. In a world of deadly rivalries, he along with Emma and Mr. Roy fight to restore honor against the corrupt forces led by a wicked duo.",
+          "link": "/meow/json/Hidden Talent-Malayalam.json"
+        },
+        {
+          "id": "271669",
+          "title": "Hollywood Staged Romance Live 24/7",
+          "slug": "hollywood-staged-romance-live-247-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 66,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d75a62f6367e4df89960b36500d6f896.png",
+          "description": "A scandal sparks stardom when rookie actress Ruby drunkenly kisses a billionaire CEO. What begins as a PR love contract soon blurs into something dangerously real. But when Ruby discovers Charles had been searching for her for six years, fame gives way to fate.",
+          "link": "/meow/json/Hollywood Staged Romance Live 24_7-Malayalam.json"
+        },
+        {
+          "id": "270879",
+          "title": "How I Became the Alpha Queen",
+          "slug": "how-i-became-the-alpha-queen-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1019c9f922ac4fedb262ddc562513043.png",
+          "description": "Lilith was set to lead the Silver Claw pack, but her sister Serena betrayed her, killing their parents and framing Lilith to steal the Alpha title. Branded a rogue, Lilith finds safety—and love—with Tristan, the kind Alpha of the Starlight pack. Together, they uncover Serena’s lies, bring her down, and unite their packs.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/How I Became the Alpha Queen-Malayalam.json"
+        },
+        {
+          "id": "272987",
+          "title": "Jack of all Cons",
+          "slug": "jack-of-all-cons-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 37,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/58a31212a4cd4ecaae6f0bf0a97fc8e8.png",
+          "description": "A shadowy gambler enters the city’s deadliest casino—but he’s not here to play, he’s here to settle scores. In a world where every hand deals betrayal and every bluff could be your last, the stakes are brutally personal. Jack Of All Cons is a pulse-pounding ride through crime, vengeance, and the ultimate con. Watch now!",
+          "link": "/meow/json/Jack of all Cons-Malayalam.json"
+        },
+        {
+          "id": "272015",
+          "title": "My secret Billionaire Boyfriend",
+          "slug": "my-secret-billionaire-boyfriend-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/efa4abf54fa64c09b7c5d236679847a3.png",
+          "description": "A billionaire disguises himself as a beggar to find true love and ends up in a fake relationship with a wealthy heiress, who’s being forced by her family to marry a spoiled billionaire.\r\n",
+          "link": "/meow/json/Kanden Kathalai-Malayalam.json"
+        },
+        {
+          "id": "270488",
+          "title": "Kiss and Switch The Cursed Vampire",
+          "slug": "kiss-and-switch-the-cursed-vampire-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1746a99b477145e2a65f55546fd11924.png",
+          "description": "Daphne is betrayed by her fiancé, who sacrifices her to save his ex-lover from a vampire king. She dies on the altar—but is reborn as a vampire’s eternal companion. When Paul learns of her fate, guilt drives him into madness.",
+          "link": "/meow/json/Kiss and Switch The Cursed Vampire-Malayalam.json"
+        },
+        {
+          "id": "272620",
+          "title": "LATE LOVE",
+          "slug": "late-love-5",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 48,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7de0e7804c324ee1bbd6d3d4749fee0e.png",
+          "description": "After her daughter dies in a tragic school collapse, a woman discovers her husband chose to save another child — the daughter of his first love. Betrayed and grieving, she files for divorce and begins her calculated descent into revenge.",
+          "link": "/meow/json/LATE LOVE-Malayalam.json"
+        },
+        {
+          "id": "268811",
+          "title": "Let Me Go, My Queen!",
+          "slug": "let-me-go-my-queen-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 92,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/25e8c0740a7c4c5fb315b7b7d15dcb84.png",
+          "description": "Jack, a modern-day artist, stumbles into a parallel universe due to an accident, catapulted into an ancient, matriarchal Roman society. In this nation ruled by women, he finds himself surrounded by an abundance of beauties. Can Jack navigate this society and win the hearts of these girls? More importantly, will he be able to find the key to unraveling time travel and safely return to his contemporary world?",
+          "link": "/meow/json/Let Me Go, My Queen-Malayalam.json"
+        },
+        {
+          "id": "272110",
+          "title": "Losing My Virginity",
+          "slug": "losing-my-virginity-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f0590e8e112840c59d6ed23899cf6eef.png",
+          "description": "For just one night, the fiery Alisha — daughter of a housemaid — forces the innocent Ruhi to impersonate her in a scheme to deceive billionaire Aditya. But that night spirals into a dangerous illusion — of deceit, desire, and mistaken identities. Because in that world, falling in love... could be fatal!",
+          "link": "/meow/json/Losing My Virginity-Malayalam.json"
+        }
       ]
     },
     {
       "title": "Uncategory4",
       "shows": [
-        "/meow/json/Lost in Love-Malayalam.json",
-        "/meow/json/Love and Deceit-Malayalam.json",
-        "/meow/json/Love Tease-Malayalam.json",
-        "/meow/json/Lucifer My Boyfriend from Hell-Malayalam.json",
-        "/meow/json/Mafia se Mohabbat-Malayalam.json",
-        "/meow/json/Marriage as a Debt of Gratitude-Malayalam.json",
-        "/meow/json/Married But Available_ Perfume And Moon-Malayalam.json",
-        "/meow/json/Migrant worker's love story-Malayalam.json",
-        "/meow/json/Mistaken Millionaire Husband-Malayalam.json",
-        "/meow/json/Misty Medical Immortal-Malayalam.json",
-        "/meow/json/My 2 Fiances-Malayalam.json",
-        "/meow/json/My Call Boy Billionaire Daddy-Malayalam.json",
-        "/meow/json/My Cold Blooded Alpha King-Malayalam.json",
-        "/meow/json/My Crorepati Husband-Malayalam.json",
-        "/meow/json/My Groom A Billionaire-Malayalam.json",
-        "/meow/json/MY Handsome Bodyguard-Malayalam.json",
-        "/meow/json/My Tycoon Husband Spoils Me-Malayalam.json",
-        "/meow/json/My Vampire Highness-Malayalam.json",
-        "/meow/json/My Wife's Best Friend is in Love with Me-Malayalam.json",
-        "/meow/json/Once Upon A Divorce_The Double Life Of Lady Diana-Malayalam.json"
+        {
+          "id": "270410",
+          "title": "Lost in Love",
+          "slug": "lost-in-love",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 85,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6506666bbda74ed586b2ca2d45a09c7c.png",
+          "description": "After her fiancé Martin betrays her, Ria finds herself entangled with his powerful uncle, Steve. What starts as forbidden passion turns deeper when she becomes his personal manager.\r\nAmid corporate games and family chaos, love becomes the most dangerous power play of all.\r\n\r\n\r\n\r\n\r\n\r\nAfter her fiancé Martin betrays her, Ria finds herself entangled with his powerful uncle, Steve.\r\nWhat starts as forbidden passion turns deeper when she becomes his personal manager.\r\nAmid corporate games and family chaos, love becomes the most dangerous power play of all.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Lost in Love-Malayalam.json"
+        },
+        {
+          "id": "272000",
+          "title": "Love and Deceit ",
+          "slug": "love-and-deceit",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 42,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a4a9acb7cdb44c4b8530b87e81b6f02a.png",
+          "description": "When ambitious architect Aarohi is betrayed on her engagement day, a mysterious stranger offers her a new beginning — with strings attached. As secrets unravel and love clashes with deception, her journey turns into a rollercoaster of power, betrayal, and redemption.",
+          "link": "/meow/json/Love and Deceit-Malayalam.json"
+        },
+        {
+          "id": "272328",
+          "title": "Love Tease",
+          "slug": "love-tease-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 43,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/437f16d41405437f8520f2b59771c8b5.png",
+          "description": "Rohan and Ananya, college sweethearts turned strangers, reunite after eight years — with a secret child between them. Now a star cricketer, Rohan faces a truth he never saw coming.\r\nIn a world of love, guilt, and second chances… can they reclaim what was lost?",
+          "link": "/meow/json/Love Tease-Malayalam.json"
+        },
+        {
+          "id": "270599",
+          "title": "Lucifer My Boyfriend from Hell",
+          "slug": "lucifer-my-boyfriend-from-hell-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 67,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/17d703191d564be5901a9370f50d6c02.png",
+          "description": "The King of Hell, Lucifer, made a bet with his brother, the Seraph Gabriel. Lucifer predicted humanity would be corrupted by sin in the new millennium and face destruction, while Gabriel predicted they would thrive. God helped Gabriel win, punishing Lucifer by scattering his soul on Earth. A fragment of Lucifer's soul entered a baby girl born in an orphanage during the millennium. To reclaim his soul, Lucifer left Hell...",
+          "link": "/meow/json/Lucifer My Boyfriend from Hell-Malayalam.json"
+        },
+        {
+          "id": "270877",
+          "title": "Mafia se Mohabbat",
+          "slug": "mafia-se-mohabbat-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/122c0e602e664ec6a961458948e04643.png",
+          "description": "Don Kabir’s world is turned upside down after a mysterious night with Sanya leads to an unexpected pregnancy. As secrets unravel and enemies close in, love, blood ties, and betrayal collide in this gripping saga.",
+          "link": "/meow/json/Mafia se Mohabbat-Malayalam.json"
+        },
+        {
+          "id": "271307",
+          "title": "Marriage as a Debt of Gratitude",
+          "slug": "marriage-as-a-debt-of-gratitude",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7945febdfbee400aa4fa70a40146b1e3.png",
+          "description": "On her wedding day, An Ran is betrayed by her fiancé and family — and loses everything, including her life. Reborn with vengeance in her veins, she forces her enemy’s rival into marriage to begin her path of revenge. But as love unexpectedly blooms, An Ran must choose between justice and the new future she never saw coming.",
+          "link": "/meow/json/Marriage as a Debt of Gratitude-Malayalam.json"
+        },
+        {
+          "id": "270324",
+          "title": "Married But Available: Perfume And Moon",
+          "slug": "married-but-available-perfume-and-moon-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8885a1d7c4a149c7a860733a03059f67.png",
+          "description": "Alpha Arthur returns and defends Chloe, a humble butler, from cruelty at a grand feast. He’s drawn to her strength and breaks off his engagement to be with her. Soon, Chloe’s hidden werewolf genes awaken—revealing she is his true mate.",
+          "link": "/meow/json/Married But Available_ Perfume And Moon-Malayalam.json"
+        },
+        {
+          "id": "272326",
+          "title": "Migrant worker's love story",
+          "slug": "migrant-workers-love-story-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 39,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/3ea742cc2c9d4c0296797321aa0c1027.png",
+          "description": "She was the heiress of an empire; he, a nameless migrant. Their love hit the family like a storm hits still waters — sudden, fierce, and unrelenting. In its wake, it shook boardrooms, broke headlines, and tested the foundations of legacy itself.",
+          "link": "/meow/json/Migrant worker's love story-Malayalam.json"
+        },
+        {
+          "id": "272958",
+          "title": "Mistaken Millionaire Husband",
+          "slug": "mistaken-millionaire-husband-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 30,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/97b3ea5fb51845f39b892b1ee0d47648.jpeg",
+          "description": "Ms. Sriraminte boyfriend Deepak kodutha vanchanayekkalum, Rohit Muralitharanu thannalulla snehathil aanu sathyam. Ee sundara love story kandittu enjoy cheyyuka!",
+          "link": "/meow/json/Mistaken Millionaire Husband-Malayalam.json"
+        },
+        {
+          "id": "268693",
+          "title": "Misty Medical Immortal",
+          "slug": "misty-medical-immortal",
+          "language": "malayalam",
+          "genre": {
+            "id": 79,
+            "title": "फैंटसी",
+            "slug": "fantasy",
+            "uri": "app://app/genres/fantasy",
+            "web_uri": "/genres/fantasy"
+          },
+          "n_episodes": 5,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/aaf05658f7d54a38b115ef34224fbdb1.png",
+          "description": "He is the strongest medical immortal, and he is in the city, and he is alive and well.",
+          "link": "/meow/json/Misty Medical Immortal-Malayalam.json"
+        },
+        {
+          "id": "270579",
+          "title": "My 2 Fiances",
+          "slug": "my-2-fiances-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 77,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/82716396d4464099a528a8f534dee35f.png",
+          "description": "As Iris and her wealthy boyfriend Rick prepare to marry after seven years together, she sees news of him announcing marriage to another woman. Is Rick being manipulated, or is there more to the story?",
+          "link": "/meow/json/My 2 Fiances-Malayalam.json"
+        },
+        {
+          "id": "270861",
+          "title": "My Call Boy Billionaire Daddy",
+          "slug": "my-call-boy-billionaire-daddy-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 75,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/4cca3ec4888b4feeaab50dcc508b2287.png",
+          "description": "Four years after fleeing L.A. in disgrace, Ines returns with her son and a score to settle. At SKY CLUB, she confronts a tattooed escort from her past, binding him to repay a debt. Meanwhile, her enigmatic CEO, Louis, begins a quiet vendetta—one rooted in secrets Ines can’t remember.",
+          "link": "/meow/json/My Call Boy Billionaire Daddy-Malayalam.json"
+        },
+        {
+          "id": "272443",
+          "title": "My Cold Blooded Alpha King",
+          "slug": "my-cold-blooded-alpha-king-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 62,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/ddc61583e5b04254b7fc1a231e565212.png",
+          "description": "She isn’t just an ordinary girl — her blood holds the cure to the cursed Magnums. To protect her comes a ruthless Alpha King, whose rules are as deadly as his name. In this world of fiery romance and fierce revenge, one wrong move could cost a lifetime of regret.",
+          "link": "/meow/json/My Cold Blooded Alpha King-Malayalam.json"
+        },
+        {
+          "id": "273844",
+          "title": "My Crorepati Husband",
+          "slug": "my-crorepati-husband-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 72,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/58014ca59cd54fb6829603a261aadf57.jpeg",
+          "description": "നമ്മുടെ ഹീറോ ധനികനല്ലെന്ന് അറിഞ്ഞ ഉടനെ ഭാര്യ വിവാഹ മോചനം തേടാൻ തീരുമാനിക്കുന്നു. പക്ഷേ, അവളെ 위한 ഒരു വമ്പൻ ട്വിസ്റ്റ് കാത്തിരിക്കുന്നു. My Crorepati Husband - ഇപ്പോൾ കാണൂ!",
+          "link": "/meow/json/My Crorepati Husband-Malayalam.json"
+        },
+        {
+          "id": "270784",
+          "title": "My Groom A Billionaire",
+          "slug": "my-groom-a-billionaire-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7685df0c9c784d65aac8d172fd64fbdd.png",
+          "description": "A runaway groom and a jilted bride cross paths in a twist of fate, sparking an unexpected marriage built on secrets and misunderstandings. As their worlds collide—his wealthy identity hidden and her pride wounded—they navigate love, deception, and redemption in this romantic drama.",
+          "link": "/meow/json/My Groom A Billionaire-Malayalam.json"
+        },
+        {
+          "id": "267234",
+          "title": "MY Handsome Bodyguard",
+          "slug": "my-handsome-bodyguard-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 40,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d41505bb999c492e8f1a6969c1e8f5d1.png",
+          "description": "Chu Tao, a former Dragon General turned single father and security guard, navigates secrets of the past while entering a contractual marriage with Lin Wan'er, an ambitious leader seeking vengeance.",
+          "link": "/meow/json/MY Handsome Bodyguard-Malayalam.json"
+        },
+        {
+          "id": "268892",
+          "title": "My Tycoon Husband Spoils Me",
+          "slug": "my-tycoon-husband-spoils-me-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 97,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/2c268af3c9414062971cbb3e80db528f.png",
+          "description": "A rich, married man’s life takes an unexpected turn. His old love returns, stirring up his wife’s jealousy. Then a new interior designer enters the picture, and things get even more complicated.\r\n\r\n",
+          "link": "/meow/json/My Tycoon Husband Spoils Me-Malayalam.json"
+        },
+        {
+          "id": "271670",
+          "title": "My Vampire Highness",
+          "slug": "my-vampire-highness-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 51,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d1b8dd8e099649ddbcd92f9290ffcb2b.png",
+          "description": "A wealthy man returns after years to reclaim his legacy, only to uncover deep-rooted betrayals, family secrets, and dangerous conspiracies—leading him on a relentless quest for truth, justice, and redemption.",
+          "link": "/meow/json/My Vampire Highness-Malayalam.json"
+        },
+        {
+          "id": "272515",
+          "title": "My Wife's Best Friend is in Love with Me",
+          "slug": "my-wifes-best-friend-is-in-love-with-me-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 100,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0de1e0640d1f4974a07d1ef132402b37.png",
+          "description": "When love is worshipped as sacred, betrayal cuts deeper than a wound. A heart that once trusted unconditionally now drowns in deception and despair. This is a haunting tale of emotional ruin, lost innocence, and the fight to survive the unthinkable.\r\n\r\n",
+          "link": "/meow/json/My Wife's Best Friend is in Love with Me-Malayalam.json"
+        },
+        {
+          "id": "270598",
+          "title": "Once Upon A Divorce:The Double Life Of Lady Diana",
+          "slug": "once-upon-a-divorcethe-double-life-of-lady-diana",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 70,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/ffefb256c1a44351959f65944d03bef4.png",
+          "description": "After being betrayed, the secret daughter of a billionaire unexpectedly enters into a contract marriage with a wealthy tycoon. Together, they take down the deceitful ex and navigate intense family rivalries, ultimately finding their path to happiness.",
+          "link": "/meow/json/Once Upon A Divorce_The Double Life Of Lady Diana-Malayalam.json"
+        }
       ]
     },
     {
       "title": "Uncategory5",
       "shows": [
-        "/meow/json/Peak Showdown_ Shatter the Dragon King-Malayalam.json",
-        "/meow/json/Phoenix Rising-Malayalam.json",
-        "/meow/json/Power Punch-Malayalam.json",
-        "/meow/json/Rented Husband-Malayalam.json",
-        "/meow/json/Return of His Majesty-Malayalam.json",
-        "/meow/json/Revenge in Second Life-Malayalam.json",
-        "/meow/json/Revenge Of My Fake Boyfriend-Malayalam.json",
-        "/meow/json/Risky Ishq-Malayalam.json",
-        "/meow/json/Romance with My Vampire Brother-Malayalam.json",
-        "/meow/json/ROYAL AFFAIR-Malayalam.json",
-        "/meow/json/Royal Village Girl-Malayalam.json",
-        "/meow/json/Ruthless Comeback of the Reborn Heiress-Malayalam.json",
-        "/meow/json/Say You Remember, Say You Love-Malayalam.json",
-        "/meow/json/Secret Baby-Malayalam.json",
-        "/meow/json/Secret billionaire Villager-Malayalam.json",
-        "/meow/json/Secret Mrs CEO-Malayalam.json",
-        "/meow/json/Shelter in the Mafia-Malayalam.json",
-        "/meow/json/Single Mother's Counterattack with Adorable Twins-Malayalam.json",
-        "/meow/json/Slay Madam-Malayalam.json",
-        "/meow/json/Son of an MP-Malayalam.json"
+        {
+          "id": "272520",
+          "title": "Peak Showdown: Shatter the Dragon King",
+          "slug": "peak-showdown-shatter-the-dragon-king-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 93,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8119fa3efabc414990a6bad54f5395e8.png",
+          "description": "Can any mortal shatter the immortal might of the Dragon King? \"Peak Showdown\" is a fantasy epic where magic, vengeance, and impossible victories collide.\r\nIf power struggles and spellbinding battles thrill you, this is the ultimate ride into another realm.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Peak Showdown_ Shatter the Dragon King-Malayalam.json"
+        },
+        {
+          "id": "270226",
+          "title": "Phoenix Rising",
+          "slug": "phoenix-rising-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 60,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c821a29c9df5438aadde6f82d48a21b5.png",
+          "description": "After years in a mysterious slumber, she awakens to a world she no longer recognizes. Memories of betrayal and love slowly return as she searches for the truth. Phoenix Rising is the story of a woman reborn, ready to face those who once destroyed her.",
+          "link": "/meow/json/Phoenix Rising-Malayalam.json"
+        },
+        {
+          "id": "272113",
+          "title": "Power Punch ",
+          "slug": "power-punch-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/bf721b04863a4e9490333249b6286508.png",
+          "description": "Ordinary laborer Yash is suddenly gifted with extraordinary strength, turning him into a local legend. But admiration turns to betrayal when his girlfriend Tanya schemes to steal his family’s secret formula. With his mentor in danger, Yash must rise — not just with power, but with purpose — to reclaim his honor.",
+          "link": "/meow/json/Power Punch-Malayalam.json"
+        },
+        {
+          "id": "272744",
+          "title": "Rented Husband",
+          "slug": "rented-husband-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/502aa0458e9343ef8864892dc8bc041d.png",
+          "description": "A mysterious billionaire hides his true identity and agrees to a contract marriage with a woman trying to save her family business, only to face relentless humiliation from her greedy relatives. But as secrets unravel, the tables turn in this emotional rollercoaster of pride, love, and revenge.",
+          "link": "/meow/json/Rented Husband-Malayalam.json"
+        },
+        {
+          "id": "268898",
+          "title": "Return of His Majesty",
+          "slug": "return-of-his-majesty-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 63,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/56d5cabcb5b4460b968853bb24ce311d.png",
+          "description": "Before leaving his hometown, Leo Lowe makes a promise to his fiancée, Tina Leed, that once he becomes emperor, he will return to make her his empress.\r\n Years later, he successfully establishes a new dynasty and becomes the emperor of it, so he returns to the village disguised as an ordinary villager to fulfill his promise, not expecting to be forced to pay just to get through the entrance.",
+          "link": "/meow/json/Return of His Majesty-Malayalam.json"
+        },
+        {
+          "id": "272953",
+          "title": "Revenge in Second Life",
+          "slug": "revenge-in-second-life-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d7499f1721f44b749715a409a504a491.png",
+          "description": "In the shadows of a crumbling asylum, a mother’s final letters unravel a tale of stolen identity, betrayal, and lost love. As Varun uncovers the devastating truth, he learns his real daughter was replaced—and his past, manipulated. But just when the lies seem unstoppable, a familiar face returns… and Tushita’s twin is ready to expose everything.",
+          "link": "/meow/json/Revenge in Second Life-Malayalam.json"
+        },
+        {
+          "id": "270408",
+          "title": "Revenge Of My Fake Boyfriend",
+          "slug": "revenge-of-my-fake-boyfriend",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 60,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/784a473420ed4dbb9f8cd2401d2363af.png",
+          "description": "Rajat, a humble and loyal guy, is publicly humiliated and dumped by his ambitious girlfriend for not having status or money. He returns to India, but everyone is shocked to learn that he is the husband of the country's most powerful and beautiful CEO. Watch \"Revenge of My Fake Boyfriend\" – a unique tale of love, betrayal, and revenge!",
+          "link": "/meow/json/Revenge Of My Fake Boyfriend-Malayalam.json"
+        },
+        {
+          "id": "272919",
+          "title": "Risky Ishq",
+          "slug": "risky-ishq-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 44,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/663a2c75cb9c49cdad0e74033b52c396.png",
+          "description": "One late-night rescue sparks a storm of emotions between a fearless student and her brother’s enigmatic best friend. As college games turn cruel and her secrets go public, the fallout is brutal—until he stands by her. \"When Vivaan Stepped In\" is a tale of heartbreak, hidden desire, and the fierce power of unexpected loyalty.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Risky Ishq-Malayalam.json"
+        },
+        {
+          "id": "270704",
+          "title": "Romance with My Vampire Brother",
+          "slug": "romance-with-my-vampire-brother-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 69,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c85cfb8be33a472ab9d9acf940ea4c0e.png",
+          "description": "Graduate Joyce experiences her boyfriend's infidelity, encounters the cold and stern vampire CEO Herman, who not only is her boss but also the child of her stepfather. Amid misunderstandings and workplace conflicts, the two gradually develop a forbidden love intertwined with betrayal and taboo...",
+          "link": "/meow/json/Romance with My Vampire Brother-Malayalam.json"
+        },
+        {
+          "id": "272412",
+          "title": " ROYAL AFFAIR",
+          "slug": "royal-affair-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 38,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c4de8ad557c04361a97d9d3c80a44729.png",
+          "description": "When betrayal hides behind designer lehengas and royal smiles, one woman dares to expose it all. The Royal Sting unravels a high-stakes web of revenge, buried secrets, and power games — all under the glittering facade of a “perfect” wedding. Loyalties will break. Masks will fall. And the truth? It stings.",
+          "link": "/meow/json/ROYAL AFFAIR-Malayalam.json"
+        },
+        {
+          "id": "272294",
+          "title": "Royal Village Girl",
+          "slug": "royal-village-girl",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 43,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1414f4b74930407c990c28e4a6e3620b.png",
+          "description": "Aksha arrives in the city with her mother, only to be shunned by her status-conscious sister, Isha. She hides her identity, rises as a wealthy heiress, and follows a pendant’s clue to her true past.\r\nA shocking DNA reveal exposes Isha’s lies, as Aksha reclaims her real name, her mother, and her honor.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Royal Village Girl-Malayalam.json"
+        },
+        {
+          "id": "271201",
+          "title": "Ruthless Comeback of the Reborn Heiress",
+          "slug": "ruthless-comeback-of-the-reborn-heiress",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 81,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0c24485654614e5ebb432c917959fb12.png",
+          "description": "Wrongfully accused and betrayed by her demon-cultivator sister, Grace Braylon dies — only to be reborn through excruciating pain. She leaves her sect and emotions behind to walk the ruthless Path of Merciless cultivation. With vengeance in her heart, every step forward is a battle against the past.",
+          "link": "/meow/json/Ruthless Comeback of the Reborn Heiress-Malayalam.json"
+        },
+        {
+          "id": "270507",
+          "title": "Say You Remember, Say You Love",
+          "slug": "say-you-remember-say-you-love-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 68,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/f11f8e2e04584f2987626f75caf3ed23.png",
+          "description": "After her family went bankrupt, Elizabeth reconnected with her first love, Jason, who had become a world-renowned football star. Despite never forgetting the pain he once caused her, she couldn't resist being drawn to his brilliance.",
+          "link": "/meow/json/Say You Remember, Say You Love-Malayalam.json"
+        },
+        {
+          "id": "271785",
+          "title": "Secret Baby ",
+          "slug": "secret-baby-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0fc70c4e3e4b42358bf7d3b3c1d91b18.png",
+          "description": "Leena, working as the secretary to Sameer Singhlania under a secret identity, is deeply in love with him. When the company faces a cyber attack, she takes matters into her own hands, secretly handling the crisis while disguised as Dr. Sen. But her world shatters when she learns of Sameer’s engagement to Maya Agarwal, leaving her torn and awestruck by the unexpected turn of events.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Secret Baby-Malayalam.json"
+        },
+        {
+          "id": "272297",
+          "title": "Secret billionaire Villager",
+          "slug": "secret-billionaire-villager-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1d3e60b756a145518188569b6a611711.png",
+          "description": "A simple and innocent poor villager is cheated on by his long-term girlfriend for a rich man. With the help of a divine power, the villager becomes rich and handsome, and returns to take revenge on his unfaithful girlfriend.",
+          "link": "/meow/json/Secret billionaire Villager-Malayalam.json"
+        },
+        {
+          "id": "272174",
+          "title": "Secret Mrs CEO ",
+          "slug": "secret-mrs-ceo-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/3bba3423a371487da73543f371185200.png",
+          "description": "After a painful divorce shatters her quiet domestic life, Natasha reinvents herself as the bold and brilliant CEO of a rising startup. As she battles betrayal, fierce rivals, and her own inner doubts, Natasha’s journey from heartbreak to boardroom power becomes a stirring tale of grit, ambition, and transformation.\r\n\r\n",
+          "link": "/meow/json/Secret Mrs CEO-Malayalam.json"
+        },
+        {
+          "id": "271413",
+          "title": "Shelter in the Mafia",
+          "slug": "shelter-in-the-mafia-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 61,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d06ad32650dd4d65bf3e2cf5330a449e.png",
+          "description": "After losing everything to her cheating husband, Tasha finds unexpected kindness from a taxi driver named Ken. Though fate pulls them apart, Ken keeps returning — and a deep romance begins to bloom. But behind his gentle smile lies a secret: Ken is the son of a mafia boss, chasing shadows from his past.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Shelter in the Mafia-Malayalam.json"
+        },
+        {
+          "id": "269618",
+          "title": "Single Mother's Counterattack with Adorable Twins",
+          "slug": "single-mothers-counterattack-with-adorable-twins-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/88ecb95daefb485ba1e8ea695bb0cacb.png",
+          "description": "After being deceived into a one-night stand orchestrated by her own sister, a young woman finds herself pregnant and disowned by her family. Seven years later, her spirited twin children—unaware of the circumstances of their birth—set out on a heartwarming mission to bring their long-lost parents back together, but as their mother confronts painful memories and the cruel twists of fate that shaped her past, she must brave overwhelming odds to reclaim love, dignity, and a future for her children.\r\n\r\n",
+          "link": "/meow/json/Single Mother's Counterattack with Adorable Twins-Malayalam.json"
+        },
+        {
+          "id": "270010",
+          "title": "Slay Madam",
+          "slug": "slay-madam-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 87,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/95dd52ccf76a4b01a628ffb0997957fe.png",
+          "description": "Driven by envy and a relentless need to outshine Christina, Reena schemed to shatter her world. But in the chaos she created, Christina crossed paths with Alex—an encounter that lasted just one unforgettable night. Five years later, destiny intervenes, and their lives collide once more. What fueled Reena’s deep-rooted jealousy? And how did that single night alter the course of Christina and Alex’s lives forever?",
+          "link": "/meow/json/Slay Madam-Malayalam.json"
+        },
+        {
+          "id": "272407",
+          "title": "Son of an MP ",
+          "slug": "son-of-an-mp-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e8197bce84614b9a932ea99d9f42f32f.png",
+          "description": "Heir to a corrupt dynasty. She, the orphaned firebrand with a hidden legacy. When Akshat and Saksharta collide, love ignites a war against power, privilege, and buried truths.\r\nFrom campus battles to courtroom wars, they fight not just for justice — but for a generation silenced too long.",
+          "link": "/meow/json/Son of an MP-Malayalam.json"
+        }
       ]
     },
     {
       "title": "Uncategory6",
       "shows": [
-        "/meow/json/Spark My Fire-Malayalam.json",
-        "/meow/json/Star Moon Romance _ Rejected And Reborn As Alpha-Malayalam.json",
-        "/meow/json/Stop pretending Miss Gu will expose everything-Malayalam.json",
-        "/meow/json/Study God-Malayalam.json",
-        "/meow/json/Supreme-Malayalam.json",
-        "/meow/json/Supreme Bai Emperor-Malayalam.json",
-        "/meow/json/Supreme Master Asks You to Believe in Science-Malayalam.json",
-        "/meow/json/Supreme Wealth-Malayalam.json",
-        "/meow/json/Tangled Ties and Tipsy Vows-Malayalam.json",
-        "/meow/json/Tenacious Healer-Malayalam.json",
-        "/meow/json/The Arrogant Tyrant's Runaway Wife-Malayalam.json",
-        "/meow/json/The Awakening-Malayalam.json",
-        "/meow/json/The Billionaire in the Slum-Malayalam.json",
-        "/meow/json/The Billionaire's Revenge-Malayalam.json",
-        "/meow/json/The Devil Wears Desire-Malayalam.json",
-        "/meow/json/The Divorced Housewife Turned CEO-Malayalam.json",
-        "/meow/json/The Final Boss-Malayalam.json",
-        "/meow/json/The God King Returns-Malayalam.json",
-        "/meow/json/The Last Recipe-Malayalam.json",
-        "/meow/json/The Lost Heir Rises-Malayalam.json"
+        {
+          "id": "272053",
+          "title": "Spark My Fire",
+          "slug": "spark-my-fire-6",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": true,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/2fce006dfbe74c3bac1fd3b980873390.png",
+          "description": "In a towering skyscraper, a powerful CEO seeks not an employee, but total submission. A line of hopeful women awaits, each yearning for a life of luxury — at a price. Only one will be chosen to enter his world of control, desire, and unimaginable power.",
+          "link": "/meow/json/Spark My Fire-Malayalam.json"
+        },
+        {
+          "id": "272492",
+          "title": "Star Moon Romance : Rejected And Reborn As Alpha",
+          "slug": "star-moon-romance-rejected-and-reborn-as-alpha-5",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 79,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9d2817c9f99c4a0ea79d9d05576e614d.png",
+          "description": "She lost her parents, was rejected by her brother, and had her heart shattered by Asta — the one who once called her “Luna.” Branded a loser and treated like nothing more than a blood bank, she rose when the Moon Goddess awakened the Alpha within her. Star Moon Romance is a fierce tale of transformation — from rejection to redemption, and a girl’s rise to become the Alpha no one saw coming.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Star Moon Romance _ Rejected And Reborn As Alpha-Malayalam.json"
+        },
+        {
+          "id": "270294",
+          "title": "Stop pretending! Miss Gu will expose everything ",
+          "slug": "stop-pretending-miss-gu-will-expose-everything",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 87,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/296d639c195b436da5104529b812fa2c.png",
+          "description": "In a world where legacy and ambition collide, the heiress of the powerful Kings Corp joins Stream Corp as an undercover intern to prove her worth. But her journey takes a sharp turn when two mysterious interns show up—sharing the same identity. As secrets unravel and loyalties blur, corporate games become a dangerous masquerade.",
+          "link": "/meow/json/Stop pretending Miss Gu will expose everything-Malayalam.json"
+        },
+        {
+          "id": "265899",
+          "title": "Study God",
+          "slug": "study-god-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 15,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/56cd9a1640fe40999e31f7d697f60b10.png",
+          "description": "Ning Xiaoyao pursues a fragment of an outer god's soul to the mortal realm, saving Zhong Qing and aiding her family. Misunderstood by the Bai family and his former fiancée, Bai Zhiqiu, he uncovers a traitor within their ranks. After slaying the outer god, the Bai family realizes his true status and regrets their past disrespect.",
+          "link": "/meow/json/Study God-Malayalam.json"
+        },
+        {
+          "id": "269792",
+          "title": "Supreme",
+          "slug": "supreme-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 96,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/076b5a249e154db9af2e70dd296312c5.png",
+          "description": "Supreme  is a fantasy-romance tale of an aspiring hero’s journey to become a celestial master. He faces powerful enemies, overcomes mystical challenges, and discovers ancient secrets.\r\nAmidst it all, love blossoms, shaping his destiny in unexpected ways.\r\n",
+          "link": "/meow/json/Supreme-Malayalam.json"
+        },
+        {
+          "id": "272421",
+          "title": "Supreme Bai Emperor",
+          "slug": "supreme-bai-emperor-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 94,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9195eebff26b4bf1931d531738d509bb.png",
+          "description": "He returned after seven years… but home didn’t recognize him, and love didn’t wait. All that welcomed him were accusations, disgrace, and a painful truth. Can he reclaim his lost love and true identity?",
+          "link": "/meow/json/Supreme Bai Emperor-Malayalam.json"
+        },
+        {
+          "id": "269829",
+          "title": "Supreme Master Asks You to Believe in Science",
+          "slug": "supreme-master-asks-you-to-believe-in-science-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 89,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b4c7b4e3169f42a799c5529d78ff77c8.png",
+          "description": "Ten years after an injustice was committed, he vows to take revenge. His mentor, encouraging him to forget hatred and embrace love, suggests a marriage alliance. Unexpectedly becoming the son-in-law of a famous family, he ultimately defeats his enemies. Discover how he achieved this victory.",
+          "link": "/meow/json/Supreme Master Asks You to Believe in Science-Malayalam.json"
+        },
+        {
+          "id": "268674",
+          "title": "Supreme Wealth",
+          "slug": "supreme-wealth-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 34,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b90fe64c09254bf3b173523efa33e28e.png",
+          "description": "On the eve of proposing to his girlfriend, Yun Chuqing, Ye Cheng becomes a vegetable due to an explosion. For ten years, Yun Chuqing cares for him without complaint, despite the pressure from her parents and others. Ten years later, Ye Cheng awakens and proposes to the Yun family, helping them become the most prestigious family in Wangcheng...",
+          "link": "/meow/json/Supreme Wealth-Malayalam.json"
+        },
+        {
+          "id": "270617",
+          "title": "Tangled Ties and Tipsy Vows",
+          "slug": "tangled-ties-and-tipsy-vows-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 69,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6b2680e587d049f1a0f7934c8d866208.png",
+          "description": "After years apart, Carol is forced by her stepmother and stepsister to marry playboy Grayson instead of her stepsister. A chance encounter with her childhood love Dylan, who now resents her for a past betrayal, complicates things. Dylan pretends to date Carol's stepsister to torment her, but as truths emerge, their tangled relationships take unexpected turns.",
+          "link": "/meow/json/Tangled Ties and Tipsy Vows-Malayalam.json"
+        },
+        {
+          "id": "271449",
+          "title": "Tenacious Healer",
+          "slug": "tenacious-healer-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 85,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8f23b5a8df1c4bff8dd1365fb8b3079d.png",
+          "description": "A young intern enters the medical field with big dreams, only to face relentless bullying for his humble roots. When he’s fired for saving a patient’s life, the injustice shatters his faith in the system. But his fall sparks a fight against a cruel hierarchy — and a quest to prove his worth.",
+          "link": "/meow/json/Tenacious Healer-Malayalam.json"
+        },
+        {
+          "id": "268832",
+          "title": "The Arrogant Tyrant's Runaway Wife",
+          "slug": "the-arrogant-tyrants-runaway-wife-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 98,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/827c5b5bde264b9e93ed4caef3fe4c09.png",
+          "description": "Five years ago, she had a one-night stand and became pregnant, only to find out later that the man wasn't her fiancé as she thought. After being kicked out of her home, she became a single mother. When she returned to the city with her twins, she was shocked to discover that her boss, the cold billionaire, was the father of her children",
+          "link": "/meow/json/The Arrogant Tyrant's Runaway Wife-Malayalam.json"
+        },
+        {
+          "id": "272479",
+          "title": "The Awakening",
+          "slug": "the-awakening-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 46,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1db6e0d1756045368b2f4d500bd7e316.png",
+          "description": "When ancient curses bleed into modern chaos, a forgotten warrior awakens. Raghav, reborn with lost powers, must protect the woman he loves amid a storm of betrayal and political war.\r\nBut to save the future, he must first conquer the shadows of a past he can barely remember.\r\n\r\n",
+          "link": "/meow/json/The Awakening-Malayalam.json"
+        },
+        {
+          "id": "268692",
+          "title": "The Billionaire in the Slum",
+          "slug": "the-billionaire-in-the-slum",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 5,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1590ea9f9e8145f9a1fc6185f2efb5f5.png",
+          "description": "He was humiliated, beaten, and cast aside as a nobody—just another poor soul in a cruel world. But when the same people who spit on him discover he’s the trillionaire behind the empire they fear… the real story begins.",
+          "link": "/meow/json/The Billionaire in the Slum-Malayalam.json"
+        },
+        {
+          "id": "272256",
+          "title": "The Billionaire's Revenge",
+          "slug": "the-billionaires-revenge",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/ec4acf2777f34bc995c7b47c0091bf74.png",
+          "description": "Divya risks everything to protect her fiancé Mihir, who suffers from amnesia. Their love is tested when a vengeful don, Rana, reveals dark secrets from Mihir’s hidden past.\r\nAs Mihir’s powerful lineage resurfaces, they triumph—but a deeper conspiracy still looms.",
+          "link": "/meow/json/The Billionaire's Revenge-Malayalam.json"
+        },
+        {
+          "id": "270847",
+          "title": "The Devil Wears Desire",
+          "slug": "the-devil-wears-desire-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/ea76a0c1646e4696ab6b0f63ab0d61d3.png",
+          "description": "Anna becomes CEO Ian’s secret lover to save her boyfriend, Louis, but is abandoned by Ian and later dates playboy David. After being forced into marriage with crime lord Domenico, Anna is kidnapped, prompting Ian and Louis to team up and rescue her. Amid dark secrets and intense rivalries, Anna must choose between four men to find true love.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/The Devil Wears Desire-Malayalam.json"
+        },
+        {
+          "id": "268817",
+          "title": "The Divorced Housewife Turned CEO",
+          "slug": "the-divorced-housewife-turned-ceo-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 59,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9bc030a44b1943e6bfc36cdb21c94876.png",
+          "description": "Betrayed by her husband Martin and backstabbed by his mistress Aleen, Sharon, once dismissed as a housewife, reveals her true identity as Musset, the legendary designer and the hidden CEO of MF, the world’s biggest fashion empire. But now that Sharon is the one closing billion-dollar deals, what happens to Martin? Will she make him regret ever cheating on her, or will she walk away from the pain and return to the man who broke her?",
+          "link": "/meow/json/The Divorced Housewife Turned CEO-Malayalam.json"
+        },
+        {
+          "id": "271566",
+          "title": "The Final Boss",
+          "slug": "the-final-boss-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c6e67cd4832d407fb32629adaae3cbd6.png",
+          "description": "Abhiraj Singh Rathore, the secret Raja of Rajputana Corporation and the wealthiest man on Earth, returns from battle only to be ruthlessly rejected by his childhood sweetheart, who believes he's nothing more than a fool. Now, as the King of all men, he’s determined to make her regret her decision in a way she never saw coming.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/The Final Boss-Malayalam.json"
+        },
+        {
+          "id": "268744",
+          "title": "The God King Returns",
+          "slug": "the-god-king-returns",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 5,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b583cdf577184f99b809f64bee4a3135.png",
+          "description": "A humiliated man returns as the powerful heir of a mega-corporation to expose his enemies, reclaim his dignity, and rewrite the rules of power and respect.",
+          "link": "/meow/json/The God King Returns-Malayalam.json"
+        },
+        {
+          "id": "269596",
+          "title": "The Last Recipe",
+          "slug": "the-last-recipe-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fa2f7ccbaff940db8d0e07d2e800d64a.png",
+          "description": "The Last Recipe follows Aryan, a talented yet underestimated cook, as he battles personal struggles and a fierce culinary competition to save Zaika, a restaurant tied to his past. Amidst sabotage, betrayal, and a rekindled romance with Naina, Aryan’s journey culminates in a dramatic showdown proving his mastery and integrity.",
+          "link": "/meow/json/The Last Recipe-Malayalam.json"
+        },
+        {
+          "id": "272466",
+          "title": "The Lost Heir Rises",
+          "slug": "the-lost-heir-rises",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/34febe72bfd1499c845064a947e72ca3.png",
+          "description": "Paralyzed in body but not in spirit, Raj lay broken — but Maya stood tall, unyielding. She battled fate, poverty, and pride, carrying his hope through every closed door and sleepless night.\r\nAnd when he rose again, it wasn’t just a miracle — it was a tribute to her unshakable love.",
+          "link": "/meow/json/The Lost Heir Rises-Malayalam.json"
+        }
       ]
     },
     {
       "title": "Uncategory7",
       "shows": [
-        "/meow/json/The Love that Kills-Malayalam.json",
-        "/meow/json/The Matrimonial Trap-Malayalam.json",
-        "/meow/json/The Officer Fell For me-Malayalam.json",
-        "/meow/json/The Old Man Returns-Malayalam.json",
-        "/meow/json/The Price of Betrayal-Malayalam.json",
-        "/meow/json/The Royal Betrayal-Malayalam.json",
-        "/meow/json/The Runaway CEO has Two Babies-Malayalam.json",
-        "/meow/json/The Sage Doctor-Malayalam.json",
-        "/meow/json/The Shadow’s counterattack-Malayalam.json",
-        "/meow/json/The Stars Know My Heart-Malayalam.json",
-        "/meow/json/The Storm-Malayalam.json",
-        "/meow/json/The Strongest Curse Master-Malayalam.json",
-        "/meow/json/The Substitute Bride-Malayalam.json",
-        "/meow/json/The Substitute Bride_ Unveiling Her Countless Secrets-Malayalam.json",
-        "/meow/json/The Subtle Fragrance from the Deep Forest-Malayalam.json",
-        "/meow/json/The World in my grasp-Malayalam.json",
-        "/meow/json/The Wronged Mother-Malayalam.json",
-        "/meow/json/This Doctor is Very Powerful-Malayalam.json",
-        "/meow/json/This Medical Saint is Not to Be Provoked-Malayalam.json",
-        "/meow/json/Throne of Vengeance-Malayalam.json"
+        {
+          "id": "271974",
+          "title": "The Love that Kills",
+          "slug": "the-love-that-kills-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 30,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/cee84c5985fd4b4293fd80297adedf8d.png",
+          "description": "A gripping drama that follows the unraveling of Raghav Malhotra's family due to the unchecked entitlement of his son Sid and father Vijay, sparked by Sid's destructive act at a luxury hotel. As tensions with Raghav's boss Srishti Mehra escalate, the series explores accountability, family dynamics, and the devastating cost of pride.",
+          "link": "/meow/json/The Love that Kills-Malayalam.json"
+        },
+        {
+          "id": "272109",
+          "title": "The Matrimonial Trap",
+          "slug": "the-matrimonial-trap",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/1df239dd23c54ccfa96b4064335b5ff2.png",
+          "description": "Vikram married Ananya for her wealth, not love. With his lover Rhea, he plotted a perfect crime — a fake marriage that ended in cold-blooded murder. But when Ananya’s twin sister Avni steps in to claim the inheritance and uncover the truth, the hunter becomes the hunted. As secrets unravel and vengeance burns, only one will emerge victorious — the deceiver or the avenger.\r\n\r\n",
+          "link": "/meow/json/The Matrimonial Trap-Malayalam.json"
+        },
+        {
+          "id": "271219",
+          "title": "The Officer Fell For me ",
+          "slug": "the-officer-fell-for-me-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 65,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/624bdd0faaff4533952b86684ba35d1f.png",
+          "description": "Lorenzo finds a photo of Jane in a fallen comrade’s belongings and vows to protect her, mistaking her for a war widow. Misunderstandings, jealousy, and betrayal drive them apart — until Jane uncovers a deadly conspiracy. When she’s trapped seeking revenge, Lorenzo returns, saves her, and proves their love can survive even the battlefield.",
+          "link": "/meow/json/The Officer Fell For me-Malayalam.json"
+        },
+        {
+          "id": "270863",
+          "title": "The Old Man Returns",
+          "slug": "the-old-man-returns-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 71,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5822ea14a21a4ec18958e3f3b017227c.png",
+          "description": "A retired corporate head running a pancake stall, Chen Wei, faces misunderstandings with his daughter and He Feifei after an injury incident, but through twists and turns, they eventually reconcile.",
+          "link": "/meow/json/The Old Man Returns-Malayalam.json"
+        },
+        {
+          "id": "271546",
+          "title": "The Price of Betrayal ",
+          "slug": "the-price-of-betrayal-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 50,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9fcb56b2b06b47cbb447afcc3f988099.png",
+          "description": "Ellie Scott’s world shatters when her husband, Dr. Zack Scott, gives their son’s heart to his ex-lover Raichel’s son, leading to Howie’s death. Devastated, Ellie fights for justice, causing Zack to confront his mistake and make a final sacrifice to save her. In the end, Rachel is exposed and imprisoned, while Ellie’s grief gives way to redemption.",
+          "link": "/meow/json/The Price of Betrayal-Malayalam.json"
+        },
+        {
+          "id": "272336",
+          "title": "The Royal Betrayal",
+          "slug": "the-royal-betrayal",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b5d85d73f7d3465691e07d30ad31d85f.png",
+          "description": "In the chaos of a deadly warzone, a woman crosses paths with the royal heir who shattered her heart — now forced to trust him for survival. As danger closes in, love and revenge collide in a race against death.\r\n\r\n",
+          "link": "/meow/json/The Royal Betrayal-Malayalam.json"
+        },
+        {
+          "id": "268837",
+          "title": "The Runaway CEO has Two Babies",
+          "slug": "the-runaway-ceo-has-two-babies-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 79,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/ecac61853289485999a87ae879d4919e.png",
+          "description": "After divorcing his ex-wife, he never got involved with any other woman. He refused to acknowledge that he had once loved her. However, upon reuniting, he realized that, both physically and emotionally, his true love was his ex-wife, not his first love.",
+          "link": "/meow/json/The Runaway CEO has Two Babies-Malayalam.json"
+        },
+        {
+          "id": "270401",
+          "title": "The Sage Doctor",
+          "slug": "the-sage-doctor-5",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 104,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5ef0cd263f6b40a2a3b654ae0f720fd1.png",
+          "description": "Betrayed by his wife, abandoned by life… but fate turned him into a miraculous doctor! This is the extraordinary redemption story of a security guard who became a supernatural healer. Now, he holds divine knowledge of medicine, costing, and healing. Listen to The Sage Doctor, where every wound has a cure!",
+          "link": "/meow/json/The Sage Doctor-Malayalam.json"
+        },
+        {
+          "id": "269532",
+          "title": "The Shadow’s counterattack",
+          "slug": "the-shadows-counterattack",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 31,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6eef1b22928b450fbd6015f3ed905903.png",
+          "description": "A rising beauty queen’s victory sparks jealousy in her rival, who ruins her face out of spite. Left struggling and hopeless, she works tirelessly until she can afford surgery to restore her looks. Now bearing the face of her enemy, she embarks on a path of calculated revenge.",
+          "link": "/meow/json/The Shadow’s counterattack-Malayalam.json"
+        },
+        {
+          "id": "270181",
+          "title": "The Stars Know My Heart",
+          "slug": "the-stars-know-my-heart-6",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/7d3333eceb1f418ebcf06ab0f7bd1577.png",
+          "description": "To save Sindhu from her father's plan to transplant her kidneys to her twin brother, her mother arranges for her escape. Injured and hidden by a doctor, she is found by Lawrence's family, who adopt and rename herJessica.",
+          "link": "/meow/json/The Stars Know My Heart-Malayalam.json"
+        },
+        {
+          "id": "268698",
+          "title": "The Storm",
+          "slug": "the-storm-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 5,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/14610babc69c4a3983729d3fd8af7570.png",
+          "description": "In a bustling marketplace, a young woman’s simple act of kindness sparks a storm of threats, debts, and danger.\r\nAs tempers flare and past dues resurface, survival becomes a fight between dignity and desperation.",
+          "link": "/meow/json/The Storm-Malayalam.json"
+        },
+        {
+          "id": "271491",
+          "title": "The Strongest Curse Master",
+          "slug": "the-strongest-curse-master-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 116,
+            "title": "एंटरटेनमेंट",
+            "slug": "entertainment",
+            "uri": "app://app/genres/entertainment",
+            "web_uri": "/genres/entertainment"
+          },
+          "n_episodes": 64,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a50c1f9744c84401a39192adeaa9e6bf.png",
+          "description": "Betrayed, broken, and left for dead, he was a forgotten man—until a cursed power chose him. Reborn as the Strongest Curse Master, he returns masked by vengeance and magic darker than death.\r\nThis is a tale of brutal payback, supernatural power, and the terrifying rise of a man the world once crushed.\r\n\r\n",
+          "link": "/meow/json/The Strongest Curse Master-Malayalam.json"
+        },
+        {
+          "id": "270179",
+          "title": "The Substitute Bride",
+          "slug": "the-substitute-bride-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 88,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8093662bec8a4c69888a0c83970efdc6.png",
+          "description": "A mysterious woman takes her sister’s place in an arranged marriage to save her family. Behind her calm façade lies a past full of secrets, deception, and hidden strength. As she steps into a world of power, betrayal, and love, her true identity begins to unravel. Each revelation shakes the lives of those around her—and the man she was never meant to marry.",
+          "link": "/meow/json/The Substitute Bride-Malayalam.json"
+        },
+        {
+          "id": "271604",
+          "title": "The Substitute Bride: Unveiling Her Countless Secrets",
+          "slug": "the-substitute-bride-unveiling-her-countless-secrets-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 50,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/4cd7a533d45540089e55570e627f112c.png",
+          "description": "A village girl arrives as a mere substitute bride, but with each passing moment, secrets emerge that have the power to upend lives. In a web of love, betrayal, and political intrigue, the true bride remains a mystery—who will emerge victorious in this high-stakes game? Watch as every hidden truth unfolds, revealing shocking twists at every turn.",
+          "link": "/meow/json/The Substitute Bride_ Unveiling Her Countless Secrets-Malayalam.json"
+        },
+        {
+          "id": "268695",
+          "title": "The Subtle Fragrance from the Deep Forest",
+          "slug": "the-subtle-fragrance-from-the-deep-forest",
+          "language": "malayalam",
+          "genre": {
+            "id": 3,
+            "title": "प्यार",
+            "slug": "love",
+            "uri": "app://app/genres/love",
+            "web_uri": "/genres/love"
+          },
+          "n_episodes": 5,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c572349f6f704213a69f6047e781a0d7.png",
+          "description": "After a drunken mistake with her cold and powerful boss and later discovers she’s pregnant and decides to flee. But the farther she runs, the more determined he becomes to claim her—and their unborn child.",
+          "link": "/meow/json/The Subtle Fragrance from the Deep Forest-Malayalam.json"
+        },
+        {
+          "id": "268805",
+          "title": "The World in my grasp",
+          "slug": "the-world-in-my-grasp-5",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 68,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e9bbe6c7023b42ada2de3f3b482cfaa7.png",
+          "description": "Finn Cooper works hard as a laborer, saving every penny to marry his girlfriend. One day, he wishes to be stronger—and suddenly, everyone else becomes as weak as water. Now the strongest man on Earth, Finn faces a world that’s nothing like he imagined.",
+          "link": "/meow/json/The World in my grasp-Malayalam.json"
+        },
+        {
+          "id": "269603",
+          "title": "The Wronged Mother",
+          "slug": "the-wronged-mother-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 77,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c44ff14eab6f4733a9b7ceb193465160.png",
+          "description": "After sacrificing everything to fund her son Damien’s education, Catherine moves to the city to reunite with his growing family. But Damien disowns her, posing as her nephew, and his wife Ravenna falsely accuses her of theft. Forced into servitude as a nanny, Catherine faces betrayal where she expected love.",
+          "link": "/meow/json/The Wronged Mother-Malayalam.json"
+        },
+        {
+          "id": "272493",
+          "title": "This Doctor is Very Powerful",
+          "slug": "this-doctor-is-very-powerful",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 99,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90fb3abc172041c09cc633c5f86f27b3.png",
+          "description": "A maverick doctor walks into the hospital — and turns the system on its head. As rules crumble and chaos brews, the question remains: will he change the world or be changed by it?\r\nPacked with gripping cases and emotional depth, this is one medical drama you can’t afford to miss.",
+          "link": "/meow/json/This Doctor is Very Powerful-Malayalam.json"
+        },
+        {
+          "id": "273256",
+          "title": "This Medical Saint is Not to Be Provoked ",
+          "slug": "this-medical-saint-is-not-to-be-provoked-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 62,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a042953044cf4c269759f3135542cdea.png",
+          "description": "A gifted healer and his magical box bring hope to the helpless—until betrayal changes everything. His ambitious junior’s treachery twists a miracle into a deadly curse.\r\nA gripping tale of magic, power, and the devastating cost of playing god. Watch now!",
+          "link": "/meow/json/This Medical Saint is Not to Be Provoked-Malayalam.json"
+        },
+        {
+          "id": "269540",
+          "title": "Throne of Vengeance",
+          "slug": "there-is-none-under-heaven-to-equal-her",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 67,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/ae8d185472634110b30e1e8ff5886ec9.png",
+          "description": "There Is None Under Heaven to Equal Her\" is a historical drama that portrays the life of a remarkable woman celebrated for her unmatched beauty, wisdom, and strength. Set against the backdrop of a richly detailed ancient China, the film explores themes of love, power, sacrifice, and destiny as the heroine navigates court intrigues and personal challenges to leave a lasting legacy",
+          "link": "/meow/json/Throne of Vengeance-Malayalam.json"
+        }
       ]
     },
     {
       "title": "Uncategory8",
       "shows": [
-        "/meow/json/Too Heavy To Handle-Malayalam.json",
-        "/meow/json/Travel Back in Time _ 1991-Malayalam.json",
-        "/meow/json/Unscripted Romance_ In Love With My Substitute Wife-Malayalam.json",
-        "/meow/json/Unwed but Pregnant_ An Unexpected Husband-Malayalam.json",
-        "/meow/json/Vicious Son in Law, Don't Mess with Me-Malayalam.json",
-        "/meow/json/Waiting for Love -Malayalam.json",
-        "/meow/json/Wake Up, Dad Wedding Time-Malayalam.json",
-        "/meow/json/When the Sun Sets on Us-Malayalam.json",
-        "/meow/json/Why Must the Boss Contractually Marry-Malayalam.json",
-        "/meow/json/WILD YOUNG MASTER SON-IN-LAW-Malayalam.json",
-        "/meow/json/Wonder Boy Parth-Malayalam.json",
-        "/meow/json/Yes Mr. CEO, We Have A Baby-Malayalam.json",
-        "/meow/json/You Are like the Wind Passing by My Pillow-Malayalam.json",
-        "/meow/json/മറുപിറവി-Malayalam.json"
+        {
+          "id": "272154",
+          "title": "Too Heavy To Handle",
+          "slug": "too-heavy-to-handle-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 48,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/830e408538f34871bc8f8003f983acb5.png",
+          "description": "When Priya, once ridiculed for her weight, disappears from the world that shamed her, she returns years later as Avni—a bold, unrecognizable force of power. Fueled by heartbreak and reborn through resilience, Avni sets out to reclaim her worth and rewrite the rules. A gripping tale of transformation, revenge, and raw empowerment, Too Heavy to Handle is an emotional thrill ride where every wound becomes a weapon.\r\n\r\n",
+          "link": "/meow/json/Too Heavy To Handle-Malayalam.json"
+        },
+        {
+          "id": "270585",
+          "title": "Travel Back in Time : 1991",
+          "slug": "travel-back-in-time-1991-1",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 102,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/cb069ef6fb8741c8a14403951ac25232.png",
+          "description": "The hero is ready to marry the girl he loves. But just then, memories of his past life start haunting him. Betrayed by those closest to him in his previous birth, what will the protagonist do in this lifetime? Watch the famous drama -Travel Back in Time: 1991.",
+          "link": "/meow/json/Travel Back in Time _ 1991-Malayalam.json"
+        },
+        {
+          "id": "271141",
+          "title": "Unscripted Romance: In Love With My Substitute Wife",
+          "slug": "unscripted-romance-in-love-with-my-substitute-wife-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 100,
+          "n_seasons": 1,
+          "show_type": "video",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c793eb7fca34412aad20be646d78a153.png",
+          "description": "Yvette Taylor agrees to marry into the powerful Jones family in place of her sister, setting off a journey of sacrifice and self-discovery. Caught in a web of family duty and unexpected love, she forms a complicated bond with her new husband. Spanning 100 episodes, this romantic drama explores identity, resilience, and the pursuit of true affection.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Unscripted Romance_ In Love With My Substitute Wife-Malayalam.json"
+        },
+        {
+          "id": "270718",
+          "title": "Unwed but Pregnant: An Unexpected Husband",
+          "slug": "unwed-but-pregnant-an-unexpected-husband-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 50,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0d4f5f3d98944b1994d320cc276cdadc.png",
+          "description": "After getting pregnant with the empire’s heir, a young woman faces surprising challenges and growing affection from everyone. Suddenly, she's at the center of attention, caught between love and political intrigue.",
+          "link": "/meow/json/Unwed but Pregnant_ An Unexpected Husband-Malayalam.json"
+        },
+        {
+          "id": "268842",
+          "title": "Vicious Son in Law, Don't Mess with Me",
+          "slug": "vicious-son-in-law-dont-mess-with-me-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 74,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0a96711df2e0497cb1673ca44298550a.png",
+          "description": "After losing her daughter and son-in-law in a tragic twist, a grieving woman is betrayed once again—this time by the very family that caused her pain. As they scheme to steal her property, she rises with unshakable courage. In a battle for justice and dignity, she fights not just for what’s hers—but for her soul’s redemption.",
+          "link": "/meow/json/Vicious Son in Law, Don't Mess with Me-Malayalam.json"
+        },
+        {
+          "id": "272011",
+          "title": "Waiting for Love ❤️",
+          "slug": "waiting-for-love-4",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 45,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6c541acd5aa941d1815ff9d1de45ebc4.png",
+          "description": "A lonely billionaire hides his identity to test a woman’s love. She’s a resilient food stall owner, scarred by betrayal and loss. But what begins as a spark of love leads her to the daughter she lost five years ago.\r\n\r\n",
+          "link": "/meow/json/Waiting for Love -Malayalam.json"
+        },
+        {
+          "id": "270739",
+          "title": "Wake Up, Dad! Wedding Time",
+          "slug": "wake-up-dad-wedding-time-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 69,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e5b0c804ffca436ba4660706b154feb6.png",
+          "description": "Laila, a wealthy heiress, is thrown out of her home after getting pregnant. Years later, Roman—the child's father—returns as the richest man in the world. When their son needs medical help, Laila agrees to a contract marriage with Roman. But as they spend time together, their fake marriage turns into real love.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "link": "/meow/json/Wake Up, Dad Wedding Time-Malayalam.json"
+        },
+        {
+          "id": "268822",
+          "title": "When the Sun Sets on Us",
+          "slug": "when-the-sun-sets-on-us-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 43,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/4e2a0cef972c41df8afb9a83d763057d.png",
+          "description": "Ethan finds secret photos of his girlfriend Nancy with her old flame, Mark. Heartbroken, he leaves her and agrees to take over his family business abroad. But Nancy, unaware he knows, keeps getting close to Mark—right in front of him. Would you like a tagline added for extra impact?",
+          "link": "/meow/json/When the Sun Sets on Us-Malayalam.json"
+        },
+        {
+          "id": "271091",
+          "title": "Why Must the Boss Contractually Marry",
+          "slug": "why-must-the-boss-contractually-marry",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 81,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/38c7fe38782a4efeb4f1cad6acd0f588.png",
+          "description": "Why Must The Boss Contractly Marry",
+          "link": "/meow/json/Why Must the Boss Contractually Marry-Malayalam.json"
+        },
+        {
+          "id": "272615",
+          "title": "WILD YOUNG MASTER SON-IN-LAW",
+          "slug": "wild-young-master-son-in-law-5",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 99,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/27bcfb7219c24475a2d9df71db54a218.png",
+          "description": "Mocked, scarred, and trapped in a cruel marriage, she had lost everything—until he returned. Now claimed by the most feared man alive, her fall becomes the spark for a powerful rise.\r\nWild Young Master Son-in-Law is a storm of revenge, redemption, and a love that won’t bow.\r\n\r\n",
+          "link": "/meow/json/WILD YOUNG MASTER SON-IN-LAW-Malayalam.json"
+        },
+        {
+          "id": "269712",
+          "title": "Wonder Boy Parth",
+          "slug": "wonder-boy-parth-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 39,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/33d0e367c43d4ffbb8601dcfb01dad49.png",
+          "description": "In a tale of betrayal and redemption, a visually impaired man named Parth harnesses ancient mystical powers from his mother’s locket to seek justice against those who wronged him, uncovering priceless treasures and battling dark forces in a city ruled by greed and deception.\r\n",
+          "link": "/meow/json/Wonder Boy Parth-Malayalam.json"
+        },
+        {
+          "id": "271192",
+          "title": "Yes Mr. CEO, We Have A Baby",
+          "slug": "yes-mr-ceo-we-have-a-baby-2",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 80,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/c6bb382b826847129d38525ad7cfedc9.png",
+          "description": "Six years after a scandal ruined her life, Shirley returns home with her son to uncover the truth. Working at her sister’s fiancé Neil’s company, unexpected sparks fly — and her son feels an odd bond with him. As secrets unravel, Shirley is determined to find out what really happened that fateful night.",
+          "link": "/meow/json/Yes Mr. CEO, We Have A Baby-Malayalam.json"
+        },
+        {
+          "id": "272340",
+          "title": "You Are like the Wind Passing by My Pillow",
+          "slug": "you-are-like-the-wind-passing-by-my-pillow-3",
+          "language": "malayalam",
+          "genre": {
+            "id": 80,
+            "title": "नाटक",
+            "slug": "drama_",
+            "uri": "app://app/genres/drama_",
+            "web_uri": "/genres/drama_"
+          },
+          "n_episodes": 77,
+          "n_seasons": 1,
+          "show_type": "reel",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/231971b9f43244c8a787cfc9db65209f.png",
+          "description": "Stella adored her husband George — until love turned into betrayal. While she trusted blindly, he lived a double life of lies, crime, and secret affairs, using her as a perfect cover.\r\nBut when the truth unravels, Stella must decide seek revenge or vanish — leaving George to face the storm he created.",
+          "link": "/meow/json/You Are like the Wind Passing by My Pillow-Malayalam.json"
+        },
+        {
+          "id": "252969",
+          "title": "മറുപിറവി",
+          "slug": "marupiravi",
+          "language": "malayalam",
+          "genre": {
+            "id": 65,
+            "title": "सनसनीखेज़",
+            "slug": "thriller",
+            "uri": "app://app/genres/thriller",
+            "web_uri": "/genres/thriller"
+          },
+          "n_episodes": 42,
+          "n_seasons": 1,
+          "show_type": "audio",
+          "is_adult_content": false,
+          "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9646a53ad1434ec08b9be868283e53ee.png",
+          "description": "ചരിത്രവും കഥയും ഭാവനയും സമകാലികസംഭവങ്ങളും ഇഴചേർന്ന് ഒരു മറുപിറവി സംഭവിക്കുകയാണിവിടെ. സ്വന്തം ദേശത്തിന്റെ സ്വത്വസംസ്‌കാരങ്ങൾ തേടിക്കൊണ്ടുള്ള ഒരു നോവലിസ്റ്റിന്റെ അന്വേഷണയാത്ര. നോവലിനുള്ളിൽ മറ്റൊരു നോവൽ പിറവിയെടുക്കുന്ന ആഖ്യാന സൗകുമാര്യം. സേതുവിൻ്റെ സമാനതകളില്ലാത്ത ഒരു രചന.",
+          "link": "/meow/json/മറുപിറവി-Malayalam.json"
+        }
       ]
     }
   ]
