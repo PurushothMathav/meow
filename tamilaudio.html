@@ -1460,8 +1460,9 @@ body {
           <div class="control-group">
             <label class="control-label">Quality</label>
             <select id="qualitySelect" class="control-select">
+			  <option value="converted_hls_url"  selected>Default</option>
 			  <option value="audio_128kb">128 KB</option>
-              <option value="audio_64kb" selected>64 KB</option>
+              <option value="audio_64kb">64 KB</option>
               <option value="audio_24kb">24 KB</option>
             </select>
           </div>
@@ -2626,8 +2627,8 @@ function renderContinueWatching() {
 
 // Open show
 async function openShow(showId) {
-  const showData = allShows.find(s => s.show.id.toString() === showId);
-  if (!showData) {
+  const showData = allShows.find(s => s.show?.id?.toString() === showId);
+  if (!showData || !showData.show) {
     showToast('Show not found');
     return;
   }
@@ -2637,6 +2638,11 @@ async function openShow(showId) {
   try {
     // Load episodes only when needed
     if (!showData.episodes || showData.episodes.length === 0) {
+      if (!showData.show.link) {
+        showToast('Episode data not available');
+        return;
+      }
+      
       const response = await fetch(showData.show.link);
       if (!response.ok) throw new Error('Failed to load episodes');
       
