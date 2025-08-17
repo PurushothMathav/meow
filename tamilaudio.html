@@ -2682,6 +2682,11 @@ async function continueWatching(showId) {
   // Load episodes if not loaded
   if (!showData.episodes || showData.episodes.length === 0) {
     try {
+      if (!showData.show.link) {
+        showToast('Episode data not available');
+        return;
+      }
+      
       const response = await fetch(showData.show.link);
       if (!response.ok) throw new Error('Failed to load episodes');
       
@@ -2691,6 +2696,11 @@ async function continueWatching(showId) {
       showToast('Failed to load episodes');
       return;
     }
+  }
+
+  if (showData.episodes.length === 0) {
+    showToast('No episodes available');
+    return;
   }
 
   currentShow = showData;
