@@ -1661,21 +1661,22 @@ clearSearch.addEventListener('click', () => {
   searchInput.value = '';
   clearSearch.classList.remove('visible');
   updateUrlSearch('');
-  //handleSearch('');
   isSearchMode = false;
   searchResultsHeader.style.display = 'none';
   mainContent.style.display = 'block';
 
-	// Only show continue watching if it has content
-	const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
-		data.progress > 0 && data.progress < 0.95
-	);
-  
-	if (watchingShows.length > 0) {
-		continueSection.style.display = 'block';
-	} else {
-		continueSection.style.display = 'none';
-	}
+  // Only show continue watching if it has content
+  const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
+    data.progress > 0 && data.progress < 0.95
+  );
+
+  if (watchingShows.length > 0) {
+    continueSection.style.display = 'block';
+    // Re-render continue watching to make sure it shows up
+    renderContinueWatching();
+  } else {
+    continueSection.style.display = 'none';
+  }
 });
 
   // Player controls
@@ -2600,22 +2601,22 @@ function renderContinueWatching() {
   continueSection.style.display = 'block';
   
   continueGrid.innerHTML = watchingShows.map(([showId, data]) => {
-    const show = allShows.find(s => s.show.id.toString() === showId);
-    if (!show) return '';
+    const showData = allShows.find(s => s.show?.id?.toString() === showId);
+    if (!showData || !showData.show) return '';
 
     return `
       <div class="continue-card" onclick="continueWatching('${showId}')">
         <div class="continue-thumbnail-wrapper">
           <img 
-            src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
-            alt="${show.show.title}"
+            src="${showData.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
+            alt="${showData.show.title}"
             class="continue-thumbnail"
             loading="lazy"
             onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
           >
           <button class="remove-btn" onclick="event.stopPropagation(); removeFromContinue('${showId}')" title="Remove">×</button>
         </div>
-        <div class="continue-title" title="${show.show.title}">${show.show.title}</div>
+        <div class="continue-title" title="${showData.show.title}">${showData.show.title}</div>
         <div class="continue-episode">Episode ${data.episode + 1}</div>
         <div class="progress-bar">
           <div class="progress-fill" style="width: ${data.progress * 100}%"></div>
@@ -2914,6 +2915,7 @@ function closePlayer() {
   videoPlayer.src = '';
   videoPlayer.load();
   
+  // Re-render continue watching after closing player
   renderContinueWatching();
   
   // Exit search mode and return to normal view
@@ -2925,16 +2927,18 @@ function closePlayer() {
     searchResultsHeader.style.display = 'none';
     mainContent.style.display = 'block';
 
-	// Only show continue watching if it has content
-	const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
-		data.progress > 0 && data.progress < 0.95
-	);
-  
-	if (watchingShows.length > 0) {
-		continueSection.style.display = 'block';
-	} else {
-		continueSection.style.display = 'none';
-	}
+    // Only show continue watching if it has content
+    const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
+      data.progress > 0 && data.progress < 0.95
+    );
+
+    if (watchingShows.length > 0) {
+      continueSection.style.display = 'block';
+      // Re-render continue watching
+      renderContinueWatching();
+    } else {
+      continueSection.style.display = 'none';
+    }
   }
   
   if (history.state?.player) {
