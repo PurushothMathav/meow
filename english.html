@@ -415,8 +415,9 @@ body {
 }
 
 .section-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
+  font-family: "Georgia", serif;
   color: var(--text-primary);
   display: flex;
   align-items: center;
@@ -424,8 +425,8 @@ body {
 }
 
 .section-icon {
-  font-size: 1rem;
-  opacity: 0.8;
+  font-size: 0.1rem;
+  opacity: 0;
 }
 
 .view-all-btn {
@@ -2983,10 +2984,15 @@ async function shareDirectPlayUrl(showId, episodeIndex = 0) {
   }
   
   const shareData = {
-    title: show.show.title,
-    text: `Watch "${show.show.title}" on Meow`,
-    url: url
-  };
+  title: show.show.title,
+  text: 
+`Title: ${show.show.title}
+Description: ${show.show.description || "No description available"}
+Image: ${show.show.share_image_url || "No image"}
+Episodes: ${show.show.n_episodes || 0}
+Link: ${url}`,
+  url: url
+};
   
   try {
     // Try Web Share API first (mobile browsers)
