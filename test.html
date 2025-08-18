@@ -289,6 +289,7 @@
             justify-content: space-between;
             gap: 15px;
             flex-wrap: wrap;
+			margin-bottom: 15px;
         }
 
         .control-group {
@@ -651,15 +652,9 @@
 
             /* Fixed Control Row for Mobile */
             .control-row {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
-        justify-content: space-between !important; /* Change from center to space-between */
-        align-items: center !important;
-        gap: 15px !important; /* Increase gap */
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
+				margin-bottom: 25px; /* Even more space on mobile */
+				padding-bottom: 10px; /* Extra padding for touch targets */
+			}
 
             /* Make all buttons visible and properly sized on mobile */
             .nav-btn, .settings-btn, .volume-btn {
