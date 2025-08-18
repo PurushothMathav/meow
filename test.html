@@ -651,13 +651,15 @@
 
             /* Fixed Control Row for Mobile */
             .control-row {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-            }
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important; /* Change from center to space-between */
+        align-items: center !important;
+        gap: 15px !important; /* Increase gap */
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
 
             /* Make all buttons visible and properly sized on mobile */
             .nav-btn, .settings-btn, .volume-btn {
