@@ -51,18 +51,18 @@
 
         /* Video Container */
         .video-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background: var(--bg-dark);
             display: flex;
             align-items: center;
             justify-content: center;
+            background: var(--bg-dark);
+            width: 100%;
+            height: 100%;
         }
 
         .video-player {
-            width: 100%;
             height: 100%;
+            max-height: 100%;
+            aspect-ratio: 9 / 16;
             object-fit: cover;
             background: var(--bg-dark);
         }
@@ -237,6 +237,12 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
         }
 
+        .show-title-image {
+            max-height: 60px;
+            object-fit: contain;
+            margin-bottom: 5px;
+        }
+
         /* Progress Bar */
         .progress-container {
             margin-bottom: 15px;
@@ -336,13 +342,14 @@
             outline: none;
         }
 
-        .quality-controls {
+        /* New Control Buttons */
+        .settings-controls {
             display: flex;
             align-items: center;
             gap: 10px;
         }
 
-        .quality-btn {
+        .settings-btn {
             background: var(--control-bg);
             border: none;
             color: var(--text-white);
@@ -352,10 +359,10 @@
             cursor: pointer;
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
+            position: relative;
         }
 
-        .quality-btn:hover,
-        .quality-btn.active {
+        .settings-btn:hover {
             background: var(--primary);
         }
 
@@ -388,46 +395,160 @@
             min-width: 80px;
         }
 
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .top-controls,
-            .bottom-controls {
-                padding: 15px;
-            }
+        /* Episodes Overlay */
+        .episodes-overlay {
+            transition: opacity 0.2s ease;
+            opacity: 0;
+            pointer-events: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 300;
+            display: none;
+            overflow-y: auto;
+            padding: 20px;
+        }
 
-            .show-title {
-                font-size: 20px;
-            }
+        .episodes-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+            display: block;
+        }
 
-            .episode-info {
-                font-size: 14px;
-            }
+        .episodes-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-            .control-row {
-                flex-wrap: wrap;
-                gap: 10px;
-            }
+        .episodes-title {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: var(--text-white);
+        }
 
-            .episode-select {
-                max-width: 150px;
-                font-size: 12px;
-            }
+        .episodes-meta {
+            font-size: 16px;
+            color: var(--text-gray);
+            margin-bottom: 10px;
+        }
 
-            .quality-btn {
-                font-size: 12px;
-                padding: 6px 10px;
-            }
+        .episodes-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: var(--text-white);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
 
-            .right-controls {
-                right: 15px;
-                gap: 20px;
-            }
+        .episodes-close:hover {
+            background: var(--control-bg);
+        }
 
-            .control-btn {
-                width: 45px;
-                height: 45px;
-                font-size: 18px;
-            }
+        .section-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .section-tab {
+            background: var(--control-bg);
+            border: none;
+            color: var(--text-white);
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .section-tab.active {
+            background: var(--primary);
+        }
+
+        .section-tab:hover {
+            background: var(--secondary);
+        }
+
+        .episodes-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .episode-card {
+            background: var(--control-bg);
+            border: none;
+            color: var(--text-white);
+            padding: 15px 10px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .episode-card:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .episode-card.current {
+            background: var(--secondary);
+        }
+
+        /* Menu Overlays */
+        .menu-overlay {
+            position: absolute;
+            bottom: 60px;
+            right: 20px;
+            background: var(--control-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 10px;
+            display: none;
+            flex-direction: column;
+            min-width: 120px;
+            z-index: 400;
+        }
+
+        .menu-overlay.active {
+            display: flex;
+        }
+
+        .menu-item {
+            background: none;
+            border: none;
+            color: var(--text-white);
+            padding: 8px 12px;
+            cursor: pointer;
+            text-align: left;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background: var(--primary);
+        }
+
+        .menu-item.active {
+            background: var(--secondary);
+            font-weight: bold;
         }
 
         /* Touch Areas for Mobile */
@@ -489,22 +610,6 @@
             pointer-events: none;
         }
 
-        /* Fullscreen Styles */
-        .reel-player:-webkit-full-screen {
-            width: 100vw;
-            height: 100vh;
-        }
-
-        .reel-player:-moz-full-screen {
-            width: 100vw;
-            height: 100vh;
-        }
-
-        .reel-player:fullscreen {
-            width: 100vw;
-            height: 100vh;
-        }
-
         /* Toast Messages */
         .toast {
             position: fixed;
@@ -525,6 +630,62 @@
 
         .toast.visible {
             opacity: 1;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .top-controls,
+            .bottom-controls {
+                padding: 15px;
+            }
+
+            .show-title {
+                font-size: 20px;
+            }
+
+            .episode-info {
+                font-size: 14px;
+            }
+
+            .control-row {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .episode-select {
+                max-width: 150px;
+                font-size: 12px;
+            }
+
+            .settings-btn {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+
+            .right-controls {
+                right: 15px;
+                gap: 20px;
+            }
+
+            .control-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+
+            .episodes-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+            
+            .section-tabs {
+                gap: 10px;
+            }
+            
+            .section-tab {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -572,12 +733,6 @@
 
                 <!-- Right Side Controls -->
                 <div class="right-controls">
-                    <button class="control-btn" id="likeBtn" title="Like">
-                        <i class="fas fa-heart"></i>
-                    </button>
-                    <button class="control-btn" id="saveBtn" title="Save">
-                        <i class="fas fa-bookmark"></i>
-                    </button>
                     <button class="control-btn" id="episodesBtn" title="Episodes">
                         <i class="fas fa-list"></i>
                     </button>
@@ -590,8 +745,8 @@
                 <div class="bottom-controls">
                     <!-- Show Info -->
                     <div class="show-info">
-                        <div class="show-title" id="showTitle">Loading...</div>
-                        <div class="episode-info" id="episodeInfo">Episode 1 / 45</div>
+                        <img id="showTitleImage" class="show-title-image" alt="Show Title" style="display: none;">
+                        <div class="episode-info" id="episodeInfo"></div>
                     </div>
 
                     <!-- Progress Bar -->
@@ -609,9 +764,9 @@
                             <button class="nav-btn" id="prevEpisode" title="Previous Episode">
                                 <i class="fas fa-step-backward"></i>
                             </button>
-                            <select class="episode-select" id="episodeSelect">
+                            <!-- <select class="episode-select" id="episodeSelect">
                                 <option>Episode 1</option>
-                            </select>
+                            </select> -->
                             <button class="nav-btn" id="nextEpisode" title="Next Episode">
                                 <i class="fas fa-step-forward"></i>
                             </button>
@@ -620,11 +775,14 @@
                         <!-- Time Display -->
                         <div class="time-display" id="timeDisplay">0:00 / 0:00</div>
 
-                        <!-- Quality Controls -->
-                        <div class="quality-controls">
-                            <button class="quality-btn" data-quality="480p">480P</button>
-                            <button class="quality-btn active" data-quality="720p">720P</button>
-                            <button class="quality-btn" data-quality="1080p">1080P</button>
+                        <!-- Settings Controls -->
+                        <div class="settings-controls">
+                            <button class="settings-btn" id="speedBtn" title="Playback Speed">
+                                <i class="fas fa-tachometer-alt"></i> 1x
+                            </button>
+                            <button class="settings-btn" id="qualityBtn" title="Quality">
+                                <i class="fas fa-cog"></i> 720P
+                            </button>
                         </div>
 
                         <!-- Volume Control -->
@@ -636,6 +794,34 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Episodes Overlay -->
+            <div class="episodes-overlay" id="episodesOverlay">
+                <button class="episodes-close" id="episodesClose" onclick="event.stopPropagation();">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+                <div class="episodes-header">
+                    <div class="episodes-title" id="episodesTitle"></div>
+                    <div class="episodes-meta" id="episodesMeta"></div>
+                </div>
+                
+                <div class="section-tabs" id="sectionTabs"></div>
+                
+                <div class="episodes-grid" id="episodesGrid"></div>
+            </div>
+
+            <!-- Speed Menu -->
+            <div class="menu-overlay" id="speedMenu">
+                <button class="menu-item speed-option" data-speed="0.5">0.5x</button>
+                <button class="menu-item speed-option active" data-speed="1">1x</button>
+                <button class="menu-item speed-option" data-speed="1.25">1.25x</button>
+                <button class="menu-item speed-option" data-speed="1.5">1.5x</button>
+                <button class="menu-item speed-option" data-speed="2">2x</button>
+            </div>
+
+            <!-- Quality Menu -->
+            <div class="menu-overlay" id="qualityMenu"></div>
         </div>
     </div>
 
@@ -653,7 +839,6 @@
                 this.progressBar = document.getElementById('progressBar');
                 this.progressFill = document.getElementById('progressFill');
                 this.progressThumb = document.getElementById('progressThumb');
-                this.showTitle = document.getElementById('showTitle');
                 this.episodeInfo = document.getElementById('episodeInfo');
                 this.timeDisplay = document.getElementById('timeDisplay');
                 
@@ -662,8 +847,8 @@
                 this.currentEpisodeIndex = 0;
                 this.hls = null;
                 this.hideControlsTimeout = null;
-                this.isLiked = false;
-                this.isSaved = false;
+                this.currentQuality = '720p';
+                this.currentSpeed = 1;
                 
                 this.initializeEventListeners();
             }
@@ -679,7 +864,7 @@
                 // Episode navigation
                 document.getElementById('prevEpisode').addEventListener('click', () => this.previousEpisode());
                 document.getElementById('nextEpisode').addEventListener('click', () => this.nextEpisode());
-                document.getElementById('episodeSelect').addEventListener('change', (e) => this.loadEpisode(parseInt(e.target.value)));
+                //document.getElementById('episodeSelect').addEventListener('change', (e) => this.loadEpisode(parseInt(e.target.value)));
 
                 // Touch areas for seek
                 document.getElementById('seekBackward').addEventListener('click', () => this.seek(-10));
@@ -688,14 +873,31 @@
                 // Progress bar
                 this.progressBar.addEventListener('click', (e) => this.seekToPosition(e));
 
-                // Quality buttons
-                document.querySelectorAll('.quality-btn').forEach(btn => {
-                    btn.addEventListener('click', (e) => this.changeQuality(e.target.dataset.quality));
+                // Episodes button - Fixed implementation
+                document.getElementById('episodesBtn').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.showEpisodesOverlay();
                 });
 
-                // Like and Save buttons
-                document.getElementById('likeBtn').addEventListener('click', () => this.toggleLike());
-                document.getElementById('saveBtn').addEventListener('click', () => this.toggleSave());
+                // Speed button
+                document.getElementById('speedBtn').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.toggleSpeedMenu();
+                });
+
+                // Quality button
+                document.getElementById('qualityBtn').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.toggleQualityMenu();
+                });
+
+                // Speed menu options
+                document.querySelectorAll('.speed-option').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const speed = parseFloat(e.target.dataset.speed);
+                        this.changeSpeed(speed);
+                    });
+                });
 
                 // Share button
                 document.getElementById('shareBtn').addEventListener('click', () => this.shareEpisode());
@@ -716,6 +918,7 @@
                     if (e.target === this.container || e.target === this.video) {
                         this.toggleControls();
                     }
+                    this.hideAllMenus();
                 });
 
                 // Keyboard shortcuts
@@ -727,6 +930,13 @@
                 // Auto-hide controls
                 this.container.addEventListener('mousemove', () => this.resetControlsTimer());
                 this.container.addEventListener('touchstart', () => this.resetControlsTimer());
+
+                // Close menus when clicking elsewhere
+                document.addEventListener('click', (e) => {
+                    if (!e.target.closest('.menu-overlay') && !e.target.closest('#speedBtn') && !e.target.closest('#qualityBtn')) {
+                        this.hideAllMenus();
+                    }
+                });
             }
 
             setupTouchEvents() {
@@ -763,6 +973,211 @@
                 }, { passive: true });
             }
 
+            showEpisodesOverlay() {
+                const overlay = document.getElementById('episodesOverlay');
+                overlay.classList.add('active');
+                this.setupEpisodesOverlay();
+                
+                // Close button
+                document.getElementById('episodesClose').onclick = () => {
+                    overlay.classList.remove('active');
+                };
+            }
+
+            setupEpisodesOverlay() {
+                if (!this.currentShow) return;
+                
+                const show = this.currentShow.show;
+                const episodes = this.currentEpisodes;
+                
+                // Header info
+                document.getElementById('episodesTitle').textContent = show.title;
+                
+                // Get language and rating
+                const language = show.language || 'Unknown';
+                const rating = this.getRating(show);
+                document.getElementById('episodesMeta').textContent = 
+                    `${episodes.length} Episodes | ${language} . ${rating}`;
+                
+                // Create section tabs
+                this.createSectionTabs(episodes.length);
+                
+                // Show first section
+                this.showEpisodeSection(0);
+            }
+
+            getRating(show) {
+                if (show.labels) {
+                    const rating = show.labels.find(label => label.includes('+'));
+                    return rating || 'All';
+                }
+                return 'All';
+            }
+
+            createSectionTabs(totalEpisodes) {
+                const tabsContainer = document.getElementById('sectionTabs');
+                tabsContainer.innerHTML = '';
+                
+                const sectionsCount = Math.ceil(totalEpisodes / 30);
+                
+                for (let i = 0; i < sectionsCount; i++) {
+                    const start = (i * 30) + 1;
+                    const end = Math.min((i + 1) * 30, totalEpisodes);
+                    
+                    const tab = document.createElement('button');
+                    tab.className = 'section-tab';
+                    tab.textContent = `${start.toString().padStart(2, '0')}-${end.toString().padStart(2, '0')}`;
+                    tab.onclick = () => this.showEpisodeSection(i);
+                    
+                    if (i === 0) tab.classList.add('active');
+                    
+                    tabsContainer.appendChild(tab);
+                }
+            }
+
+            showEpisodeSection(sectionIndex) {
+                // Update active tab
+                document.querySelectorAll('.section-tab').forEach((tab, index) => {
+                    tab.classList.toggle('active', index === sectionIndex);
+                });
+                
+                // Show episodes for this section
+                const start = sectionIndex * 30;
+                const end = Math.min(start + 30, this.currentEpisodes.length);
+                const sectionEpisodes = this.currentEpisodes.slice(start, end);
+                
+                const grid = document.getElementById('episodesGrid');
+                grid.innerHTML = '';
+                
+                sectionEpisodes.forEach((episode, index) => {
+                    const episodeIndex = start + index;
+                    const card = document.createElement('button');
+                    card.className = 'episode-card';
+                    card.textContent = (episodeIndex + 1).toString();
+                    
+                    if (episodeIndex === this.currentEpisodeIndex) {
+                        card.classList.add('current');
+                    }
+                    
+                    card.onclick = () => {
+                        this.loadEpisode(episodeIndex);
+                        document.getElementById('episodesOverlay').classList.remove('active');
+                        this.showToast(`Playing Episode ${episodeIndex + 1}`);
+                    };
+                    
+                    grid.appendChild(card);
+                });
+            }
+
+            toggleSpeedMenu() {
+                const menu = document.getElementById('speedMenu');
+                const isActive = menu.classList.contains('active');
+                
+                this.hideAllMenus();
+                
+                if (!isActive) {
+                    menu.classList.add('active');
+                }
+            }
+
+            toggleQualityMenu() {
+                const menu = document.getElementById('qualityMenu');
+                const isActive = menu.classList.contains('active');
+                
+                this.hideAllMenus();
+                
+                if (!isActive) {
+                    this.populateQualityMenu();
+                    menu.classList.add('active');
+                }
+            }
+
+            hideAllMenus() {
+                document.getElementById('speedMenu').classList.remove('active');
+                document.getElementById('qualityMenu').classList.remove('active');
+            }
+
+            changeSpeed(speed) {
+                this.currentSpeed = speed;
+                this.video.playbackRate = speed;
+                
+                // Update active speed option
+                document.querySelectorAll('.speed-option').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (parseFloat(btn.dataset.speed) === speed) {
+                        btn.classList.add('active');
+                    }
+                });
+                
+                // Update speed button text
+                document.getElementById('speedBtn').innerHTML = 
+                    `<i class="fas fa-tachometer-alt"></i> ${speed}x`;
+                
+                this.hideAllMenus();
+                this.showToast(`Speed: ${speed}x`);
+            }
+
+            populateQualityMenu() {
+                const menu = document.getElementById('qualityMenu');
+                menu.innerHTML = '';
+                
+                if (!this.currentEpisodes[this.currentEpisodeIndex]) return;
+                
+                const episode = this.currentEpisodes[this.currentEpisodeIndex];
+                const content = episode.content || {};
+                
+                // Available qualities
+                const qualities = [
+                    { key: 'video_1080p', label: '1080P' },
+                    { key: 'video_720p', label: '720P' },
+                    { key: 'video_480p', label: '480P' },
+                    { key: 'video_360p', label: '360P' },
+                    { key: 'video_240p', label: '240P' }
+                ];
+                
+                qualities.forEach(({ key, label }) => {
+                    if (content[key]) {
+                        const btn = document.createElement('button');
+                        btn.className = 'menu-item';
+                        btn.textContent = label;
+                        
+                        if (label.toLowerCase() === this.currentQuality) {
+                            btn.classList.add('active');
+                        }
+                        
+                        btn.addEventListener('click', () => {
+                            this.changeQuality(label.toLowerCase(), content[key]);
+                        });
+                        
+                        menu.appendChild(btn);
+                    }
+                });
+            }
+
+            changeQuality(quality, url) {
+                this.currentQuality = quality;
+                const currentTime = this.video.currentTime;
+                const wasPlaying = !this.video.paused;
+                
+                // Update quality button text
+                document.getElementById('qualityBtn').innerHTML = 
+                    `<i class="fas fa-cog"></i> ${quality.toUpperCase()}`;
+                
+                // Load new quality
+                this.loadVideoSource(url);
+                
+                // Restore playback position and state
+                this.video.addEventListener('canplay', () => {
+                    this.video.currentTime = currentTime;
+                    if (wasPlaying) {
+                        this.video.play();
+                    }
+                }, { once: true });
+                
+                this.hideAllMenus();
+                this.showToast(`Quality: ${quality.toUpperCase()}`);
+            }
+
             open(showData, episodeIndex = 0) {
                 this.currentShow = showData;
                 this.currentEpisodes = showData.episodes || [];
@@ -772,7 +1187,7 @@
                 document.body.style.overflow = 'hidden';
 
                 this.updateShowInfo();
-                this.populateEpisodeSelect();
+                //this.populateEpisodeSelect();
                 this.loadEpisode(episodeIndex);
                 this.resetControlsTimer();
 
@@ -792,6 +1207,8 @@
                 
                 this.video.src = '';
                 this.video.load();
+                
+                this.hideAllMenus();
 
                 // Trigger callback if set
                 if (this.onCloseCallback) {
@@ -804,8 +1221,8 @@
                 }
             }
 
-            loadEpisode(episodeIndex, quality = null) {
-                if (!this.currentEpisodes || episodeIndex >= this.currentEpisodes.length) {
+            loadEpisode(episodeIndex) {
+                if (!this.currentEpisodes || episodeIndex >= this.currentEpisodes.length || episodeIndex < 0) {
                     return;
                 }
 
@@ -813,11 +1230,10 @@
                 this.currentEpisodeIndex = episodeIndex;
 
                 this.updateShowInfo();
-                this.updateEpisodeSelect();
+                //this.updateEpisodeSelect();
 
-                // Get video source
-                const selectedQuality = quality || this.getActiveQuality();
-                const source = this.getEpisodeSource(episode, selectedQuality);
+                // Get video source with preferred quality
+                const source = this.getEpisodeSource(episode, this.currentQuality);
 
                 if (!source) {
                     this.showToast('Episode not available');
@@ -831,14 +1247,19 @@
                 if (!episode.content) return null;
 
                 // Try requested quality first
-                if (episode.content[`video_${quality}`]) {
-                    return episode.content[`video_${quality}`];
+                const qualityKey = `video_${quality}`;
+                if (episode.content[qualityKey]) {
+                    return episode.content[qualityKey];
                 }
 
                 // Fallback to available qualities
-                const availableQualities = ['video_1080p', 'video_720p', 'video_480p', 'video_360p'];
+                const availableQualities = ['video_720p', 'video_1080p', 'video_480p', 'video_360p', 'video_240p'];
                 for (const q of availableQualities) {
                     if (episode.content[q]) {
+                        // Update current quality to match what we're actually using
+                        this.currentQuality = q.replace('video_', '');
+                        document.getElementById('qualityBtn').innerHTML = 
+                            `<i class="fas fa-cog"></i> ${this.currentQuality.toUpperCase()}`;
                         return episode.content[q];
                     }
                 }
@@ -868,6 +1289,7 @@
                         this.hls.attachMedia(this.video);
                         
                         this.hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                            this.video.playbackRate = this.currentSpeed; // Restore speed
                             this.video.play().catch(e => console.warn('Autoplay prevented:', e));
                         });
 
@@ -881,11 +1303,13 @@
                     } else if (this.video.canPlayType('application/vnd.apple.mpegurl')) {
                         // Native HLS support (Safari)
                         this.video.src = source;
+                        this.video.playbackRate = this.currentSpeed; // Restore speed
                         this.video.play().catch(e => console.warn('Autoplay prevented:', e));
                     }
                 } else {
                     // Direct video file
                     this.video.src = source;
+                    this.video.playbackRate = this.currentSpeed; // Restore speed
                     this.video.play().catch(e => console.warn('Autoplay prevented:', e));
                 }
             }
@@ -893,7 +1317,6 @@
             updateShowInfo() {
                 if (!this.currentShow) return;
 
-                this.showTitle.textContent = this.currentShow.show?.title || 'Unknown Show';
                 this.episodeInfo.textContent = `Episode ${this.currentEpisodeIndex + 1} / ${this.currentEpisodes.length}`;
             }
 
@@ -955,58 +1378,6 @@
                 this.video.currentTime = Math.max(0, Math.min(this.video.duration, newTime));
             }
 
-            changeQuality(quality) {
-                // Update active quality button
-                document.querySelectorAll('.quality-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                    if (btn.dataset.quality === quality) {
-                        btn.classList.add('active');
-                    }
-                });
-
-                // Reload episode with new quality
-                const currentTime = this.video.currentTime;
-                this.loadEpisode(this.currentEpisodeIndex, quality);
-                
-                // Restore playback position
-                this.video.addEventListener('canplay', () => {
-                    this.video.currentTime = currentTime;
-                }, { once: true });
-
-                this.showToast(`Quality: ${quality.toUpperCase()}`);
-            }
-
-            getActiveQuality() {
-                const activeBtn = document.querySelector('.quality-btn.active');
-                return activeBtn ? activeBtn.dataset.quality : '720p';
-            }
-
-            toggleLike() {
-                this.isLiked = !this.isLiked;
-                const likeBtn = document.getElementById('likeBtn');
-                likeBtn.classList.toggle('liked', this.isLiked);
-                
-                // Trigger callback if set
-                if (this.onLikeCallback) {
-                    this.onLikeCallback(this.currentShow.show.id, this.isLiked);
-                }
-
-                this.showToast(this.isLiked ? 'Added to likes' : 'Removed from likes');
-            }
-
-            toggleSave() {
-                this.isSaved = !this.isSaved;
-                const saveBtn = document.getElementById('saveBtn');
-                saveBtn.classList.toggle('saved', this.isSaved);
-                
-                // Trigger callback if set
-                if (this.onSaveCallback) {
-                    this.onSaveCallback(this.currentShow.show.id, this.isSaved);
-                }
-
-                this.showToast(this.isSaved ? 'Saved to watchlist' : 'Removed from watchlist');
-            }
-
             shareEpisode() {
                 if (!this.currentShow) return;
 
@@ -1062,12 +1433,12 @@
 
             showControls() {
                 this.overlay.classList.remove('controls-hidden');
-                this.resetControlsTimer();
             }
 
             hideControls() {
                 this.overlay.classList.add('controls-hidden');
                 this.centerControls.classList.remove('visible');
+                this.hideAllMenus();
             }
 
             resetControlsTimer() {
@@ -1238,17 +1609,39 @@
                 this.onCloseCallback = callback;
             }
 
-            setOnLikeCallback(callback) {
-                this.onLikeCallback = callback;
-            }
-
-            setOnSaveCallback(callback) {
-                this.onSaveCallback = callback;
-            }
-
             setOnProgressCallback(callback) {
                 this.onProgressCallback = callback;
             }
+        }
+
+        // Global function to open the player (defined before initialization)
+        function openShowPlayer(showData, episodeIndex = 0) {
+            // Force overwrite of episodes AFTER spreading
+            const formattedData = {
+                show: showData.show,
+                ...showData,  // keep other keys like has_more, n_episodes
+                episodes: showData.episodes || [] // Episodes are at root level, not in show object
+            };
+
+            const episode = formattedData.episodes[episodeIndex];
+            if (!episode) {
+                console.error("No episode found at index", episodeIndex, formattedData);
+                return;
+            }
+
+            // Title image
+            const titleImg = document.getElementById("showTitleImage");
+            if (titleImg && formattedData.show.thumbnail_data?.title_image) {
+                titleImg.src = formattedData.show.thumbnail_data.title_image;
+                titleImg.style.display = "block";
+            }
+
+            // Episode info
+            document.getElementById("episodeInfo").innerText =
+                `Episode ${episode.index} / ${formattedData.show.n_episodes}`;
+
+            // Open player
+            reelPlayer.open(formattedData, episodeIndex);
         }
 
         // Initialize the reel player
@@ -1257,6 +1650,7 @@
         // Make it globally available
         window.ReelPlayer = ReelPlayer;
         window.reelPlayerInstance = reelPlayer;
+        window.openShowPlayer = openShowPlayer;
 
         // Handle browser back button
         window.addEventListener('popstate', (e) => {
@@ -1265,27 +1659,16 @@
             }
         });
 
-        // Example usage function (remove in production)
-        function openReelPlayerExample() {
-            const sampleShow = {
-                show: {
-                    id: '12345',
-                    title: 'Risky Love',
-                    description: 'A romantic thriller series'
-                },
-                episodes: [
-                    {
-                        title: 'Episode 1',
-                        content: {
-                            video_720p: 'https://example.com/episode1.m3u8',
-                            video_1080p: 'https://example.com/episode1_hd.m3u8'
-                        }
-                    }
-                ]
-            };
-
-            reelPlayer.open(sampleShow, 0);
-        }
+        // Load your JSON data
+        fetch("json/Mrs. Pei Wants to Return to the Countryside-Tamil.json")
+            .then(res => res.json())
+            .then(data => {
+                openShowPlayer(data, 0); // auto play episode 1
+            })
+            .catch(error => {
+                console.error('Error loading show data:', error);
+            });
     </script>
 </body>
 </html>
+                
