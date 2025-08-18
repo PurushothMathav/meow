@@ -1065,52 +1065,79 @@
             } */
 			
 setupTouchEvents() {
+    let startX = 0;
+    let startY = 0;
+    let startTime = 0;
     let tapCount = 0;
     let tapTimer = null;
-    
+
+    this.container.addEventListener('touchstart', (e) => {
+        const touch = e.touches[0];
+        startX = touch.clientX;
+        startY = touch.clientY;
+        startTime = Date.now();
+    }, { passive: true });
+
     this.container.addEventListener('touchend', (e) => {
+        // Ignore if tap was on a control button
+        if (e.target.closest('button, .control-btn, .nav-btn, .settings-btn, .volume-btn')) {
+            return;
+        }
+
         const touch = e.changedTouches[0];
+        const endX = touch.clientX;
+        const endY = touch.clientY;
+        const endTime = Date.now();
+
+        const deltaX = endX - startX;
+        const deltaY = endY - startY;
+        const deltaTime = endTime - startTime;
+
+        // ---- Swipe detection (Episode navigation) ----
+        if (deltaTime < 300 && Math.abs(deltaX) > 50 && Math.abs(deltaY) < 100) {
+            if (deltaX > 0) {
+                this.previousEpisode(); // Swipe right
+                this.showToast('Previous Episode');
+            } else {
+                this.nextEpisode(); // Swipe left
+                this.showToast('Next Episode');
+            }
+            return;
+        }
+
+        // ---- Tap zones (play/pause + seek) ----
         const rect = this.container.getBoundingClientRect();
-        
-        // Get touch position relative to player
         const x = touch.clientX - rect.left;
         const y = touch.clientY - rect.top;
-        
-        // Define zones
+
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
-        const centerZoneSize = 100; // 100px radius around center
-        
-        // Check if touch is in center zone (circular area)
+        const centerZoneSize = 100;
+
         const distanceFromCenter = Math.sqrt(
             Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2)
         );
-        
+
         if (distanceFromCenter <= centerZoneSize) {
-            // Center zone - single tap for play/pause
             this.togglePlayPause();
             return;
         }
-        
-        // Left/Right zones for double tap seek
+
         const leftZone = x < rect.width * 0.4;
         const rightZone = x > rect.width * 0.6;
-        
+
         if (leftZone || rightZone) {
             tapCount++;
-            
+
             if (tapCount === 1) {
-                // First tap - wait for potential second tap
                 tapTimer = setTimeout(() => {
                     tapCount = 0;
-                    // Single tap - toggle controls or do nothing
                     this.toggleControls();
                 }, 300);
             } else if (tapCount === 2) {
-                // Double tap - seek
                 clearTimeout(tapTimer);
                 tapCount = 0;
-                
+
                 if (leftZone) {
                     this.seek(-10);
                     this.showToast('-10s');
@@ -1121,7 +1148,7 @@ setupTouchEvents() {
             }
         }
     }, { passive: true });
-}			
+}		
 
             showEpisodesOverlay() {
                 console.log('showEpisodesOverlay called'); // Debug log
