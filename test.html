@@ -554,7 +554,7 @@
             font-weight: bold;
         }
 
-        /* Touch Areas for Mobile */
+        /* Touch Areas for Mobile 
         .touch-area {
             position: absolute;
             top: 20%;
@@ -575,7 +575,7 @@
         .touch-area.center {
             left: 35%;
             width: 30%;
-        }
+        } */
 
         /* Loading State */
         .loading-overlay {
@@ -800,10 +800,10 @@
                     </button>
                 </div>
 
-                <!-- Touch Areas for Mobile -->
+                <!-- Touch Areas for Mobile 
                 <div class="touch-area left" id="seekBackward"></div>
                 <div class="touch-area center" id="playPauseTouch"></div>
-                <div class="touch-area right" id="seekForward"></div>
+                <div class="touch-area right" id="seekForward"></div>   -->
 
                 <!-- Right Side Controls -->
                 <div class="right-controls">
@@ -926,15 +926,15 @@
 
                 // Play/Pause buttons
                 document.getElementById('centerPlayPause').addEventListener('click', () => this.togglePlayPause());
-                document.getElementById('playPauseTouch').addEventListener('click', () => this.togglePlayPause());
+                //document.getElementById('playPauseTouch').addEventListener('click', () => this.togglePlayPause());
 
                 // Episode navigation
                 document.getElementById('prevEpisode').addEventListener('click', () => this.previousEpisode());
                 document.getElementById('nextEpisode').addEventListener('click', () => this.nextEpisode());
 
                 // Touch areas for seek
-                document.getElementById('seekBackward').addEventListener('click', () => this.seek(-10));
-                document.getElementById('seekForward').addEventListener('click', () => this.seek(10));
+                //document.getElementById('seekBackward').addEventListener('click', () => this.seek(-10));
+                //document.getElementById('seekForward').addEventListener('click', () => this.seek(10));
 
                 // Progress bar
                 this.progressBar.addEventListener('click', (e) => this.seekToPosition(e));
@@ -1030,7 +1030,7 @@
                 return window.innerWidth <= 768;
             }
 
-            setupTouchEvents() {
+            /* setupTouchEvents() {
                 let startX = 0;
                 let startY = 0;
                 let startTime = 0;
@@ -1062,7 +1062,66 @@
                         this.showToast(deltaX > 0 ? 'Previous Episode' : 'Next Episode');
                     }
                 }, { passive: true });
+            } */
+			
+setupTouchEvents() {
+    let tapCount = 0;
+    let tapTimer = null;
+    
+    this.container.addEventListener('touchend', (e) => {
+        const touch = e.changedTouches[0];
+        const rect = this.container.getBoundingClientRect();
+        
+        // Get touch position relative to player
+        const x = touch.clientX - rect.left;
+        const y = touch.clientY - rect.top;
+        
+        // Define zones
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const centerZoneSize = 100; // 100px radius around center
+        
+        // Check if touch is in center zone (circular area)
+        const distanceFromCenter = Math.sqrt(
+            Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2)
+        );
+        
+        if (distanceFromCenter <= centerZoneSize) {
+            // Center zone - single tap for play/pause
+            this.togglePlayPause();
+            return;
+        }
+        
+        // Left/Right zones for double tap seek
+        const leftZone = x < rect.width * 0.4;
+        const rightZone = x > rect.width * 0.6;
+        
+        if (leftZone || rightZone) {
+            tapCount++;
+            
+            if (tapCount === 1) {
+                // First tap - wait for potential second tap
+                tapTimer = setTimeout(() => {
+                    tapCount = 0;
+                    // Single tap - toggle controls or do nothing
+                    this.toggleControls();
+                }, 300);
+            } else if (tapCount === 2) {
+                // Double tap - seek
+                clearTimeout(tapTimer);
+                tapCount = 0;
+                
+                if (leftZone) {
+                    this.seek(-10);
+                    this.showToast('-10s');
+                } else {
+                    this.seek(10);
+                    this.showToast('+10s');
+                }
             }
+        }
+    }, { passive: true });
+}			
 
             showEpisodesOverlay() {
                 console.log('showEpisodesOverlay called'); // Debug log
