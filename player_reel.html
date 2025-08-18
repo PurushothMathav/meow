@@ -650,28 +650,29 @@
             }
 
             .control-row {
-				flex-direction: row;      /* stay in a single line */
-				flex-wrap: nowrap;        /* prevent wrapping */
-				gap: 8px;                 /* tighter spacing for small screens */
-				/* justify-content: center;   center them horizontally */
-				align-items: center;      /* align vertically */
-			}
+        display: flex;             /* 👈 restore flex */
+        flex-direction: row;       /* stay in a single line */
+        flex-wrap: nowrap;         /* prevent wrapping */
+        gap: 8px;                  /* tighter spacing for small screens */
+        /* justify-content: center;  */ /* center them horizontally */
+        align-items: center;       /* align vertically */
+    }
 
-            .episode-nav,
-            .settings-controls,
-            .volume-control {
-                justify-content: center;;
-            }
+    .episode-nav,
+    .settings-controls,
+    .volume-control {
+        justify-content: center;
+    }
 
-            .time-display {
-                order: 3;
-            }
-			
-			#prevEpisode { order: 1; }
-			#nextEpisode { order: 2; }
-			#speedBtn    { order: 4; }
-			#qualityBtn  { order: 5; }
-			#volumeBtn   { order: 6; }
+    .time-display {
+        order: 3;
+    }
+
+    #prevEpisode { order: 1; }
+    #nextEpisode { order: 2; }
+    #speedBtn    { order: 4; }
+    #qualityBtn  { order: 5; }
+    #volumeBtn   { order: 6; }
 
             .episode-select {
                 max-width: none;
