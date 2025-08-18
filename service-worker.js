@@ -1,7 +1,7 @@
 // Optimized Service Worker for Meow Streaming Site
 // service-worker.js
 
-const CACHE_VERSION = 'v1808251710';
+const CACHE_VERSION = 'v1808251720';
 const CACHE_NAMES = {
   STATIC: `meow-static-${CACHE_VERSION}`,
   DYNAMIC: `meow-dynamic-${CACHE_VERSION}`,
