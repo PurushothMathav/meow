@@ -241,7 +241,7 @@
             max-height: 60px;
             object-fit: contain;
             margin-bottom: 5px;
-			margin-left: -30px;
+            margin-left: -30px;
         }
 
         /* Progress Bar */
@@ -282,12 +282,13 @@
             opacity: 1;
         }
 
-        /* Control Row */
+        /* Control Row - Fixed for Mobile */
         .control-row {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 15px;
+            flex-wrap: wrap;
         }
 
         .control-group {
@@ -396,31 +397,29 @@
             min-width: 80px;
         }
 
-        /* Episodes Overlay - Half Screen */
+        /* Episodes Overlay - Half Screen for Desktop, Full for Mobile */
         .episodes-overlay {
-            transition: all 0.3s ease;
-            opacity: 0;
-            pointer-events: none;
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 50%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 300;
-            display: none;
-            overflow-y: auto;
-            padding: 20px;
-            transform: translateX(100%);
-        }
+    position: fixed;
+    bottom: 0; /* Change from top: 0 */
+    left: 0;   /* Change from right: 0 */
+    right: 0;  /* Add this to span full width */
+    width: 100%; /* Change from 50% to full width */
+    height: 50%; /* Change from 100% to half height */
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 300;
+    display: none;
+    overflow-y: auto;
+    padding: 20px;
+    transform: translateY(100%); /* Change from translateX(100%) */
+}
 
-        .episodes-overlay.active {
-            opacity: 1;
-            pointer-events: all;
-            display: block;
-            transform: translateX(0);
-        }
+.episodes-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+    display: block;
+    transform: translateY(0); /* Change from translateX(0) */
+}
 
         .episodes-header {
             text-align: center;
@@ -559,7 +558,7 @@
             position: absolute;
             top: 20%;
             bottom: 20%;
-            width: 30%;
+            width: 25%;
             pointer-events: all;
             z-index: 50;
         }
@@ -569,7 +568,7 @@
         }
 
         .touch-area.right {
-            right: 0;
+            right: 80px;
         }
 
         .touch-area.center {
@@ -639,7 +638,7 @@
         @media (max-width: 768px) {
             .top-controls,
             .bottom-controls {
-                padding: 15px !important; /* Force override */
+                padding: 15px;
             }
 
             .show-title {
@@ -650,31 +649,29 @@
                 font-size: 14px;
             }
 
+            /* Fixed Control Row for Mobile */
             .control-row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        <!-- justify-content: center; -->
-        align-items: center;
-        gap: 8px;
-    }
-
-    #prevEpisode { order: 1; }
-    #nextEpisode { order: 2; }
-    #timeDisplay { order: 3; }
-    #speedBtn    { order: 4; }
-    #qualityBtn  { order: 5; }
-    #volumeBtn   { order: 6; }
-	
-            .episode-select {
-                max-width: none;
-                width: 100%;
-                font-size: 14px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
             }
 
-            .settings-btn {
-                font-size: 14px;
-                padding: 8px 12px;
+            /* Make all buttons visible and properly sized on mobile */
+            .nav-btn, .settings-btn, .volume-btn {
+                display: flex !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                min-width: 40px;
+                min-height: 40px;
+                font-size: 14px !important;
+            }
+
+            .time-display {
+                font-size: 12px;
+                min-width: 70px;
             }
 
             .right-controls {
@@ -689,7 +686,7 @@
             }
 
             .episodes-grid {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(6, 1fr);
                 gap: 10px;
             }
             
@@ -707,16 +704,16 @@
                 pointer-events: all;
             }
 
-            .top-controls,
+            /* .top-controls,
             .bottom-controls,
             .right-controls {
                 opacity: 1 !important;
                 pointer-events: all !important;
-            }
+            } */
 
             /* Mobile episodes overlay - full width */
             .episodes-overlay {
-                width: 100%;
+                height: 60%;
                 padding: 15px;
             }
 
@@ -735,8 +732,25 @@
 
         /* Very small screens */
         @media (max-width: 480px) {
+            .control-row {
+                gap: 8px;
+                justify-content: space-around;
+            }
+
+            .nav-btn, .settings-btn, .volume-btn {
+                min-width: 35px;
+                min-height: 35px;
+                padding: 6px;
+                font-size: 12px !important;
+            }
+
+            .time-display {
+                font-size: 11px;
+                min-width: 60px;
+            }
+
             .episodes-grid {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(5, 1fr);
                 gap: 8px;
             }
 
@@ -748,19 +762,6 @@
             .section-tab {
                 padding: 6px 12px;
                 font-size: 11px;
-            }
-
-            .control-row {
-                gap: 10px;
-            }
-
-            .settings-controls {
-                gap: 8px;
-            }
-
-            .settings-btn {
-                padding: 6px 10px;
-                font-size: 12px;
             }
         }
     </style>
@@ -833,36 +834,34 @@
                         </div>
                     </div>
 
-<!-- Control Row -->
-<div class="control-row">
-    <!-- Episode Navigation -->
-    <button class="nav-btn" id="prevEpisode" title="Previous Episode">
-        <i class="fas fa-step-backward"></i>
-    </button>
+                    <!-- Control Row - Fixed Structure -->
+                    <div class="control-row">
+                        <!-- Episode Navigation -->
+                        <div class="episode-nav">
+                            <button class="nav-btn" id="prevEpisode" title="Previous Episode">
+                                <i class="fas fa-step-backward"></i>
+                            </button>
+                            <button class="nav-btn" id="nextEpisode" title="Next Episode">
+                                <i class="fas fa-step-forward"></i>
+                            </button>
+                        </div>
 
-    <button class="nav-btn" id="nextEpisode" title="Next Episode">
-        <i class="fas fa-step-forward"></i>
-    </button>
+                        <!-- Time Display -->
+                        <div class="time-display" id="timeDisplay">0:00 / 0:00</div>
 
-    <!-- Time Display -->
-    <div class="time-display" id="timeDisplay">0:00 / 0:00</div>
-
-    <!-- Playback Speed -->
-    <button class="settings-btn" id="speedBtn" title="Playback Speed">
-        <i class="fas fa-tachometer-alt"></i> 1x
-    </button>
-
-    <!-- Quality -->
-    <button class="settings-btn" id="qualityBtn" title="Quality">
-        <i class="fas fa-cog"></i> 720P
-    </button>
-
-    <!-- Volume -->
-    <button class="volume-btn" id="volumeBtn" title="Volume">
-        <i class="fas fa-volume-up"></i>
-    </button>
-</div>
-
+                        <!-- Settings Controls -->
+                        <div class="settings-controls">
+                            <button class="settings-btn" id="speedBtn" title="Playback Speed">
+                                <i class="fas fa-tachometer-alt"></i> 1x
+                            </button>
+                            <button class="settings-btn" id="qualityBtn" title="Quality">
+                                <i class="fas fa-cog"></i> 720P
+                            </button>
+                            <button class="volume-btn" id="volumeBtn" title="Volume">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -944,10 +943,11 @@
                 this.progressBar.addEventListener('click', (e) => this.seekToPosition(e));
 
                 // Episodes button - Fixed implementation
-                document.getElementById('episodesBtn').addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    this.showEpisodesOverlay();
-                });
+                //document.getElementById('episodesBtn').addEventListener('click', (e) => {
+                  //  e.stopPropagation();
+                    //console.log('Episodes button clicked'); // Debug log
+                    //this.showEpisodesOverlay();
+                //});
 
                 // Close episodes overlay
                 document.getElementById('episodesClose').addEventListener('click', (e) => {
@@ -991,11 +991,16 @@
 
                 // Touch and mouse events for hiding controls
                 this.container.addEventListener('click', (e) => {
-                    if (e.target === this.container || e.target === this.video) {
-                        this.toggleControls();
-                    }
-                    this.hideAllMenus();
-                });
+    // Don't trigger on episodes button or overlay
+    if (e.target.closest('#episodesBtn') || e.target.closest('.episodes-overlay')) {
+        return;
+    }
+    
+    if (e.target === this.container || e.target === this.video) {
+        this.toggleControls();
+    }
+    this.hideAllMenus();
+});
 
                 // Keyboard shortcuts
                 document.addEventListener('keydown', (e) => this.handleKeyboard(e));
@@ -1063,16 +1068,25 @@
             }
 
             showEpisodesOverlay() {
+                console.log('showEpisodesOverlay called'); // Debug log
+                console.log('Current show:', this.currentShow); // Debug log
+                console.log('Current episodes:', this.currentEpisodes); // Debug log
+                
                 const overlay = document.getElementById('episodesOverlay');
                 overlay.classList.add('active');
                 this.setupEpisodesOverlay();
             }
 
             setupEpisodesOverlay() {
-                if (!this.currentShow) return;
+                if (!this.currentShow) {
+                    console.error('No current show data available');
+                    return;
+                }
                 
                 const show = this.currentShow.show;
                 const episodes = this.currentEpisodes;
+                
+                console.log('Setting up episodes overlay with:', show.title, episodes.length, 'episodes'); // Debug log
                 
                 // Header info
                 document.getElementById('episodesTitle').textContent = show.title;
@@ -1080,8 +1094,10 @@
                 // Get language and rating from the correct data structure
                 const language = show.lang && show.lang.title ? show.lang.title : 'Unknown';
                 const rating = this.getRating(show);
+                const totalEpisodes = episodes.length;
+                
                 document.getElementById('episodesMeta').textContent = 
-                    `${episodes.length} Episodes | ${language} . ${rating}`;
+                    `${totalEpisodes} Episodes | ${language} . ${rating}`;
                 
                 // Create section tabs
                 this.createSectionTabs(episodes.length);
@@ -1108,6 +1124,8 @@
                 
                 const sectionsCount = Math.ceil(totalEpisodes / 30);
                 
+                console.log('Creating', sectionsCount, 'sections for', totalEpisodes, 'episodes'); // Debug log
+                
                 for (let i = 0; i < sectionsCount; i++) {
                     const start = (i * 30) + 1;
                     const end = Math.min((i + 1) * 30, totalEpisodes);
@@ -1129,6 +1147,8 @@
             }
 
             showEpisodeSection(sectionIndex) {
+                console.log('Showing section:', sectionIndex); // Debug log
+                
                 // Update active tab
                 document.querySelectorAll('.section-tab').forEach((tab, index) => {
                     tab.classList.toggle('active', index === sectionIndex);
@@ -1138,6 +1158,8 @@
                 const start = sectionIndex * 30;
                 const end = Math.min(start + 30, this.currentEpisodes.length);
                 const sectionEpisodes = this.currentEpisodes.slice(start, end);
+                
+                console.log('Section episodes:', start, 'to', end, sectionEpisodes.length, 'episodes'); // Debug log
                 
                 const grid = document.getElementById('episodesGrid');
                 grid.innerHTML = '';
@@ -1273,9 +1295,13 @@
             }
 
             open(showData, episodeIndex = 0) {
+                console.log('Opening player with data:', showData); // Debug log
+                
                 this.currentShow = showData;
                 this.currentEpisodes = showData.episodes || [];
                 this.currentEpisodeIndex = episodeIndex;
+
+                console.log('Set current episodes:', this.currentEpisodes.length); // Debug log
 
                 this.container.classList.add('active');
                 document.body.style.overflow = 'hidden';
@@ -1289,7 +1315,7 @@
             }
 
             close() {
-                this.container.classList.remove('active');
+                /* this.container.classList.remove('active');
                 document.body.style.overflow = '';
                 
                 this.video.pause();
@@ -1311,7 +1337,8 @@
                 // Handle history
                 if (history.state?.reelPlayer) {
                     history.back();
-                }
+                } */
+				window.history.back();
             }
 
             loadEpisode(episodeIndex) {
@@ -1524,33 +1551,22 @@
                 this.overlay.classList.remove('controls-hidden');
             }
 
-            hideControls() {
-                // Don't hide controls on mobile
-                if (this.isMobile()) {
-                    return;
-                }
-                
-                this.overlay.classList.add('controls-hidden');
-                this.centerControls.classList.remove('visible');
-                this.hideAllMenus();
-            }
+resetControlsTimer() {
+    this.showControls();
+    
+    clearTimeout(this.hideControlsTimeout);
+    this.hideControlsTimeout = setTimeout(() => {
+        if (!this.video.paused) {
+            this.hideControls();
+        }
+    }, 3000);
+}
 
-            resetControlsTimer() {
-                // Don't auto-hide on mobile
-                if (this.isMobile()) {
-                    this.showControls();
-                    return;
-                }
-
-                this.showControls();
-                
-                clearTimeout(this.hideControlsTimeout);
-                this.hideControlsTimeout = setTimeout(() => {
-                    if (!this.video.paused) {
-                        this.hideControls();
-                    }
-                }, 3000);
-            }
+hideControls() {
+    this.overlay.classList.add('controls-hidden');
+    this.centerControls.classList.remove('visible');
+    this.hideAllMenus();
+}
 
             handleKeyboard(e) {
                 if (!this.container.classList.contains('active')) return;
@@ -1595,7 +1611,11 @@
                         break;
                     case 'Escape':
                         e.preventDefault();
-                        this.close();
+                        if (document.getElementById('episodesOverlay').classList.contains('active')) {
+                            document.getElementById('episodesOverlay').classList.remove('active');
+                        } else {
+                            this.close();
+                        }
                         break;
                 }
             }
@@ -1784,18 +1804,30 @@
         };
 
         // Load your JSON data
-        fetch("json/Mrs. Pei Wants to Return to the Countryside-Tamil.json")
+        fetch("json/One Thought on Longevity-Tamil.json")
             .then(res => res.json())
             .then(data => {
+                console.log('Loaded show data:', data); // Debug log
                 openShowPlayer(data, 0); // auto play episode 1
             })
             .catch(error => {
                 console.error('Error loading show data:', error);
                 // Fallback to demo data if JSON fails to load
+                console.log('Using demo data');
                 setTimeout(() => {
                     openShowPlayer(demoData, 0);
                 }, 1000);
-            });
+            });			
     </script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('episodesBtn').addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Episodes button clicked');
+        reelPlayer.showEpisodesOverlay();
+    });
+});	
+</script>	
 </body>
 </html>
