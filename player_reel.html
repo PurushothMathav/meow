@@ -650,21 +650,28 @@
             }
 
             .control-row {
-                flex-direction: column;
-                gap: 15px;
-                align-items: stretch;
-            }
+				flex-direction: row;      /* stay in a single line */
+				flex-wrap: nowrap;        /* prevent wrapping */
+				gap: 8px;                 /* tighter spacing for small screens */
+				/* justify-content: center;   center them horizontally */
+				align-items: center;      /* align vertically */
+			}
 
             .episode-nav,
             .settings-controls,
             .volume-control {
-                justify-content: center;
+                justify-content: center;;
             }
 
             .time-display {
-                text-align: center;
-                order: -1; /* Move time display to top */
+                order: 3;
             }
+			
+			#prevEpisode { order: 1; }
+			#nextEpisode { order: 2; }
+			#speedBtn    { order: 4; }
+			#qualityBtn  { order: 5; }
+			#volumeBtn   { order: 6; }
 
             .episode-select {
                 max-width: none;
