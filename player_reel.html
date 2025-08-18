@@ -241,6 +241,7 @@
             max-height: 60px;
             object-fit: contain;
             margin-bottom: 5px;
+			margin-left: -30px;
         }
 
         /* Progress Bar */
@@ -650,30 +651,21 @@
             }
 
             .control-row {
-        display: flex;             /* 👈 restore flex */
-        flex-direction: row;       /* stay in a single line */
-        flex-wrap: nowrap;         /* prevent wrapping */
-        gap: 8px;                  /* tighter spacing for small screens */
-        justify-content: center;  /* center them horizontally */
-        align-items: center;       /* align vertically */
-    }
-
-    .episode-nav,
-    .settings-controls,
-    .volume-control {
-        justify-content: center;
-    }
-
-    .time-display {
-        order: 3;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        <!-- justify-content: center; -->
+        align-items: center;
+        gap: 8px;
     }
 
     #prevEpisode { order: 1; }
     #nextEpisode { order: 2; }
+    #timeDisplay { order: 3; }
     #speedBtn    { order: 4; }
     #qualityBtn  { order: 5; }
     #volumeBtn   { order: 6; }
-
+	
             .episode-select {
                 max-width: none;
                 width: 100%;
@@ -842,37 +834,35 @@
                     </div>
 
                     <!-- Control Row -->
-                    <div class="control-row">
-                        <!-- Episode Navigation -->
-                        <div class="episode-nav">
-                            <button class="nav-btn" id="prevEpisode" title="Previous Episode">
-                                <i class="fas fa-step-backward"></i>
-                            </button>
-                            <button class="nav-btn" id="nextEpisode" title="Next Episode">
-                                <i class="fas fa-step-forward"></i>
-                            </button>
-                        </div>
+<div class="control-row">
+    <!-- Episode Navigation -->
+    <button class="nav-btn" id="prevEpisode" title="Previous Episode">
+        <i class="fas fa-step-backward"></i>
+    </button>
 
-                        <!-- Time Display -->
-                        <div class="time-display" id="timeDisplay">0:00 / 0:00</div>
+    <button class="nav-btn" id="nextEpisode" title="Next Episode">
+        <i class="fas fa-step-forward"></i>
+    </button>
 
-                        <!-- Settings Controls -->
-                        <div class="settings-controls">
-                            <button class="settings-btn" id="speedBtn" title="Playback Speed">
-                                <i class="fas fa-tachometer-alt"></i> 1x
-                            </button>
-                            <button class="settings-btn" id="qualityBtn" title="Quality">
-                                <i class="fas fa-cog"></i> 720P
-                            </button>
-                        </div>
+    <!-- Time Display -->
+    <div class="time-display" id="timeDisplay">0:00 / 0:00</div>
 
-                        <!-- Volume Control -->
-                        <div class="volume-control">
-                            <button class="volume-btn" id="volumeBtn" title="Volume">
-                                <i class="fas fa-volume-up"></i>
-                            </button>
-                        </div>
-                    </div>
+    <!-- Playback Speed -->
+    <button class="settings-btn" id="speedBtn" title="Playback Speed">
+        <i class="fas fa-tachometer-alt"></i> 1x
+    </button>
+
+    <!-- Quality -->
+    <button class="settings-btn" id="qualityBtn" title="Quality">
+        <i class="fas fa-cog"></i> 720P
+    </button>
+
+    <!-- Volume -->
+    <button class="volume-btn" id="volumeBtn" title="Volume">
+        <i class="fas fa-volume-up"></i>
+    </button>
+</div>
+
                 </div>
             </div>
 
