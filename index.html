@@ -2652,7 +2652,6 @@ function renderContinueWatching() {
 }
 
 // Open show
-// Modified openShow function to work with player URL params
 async function openShow(showId) {
   const showData = allShows.find(s => s.show.id.toString() === showId);
   if (!showData) {
@@ -2707,7 +2706,6 @@ async function openShow(showId) {
 }
 
 // Continue watching
-// Modified continue watching to work with URL params
 async function continueWatching(showId) {
   const watchData = watchHistory[showId];
   if (!watchData) return;
