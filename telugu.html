@@ -1606,9 +1606,40 @@ function updateActiveNavigation() {
 function loadWatchHistory() {
   try {
     const key = `kukufm_watch_history_${currentLanguage}`;
-    watchHistory = JSON.parse(localStorage.getItem(key) || '{}');
+    const raw = localStorage.getItem(key);
+    if (!raw) {
+      watchHistory = {};
+      return;
+    }
+
+    const data = JSON.parse(raw);
+    const normalized = {};
+
+    Object.keys(data).forEach(showId => {
+      const entry = data[showId];
+
+      // New format
+      if (entry.lastEpisode) {
+        const lastEp = entry.lastEpisode;
+        normalized[showId] = {
+          episode: lastEp.index,
+          currentTime: lastEp.currentTime,
+          progress: lastEp.duration > 0 ? lastEp.currentTime / lastEp.duration : 0,
+          updated: lastEp.updated || 0
+        };
+      }
+      // Old format
+      else {
+        normalized[showId] = {
+          ...entry,
+          updated: entry.updated || 0
+        };
+      }
+    });
+
+    watchHistory = normalized;
   } catch (e) {
-    console.warn('Failed to load watch history:', e);
+    console.warn("Failed to load watch history:", e);
     watchHistory = {};
   }
 }
@@ -2073,10 +2104,17 @@ function getShowDirectPlayUrl(showId) {
 }
 
 // Get direct play URL for specific episode
-function getEpisodeDirectPlayUrl(showId, episodeIndex) {
+function getEpisodeDirectPlayUrl(showId, episodeIndex = 0) {
   const show = allShows.find(s => s.show.id.toString() === showId.toString());
   if (!show) return null;
-  return generateDirectPlayUrl(show, episodeIndex);
+  
+  const jsonFilename = show.show.filename || show.show.link.split('/').pop();
+  const baseUrl = window.location.origin + '/test.html';
+  
+  if (episodeIndex > 0) {
+    return `${baseUrl}?json=${jsonFilename}&episode=${episodeIndex}`;
+  }
+  return `${baseUrl}?json=${jsonFilename}`;
 }
 
 // Copy direct play URL to clipboard (can be used in context menus)
@@ -2629,40 +2667,53 @@ async function openShow(showId) {
     return;
   }
 
-  showToast('Loading episodes...');
+  // Get the JSON filename from the show data
+  const jsonFilename = showData.show.filename || showData.show.link.split('/').pop();
   
-  try {
-    // Load episodes only when needed
-    if (!showData.episodes || showData.episodes.length === 0) {
-      const response = await fetch(showData.show.link);
-      if (!response.ok) throw new Error('Failed to load episodes');
+  // Check if we want to open in current page or new player page
+  if (window.location.pathname.includes('player.html') || window.location.pathname.includes('test.html')) {
+    // We're already on player page - use existing logic
+    showToast('Loading episodes...');
+    
+    try {
+      if (!showData.episodes || showData.episodes.length === 0) {
+        const response = await fetch(showData.show.link);
+        if (!response.ok) throw new Error('Failed to load episodes');
+        
+        const fullShowData = await response.json();
+        showData.episodes = fullShowData.episodes || [];
+      }
+
+      if (showData.episodes.length === 0) {
+        showToast('No episodes available');
+        return;
+      }
+
+      currentShow = showData;
+      currentEpisodes = showData.episodes;
       
-      const fullShowData = await response.json();
-      showData.episodes = fullShowData.episodes || [];
+      const watchData = watchHistory[showId];
+      const startEpisode = watchData?.episode || 0;
+      
+      setupPlayer();
+      loadEpisode(startEpisode);
+      showPlayer();
+      
+    } catch (error) {
+      console.error('Failed to load show:', error);
+      showToast('Failed to load episodes');
     }
-
-    if (showData.episodes.length === 0) {
-      showToast('No episodes available');
-      return;
-    }
-
-    currentShow = showData;
-    currentEpisodes = showData.episodes;
-    
+  } else {
+    // We're on index page - navigate to player with URL params
     const watchData = watchHistory[showId];
-    const startEpisode = watchData?.episode || 0;
+    const episodeParam = watchData?.episode ? `&episode=${watchData.episode}` : '';
     
-    setupPlayer();
-    loadEpisode(startEpisode);
-    showPlayer();
-    
-  } catch (error) {
-    console.error('Failed to load show:', error);
-    showToast('Failed to load episodes');
+    const langParam = `&lang=${currentLanguage}`;
+	window.location.href = `test.html?json=${jsonFilename}${episodeParam}${langParam}`;
   }
 }
 
-// Continue watching
+//continue watching to work with URL params
 async function continueWatching(showId) {
   const watchData = watchHistory[showId];
   if (!watchData) return;
@@ -2670,26 +2721,70 @@ async function continueWatching(showId) {
   const showData = allShows.find(s => s.show.id.toString() === showId);
   if (!showData) return;
 
-  // Load episodes if not loaded
-  if (!showData.episodes || showData.episodes.length === 0) {
-    try {
-      const response = await fetch(showData.show.link);
-      if (!response.ok) throw new Error('Failed to load episodes');
-      
-      const fullShowData = await response.json();
-      showData.episodes = fullShowData.episodes || [];
-    } catch (error) {
-      showToast('Failed to load episodes');
-      return;
+  const jsonFilename = showData.show.filename || showData.show.link.split('/').pop();
+  
+  if (window.location.pathname.includes('player.html') || window.location.pathname.includes('test.html')) {
+    // We're on player page - use existing logic
+    if (!showData.episodes || showData.episodes.length === 0) {
+      try {
+        const response = await fetch(showData.show.link);
+        if (!response.ok) throw new Error('Failed to load episodes');
+        
+        const fullShowData = await response.json();
+        showData.episodes = fullShowData.episodes || [];
+      } catch (error) {
+        showToast('Failed to load episodes');
+        return;
+      }
+    }
+
+    currentShow = showData;
+    currentEpisodes = showData.episodes;
+    
+    setupPlayer();
+    loadEpisode(watchData.episode, null, false, watchData.currentTime);
+    showPlayer();
+  } else {
+  const params = new URLSearchParams();
+  params.set("json", jsonFilename);
+  params.set("lang", currentLanguage);
+
+  if (watchData?.lastEpisode) {
+    params.set("episode", watchData.lastEpisode.index);
+    if (watchData.lastEpisode.currentTime) {
+      params.set("time", Math.floor(watchData.lastEpisode.currentTime));
+    }
+  } else {
+    // fallback for old schema
+    params.set("episode", watchData.episode || 0);
+    if (watchData.currentTime) {
+      params.set("time", Math.floor(watchData.currentTime));
     }
   }
 
-  currentShow = showData;
-  currentEpisodes = showData.episodes;
-  
-  setupPlayer();
-  loadEpisode(watchData.episode, null, false, watchData.currentTime);
-  showPlayer();
+  window.location.href = `test.html?${params.toString()}`;
+}
+}
+
+function getContinueWatchingData() {
+  const raw = localStorage.getItem("continueWatching");
+  if (!raw) return {};
+
+  const data = JSON.parse(raw);
+  const normalized = {};
+
+  Object.keys(data).forEach(showId => {
+    const lastEp = data[showId].lastEpisode;
+    if (lastEp) {
+      normalized[showId] = {
+        episode: lastEp.index,
+        currentTime: lastEp.currentTime,
+        progress: lastEp.duration > 0 ? lastEp.currentTime / lastEp.duration : 0
+      };
+    }
+  });
+
+  return normalized;
 }
 
 // Remove from continue watching
@@ -3062,6 +3157,12 @@ function initializeAdditionalFeatures() {
 function initializeShareButtons() {
   console.log('Share buttons initialized - CSS already in main stylesheet');
 }
+
+window.addEventListener("pageshow", (event) => {
+  // When coming back from test.html, reload watch history
+  loadWatchHistory();
+  renderContinueWatching();
+});
 </script>
   
 </body>

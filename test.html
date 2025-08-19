@@ -238,11 +238,88 @@
         }
 
         .show-title-image {
-            max-height: 90px;
+            max-height: 80px;
             object-fit: contain;
             margin-bottom: 5px;
-            margin-left: -30px;
+            margin-left: -25px;
         }
+/*		
+.show-title-text {
+  display: flex;               /* allows centering */
+  align-items: center;         /* vertical centering */
+  justify-content: center;     /* horizontal centering */
+
+  max-height: 80px;            /* same as image */
+  margin-bottom: 5px;          /* same as image */
+  margin-left: -25px;          /* same as image */
+  
+  max-width: 80%;              /* constrain width */
+  text-align: center;
+  overflow-wrap: break-word;
+  white-space: normal;
+
+  font-size: 2rem;             /* adjust to fit like logo text */
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+} */
+
+/*		.show-title-text {
+            font-size: 25px;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        } */
+		
+.show-title-text {
+  font-size: 32px;  /* bigger impact */
+  font-weight: 900; /* extra bold */
+  text-align: center;
+  margin: 0 auto 10px;
+  max-width: 80%;          /* so it wraps nicely */
+  line-height: 1.2;
+
+  /* Gradient text */
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  /* Glow effect */
+  text-shadow: 
+    0 2px 4px rgba(0,0,0,0.6), 
+    0 4px 12px rgba(0,0,0,0.4);
+
+  /* Subtle letter spacing for style */
+  letter-spacing: 2px;
+
+  /* Optional uppercase for poster feel */
+  text-transform: uppercase;
+
+  /* Smooth fade-in animation */
+  opacity: 0;
+  animation: fadeInTitle 0.8s ease forwards;
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+		
+		
 
         /* Progress Bar */
         .progress-container {
@@ -639,6 +716,10 @@ button {
             .show-title {
                 font-size: 20px;
             }
+			
+			.show-title-text {
+                font-size: 20px;
+            }
 
             .episode-info {
                 font-size: 14px;
@@ -797,6 +878,7 @@ button {
                 font-size: 11px;
             }
         }
+		
     </style>
 </head>
 <body>
@@ -851,6 +933,7 @@ button {
                     <!-- Show Info -->
                     <div class="show-info">
                         <img id="showTitleImage" class="show-title-image" alt="Show Title" style="display: none;">
+						<div id="showTitleText" class="show-title-text" style="display: none;"></div>
                         <div class="episode-info" id="episodeInfo"></div>
                     </div>
 
@@ -927,6 +1010,15 @@ button {
     <div class="toast" id="toast"></div>
 
     <script>
+	
+function getQueryParam(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
+
+const currentLanguage = getQueryParam("lang") || "tamil"; // default fallback
+const storageKey = `kukufm_watch_history_${currentLanguage}`;
+
         class ReelPlayer {
             constructor() {
 				this.container = document.getElementById('reelPlayer');
@@ -991,6 +1083,18 @@ button {
                         this.changeSpeed(speed);
                     });
                 });
+				
+				// Episodes button
+                document.getElementById('episodesBtn').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.showEpisodesOverlay();
+                });
+
+                // Close episodes overlay
+                document.getElementById('episodesClose').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    document.getElementById('episodesOverlay').classList.remove('active');
+                });
 
                 // Share button
                 document.getElementById('shareBtn').addEventListener('click', () => this.shareEpisode());
@@ -1026,7 +1130,7 @@ button {
 
         // Clear when finished
 this.video.addEventListener('ended', () => {
-    const raw = localStorage.getItem('continueWatching');
+    const raw = localStorage.getItem(storageKey);
     if (!raw) return;
 
     const showId = this.getShowId();
@@ -1036,7 +1140,7 @@ this.video.addEventListener('ended', () => {
     if (all[showId] && all[showId][epId]) {
         delete all[showId][epId];
         if (Object.keys(all[showId]).length === 0) delete all[showId];
-        localStorage.setItem('continueWatching', JSON.stringify(all));
+        localStorage.setItem(storageKey, JSON.stringify(all));
     }
 });		
 
@@ -1207,6 +1311,25 @@ setupTouchEvents() {
                 }
                 return 'All';
             }
+
+
+setTitle(show) {
+  const titleImg  = document.getElementById("showTitleImage");
+  const titleText = document.getElementById("showTitleText");
+  if (!titleImg || !titleText) return;
+
+  const titleImage = show?.thumbnail_data?.title_image;
+  if (titleImage && typeof titleImage === "string" && titleImage.trim()) {
+    titleImg.src = titleImage;
+    titleImg.style.display = "block";
+    titleText.style.display = "none";
+  } else {
+    titleImg.style.display = "none";
+    titleText.textContent = show?.title || "Untitled Show";
+    titleText.style.display = "block";
+  }
+}
+
 
             createSectionTabs(totalEpisodes) {
                 const tabsContainer = document.getElementById('sectionTabs');
@@ -1507,7 +1630,7 @@ getResumeIndex() {
     console.log('🔍 getResumeIndex called');
     
     try {
-        const raw = localStorage.getItem('continueWatching');
+        const raw = localStorage.getItem(storageKey);
         console.log('📦 localStorage raw:', raw);
         
         if (!raw) {
@@ -1569,16 +1692,31 @@ loadEpisode(episodeIndex) {
 
     this.loadVideoSource(source);
 
-    // ✅ Load progress when video is ready to play
+    // ✅ Resume from saved progress when video is ready
     this.video.addEventListener('canplay', () => {
         console.log('Video ready, loading progress...');
         this.loadProgress();
     }, { once: true });
+
+    // ✅ NEW: Resume from ?time= param when metadata is available
+    this.video.addEventListener('loadedmetadata', () => {
+        const params = new URLSearchParams(location.search);
+        const startTime = params.get("time");
+
+        if (startTime) {
+            const seconds = parseFloat(startTime);
+            if (!isNaN(seconds) && seconds > 0 && seconds < this.video.duration) {
+                this.video.currentTime = seconds;
+                console.log("⏩ Resuming from URL param at", seconds, "seconds");
+            }
+        }
+    }, { once: true });
 }
+
 
 loadProgress() {
     try {
-        const raw = localStorage.getItem('continueWatching');
+        const raw = localStorage.getItem(storageKey);
         if (!raw) {
             console.log('No progress data to load');
             return;
@@ -1626,7 +1764,7 @@ saveProgress() {
     const showId = this.getShowId();
     console.log('Saving progress for show:', showId, 'episode:', this.currentEpisodeIndex, 'time:', this.video.currentTime);
 
-    let all = JSON.parse(localStorage.getItem('continueWatching')) || {};
+    let all = JSON.parse(localStorage.getItem(storageKey)) || {};
     if (!all[showId]) all[showId] = {};
 
     all[showId].lastEpisode = {
@@ -1636,20 +1774,22 @@ saveProgress() {
         updated: Date.now()
     };
 
-    localStorage.setItem('continueWatching', JSON.stringify(all));
+    localStorage.setItem(storageKey, JSON.stringify(all));
     console.log('Progress saved:', all[showId].lastEpisode);
 }		
 
-            updateShowInfo() {
-                if (!this.currentShow) return;
+updateShowInfo() {
+  if (!this.currentShow) return;
 
-                // Update episode info to show current episode number and total
-                const totalEpisodes = this.currentShow.show.n_episodes || this.currentEpisodes.length;
-                const currentEpisode = this.currentEpisodes[this.currentEpisodeIndex];
-                const episodeNumber = currentEpisode ? currentEpisode.index : this.currentEpisodeIndex + 1;
-                
-                this.episodeInfo.textContent = `Episode ${episodeNumber} / ${totalEpisodes}`;
-            }
+  // NEW: always set image/text header here
+  this.setTitle(this.currentShow.show);
+
+  const totalEpisodes = this.currentShow.show.n_episodes || this.currentEpisodes.length;
+  const currentEpisode = this.currentEpisodes[this.currentEpisodeIndex];
+  const episodeNumber = currentEpisode ? currentEpisode.index : this.currentEpisodeIndex + 1;
+  this.episodeInfo.textContent = `Episode ${episodeNumber} / ${totalEpisodes}`;
+}
+
 
             updateNavigationButtons() {
                 // Update navigation buttons
@@ -1938,36 +2078,38 @@ function openShowPlayer(showData, episodeIndex = null) {
         episodes: showData.episodes || []
     };
 
-    // ✅ Handle both undefined and null
-    if (episodeIndex === null || episodeIndex === undefined) {
-        // Title image setup
-        const titleImg = document.getElementById("showTitleImage");
-        if (titleImg && formattedData.show.thumbnail_data?.title_image) {
-            titleImg.src = formattedData.show.thumbnail_data.title_image;
-            titleImg.style.display = "block";
-        }
-
-        // ✅ Let open() method handle resume logic
-        reelPlayer.open(formattedData);
-        return;
-    }
-
-    // Specific episode requested
-    const episode = formattedData.episodes[episodeIndex];
-    if (!episode) {
-        console.error("No episode found at index", episodeIndex, formattedData);
-        return;
-    }
-
-    // Title image
+    // --- Always handle header (image OR text) ---
     const titleImg = document.getElementById("showTitleImage");
-    if (titleImg && formattedData.show.thumbnail_data?.title_image) {
-        titleImg.src = formattedData.show.thumbnail_data.title_image;
-        titleImg.style.display = "block";
+    const titleText = document.getElementById("showTitleText");
+
+    if (titleImg && titleText) {
+        const titleImage = formattedData.show.thumbnail_data?.title_image;
+        if (titleImage && typeof titleImage === "string" && titleImage.trim() !== "") {
+            // ✅ Use image
+            titleImg.src = titleImage;
+            titleImg.style.display = "block";
+            titleText.style.display = "none";
+        } else {
+            // ✅ Use stylish text fallback
+            titleImg.style.display = "none";
+            titleText.innerText = formattedData.show.title || "Untitled Show";
+            titleText.style.display = "block";
+        }
     }
 
-    // Open player
-    reelPlayer.open(formattedData, episodeIndex);
+    // --- Open player ---
+    if (episodeIndex === null || episodeIndex === undefined) {
+        // Let player decide resume episode
+        reelPlayer.open(formattedData);
+    } else {
+        // Specific episode requested
+        const episode = formattedData.episodes[episodeIndex];
+        if (!episode) {
+            console.error("No episode found at index", episodeIndex, formattedData);
+            return;
+        }
+        reelPlayer.open(formattedData, episodeIndex);
+    }
 }
 
         // Initialize the reel player
@@ -1986,24 +2128,112 @@ function openShowPlayer(showData, episodeIndex = null) {
         });
 
         // Load your JSON data
-fetch("json/Revenge of XXL Husband-Tamil.json")
-    .then(res => res.json())
-    .then(data => {
-        console.log('Loaded show data:', data);
+//fetch("json/Revenge of XXL Husband-Tamil.json")
+  //  .then(res => res.json())
+    //.then(data => {
+      //  console.log('Loaded show data:', data);
         // ✅ Explicitly pass null to trigger resume logic
-        openShowPlayer(data, null);
-    })
+        //openShowPlayer(data, null);
+    //})
 		
     </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('episodesBtn').addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        console.log('Episodes button clicked');
-        reelPlayer.showEpisodesOverlay();
-    });
-});	
+    const urlParams = new URLSearchParams(window.location.search);
+    const jsonFile = urlParams.get('json');
+    const episodeIndex = urlParams.get('episode');
+    const lang = urlParams.get('lang') || 'tamil';   // 👈 get language param
+    
+    if (jsonFile) {
+        console.log('Loading from URL params:', jsonFile, 'episode:', episodeIndex);
+
+        // 👇 decide folder based on language
+        const basePath = (lang === 'tamilaudio') ? 'audio/' : 'json/';
+
+        fetch(`${basePath}${jsonFile}`)
+            .then(res => {
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                return res.json();
+            })
+            .then(data => {
+                console.log('Loaded show data:', data);
+                const startEpisode = episodeIndex ? parseInt(episodeIndex) : null;
+                openShowPlayer(data, startEpisode);
+            })
+            .catch(error => {
+                console.error('Error loading show data:', error);
+                showErrorMessage(`Failed to load show: ${error.message}`);
+            });
+    } else {
+        // Fallback - check if there's a show ID to load from master data
+        const showId = urlParams.get('show');
+        if (showId) {
+            loadShowFromMasterData(showId, parseInt(episodeIndex) || 0);
+        } else {
+            showErrorMessage('No show specified. Please navigate from a show page.');
+        }
+    }
+});
+
+
+// Helper function to show error
+function showErrorMessage(message) {
+    document.body.innerHTML = `
+        <div style="display: flex; align-items: center; justify-content: center; height: 100vh; 
+                    color: white; font-family: Inter, sans-serif; background: #000;">
+            <div style="text-align: center; padding: 20px;">
+                <h2 style="margin-bottom: 20px;">${message}</h2>
+                <button onclick="history.back()" 
+                        style="padding: 12px 24px; background: #ff4b2b; color: white; 
+                               border: none; border-radius: 6px; cursor: pointer; font-size: 16px;">
+                    Go Back
+                </button>
+            </div>
+        </div>
+    `;
+}
+
+// Load show from master data (fallback method)
+async function loadShowFromMasterData(showId, episodeIndex = 0) {
+    try {
+        // Determine language from current page
+        const currentLanguage = getCurrentLanguageFromPath();
+        const masterFile = `master_${currentLanguage}.json`;
+        
+        const response = await fetch(masterFile);
+        const masterData = await response.json();
+        
+        // Find show in master data
+        let targetShow = null;
+        for (const section of masterData.sections) {
+            targetShow = section.shows.find(show => show.id.toString() === showId);
+            if (targetShow) break;
+        }
+        
+        if (!targetShow) {
+            throw new Error('Show not found in master data');
+        }
+        
+        // Load full show data
+        const showResponse = await fetch(targetShow.link);
+        const fullShowData = await showResponse.json();
+        
+        openShowPlayer(fullShowData, episodeIndex);
+        
+    } catch (error) {
+        console.error('Error loading from master data:', error);
+        showErrorMessage('Failed to load show');
+    }
+}
+
+function getCurrentLanguageFromPath() {
+    const path = window.location.pathname;
+    const filename = path.split('/').pop() || 'index.html';
+    
+    if (filename === 'index.html') return 'tamil';
+    return filename.replace('.html', '');
+}
+
 </script>	
 </body>
 </html>
