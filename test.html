@@ -308,7 +308,7 @@ body {
   justify-content: space-between;
   gap: 15px;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .control-group {
@@ -684,13 +684,13 @@ button {
   }
 
   .video-logo {
-    top: 15px;
-    right: 10px;
+    top: 20px;
+    right: 15px;
   }
   
   .video-logo img {
-    height: 62px; /* Smaller on mobile */
-    max-width: 100px;
+    height: 80px; /* Smaller on mobile */
+    max-width: 140px;
   }
   
   .show-title {
@@ -714,7 +714,7 @@ button {
   .control-row {
     justify-content: space-between; /* Space between left group and right timer */
     gap: 12px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     padding: 0 10px;
   }
   
@@ -871,8 +871,8 @@ button {
   }
   
   .video-logo img {
-    height: 28px;
-    max-width: 80px;
+    height: 70px;
+    max-width: 120px;
   }
   
   .episodes-overlay {
@@ -1445,7 +1445,7 @@ button {
 					if (e.target.closest('button, .control-btn, .nav-btn, .settings-btn, .volume-btn')) {
 						return;
 					}
-
+			
 					const touch = e.changedTouches[0];
 					const endX = touch.clientX;
 					const endY = touch.clientY;
@@ -1535,6 +1535,32 @@ button {
 				}, { passive: true });
 			}
 
+			// Helper methods you'll also need:
+			clearSeekFeedback(direction) {
+				const feedback = document.querySelector(`.seek-feedback.${direction}`);
+				if (feedback) {
+					this.removeFeedback(feedback);
+				}
+			}
+
+			clearAllSeekFeedback() {
+				const allFeedback = document.querySelectorAll('.seek-feedback');
+				allFeedback.forEach(feedback => {
+					this.removeFeedback(feedback);
+				});
+			}
+
+			removeFeedback(feedback) {
+				if (feedback && feedback.parentNode) {
+					feedback.classList.add('fade-out');
+					setTimeout(() => {
+						if (feedback.parentNode) {
+							feedback.parentNode.removeChild(feedback);
+						}
+					}, 300);
+				}
+			}
+
 			showSeekFeedback(amount, direction) {
 				// Find existing feedback for this direction
 				let feedback = document.querySelector(`.seek-feedback.${direction}`);
@@ -1579,18 +1605,6 @@ button {
 					// Auto-remove after delay
 					feedback.removeTimer = setTimeout(() => {
 						this.removeFeedback(feedback);
-					}, 300);
-				}
-			}
-
-			// Helper method to smoothly remove feedback
-			removeFeedback(feedback) {
-				if (feedback && feedback.parentNode) {
-					feedback.classList.add('fade-out');
-					setTimeout(() => {
-						if (feedback.parentNode) {
-							feedback.parentNode.removeChild(feedback);
-						}
 					}, 300);
 				}
 			}		
