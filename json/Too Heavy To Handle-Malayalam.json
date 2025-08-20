@@ -258,11 +258,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/842ef32f-d506-4e7e-8ced-8e2cf95135e9/12787951080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/842ef32f-d506-4e7e-8ced-8e2cf95135e9/1278795720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/842ef32f-d506-4e7e-8ced-8e2cf95135e9/1278795480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/842ef32f-d506-4e7e-8ced-8e2cf95135e9/1278795360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/842ef32f-d506-4e7e-8ced-8e2cf95135e9/1278795240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/842ef32f-d506-4e7e-8ced-8e2cf95135e9/1278795240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/842ef32f-d506-4e7e-8ced-8e2cf95135e9/1278795.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -311,11 +311,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/fa00fb99-ac57-4e4d-8b7f-e4bc66df8dab/12787961080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/fa00fb99-ac57-4e4d-8b7f-e4bc66df8dab/1278796720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/fa00fb99-ac57-4e4d-8b7f-e4bc66df8dab/1278796480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/fa00fb99-ac57-4e4d-8b7f-e4bc66df8dab/1278796360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/fa00fb99-ac57-4e4d-8b7f-e4bc66df8dab/1278796240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/fa00fb99-ac57-4e4d-8b7f-e4bc66df8dab/1278796240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/fa00fb99-ac57-4e4d-8b7f-e4bc66df8dab/1278796.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -364,11 +364,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/b4c0e710-cdaa-4deb-a563-6fcf5071f57c/12787971080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/b4c0e710-cdaa-4deb-a563-6fcf5071f57c/1278797720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/b4c0e710-cdaa-4deb-a563-6fcf5071f57c/1278797480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/b4c0e710-cdaa-4deb-a563-6fcf5071f57c/1278797360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/b4c0e710-cdaa-4deb-a563-6fcf5071f57c/1278797240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/b4c0e710-cdaa-4deb-a563-6fcf5071f57c/1278797240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/b4c0e710-cdaa-4deb-a563-6fcf5071f57c/1278797.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -417,11 +417,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/5ec7e24b-d073-4618-84c5-26c1b9fbbc54/12787981080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/5ec7e24b-d073-4618-84c5-26c1b9fbbc54/1278798720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/5ec7e24b-d073-4618-84c5-26c1b9fbbc54/1278798480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/5ec7e24b-d073-4618-84c5-26c1b9fbbc54/1278798360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/5ec7e24b-d073-4618-84c5-26c1b9fbbc54/1278798240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/5ec7e24b-d073-4618-84c5-26c1b9fbbc54/1278798240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/5ec7e24b-d073-4618-84c5-26c1b9fbbc54/1278798.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -470,11 +470,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/019a01b3-224b-484b-9df2-939a5f43e565/12787991080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/019a01b3-224b-484b-9df2-939a5f43e565/1278799720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/019a01b3-224b-484b-9df2-939a5f43e565/1278799480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/019a01b3-224b-484b-9df2-939a5f43e565/1278799360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/019a01b3-224b-484b-9df2-939a5f43e565/1278799240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/019a01b3-224b-484b-9df2-939a5f43e565/1278799240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/019a01b3-224b-484b-9df2-939a5f43e565/1278799.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -523,11 +523,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/35b29281-ffec-477b-ba73-f14107e5d46f/12788001080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/35b29281-ffec-477b-ba73-f14107e5d46f/1278800720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/35b29281-ffec-477b-ba73-f14107e5d46f/1278800480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/35b29281-ffec-477b-ba73-f14107e5d46f/1278800360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/35b29281-ffec-477b-ba73-f14107e5d46f/1278800240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/35b29281-ffec-477b-ba73-f14107e5d46f/1278800240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/35b29281-ffec-477b-ba73-f14107e5d46f/1278800.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -576,11 +576,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/319f8271-a1f6-43ba-af30-90b988fd5295/12788011080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/319f8271-a1f6-43ba-af30-90b988fd5295/1278801720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/319f8271-a1f6-43ba-af30-90b988fd5295/1278801480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/319f8271-a1f6-43ba-af30-90b988fd5295/1278801360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/319f8271-a1f6-43ba-af30-90b988fd5295/1278801240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/319f8271-a1f6-43ba-af30-90b988fd5295/1278801240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/319f8271-a1f6-43ba-af30-90b988fd5295/1278801.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -629,11 +629,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/3414742f-a0a9-4ebc-88f0-b7e35e42666f/12788021080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/3414742f-a0a9-4ebc-88f0-b7e35e42666f/1278802720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/3414742f-a0a9-4ebc-88f0-b7e35e42666f/1278802480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/3414742f-a0a9-4ebc-88f0-b7e35e42666f/1278802360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/3414742f-a0a9-4ebc-88f0-b7e35e42666f/1278802240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/3414742f-a0a9-4ebc-88f0-b7e35e42666f/1278802240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/3414742f-a0a9-4ebc-88f0-b7e35e42666f/1278802.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -682,11 +682,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/7e20e6e3-848f-4f5f-8dc8-2fab87c3a312/12788031080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/7e20e6e3-848f-4f5f-8dc8-2fab87c3a312/1278803720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/7e20e6e3-848f-4f5f-8dc8-2fab87c3a312/1278803480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/7e20e6e3-848f-4f5f-8dc8-2fab87c3a312/1278803360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/7e20e6e3-848f-4f5f-8dc8-2fab87c3a312/1278803240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/7e20e6e3-848f-4f5f-8dc8-2fab87c3a312/1278803240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/7e20e6e3-848f-4f5f-8dc8-2fab87c3a312/1278803.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -735,11 +735,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/9d22e45d-4713-4ff8-a26c-f50e7749c586/12788041080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/9d22e45d-4713-4ff8-a26c-f50e7749c586/1278804720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/9d22e45d-4713-4ff8-a26c-f50e7749c586/1278804480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/9d22e45d-4713-4ff8-a26c-f50e7749c586/1278804360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/9d22e45d-4713-4ff8-a26c-f50e7749c586/1278804240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/9d22e45d-4713-4ff8-a26c-f50e7749c586/1278804240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/9d22e45d-4713-4ff8-a26c-f50e7749c586/1278804.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -789,11 +789,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/bfdee1bf-263b-4836-98ec-2673e136b126/12788051080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/bfdee1bf-263b-4836-98ec-2673e136b126/1278805720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/bfdee1bf-263b-4836-98ec-2673e136b126/1278805480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/bfdee1bf-263b-4836-98ec-2673e136b126/1278805360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/bfdee1bf-263b-4836-98ec-2673e136b126/1278805240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/bfdee1bf-263b-4836-98ec-2673e136b126/1278805240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/bfdee1bf-263b-4836-98ec-2673e136b126/1278805.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -843,11 +843,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/c05039f3-70bb-4a62-afeb-18ee651c2373/12788061080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/c05039f3-70bb-4a62-afeb-18ee651c2373/1278806720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/c05039f3-70bb-4a62-afeb-18ee651c2373/1278806480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/c05039f3-70bb-4a62-afeb-18ee651c2373/1278806360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/c05039f3-70bb-4a62-afeb-18ee651c2373/1278806240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/c05039f3-70bb-4a62-afeb-18ee651c2373/1278806240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/c05039f3-70bb-4a62-afeb-18ee651c2373/1278806.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -897,11 +897,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/9038e5d1-702b-4fbb-a15f-e0924e8f438d/12788071080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/9038e5d1-702b-4fbb-a15f-e0924e8f438d/1278807720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/9038e5d1-702b-4fbb-a15f-e0924e8f438d/1278807480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/9038e5d1-702b-4fbb-a15f-e0924e8f438d/1278807360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/9038e5d1-702b-4fbb-a15f-e0924e8f438d/1278807240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/9038e5d1-702b-4fbb-a15f-e0924e8f438d/1278807240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/9038e5d1-702b-4fbb-a15f-e0924e8f438d/1278807.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -951,11 +951,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/f07956f4-12fb-41ca-b030-2268e35312d8/12788081080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/f07956f4-12fb-41ca-b030-2268e35312d8/1278808720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/f07956f4-12fb-41ca-b030-2268e35312d8/1278808480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/f07956f4-12fb-41ca-b030-2268e35312d8/1278808360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/f07956f4-12fb-41ca-b030-2268e35312d8/1278808240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/f07956f4-12fb-41ca-b030-2268e35312d8/1278808240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/f07956f4-12fb-41ca-b030-2268e35312d8/1278808.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1005,11 +1005,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/8599ee03-9614-4e90-b9d1-0c0b46d1b58a/12788091080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/8599ee03-9614-4e90-b9d1-0c0b46d1b58a/1278809720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/8599ee03-9614-4e90-b9d1-0c0b46d1b58a/1278809480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/8599ee03-9614-4e90-b9d1-0c0b46d1b58a/1278809360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/8599ee03-9614-4e90-b9d1-0c0b46d1b58a/1278809240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/8599ee03-9614-4e90-b9d1-0c0b46d1b58a/1278809240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/8599ee03-9614-4e90-b9d1-0c0b46d1b58a/1278809.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1059,11 +1059,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/7f2f085c-d1e8-495b-9dd5-add613413475/12788101080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/7f2f085c-d1e8-495b-9dd5-add613413475/1278810720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/7f2f085c-d1e8-495b-9dd5-add613413475/1278810480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/7f2f085c-d1e8-495b-9dd5-add613413475/1278810360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/7f2f085c-d1e8-495b-9dd5-add613413475/1278810240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/7f2f085c-d1e8-495b-9dd5-add613413475/1278810240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/7f2f085c-d1e8-495b-9dd5-add613413475/1278810.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1113,11 +1113,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/eca8637c-2530-4c40-a508-7c7397da0d9e/12788111080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/eca8637c-2530-4c40-a508-7c7397da0d9e/1278811720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/eca8637c-2530-4c40-a508-7c7397da0d9e/1278811480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/eca8637c-2530-4c40-a508-7c7397da0d9e/1278811360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/eca8637c-2530-4c40-a508-7c7397da0d9e/1278811240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/eca8637c-2530-4c40-a508-7c7397da0d9e/1278811240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/eca8637c-2530-4c40-a508-7c7397da0d9e/1278811.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1167,11 +1167,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/3b872011-bd0a-45a2-b3d2-3791e06dfae1/12788121080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/3b872011-bd0a-45a2-b3d2-3791e06dfae1/1278812720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/3b872011-bd0a-45a2-b3d2-3791e06dfae1/1278812480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/3b872011-bd0a-45a2-b3d2-3791e06dfae1/1278812360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/3b872011-bd0a-45a2-b3d2-3791e06dfae1/1278812240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/3b872011-bd0a-45a2-b3d2-3791e06dfae1/1278812240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/3b872011-bd0a-45a2-b3d2-3791e06dfae1/1278812.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1221,11 +1221,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/06316d2d-d000-4249-b3a7-d03dc82b835c/12788131080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/06316d2d-d000-4249-b3a7-d03dc82b835c/1278813720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/06316d2d-d000-4249-b3a7-d03dc82b835c/1278813480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/06316d2d-d000-4249-b3a7-d03dc82b835c/1278813360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/06316d2d-d000-4249-b3a7-d03dc82b835c/1278813240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/06316d2d-d000-4249-b3a7-d03dc82b835c/1278813240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/06316d2d-d000-4249-b3a7-d03dc82b835c/1278813.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1275,11 +1275,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/3c60316f-5a80-4605-8a0f-1f55437857af/12788141080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/3c60316f-5a80-4605-8a0f-1f55437857af/1278814720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/3c60316f-5a80-4605-8a0f-1f55437857af/1278814480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/3c60316f-5a80-4605-8a0f-1f55437857af/1278814360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/3c60316f-5a80-4605-8a0f-1f55437857af/1278814240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/3c60316f-5a80-4605-8a0f-1f55437857af/1278814240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/3c60316f-5a80-4605-8a0f-1f55437857af/1278814.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1329,11 +1329,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/1b9c1a6d-a5fb-4552-a7bc-b3e1466d3c8a/12788151080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/1b9c1a6d-a5fb-4552-a7bc-b3e1466d3c8a/1278815720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/1b9c1a6d-a5fb-4552-a7bc-b3e1466d3c8a/1278815480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/1b9c1a6d-a5fb-4552-a7bc-b3e1466d3c8a/1278815360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/1b9c1a6d-a5fb-4552-a7bc-b3e1466d3c8a/1278815240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/1b9c1a6d-a5fb-4552-a7bc-b3e1466d3c8a/1278815240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/1b9c1a6d-a5fb-4552-a7bc-b3e1466d3c8a/1278815.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1383,11 +1383,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/e53d5147-fe4a-4802-909a-b113d597d8c0/12788161080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/e53d5147-fe4a-4802-909a-b113d597d8c0/1278816720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/e53d5147-fe4a-4802-909a-b113d597d8c0/1278816480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/e53d5147-fe4a-4802-909a-b113d597d8c0/1278816360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/e53d5147-fe4a-4802-909a-b113d597d8c0/1278816240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/e53d5147-fe4a-4802-909a-b113d597d8c0/1278816240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/e53d5147-fe4a-4802-909a-b113d597d8c0/1278816.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1437,11 +1437,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/24bbfbfe-c24a-4ba9-b4a9-1d5244dce7dd/12788171080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/24bbfbfe-c24a-4ba9-b4a9-1d5244dce7dd/1278817720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/24bbfbfe-c24a-4ba9-b4a9-1d5244dce7dd/1278817480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/24bbfbfe-c24a-4ba9-b4a9-1d5244dce7dd/1278817360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/24bbfbfe-c24a-4ba9-b4a9-1d5244dce7dd/1278817240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/24bbfbfe-c24a-4ba9-b4a9-1d5244dce7dd/1278817240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/24bbfbfe-c24a-4ba9-b4a9-1d5244dce7dd/1278817.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1491,11 +1491,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/ddd3982c-05a2-491d-af3c-16964669d225/12788181080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/ddd3982c-05a2-491d-af3c-16964669d225/1278818720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/ddd3982c-05a2-491d-af3c-16964669d225/1278818480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/ddd3982c-05a2-491d-af3c-16964669d225/1278818360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/ddd3982c-05a2-491d-af3c-16964669d225/1278818240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/ddd3982c-05a2-491d-af3c-16964669d225/1278818240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/ddd3982c-05a2-491d-af3c-16964669d225/1278818.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1545,11 +1545,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/2c6ca534-2a01-4318-9a96-20af2a57e12e/12788191080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/2c6ca534-2a01-4318-9a96-20af2a57e12e/1278819720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/2c6ca534-2a01-4318-9a96-20af2a57e12e/1278819480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/2c6ca534-2a01-4318-9a96-20af2a57e12e/1278819360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/2c6ca534-2a01-4318-9a96-20af2a57e12e/1278819240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/2c6ca534-2a01-4318-9a96-20af2a57e12e/1278819240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/2c6ca534-2a01-4318-9a96-20af2a57e12e/1278819.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1599,11 +1599,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/01cc99ab-ab0b-4395-91a1-3e5f204c6ee4/12788201080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/01cc99ab-ab0b-4395-91a1-3e5f204c6ee4/1278820720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/01cc99ab-ab0b-4395-91a1-3e5f204c6ee4/1278820480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/01cc99ab-ab0b-4395-91a1-3e5f204c6ee4/1278820360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/01cc99ab-ab0b-4395-91a1-3e5f204c6ee4/1278820240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/01cc99ab-ab0b-4395-91a1-3e5f204c6ee4/1278820240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/01cc99ab-ab0b-4395-91a1-3e5f204c6ee4/1278820.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1653,11 +1653,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/45f2c3e5-55e5-489b-8ec5-b417a5e5f74f/12788211080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/45f2c3e5-55e5-489b-8ec5-b417a5e5f74f/1278821720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/45f2c3e5-55e5-489b-8ec5-b417a5e5f74f/1278821480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/45f2c3e5-55e5-489b-8ec5-b417a5e5f74f/1278821360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/45f2c3e5-55e5-489b-8ec5-b417a5e5f74f/1278821240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/45f2c3e5-55e5-489b-8ec5-b417a5e5f74f/1278821240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/45f2c3e5-55e5-489b-8ec5-b417a5e5f74f/1278821.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1707,11 +1707,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/d1c5301e-fd12-4980-959f-0f46d49239f4/12788221080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/d1c5301e-fd12-4980-959f-0f46d49239f4/1278822720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/d1c5301e-fd12-4980-959f-0f46d49239f4/1278822480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/d1c5301e-fd12-4980-959f-0f46d49239f4/1278822360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/d1c5301e-fd12-4980-959f-0f46d49239f4/1278822240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/d1c5301e-fd12-4980-959f-0f46d49239f4/1278822240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/d1c5301e-fd12-4980-959f-0f46d49239f4/1278822.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1761,11 +1761,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/f62e6cbe-1bf1-41c2-8942-298d9daf494b/12788231080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/f62e6cbe-1bf1-41c2-8942-298d9daf494b/1278823720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/f62e6cbe-1bf1-41c2-8942-298d9daf494b/1278823480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/f62e6cbe-1bf1-41c2-8942-298d9daf494b/1278823360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/f62e6cbe-1bf1-41c2-8942-298d9daf494b/1278823240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/f62e6cbe-1bf1-41c2-8942-298d9daf494b/1278823240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/f62e6cbe-1bf1-41c2-8942-298d9daf494b/1278823.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1815,11 +1815,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/4adfc6d2-b5e9-4c31-b860-30444d778dfa/12788241080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/4adfc6d2-b5e9-4c31-b860-30444d778dfa/1278824720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/4adfc6d2-b5e9-4c31-b860-30444d778dfa/1278824480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/4adfc6d2-b5e9-4c31-b860-30444d778dfa/1278824360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/4adfc6d2-b5e9-4c31-b860-30444d778dfa/1278824240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/4adfc6d2-b5e9-4c31-b860-30444d778dfa/1278824240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/4adfc6d2-b5e9-4c31-b860-30444d778dfa/1278824.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1869,11 +1869,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/4959154a-7616-4434-8cf3-1e406ab1f5f8/12788251080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/4959154a-7616-4434-8cf3-1e406ab1f5f8/1278825720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/4959154a-7616-4434-8cf3-1e406ab1f5f8/1278825480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/4959154a-7616-4434-8cf3-1e406ab1f5f8/1278825360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/4959154a-7616-4434-8cf3-1e406ab1f5f8/1278825240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/4959154a-7616-4434-8cf3-1e406ab1f5f8/1278825240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/4959154a-7616-4434-8cf3-1e406ab1f5f8/1278825.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1923,11 +1923,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/baf486e5-89d2-4467-9d55-d5cd6df97e3d/12788261080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/baf486e5-89d2-4467-9d55-d5cd6df97e3d/1278826720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/baf486e5-89d2-4467-9d55-d5cd6df97e3d/1278826480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/baf486e5-89d2-4467-9d55-d5cd6df97e3d/1278826360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/baf486e5-89d2-4467-9d55-d5cd6df97e3d/1278826240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/baf486e5-89d2-4467-9d55-d5cd6df97e3d/1278826240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/baf486e5-89d2-4467-9d55-d5cd6df97e3d/1278826.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -1977,11 +1977,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/aec64942-0617-4e83-99bb-9373da12f7f0/12788271080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/aec64942-0617-4e83-99bb-9373da12f7f0/1278827720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/aec64942-0617-4e83-99bb-9373da12f7f0/1278827480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/aec64942-0617-4e83-99bb-9373da12f7f0/1278827360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/aec64942-0617-4e83-99bb-9373da12f7f0/1278827240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/aec64942-0617-4e83-99bb-9373da12f7f0/1278827240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/aec64942-0617-4e83-99bb-9373da12f7f0/1278827.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2031,11 +2031,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/5505605c-809b-4f3e-af6b-edbc4ff571dc/12788281080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/5505605c-809b-4f3e-af6b-edbc4ff571dc/1278828720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/5505605c-809b-4f3e-af6b-edbc4ff571dc/1278828480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/5505605c-809b-4f3e-af6b-edbc4ff571dc/1278828360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/5505605c-809b-4f3e-af6b-edbc4ff571dc/1278828240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/5505605c-809b-4f3e-af6b-edbc4ff571dc/1278828240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/5505605c-809b-4f3e-af6b-edbc4ff571dc/1278828.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2085,11 +2085,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/ac6ab839-8ece-4ce3-befb-89f704a9b5cf/12788291080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/ac6ab839-8ece-4ce3-befb-89f704a9b5cf/1278829720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/ac6ab839-8ece-4ce3-befb-89f704a9b5cf/1278829480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/ac6ab839-8ece-4ce3-befb-89f704a9b5cf/1278829360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/ac6ab839-8ece-4ce3-befb-89f704a9b5cf/1278829240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/ac6ab839-8ece-4ce3-befb-89f704a9b5cf/1278829240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/ac6ab839-8ece-4ce3-befb-89f704a9b5cf/1278829.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2139,11 +2139,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/6e5b754f-f2c7-4f66-8f5b-7ad54921f5fd/12788301080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/6e5b754f-f2c7-4f66-8f5b-7ad54921f5fd/1278830720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/6e5b754f-f2c7-4f66-8f5b-7ad54921f5fd/1278830480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/6e5b754f-f2c7-4f66-8f5b-7ad54921f5fd/1278830360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/6e5b754f-f2c7-4f66-8f5b-7ad54921f5fd/1278830240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/6e5b754f-f2c7-4f66-8f5b-7ad54921f5fd/1278830240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/6e5b754f-f2c7-4f66-8f5b-7ad54921f5fd/1278830.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2193,11 +2193,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/c265ed82-5173-4739-aae1-f28b22193480/12788311080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/c265ed82-5173-4739-aae1-f28b22193480/1278831720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/c265ed82-5173-4739-aae1-f28b22193480/1278831480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/c265ed82-5173-4739-aae1-f28b22193480/1278831360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/c265ed82-5173-4739-aae1-f28b22193480/1278831240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/c265ed82-5173-4739-aae1-f28b22193480/1278831240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/c265ed82-5173-4739-aae1-f28b22193480/1278831.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2247,11 +2247,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/cff7a73a-08f4-44ce-8b3a-f16ef8129c0b/12788321080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/cff7a73a-08f4-44ce-8b3a-f16ef8129c0b/1278832720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/cff7a73a-08f4-44ce-8b3a-f16ef8129c0b/1278832480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/cff7a73a-08f4-44ce-8b3a-f16ef8129c0b/1278832360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/cff7a73a-08f4-44ce-8b3a-f16ef8129c0b/1278832240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/cff7a73a-08f4-44ce-8b3a-f16ef8129c0b/1278832240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/cff7a73a-08f4-44ce-8b3a-f16ef8129c0b/1278832.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2301,11 +2301,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/0e5b6d87-8486-4434-81bd-da87b6ed9529/12788331080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/0e5b6d87-8486-4434-81bd-da87b6ed9529/1278833720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/0e5b6d87-8486-4434-81bd-da87b6ed9529/1278833480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/0e5b6d87-8486-4434-81bd-da87b6ed9529/1278833360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/0e5b6d87-8486-4434-81bd-da87b6ed9529/1278833240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/0e5b6d87-8486-4434-81bd-da87b6ed9529/1278833240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/0e5b6d87-8486-4434-81bd-da87b6ed9529/1278833.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2355,11 +2355,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/9bcdc2d4-14b9-4323-9bd8-081ae5d46062/12788341080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/9bcdc2d4-14b9-4323-9bd8-081ae5d46062/1278834720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/9bcdc2d4-14b9-4323-9bd8-081ae5d46062/1278834480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/9bcdc2d4-14b9-4323-9bd8-081ae5d46062/1278834360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/9bcdc2d4-14b9-4323-9bd8-081ae5d46062/1278834240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/9bcdc2d4-14b9-4323-9bd8-081ae5d46062/1278834240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/9bcdc2d4-14b9-4323-9bd8-081ae5d46062/1278834.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2409,11 +2409,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/0311133a-0009-493c-b67d-9cc30be2b12d/12788351080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/0311133a-0009-493c-b67d-9cc30be2b12d/1278835720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/0311133a-0009-493c-b67d-9cc30be2b12d/1278835480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/0311133a-0009-493c-b67d-9cc30be2b12d/1278835360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/0311133a-0009-493c-b67d-9cc30be2b12d/1278835240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/0311133a-0009-493c-b67d-9cc30be2b12d/1278835240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/0311133a-0009-493c-b67d-9cc30be2b12d/1278835.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2463,11 +2463,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/b55dc320-e4b0-44e3-8d1c-bc9cfdfb6aa6/12788361080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/b55dc320-e4b0-44e3-8d1c-bc9cfdfb6aa6/1278836720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/b55dc320-e4b0-44e3-8d1c-bc9cfdfb6aa6/1278836480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/b55dc320-e4b0-44e3-8d1c-bc9cfdfb6aa6/1278836360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/b55dc320-e4b0-44e3-8d1c-bc9cfdfb6aa6/1278836240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/b55dc320-e4b0-44e3-8d1c-bc9cfdfb6aa6/1278836240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/b55dc320-e4b0-44e3-8d1c-bc9cfdfb6aa6/1278836.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2517,11 +2517,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/03c12c5c-f255-479c-a2be-3dd46a0195c4/12788371080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/03c12c5c-f255-479c-a2be-3dd46a0195c4/1278837720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/03c12c5c-f255-479c-a2be-3dd46a0195c4/1278837480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/03c12c5c-f255-479c-a2be-3dd46a0195c4/1278837360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/03c12c5c-f255-479c-a2be-3dd46a0195c4/1278837240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/03c12c5c-f255-479c-a2be-3dd46a0195c4/1278837240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/03c12c5c-f255-479c-a2be-3dd46a0195c4/1278837.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2571,11 +2571,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/9e5f753e-1a5c-4b2d-8c43-c8316322289f/12788381080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/9e5f753e-1a5c-4b2d-8c43-c8316322289f/1278838720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/9e5f753e-1a5c-4b2d-8c43-c8316322289f/1278838480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/9e5f753e-1a5c-4b2d-8c43-c8316322289f/1278838360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/9e5f753e-1a5c-4b2d-8c43-c8316322289f/1278838240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/9e5f753e-1a5c-4b2d-8c43-c8316322289f/1278838240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/9e5f753e-1a5c-4b2d-8c43-c8316322289f/1278838.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2625,11 +2625,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/69884dd8-a9e1-471d-a308-d3893df8b231/12788391080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/69884dd8-a9e1-471d-a308-d3893df8b231/1278839720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/69884dd8-a9e1-471d-a308-d3893df8b231/1278839480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/69884dd8-a9e1-471d-a308-d3893df8b231/1278839360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/69884dd8-a9e1-471d-a308-d3893df8b231/1278839240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/69884dd8-a9e1-471d-a308-d3893df8b231/1278839240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/69884dd8-a9e1-471d-a308-d3893df8b231/1278839.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2679,11 +2679,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/737367f5-222f-4979-ac0b-0bdf78d4e3b6/12788401080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/737367f5-222f-4979-ac0b-0bdf78d4e3b6/1278840720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/737367f5-222f-4979-ac0b-0bdf78d4e3b6/1278840480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/737367f5-222f-4979-ac0b-0bdf78d4e3b6/1278840360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/737367f5-222f-4979-ac0b-0bdf78d4e3b6/1278840240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/737367f5-222f-4979-ac0b-0bdf78d4e3b6/1278840240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/737367f5-222f-4979-ac0b-0bdf78d4e3b6/1278840.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2733,11 +2733,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/92a36dd5-8fe9-457b-b676-188c639b7894/12788411080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/92a36dd5-8fe9-457b-b676-188c639b7894/1278841720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/92a36dd5-8fe9-457b-b676-188c639b7894/1278841480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/92a36dd5-8fe9-457b-b676-188c639b7894/1278841360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/92a36dd5-8fe9-457b-b676-188c639b7894/1278841240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/92a36dd5-8fe9-457b-b676-188c639b7894/1278841240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/92a36dd5-8fe9-457b-b676-188c639b7894/1278841.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -2787,11 +2787,11 @@
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "video_1080p": "https://kukufm.akamaized.net/video-episode/6d40b46f-c91d-425e-81e5-250ae3f2b36c/12788421080p.m3u8",
         "video_720p": "https://kukufm.akamaized.net/video-episode/6d40b46f-c91d-425e-81e5-250ae3f2b36c/1278842720p.m3u8",
         "video_480p": "https://kukufm.akamaized.net/video-episode/6d40b46f-c91d-425e-81e5-250ae3f2b36c/1278842480p.m3u8",
         "video_360p": "https://kukufm.akamaized.net/video-episode/6d40b46f-c91d-425e-81e5-250ae3f2b36c/1278842360p.m3u8",
-        "video_240p": "https://kukufm.akamaized.net/video-episode/6d40b46f-c91d-425e-81e5-250ae3f2b36c/1278842240p.m3u8"
+        "video_240p": "https://kukufm.akamaized.net/video-episode/6d40b46f-c91d-425e-81e5-250ae3f2b36c/1278842240p.m3u8",
+        "converted_hls_url": "https://kukufm.akamaized.net/video-episode/6d40b46f-c91d-425e-81e5-250ae3f2b36c/1278842.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,

@@ -1211,7 +1211,7 @@ button {
                                 <i class="fas fa-tachometer-alt"></i> 1x
                             </button>
                             <button class="settings-btn" id="qualityBtn" title="Quality">
-                                <i class="fas fa-cog"></i> 720P
+                                <i class="fas fa-cog"></i> Auto
                             </button>
                             <button class="volume-btn" id="volumeBtn" title="Volume">
                                 <i class="fas fa-volume-up"></i>
@@ -1283,7 +1283,7 @@ button {
 				this.currentEpisodeIndex = 0;   // just default
 				this.hls = null;
 				this.hideControlsTimeout = null;
-				this.currentQuality = '720p';
+				this.currentQuality = 'Auto';
 				this.currentSpeed = 1;
     
 				this.initializeEventListeners();
@@ -1805,7 +1805,7 @@ button {
                 
                 // Available qualities
                 const qualities = [
-                    { key: 'video_1080p', label: '1080P' },
+                    { key: 'converted_hls_url', label: 'Auto' },
                     { key: 'video_720p', label: '720P' },
                     { key: 'video_480p', label: '480P' },
                     { key: 'video_360p', label: '360P' },
@@ -1878,14 +1878,19 @@ button {
                 }
 
                 // Fallback to available qualities
-                const availableQualities = ['video_720p', 'video_1080p', 'video_480p', 'video_360p', 'video_240p'];
+                const availableQualities = ['converted_hls_url', 'video_720p', 'video_480p', 'video_360p', 'video_240p'];
                 for (const q of availableQualities) {
                     if (episode.content[q]) {
-                        // Update current quality to match what we're actually using
-                        this.currentQuality = q.replace('video_', '');
-                        document.getElementById('qualityBtn').innerHTML = 
-                            `<i class="fas fa-cog"></i> ${this.currentQuality.toUpperCase()}`;
-                        return episode.content[q];
+						// Special case for auto
+						if (q === 'converted_hls_url') {
+							this.currentQuality = 'Auto';
+						} else {
+							this.currentQuality = q.replace('video_', '');
+						}
+                    
+						document.getElementById('qualityBtn').innerHTML = 
+                           `<i class="fas fa-cog"></i> ${this.currentQuality.toUpperCase()}`;
+						return episode.content[q];
                     }
                 }
 
