@@ -548,8 +548,8 @@ body {
 /* Menu Overlays */
 .menu-overlay {
   position: absolute;
-  bottom: 60px;
-  right: 20px;
+  bottom: 15%;
+  right: 11%;
   background: var(--control-bg);
   backdrop-filter: blur(10px);
   border-radius: 12px;
@@ -773,7 +773,7 @@ button {
 
   .menu-overlay {
     bottom: 120px;
-    right: 70px;
+    right: 50%;
   }
 
   .right-controls {
@@ -1283,7 +1283,7 @@ button {
 				this.currentEpisodeIndex = 0;   // just default
 				this.hls = null;
 				this.hideControlsTimeout = null;
-				this.currentQuality = 'Auto';
+				this.currentQuality = 'auto';
 				this.currentSpeed = 1;
     
 				this.initializeEventListeners();
@@ -1883,7 +1883,7 @@ button {
                     if (episode.content[q]) {
 						// Special case for auto
 						if (q === 'converted_hls_url') {
-							this.currentQuality = 'Auto';
+							this.currentQuality = 'auto';
 						} else {
 							this.currentQuality = q.replace('video_', '');
 						}
