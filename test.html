@@ -299,7 +299,9 @@ body {
   opacity: 1;
 }
 
-/* Control Row - Fixed for Mobile */
+/* Mobile Controls Reordered and Enlarged */
+
+/* Base control row */
 .control-row {
   display: flex;
   align-items: center;
@@ -315,6 +317,7 @@ body {
   gap: 15px;
 }
 
+/* Episode Navigation - Desktop only */
 .episode-nav {
   display: flex;
   align-items: center;
@@ -325,15 +328,14 @@ body {
   background: none;
   border: none;
   color: var(--text-white);
-  width: 40px;
-  height: 40px;
-  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
   backdrop-filter: blur(1px);
   transition: all 0.3s ease;
 }
@@ -381,20 +383,17 @@ body {
   backdrop-filter: blur(1px);
   transition: all 0.3s ease;
   position: relative;
-
-  /* Fix alignment */
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* Match nav-btn height */
   height: 40px;
-  min-width: 60px; /* enough space for "720P" */
-  padding: 0 12px; /* horizontal padding only */
-  line-height: 1; /* avoid vertical misalignment */
+  min-width: 60px;
+  padding: 0 12px;
+  line-height: 1;
 }
 
-.settings-btn:hover {
+.settings-btn:hover,
+.volume-btn:hover {
   background: var(--primary);
 }
 
@@ -653,6 +652,30 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Video Logo Overlay */
+.video-logo {
+  position: absolute;
+  top: 1%;
+  right: 36%;
+  z-index: 150; /* Above video, below controls */
+  pointer-events: none; /* Don't interfere with video controls */
+  opacity: 0.3; /* Subtle transparency */
+  transition: opacity 0.3s ease;
+}
+
+.video-logo img {
+  height: 62px; /* Adjust size as needed */
+  width: 100px;
+  max-width: 220px;
+  object-fit: contain;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Add shadow for visibility */
+}
+
+/* Logo fade effect when controls are hidden */
+.controls-hidden .video-logo {
+  opacity: 0.6; /* More subtle when controls are hidden */
+}
+
 /* Mobile Responsiveness - FIXED */
 @media (max-width: 768px) {
   .top-controls,
@@ -660,6 +683,16 @@ button {
     padding: 15px;
   }
 
+  .video-logo {
+    top: 15px;
+    right: 10px;
+  }
+  
+  .video-logo img {
+    height: 62px; /* Smaller on mobile */
+    max-width: 100px;
+  }
+  
   .show-title {
     font-size: 20px;
   }
@@ -672,35 +705,70 @@ button {
     font-size: 14px;
   }
 
-  /* Fixed Control Row for Mobile */
+  /* Hide episode navigation completely on mobile */
+  .episode-nav {
+    display: none !important;
+  }
+  
+  /* Mobile layout: Controls left, Timer right */
   .control-row {
-    margin-bottom: 45px; /* Even more space on mobile */
-    padding-bottom: 10px; /* Extra padding for touch targets */
-  }
-
-  /* Make all buttons visible and properly sized on mobile */
-  .nav-btn,
-  .settings-btn,
-  .volume-btn {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    min-width: 40px;
-    min-height: 40px;
-    font-size: 14px !important;
-  }
-
-  .time-display {
-    font-size: 12px;
-    min-width: 70px;
-  }
-
-  .settings-btn,
-  .volume-btn {
-    height: 35px;
-    min-width: 50px;
-    font-size: 12px;
+    justify-content: space-between; /* Space between left group and right timer */
+    gap: 12px;
+    margin-bottom: 35px;
     padding: 0 10px;
+  }
+  
+  /* Left side group: Speed, Quality, Volume */
+  .mobile-left-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    order: 1;
+  }
+  
+  /* Move settings controls into left group */
+  .settings-controls {
+    display: contents; /* Make children appear as direct children of parent */
+  }
+  
+  /* Volume button - add to left group */
+  .volume-btn {
+    order: 3; /* After speed and quality */
+  }
+  
+  /* Right side: Timer */
+  .time-display {
+    order: 4;
+    margin-left: auto; /* Push to far right */
+  }
+  
+  /* Much larger buttons since we have more space */
+  .settings-btn,
+  .volume-btn {
+    height: 55px !important;
+    min-width: 85px !important;
+    font-size: 16px !important;
+    padding: 0 18px !important;
+    border-radius: 28px;
+    font-weight: 600;
+  }
+  
+  /* Larger time display */
+  .time-display {
+    font-size: 17px !important;
+    min-width: 100px !important;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px 16px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  /* Make settings controls take full available width */
+  .settings-controls {
+    gap: 12px;
+    flex: 1;
+    justify-content: space-between;
   }
 
   .menu-overlay {
@@ -777,23 +845,36 @@ button {
 @media (max-width: 480px) {
   .control-row {
     gap: 8px;
-    justify-content: space-around;
+    padding: 0 5px;
   }
-
-  .nav-btn,
+  
   .settings-btn,
   .volume-btn {
-    min-width: 35px;
-    min-height: 35px;
-    padding: 6px;
-    font-size: 12px !important;
+    height: 45px !important;
+    min-width: 65px !important;
+    font-size: 14px !important;
+    padding: 0 12px !important;
   }
-
+  
   .time-display {
-    font-size: 11px;
-    min-width: 60px;
+    font-size: 14px !important;
+    min-width: 80px !important;
+  }
+  
+  .settings-controls {
+    gap: 10px;
   }
 
+  .video-logo {
+    top: 12px;
+    right: 12px;
+  }
+  
+  .video-logo img {
+    height: 28px;
+    max-width: 80px;
+  }
+  
   .episodes-overlay {
     position: fixed;
     top: auto;
@@ -831,33 +912,186 @@ button {
   }
 }
 
+/* Desktop - keep nav buttons visible and properly sized */
+@media (min-width: 769px) {
+  .episode-nav {
+    display: flex !important;
+  }
+  
+  .nav-btn {
+    width: 65px;  /* Increased from 55px */
+    height: 65px; /* Increased from 55px */
+    font-size: 26px; /* Increased from 22px */
+  }
+  
+  .settings-btn,
+  .volume-btn {
+    height: 60px;  /* Increased from 50px */
+    min-width: 100px; /* Increased from 85px */
+    font-size: 18px; /* Increased from 16px */
+    padding: 0 22px; /* Increased from 18px */
+    border-radius: 30px;
+    font-weight: 600;
+  }
+  
+  .time-display {
+    font-size: 18px; /* Increased from 16px */
+    min-width: 120px; /* Increased from 100px */
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-align: center;
+  }
+  
+  .control-row {
+    gap: 25px;
+  }
+  
+  .settings-controls {
+    gap: 20px;
+  }
+
+  .video-logo img {
+    height: 70px;
+    max-width: 150px;
+  }  
+}
+
+/* YouTube-style Seek Feedback */
+@keyframes seekFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
 @keyframes seekPulse {
   0% {
-    transform: translateY(-50%) scale(0.8);
-    opacity: 0;
+    transform: translateY(-50%) scale(1);
   }
   50% {
     transform: translateY(-50%) scale(1.1);
-    opacity: 1;
   }
   100% {
     transform: translateY(-50%) scale(1);
+  }
+}
+
+@keyframes seekFadeOut {
+  0% {
     opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.9);
   }
 }
 
 .seek-feedback {
-  animation: seekPulse 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+   /* backdrop-filter: blur(8px); */
+  z-index: 1000;
+  pointer-events: none;
+  animation: seekFadeIn 0.2s ease-out;
+  /* Compact padding */
+  padding: 12px 16px;
+  /* Subtle border 
+  border: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+/* Position based on direction */
+.seek-feedback.left {
+  left: 60px;
+}
+
+.seek-feedback.right {
+  right: 60px;
 }
 
 .seek-feedback .seek-icon {
-  font-size: 32px;
+  font-size: 18px;
   line-height: 1;
+  opacity: 0.9;
 }
 
 .seek-feedback .seek-text {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Pulse animation for multiple taps */
+.seek-feedback.pulse {
+  animation: seekPulse 0.2s ease-out;
+}
+
+/* Fade out animation */
+.seek-feedback.fade-out {
+  animation: seekFadeOut 0.3s ease-out forwards;
+}
+
+/* Mobile adjustments - even more compact */
+@media (max-width: 768px) {
+  .seek-feedback {
+    padding: 10px 14px;
+    border-radius: 6px;
+  }
+  
+  .seek-feedback.left {
+    left: 40px;
+  }
+  
+  .seek-feedback.right {
+    right: 40px;
+  }
+  
+  .seek-feedback .seek-icon {
+    font-size: 16px;
+  }
+  
+  .seek-feedback .seek-text {
+    font-size: 14px;
+  }
+}
+
+/* Very small mobile - minimal size */
+@media (max-width: 480px) {
+  .seek-feedback {
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .seek-feedback.left {
+    left: 30px;
+  }
+  
+  .seek-feedback.right {
+    right: 30px;
+  }
+  
+  .seek-feedback .seek-icon {
+    font-size: 14px;
+  }
+  
+  .seek-feedback .seek-text {
+    font-size: 13px;
+  }
 }
 </style>
 </head>
@@ -878,6 +1112,28 @@ button {
             <div class="loading-overlay" id="loadingOverlay">
                 <div class="loading-spinner"></div>
             </div>
+			
+			<!-- Video Logo -->
+			<div class="video-logo" id="videoLogo">
+				<img src="logo.png" alt="Meow" id="logoImage">
+			</div>
+
+			<!-- Alternative: Text-based logo 
+			<div class="video-logo" id="videoLogoText" style="display: none;">
+				<div style="
+					color: white; 
+					font-family: Inter, sans-serif; 
+					font-weight: 800; 
+					font-size: 18px; 
+					text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+					background: linear-gradient(135deg, #ff4b2b, #ff6b47);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+				">
+					YOUR BRAND
+				</div>
+			</div> -->			
 
             <!-- Player Overlay -->
             <div class="player-overlay" id="playerOverlay">
@@ -900,21 +1156,21 @@ button {
                 </div>
 
                 <!-- Right Side Controls -->
-<div class="right-controls">
-  <div class="control-wrapper">
-    <button class="control-btn" id="episodesBtn" title="Episodes">
-      <i class="fas fa-window-restore"></i>
-    </button>
-    <div class="control-label">Episodes</div>
-  </div>
+				<div class="right-controls">
+					<div class="control-wrapper">
+						<button class="control-btn" id="episodesBtn" title="Episodes">
+							<i class="fas fa-window-restore"></i>
+						</button>
+						<div class="control-label">Episodes</div>
+					</div>
 
-  <div class="control-wrapper">
-    <button class="control-btn" id="moreBtn" title="More">
-      <i class="fas fa-ellipsis-v"></i>
-    </button>
-    <div class="control-label">More</div>
-  </div>
-</div>
+					<div class="control-wrapper">
+						<button class="control-btn" id="moreBtn" title="More">
+							<i class="fas fa-ellipsis-v"></i>
+						</button>
+						<div class="control-label">More</div>
+					</div>
+				</div>
 
 
                 <!-- Bottom Controls -->
@@ -1173,8 +1429,9 @@ button {
 				let startTime = 0;
 				let tapCount = 0;
 				let tapTimer = null;
-				let seekAmount = 0; // Track cumulative seek amount
-				let seekTimer = null;
+				let leftSeekAmount = 0; // Track cumulative seek amount for left side
+				let rightSeekAmount = 0; // Track cumulative seek amount for right side
+				let lastTapSide = null; // Track which side was last tapped
 
 				this.container.addEventListener('touchstart', (e) => {
 					const touch = e.touches[0];
@@ -1232,12 +1489,24 @@ button {
 					const rightZone = x > rect.width * 0.6;
 
 					if (leftZone || rightZone) {
+						// If switching sides, reset the other side's amount
+						if (leftZone && lastTapSide === 'right') {
+							rightSeekAmount = 0;
+							this.clearSeekFeedback('right');
+						} else if (rightZone && lastTapSide === 'left') {
+							leftSeekAmount = 0;
+							this.clearSeekFeedback('left');
+						}
+
+						lastTapSide = leftZone ? 'left' : 'right';
 						tapCount++;
 
 						if (tapCount === 1) {
 							tapTimer = setTimeout(() => {
 								tapCount = 0;
-								seekAmount = 0; // Reset seek amount
+								leftSeekAmount = 0;
+								rightSeekAmount = 0;
+								this.clearAllSeekFeedback();
 								this.toggleControls();
 							}, 300);
 						} else {
@@ -1245,77 +1514,85 @@ button {
                 
 							// Handle continuous tapping
 							if (leftZone) {
-								seekAmount -= 10;  // This will be -10, -20, -30...
+								leftSeekAmount -= 10;  // This will be -10, -20, -30...
 								this.seek(-10);
-								this.showSeekFeedback(seekAmount, 'left');
+								this.showSeekFeedback(leftSeekAmount, 'left');
 							} else {
-								seekAmount += 10;  // This will be +10, +20, +30...
+								rightSeekAmount += 10;  // This will be +10, +20, +30...
 								this.seek(10);
-								this.showSeekFeedback(seekAmount, 'right');
+								this.showSeekFeedback(rightSeekAmount, 'right');
 							}
 
 							// Reset tapCount but keep allowing more taps
 							tapTimer = setTimeout(() => {
 								tapCount = 0;
-								seekAmount = 0;
-							}, 800); // Longer timeout for seek feedback
+								leftSeekAmount = 0;
+								rightSeekAmount = 0;
+								this.clearAllSeekFeedback();
+							}, 1000); // Longer timeout for seek feedback
 						}
 					}
 				}, { passive: true });
 			}
 
 			showSeekFeedback(amount, direction) {
-				// Remove existing feedback
-				const existingFeedback = document.querySelector('.seek-feedback');
-				if (existingFeedback) {
-					existingFeedback.remove();
-				}
-	
-				// Create feedback element
-				const feedback = document.createElement('div');
-				feedback.className = 'seek-feedback';
-				feedback.innerHTML = `
-					<div class="seek-icon">
-						${direction === 'left' ? '⏪' : '⏩'}
-					</div>
-					<div class="seek-text">
-						${amount}s
-					</div>
-				`;
-
-				// Position based on direction
-				feedback.style.cssText = `
-					position: absolute;
-					top: 50%;
-					${direction === 'left' ? 'left: 15%' : 'right: 15%'};
-					transform: translateY(-50%);
-					background: rgba(0, 0, 0, 0.8);
-					color: white;
-					padding: 20px;
-					border-radius: 12px;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					gap: 8px;
-					font-family: Inter, sans-serif;
-					font-weight: 600;
-					backdrop-filter: blur(10px);
-					z-index: 1000;
-					animation: seekPulse 0.3s ease;
-					pointer-events: none;
-				`;
-
-				this.container.appendChild(feedback);
-
-				// Auto-remove after delay
-				setTimeout(() => {
-					if (feedback && feedback.parentNode) {
-						feedback.style.opacity = '0';
-						feedback.style.transform = 'translateY(-50%) scale(0.8)';
-						feedback.style.transition = 'all 0.3s ease';
-						setTimeout(() => feedback.remove(), 300);
+				// Find existing feedback for this direction
+				let feedback = document.querySelector(`.seek-feedback.${direction}`);
+    
+				if (feedback) {
+					// Update existing feedback with pulse animation
+					const textElement = feedback.querySelector('.seek-text');
+					if (textElement) {
+						textElement.textContent = `${Math.abs(amount)}s`;
 					}
-				}, 1500);
+        
+					// Add pulse effect for continuous seeking
+					feedback.classList.remove('pulse');
+					void feedback.offsetWidth; // Force reflow
+					feedback.classList.add('pulse');
+        
+					// Reset auto-remove timer
+					clearTimeout(feedback.removeTimer);
+					feedback.removeTimer = setTimeout(() => {
+						this.removeFeedback(feedback);
+					}, 300);
+        
+				} else {
+					// Create new feedback element
+					feedback = document.createElement('div');
+					feedback.className = `seek-feedback ${direction}`;
+        
+					// Use different icons for better visual
+					const iconClass = direction === 'left' ? 'fa-backward' : 'fa-forward';
+        
+					feedback.innerHTML = `
+						<div class="seek-icon">
+							<i class="fas ${iconClass}"></i>
+						</div>
+						<div class="seek-text">
+							${Math.abs(amount)}s
+						</div>
+					`;
+
+					this.container.appendChild(feedback);
+        
+					// Auto-remove after delay
+					feedback.removeTimer = setTimeout(() => {
+						this.removeFeedback(feedback);
+					}, 300);
+				}
+			}
+
+			// Helper method to smoothly remove feedback
+			removeFeedback(feedback) {
+				if (feedback && feedback.parentNode) {
+					feedback.classList.add('fade-out');
+					setTimeout(() => {
+						if (feedback.parentNode) {
+							feedback.parentNode.removeChild(feedback);
+						}
+					}, 300);
+				}
 			}		
 
             showEpisodesOverlay() {
@@ -1661,9 +1938,11 @@ button {
 				}
 
 				this.currentEpisodeIndex = episodeIndex;
-
 				this.container.classList.add('active');
 				document.body.style.overflow = 'hidden';
+
+				// ✅ Simply show the fixed logo
+				this.showVideoLogo();
 
 				this.updateShowInfo();
 				this.loadEpisode(episodeIndex);
@@ -1671,7 +1950,23 @@ button {
 
 				// Add to history
 				history.pushState({ reelPlayer: true }, '', window.location.href);
-			}			
+			}
+
+			// ✅ Simple method to show fixed logo
+			showVideoLogo() {
+				const logoElement = document.getElementById('videoLogo');
+				if (logoElement) {
+					logoElement.style.display = 'block';
+				}
+			}
+
+			// ✅ Optional: Method to hide logo
+			hideVideoLogo() {
+				const logoElement = document.getElementById('videoLogo');
+				if (logoElement) {
+					logoElement.style.display = 'none';
+				}
+			}
 			
 			// --- ID helpers ---
 			getShowId() {
@@ -1881,9 +2176,45 @@ button {
 			}
 
             seek(seconds) {
-                this.video.currentTime = Math.max(0, Math.min(this.video.duration, this.video.currentTime + seconds));
-                this.showToast(`${seconds > 0 ? '+' : ''}${seconds}s`);
-            }
+				this.video.currentTime = Math.max(0, Math.min(this.video.duration, this.video.currentTime + seconds));
+				
+				 // Show seek feedback
+				//const direction = seconds < 0 ? 'left' : 'right';
+				//this.showSeekFeedback(seconds, direction);
+			}
+			
+			seekWithFeedback(seconds) {
+				// Initialize keyboard seek tracking if not exists
+				if (!this.keyboardSeekAmount) this.keyboardSeekAmount = 0;
+				if (!this.keyboardSeekTimer) this.keyboardSeekTimer = null;
+				if (!this.keyboardLastDirection) this.keyboardLastDirection = null;
+
+				const direction = seconds < 0 ? 'left' : 'right';
+    
+				// If direction changed, reset counter and clear opposite feedback
+				if (this.keyboardLastDirection && this.keyboardLastDirection !== direction) {
+					this.keyboardSeekAmount = 0;
+					const oppositeDirection = direction === 'left' ? 'right' : 'left';
+					this.clearSeekFeedback(oppositeDirection);
+				}
+
+				this.keyboardLastDirection = direction;
+				this.keyboardSeekAmount += seconds; // This will be cumulative: +10, +20, +30 or -10, -20, -30
+
+				// Actually seek the video
+				this.video.currentTime = Math.max(0, Math.min(this.video.duration, this.video.currentTime + seconds));
+    
+				// Show cumulative feedback
+				this.showSeekFeedback(this.keyboardSeekAmount, direction);
+
+				// Clear previous timer and set new one
+				clearTimeout(this.keyboardSeekTimer);
+				this.keyboardSeekTimer = setTimeout(() => {
+					this.keyboardSeekAmount = 0;
+					this.keyboardLastDirection = null;
+					this.clearAllSeekFeedback();
+				}, 1000); // Slightly longer for keyboard since users might pause between key presses
+			}
 
             seekToPosition(e) {
                 if (!this.video.duration) return;
@@ -2035,7 +2366,7 @@ button {
                         if (e.shiftKey) {
                             this.previousEpisode();
                         } else {
-                            this.seek(-10);
+                            this.seekWithFeedback(-10);
                         }
                         break;
                     case 'ArrowRight':
@@ -2043,7 +2374,7 @@ button {
                         if (e.shiftKey) {
                             this.nextEpisode();
                         } else {
-                            this.seek(10);
+                            this.seekWithFeedback(10);
                         }
                         break;
                     case 'ArrowUp':
@@ -2070,6 +2401,14 @@ button {
                             this.close();
                         }
                         break;
+					case 'n':
+						e.preventDefault();
+                        this.nextEpisode();
+                        break;
+					case 'p':
+						e.preventDefault();
+                        this.previousEpisode();
+                        break;						
                 }
             }
 
