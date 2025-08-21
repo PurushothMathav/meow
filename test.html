@@ -1967,37 +1967,36 @@ input:checked + .toggle-slider:before {
 					}
 				});
 
-				// Close episodes overlay when clicking outside
+				/* Close episodes overlay when clicking outside
 				document.getElementById('episodesOverlay').addEventListener('click', (e) => {
 					if (e.target === e.currentTarget) {
 						document.getElementById('episodesOverlay').classList.remove('active');
 					}
-				});
+				}); 
 				
-                // Close more overlays when clicking outside
                 document.getElementById('moreOverlay').addEventListener('click', (e) => {
                     if (e.target === e.currentTarget) {
                         document.getElementById('moreOverlay').classList.remove('active');
                     }
-                });
+                }); 
 
                 document.getElementById('storyCastOverlay').addEventListener('click', (e) => {
                     if (e.target === e.currentTarget) {
                         document.getElementById('storyCastOverlay').classList.remove('active');
                     }
-                });
+                }); 
 
                 document.getElementById('playerSettingsOverlay').addEventListener('click', (e) => {
                     if (e.target === e.currentTarget) {
                         document.getElementById('playerSettingsOverlay').classList.remove('active');
                     }
-                });
+                }); 
 
                 document.getElementById('qualityPrefsOverlay').addEventListener('click', (e) => {
                     if (e.target === e.currentTarget) {
                         document.getElementById('qualityPrefsOverlay').classList.remove('active');
                     }
-                });
+                }); */
 				
 				// Story & Cast back button
 				document.getElementById('storyCastBack').addEventListener('click', (e) => {
@@ -2471,32 +2470,201 @@ input:checked + .toggle-slider:before {
             }
 
             updateQualitySetting(network, quality) {
-                // Update localStorage
-                localStorage.setItem(`meow_quality_${network}`, quality);
+				// Update localStorage
+				localStorage.setItem(`meow_quality_${network}`, quality);
+    
+				// Apply the quality setting immediately if on the matching network
+				this.applyQualityBasedOnNetwork();
 
-                // Update UI
-                document.querySelectorAll(`.quality-option[data-network="${network}"]`).forEach(option => {
-                    const optionQuality = option.dataset.quality;
-                    if (optionQuality === quality) {
-                        option.classList.add('active');
-                        let icon = option.querySelector('i');
-                        if (!icon) {
-                            icon = document.createElement('i');
-                            icon.className = 'fas fa-check';
-                            option.appendChild(icon);
-                        }
-                        icon.style.display = 'block';
-                    } else {
-                        option.classList.remove('active');
-                        const icon = option.querySelector('i');
-                        if (icon) icon.style.display = 'none';
-                    }
-                });
+				// Update UI
+				document.querySelectorAll(`.quality-option[data-network="${network}"]`).forEach(option => {
+					const optionQuality = option.dataset.quality;
+					if (optionQuality === quality) {
+						option.classList.add('active');
+						let icon = option.querySelector('i');
+						if (!icon) {
+							icon = document.createElement('i');
+							icon.className = 'fas fa-check';
+							option.appendChild(icon);
+						}
+						icon.style.display = 'block';
+					} else {
+						option.classList.remove('active');
+						const icon = option.querySelector('i');
+						if (icon) icon.style.display = 'none';
+					}
+				});
 
-                const networkName = network === 'mobile' ? 'Mobile Networks' : 'Wi-Fi';
-                const qualityName = quality === 'auto' ? 'Auto' : quality === 'best' ? 'Best Quality' : 'Data Saver';
-                this.showToast(`${networkName}: ${qualityName}`);
-            }			
+				const networkName = network === 'mobile' ? 'Mobile Networks' : 'Wi-Fi';
+				const qualityName = quality === 'auto' ? 'Auto' : quality === 'best' ? 'Best Quality' : 'Data Saver';
+				this.showToast(`${networkName}: ${qualityName}`);
+			}
+
+			// Detect network type and apply quality setting
+			applyQualityBasedOnNetwork() {
+				if (!this.currentEpisodes || !this.currentEpisodes[this.currentEpisodeIndex]) return;
+    
+				const isMobileNetwork = this.isMobileNetwork();
+				const networkType = isMobileNetwork ? 'mobile' : 'wifi';
+				const qualitySetting = localStorage.getItem(`meow_quality_${networkType}`) || 'auto';
+    
+				// Apply the quality setting
+				this.applyQualitySetting(qualitySetting);
+			}
+
+			// Detect if user is on mobile network (approximation)
+			isMobileNetwork() {
+				// Check if connection API is available
+				if ('connection' in navigator) {
+					const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+					if (connection && connection.type) {
+						return connection.type === 'cellular' || connection.effectiveType === 'slow-2g' || connection.effectiveType === '2g' || connection.effectiveType === '3g';
+					}
+				}
+				// Fallback: assume mobile if screen is small
+				return window.innerWidth <= 768;
+			}
+
+			// Apply quality setting to current episode
+			applyQualitySetting(qualitySetting) {
+				if (!this.currentEpisodes || !this.currentEpisodes[this.currentEpisodeIndex]) return;
+    
+				const episode = this.currentEpisodes[this.currentEpisodeIndex];
+				const content = episode.content || {};
+    
+				let targetUrl = null;
+				let targetQuality = 'auto';
+    
+				if (qualitySetting === 'best') {
+					// Find highest quality available
+					const bestOrder = ['video_720p', 'video_480p', 'video_360p', 'video_240p', 'converted_hls_url'];
+					for (const quality of bestOrder) {
+						if (content[quality]) {
+							targetUrl = content[quality];
+							targetQuality = quality === 'converted_hls_url' ? 'auto' : quality.replace('video_', '');
+							break;
+						}
+					}
+				} else if (qualitySetting === 'saver') {
+					// Find lowest quality available
+					const saverOrder = ['video_240p', 'video_360p', 'video_480p', 'video_720p', 'converted_hls_url'];
+					for (const quality of saverOrder) {
+						if (content[quality]) {
+							targetUrl = content[quality];
+							targetQuality = quality === 'converted_hls_url' ? 'auto' : quality.replace('video_', '');
+							break;
+						}
+					}
+				} else {
+					// Auto - prefer HLS adaptive streaming
+					if (content.converted_hls_url) {
+						targetUrl = content.converted_hls_url;
+						targetQuality = 'auto';
+					} else {
+						// Fallback to best available
+						const fallbackOrder = ['video_480p', 'video_720p', 'video_360p', 'video_240p'];
+						for (const quality of fallbackOrder) {
+							if (content[quality]) {
+								targetUrl = content[quality];
+								targetQuality = quality.replace('video_', '');
+								break;
+							}
+						}
+					}
+				}
+    
+				// Apply the quality if different from current
+				if (targetUrl && targetUrl !== this.getCurrentVideoSource()) {
+					console.log(`Applying ${qualitySetting} quality: ${targetQuality}`);
+					const currentTime = this.video.currentTime;
+					const wasPlaying = !this.video.paused;
+        
+					this.currentQuality = targetQuality;
+					document.getElementById('qualityBtn').innerHTML = 
+						`<i class="fas fa-cog"></i> ${targetQuality.toUpperCase()}`;
+        
+					this.loadVideoSource(targetUrl);
+        
+					// Restore position
+					this.video.addEventListener('canplay', () => {
+						this.video.currentTime = currentTime;
+						if (wasPlaying) {
+							this.video.play();
+						}
+					}, { once: true });
+				}
+			}
+
+			// Get current video source URL
+			getCurrentVideoSource() {
+				if (this.hls && this.hls.url) {
+					return this.hls.url;
+				}
+				return this.video.src;
+			}
+
+			// Load random show from master file
+			async loadRandomShow() {
+				try {
+					// Get current language from URL params
+					const urlParams = new URLSearchParams(window.location.search);
+					const lang = urlParams.get('lang') || 'tamil';
+					const masterFile = `master_${lang}.json`;
+        
+					console.log(`Loading random show from ${masterFile}`);
+        
+					const response = await fetch(masterFile);
+					if (!response.ok) {
+						throw new Error(`Failed to load ${masterFile}`);
+					}
+        
+					const masterData = await response.json();
+        
+					// Collect all shows from all sections
+					const allShows = [];
+					masterData.sections.forEach(section => {
+						if (section.shows && Array.isArray(section.shows)) {
+							allShows.push(...section.shows);
+						}
+					});
+        
+					if (allShows.length === 0) {
+						throw new Error('No shows found in master file');
+					}
+        
+					// Filter out current show to avoid repetition
+					const currentShowId = this.currentShow?.show?.id;
+					const availableShows = allShows.filter(show => show.id !== currentShowId);
+        
+					if (availableShows.length === 0) {
+						this.showToast('No other shows available');
+						return;
+					}
+        
+					// Pick random show
+					const randomShow = availableShows[Math.floor(Math.random() * availableShows.length)];
+					console.log('Selected random show:', randomShow.title);
+        
+					// Load the show data
+					const showResponse = await fetch(randomShow.link);
+					if (!showResponse.ok) {
+						throw new Error(`Failed to load show data for ${randomShow.title}`);
+					}
+        
+					const showData = await showResponse.json();
+        
+					// Open the random show from episode 1
+					this.showToast(`Now playing: ${randomShow.title}`);
+					setTimeout(() => {
+						this.open(showData, 0); // Start from first episode
+					}, 1500);
+        
+				} catch (error) {
+					console.error('Error loading random show:', error);
+					this.showToast('Failed to load next show');
+					this.centerControls.classList.add('visible');
+				}
+			}			
 
             toggleSpeedMenu() {
                 const menu = document.getElementById('speedMenu');
@@ -2666,10 +2834,29 @@ input:checked + .toggle-slider:before {
                     // HLS stream
                     if (Hls.isSupported()) {
                         this.hls = new Hls({
-                            enableWorker: true,
-                            lowLatencyMode: false,
-                            backBufferLength: 90
-                        });
+							enableWorker: true,
+							lowLatencyMode: false,
+							backBufferLength: 90,
+							maxBufferLength: 30,
+							maxMaxBufferLength: 60,
+							maxBufferSize: 60 * 1000 * 1000,
+							maxBufferHole: 0.5,
+							highBufferWatchdogPeriod: 2,
+							nudgeOffset: 0.1,
+							nudgeMaxRetry: 3,
+							maxFragLookUpTolerance: 0.25,
+							liveSyncDurationCount: 3,
+							liveMaxLatencyDurationCount: Infinity,
+							enableSoftwareAES: true,
+							manifestLoadingTimeOut: 10000,
+							manifestLoadingMaxRetry: 1,
+							manifestLoadingRetryDelay: 1000,
+							fragLoadingTimeOut: 20000,
+							fragLoadingMaxRetry: 6,
+							fragLoadingRetryDelay: 1000,
+							startFragPrefetch: true,
+							testBandwidth: true
+						});
                         
                         this.hls.loadSource(source);
                         this.hls.attachMedia(this.video);
@@ -2824,6 +3011,9 @@ input:checked + .toggle-slider:before {
 					console.log('Video ready, loading progress...');
 					this.loadProgress();
 				}, { once: true });
+				
+				// Apply network-based quality on episode load
+				this.applyQualityBasedOnNetwork();
 
 				// ✅ NEW: Resume from ?time= param when metadata is available
 				this.video.addEventListener('loadedmetadata', () => {
@@ -3244,26 +3434,22 @@ input:checked + .toggle-slider:before {
                 this.saveProgress();
             }
 
-            onVideoEnded() {
-                const autoplayEnabled = localStorage.getItem('meow_autoplay_next') === 'true';
-                
-                if (this.currentEpisodeIndex < this.currentEpisodes.length - 1) {
-                    this.showToast('Playing next episode...');
-                    setTimeout(() => {
-                        this.nextEpisode();
-                    }, 1000);
-                } else if (autoplayEnabled) {
-                    this.showToast('Loading next show...');
-                    // Here you can implement logic to load a random show from your library
-                    // For now, we'll just show the message
-                    setTimeout(() => {
-                        this.showToast('Feature coming soon!');
-                    }, 1000);
-                } else {
-                    this.showToast('Series completed!');
-                    this.centerControls.classList.add('visible');
-                }
-            }
+			onVideoEnded() {
+				const autoplayEnabled = localStorage.getItem('meow_autoplay_next') === 'true';
+    
+				if (this.currentEpisodeIndex < this.currentEpisodes.length - 1) {
+					this.showToast('Playing next episode...');
+					setTimeout(() => {
+						this.nextEpisode();
+					}, 1000);
+				} else if (autoplayEnabled) {
+					this.showToast('Loading next show...');
+					this.loadRandomShow();
+				} else {
+					this.showToast('Series completed!');
+					this.centerControls.classList.add('visible');
+				}
+			}
 
             formatTime(seconds) {
                 if (isNaN(seconds)) return '0:00';
