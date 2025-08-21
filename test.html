@@ -1748,6 +1748,16 @@ input:checked + .toggle-slider:before {
     <!-- Toast Message -->
     <div class="toast" id="toast"></div>
 
+	<script>
+		// Ensure quality keys exist in localStorage
+		if (!localStorage.getItem("meow_quality_mobile")) {
+			localStorage.setItem("meow_quality_mobile", "auto");
+		}
+		if (!localStorage.getItem("meow_quality_wifi")) {
+			localStorage.setItem("meow_quality_wifi", "auto");
+		}
+	</script>
+
     <script>
 	
 		function getQueryParam(name) {
@@ -1801,7 +1811,7 @@ input:checked + .toggle-slider:before {
                 // Close episodes overlay
                 document.getElementById('episodesClose').addEventListener('click', (e) => {
                     e.stopPropagation();
-                    document.getElementById('episodesOverlay').classList.remove('active');
+                    document.getElementById('episodesOverlayepisodesOverlay').classList.remove('active');
                 });
 
                 // Speed button
@@ -1962,41 +1972,29 @@ input:checked + .toggle-slider:before {
 
 				// Close menus when clicking elsewhere
 				document.addEventListener('click', (e) => {
-					if (!e.target.closest('.menu-overlay') && !e.target.closest('#speedBtn') && !e.target.closest('#qualityBtn')) {
+					// Don’t hide if we’re inside one of the overlays
+					if (
+						e.target.closest('#episodesOverlay') ||
+						e.target.closest('#moreOverlay') ||
+						e.target.closest('#storyCastOverlay') ||
+						e.target.closest('#playerSettingsOverlay') ||
+						e.target.closest('#qualityPrefsOverlay')
+					) {
+						return; // skip hiding
+					}
+
+					if (
+						!e.target.closest('.menu-overlay') &&
+						!e.target.closest('#speedBtn') &&
+						!e.target.closest('#qualityBtn')
+					) {
 						this.hideAllMenus();
 					}
 				});
-
-				/* Close episodes overlay when clicking outside
-				document.getElementById('episodesOverlay').addEventListener('click', (e) => {
-					if (e.target === e.currentTarget) {
-						document.getElementById('episodesOverlay').classList.remove('active');
-					}
-				}); 
 				
-                document.getElementById('moreOverlay').addEventListener('click', (e) => {
-                    if (e.target === e.currentTarget) {
-                        document.getElementById('moreOverlay').classList.remove('active');
-                    }
-                }); 
-
-                document.getElementById('storyCastOverlay').addEventListener('click', (e) => {
-                    if (e.target === e.currentTarget) {
-                        document.getElementById('storyCastOverlay').classList.remove('active');
-                    }
-                }); 
-
-                document.getElementById('playerSettingsOverlay').addEventListener('click', (e) => {
-                    if (e.target === e.currentTarget) {
-                        document.getElementById('playerSettingsOverlay').classList.remove('active');
-                    }
-                }); 
-
-                document.getElementById('qualityPrefsOverlay').addEventListener('click', (e) => {
-                    if (e.target === e.currentTarget) {
-                        document.getElementById('qualityPrefsOverlay').classList.remove('active');
-                    }
-                }); */
+				document.getElementById('episodesClose').addEventListener('click', () => {
+					document.getElementById('episodesOverlay').classList.remove('active');
+				});
 				
 				// Story & Cast back button
 				document.getElementById('storyCastBack').addEventListener('click', (e) => {
