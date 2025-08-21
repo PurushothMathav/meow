@@ -24,13 +24,26 @@
     button:hover {
       background: #45a049;
     }
+    #orderInfo {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #333;
+      background: #fff;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: inline-block;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
-  <h2>Pay with UPI</h2>
+  <h2>Donate via UPI</h2>
   <p>Click the button below to pay using UPI apps</p>
 
   <button onclick="payUPI()">💳 Pay via UPI</button>
+
+  <!-- Order ID display -->
+  <div id="orderInfo" style="display:none;"></div>
 
   <script>
     function generateOrderId() {
@@ -38,13 +51,20 @@
     }
 
     function payUPI() {
-      const vpa = 'purushoth.mathav@okhdfcbank'; // <-- Replace with your UPI ID
-      const pn  = encodeURIComponent('Meow Streaming');
+      const vpa = 'purushoth.mathav@oksbi'; 
+      const pn  = encodeURIComponent('PURUSHOTHAMAN M');
       const am  = '20.00';
-      const tr  = encodeURIComponent(generateOrderId()); // Auto-generated Order ID
+      const orderId = generateOrderId(); // Auto-generated Order ID
+      const tr  = encodeURIComponent(orderId);
       const tn  = encodeURIComponent('Payment for Donation');
 
+      // UPI Payment URL
       const url = `upi://pay?pa=${vpa}&pn=${pn}&am=${am}&cu=INR&tn=${tn}&tr=${tr}`;
+
+      // Show order ID on screen
+      const orderBox = document.getElementById("orderInfo");
+      orderBox.style.display = "block";
+      orderBox.innerHTML = `<strong>Your Donation ID:</strong> ${orderId}`;
 
       // Open UPI app (on mobile)
       window.location.href = url;
