@@ -3031,8 +3031,11 @@ input:checked + .toggle-slider:before {
 						this.urlTimeConsumed = true;  // Mark as consumed even if no time param
 					}
 				}, { once: true });
+				
+				const ep = this.currentEpisode;
+				const showTitle = this.currentShow?.show?.title || "Unknown Show";
+				document.title = `${showTitle} - ${ep.title} is playing - meow`;
 			}
-
 
 			loadProgress() {
 				try {
