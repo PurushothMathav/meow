@@ -2276,7 +2276,7 @@ function renderSections() {
     const showNumbers = shouldShowNumbers(section.title);
     const useSolidNumbers = shouldUseSolidNumbers(section.title);
     
-    const showCardsHTML = section.shows.slice(0, 100).map((show, index) => `
+    const showCardsHTML = section.shows.slice(0, 200).map((show, index) => `
       <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
            ${showNumbers ? `data-rank="${index + 1}"` : ''} 
            onclick="openShow('${show.id}')">
@@ -2499,7 +2499,8 @@ function shouldShowNumbers(sectionTitle) {
     'trending now',
     'top picks',
 	'newly & hot',
-	'new releases'
+	'new releases',
+	'top shows'
   ];
   
   return numberedSections.some(keyword => 
@@ -2511,7 +2512,8 @@ function shouldShowNumbers(sectionTitle) {
 function shouldUseSolidNumbers(sectionTitle) {
   const solidNumberSections = [
     'top 10',
-    'top rated'
+    'top rated',
+	'top shows'
   ];
   
   return solidNumberSections.some(keyword => 
@@ -2525,7 +2527,8 @@ function isTopTierSection(sectionTitle) {
     'top 10',
     'top rated',
     'most popular',
-    'trending now'
+    'trending now',
+	'top shows'
   ];
   
   return topTierSections.some(keyword => 
@@ -2717,14 +2720,25 @@ function renderContinueWatching() {
 
 // Open show
 async function openShow(showId) {
-  const showData = allShows.find(s => s.show.id.toString() === showId);
+  const showData = allShows.find(s => {
+    // Handle both data structures: s.show.id and s.id
+    const id = s.show ? s.show.id : s.id;
+    return id && id.toString() === showId;
+  });
+  
   if (!showData) {
     showToast('Show not found');
     return;
   }
 
-  // Get the JSON filename from the show data
-  const jsonFilename = showData.show.filename || showData.show.link.split('/').pop();
+  // Handle both data structures for getting show info
+  const show = showData.show || showData;
+  const jsonFilename = show.filename || show.link?.split('/').pop();
+  
+  if (!jsonFilename) {
+    showToast('Show data incomplete');
+    return;
+  }
   
   // Check if we want to open in current page or new player page
   if (window.location.pathname.includes('player.html') || window.location.pathname.includes('test.html')) {
@@ -2733,7 +2747,7 @@ async function openShow(showId) {
     
     try {
       if (!showData.episodes || showData.episodes.length === 0) {
-        const response = await fetch(showData.show.link);
+        const response = await fetch(show.link);
         if (!response.ok) throw new Error('Failed to load episodes');
         
         const fullShowData = await response.json();
@@ -2765,7 +2779,7 @@ async function openShow(showId) {
     const episodeParam = watchData?.episode ? `&episode=${watchData.episode}` : '';
     
     const langParam = `&lang=${currentLanguage}`;
-	window.location.href = `test.html?json=${jsonFilename}${episodeParam}${langParam}`;
+    window.location.href = `test.html?json=${jsonFilename}${episodeParam}${langParam}`;
   }
 }
 

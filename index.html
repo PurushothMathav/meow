@@ -2491,7 +2491,8 @@ function shouldShowNumbers(sectionTitle) {
     'trending now',
     'top picks',
 	'newly & hot',
-	'new releases'
+	'new releases',
+	'top shows'
   ];
   
   return numberedSections.some(keyword => 
@@ -2503,7 +2504,8 @@ function shouldShowNumbers(sectionTitle) {
 function shouldUseSolidNumbers(sectionTitle) {
   const solidNumberSections = [
     'top 10',
-    'top rated'
+    'top rated',
+	'top shows'
   ];
   
   return solidNumberSections.some(keyword => 
@@ -2517,7 +2519,8 @@ function isTopTierSection(sectionTitle) {
     'top 10',
     'top rated',
     'most popular',
-    'trending now'
+    'trending now',
+	'top shows'
   ];
   
   return topTierSections.some(keyword => 
