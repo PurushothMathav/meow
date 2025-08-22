@@ -2200,7 +2200,7 @@ function renderSections() {
           onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
         >
         <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.id}')" title="Share">
-          📤
+          <i class="fas fa-share"></i>
         </button>
         <div class="show-info">
           <div class="show-title" title="${show.title}">${show.title}</div>
@@ -2273,7 +2273,7 @@ function renderSingleSection(sectionIndex, sectionShows) {
       >
       <!-- Share Button -->
       <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.show.id}')" title="Share">
-        📤
+        <i class="fas fa-share"></i>
       </button>
       <div class="show-info">
         <div class="show-title" title="${show.show.title}">${show.show.title}</div>
@@ -2384,7 +2384,7 @@ function renderSearchResults(query, shows) {
           onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
         >
         <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${showData.show.id}')" title="Share">
-          📤
+          <i class="fas fa-share"></i>
         </button>
         <div class="show-info">
           <div class="show-title" title="${showData.show.title}">${showData.show.title}</div>
