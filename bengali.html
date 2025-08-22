@@ -59,6 +59,8 @@ body {
   gap: 1rem;
   max-width: 1400px;
   margin: 0 auto;
+  flex-wrap: nowrap; 
+  overflow: hidden;
 }
 
 /* Mobile Menu Button */
@@ -87,24 +89,28 @@ body {
   background-clip: text;
   flex-shrink: 0;
   text-decoration: none;
+  min-width: fit-content;
 }
 
 /* Desktop Navigation */
 .desktop-nav {
   display: none;
-  gap: 2rem;
+  gap: 1rem;
   flex: 1;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  overflow: hidden; 
 }
 
 .nav-item {
   color: var(--text-secondary);
   text-decoration: none;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 1rem 0.75rem; 
   border-radius: 8px;
   transition: all 0.3s ease;
   white-space: nowrap;
+  font-size: 0.9rem; 
+  flex-shrink: 0; 
 }
 
 .nav-item:hover {
@@ -121,6 +127,7 @@ body {
   position: relative;
   max-width: 300px;
   min-width: 200px;
+  flex-shrink: 1;
 }
 
 .search-input {
@@ -172,6 +179,55 @@ body {
 
 .clear-search.visible {
   display: block;
+}
+
+/* Medium screens - Compact navigation */
+@media (max-width: 1390px) and (min-width: 769px) {
+  .desktop-nav {
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .nav-item {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+  
+  .search-container {
+    max-width: 200px;
+    min-width: 150px;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small desktop screens - Very compact navigation */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .header-content {
+    gap: 0.5rem;
+  }
+  
+  .desktop-nav {
+    gap: 0.25rem;
+    margin-left: 0.25rem;
+  }
+  
+  .nav-item {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .search-container {
+    max-width: 180px;
+    min-width: 120px;
+  }
+  
+  .search-input {
+    padding: 0.6rem 0.8rem 0.6rem 2rem;
+    font-size: 0.85rem;
+  }
 }
 
 /* Mobile Menu Overlay */
