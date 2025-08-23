@@ -13,7 +13,7 @@
     "language": "tamil",
     "published_on": "2023-12-15T12:38:33.780041+00:00",
     "status": "live",
-    "n_listens": 49796,
+    "n_listens": 52623,
     "is_verified": false,
     "dynamic_link": "https://applinks.kukufm.com/LbnhiTnDQDc4an9s5",
     "uri": "app://kukufm/show/innoruvan/",
@@ -21,8 +21,8 @@
     "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
     "cover_type": null,
     "is_premium": true,
-    "overall_rating": 4.555,
-    "n_reviews": 21,
+    "overall_rating": 4.533,
+    "n_reviews": 23,
     "is_fictional": true,
     "duration_s": 3906,
     "n_episodes": 11,
@@ -44,7 +44,7 @@
     "is_comments_exposure_enabled": false,
     "is_adult_content": false,
     "sharing_text": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा",
-    "sharing_text_v2": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा \nhttps://links.kukufm.com/xUpk6C",
+    "sharing_text_v2": "हेलो! मैंने Kuku FM (Android)  पर यह शो सुना और मुझे यकीन है कि आपको भी यह जरूर पसंद आएगा। \nhttps://links.kukufm.com/xUpk6C",
     "completion_status": 1,
     "description": "கொலை வழக்குல ஒருத்தன கைது செய்றாங்க. ஆனால், விசாரணைல இன்னொருத்தனும் இன்வால்வ் ஆகிருக்கற தகவல் கிடைக்கிது. அந்த இன்னொருத்தன் யாரு?",
     "description_secondary": "ஒரு கொலை நடக்கிறது. கொலைகாரனைக் காவல்துறை கைது செய்துள்ளனர். ஆனால்,  போலீசார் விசாரணையில் கொலைக்கு காரணமானவர்கள் இருவர் என்று தெரிகிறது. ஒருவன் கைதாகி விட்டான். அந்த இன்னொருவன் யார்?",
@@ -101,14 +101,29 @@
         "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/211a4927f2414b068cdaa6b6724ca987_landscape_275.jpg",
         "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/211a4927f2414b068cdaa6b6724ca987_landscape_275.jpg"
       },
-      "vertical_thumbnail": null,
+      "title_image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1KuJ0sc6iQyDbxQwyHv-mLqMR1Jm_ITja.png",
+      "title_image_sizes": {
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1KuJ0sc6iQyDbxQwyHv-mLqMR1Jm_ITja.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1KuJ0sc6iQyDbxQwyHv-mLqMR1Jm_ITja.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1KuJ0sc6iQyDbxQwyHv-mLqMR1Jm_ITja.png"
+      },
+      "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1Re2UPirTerXnvaPzmhViMJZhgvhRiChY.png",
+      "reel_image_sizes": {
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1Re2UPirTerXnvaPzmhViMJZhgvhRiChY.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1Re2UPirTerXnvaPzmhViMJZhgvhRiChY.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1Re2UPirTerXnvaPzmhViMJZhgvhRiChY.png"
+      },
+      "vertical_thumbnail": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1Re2UPirTerXnvaPzmhViMJZhgvhRiChY.png",
       "vertical_thumbnail_image_sizes": {
-        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
-        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
-        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png"
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1Re2UPirTerXnvaPzmhViMJZhgvhRiChY.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1Re2UPirTerXnvaPzmhViMJZhgvhRiChY.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1Re2UPirTerXnvaPzmhViMJZhgvhRiChY.png"
       }
     },
-    "thumbnail_data": {},
+    "thumbnail_data": {
+      "dvd_portrait": "https://images.cdn.kukufm.com/w:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1iTxH-XNpFLry0D--H5mShUxdgAAue_xm.png",
+      "title_image": "https://images.cdn.kukufm.com/h:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/220475/1KuJ0sc6iQyDbxQwyHv-mLqMR1Jm_ITja.png"
+    },
     "labels": [
       "All Episodes",
       "7+"
@@ -132,14 +147,13 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 8204,
-      "n_listens": 8204,
+      "n_plays": 8803,
+      "n_listens": 8803,
       "n_comments": 1,
       "cover_type": null,
       "content": {
         "url": "https://d1l07mcd18xic4.cloudfront.net/audio/cc8149b8-7296-48d2-94af-c159022da4f0full.mp4",
         "hls_url": "https://d1l07mcd18xic4.cloudfront.net/audio/cc8149b8-7296-48d2-94af-c159022da4f0.m3u8",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/ae1ccd22-2d4d-4a9f-86d7-c7c4a932d4d4.m3u8",
         "subtitle_url": "https://d1l07mcd18xic4.cloudfront.net/audio-transcripts/cc8149b8-7296-48d2-8807-f6eda8022fac.srt"
       },
       "dynamic_link": "https://applinks.kukufm.com/jZPAdSBw5BC6dJ1r5",
@@ -153,7 +167,7 @@
       "is_demo_premium": true,
       "media_size": 2401666,
       "published_on": "2023-12-15T11:41:05.568437+00:00",
-      "seek_position": 0
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png"
     },
     "is_self": false,
     "ad_enabled": false,
@@ -176,7 +190,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/a267d86e7ba04883887435564b0cb84b.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/a267d86e7ba04883887435564b0cb84b.jpeg"
           },
-          "n_followers": 1684,
+          "n_followers": 1717,
           "contribution_type": "quality_assurance",
           "is_primary_creator": false,
           "is_followed": false
@@ -191,7 +205,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/766ec03b54e44f2a9eb390c564d6dbaf.8bpG4gdFLfZI5CnAn068",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/766ec03b54e44f2a9eb390c564d6dbaf.8bpG4gdFLfZI5CnAn068"
           },
-          "n_followers": 2026,
+          "n_followers": 2084,
           "contribution_type": "production_manager",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -207,7 +221,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/345a0c67c0974e98a4112779151b1b9a.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/345a0c67c0974e98a4112779151b1b9a.jpeg"
           },
-          "n_followers": 3541,
+          "n_followers": 3586,
           "contribution_type": "director",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -223,7 +237,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/ceee4e6d9e4b4cfebf83f1d8fe4209a2.AOh14GhZWWp8mL-zYnOioGP_R8l2kQN6kvvyBzKCepuhoAs96-c",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/ceee4e6d9e4b4cfebf83f1d8fe4209a2.AOh14GhZWWp8mL-zYnOioGP_R8l2kQN6kvvyBzKCepuhoAs96-c"
           },
-          "n_followers": 475,
+          "n_followers": 484,
           "contribution_type": "writer",
           "is_primary_creator": true,
           "is_followed": false
@@ -238,7 +252,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/627ae01e999b44d3a0b9e10b0bc4e031.jpg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/627ae01e999b44d3a0b9e10b0bc4e031.jpg"
           },
-          "n_followers": 385,
+          "n_followers": 384,
           "contribution_type": "voice_artist",
           "is_primary_creator": false,
           "is_followed": false
@@ -251,7 +265,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/54d1006539364113a7b37a35ae8b63bb.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/54d1006539364113a7b37a35ae8b63bb.jpeg"
           },
-          "n_followers": 2434,
+          "n_followers": 2457,
           "contribution_type": "voice_artist",
           "is_primary_creator": false,
           "badge_type": "popular",
@@ -289,7 +303,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 8204,
+      "n_listens": 8801,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -312,6 +326,8 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/11-ashok-detective-agency",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
@@ -319,6 +335,7 @@
       "is_downloaded": false,
       "is_self": false,
       "last_base_unlock": true,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -338,7 +355,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5857,
+      "n_listens": 6217,
       "n_comments": 6,
       "cover_type": null,
       "content": {
@@ -362,12 +379,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/12-ashok-detective-agency",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -387,8 +407,8 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4918,
-      "n_comments": 2,
+      "n_listens": 5220,
+      "n_comments": 3,
       "cover_type": null,
       "content": {
         "converted_hls_url": "https://kukufm.akamaized.net/audio/5f526241-d44b-4a8e-b561-dbff66848ecd.m3u8",
@@ -411,12 +431,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/innoruvan-ep-02-music-_-sfx-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -436,7 +459,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4635,
+      "n_listens": 4897,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -460,12 +483,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/innoruvan-ep-03-music-_-sfx-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -485,7 +511,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4191,
+      "n_listens": 4436,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -509,12 +535,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/innoruvan-ep-04-music-_-sfx-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -534,7 +563,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4120,
+      "n_listens": 4337,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -558,12 +587,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/innoruvan-ep-05-music-_-sfx-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -583,7 +615,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4414,
+      "n_listens": 4617,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -607,12 +639,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/innoruvan-ep-06-music-_-sfx",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -632,7 +667,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3702,
+      "n_listens": 3902,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -656,12 +691,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/innoruvan-ep-07-music-_-sfx",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -681,7 +719,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3297,
+      "n_listens": 3463,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -705,12 +743,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/innoruvan-ep-08-music-_-sfx",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -730,7 +771,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3133,
+      "n_listens": 3257,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -754,12 +795,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/innoruvan-ep-09-music-_-sfx",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -779,7 +823,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3296,
+      "n_listens": 3507,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -803,12 +847,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0159b7a7b07e433c92b5e55a155e16f5.png",
       "web_uri": "/episode/innoruvan-ep-10-music-_-sfx",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     }
   ],
@@ -823,7 +870,7 @@
   "first_locked_episode_title": "1.2. Varathan",
   "seo_description": "",
   "ads_info": {
-    "interstitial_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Interstitial2.1750061859",
-    "reward_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Rewarded2.1750061900"
+    "interstitial_unit_id": "ca-app-pub-4561182393559685/8104245285",
+    "reward_unit_id": "ca-app-pub-4561182393559685/3766806802"
   }
 }

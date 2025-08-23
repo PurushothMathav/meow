@@ -13,7 +13,7 @@
     "language": "tamil",
     "published_on": "2024-03-22T10:36:49.036948+00:00",
     "status": "live",
-    "n_listens": 74007,
+    "n_listens": 78530,
     "is_verified": false,
     "dynamic_link": "https://applinks.kukufm.com/BapUv4Dtbwcg8yNt8",
     "uri": "app://kukufm/show/ratchagan/",
@@ -44,7 +44,7 @@
     "is_comments_exposure_enabled": false,
     "is_adult_content": false,
     "sharing_text": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा",
-    "sharing_text_v2": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा \nhttps://links.kukufm.com/m5tZmW",
+    "sharing_text_v2": "हेलो! मैंने Kuku FM (Android)  पर यह शो सुना और मुझे यकीन है कि आपको भी यह जरूर पसंद आएगा। \nhttps://links.kukufm.com/m5tZmW",
     "description": "Vikram thannoda loveku poropose pandraan. Apo avan ethirparkala, oru kodoora mirugam avungala attack panni, avanoda lover ah thookkikittu poiduthu. Vikram avala thirumba kandupidichana???",
     "description_secondary": "Vikram thannoda loveku poropose pandraan. Apo avan ethirparkala, oru kodoora mirugam avungala attack panni, lover ah thookkikittu poiduthu. Vikram avala thirumba kandupidichana???",
     "author": {
@@ -94,20 +94,36 @@
       }
     },
     "other_images": {
-      "landscape_image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/edb78db64aad4eefba3d13fe36651bfc_landscape_293.jpg",
+      "landscape_image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1GVAZFrzAgc6awHKN6RqoAyLGEukEmnSu.png",
       "landscape_image_sizes": {
-        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/edb78db64aad4eefba3d13fe36651bfc_landscape_293.jpg",
-        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/edb78db64aad4eefba3d13fe36651bfc_landscape_293.jpg",
-        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/edb78db64aad4eefba3d13fe36651bfc_landscape_293.jpg"
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1GVAZFrzAgc6awHKN6RqoAyLGEukEmnSu.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1GVAZFrzAgc6awHKN6RqoAyLGEukEmnSu.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1GVAZFrzAgc6awHKN6RqoAyLGEukEmnSu.png"
       },
-      "vertical_thumbnail": null,
+      "title_image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1Fo6w5FCjNN0BUuH_kI3V60vb5rpe4M3o.png",
+      "title_image_sizes": {
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1Fo6w5FCjNN0BUuH_kI3V60vb5rpe4M3o.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1Fo6w5FCjNN0BUuH_kI3V60vb5rpe4M3o.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1Fo6w5FCjNN0BUuH_kI3V60vb5rpe4M3o.png"
+      },
+      "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1F2SxRBsjvR2rG1MFmdbUKJS7t9xZm3d7.png",
+      "reel_image_sizes": {
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1F2SxRBsjvR2rG1MFmdbUKJS7t9xZm3d7.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1F2SxRBsjvR2rG1MFmdbUKJS7t9xZm3d7.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1F2SxRBsjvR2rG1MFmdbUKJS7t9xZm3d7.png"
+      },
+      "vertical_thumbnail": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1F2SxRBsjvR2rG1MFmdbUKJS7t9xZm3d7.png",
       "vertical_thumbnail_image_sizes": {
-        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
-        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
-        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png"
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1F2SxRBsjvR2rG1MFmdbUKJS7t9xZm3d7.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1F2SxRBsjvR2rG1MFmdbUKJS7t9xZm3d7.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1F2SxRBsjvR2rG1MFmdbUKJS7t9xZm3d7.png"
       }
     },
-    "thumbnail_data": {},
+    "thumbnail_data": {
+      "dvd_portrait": "https://images.cdn.kukufm.com/w:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1z6Jgcom_PVmsahVS92hnDxiLEfgOgEso.png",
+      "title_image": "https://images.cdn.kukufm.com/h:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/1Fo6w5FCjNN0BUuH_kI3V60vb5rpe4M3o.png",
+      "key_art": "https://images.cdn.kukufm.com/h:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/234545/17YwVd3gLTaTLn_rCOO3spRyaBKrQeL2f.png"
+    },
     "labels": [
       "7+"
     ],
@@ -130,14 +146,13 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 10876,
-      "n_listens": 10876,
+      "n_plays": 11852,
+      "n_listens": 11852,
       "n_comments": 4,
       "cover_type": null,
       "content": {
         "url": "https://d1l07mcd18xic4.cloudfront.net/audio/1b0fffe7-7fbe-44fd-8cab-1467d1f722fdfull.mp4",
         "hls_url": "https://d1l07mcd18xic4.cloudfront.net/audio/1b0fffe7-7fbe-44fd-8cab-1467d1f722fd.m3u8",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/ae1ccd22-2d4d-4a9f-86d7-c7c4a932d4d4.m3u8",
         "subtitle_url": "https://d1l07mcd18xic4.cloudfront.net/audio-transcripts/1b0fffe7-7fbe-44fd-872e-f58e50910284.srt"
       },
       "dynamic_link": "https://applinks.kukufm.com/K7QkFkkDYwZNi5aw9",
@@ -151,7 +166,7 @@
       "is_demo_premium": true,
       "media_size": 4878346,
       "published_on": "2024-03-22T09:21:40.923218+00:00",
-      "seek_position": 0
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png"
     },
     "is_self": false,
     "ad_enabled": false,
@@ -174,7 +189,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/1c253e4418394a07a96c51be372c1197.jpg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/1c253e4418394a07a96c51be372c1197.jpg"
           },
-          "n_followers": 1832,
+          "n_followers": 1874,
           "contribution_type": "writer",
           "is_primary_creator": true,
           "is_followed": false
@@ -189,7 +204,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/766ec03b54e44f2a9eb390c564d6dbaf.8bpG4gdFLfZI5CnAn068",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/766ec03b54e44f2a9eb390c564d6dbaf.8bpG4gdFLfZI5CnAn068"
           },
-          "n_followers": 2026,
+          "n_followers": 2084,
           "contribution_type": "production_manager",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -205,7 +220,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/345a0c67c0974e98a4112779151b1b9a.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/345a0c67c0974e98a4112779151b1b9a.jpeg"
           },
-          "n_followers": 3541,
+          "n_followers": 3586,
           "contribution_type": "director",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -221,7 +236,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/1c253e4418394a07a96c51be372c1197.jpg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/1c253e4418394a07a96c51be372c1197.jpg"
           },
-          "n_followers": 1832,
+          "n_followers": 1874,
           "contribution_type": "voice_artist",
           "is_primary_creator": false,
           "is_followed": false
@@ -258,7 +273,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 10880,
+      "n_listens": 11846,
       "n_comments": 4,
       "cover_type": null,
       "content": {
@@ -281,6 +296,8 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-intro-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
@@ -288,6 +305,7 @@
       "is_downloaded": false,
       "is_self": false,
       "last_base_unlock": true,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -307,8 +325,8 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5425,
-      "n_comments": 1,
+      "n_listens": 5735,
+      "n_comments": 2,
       "cover_type": null,
       "content": {
         "converted_hls_url": "https://kukufm.akamaized.net/audio/ce306303-65ae-4a16-b7ae-b54ecc2379b8.m3u8",
@@ -331,12 +349,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-1-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -356,7 +377,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3451,
+      "n_listens": 3656,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -380,12 +401,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-2-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -405,7 +429,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2906,
+      "n_listens": 3077,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -429,12 +453,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-3-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -454,7 +481,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2633,
+      "n_listens": 2777,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -478,12 +505,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-4-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -503,7 +533,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2594,
+      "n_listens": 2743,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -527,12 +557,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-5-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -552,7 +585,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2429,
+      "n_listens": 2565,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -576,12 +609,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-6-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -601,7 +637,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2385,
+      "n_listens": 2517,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -625,12 +661,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-7-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -650,7 +689,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2267,
+      "n_listens": 2392,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -674,12 +713,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-8-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -699,7 +741,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2207,
+      "n_listens": 2335,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -723,12 +765,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-9-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -748,7 +793,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2260,
+      "n_listens": 2383,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -772,12 +817,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-10-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -797,7 +845,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1973,
+      "n_listens": 2078,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -821,12 +869,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-11-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -846,7 +897,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2045,
+      "n_listens": 2151,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -870,12 +921,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-12-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -895,7 +949,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1925,
+      "n_listens": 2032,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -919,12 +973,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-13-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -944,7 +1001,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1941,
+      "n_listens": 2048,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -968,12 +1025,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-14-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -993,7 +1053,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1918,
+      "n_listens": 2030,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1017,12 +1077,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-15-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1042,7 +1105,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1781,
+      "n_listens": 1877,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1066,12 +1129,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-16-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1091,7 +1157,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1693,
+      "n_listens": 1783,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1115,12 +1181,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-17-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1140,7 +1209,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1739,
+      "n_listens": 1834,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1164,12 +1233,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-18-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1189,7 +1261,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1695,
+      "n_listens": 1770,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1213,12 +1285,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-19-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1238,7 +1313,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1642,
+      "n_listens": 1733,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1262,12 +1337,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-20-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1287,7 +1365,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1660,
+      "n_listens": 1758,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1311,12 +1389,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-21-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1336,7 +1417,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1589,
+      "n_listens": 1683,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1360,12 +1441,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-22-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1385,7 +1469,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1590,
+      "n_listens": 1681,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1409,12 +1493,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-23-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1434,7 +1521,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1607,
+      "n_listens": 1698,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1458,12 +1545,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-24-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1483,7 +1573,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1610,
+      "n_listens": 1706,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1507,12 +1597,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-25-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1532,7 +1625,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1559,
+      "n_listens": 1651,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1556,12 +1649,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-26-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1581,7 +1677,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1503,
+      "n_listens": 1590,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1605,12 +1701,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-27-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1630,7 +1729,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1524,
+      "n_listens": 1609,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1654,12 +1753,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-28-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1679,7 +1781,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1584,
+      "n_listens": 1665,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1703,12 +1805,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-29-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1728,7 +1833,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1976,
+      "n_listens": 2101,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -1752,12 +1857,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fb0aa02c6f544c6ea5b84b39075bf9cc.png",
       "web_uri": "/episode/ratchagan-ep-30-mix-v1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     }
   ],
@@ -1772,7 +1880,7 @@
   "first_locked_episode_title": "1.  will u marry me?",
   "seo_description": "",
   "ads_info": {
-    "interstitial_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Interstitial2.1750061859",
-    "reward_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Rewarded2.1750061900"
+    "interstitial_unit_id": "ca-app-pub-4561182393559685/8104245285",
+    "reward_unit_id": "ca-app-pub-4561182393559685/3766806802"
   }
 }

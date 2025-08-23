@@ -2313,7 +2313,7 @@ function renderSingleSection(sectionIndex, sectionShows) {
   const useSolidNumbers = shouldUseSolidNumbers(section.title);
   
   // Limit to 100 items for numbered sections, 20 for others
-  const maxItems = showNumbers ? 100 : 30;
+  const maxItems = showNumbers ? 100 : 100;
   const displayShows = sectionShows.slice(0, maxItems);
   
   const showCardsHTML = displayShows.map((show, index) => `
@@ -2467,7 +2467,9 @@ function shouldShowNumbers(sectionTitle) {
     'trending now',
     'top picks',
 	'newly & hot',
-	'new releases'
+	'new releases',
+	'top 20 stories',
+	'top 20 knowledge'
   ];
   
   return numberedSections.some(keyword => 
@@ -2479,7 +2481,8 @@ function shouldShowNumbers(sectionTitle) {
 function shouldUseSolidNumbers(sectionTitle) {
   const solidNumberSections = [
     'top 10',
-    'top rated'
+    'top rated',
+	'top 20 stories'
   ];
   
   return solidNumberSections.some(keyword => 
@@ -2493,7 +2496,9 @@ function isTopTierSection(sectionTitle) {
     'top 10',
     'top rated',
     'most popular',
-    'trending now'
+    'trending now',
+	'top 20 stories',
+	'top 20 knowledge'
   ];
   
   return topTierSections.some(keyword => 

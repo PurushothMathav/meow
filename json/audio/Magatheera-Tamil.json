@@ -13,7 +13,7 @@
     "language": "tamil",
     "published_on": "2023-11-24T14:05:13.250532+00:00",
     "status": "live",
-    "n_listens": 147376,
+    "n_listens": 156039,
     "is_verified": false,
     "dynamic_link": "https://applinks.kukufm.com/F6rhdNvMR8aDuBHj7",
     "uri": "app://kukufm/show/magatheera/",
@@ -21,8 +21,8 @@
     "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
     "cover_type": null,
     "is_premium": true,
-    "overall_rating": 4.892,
-    "n_reviews": 102,
+    "overall_rating": 4.877,
+    "n_reviews": 103,
     "is_fictional": true,
     "duration_s": 21719,
     "n_episodes": 42,
@@ -44,7 +44,7 @@
     "is_comments_exposure_enabled": false,
     "is_adult_content": false,
     "sharing_text": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा",
-    "sharing_text_v2": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा \nhttps://links.kukufm.com/dMF3Hu",
+    "sharing_text_v2": "हेलो! मैंने Kuku FM (Android)  पर यह शो सुना और मुझे यकीन है कि आपको भी यह जरूर पसंद आएगा। \nhttps://links.kukufm.com/dMF3Hu",
     "completion_status": 1,
     "description": "Reporter magaa oru kolaiyai thuppariya thodangukiraal. Antha seyal magaavai theeranidam izhuththu selkirathu. Avalathu payanam enna aanathu? Kathalum arasiyalum pinaintha kathaiyaik kelunga...",
     "description_secondary": "பத்திரிக்கை நிருபரான மகாவின் பேனாவிற்கு ஒரு கொலை வேலை வைக்கிறது. அந்தக் கொலையின் மீது சந்தேகம் கொண்ட மகா தனது துப்பறியும் பணியைத் தொடங்குகிறாள். அவை மகாவை தீரனிடம் இழுத்துச் செல்கின்றன. இளம் அரசியல்வாதியான தீரன் செய்யும் தவறுகளை எல்லாம் வெளிக் கொண்டு வர அவனது காதலியாக மாறுகிறாள் மகா. காதல் ஒரு பக்கம் கடமை ஒரு பக்கம் என ரெட்டை குதிரை சவாரி செய்யும் மகாவின் பயணம் என்ன ஆனது? காதலும் அரசியலும் பிணைந்த இக்கதையை குக்கூ எஃப். எம்-ல் கேளுங்க! ",
@@ -96,20 +96,36 @@
       }
     },
     "other_images": {
-      "landscape_image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/88c273d7744e43d698ec5321356b27fa_landscape_659.jpg",
+      "landscape_image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1w-yUMMRXnbULQsnL5pk8guTdXonZ0nTp.png",
       "landscape_image_sizes": {
-        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/88c273d7744e43d698ec5321356b27fa_landscape_659.jpg",
-        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/88c273d7744e43d698ec5321356b27fa_landscape_659.jpg",
-        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/88c273d7744e43d698ec5321356b27fa_landscape_659.jpg"
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1w-yUMMRXnbULQsnL5pk8guTdXonZ0nTp.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1w-yUMMRXnbULQsnL5pk8guTdXonZ0nTp.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1w-yUMMRXnbULQsnL5pk8guTdXonZ0nTp.png"
       },
-      "vertical_thumbnail": null,
+      "title_image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1bOW4dS2tuI615c1EJ0VG68DF6JYoYxVa.png",
+      "title_image_sizes": {
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1bOW4dS2tuI615c1EJ0VG68DF6JYoYxVa.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1bOW4dS2tuI615c1EJ0VG68DF6JYoYxVa.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1bOW4dS2tuI615c1EJ0VG68DF6JYoYxVa.png"
+      },
+      "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1yCazkCjUwSmrOTmeUWycieDsyFVlXmrB.png",
+      "reel_image_sizes": {
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1yCazkCjUwSmrOTmeUWycieDsyFVlXmrB.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1yCazkCjUwSmrOTmeUWycieDsyFVlXmrB.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1yCazkCjUwSmrOTmeUWycieDsyFVlXmrB.png"
+      },
+      "vertical_thumbnail": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1yCazkCjUwSmrOTmeUWycieDsyFVlXmrB.png",
       "vertical_thumbnail_image_sizes": {
-        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
-        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
-        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg"
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1yCazkCjUwSmrOTmeUWycieDsyFVlXmrB.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1yCazkCjUwSmrOTmeUWycieDsyFVlXmrB.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1yCazkCjUwSmrOTmeUWycieDsyFVlXmrB.png"
       }
     },
-    "thumbnail_data": {},
+    "thumbnail_data": {
+      "dvd_portrait": "https://images.cdn.kukufm.com/w:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1KRtABcLHZlgf_w0ANC5wrjGoM1nNPyYh.png",
+      "title_image": "https://images.cdn.kukufm.com/h:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1bOW4dS2tuI615c1EJ0VG68DF6JYoYxVa.png",
+      "key_art": "https://images.cdn.kukufm.com/h:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/202021/1dCV600kgaw5ZpUgU3IfOFOOWSxGGapWf.png"
+    },
     "labels": [
       "All Episodes",
       "7+"
@@ -133,14 +149,13 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 15467,
-      "n_listens": 15467,
+      "n_plays": 17226,
+      "n_listens": 17226,
       "n_comments": 3,
       "cover_type": null,
       "content": {
         "url": "https://d1l07mcd18xic4.cloudfront.net/audio/135f833c-65d1-40de-a96c-46e364501164full.mp4",
-        "hls_url": "https://d1l07mcd18xic4.cloudfront.net/audio/135f833c-65d1-40de-a96c-46e364501164.m3u8",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/ae1ccd22-2d4d-4a9f-86d7-c7c4a932d4d4.m3u8",
+        "hls_url": "https://files-g.kukufm.com/audio/135f833c-65d1-40de-a96c-46e364501164.m3u8",
         "subtitle_url": "https://d1l07mcd18xic4.cloudfront.net/audio-transcripts/135f833c-65d1-40de-a96c-46e364501164.srt"
       },
       "dynamic_link": "https://applinks.kukufm.com/eGwaA6iyP2mTDttr6",
@@ -154,7 +169,7 @@
       "is_demo_premium": true,
       "media_size": 3262671,
       "published_on": "2023-11-24T05:32:05.380860+00:00",
-      "seek_position": 0
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg"
     },
     "is_self": false,
     "ad_enabled": false,
@@ -177,7 +192,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/1c253e4418394a07a96c51be372c1197.jpg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/1c253e4418394a07a96c51be372c1197.jpg"
           },
-          "n_followers": 1832,
+          "n_followers": 1874,
           "contribution_type": "writer",
           "is_primary_creator": true,
           "is_followed": false
@@ -192,7 +207,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/a267d86e7ba04883887435564b0cb84b.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/a267d86e7ba04883887435564b0cb84b.jpeg"
           },
-          "n_followers": 1684,
+          "n_followers": 1717,
           "contribution_type": "quality_assurance",
           "is_primary_creator": false,
           "is_followed": false
@@ -207,7 +222,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/120a0357558d47498574172a6221d515.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/120a0357558d47498574172a6221d515.jpeg"
           },
-          "n_followers": 3549,
+          "n_followers": 3684,
           "contribution_type": "production_house",
           "is_primary_creator": true,
           "is_followed": false
@@ -222,7 +237,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/bfb335a3fef34c39aa1ec03c624eb3d9.jpg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/bfb335a3fef34c39aa1ec03c624eb3d9.jpg"
           },
-          "n_followers": 396,
+          "n_followers": 400,
           "contribution_type": "editor",
           "is_primary_creator": true,
           "is_followed": false
@@ -237,7 +252,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/345a0c67c0974e98a4112779151b1b9a.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/345a0c67c0974e98a4112779151b1b9a.jpeg"
           },
-          "n_followers": 3541,
+          "n_followers": 3586,
           "contribution_type": "director",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -275,14 +290,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 15466,
+      "n_listens": 17218,
       "n_comments": 3,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/135f833c-65d1-40de-a96c-46e364501164.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/135f833c-65d1-40de-a96c-46e364501164128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/135f833c-65d1-40de-a96c-46e36450116464kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/135f833c-65d1-40de-a96c-46e36450116424kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/135f833c-65d1-40de-a96c-46e364501164.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/135f833c-65d1-40de-a96c-46e364501164128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/135f833c-65d1-40de-a96c-46e36450116464kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/135f833c-65d1-40de-a96c-46e36450116424kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/eGwaA6iyP2mTDttr6",
       "is_premium": true,
@@ -298,6 +313,8 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magedeera-intro-1-new-alternative",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
@@ -305,6 +322,7 @@
       "is_downloaded": false,
       "is_self": false,
       "last_base_unlock": true,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -324,14 +342,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 7732,
+      "n_listens": 8333,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/8dc41884-7317-4ae4-959a-5dcd75e2e563.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/8dc41884-7317-4ae4-959a-5dcd75e2e563128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/8dc41884-7317-4ae4-959a-5dcd75e2e56364kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/8dc41884-7317-4ae4-959a-5dcd75e2e56324kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/8dc41884-7317-4ae4-959a-5dcd75e2e563.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/8dc41884-7317-4ae4-959a-5dcd75e2e563128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/8dc41884-7317-4ae4-959a-5dcd75e2e56364kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/8dc41884-7317-4ae4-959a-5dcd75e2e56324kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/We6hsEsfqsnJaqD27",
       "is_premium": true,
@@ -348,12 +366,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-1-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -373,14 +394,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5076,
+      "n_listens": 5397,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/54bdb59d-753a-42c3-acce-0da95b8affcb.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/54bdb59d-753a-42c3-acce-0da95b8affcb128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/54bdb59d-753a-42c3-acce-0da95b8affcb64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/54bdb59d-753a-42c3-acce-0da95b8affcb24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/54bdb59d-753a-42c3-acce-0da95b8affcb.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/54bdb59d-753a-42c3-acce-0da95b8affcb128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/54bdb59d-753a-42c3-acce-0da95b8affcb64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/54bdb59d-753a-42c3-acce-0da95b8affcb24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/rEzZzXUtSRBGJhyu6",
       "is_premium": true,
@@ -397,12 +418,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-2-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -422,14 +446,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4416,
+      "n_listens": 4657,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/de9f7672-b904-4ab3-80c9-fa2fa01744a1.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/de9f7672-b904-4ab3-80c9-fa2fa01744a1128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/de9f7672-b904-4ab3-80c9-fa2fa01744a164kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/de9f7672-b904-4ab3-80c9-fa2fa01744a124kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/de9f7672-b904-4ab3-80c9-fa2fa01744a1.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/de9f7672-b904-4ab3-80c9-fa2fa01744a1128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/de9f7672-b904-4ab3-80c9-fa2fa01744a164kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/de9f7672-b904-4ab3-80c9-fa2fa01744a124kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/FiBiqAczXzrkmadx8",
       "is_premium": true,
@@ -446,12 +470,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-3-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -471,14 +498,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3839,
+      "n_listens": 4065,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/02618117-3cd0-425f-a06c-c5cd2d48e584.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/02618117-3cd0-425f-a06c-c5cd2d48e584128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/02618117-3cd0-425f-a06c-c5cd2d48e58464kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/02618117-3cd0-425f-a06c-c5cd2d48e58424kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/02618117-3cd0-425f-a06c-c5cd2d48e584.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/02618117-3cd0-425f-a06c-c5cd2d48e584128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/02618117-3cd0-425f-a06c-c5cd2d48e58464kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/02618117-3cd0-425f-a06c-c5cd2d48e58424kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/SNydAr4toTmDn7qm6",
       "is_premium": true,
@@ -495,12 +522,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-4-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -520,14 +550,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3628,
+      "n_listens": 3837,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/d3eeabbc-c78c-4856-8640-f44b2fdea4dd.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/d3eeabbc-c78c-4856-8640-f44b2fdea4dd128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/d3eeabbc-c78c-4856-8640-f44b2fdea4dd64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/d3eeabbc-c78c-4856-8640-f44b2fdea4dd24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/d3eeabbc-c78c-4856-8640-f44b2fdea4dd.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/d3eeabbc-c78c-4856-8640-f44b2fdea4dd128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/d3eeabbc-c78c-4856-8640-f44b2fdea4dd64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/d3eeabbc-c78c-4856-8640-f44b2fdea4dd24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/oqGmGnSB9t2W8kyx7",
       "is_premium": true,
@@ -544,12 +574,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-5-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -569,14 +602,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3648,
-      "n_comments": 0,
+      "n_listens": 3841,
+      "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/03a43437-9d51-40f1-920a-7c3bb4566e3f.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/03a43437-9d51-40f1-920a-7c3bb4566e3f128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/03a43437-9d51-40f1-920a-7c3bb4566e3f64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/03a43437-9d51-40f1-920a-7c3bb4566e3f24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/03a43437-9d51-40f1-920a-7c3bb4566e3f.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/03a43437-9d51-40f1-920a-7c3bb4566e3f128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/03a43437-9d51-40f1-920a-7c3bb4566e3f64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/03a43437-9d51-40f1-920a-7c3bb4566e3f24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/EJzkTQHs38rkXikz7",
       "is_premium": true,
@@ -593,12 +626,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-6-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -618,14 +654,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3418,
+      "n_listens": 3597,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/0319cef7-faa8-4552-b987-a0f424e06364.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/0319cef7-faa8-4552-b987-a0f424e06364128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/0319cef7-faa8-4552-b987-a0f424e0636464kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/0319cef7-faa8-4552-b987-a0f424e0636424kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/0319cef7-faa8-4552-b987-a0f424e06364.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/0319cef7-faa8-4552-b987-a0f424e06364128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/0319cef7-faa8-4552-b987-a0f424e0636464kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/0319cef7-faa8-4552-b987-a0f424e0636424kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/Dms7SFMa7VndRA7RA",
       "is_premium": true,
@@ -642,12 +678,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-7-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -667,14 +706,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3445,
+      "n_listens": 3623,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/8d810987-2f08-4e83-a062-e2ce44124c7a.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/8d810987-2f08-4e83-a062-e2ce44124c7a128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/8d810987-2f08-4e83-a062-e2ce44124c7a64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/8d810987-2f08-4e83-a062-e2ce44124c7a24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/8d810987-2f08-4e83-a062-e2ce44124c7a.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/8d810987-2f08-4e83-a062-e2ce44124c7a128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/8d810987-2f08-4e83-a062-e2ce44124c7a64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/8d810987-2f08-4e83-a062-e2ce44124c7a24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/phzvKoZYU3WkgLCU9",
       "is_premium": true,
@@ -691,12 +730,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-8-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -716,14 +758,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3424,
+      "n_listens": 3600,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/7afa99ee-e54f-40ed-84d4-af385ba2a123.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/7afa99ee-e54f-40ed-84d4-af385ba2a123128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/7afa99ee-e54f-40ed-84d4-af385ba2a12364kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/7afa99ee-e54f-40ed-84d4-af385ba2a12324kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/7afa99ee-e54f-40ed-84d4-af385ba2a123.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/7afa99ee-e54f-40ed-84d4-af385ba2a123128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/7afa99ee-e54f-40ed-84d4-af385ba2a12364kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/7afa99ee-e54f-40ed-84d4-af385ba2a12324kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/1wvFsPfiSCXoMMp79",
       "is_premium": true,
@@ -740,12 +782,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-9-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -765,14 +810,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3404,
+      "n_listens": 3603,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/04a5a887-653c-4c7c-8669-a6b74cf88048.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/04a5a887-653c-4c7c-8669-a6b74cf88048128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/04a5a887-653c-4c7c-8669-a6b74cf8804864kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/04a5a887-653c-4c7c-8669-a6b74cf8804824kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/04a5a887-653c-4c7c-8669-a6b74cf88048.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/04a5a887-653c-4c7c-8669-a6b74cf88048128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/04a5a887-653c-4c7c-8669-a6b74cf8804864kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/04a5a887-653c-4c7c-8669-a6b74cf8804824kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/oVkXbcBdSkhmp5ob7",
       "is_premium": true,
@@ -789,12 +834,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-10-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -814,14 +862,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3243,
+      "n_listens": 3421,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/4156c4c7-d823-4708-87fa-f7c6b0e734eb.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/4156c4c7-d823-4708-87fa-f7c6b0e734eb128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/4156c4c7-d823-4708-87fa-f7c6b0e734eb64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/4156c4c7-d823-4708-87fa-f7c6b0e734eb24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/4156c4c7-d823-4708-87fa-f7c6b0e734eb.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/4156c4c7-d823-4708-87fa-f7c6b0e734eb128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/4156c4c7-d823-4708-87fa-f7c6b0e734eb64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/4156c4c7-d823-4708-87fa-f7c6b0e734eb24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/j7byBCQDxthgnkhMA",
       "is_premium": true,
@@ -838,12 +886,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-11-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -863,14 +914,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3193,
+      "n_listens": 3346,
       "n_comments": 2,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/bf5b00a4-19c1-44a2-a8b3-13682ecccb2e.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/bf5b00a4-19c1-44a2-a8b3-13682ecccb2e128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/bf5b00a4-19c1-44a2-a8b3-13682ecccb2e64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/bf5b00a4-19c1-44a2-a8b3-13682ecccb2e24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/bf5b00a4-19c1-44a2-a8b3-13682ecccb2e.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/bf5b00a4-19c1-44a2-a8b3-13682ecccb2e128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/bf5b00a4-19c1-44a2-a8b3-13682ecccb2e64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/bf5b00a4-19c1-44a2-a8b3-13682ecccb2e24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/jPVhhE4xSbqRdECG6",
       "is_premium": true,
@@ -887,12 +938,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-12-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -912,14 +966,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3165,
+      "n_listens": 3320,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/2acfd249-f6db-479c-a528-8dc63df4d400.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/2acfd249-f6db-479c-a528-8dc63df4d400128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/2acfd249-f6db-479c-a528-8dc63df4d40064kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/2acfd249-f6db-479c-a528-8dc63df4d40024kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/2acfd249-f6db-479c-a528-8dc63df4d400.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/2acfd249-f6db-479c-a528-8dc63df4d400128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/2acfd249-f6db-479c-a528-8dc63df4d40064kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/2acfd249-f6db-479c-a528-8dc63df4d40024kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/bHYWXshsegbWvqXbA",
       "is_premium": true,
@@ -936,12 +990,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-13-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -961,14 +1018,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3103,
+      "n_listens": 3250,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/d53b52da-5ffb-46c0-887a-f4aec371925b.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/d53b52da-5ffb-46c0-887a-f4aec371925b128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/d53b52da-5ffb-46c0-887a-f4aec371925b64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/d53b52da-5ffb-46c0-887a-f4aec371925b24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/d53b52da-5ffb-46c0-887a-f4aec371925b.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/d53b52da-5ffb-46c0-887a-f4aec371925b128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/d53b52da-5ffb-46c0-887a-f4aec371925b64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/d53b52da-5ffb-46c0-887a-f4aec371925b24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/upnnDAUsh2URawxMA",
       "is_premium": true,
@@ -985,12 +1042,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-14-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1010,14 +1070,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3144,
+      "n_listens": 3295,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/3a8e6ef4-6f99-45b4-b8bb-7fcf88af1e68.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/3a8e6ef4-6f99-45b4-b8bb-7fcf88af1e68128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/3a8e6ef4-6f99-45b4-b8bb-7fcf88af1e6864kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/3a8e6ef4-6f99-45b4-b8bb-7fcf88af1e6824kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/3a8e6ef4-6f99-45b4-b8bb-7fcf88af1e68.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/3a8e6ef4-6f99-45b4-b8bb-7fcf88af1e68128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/3a8e6ef4-6f99-45b4-b8bb-7fcf88af1e6864kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/3a8e6ef4-6f99-45b4-b8bb-7fcf88af1e6824kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/RsykQdsHnY4xNTQF6",
       "is_premium": true,
@@ -1034,12 +1094,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-15-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1059,14 +1122,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3024,
+      "n_listens": 3190,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/2be82357-1441-4e6e-91c2-068536c5b143.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/2be82357-1441-4e6e-91c2-068536c5b143128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/2be82357-1441-4e6e-91c2-068536c5b14364kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/2be82357-1441-4e6e-91c2-068536c5b14324kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/2be82357-1441-4e6e-91c2-068536c5b143.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/2be82357-1441-4e6e-91c2-068536c5b143128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/2be82357-1441-4e6e-91c2-068536c5b14364kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/2be82357-1441-4e6e-91c2-068536c5b14324kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/MQ6Vih7ZvAYrZPVq8",
       "is_premium": true,
@@ -1083,12 +1146,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-16-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1108,14 +1174,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2999,
+      "n_listens": 3154,
       "n_comments": 2,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/427485af-83e2-44a4-8d09-de18dc7cd77b.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/427485af-83e2-44a4-8d09-de18dc7cd77b128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/427485af-83e2-44a4-8d09-de18dc7cd77b64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/427485af-83e2-44a4-8d09-de18dc7cd77b24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/427485af-83e2-44a4-8d09-de18dc7cd77b.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/427485af-83e2-44a4-8d09-de18dc7cd77b128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/427485af-83e2-44a4-8d09-de18dc7cd77b64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/427485af-83e2-44a4-8d09-de18dc7cd77b24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/gwZcU9W8jPx8PNpL9",
       "is_premium": true,
@@ -1132,12 +1198,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-17-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1157,14 +1226,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2887,
+      "n_listens": 3036,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/2df4dc85-6b74-49d9-9f3e-437c0699e006.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/2df4dc85-6b74-49d9-9f3e-437c0699e006128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/2df4dc85-6b74-49d9-9f3e-437c0699e00664kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/2df4dc85-6b74-49d9-9f3e-437c0699e00624kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/2df4dc85-6b74-49d9-9f3e-437c0699e006.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/2df4dc85-6b74-49d9-9f3e-437c0699e006128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/2df4dc85-6b74-49d9-9f3e-437c0699e00664kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/2df4dc85-6b74-49d9-9f3e-437c0699e00624kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/cAGmvRYvtZHxsDP2A",
       "is_premium": true,
@@ -1181,12 +1250,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-18-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1206,14 +1278,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2878,
+      "n_listens": 3004,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/428d602f-7a7e-4878-aa0b-b7dc9487ba77.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/428d602f-7a7e-4878-aa0b-b7dc9487ba77128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/428d602f-7a7e-4878-aa0b-b7dc9487ba7764kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/428d602f-7a7e-4878-aa0b-b7dc9487ba7724kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/428d602f-7a7e-4878-aa0b-b7dc9487ba77.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/428d602f-7a7e-4878-aa0b-b7dc9487ba77128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/428d602f-7a7e-4878-aa0b-b7dc9487ba7764kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/428d602f-7a7e-4878-aa0b-b7dc9487ba7724kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/wLNRH7hrJsAP7GcV6",
       "is_premium": true,
@@ -1230,12 +1302,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-19-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1255,14 +1330,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2992,
+      "n_listens": 3162,
       "n_comments": 2,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/8bd92e5a-b5d6-43a9-bf15-45723cf3151b.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/8bd92e5a-b5d6-43a9-bf15-45723cf3151b128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/8bd92e5a-b5d6-43a9-bf15-45723cf3151b64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/8bd92e5a-b5d6-43a9-bf15-45723cf3151b24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/8bd92e5a-b5d6-43a9-bf15-45723cf3151b.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/8bd92e5a-b5d6-43a9-bf15-45723cf3151b128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/8bd92e5a-b5d6-43a9-bf15-45723cf3151b64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/8bd92e5a-b5d6-43a9-bf15-45723cf3151b24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/U9gtfCUZcmri5zLb8",
       "is_premium": true,
@@ -1279,12 +1354,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-20-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1304,14 +1382,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2982,
+      "n_listens": 3126,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/eb0412c4-78aa-4844-b21a-5f5d205d7eba.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/eb0412c4-78aa-4844-b21a-5f5d205d7eba128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/eb0412c4-78aa-4844-b21a-5f5d205d7eba64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/eb0412c4-78aa-4844-b21a-5f5d205d7eba24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/eb0412c4-78aa-4844-b21a-5f5d205d7eba.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/eb0412c4-78aa-4844-b21a-5f5d205d7eba128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/eb0412c4-78aa-4844-b21a-5f5d205d7eba64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/eb0412c4-78aa-4844-b21a-5f5d205d7eba24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/QKfZyK6Uyuk2A6Xk9",
       "is_premium": true,
@@ -1328,12 +1406,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-21-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1353,14 +1434,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2916,
+      "n_listens": 3065,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/6323818a-e7ab-4524-95d5-2748b247d6db.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/6323818a-e7ab-4524-95d5-2748b247d6db128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/6323818a-e7ab-4524-95d5-2748b247d6db64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/6323818a-e7ab-4524-95d5-2748b247d6db24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/6323818a-e7ab-4524-95d5-2748b247d6db.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/6323818a-e7ab-4524-95d5-2748b247d6db128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/6323818a-e7ab-4524-95d5-2748b247d6db64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/6323818a-e7ab-4524-95d5-2748b247d6db24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/GzrTcz5UDXoe6DJv8",
       "is_premium": true,
@@ -1377,12 +1458,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-22-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1402,14 +1486,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2851,
+      "n_listens": 2996,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/87636fa4-d82c-4849-b864-2f8b7ed5aa8a.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/87636fa4-d82c-4849-b864-2f8b7ed5aa8a128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/87636fa4-d82c-4849-b864-2f8b7ed5aa8a64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/87636fa4-d82c-4849-b864-2f8b7ed5aa8a24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/87636fa4-d82c-4849-b864-2f8b7ed5aa8a.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/87636fa4-d82c-4849-b864-2f8b7ed5aa8a128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/87636fa4-d82c-4849-b864-2f8b7ed5aa8a64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/87636fa4-d82c-4849-b864-2f8b7ed5aa8a24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/VgzUodTyWFpxjCW36",
       "is_premium": true,
@@ -1426,12 +1510,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-23-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1451,14 +1538,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2966,
+      "n_listens": 3109,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/6d97e370-e2c0-4e09-bef6-2a6458878a1d.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/6d97e370-e2c0-4e09-bef6-2a6458878a1d128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/6d97e370-e2c0-4e09-bef6-2a6458878a1d64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/6d97e370-e2c0-4e09-bef6-2a6458878a1d24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/6d97e370-e2c0-4e09-bef6-2a6458878a1d.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/6d97e370-e2c0-4e09-bef6-2a6458878a1d128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/6d97e370-e2c0-4e09-bef6-2a6458878a1d64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/6d97e370-e2c0-4e09-bef6-2a6458878a1d24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/p9FYbWJ97nEjPbPs9",
       "is_premium": true,
@@ -1475,12 +1562,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-24-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1500,14 +1590,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2800,
+      "n_listens": 2935,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/4a2a9bc0-e2cd-40a8-a6e8-b034fd256906.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/4a2a9bc0-e2cd-40a8-a6e8-b034fd256906128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/4a2a9bc0-e2cd-40a8-a6e8-b034fd25690664kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/4a2a9bc0-e2cd-40a8-a6e8-b034fd25690624kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/4a2a9bc0-e2cd-40a8-a6e8-b034fd256906.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/4a2a9bc0-e2cd-40a8-a6e8-b034fd256906128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/4a2a9bc0-e2cd-40a8-a6e8-b034fd25690664kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/4a2a9bc0-e2cd-40a8-a6e8-b034fd25690624kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/cwvGoTw4EYaBcDjs5",
       "is_premium": true,
@@ -1524,12 +1614,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-25-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1549,14 +1642,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2877,
+      "n_listens": 3019,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/adcf2ccd-7ff8-466d-b684-5a601230abb8.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/adcf2ccd-7ff8-466d-b684-5a601230abb8128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/adcf2ccd-7ff8-466d-b684-5a601230abb864kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/adcf2ccd-7ff8-466d-b684-5a601230abb824kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/adcf2ccd-7ff8-466d-b684-5a601230abb8.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/adcf2ccd-7ff8-466d-b684-5a601230abb8128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/adcf2ccd-7ff8-466d-b684-5a601230abb864kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/adcf2ccd-7ff8-466d-b684-5a601230abb824kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/B7rGRkHC2qWLU8qm7",
       "is_premium": true,
@@ -1573,12 +1666,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-26-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1598,14 +1694,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2808,
+      "n_listens": 2939,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/b51f5ae4-ffa9-4525-ba01-de10d310deb1.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/b51f5ae4-ffa9-4525-ba01-de10d310deb1128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/b51f5ae4-ffa9-4525-ba01-de10d310deb164kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/b51f5ae4-ffa9-4525-ba01-de10d310deb124kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/b51f5ae4-ffa9-4525-ba01-de10d310deb1.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/b51f5ae4-ffa9-4525-ba01-de10d310deb1128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/b51f5ae4-ffa9-4525-ba01-de10d310deb164kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/b51f5ae4-ffa9-4525-ba01-de10d310deb124kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/fnwA7TUedkfytFcD9",
       "is_premium": true,
@@ -1622,12 +1718,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-27-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1647,14 +1746,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2828,
+      "n_listens": 2962,
       "n_comments": 2,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/ffd44f32-7a6e-45bf-8e1f-06abaee2ef20.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/ffd44f32-7a6e-45bf-8e1f-06abaee2ef20128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/ffd44f32-7a6e-45bf-8e1f-06abaee2ef2064kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/ffd44f32-7a6e-45bf-8e1f-06abaee2ef2024kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/ffd44f32-7a6e-45bf-8e1f-06abaee2ef20.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/ffd44f32-7a6e-45bf-8e1f-06abaee2ef20128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/ffd44f32-7a6e-45bf-8e1f-06abaee2ef2064kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/ffd44f32-7a6e-45bf-8e1f-06abaee2ef2024kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/RMp9joYogUsxZWat6",
       "is_premium": true,
@@ -1671,12 +1770,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-28-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1696,14 +1798,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2841,
+      "n_listens": 2967,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/96783ca6-150f-4858-a84e-e415268e5fdd.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/96783ca6-150f-4858-a84e-e415268e5fdd128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/96783ca6-150f-4858-a84e-e415268e5fdd64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/96783ca6-150f-4858-a84e-e415268e5fdd24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/96783ca6-150f-4858-a84e-e415268e5fdd.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/96783ca6-150f-4858-a84e-e415268e5fdd128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/96783ca6-150f-4858-a84e-e415268e5fdd64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/96783ca6-150f-4858-a84e-e415268e5fdd24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/CVkUUQKVo8VPEzsU8",
       "is_premium": true,
@@ -1720,12 +1822,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-29-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1745,14 +1850,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2816,
+      "n_listens": 2950,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/e837b261-07ca-425e-a0c4-7a9e5f16c109.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/e837b261-07ca-425e-a0c4-7a9e5f16c109128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/e837b261-07ca-425e-a0c4-7a9e5f16c10964kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/e837b261-07ca-425e-a0c4-7a9e5f16c10924kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/e837b261-07ca-425e-a0c4-7a9e5f16c109.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/e837b261-07ca-425e-a0c4-7a9e5f16c109128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/e837b261-07ca-425e-a0c4-7a9e5f16c10964kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/e837b261-07ca-425e-a0c4-7a9e5f16c10924kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/cxEBqovYSNn2Cqb56",
       "is_premium": true,
@@ -1769,12 +1874,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-30-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1794,14 +1902,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2762,
+      "n_listens": 2888,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/1302dca1-dd5d-4bfe-aea8-06ce9160e8ef.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/1302dca1-dd5d-4bfe-aea8-06ce9160e8ef128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/1302dca1-dd5d-4bfe-aea8-06ce9160e8ef64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/1302dca1-dd5d-4bfe-aea8-06ce9160e8ef24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/1302dca1-dd5d-4bfe-aea8-06ce9160e8ef.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/1302dca1-dd5d-4bfe-aea8-06ce9160e8ef128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/1302dca1-dd5d-4bfe-aea8-06ce9160e8ef64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/1302dca1-dd5d-4bfe-aea8-06ce9160e8ef24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/znq8B2DgegZfyw5ZA",
       "is_premium": true,
@@ -1818,12 +1926,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-31-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1843,14 +1954,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2664,
+      "n_listens": 2800,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/c69adf90-e3dd-4864-89e2-05c6aceaec8f.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/c69adf90-e3dd-4864-89e2-05c6aceaec8f128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/c69adf90-e3dd-4864-89e2-05c6aceaec8f64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/c69adf90-e3dd-4864-89e2-05c6aceaec8f24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/c69adf90-e3dd-4864-89e2-05c6aceaec8f.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/c69adf90-e3dd-4864-89e2-05c6aceaec8f128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/c69adf90-e3dd-4864-89e2-05c6aceaec8f64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/c69adf90-e3dd-4864-89e2-05c6aceaec8f24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/bg1YRfk9DnnE5rBV9",
       "is_premium": true,
@@ -1867,12 +1978,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-32-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1892,14 +2006,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2579,
+      "n_listens": 2705,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/d3b95a50-1f79-4b17-aa8b-86b3bf2a04d3.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/d3b95a50-1f79-4b17-aa8b-86b3bf2a04d3128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/d3b95a50-1f79-4b17-aa8b-86b3bf2a04d364kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/d3b95a50-1f79-4b17-aa8b-86b3bf2a04d324kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/d3b95a50-1f79-4b17-aa8b-86b3bf2a04d3.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/d3b95a50-1f79-4b17-aa8b-86b3bf2a04d3128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/d3b95a50-1f79-4b17-aa8b-86b3bf2a04d364kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/d3b95a50-1f79-4b17-aa8b-86b3bf2a04d324kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/neEkoiXCFpYZCJVC8",
       "is_premium": true,
@@ -1916,12 +2030,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-33-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1941,14 +2058,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2641,
+      "n_listens": 2770,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/ef5b66b4-af51-46d1-951e-f35fac85cb64.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/ef5b66b4-af51-46d1-951e-f35fac85cb64128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/ef5b66b4-af51-46d1-951e-f35fac85cb6464kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/ef5b66b4-af51-46d1-951e-f35fac85cb6424kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/ef5b66b4-af51-46d1-951e-f35fac85cb64.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/ef5b66b4-af51-46d1-951e-f35fac85cb64128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/ef5b66b4-af51-46d1-951e-f35fac85cb6464kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/ef5b66b4-af51-46d1-951e-f35fac85cb6424kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/rvuanEZKoWaHYtCWA",
       "is_premium": true,
@@ -1965,12 +2082,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-34-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1990,14 +2110,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2677,
+      "n_listens": 2803,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/06527c4b-3893-460a-9794-71bcecdac730.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/06527c4b-3893-460a-9794-71bcecdac730128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/06527c4b-3893-460a-9794-71bcecdac73064kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/06527c4b-3893-460a-9794-71bcecdac73024kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/06527c4b-3893-460a-9794-71bcecdac730.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/06527c4b-3893-460a-9794-71bcecdac730128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/06527c4b-3893-460a-9794-71bcecdac73064kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/06527c4b-3893-460a-9794-71bcecdac73024kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/T922JXLQnRCJT9k98",
       "is_premium": true,
@@ -2014,12 +2134,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-35-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2039,14 +2162,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2577,
+      "n_listens": 2701,
       "n_comments": 1,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/f1fbc1c2-20a5-4d81-8ac6-6d37e93d2087.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/f1fbc1c2-20a5-4d81-8ac6-6d37e93d2087128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/f1fbc1c2-20a5-4d81-8ac6-6d37e93d208764kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/f1fbc1c2-20a5-4d81-8ac6-6d37e93d208724kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/f1fbc1c2-20a5-4d81-8ac6-6d37e93d2087.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/f1fbc1c2-20a5-4d81-8ac6-6d37e93d2087128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/f1fbc1c2-20a5-4d81-8ac6-6d37e93d208764kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/f1fbc1c2-20a5-4d81-8ac6-6d37e93d208724kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/6Xb2aAWYqhp9L7mx7",
       "is_premium": true,
@@ -2063,12 +2186,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-36-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2088,14 +2214,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2668,
+      "n_listens": 2796,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/1b9259ed-1224-4bfd-bbe6-9f6e4387266f.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/1b9259ed-1224-4bfd-bbe6-9f6e4387266f128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/1b9259ed-1224-4bfd-bbe6-9f6e4387266f64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/1b9259ed-1224-4bfd-bbe6-9f6e4387266f24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/1b9259ed-1224-4bfd-bbe6-9f6e4387266f.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/1b9259ed-1224-4bfd-bbe6-9f6e4387266f128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/1b9259ed-1224-4bfd-bbe6-9f6e4387266f64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/1b9259ed-1224-4bfd-bbe6-9f6e4387266f24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/v6fnopXCWdhopvji9",
       "is_premium": true,
@@ -2112,12 +2238,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-37-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2137,14 +2266,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2801,
+      "n_listens": 2933,
       "n_comments": 2,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/b15bfd45-e678-455d-bada-4a835e981952.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/b15bfd45-e678-455d-bada-4a835e981952128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/b15bfd45-e678-455d-bada-4a835e98195264kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/b15bfd45-e678-455d-bada-4a835e98195224kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/b15bfd45-e678-455d-bada-4a835e981952.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/b15bfd45-e678-455d-bada-4a835e981952128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/b15bfd45-e678-455d-bada-4a835e98195264kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/b15bfd45-e678-455d-bada-4a835e98195224kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/k4UbWbw5yAoXkgbD9",
       "is_premium": true,
@@ -2161,12 +2290,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-38-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2186,14 +2318,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2881,
+      "n_listens": 3021,
       "n_comments": 0,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/d306ba46-f77a-41cb-ace7-2a38964cc0c4.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/d306ba46-f77a-41cb-ace7-2a38964cc0c4128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/d306ba46-f77a-41cb-ace7-2a38964cc0c464kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/d306ba46-f77a-41cb-ace7-2a38964cc0c424kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/d306ba46-f77a-41cb-ace7-2a38964cc0c4.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/d306ba46-f77a-41cb-ace7-2a38964cc0c4128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/d306ba46-f77a-41cb-ace7-2a38964cc0c464kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/d306ba46-f77a-41cb-ace7-2a38964cc0c424kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/pKKTeLbrkLYRT5rv7",
       "is_premium": true,
@@ -2210,12 +2342,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-39-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2235,14 +2370,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2956,
+      "n_listens": 3094,
       "n_comments": 2,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/f19b2fc4-acf8-410e-bc9f-31e5610c7e2f.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/f19b2fc4-acf8-410e-bc9f-31e5610c7e2f128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/f19b2fc4-acf8-410e-bc9f-31e5610c7e2f64kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/f19b2fc4-acf8-410e-bc9f-31e5610c7e2f24kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/f19b2fc4-acf8-410e-bc9f-31e5610c7e2f.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/f19b2fc4-acf8-410e-bc9f-31e5610c7e2f128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/f19b2fc4-acf8-410e-bc9f-31e5610c7e2f64kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/f19b2fc4-acf8-410e-bc9f-31e5610c7e2f24kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/rUfqHaL6cAGTTZvW9",
       "is_premium": true,
@@ -2259,12 +2394,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-40-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2284,14 +2422,14 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3370,
+      "n_listens": 3541,
       "n_comments": 6,
       "cover_type": null,
       "content": {
-        "converted_hls_url": "https://kukufm.akamaized.net/audio/5381cc27-4774-47b2-a0a3-6390f2e9a0b1.m3u8",
-        "audio_128kb": "https://kukufm.akamaized.net/audio/5381cc27-4774-47b2-a0a3-6390f2e9a0b1128kb.m3u8",
-        "audio_64kb": "https://kukufm.akamaized.net/audio/5381cc27-4774-47b2-a0a3-6390f2e9a0b164kb.m3u8",
-        "audio_24kb": "https://kukufm.akamaized.net/audio/5381cc27-4774-47b2-a0a3-6390f2e9a0b124kb.m3u8"
+        "converted_hls_url": "https://files-g.kukufm.com/audio/5381cc27-4774-47b2-a0a3-6390f2e9a0b1.m3u8",
+        "audio_128kb": "https://files-g.kukufm.com/audio/5381cc27-4774-47b2-a0a3-6390f2e9a0b1128kb.m3u8",
+        "audio_64kb": "https://files-g.kukufm.com/audio/5381cc27-4774-47b2-a0a3-6390f2e9a0b164kb.m3u8",
+        "audio_24kb": "https://files-g.kukufm.com/audio/5381cc27-4774-47b2-a0a3-6390f2e9a0b124kb.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/ZhoBDEUugp5nCnH69",
       "is_premium": true,
@@ -2308,12 +2446,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47a858e7cc244d44b4784ee443d4f5ff.jpeg",
       "web_uri": "/episode/magadeera-epi-41-mix-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     }
   ],
@@ -2328,7 +2469,7 @@
   "first_locked_episode_title": "1. Nirubar Maha",
   "seo_description": "",
   "ads_info": {
-    "interstitial_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Interstitial2.1750061859",
-    "reward_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Rewarded2.1750061900"
+    "interstitial_unit_id": "ca-app-pub-4561182393559685/8104245285",
+    "reward_unit_id": "ca-app-pub-4561182393559685/3766806802"
   }
 }

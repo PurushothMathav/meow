@@ -13,7 +13,7 @@
     "language": "tamil",
     "published_on": "2024-09-09T12:01:46.490157+00:00",
     "status": "live",
-    "n_listens": 42723,
+    "n_listens": 45738,
     "is_verified": false,
     "dynamic_link": null,
     "uri": "app://kukufm/show/meignanam/",
@@ -44,7 +44,7 @@
     "is_comments_exposure_enabled": false,
     "is_adult_content": false,
     "sharing_text": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा",
-    "sharing_text_v2": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा \nhttps://links.kukufm.com/nRNtPy",
+    "sharing_text_v2": "हेलो! मैंने Kuku FM (Android)  पर यह शो सुना और मुझे यकीन है कि आपको भी यह जरूर पसंद आएगा। \nhttps://links.kukufm.com/nRNtPy",
     "description": "A parapsychologist battles a relentless spirit from his past, determined to claim his sister’s soul and complete a long-forgotten demonic ritual.",
     "description_secondary": "ஒரு பராசெய்காலஜிஸ்ட் தன் கடந்த காலத்தில்  எதிர்கொண்ட  ஓர் அடங்காத ஆவியுடன் மீண்டும்  மோதுகிறார், அது தனது சகோதரியின் ஆன்மாவைப் பறித்து, நீண்டகாலமாக நிறுத்தப்பட்ட ஒரு டீமன் பூஜையை நிறைவேற்ற முயல்கிறது.\"",
     "author": {
@@ -145,14 +145,13 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 14624,
-      "n_listens": 14624,
+      "n_plays": 15547,
+      "n_listens": 15547,
       "n_comments": 2,
       "cover_type": null,
       "content": {
         "url": "https://d1l07mcd18xic4.cloudfront.net/audio/470e0fd3-9646-464d-905e-17e084f7c06cfull.mp4",
         "hls_url": "https://d1l07mcd18xic4.cloudfront.net/audio/470e0fd3-9646-464d-905e-17e084f7c06c.m3u8",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/ae1ccd22-2d4d-4a9f-86d7-c7c4a932d4d4.m3u8",
         "subtitle_url": "https://d1l07mcd18xic4.cloudfront.net/audio-transcripts/470e0fd3-9646-464d-86a4-b759f6c83e30.srt"
       },
       "dynamic_link": null,
@@ -166,7 +165,7 @@
       "is_demo_premium": true,
       "media_size": 11896041,
       "published_on": "2024-09-09T12:01:34.397354+00:00",
-      "seek_position": 0
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg"
     },
     "is_self": false,
     "ad_enabled": false,
@@ -189,7 +188,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/766ec03b54e44f2a9eb390c564d6dbaf.8bpG4gdFLfZI5CnAn068",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/766ec03b54e44f2a9eb390c564d6dbaf.8bpG4gdFLfZI5CnAn068"
           },
-          "n_followers": 2026,
+          "n_followers": 2084,
           "contribution_type": "production_manager",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -205,7 +204,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/22e84d630daa4243a0836626e91c08a0.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/22e84d630daa4243a0836626e91c08a0.jpeg"
           },
-          "n_followers": 44,
+          "n_followers": 47,
           "contribution_type": "director",
           "is_primary_creator": true,
           "is_followed": false
@@ -278,7 +277,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 14629,
+      "n_listens": 15546,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -301,12 +300,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-01-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -326,7 +328,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3608,
+      "n_listens": 3882,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -349,12 +351,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-02-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -374,7 +379,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2580,
+      "n_listens": 2782,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -397,12 +402,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-03-final-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -422,7 +430,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2102,
+      "n_listens": 2262,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -445,12 +453,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-04-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -470,7 +481,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1896,
+      "n_listens": 2028,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -493,12 +504,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-05-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -518,7 +532,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1756,
+      "n_listens": 1879,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -541,12 +555,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-06-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -566,7 +583,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1481,
+      "n_listens": 1599,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -589,12 +606,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-07-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -614,7 +634,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1447,
+      "n_listens": 1554,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -637,12 +657,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-08-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -662,7 +685,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1339,
+      "n_listens": 1432,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -685,12 +708,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-09-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -710,7 +736,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1387,
+      "n_listens": 1468,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -733,6 +759,8 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-10-final-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
@@ -740,6 +768,7 @@
       "is_downloaded": false,
       "is_self": false,
       "last_base_unlock": true,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -759,7 +788,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1197,
+      "n_listens": 1285,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -783,12 +812,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-11-final-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -808,7 +840,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1076,
+      "n_listens": 1159,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -832,12 +864,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-12-final-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -857,7 +892,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1010,
+      "n_listens": 1097,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -881,12 +916,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-13-final-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -906,7 +944,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1040,
+      "n_listens": 1115,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -930,12 +968,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-14-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -955,7 +996,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1032,
+      "n_listens": 1109,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -979,12 +1020,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-15-final-3",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1004,7 +1048,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1017,
+      "n_listens": 1094,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1028,12 +1072,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-16-final-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1053,7 +1100,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1000,
+      "n_listens": 1070,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1077,12 +1124,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-17-final-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1102,7 +1152,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 962,
+      "n_listens": 1031,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1126,12 +1176,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-18-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1151,7 +1204,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 963,
+      "n_listens": 1032,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1175,12 +1228,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-19-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1200,8 +1256,8 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1204,
-      "n_comments": 3,
+      "n_listens": 1312,
+      "n_comments": 5,
       "cover_type": null,
       "content": {
         "converted_hls_url": "https://kukufm.akamaized.net/audio/94374a0b-26fd-490c-851c-84354c1c727d.m3u8",
@@ -1224,12 +1280,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e1d02fcaec9e49dba8cc4a025258cd2d.jpeg",
       "web_uri": "/episode/ep-20-final-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     }
   ],
@@ -1244,7 +1303,7 @@
   "first_locked_episode_title": "11. Paranormal Present Here",
   "seo_description": "",
   "ads_info": {
-    "interstitial_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Interstitial2.1750061859",
-    "reward_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Rewarded2.1750061900"
+    "interstitial_unit_id": "ca-app-pub-4561182393559685/8104245285",
+    "reward_unit_id": "ca-app-pub-4561182393559685/3766806802"
   }
 }

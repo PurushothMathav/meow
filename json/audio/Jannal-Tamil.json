@@ -13,7 +13,7 @@
     "language": "tamil",
     "published_on": "2023-12-15T13:49:43.632046+00:00",
     "status": "live",
-    "n_listens": 55575,
+    "n_listens": 56985,
     "is_verified": false,
     "dynamic_link": null,
     "uri": "app://kukufm/show/jannal/",
@@ -21,8 +21,8 @@
     "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
     "cover_type": null,
     "is_premium": true,
-    "overall_rating": 4.555,
-    "n_reviews": 34,
+    "overall_rating": 4.6,
+    "n_reviews": 35,
     "is_fictional": true,
     "duration_s": 4117,
     "n_episodes": 11,
@@ -44,7 +44,7 @@
     "is_comments_exposure_enabled": false,
     "is_adult_content": false,
     "sharing_text": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा",
-    "sharing_text_v2": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा \nhttps://links.kukufm.com/Sh5u8A",
+    "sharing_text_v2": "हेलो! मैंने Kuku FM (Android)  पर यह शो सुना और मुझे यकीन है कि आपको भी यह जरूर पसंद आएगा। \nhttps://links.kukufm.com/Sh5u8A",
     "completion_status": 1,
     "description": "Aavigalidam sikkikkonda oru appavik kudumbaththinar eppadith thappikkiraargal? Aavigalin ulagam eppadi irukkum? Oru bayangara thigil anupavaththukkuth thayaaraagungal...",
     "description_secondary": "ஆவிகளிடம் சிக்கிக்கொண்ட ஒரு அப்பாவிக் குடும்பத்தினர் எப்படித் தப்பிக்கிறார்கள்? ஆவிகளின் உலகம் எப்படி இருக்கும்? ஒரு பயங்கர திகில் அனுபவத்துக்குத் தயாராகுங்கள்...",
@@ -132,14 +132,13 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 13682,
-      "n_listens": 13682,
+      "n_plays": 13988,
+      "n_listens": 13988,
       "n_comments": 2,
       "cover_type": null,
       "content": {
         "url": "https://d1l07mcd18xic4.cloudfront.net/audio/afdbad7d-3c5f-4525-9c0c-a16273efc0d8full.mp4",
         "hls_url": "https://d1l07mcd18xic4.cloudfront.net/audio/afdbad7d-3c5f-4525-9c0c-a16273efc0d8.m3u8",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/ae1ccd22-2d4d-4a9f-86d7-c7c4a932d4d4.m3u8",
         "subtitle_url": "https://d1l07mcd18xic4.cloudfront.net/audio-transcripts/afdbad7d-3c5f-4525-85cc-876a2bab6a7f.srt"
       },
       "dynamic_link": "https://applinks.kukufm.com/Bq1swDfLnQoi2tT26",
@@ -153,7 +152,7 @@
       "is_demo_premium": true,
       "media_size": 5702078,
       "published_on": "2023-12-15T12:56:10.258001+00:00",
-      "seek_position": 0
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png"
     },
     "is_self": false,
     "ad_enabled": false,
@@ -176,7 +175,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/a267d86e7ba04883887435564b0cb84b.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/a267d86e7ba04883887435564b0cb84b.jpeg"
           },
-          "n_followers": 1684,
+          "n_followers": 1717,
           "contribution_type": "quality_assurance",
           "is_primary_creator": false,
           "is_followed": false
@@ -191,7 +190,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/766ec03b54e44f2a9eb390c564d6dbaf.8bpG4gdFLfZI5CnAn068",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/766ec03b54e44f2a9eb390c564d6dbaf.8bpG4gdFLfZI5CnAn068"
           },
-          "n_followers": 2026,
+          "n_followers": 2084,
           "contribution_type": "production_manager",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -207,7 +206,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/345a0c67c0974e98a4112779151b1b9a.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/345a0c67c0974e98a4112779151b1b9a.jpeg"
           },
-          "n_followers": 3541,
+          "n_followers": 3586,
           "contribution_type": "director",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -223,7 +222,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/1c253e4418394a07a96c51be372c1197.jpg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/1c253e4418394a07a96c51be372c1197.jpg"
           },
-          "n_followers": 1832,
+          "n_followers": 1874,
           "contribution_type": "voice_artist",
           "is_primary_creator": false,
           "is_followed": false
@@ -260,7 +259,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 13682,
+      "n_listens": 13987,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -283,6 +282,8 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-01-jannal-1-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
@@ -290,6 +291,7 @@
       "is_downloaded": false,
       "is_self": false,
       "last_base_unlock": true,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -309,7 +311,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 7419,
+      "n_listens": 7570,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -333,12 +335,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-01-jannal-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -358,7 +363,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5092,
+      "n_listens": 5224,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -382,12 +387,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-02-93",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -407,7 +415,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4451,
+      "n_listens": 4561,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -431,12 +439,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-03-90",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -456,7 +467,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4229,
+      "n_listens": 4361,
       "n_comments": 4,
       "cover_type": null,
       "content": {
@@ -480,12 +491,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-04-95",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -505,7 +519,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4047,
+      "n_listens": 4175,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -529,12 +543,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-05-91",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -554,7 +571,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3684,
+      "n_listens": 3786,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -578,12 +595,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-06-90",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -603,7 +623,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3670,
+      "n_listens": 3769,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -627,12 +647,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-07-88",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -652,7 +675,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3261,
+      "n_listens": 3346,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -676,12 +699,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-08-85",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -701,7 +727,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3029,
+      "n_listens": 3100,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -725,12 +751,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-09-77",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -750,7 +779,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3012,
+      "n_listens": 3112,
       "n_comments": 8,
       "cover_type": null,
       "content": {
@@ -774,12 +803,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/fc21a1c68daa4fa79c400c95499414df.png",
       "web_uri": "/episode/epi-10-140",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     }
   ],
@@ -794,7 +826,7 @@
   "first_locked_episode_title": "1.2 Welcome To Our World",
   "seo_description": "",
   "ads_info": {
-    "interstitial_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Interstitial2.1750061859",
-    "reward_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Rewarded2.1750061900"
+    "interstitial_unit_id": "ca-app-pub-4561182393559685/8104245285",
+    "reward_unit_id": "ca-app-pub-4561182393559685/3766806802"
   }
 }

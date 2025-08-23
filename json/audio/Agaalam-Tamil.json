@@ -13,7 +13,7 @@
     "language": "tamil",
     "published_on": "2023-11-30T13:44:14.013652+00:00",
     "status": "live",
-    "n_listens": 125866,
+    "n_listens": 128660,
     "is_verified": false,
     "dynamic_link": null,
     "uri": "app://kukufm/show/agaalam/",
@@ -44,7 +44,7 @@
     "is_comments_exposure_enabled": false,
     "is_adult_content": false,
     "sharing_text": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा",
-    "sharing_text_v2": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा \nhttps://links.kukufm.com/2eeSwh",
+    "sharing_text_v2": "हेलो! मैंने Kuku FM (Android)  पर यह शो सुना और मुझे यकीन है कि आपको भी यह जरूर पसंद आएगा। \nhttps://links.kukufm.com/2eeSwh",
     "completion_status": 1,
     "description": "Naangu perin vaarisugalai mattum kurivaiththu kodoora aavi ondru thuraththukirathu. Moondru perin vaarisugalai antha marma aavi vettaiyaadivida, Naangaavathu minjiyirukkum vaarisaiyum vettaiyaada virattukirathu aavi. Antha aaviyin verikkuk kaaranam enna? ",
     "description_secondary": "நான்கு பேரின் வாரிசுகளை மட்டும் குறிவைத்துக் கொடூர ஆவி ஒன்று துரத்துகிறது. மூன்று பேரின் வாரிசுகளை அந்த மர்ம ஆவி வேட்டையாடிவிட, நான்காவாது மிஞ்சியிருக்கும் வாரிசையும் வேட்டையாட விரட்டுகிறது ஆவி. அந்த ஆவியின் வெறிக்குக் காரணம் என்ன? ",
@@ -101,14 +101,29 @@
         "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/464459fb43504361b0a5983e4d18f706_landscape_620.jpg",
         "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/464459fb43504361b0a5983e4d18f706_landscape_620.jpg"
       },
-      "vertical_thumbnail": null,
+      "title_image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1xDXf4_yRVKiyuml_4LxZFeV7GlSi86mp.png",
+      "title_image_sizes": {
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1xDXf4_yRVKiyuml_4LxZFeV7GlSi86mp.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1xDXf4_yRVKiyuml_4LxZFeV7GlSi86mp.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1xDXf4_yRVKiyuml_4LxZFeV7GlSi86mp.png"
+      },
+      "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1IR9vsAwbx7_Ng-csHwVJ4MQtikCskzFg.png",
+      "reel_image_sizes": {
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1IR9vsAwbx7_Ng-csHwVJ4MQtikCskzFg.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1IR9vsAwbx7_Ng-csHwVJ4MQtikCskzFg.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1IR9vsAwbx7_Ng-csHwVJ4MQtikCskzFg.png"
+      },
+      "vertical_thumbnail": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1IR9vsAwbx7_Ng-csHwVJ4MQtikCskzFg.png",
       "vertical_thumbnail_image_sizes": {
-        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
-        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
-        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg"
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1IR9vsAwbx7_Ng-csHwVJ4MQtikCskzFg.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1IR9vsAwbx7_Ng-csHwVJ4MQtikCskzFg.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1IR9vsAwbx7_Ng-csHwVJ4MQtikCskzFg.png"
       }
     },
-    "thumbnail_data": {},
+    "thumbnail_data": {
+      "dvd_portrait": "https://images.cdn.kukufm.com/w:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1o9Bl99VJ7YE4HGoQA30Z1jvxjGxhppJ-.png",
+      "title_image": "https://images.cdn.kukufm.com/h:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/219432/1xDXf4_yRVKiyuml_4LxZFeV7GlSi86mp.png"
+    },
     "labels": [
       "All Episodes",
       "7+"
@@ -132,14 +147,13 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 18930,
-      "n_listens": 18930,
+      "n_plays": 19404,
+      "n_listens": 19404,
       "n_comments": 5,
       "cover_type": null,
       "content": {
         "url": "https://d1l07mcd18xic4.cloudfront.net/audio/fcd555d8-eb95-4505-8f08-767b63d824aafull.mp4",
         "hls_url": "https://d1l07mcd18xic4.cloudfront.net/audio/fcd555d8-eb95-4505-8f08-767b63d824aa.m3u8",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/ae1ccd22-2d4d-4a9f-86d7-c7c4a932d4d4.m3u8",
         "subtitle_url": "https://d1l07mcd18xic4.cloudfront.net/audio-transcripts/fcd555d8-eb95-4505-8f08-767b63d824aa.srt"
       },
       "dynamic_link": "https://applinks.kukufm.com/TjP152q82FpM9BS37",
@@ -153,7 +167,7 @@
       "is_demo_premium": true,
       "media_size": 2854441,
       "published_on": "2023-11-30T02:26:02.061958+00:00",
-      "seek_position": 0
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg"
     },
     "is_self": false,
     "ad_enabled": false,
@@ -176,7 +190,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/a267d86e7ba04883887435564b0cb84b.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/a267d86e7ba04883887435564b0cb84b.jpeg"
           },
-          "n_followers": 1684,
+          "n_followers": 1717,
           "contribution_type": "quality_assurance",
           "is_primary_creator": false,
           "is_followed": false
@@ -191,7 +205,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/edad9e198b274ef8b8ecbe64a638f880.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/edad9e198b274ef8b8ecbe64a638f880.jpeg"
           },
-          "n_followers": 628,
+          "n_followers": 634,
           "contribution_type": "production_house",
           "is_primary_creator": true,
           "is_followed": false
@@ -206,7 +220,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/345a0c67c0974e98a4112779151b1b9a.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/345a0c67c0974e98a4112779151b1b9a.jpeg"
           },
-          "n_followers": 3541,
+          "n_followers": 3586,
           "contribution_type": "director",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -222,7 +236,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/ceee4e6d9e4b4cfebf83f1d8fe4209a2.AOh14GhZWWp8mL-zYnOioGP_R8l2kQN6kvvyBzKCepuhoAs96-c",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/ceee4e6d9e4b4cfebf83f1d8fe4209a2.AOh14GhZWWp8mL-zYnOioGP_R8l2kQN6kvvyBzKCepuhoAs96-c"
           },
-          "n_followers": 475,
+          "n_followers": 484,
           "contribution_type": "writer",
           "is_primary_creator": true,
           "is_followed": false
@@ -237,7 +251,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/edad9e198b274ef8b8ecbe64a638f880.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/edad9e198b274ef8b8ecbe64a638f880.jpeg"
           },
-          "n_followers": 628,
+          "n_followers": 634,
           "contribution_type": "voice_artist",
           "is_primary_creator": false,
           "is_followed": false
@@ -274,7 +288,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 18930,
+      "n_listens": 19398,
       "n_comments": 5,
       "cover_type": null,
       "content": {
@@ -297,6 +311,8 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-1-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
@@ -304,6 +320,7 @@
       "is_downloaded": false,
       "is_self": false,
       "last_base_unlock": true,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -323,7 +340,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 7980,
+      "n_listens": 8204,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -347,12 +364,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-1-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -372,7 +392,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 7178,
+      "n_listens": 7356,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -396,12 +416,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -421,7 +444,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 6349,
+      "n_listens": 6506,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -445,12 +468,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-3-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -470,7 +496,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5884,
+      "n_listens": 6006,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -494,12 +520,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-4",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -519,7 +548,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5493,
+      "n_listens": 5621,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -543,12 +572,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-5",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -568,7 +600,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5038,
+      "n_listens": 5155,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -592,12 +624,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-6",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -617,7 +652,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4716,
+      "n_listens": 4825,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -641,12 +676,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-7",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -666,7 +704,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4725,
+      "n_listens": 4818,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -690,12 +728,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-8",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -715,7 +756,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4426,
+      "n_listens": 4511,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -739,12 +780,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-9",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -764,7 +808,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4306,
+      "n_listens": 4411,
       "n_comments": 2,
       "cover_type": null,
       "content": {
@@ -788,12 +832,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-10",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -813,7 +860,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4020,
+      "n_listens": 4106,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -837,12 +884,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-11",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -862,7 +912,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4054,
+      "n_listens": 4141,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -886,12 +936,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-12",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -911,7 +964,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4255,
+      "n_listens": 4349,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -935,12 +988,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-13",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -960,7 +1016,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4049,
+      "n_listens": 4137,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -984,12 +1040,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-14",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1009,7 +1068,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3790,
+      "n_listens": 3879,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1033,12 +1092,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-15",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1058,7 +1120,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3829,
+      "n_listens": 3908,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1082,12 +1144,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-16",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1107,7 +1172,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4136,
+      "n_listens": 4218,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1131,12 +1196,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-17",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1156,7 +1224,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3882,
+      "n_listens": 3957,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1180,12 +1248,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-18",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1205,7 +1276,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3964,
+      "n_listens": 4036,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1229,12 +1300,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-19",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1254,7 +1328,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3645,
+      "n_listens": 3725,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1278,12 +1352,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-20",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1303,7 +1380,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3620,
+      "n_listens": 3698,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1327,12 +1404,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-21",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1352,7 +1432,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3494,
+      "n_listens": 3561,
       "n_comments": 5,
       "cover_type": null,
       "content": {
@@ -1376,12 +1456,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-22",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1401,7 +1484,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4045,
+      "n_listens": 4138,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1425,12 +1508,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/8068cd9cbabc451994ed63596adb34b0.jpeg",
       "web_uri": "/episode/agaalam-ep-23-corrected-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     }
   ],
@@ -1445,7 +1531,7 @@
   "first_locked_episode_title": "1.2. Agaalam",
   "seo_description": "",
   "ads_info": {
-    "interstitial_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Interstitial2.1750061859",
-    "reward_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Rewarded2.1750061900"
+    "interstitial_unit_id": "ca-app-pub-4561182393559685/8104245285",
+    "reward_unit_id": "ca-app-pub-4561182393559685/3766806802"
   }
 }

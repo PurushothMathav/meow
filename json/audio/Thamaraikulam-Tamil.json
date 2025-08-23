@@ -13,7 +13,7 @@
     "language": "tamil",
     "published_on": "2023-12-15T02:13:29+00:00",
     "status": "live",
-    "n_listens": 46982,
+    "n_listens": 49142,
     "is_verified": false,
     "dynamic_link": "https://applinks.kukufm.com/Z8bbPUphNcLenETJ9",
     "uri": "app://kukufm/show/thamaraikulam/",
@@ -44,7 +44,7 @@
     "is_comments_exposure_enabled": false,
     "is_adult_content": false,
     "sharing_text": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा",
-    "sharing_text_v2": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा \nhttps://links.kukufm.com/5QYds8",
+    "sharing_text_v2": "हेलो! मैंने Kuku FM (Android)  पर यह शो सुना और मुझे यकीन है कि आपको भी यह जरूर पसंद आएगा। \nhttps://links.kukufm.com/5QYds8",
     "completion_status": 1,
     "description": "Oru Kodiya Saabathaal.. Pen pithu piditha oru manthiravaathi Pei seiyum kodoora sambavangalaal kastapadugiradhu Sophia vin Kudumbam. Sophia veettu Velaikkaari Clara , Kovilagathai serntha Udhayan , Namboothiri, Church Father Gabriel koottaniyil andha theeya sakthiyai ethirthu poraada nalla sakthigal inaigindrana. Theemaikkum nanmaikkum idaiyil nadakkum intha poraattathil yaar vella pogiraargal. Therinthu kolla kelungal. Thamarai Kulam - Kottayam Pushpanath in Thigil Kathai ",
     "description_secondary": "Oru Kodiya Saabathaal.. Pen pithu piditha oru manthiravaathi Pei seiyum kodoora sambavangalaal kastapadugiradhu Sophia vin Kudumbam. Sophia veettu Velaikkaari Clara , Kovilagathai serntha Udhayan , Namboothiri, Church Father Gabriel koottaniyil andha theeya sakthiyai ethirthu poraada nalla sakthigal inaigindrana. Theemaikkum nanmaikkum idaiyil nadakkum intha poraattathil yaar vella pogiraargal. Therinthu kolla kelungal. Thamarai Kulam - Kottayam Pushpanath in Thigil Kathai ",
@@ -132,14 +132,13 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 6354,
-      "n_listens": 6354,
+      "n_plays": 6742,
+      "n_listens": 6742,
       "n_comments": 0,
       "cover_type": null,
       "content": {
         "url": "https://d1l07mcd18xic4.cloudfront.net/audio/order_01_name_9789354345180_001full.mp4",
-        "hls_url": "https://d1l07mcd18xic4.cloudfront.net/audio/order_01_name_9789354345180_001.m3u8",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/a6c3aa8a-b239-4db7-abea-6d5995b17695.m3u8"
+        "hls_url": "https://d1l07mcd18xic4.cloudfront.net/audio/order_01_name_9789354345180_001.m3u8"
       },
       "dynamic_link": null,
       "is_premium": true,
@@ -152,7 +151,7 @@
       "is_demo_premium": true,
       "media_size": 15472817,
       "published_on": "2023-12-15T02:13:29+00:00",
-      "seek_position": 0
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg"
     },
     "is_self": false,
     "ad_enabled": false,
@@ -175,7 +174,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/0444a0964f61415f840f42af7b48bfce.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/0444a0964f61415f840f42af7b48bfce.jpeg"
           },
-          "n_followers": 7354,
+          "n_followers": 7607,
           "contribution_type": "director",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -191,7 +190,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/75c0f1ca8a4a446498a01d3939f6947a.png",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/75c0f1ca8a4a446498a01d3939f6947a.png"
           },
-          "n_followers": 4935,
+          "n_followers": 5107,
           "contribution_type": "producer",
           "is_primary_creator": true,
           "is_followed": false
@@ -228,7 +227,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 6354,
+      "n_listens": 6742,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -251,6 +250,8 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-1-1614",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
@@ -258,6 +259,7 @@
       "is_downloaded": false,
       "is_self": false,
       "last_base_unlock": true,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -277,7 +279,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2856,
+      "n_listens": 2983,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -301,12 +303,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-2-906",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -326,7 +331,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2316,
+      "n_listens": 2401,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -350,12 +355,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-3-848",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -375,7 +383,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2128,
+      "n_listens": 2219,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -399,12 +407,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-4-809",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -424,7 +435,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1949,
+      "n_listens": 2029,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -448,12 +459,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-5-769",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -473,7 +487,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1808,
+      "n_listens": 1882,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -497,12 +511,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-6-691",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -522,7 +539,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1795,
+      "n_listens": 1866,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -546,12 +563,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-7-626",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -571,7 +591,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1562,
+      "n_listens": 1635,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -595,12 +615,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-8-560",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -620,7 +643,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1479,
+      "n_listens": 1542,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -644,12 +667,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-9-484",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -669,7 +695,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1565,
+      "n_listens": 1624,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -693,12 +719,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-10-525",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -718,7 +747,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1380,
+      "n_listens": 1440,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -742,12 +771,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-11-442",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -767,7 +799,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1407,
+      "n_listens": 1476,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -791,12 +823,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-12-404",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -816,7 +851,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1353,
+      "n_listens": 1411,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -840,12 +875,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-13-362",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -865,7 +903,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1341,
+      "n_listens": 1400,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -889,12 +927,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-14-338",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -914,7 +955,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1356,
+      "n_listens": 1420,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -938,12 +979,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-15-302",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -963,7 +1007,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1305,
+      "n_listens": 1357,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -987,12 +1031,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-16-255",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1012,7 +1059,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1289,
+      "n_listens": 1341,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1036,12 +1083,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-17-225",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1061,7 +1111,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1426,
+      "n_listens": 1485,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1085,12 +1135,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-18-206",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1110,7 +1163,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1300,
+      "n_listens": 1369,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1134,12 +1187,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-19-182",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1159,7 +1215,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1217,
+      "n_listens": 1274,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1183,12 +1239,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-20-178",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1208,7 +1267,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1274,
+      "n_listens": 1337,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1232,12 +1291,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-21-167",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1257,7 +1319,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1217,
+      "n_listens": 1273,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1281,12 +1343,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-22-137",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1306,7 +1371,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1255,
+      "n_listens": 1307,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1330,12 +1395,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-23-118",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1355,7 +1423,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1186,
+      "n_listens": 1238,
       "n_comments": 1,
       "cover_type": null,
       "content": {
@@ -1379,12 +1447,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-24-107",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1404,7 +1475,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1147,
+      "n_listens": 1201,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1428,12 +1499,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-25-97",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1453,7 +1527,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1180,
+      "n_listens": 1233,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1477,12 +1551,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-26-82",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1502,7 +1579,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1222,
+      "n_listens": 1282,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1526,12 +1603,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-27-76",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1551,8 +1631,8 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1316,
-      "n_comments": 0,
+      "n_listens": 1375,
+      "n_comments": 1,
       "cover_type": null,
       "content": {
         "converted_hls_url": "https://kukufm.akamaized.net/audio/order_28_name_9789354345180_028.m3u8",
@@ -1575,12 +1655,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://kukufm.s3.ap-south-1.amazonaws.com/storytel_v2/9789354345180/9789354345180.jpg",
       "web_uri": "/episode/chapter-28-72",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     }
   ],
@@ -1595,7 +1678,7 @@
   "first_locked_episode_title": "2. Claravin Adhirchi  ",
   "seo_description": "",
   "ads_info": {
-    "interstitial_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Interstitial2.1750061859",
-    "reward_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Rewarded2.1750061900"
+    "interstitial_unit_id": "ca-app-pub-4561182393559685/8104245285",
+    "reward_unit_id": "ca-app-pub-4561182393559685/3766806802"
   }
 }

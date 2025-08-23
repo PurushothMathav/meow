@@ -13,7 +13,7 @@
     "language": "tamil",
     "published_on": "2021-11-17T09:04:35.231945+00:00",
     "status": "live",
-    "n_listens": 226217,
+    "n_listens": 227885,
     "is_verified": false,
     "dynamic_link": "https://applinks.kukufm.com/7aGoJssaaYaWMs8P8",
     "uri": "app://kukufm/show/ஞானகுரு/",
@@ -44,7 +44,7 @@
     "is_comments_exposure_enabled": false,
     "is_adult_content": false,
     "sharing_text": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा",
-    "sharing_text_v2": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा \nhttps://links.kukufm.com/tAnSrn",
+    "sharing_text_v2": "हेलो! मैंने Kuku FM (Android)  पर यह शो सुना और मुझे यकीन है कि आपको भी यह जरूर पसंद आएगा। \nhttps://links.kukufm.com/tAnSrn",
     "completion_status": 1,
     "description": "Poovaaga irukkum ungalai oru puyalaaga maatrapogum oru marmayogi - gnana guru",
     "description_secondary": "Poovaaga irukkum ungalai oru puyalaaga maatrapogum oru marmayogi - gnana guru",
@@ -101,14 +101,29 @@
         "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/529fc28b7b3d4dc8b750133e8ae0b4ee_landscape_784.png",
         "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/529fc28b7b3d4dc8b750133e8ae0b4ee_landscape_784.png"
       },
-      "vertical_thumbnail": null,
+      "title_image": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1JSAQYPhm0B_6SNQm8EF2BZ2ORKQuz-k1.png",
+      "title_image_sizes": {
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1JSAQYPhm0B_6SNQm8EF2BZ2ORKQuz-k1.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1JSAQYPhm0B_6SNQm8EF2BZ2ORKQuz-k1.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1JSAQYPhm0B_6SNQm8EF2BZ2ORKQuz-k1.png"
+      },
+      "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1ZIHFI14CJqe3hmTHbiRm2MfkXNxaSk9b.png",
+      "reel_image_sizes": {
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1ZIHFI14CJqe3hmTHbiRm2MfkXNxaSk9b.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1ZIHFI14CJqe3hmTHbiRm2MfkXNxaSk9b.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1ZIHFI14CJqe3hmTHbiRm2MfkXNxaSk9b.png"
+      },
+      "vertical_thumbnail": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1ZIHFI14CJqe3hmTHbiRm2MfkXNxaSk9b.png",
       "vertical_thumbnail_image_sizes": {
-        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
-        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
-        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png"
+        "360": "https://images.cdn.kukufm.com/w:360/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1ZIHFI14CJqe3hmTHbiRm2MfkXNxaSk9b.png",
+        "480": "https://images.cdn.kukufm.com/w:480/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1ZIHFI14CJqe3hmTHbiRm2MfkXNxaSk9b.png",
+        "720": "https://images.cdn.kukufm.com/w:720/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1ZIHFI14CJqe3hmTHbiRm2MfkXNxaSk9b.png"
       }
     },
-    "thumbnail_data": {},
+    "thumbnail_data": {
+      "dvd_portrait": "https://images.cdn.kukufm.com/w:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1-2daTEvj5G4k1KTuZVvQs5ga_hV_xuRU.png",
+      "title_image": "https://images.cdn.kukufm.com/h:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons_v2/96046/1JSAQYPhm0B_6SNQm8EF2BZ2ORKQuz-k1.png"
+    },
     "labels": [
       "All Episodes",
       "13+"
@@ -132,14 +147,13 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 32130,
-      "n_listens": 32130,
+      "n_plays": 32555,
+      "n_listens": 32555,
       "n_comments": 13,
       "cover_type": "custom",
       "content": {
         "url": "https://d1l07mcd18xic4.cloudfront.net/audio/9f4554a3-8fa7-4e93-9c5d-c572fab82a69full.mp4",
-        "hls_url": "https://d1l07mcd18xic4.cloudfront.net/audio/9f4554a3-8fa7-4e93-9c5d-c572fab82a69.m3u8",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/ae1ccd22-2d4d-4a9f-86d7-c7c4a932d4d4.m3u8"
+        "hls_url": "https://d1l07mcd18xic4.cloudfront.net/audio/9f4554a3-8fa7-4e93-9c5d-c572fab82a69.m3u8"
       },
       "dynamic_link": "https://applinks.kukufm.com/Cb8JekN5C7yr5NLp9",
       "is_premium": true,
@@ -152,7 +166,7 @@
       "is_demo_premium": true,
       "media_size": 6195543,
       "published_on": "2021-10-10T16:13:59.029272+00:00",
-      "seek_position": 0
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png"
     },
     "is_self": false,
     "ad_enabled": false,
@@ -175,7 +189,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/0444a0964f61415f840f42af7b48bfce.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/0444a0964f61415f840f42af7b48bfce.jpeg"
           },
-          "n_followers": 7354,
+          "n_followers": 7607,
           "contribution_type": "director",
           "is_primary_creator": true,
           "badge_type": "popular",
@@ -191,7 +205,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/120a0357558d47498574172a6221d515.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/120a0357558d47498574172a6221d515.jpeg"
           },
-          "n_followers": 3549,
+          "n_followers": 3684,
           "contribution_type": "sound_engineer",
           "is_primary_creator": false,
           "is_followed": false
@@ -249,7 +263,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 32132,
+      "n_listens": 32552,
       "n_comments": 13,
       "cover_type": "custom",
       "content": {
@@ -272,12 +286,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-1",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -297,7 +314,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 10750,
+      "n_listens": 10830,
       "n_comments": 2,
       "cover_type": "custom",
       "content": {
@@ -321,12 +338,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-2",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -346,7 +366,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 10136,
+      "n_listens": 10223,
       "n_comments": 3,
       "cover_type": "custom",
       "content": {
@@ -370,12 +390,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-3",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -395,7 +418,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 9675,
+      "n_listens": 9752,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -419,12 +442,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-4",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -444,7 +470,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 8669,
+      "n_listens": 8749,
       "n_comments": 4,
       "cover_type": "custom",
       "content": {
@@ -468,12 +494,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-5",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -493,7 +522,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 7475,
+      "n_listens": 7531,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -517,12 +546,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-6",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -542,7 +574,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 6943,
+      "n_listens": 6989,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -566,12 +598,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-7",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -591,7 +626,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 6637,
+      "n_listens": 6683,
       "n_comments": 2,
       "cover_type": "custom",
       "content": {
@@ -615,12 +650,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-8",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -640,7 +678,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 6011,
+      "n_listens": 6049,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -664,12 +702,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-9",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -689,7 +730,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5919,
+      "n_listens": 5955,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -713,12 +754,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-10",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -738,7 +782,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5731,
+      "n_listens": 5769,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -762,12 +806,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-11",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -787,7 +834,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5357,
+      "n_listens": 5389,
       "n_comments": 3,
       "cover_type": "custom",
       "content": {
@@ -811,12 +858,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-12",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -836,7 +886,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4880,
+      "n_listens": 4907,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -860,12 +910,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-13",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -885,7 +938,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4750,
+      "n_listens": 4794,
       "n_comments": 2,
       "cover_type": "custom",
       "content": {
@@ -909,12 +962,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-14",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -934,7 +990,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5238,
+      "n_listens": 5277,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -958,12 +1014,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-15",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -983,7 +1042,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5358,
+      "n_listens": 5399,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1007,12 +1066,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-16",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1032,7 +1094,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4453,
+      "n_listens": 4487,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1056,12 +1118,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-17",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1081,7 +1146,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4380,
+      "n_listens": 4409,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -1105,12 +1170,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-18",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1130,7 +1198,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4361,
+      "n_listens": 4395,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1154,12 +1222,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-19",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1179,7 +1250,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4296,
+      "n_listens": 4325,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1203,12 +1274,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-20",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1228,7 +1302,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4219,
+      "n_listens": 4251,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -1252,12 +1326,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-21",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1277,7 +1354,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4154,
+      "n_listens": 4186,
       "n_comments": 4,
       "cover_type": "custom",
       "content": {
@@ -1301,12 +1378,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-22",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1326,7 +1406,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3893,
+      "n_listens": 3917,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -1350,12 +1430,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-23",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1375,7 +1458,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3927,
+      "n_listens": 3956,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1399,12 +1482,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-24",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1424,7 +1510,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3870,
+      "n_listens": 3891,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -1448,12 +1534,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-25",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1473,7 +1562,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3758,
+      "n_listens": 3780,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1497,12 +1586,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-26",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1522,7 +1614,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3716,
+      "n_listens": 3733,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1546,12 +1638,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-27",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1571,7 +1666,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3726,
+      "n_listens": 3747,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1595,12 +1690,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-28",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1620,7 +1718,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3709,
+      "n_listens": 3727,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -1644,12 +1742,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-29",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1669,7 +1770,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3718,
+      "n_listens": 3733,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1693,12 +1794,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-30",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1718,7 +1822,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3770,
+      "n_listens": 3788,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -1742,12 +1846,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-31",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1767,7 +1874,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3569,
+      "n_listens": 3583,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1791,12 +1898,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-32",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1816,7 +1926,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3537,
+      "n_listens": 3551,
       "n_comments": 2,
       "cover_type": "custom",
       "content": {
@@ -1840,12 +1950,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-33",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1865,7 +1978,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3385,
+      "n_listens": 3402,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -1889,12 +2002,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-34",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1914,7 +2030,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3255,
+      "n_listens": 3273,
       "n_comments": 1,
       "cover_type": "custom",
       "content": {
@@ -1938,12 +2054,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-35",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1963,7 +2082,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3369,
+      "n_listens": 3388,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -1987,12 +2106,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-36",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2012,7 +2134,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3327,
+      "n_listens": 3349,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -2036,12 +2158,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-37",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2061,7 +2186,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3223,
+      "n_listens": 3238,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -2085,12 +2210,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-38",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2110,7 +2238,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3228,
+      "n_listens": 3245,
       "n_comments": 0,
       "cover_type": "custom",
       "content": {
@@ -2134,12 +2262,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-39",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2159,7 +2290,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3666,
+      "n_listens": 3688,
       "n_comments": 10,
       "cover_type": "custom",
       "content": {
@@ -2183,12 +2314,15 @@
       "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/cu_icons/691d99b559a3434697b71055215d75fa.png",
       "web_uri": "/episode/guna-guru-40",
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     }
   ],
@@ -2203,7 +2337,7 @@
   "first_locked_episode_title": "2. Pathippurai",
   "seo_description": "",
   "ads_info": {
-    "interstitial_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Interstitial2.1750061859",
-    "reward_unit_id": "/23081990290,23155115523/com.vlv.aravali.lovenasha.Rewarded2.1750061900"
+    "interstitial_unit_id": "ca-app-pub-4561182393559685/8104245285",
+    "reward_unit_id": "ca-app-pub-4561182393559685/3766806802"
   }
 }
