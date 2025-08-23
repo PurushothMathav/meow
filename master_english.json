@@ -1,5 +1,114 @@
 {
   "sections": [
+{
+	"title": "New Releases",
+  "shows": [
+    {
+      "id": "270310",
+      "title": "Blood Contract",
+      "slug": "blood-contract",
+      "language": "english",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 50,
+      "n_seasons": 1,
+      "show_type": "audio",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/94af70e6d35b4a2880e22b0bb70c5306.png",
+      "description": "Rosy, a woman who has lost everything—her job, her direction, her purpose—crosses paths with Sam, a wealthy and enigmatic vampire. When he offers her an unusual proposition to become his contract bride, Rosy faces an impossible choice. Though terrified by the shadows of Sam's otherworldly existence, she accepts his offer, seeing it as her last chance at a meaningful life. As their arrangement unfolds, Rosy is drawn deeper into a realm of immortal desires and dangerous secrets, where the line between opportunity and oblivion grows increasingly thin.",
+      "link": "final14/Blood Contract-English.json"
+    },
+    {
+      "id": "270314",
+      "title": "My Handsome Bodyguard",
+      "slug": "my-handsome-bodyguard-6",
+      "language": "english",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 50,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/bb19903eacf240ac84cc357b213be077.png",
+      "description": "When Lea unexpectedly inherits her father's mafia empire, she refuses to play by the old rules. Determined to transform the family business, she makes bold, risky moves that send shockwaves through the criminal underworld—earning her powerful enemies, including her vengeful ex-fiancé Michael. As threats close in from all sides, Lea finds an unlikely ally in Ryan, the stoic, devastatingly handsome bodyguard assigned to protect her. What begins as a professional relationship soon ignites into something far more dangerous and passionate. Now, as Lea fights to cement her position in a world where women are never meant to lead, she discovers that her greatest vulnerability might be her growing feelings for the one man sworn to take a bullet for her—her handsome bodyguard.",
+      "link": "final14/My Handsome Bodyguard-English.json"
+    },
+    {
+      "id": "274506",
+      "title": "The CEO's Maid Turned Out To Be The Heiress",
+      "slug": "the-ceos-maid-turned-out-to-be-the-heiress",
+      "language": "english",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 55,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/22851e668ff04f3f9510138a758d79b1.png",
+      "description": "The CEOs Maid Turns Out To Be The Heiress",
+      "link": "final14/The CEO's Maid Turned Out To Be The Heiress-English.json"
+    },
+    {
+      "id": "269299",
+      "title": "The Couple Came From Hell",
+      "slug": "the-couple-came-from-hell-6",
+      "language": "english",
+      "genre": {
+        "id": 3,
+        "title": "प्यार",
+        "slug": "love",
+        "uri": "app://app/genres/love",
+        "web_uri": "/genres/love"
+      },
+      "n_episodes": 50,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/50d2f0ca7a9f46b7a4372eb974e34784.png",
+      "description": "Chinn's husband, Lumor, jumped from the rooftop to prove his innocence, while Chinn was tragically killed in the chaos. However, she was reborn with memories of her past and resolved to change her fate. In her new life, Chinn uncovered the conspiracies behind Stacy and Camor. Determined to secure her husband's and her own future, she began to turn the tables and set up her own counterattacks, ultimately achieving victory.",
+      "link": "final14/The Couple Came From Hell-English.json"
+    },
+    {
+      "id": "260761",
+      "title": "The Fiance Who Sold Me",
+      "slug": "the-fiance-who-sold-me",
+      "language": "english",
+      "genre": {
+        "id": 3,
+        "title": "प्यार",
+        "slug": "love",
+        "uri": "app://app/genres/love",
+        "web_uri": "/genres/love"
+      },
+      "n_episodes": 79,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6add11ad509a4576aceb0c137d3ada3e.png",
+      "description": "In this story, Song Mingzhe's company goes bankrupt, leaving him in severe debt to loan sharks. In a desperate attempt to repay his debts, he makes the shocking decision to sell his fiancée, Zhou Qing, to the mafia to become their mistress.",
+      "link": "final14/The Fiance Who Sold Me-English.json"
+    }
+  ]
+},  
+  
+  
+  
+  
     {
       "title": "Uncategory1",
       "shows": [

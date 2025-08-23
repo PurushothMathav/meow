@@ -13,7 +13,7 @@
     "language": "bengali",
     "published_on": "2025-07-18T12:35:08.715012+00:00",
     "status": "live",
-    "n_listens": 65568,
+    "n_listens": 105371,
     "is_verified": false,
     "dynamic_link": "https://links.kukufm.com/QtksPX",
     "uri": "app://kukufm/show/my-dangerous-husband-1/",
@@ -44,7 +44,7 @@
     "is_comments_exposure_enabled": false,
     "is_adult_content": false,
     "sharing_text": "हेलो! मैंने कुकू एफएम पर इस शो को सुना और मेरे ख्‍याल से आपको भी पसंद आएगा",
-    "sharing_text_v2": "हेलो! मैंने Kuku FM (Android)  पर यह शो सुना और मुझे यकीन है कि आपको भी यह जरूर पसंद आएगा। \nhttps://links.kukufm.com/QtksPX",
+    "sharing_text_v2": "हेलो! मैंने Kuku FM (Android)  पर यह शो सुना और मुझे यकीन है कि आपको भी यह जरूर पसंद आएगा। \nhttps://links.kukufm.com/XrnXkX",
     "completion_status": 1,
     "description": "সে তার হবু বরকে অন্য নারীর সঙ্গে দেখে চমকে ওঠে এবং সঙ্গে-সঙ্গে বিয়ে বাতিল করে দেয়। তারপর হঠাৎই এক ডাক্তারকে তার ভালো লেগে যায়। সবে মাত্র তার সাথে দেখা হয়েছে। আর তাতেই ভালো লাগা। সেখান থেকে সে ডাক্তারকে বিয়ে পর্যন্ত করার সিদ্ধান্ত নিয়ে ফেলে। পরে জানতে পারে, এই ডাক্তারই তাকে মনে মনে বিগত তিন বছর ধরে ভালোবেসে চলেছে। হঠাৎ ভাঙা বিয়ে আর হঠাৎ গড়া প্রেমের দোটানায় তার জীবন এখন কোন দিকে মোড় নেবে, জানতে দেখুন।",
     "description_secondary": "সে তার হবু বরকে অন্য নারীর সঙ্গে দেখে চমকে ওঠে এবং সঙ্গে-সঙ্গে বিয়ে বাতিল করে দেয়। তারপর হঠাৎই এক ডাক্তারকে তার ভালো লেগে যায়। সবে মাত্র তার সাথে দেখা হয়েছে। আর তাতেই ভালো লাগা। সেখান থেকে সে ডাক্তারকে বিয়ে পর্যন্ত করার সিদ্ধান্ত নিয়ে ফেলে। পরে জানতে পারে, এই ডাক্তারই তাকে মনে মনে বিগত তিন বছর ধরে ভালোবেসে চলেছে। হঠাৎ ভাঙা বিয়ে আর হঠাৎ গড়া প্রেমের দোটানায় তার জীবন এখন কোন দিকে মোড় নেবে, জানতে দেখুন।",
@@ -129,6 +129,7 @@
       "All Episodes",
       "13+",
       "video-clip-episode/hls/8f5197be-a596-41bd-b500-e723e7891aa9.m3u8",
+      "https://d1l07mcd18xic4.cloudfront.net/video-episode/858678e4-82d9-4aa4-8ce5-765a459ebb3a/1255832.m3u8",
       "1255832"
     ],
     "is_top_10": false,
@@ -150,14 +151,13 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 2919,
-      "n_listens": 2919,
+      "n_plays": 4768,
+      "n_listens": 4768,
       "n_comments": 0,
       "cover_type": null,
       "content": {
         "url": null,
         "hls_url": "https://d1l07mcd18xic4.cloudfront.net/video-episode/858678e4-82d9-4aa4-8ce5-765a459ebb3a/1255832.m3u8",
-        "premium_audio_url": "https://d1l07mcd18xic4.cloudfront.net/audio/376d833f-84c9-4665-b19f-1b53ad975d58.m3u8",
         "duration": 112,
         "video_dash_url": "https://d1l07mcd18xic4.cloudfront.net/video-episode/858678e4-82d9-4aa4-8ce5-765a459ebb3a/1255832.mpd",
         "dash_url": "https://d1l07mcd18xic4.cloudfront.net/video-episode/858678e4-82d9-4aa4-8ce5-765a459ebb3a/1255832.mpd",
@@ -175,12 +175,13 @@
       "video_thumbnail": "https://images.cdn.kukufm.com/f:webp/https://s3.ap-south-1.amazonaws.com/kukufm/video-thumbnails/show_271643_episode_1255832_3c20a2493d6c4821b3e500b3a23afa58.jpg",
       "media_size": 221435892,
       "published_on": "2025-07-18T12:20:55.016225+00:00",
-      "hide_download_icon": true,
+      "thumbnail_image": "https://images.cdn.kukufm.com/w:200/f:jpg/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/0370e751d3fa4590906d775f3ae3e063.png",
       "other_images": {
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
-      },
-      "seek_position": 0
+      }
     },
+    "preview_url": "https://d1l07mcd18xic4.cloudfront.net/video-clip-episode/hls/8f5197be-a596-41bd-b500-e723e7891aa9.m3u8",
+    "banner_preview_url": "https://d1l07mcd18xic4.cloudfront.net/video-episode/858678e4-82d9-4aa4-8ce5-765a459ebb3a/1255832.m3u8",
     "is_show_page_skip": true,
     "is_self": false,
     "ad_enabled": false,
@@ -203,7 +204,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/ef6e020a724b4e0ba693c22634f59fd1.png",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/ef6e020a724b4e0ba693c22634f59fd1.png"
           },
-          "n_followers": 12,
+          "n_followers": 15,
           "contribution_type": "dubbing_studio",
           "is_primary_creator": false,
           "is_followed": false
@@ -216,7 +217,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/753147051547462e81e36ad2490de67a.jpeg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/753147051547462e81e36ad2490de67a.jpeg"
           },
-          "n_followers": 4,
+          "n_followers": 6,
           "contribution_type": "dubbing_studio",
           "is_primary_creator": false,
           "is_followed": false
@@ -231,7 +232,7 @@
             "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/5ddaa50ee8474b449fcdfa48df08a344.jpg",
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/5ddaa50ee8474b449fcdfa48df08a344.jpg"
           },
-          "n_followers": 13,
+          "n_followers": 16,
           "contribution_type": "director",
           "is_primary_creator": true,
           "is_followed": false
@@ -268,7 +269,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2867,
+      "n_listens": 4749,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -296,12 +297,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -321,7 +325,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1701,
+      "n_listens": 2705,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -349,12 +353,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -374,7 +381,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1416,
+      "n_listens": 2285,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -402,6 +409,8 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
@@ -409,6 +418,7 @@
       "is_downloaded": false,
       "is_self": false,
       "last_base_unlock": true,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -428,7 +438,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1146,
+      "n_listens": 1881,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -457,12 +467,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -482,7 +495,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1235,
+      "n_listens": 2033,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -511,12 +524,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -536,7 +552,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1077,
+      "n_listens": 1716,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -565,12 +581,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -590,7 +609,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1066,
+      "n_listens": 1745,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -619,12 +638,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -644,7 +666,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 1046,
+      "n_listens": 1678,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -673,12 +695,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -698,7 +723,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 919,
+      "n_listens": 1485,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -727,12 +752,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -752,7 +780,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 940,
+      "n_listens": 1511,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -781,12 +809,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -806,7 +837,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 930,
+      "n_listens": 1506,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -835,12 +866,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -860,7 +894,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 829,
+      "n_listens": 1359,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -889,12 +923,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -914,7 +951,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 820,
+      "n_listens": 1335,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -943,12 +980,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -968,7 +1008,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 842,
+      "n_listens": 1362,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -997,12 +1037,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1022,7 +1065,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 789,
+      "n_listens": 1271,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1051,12 +1094,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1076,7 +1122,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 722,
+      "n_listens": 1195,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1105,12 +1151,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1130,7 +1179,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 791,
+      "n_listens": 1299,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1159,12 +1208,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1184,7 +1236,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 774,
+      "n_listens": 1260,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1213,12 +1265,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1238,7 +1293,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 750,
+      "n_listens": 1228,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1267,12 +1322,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1292,7 +1350,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 745,
+      "n_listens": 1208,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1321,12 +1379,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1346,7 +1407,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 722,
+      "n_listens": 1184,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1375,12 +1436,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1400,7 +1464,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 676,
+      "n_listens": 1095,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1429,12 +1493,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1454,7 +1521,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 677,
+      "n_listens": 1101,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1483,12 +1550,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1508,7 +1578,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 642,
+      "n_listens": 1060,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1536,12 +1606,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1561,7 +1634,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 676,
+      "n_listens": 1111,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1590,12 +1663,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1615,7 +1691,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 632,
+      "n_listens": 1053,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1644,12 +1720,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1669,7 +1748,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 647,
+      "n_listens": 1067,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1698,12 +1777,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1723,7 +1805,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 590,
+      "n_listens": 1016,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1752,12 +1834,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1777,7 +1862,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 638,
+      "n_listens": 1101,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1806,12 +1891,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1831,7 +1919,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 643,
+      "n_listens": 1060,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1860,12 +1948,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1885,7 +1976,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 591,
+      "n_listens": 976,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1914,12 +2005,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1939,7 +2033,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 612,
+      "n_listens": 1006,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1968,12 +2062,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -1993,7 +2090,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 625,
+      "n_listens": 1014,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2022,12 +2119,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2047,7 +2147,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 638,
+      "n_listens": 1035,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2076,12 +2176,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2101,7 +2204,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 633,
+      "n_listens": 1047,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2130,12 +2233,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2155,7 +2261,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 614,
+      "n_listens": 989,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2184,12 +2290,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2209,7 +2318,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 586,
+      "n_listens": 933,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2238,12 +2347,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2263,7 +2375,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 567,
+      "n_listens": 917,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2292,12 +2404,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2317,7 +2432,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 581,
+      "n_listens": 935,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2346,12 +2461,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2371,7 +2489,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 595,
+      "n_listens": 949,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2400,12 +2518,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2425,7 +2546,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 535,
+      "n_listens": 888,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2454,12 +2575,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2479,7 +2603,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 523,
+      "n_listens": 857,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2508,12 +2632,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2533,7 +2660,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 533,
+      "n_listens": 860,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2562,12 +2689,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2587,7 +2717,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 568,
+      "n_listens": 926,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2616,12 +2746,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2641,7 +2774,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 574,
+      "n_listens": 932,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2670,12 +2803,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2695,7 +2831,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 523,
+      "n_listens": 855,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2724,12 +2860,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2749,7 +2888,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 546,
+      "n_listens": 879,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2778,12 +2917,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2803,7 +2945,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 553,
+      "n_listens": 880,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2832,12 +2974,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2857,7 +3002,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 586,
+      "n_listens": 935,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2886,12 +3031,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2911,7 +3059,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 573,
+      "n_listens": 919,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2940,12 +3088,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -2965,7 +3116,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 531,
+      "n_listens": 864,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2994,12 +3145,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3019,7 +3173,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 579,
+      "n_listens": 931,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3048,12 +3202,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3073,7 +3230,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 558,
+      "n_listens": 903,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3102,12 +3259,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3127,7 +3287,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 565,
+      "n_listens": 918,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3156,12 +3316,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3181,7 +3344,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 515,
+      "n_listens": 843,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3210,12 +3373,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3235,7 +3401,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 524,
+      "n_listens": 864,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3264,12 +3430,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3289,7 +3458,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 508,
+      "n_listens": 823,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3318,12 +3487,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3343,7 +3515,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 511,
+      "n_listens": 830,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3372,12 +3544,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3397,7 +3572,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 520,
+      "n_listens": 830,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3426,12 +3601,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3451,7 +3629,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 512,
+      "n_listens": 815,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3480,12 +3658,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3505,7 +3686,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 501,
+      "n_listens": 820,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3534,12 +3715,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3559,7 +3743,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 541,
+      "n_listens": 864,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3587,12 +3771,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3612,7 +3799,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 469,
+      "n_listens": 761,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3641,12 +3828,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3666,7 +3856,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 508,
+      "n_listens": 819,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3694,12 +3884,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3719,7 +3912,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 508,
+      "n_listens": 826,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3748,12 +3941,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3773,7 +3969,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 478,
+      "n_listens": 768,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3802,12 +3998,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3827,7 +4026,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 466,
+      "n_listens": 761,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3856,12 +4055,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3881,7 +4083,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 458,
+      "n_listens": 729,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3910,12 +4112,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3935,7 +4140,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 446,
+      "n_listens": 711,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -3964,12 +4169,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -3989,7 +4197,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 512,
+      "n_listens": 822,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4018,12 +4226,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4043,7 +4254,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 457,
+      "n_listens": 740,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4072,12 +4283,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4097,7 +4311,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 462,
+      "n_listens": 748,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4126,12 +4340,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4151,7 +4368,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 468,
+      "n_listens": 747,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4180,12 +4397,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4205,7 +4425,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 481,
+      "n_listens": 778,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4234,12 +4454,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4259,7 +4482,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 440,
+      "n_listens": 701,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4288,12 +4511,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4313,7 +4539,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 474,
+      "n_listens": 762,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4342,12 +4568,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4367,7 +4596,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 459,
+      "n_listens": 729,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4396,12 +4625,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4421,7 +4653,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 470,
+      "n_listens": 762,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4450,12 +4682,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4475,7 +4710,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 428,
+      "n_listens": 703,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4504,12 +4739,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4529,7 +4767,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 389,
+      "n_listens": 663,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4558,12 +4796,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4583,7 +4824,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 423,
+      "n_listens": 690,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4612,12 +4853,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4637,7 +4881,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 396,
+      "n_listens": 657,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4666,12 +4910,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4691,7 +4938,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 426,
+      "n_listens": 695,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4720,12 +4967,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4745,7 +4995,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 420,
+      "n_listens": 682,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4774,12 +5024,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4799,7 +5052,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 403,
+      "n_listens": 685,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4828,12 +5081,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4853,7 +5109,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 429,
+      "n_listens": 708,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4882,12 +5138,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4907,7 +5166,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 451,
+      "n_listens": 736,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4936,12 +5195,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -4961,7 +5223,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 443,
+      "n_listens": 737,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -4990,12 +5252,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5015,7 +5280,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 446,
+      "n_listens": 739,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5044,12 +5309,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5069,7 +5337,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 419,
+      "n_listens": 707,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5098,12 +5366,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5123,7 +5394,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 432,
+      "n_listens": 698,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5152,12 +5423,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5177,7 +5451,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 442,
+      "n_listens": 726,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5206,12 +5480,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5231,7 +5508,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 438,
+      "n_listens": 705,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5260,12 +5537,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5285,7 +5565,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 456,
+      "n_listens": 740,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5314,12 +5594,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5339,7 +5622,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 434,
+      "n_listens": 713,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5368,12 +5651,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5393,7 +5679,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 441,
+      "n_listens": 717,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5422,12 +5708,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5447,7 +5736,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 442,
+      "n_listens": 725,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5476,12 +5765,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5501,7 +5793,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 432,
+      "n_listens": 694,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5530,12 +5822,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5555,7 +5850,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 466,
+      "n_listens": 777,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5584,12 +5879,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5609,7 +5907,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 455,
+      "n_listens": 772,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5638,12 +5936,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5663,7 +5964,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 451,
+      "n_listens": 750,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5692,12 +5993,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5717,7 +6021,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 470,
+      "n_listens": 764,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5746,12 +6050,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     },
     {
@@ -5771,7 +6078,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 730,
+      "n_listens": 1229,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -5800,12 +6107,15 @@
         "reel_image": "https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://images.cdn.kukufm.com/h:400/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/90adf04a1a6740fd915efcddcd1961c6_reel_454.png"
       },
       "view_type": "default",
+      "unlocking_nudge_text": "",
+      "unlocking_nudge_text_v2": "",
       "has_srt": false,
       "has_liked": false,
       "seek_position": 0,
       "can_download": true,
       "is_downloaded": false,
       "is_self": false,
+      "unlock_type": "subscription",
       "transcript": {}
     }
   ],
@@ -5820,7 +6130,7 @@
   "first_locked_episode_title": "EP - 4",
   "seo_description": "She catches her fiancé cheating and abruptly ends their wedding. In a surprising turn, she marries a doctor she’s just met—only to discover he has secretly loved her for three years. With her past broken and an unexpected husband by her side, what path will her life take now?\r\n\r\n",
   "ads_info": {
-    "interstitial_unit_id": "ca-app-pub-4561182393559685/1056837854",
-    "reward_unit_id": "ca-app-pub-4561182393559685/9486057486"
+    "interstitial_unit_id": "ca-app-pub-4561182393559685/8104245285",
+    "reward_unit_id": "ca-app-pub-4561182393559685/3766806802"
   }
 }

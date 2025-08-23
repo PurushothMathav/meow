@@ -2275,7 +2275,7 @@ function renderSections() {
     const showNumbers = shouldShowNumbers(section.title);
     const useSolidNumbers = shouldUseSolidNumbers(section.title);
     
-    const showCardsHTML = section.shows.slice(0, 100).map((show, index) => `
+    const showCardsHTML = section.shows.slice(0, 300).map((show, index) => `
       <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
            ${showNumbers ? `data-rank="${index + 1}"` : ''} 
            onclick="openShow('${show.id}')">
@@ -2344,7 +2344,7 @@ function renderSingleSection(sectionIndex, sectionShows) {
   const useSolidNumbers = shouldUseSolidNumbers(section.title);
   
   // Limit to 100 items for numbered sections, 20 for others
-  const maxItems = showNumbers ? 100 : 30;
+  const maxItems = showNumbers ? 300 : 30;
   const displayShows = sectionShows.slice(0, maxItems);
   
   const showCardsHTML = displayShows.map((show, index) => `
