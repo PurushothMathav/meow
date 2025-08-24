@@ -1392,6 +1392,16 @@ body {
     right: 6px;
   }
 }
+
+/* Hide lazy loading sentinel during view-all mode */
+.lazy-sentinel {
+  pointer-events: none;
+}
+
+/* Additional safety - hide sentinel when any section is in view-all mode */
+.section.view-all-active ~ .lazy-sentinel {
+  display: none !important;
+}
 </style>
 </head>
 <body>
@@ -1558,6 +1568,8 @@ let loadedSections = new Set();
 
 // Master data structure for different languages - will be loaded dynamically
 let masterData = {};
+
+window.sectionDataMap = {};
 
 // DOM elements
 const showsGrid = document.getElementById('showsGrid');
@@ -1947,25 +1959,29 @@ async function loadMasterData() {
   const masterFile = `master_${currentLanguage}.json`;
   
   try {
+    console.log(`Loading master file: ${masterFile}`);
     const response = await fetch(masterFile);
     if (!response.ok) {
       throw new Error(`Failed to fetch ${masterFile}: ${response.status}`);
     }
     
     const data = await response.json();
+    console.log(`Master data loaded: ${data.sections.length} sections`);
+    
     masterData[currentLanguage] = data;
     
-    // Extract all shows from sections for faster access
+    // DO NOT extract episodes here - only show metadata
     allShows = [];
     data.sections.forEach(section => {
       section.shows.forEach(show => {
         allShows.push({
           show: show,
-          episodes: [] // Episodes will be loaded on-demand
+          episodes: [] // Empty - will load ONLY when user clicks play
         });
       });
     });
     
+    console.log(`Total shows in master: ${allShows.length}`);
     return data;
   } catch (error) {
     console.error(`Failed to load master data for ${currentLanguage}:`, error);
@@ -2089,10 +2105,15 @@ function findShowByIdentifier(identifier) {
 
 // Enhanced show loading with direct play support
 async function loadShows() {
+  console.log('=== STARTING PAGE LOAD ===');
+  console.log('Current language:', currentLanguage);
+  
   try {
-    // Load master data only (contains metadata, not full episode data)
+    // This should be the ONLY network request during page load
     const masterDataForLanguage = await loadMasterData();
     sectionsData = masterDataForLanguage?.sections || [];
+    
+    console.log('Master data loaded, sections:', sectionsData.length);
     
     if (sectionsData.length === 0) {
       hideLoading();
@@ -2100,30 +2121,15 @@ async function loadShows() {
       return;
     }
     
-    // Populate allShows with just metadata from master data
-    allShows = [];
-    sectionsData.forEach(section => {
-      section.shows.forEach(show => {
-        allShows.push({
-          show: show,
-          episodes: [] // Episodes will be loaded on-demand when playing
-        });
-      });
-    });
-    
-    // Render sections immediately with master data
+    // This should be instant since we're using master data
     renderSectionsWithMasterData();
     
     hideLoading();
     renderContinueWatching();
     handleUrlParameters();
     
-    // Handle search if URL has search parameter
-    const urlParams = new URLSearchParams(window.location.search);
-    const searchQuery = urlParams.get('s');
-    if (searchQuery) {
-      handleSearch(searchQuery);
-    }
+    console.log('=== PAGE LOAD COMPLETE ===');
+    console.log('Individual episodes will load ONLY when user clicks play');
     
   } catch (error) {
     console.error('Failed to load shows:', error);
@@ -2184,89 +2190,193 @@ function hideLoading() {
   loadingState.style.display = 'none';
 }
 
-// Render sections using master data only (no individual JSON loading needed)
-// Change this section:
 function renderSectionsWithMasterData() {
+  console.log('Rendering sections with lazy loading');
   sectionsContainer.innerHTML = '';
-  sectionsData.forEach((section, sectionIndex) => {
-    const sectionIcon = getSectionIcon(section.title);
-    const showNumbers = shouldShowNumbers(section.title);
-    const useSolidNumbers = shouldUseSolidNumbers(section.title);
-    
-    // CHANGE: Keep separate arrays for initial and all shows
-    const initialShows = section.shows.slice(0, showNumbers ? 20 : 20);
-    const allShows = section.shows; // Keep all shows for view all
-    
-    // Create HTML for initial shows (horizontal scroll)
-    const initialShowCardsHTML = initialShows.map((show, index) => `
-      <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
-           ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-           onclick="openShow('${show.id}')">
-        <img 
-          src="${show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
-          alt="${show.title}"
-          class="show-image"
-          loading="lazy"
-          onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
-        >
-        <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.id}')" title="Share">
-          <i class="fas fa-share"></i>
-        </button>
-        <div class="show-info">
-          <div class="show-title" title="${show.title}">${show.title}</div>
-          <div class="show-episodes">${show.n_episodes || 0} episodes</div>
-        </div>
-      </div>
-    `).join('');
-
-    // Create HTML for all shows (grid view)
-    const allShowCardsHTML = allShows.map((show, index) => `
-      <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
-           ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-           onclick="openShow('${show.id}')">
-        <img 
-          src="${show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
-          alt="${show.title}"
-          class="show-image"
-          loading="lazy"
-          onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
-        >
-        <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.id}')" title="Share">
-          <i class="fas fa-share"></i>
-        </button>
-        <div class="show-info">
-          <div class="show-title" title="${show.title}">${show.title}</div>
-          <div class="show-episodes">${show.n_episodes || 0} episodes</div>
-        </div>
-      </div>
-    `).join('');
-    
-    // CHANGE: Use different HTML for horizontal vs grid
-    sectionsContainer.innerHTML += `
-      <div class="section ${isTopTierSection(section.title) ? 'top-tier' : ''}" id="section-${sectionIndex}">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-icon">${sectionIcon}</span>
-            ${section.title}
-          </h2>
-          <button class="view-all-btn" onclick="toggleSectionView(${sectionIndex})">
-            <span class="view-all-text">View All</span>
-            <span class="view-all-icon">→</span>
-          </button>
-        </div>
-        
-        <div class="shows-wrapper" id="shows-wrapper-${sectionIndex}">
-          <div class="shows-scroll">
-            ${initialShowCardsHTML}
-          </div>
-        </div>
-        
-        <div class="section-grid" id="section-grid-${sectionIndex}">
-          ${allShowCardsHTML}
-        </div>
-      </div>
-    `;
+  
+  // Render only first 3 sections initially
+  const initialSectionsCount = 3;
+  const sectionsToRender = sectionsData.slice(0, initialSectionsCount);
+  
+  sectionsToRender.forEach((section, sectionIndex) => {
+    renderSingleSection(section, sectionIndex);
   });
+  
+  // Set up intersection observer for remaining sections
+  if (sectionsData.length > initialSectionsCount) {
+    setupLazySectionLoading(initialSectionsCount);
+  }
+  
+  console.log(`Rendered ${sectionsToRender.length} sections initially, ${sectionsData.length - initialSectionsCount} sections will lazy load`);
+}
+
+// New function to render a single section
+function renderSingleSection(section, sectionIndex) {
+  const sectionIcon = getSectionIcon(section.title);
+  const showNumbers = shouldShowNumbers(section.title);
+  const useSolidNumbers = shouldUseSolidNumbers(section.title);
+  
+  // Store section data in global map
+  window.sectionDataMap = window.sectionDataMap || {};
+  window.sectionDataMap[sectionIndex] = section;
+  
+  // Render only first 10 shows per section initially
+  const initialShows = section.shows.slice(0, 10);
+  
+  const initialShowCardsHTML = initialShows.map((show, index) => `
+    <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
+         ${showNumbers ? `data-rank="${index + 1}"` : ''} 
+         onclick="openShow('${show.id}')">
+      <img 
+        src="${show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
+        alt="${show.title}"
+        class="show-image"
+        loading="lazy"
+        onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
+      >
+      <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.id}')" title="Share">
+        <i class="fas fa-share"></i>
+      </button>
+      <div class="show-info">
+        <div class="show-title" title="${show.title}">${show.title}</div>
+        <div class="show-episodes">${show.n_episodes || 0} episodes</div>
+      </div>
+    </div>
+  `).join('');
+  
+  sectionsContainer.innerHTML += `
+    <div class="section ${isTopTierSection(section.title) ? 'top-tier' : ''}" 
+         id="section-${sectionIndex}" 
+         data-section-index="${sectionIndex}">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-icon">${sectionIcon}</span>
+          ${section.title}
+        </h2>
+        <button class="view-all-btn" onclick="toggleSectionView(${sectionIndex})">
+          <span class="view-all-text">View All</span>
+          <span class="view-all-icon">→</span>
+        </button>
+      </div>
+      
+      <div class="shows-wrapper" id="shows-wrapper-${sectionIndex}">
+        <div class="shows-scroll">
+          ${initialShowCardsHTML}
+          ${section.shows.length > 10 ? '<div class="show-card skeleton-card" id="load-more-' + sectionIndex + '" onclick="loadMoreShows(' + sectionIndex + ')"><div class="skeleton-image"></div><div class="show-info"><div class="show-title">Load More...</div></div></div>' : ''}
+        </div>
+      </div>
+      
+      <div class="section-grid" id="section-grid-${sectionIndex}">
+        <!-- Grid will be populated when "View All" is clicked -->
+      </div>
+    </div>
+  `;
+}
+
+// Fix the lazy loading to not skip sections and respect view-all mode
+function setupLazySectionLoading(startIndex) {
+  let currentSectionIndex = startIndex;
+  let observer;
+  
+  function createObserver() {
+    if (observer) observer.disconnect();
+    
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        // Don't load new sections if we're in view-all mode
+        if (currentViewAllSection !== null) {
+          return;
+        }
+        
+        if (entry.isIntersecting && currentSectionIndex < sectionsData.length) {
+          // Render the next section with correct index
+          renderSingleSection(sectionsData[currentSectionIndex], currentSectionIndex);
+          currentSectionIndex++;
+          
+          // Add new sentinel if more sections exist
+          if (currentSectionIndex < sectionsData.length) {
+            addLazySentinel();
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '200px' });
+  }
+  
+  createObserver();
+  addLazySentinel();
+  
+  function addLazySentinel() {
+    const existingSentinel = document.querySelector('.lazy-sentinel');
+    if (existingSentinel) {
+      existingSentinel.remove();
+    }
+    
+    const sentinel = document.createElement('div');
+    sentinel.className = 'lazy-sentinel';
+    sentinel.style.height = '1px';
+    sentinel.style.width = '100%';
+    sectionsContainer.appendChild(sentinel);
+    observer.observe(sentinel);
+  }
+  
+  // Store observer reference globally so we can control it
+  window.lazySectionObserver = observer;
+}
+
+// New function to load more shows in a section
+function loadMoreShows(sectionIndex) {
+  // Get section data from global map
+  const section = window.sectionDataMap[sectionIndex];
+  if (!section) {
+    console.error(`Section data not found for index ${sectionIndex}`);
+    return;
+  }
+  
+  const showsWrapper = document.getElementById(`shows-wrapper-${sectionIndex}`);
+  const showsScroll = showsWrapper.querySelector('.shows-scroll');
+  const loadMoreBtn = document.getElementById(`load-more-${sectionIndex}`);
+  
+  // Get currently displayed shows count
+  const currentShows = showsScroll.querySelectorAll('.show-card:not(.skeleton-card)').length;
+  const nextShows = section.shows.slice(currentShows, currentShows + 10);
+  
+  if (nextShows.length === 0) {
+    loadMoreBtn.remove();
+    return;
+  }
+  
+  const showNumbers = shouldShowNumbers(section.title);
+  const useSolidNumbers = shouldUseSolidNumbers(section.title);
+  
+  const newShowsHTML = nextShows.map((show, index) => `
+    <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
+         ${showNumbers ? `data-rank="${currentShows + index + 1}"` : ''} 
+         onclick="openShow('${show.id}')">
+      <img 
+        src="${show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
+        alt="${show.title}"
+        class="show-image"
+        loading="lazy"
+        onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
+      >
+      <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.id}')" title="Share">
+        <i class="fas fa-share"></i>
+      </button>
+      <div class="show-info">
+        <div class="show-title" title="${show.title}">${show.title}</div>
+        <div class="show-episodes">${show.n_episodes || 0} episodes</div>
+      </div>
+    </div>
+  `).join('');
+  
+  // Insert new shows before the load more button
+  loadMoreBtn.insertAdjacentHTML('beforebegin', newShowsHTML);
+  
+  // Remove load more button if all shows are loaded
+  if (currentShows + nextShows.length >= section.shows.length) {
+    loadMoreBtn.remove();
+  }
 }
 
 // Create skeleton loading cards
@@ -2444,11 +2554,22 @@ function getSectionIcon(title) {
 // Track view all state
 let currentViewAllSection = null;
 
-// Toggle section view between horizontal scroll and grid
+// Fix toggleSectionView for lazy loading
 function toggleSectionView(sectionIndex) {
+  // Make sure the section exists in DOM first
   const section = document.getElementById(`section-${sectionIndex}`);
+  if (!section) {
+    console.error(`Section ${sectionIndex} not found in DOM`);
+    return;
+  }
+  
   const horizontalWrapper = document.getElementById(`shows-wrapper-${sectionIndex}`);
   const gridWrapper = document.getElementById(`section-grid-${sectionIndex}`);
+  
+  if (!horizontalWrapper || !gridWrapper) {
+    console.error(`Wrappers not found for section ${sectionIndex}`);
+    return;
+  }
   
   const isGridView = gridWrapper.classList.contains('active');
   
@@ -2465,14 +2586,52 @@ function enterViewAllMode(sectionIndex) {
   const horizontalWrapper = document.getElementById(`shows-wrapper-${sectionIndex}`);
   const gridWrapper = document.getElementById(`section-grid-${sectionIndex}`);
   const viewAllBtn = section.querySelector('.view-all-btn');
-  const viewAllText = viewAllBtn.querySelector('.view-all-text');
-  const viewAllIcon = viewAllBtn.querySelector('.view-all-icon');
-  const backToSections = document.getElementById('backToSections');
+  
+  if (!section || !horizontalWrapper || !gridWrapper || !viewAllBtn) {
+    console.error('Required elements not found for view all mode');
+    return;
+  }
+  
+  // Get section data from global map
+  const sectionData = window.sectionDataMap[sectionIndex];
+  if (!sectionData) {
+    console.error(`Section data not found for index ${sectionIndex}`);
+    showToast('Section not fully loaded yet');
+    return;
+  }
+  
+  const showNumbers = shouldShowNumbers(sectionData.title);
+  const useSolidNumbers = shouldUseSolidNumbers(sectionData.title);
+  
+  const allShowCardsHTML = sectionData.shows.map((show, index) => `
+    <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
+         ${showNumbers ? `data-rank="${index + 1}"` : ''} 
+         onclick="openShow('${show.id}')">
+      <img 
+        src="${show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
+        alt="${show.title}"
+        class="show-image"
+        loading="lazy"
+        onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
+      >
+      <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.id}')" title="Share">
+        <i class="fas fa-share"></i>
+      </button>
+      <div class="show-info">
+        <div class="show-title" title="${show.title}">${show.title}</div>
+        <div class="show-episodes">${show.n_episodes || 0} episodes</div>
+      </div>
+    </div>
+  `).join('');
+  
+  // Populate the grid
+  gridWrapper.innerHTML = allShowCardsHTML;
   
   // Hide all other sections
   const allSections = document.querySelectorAll('.section');
   allSections.forEach((sec, index) => {
-    if (index !== sectionIndex) {
+    const secId = parseInt(sec.id.replace('section-', ''));
+    if (secId !== sectionIndex) {
       sec.classList.add('hidden-for-view-all');
     }
   });
@@ -2484,10 +2643,13 @@ function enterViewAllMode(sectionIndex) {
   
   // Update button
   viewAllBtn.classList.add('active');
+  const viewAllText = viewAllBtn.querySelector('.view-all-text');
+  const viewAllIcon = viewAllBtn.querySelector('.view-all-icon');
   viewAllText.textContent = 'View Less';
   viewAllIcon.textContent = '←';
   
   // Show back button
+  const backToSections = document.getElementById('backToSections');
   backToSections.classList.add('visible');
   
   // Hide continue watching section
@@ -2498,6 +2660,14 @@ function enterViewAllMode(sectionIndex) {
   
   // Set current view all section
   currentViewAllSection = sectionIndex;
+  
+  if (window.lazySectionObserver) {
+    window.lazySectionObserver.disconnect();
+  }
+  const existingSentinel = document.querySelector('.lazy-sentinel');
+  if (existingSentinel) {
+    existingSentinel.remove();
+  }
   
   // Scroll to top
   window.scrollTo({ 
@@ -2546,6 +2716,12 @@ function exitViewAllMode() {
   
   // Reset current section
   currentViewAllSection = null;
+  
+  // Resume lazy loading if there are more sections to load
+  const loadedSectionsCount = document.querySelectorAll('.section').length;
+  if (loadedSectionsCount < sectionsData.length) {
+    setupLazySectionLoading(loadedSectionsCount);
+  }
   
   // Scroll to the section
   section.scrollIntoView({ 
@@ -2601,16 +2777,14 @@ async function openShow(showId) {
     return;
   }
 
-  // Get the JSON filename from the show data
   const jsonFilename = showData.show.link.split('/').pop();
   
-  // Check if we want to open in current page or new player page
   if (window.location.pathname.includes('player.html') || window.location.pathname.includes('test.html')) {
-    // We're already on player page - load episodes on-demand
+    // Load episodes ONLY now when user wants to play
     showToast('Loading episodes...');
     
     try {
-      // Load episodes only when needed (not during initial page load)
+      // Load episodes from JSON file ONLY when needed
       if (!showData.episodes || showData.episodes.length === 0) {
         const response = await fetch(showData.show.link);
         if (!response.ok) throw new Error('Failed to load episodes');
@@ -2639,10 +2813,9 @@ async function openShow(showId) {
       showToast('Failed to load episodes');
     }
   } else {
-    // We're on index page - navigate to player with URL params
+    // Navigate to player page with params
     const watchData = watchHistory[showId];
     const episodeParam = watchData?.episode ? `&episode=${watchData.episode}` : '';
-    
     const langParam = `&lang=${currentLanguage}`;
     window.location.href = `test.html?json=${jsonFilename}${episodeParam}${langParam}`;
   }
