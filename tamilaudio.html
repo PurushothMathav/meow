@@ -1591,7 +1591,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setupMobileMenu();
   updateActiveNavigation();
   handleUrlSearch();
-  setupLazyLoading();
   initializeShareButtons();
   loadShows();
 });
@@ -1705,24 +1704,6 @@ function saveWatchHistory() {
     localStorage.setItem(key, JSON.stringify(watchHistory));
   } catch (e) {
     console.warn('Failed to save watch history:', e);
-  }
-}
-
-// Setup lazy loading
-function setupLazyLoading() {
-  if ('IntersectionObserver' in window) {
-    lazyLoadObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const sectionIndex = parseInt(entry.target.dataset.sectionIndex);
-          loadSectionData(sectionIndex);
-          lazyLoadObserver.unobserve(entry.target);
-        }
-      });
-    }, {
-      rootMargin: '200px 0px',
-      threshold: 0.1
-    });
   }
 }
 
@@ -2109,7 +2090,7 @@ function findShowByIdentifier(identifier) {
 // Enhanced show loading with direct play support
 async function loadShows() {
   try {
-    // Load master data (contains all show metadata)
+    // Load master data only (contains metadata, not full episode data)
     const masterDataForLanguage = await loadMasterData();
     sectionsData = masterDataForLanguage?.sections || [];
     
@@ -2119,8 +2100,19 @@ async function loadShows() {
       return;
     }
     
-    // Render all sections immediately (no lazy loading needed)
-    renderSections();
+    // Populate allShows with just metadata from master data
+    allShows = [];
+    sectionsData.forEach(section => {
+      section.shows.forEach(show => {
+        allShows.push({
+          show: show,
+          episodes: [] // Episodes will be loaded on-demand when playing
+        });
+      });
+    });
+    
+    // Render sections immediately with master data
+    renderSectionsWithMasterData();
     
     hideLoading();
     renderContinueWatching();
@@ -2188,93 +2180,47 @@ async function copyDirectPlayUrl(showId, episodeIndex = 0) {
   }
 }
 
-// Load initial sections (first 2) for instant visibility
-async function loadInitialSections() {
-  const initialSections = sectionsData.slice(0, 2);
-  
-  for (let i = 0; i < initialSections.length; i++) {
-    await loadSectionData(i);
-  }
-}
-
-// Load section data on demand
-async function loadSectionData(sectionIndex) {
-  if (loadedSections.has(sectionIndex) || !sectionsData[sectionIndex]) {
-    return;
-  }
-  
-  const section = sectionsData[sectionIndex];
-  const sectionShows = [];
-  
-  try {
-    // Load shows for this section with limited concurrency
-    const batchSize = 5;
-    const showFiles = section.shows || [];
-    
-    for (let i = 0; i < showFiles.length; i += batchSize) {
-      const batch = showFiles.slice(i, i + batchSize);
-      const batchPromises = batch.map(async (file) => {
-        try {
-          const response = await fetch(file);
-          if (!response.ok) return null;
-          
-          const data = await response.json();
-          if (data.show) {
-            data.show.filename = file.split('/').pop();
-          }
-          return data;
-        } catch (error) {
-          console.warn(`Failed to load ${file}:`, error);
-          return null;
-        }
-      });
-      
-      const results = await Promise.all(batchPromises);
-      sectionShows.push(...results.filter(Boolean));
-    }
-    
-    // Add loaded shows to global array
-    allShows.push(...sectionShows);
-    
-    // Mark section as loaded
-    loadedSections.add(sectionIndex);
-    
-    // Re-render this specific section
-    renderSingleSection(sectionIndex, sectionShows);
-    
-    console.log(`Loaded section ${sectionIndex}: ${sectionShows.length} shows`);
-    
-  } catch (error) {
-    console.error(`Failed to load section ${sectionIndex}:`, error);
-  }
-}
-
-// Load all sections for search functionality
-async function loadAllSectionsForSearch() {
-  const unloadedSections = sectionsData.map((_, index) => index)
-    .filter(index => !loadedSections.has(index));
-  
-  // Load remaining sections in parallel but with controlled concurrency
-  const concurrencyLimit = 3;
-  for (let i = 0; i < unloadedSections.length; i += concurrencyLimit) {
-    const batch = unloadedSections.slice(i, i + concurrencyLimit);
-    await Promise.all(batch.map(loadSectionData));
-  }
-}
-
 function hideLoading() {
   loadingState.style.display = 'none';
 }
 
-// Render sections
-function renderSections() {
+// Render sections using master data only (no individual JSON loading needed)
+// Change this section:
+function renderSectionsWithMasterData() {
   sectionsContainer.innerHTML = '';
   sectionsData.forEach((section, sectionIndex) => {
     const sectionIcon = getSectionIcon(section.title);
     const showNumbers = shouldShowNumbers(section.title);
     const useSolidNumbers = shouldUseSolidNumbers(section.title);
     
-    const showCardsHTML = section.shows.slice(0, 300).map((show, index) => `
+    // CHANGE: Keep separate arrays for initial and all shows
+    const initialShows = section.shows.slice(0, showNumbers ? 20 : 20);
+    const allShows = section.shows; // Keep all shows for view all
+    
+    // Create HTML for initial shows (horizontal scroll)
+    const initialShowCardsHTML = initialShows.map((show, index) => `
+      <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
+           ${showNumbers ? `data-rank="${index + 1}"` : ''} 
+           onclick="openShow('${show.id}')">
+        <img 
+          src="${show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
+          alt="${show.title}"
+          class="show-image"
+          loading="lazy"
+          onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
+        >
+        <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.id}')" title="Share">
+          <i class="fas fa-share"></i>
+        </button>
+        <div class="show-info">
+          <div class="show-title" title="${show.title}">${show.title}</div>
+          <div class="show-episodes">${show.n_episodes || 0} episodes</div>
+        </div>
+      </div>
+    `).join('');
+
+    // Create HTML for all shows (grid view)
+    const allShowCardsHTML = allShows.map((show, index) => `
       <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
            ${showNumbers ? `data-rank="${index + 1}"` : ''} 
            onclick="openShow('${show.id}')">
@@ -2295,31 +2241,31 @@ function renderSections() {
       </div>
     `).join('');
     
-    // Render section with actual data immediately
+    // CHANGE: Use different HTML for horizontal vs grid
     sectionsContainer.innerHTML += `
-  <div class="section ${isTopTierSection(section.title) ? 'top-tier' : ''}" id="section-${sectionIndex}">
-    <div class="section-header">
-      <h2 class="section-title">
-        <span class="section-icon">${sectionIcon}</span>
-        ${section.title}
-      </h2>
-      <button class="view-all-btn" onclick="toggleSectionView(${sectionIndex})">
-        <span class="view-all-text">View All</span>
-        <span class="view-all-icon">→</span>
-      </button>
-    </div>
-    
-    <div class="shows-wrapper" id="shows-wrapper-${sectionIndex}">
-      <div class="shows-scroll">
-        ${showCardsHTML}
+      <div class="section ${isTopTierSection(section.title) ? 'top-tier' : ''}" id="section-${sectionIndex}">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-icon">${sectionIcon}</span>
+            ${section.title}
+          </h2>
+          <button class="view-all-btn" onclick="toggleSectionView(${sectionIndex})">
+            <span class="view-all-text">View All</span>
+            <span class="view-all-icon">→</span>
+          </button>
+        </div>
+        
+        <div class="shows-wrapper" id="shows-wrapper-${sectionIndex}">
+          <div class="shows-scroll">
+            ${initialShowCardsHTML}
+          </div>
+        </div>
+        
+        <div class="section-grid" id="section-grid-${sectionIndex}">
+          ${allShowCardsHTML}
+        </div>
       </div>
-    </div>
-    
-    <div class="section-grid" id="section-grid-${sectionIndex}">
-      ${showCardsHTML}
-    </div>
-  </div>
-`;
+    `;
   });
 }
 
@@ -2334,56 +2280,6 @@ function createSkeletonCards(count = 8) {
   `).join('');
 }
 
-// Render single section after data is loaded
-function renderSingleSection(sectionIndex, sectionShows) {
-  if (isSearchMode) return;
-  
-  const section = sectionsData[sectionIndex];
-  const showNumbers = shouldShowNumbers(section.title);
-  const useSolidNumbers = shouldUseSolidNumbers(section.title);
-  
-  // Limit to 100 items for numbered sections, 20 for others
-  const maxItems = showNumbers ? 300 : 30;
-  const displayShows = sectionShows.slice(0, maxItems);
-  
-  const showCardsHTML = displayShows.map((show, index) => `
-    <div class="show-card ${showNumbers ? 'numbered' : ''} ${showNumbers && useSolidNumbers ? 'solid-number' : ''}" 
-         ${showNumbers ? `data-rank="${index + 1}"` : ''} 
-         onclick="openShow('${show.show.id}')">
-      <img 
-        src="${show.show.share_image_url || 'https://via.placeholder.com/300x400?text=No+Image'}" 
-        alt="${show.show.title}"
-        class="show-image"
-        loading="lazy"
-        onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'"
-      >
-      <!-- Share Button -->
-      <button class="share-btn" onclick="event.stopPropagation(); shareDirectPlayUrl('${show.show.id}')" title="Share">
-        <i class="fas fa-share"></i>
-      </button>
-      <div class="show-info">
-        <div class="show-title" title="${show.show.title}">${show.show.title}</div>
-        <div class="show-episodes">${show.episodes?.length || 0} episodes</div>
-      </div>
-    </div>
-  `).join('');
-  
-  // Update horizontal scroll view
-  const horizontalWrapper = document.getElementById(`shows-wrapper-${sectionIndex}`);
-  if (horizontalWrapper) {
-    const showsScroll = horizontalWrapper.querySelector('.shows-scroll');
-    if (showsScroll) {
-      showsScroll.innerHTML = showCardsHTML;
-    }
-  }
-  
-  // Update grid view
-  const gridWrapper = document.getElementById(`section-grid-${sectionIndex}`);
-  if (gridWrapper) {
-    gridWrapper.innerHTML = showCardsHTML;
-  }
-}
-
 // Handle search
 async function handleSearch(query) {
   // Exit view all mode when searching
@@ -2396,32 +2292,22 @@ async function handleSearch(query) {
     searchResultsHeader.style.display = 'none';
     mainContent.style.display = 'block';
     
-	// Only show continue watching if it has content
-	const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
-		data.progress > 0 && data.progress < 0.95
-	);
+    // Only show continue watching if it has content
+    const watchingShows = Object.entries(watchHistory).filter(([_, data]) => 
+      data.progress > 0 && data.progress < 0.95
+    );
   
-	if (watchingShows.length > 0) {
-		continueSection.style.display = 'block';
-	} else {
-		continueSection.style.display = 'none';
-	}
+    if (watchingShows.length > 0) {
+      continueSection.style.display = 'block';
+    } else {
+      continueSection.style.display = 'none';
+    }
     return;
   }
 
   isSearchMode = true;
   
-  // If allShows is empty (other pages), load master data first
-  if (allShows.length === 0) {
-    try {
-      const masterDataForLanguage = await loadMasterData();
-      // allShows is populated in loadMasterData now
-    } catch (error) {
-      showToast('Search failed to load data');
-      return;
-    }
-  }
-  
+  // Use allShows which now contains master data (no additional loading needed)
   const searchTerm = query.toLowerCase();
   
   const filteredShows = allShows.filter(showData => 
@@ -2489,7 +2375,9 @@ function shouldShowNumbers(sectionTitle) {
     'trending now',
     'top picks',
 	'newly & hot',
-	'new releases'
+	'new releases',
+	'top 20 stories',
+	'top 20 knowledge'
   ];
   
   return numberedSections.some(keyword => 
@@ -2714,14 +2602,15 @@ async function openShow(showId) {
   }
 
   // Get the JSON filename from the show data
-  const jsonFilename = showData.show.filename || showData.show.link.split('/').pop();
+  const jsonFilename = showData.show.link.split('/').pop();
   
   // Check if we want to open in current page or new player page
   if (window.location.pathname.includes('player.html') || window.location.pathname.includes('test.html')) {
-    // We're already on player page - use existing logic
+    // We're already on player page - load episodes on-demand
     showToast('Loading episodes...');
     
     try {
+      // Load episodes only when needed (not during initial page load)
       if (!showData.episodes || showData.episodes.length === 0) {
         const response = await fetch(showData.show.link);
         if (!response.ok) throw new Error('Failed to load episodes');
@@ -2755,7 +2644,7 @@ async function openShow(showId) {
     const episodeParam = watchData?.episode ? `&episode=${watchData.episode}` : '';
     
     const langParam = `&lang=${currentLanguage}`;
-	window.location.href = `test.html?json=${jsonFilename}${episodeParam}${langParam}`;
+    window.location.href = `test.html?json=${jsonFilename}${episodeParam}${langParam}`;
   }
 }
 

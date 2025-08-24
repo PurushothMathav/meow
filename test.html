@@ -2494,7 +2494,9 @@ input:checked + .toggle-slider:before {
 				});
 
 				const networkName = network === 'mobile' ? 'Mobile Networks' : 'Wi-Fi';
-				const qualityName = quality === 'auto' ? 'Auto' : quality === 'best' ? 'Best Quality' : 'Data Saver';
+const qualityName = quality === 'auto' ? 'Auto' : 
+                   quality === 'best' ? 'Best Quality (Auto fallback)' : 
+                   'Data Saver (Auto fallback)';
 				this.showToast(`${networkName}: ${qualityName}`);
 			}
 
@@ -2592,26 +2594,29 @@ if (quality === 'converted_hls_url') {
 					}
 				}
     
-				// Apply the quality if different from current
-				if (targetUrl && targetUrl !== this.getCurrentVideoSource()) {
-					console.log(`Applying ${qualitySetting} quality: ${targetQuality}`);
-					const currentTime = this.video.currentTime;
-					const wasPlaying = !this.video.paused;
-        
-					this.currentQuality = targetQuality;
-					document.getElementById('qualityBtn').innerHTML = 
-						`<i class="fas fa-cog"></i> ${targetQuality.toUpperCase()}`;
-        
-					this.loadVideoSource(targetUrl);
-        
-					// Restore position
-					this.video.addEventListener('canplay', () => {
-						this.video.currentTime = currentTime;
-						if (wasPlaying) {
-							this.video.play();
-						}
-					}, { once: true });
-				}
+// Apply the quality if different from current
+if (targetUrl && targetUrl !== this.getCurrentVideoSource()) {
+    console.log(`Applying ${qualitySetting} quality: ${targetQuality}`);
+    const currentTime = this.video.currentTime;
+    const wasPlaying = !this.video.paused;
+    
+    this.currentQuality = targetQuality;
+    document.getElementById('qualityBtn').innerHTML = 
+        `<i class="fas fa-cog"></i> ${targetQuality.toUpperCase()}`;
+    
+    // Store the attempted quality for fallback
+    this.attemptedQuality = qualitySetting;
+    
+    this.loadVideoSource(targetUrl);
+    
+    // Restore position
+    this.video.addEventListener('canplay', () => {
+        this.video.currentTime = currentTime;
+        if (wasPlaying) {
+            this.video.play();
+        }
+    }, { once: true });
+}
 			}
 
 			// Get current video source URL
@@ -2809,7 +2814,7 @@ setAudioBackground() {
     
     if (backgroundImage && backgroundImage.trim() !== "") {
         this.video.style.backgroundImage = `url("${backgroundImage}")`;
-        this.video.style.backgroundSize = 'contain';
+        this.video.style.backgroundSize = 'fit';
         this.video.style.backgroundPosition = 'center';
         this.video.style.backgroundRepeat = 'no-repeat';
         this.video.style.backgroundColor = '#1a1a1a'; // Fallback color
@@ -2822,6 +2827,7 @@ setAudioBackground() {
 
             changeQuality(quality, url) {
                 this.currentQuality = quality;
+				this.attemptedQuality = quality;
                 const currentTime = this.video.currentTime;
                 const wasPlaying = !this.video.paused;
                 
@@ -2945,26 +2951,80 @@ if (this.currentEpisodes && this.currentEpisodes[this.currentEpisodeIndex]) {
                             this.video.play().catch(e => console.warn('Autoplay prevented:', e));
                         });
 
-                        this.hls.on(Hls.Events.ERROR, (event, data) => {
-                            console.error('HLS Error:', data);
-                            if (data.fatal) {
-                                this.showToast('Failed to load video');
-                                this.hideLoading();
-                            }
-                        });
+this.hls.on(Hls.Events.ERROR, (event, data) => {
+    console.error('HLS Error:', data);
+    if (data.fatal) {
+        // Check if this is a 403 error and we're not already on AUTO
+        if (data.response && data.response.code === 403 && this.currentQuality !== 'auto') {
+            console.log('403 Forbidden detected, falling back to AUTO quality');
+            this.fallbackToAutoQuality();
+        } else {
+            this.showToast('Failed to load video');
+            this.hideLoading();
+        }
+    }
+});
                     } else if (this.video.canPlayType('application/vnd.apple.mpegurl')) {
                         // Native HLS support (Safari)
                         this.video.src = source;
                         this.video.playbackRate = this.currentSpeed; // Restore speed
                         this.video.play().catch(e => console.warn('Autoplay prevented:', e));
                     }
-                } else {
-                    // Direct video file
-                    this.video.src = source;
-                    this.video.playbackRate = this.currentSpeed; // Restore speed
-                    this.video.play().catch(e => console.warn('Autoplay prevented:', e));
-                }
+} else {
+    // Direct video file
+    this.video.src = source;
+    this.video.playbackRate = this.currentSpeed;
+    
+    // Add error handling for direct video
+    this.video.addEventListener('error', (e) => {
+        if (this.currentQuality !== 'auto') {
+            console.log('Direct video error, falling back to AUTO quality');
+            this.fallbackToAutoQuality();
+        } else {
+            this.showToast('Failed to load video');
+            this.hideLoading();
+        }
+    }, { once: true });
+    
+    this.video.play().catch(e => console.warn('Autoplay prevented:', e));
+}
             }
+			
+fallbackToAutoQuality() {
+    if (!this.currentEpisodes || !this.currentEpisodes[this.currentEpisodeIndex]) return;
+    
+    const episode = this.currentEpisodes[this.currentEpisodeIndex];
+    const content = episode.content || {};
+    
+    // Check if AUTO quality (converted_hls_url) is available
+    if (content.converted_hls_url) {
+        console.log('Falling back to AUTO quality:', content.converted_hls_url);
+        
+        const currentTime = this.video.currentTime;
+        const wasPlaying = !this.video.paused;
+        
+        // Update quality setting
+        this.currentQuality = 'auto';
+        document.getElementById('qualityBtn').innerHTML = 
+            `<i class="fas fa-cog"></i> AUTO`;
+        
+        // Load AUTO quality
+        this.loadVideoSource(content.converted_hls_url);
+        
+        // Restore position and playback state
+        this.video.addEventListener('canplay', () => {
+            this.video.currentTime = currentTime;
+            if (wasPlaying) {
+                this.video.play();
+            }
+        }, { once: true });
+        
+        this.showToast('Switched to AUTO quality');
+    } else {
+        this.showToast('Failed to load episode');
+        this.hideLoading();
+    }
+}			
 
 			open(showData, episodeIndex = null) {
 				console.log('Opening player with data:', showData, 'episodeIndex:', episodeIndex);
