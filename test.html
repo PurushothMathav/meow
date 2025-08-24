@@ -2533,34 +2533,55 @@ input:checked + .toggle-slider:before {
 				let targetUrl = null;
 				let targetQuality = 'auto';
     
-				if (qualitySetting === 'best') {
-					// Find highest quality available
-					const bestOrder = ['video_720p', 'video_480p', 'video_360p', 'video_240p', 'converted_hls_url'];
+if (qualitySetting === 'best') {
+    // Find highest quality available
+    const isAudio = this.isAudioContent(content);
+    const bestOrder = isAudio ? 
+        ['audio_128kb', 'audio_64kb', 'audio_24kb', 'converted_hls_url'] :
+        ['video_720p', 'video_480p', 'video_360p', 'video_240p', 'converted_hls_url'];
 					for (const quality of bestOrder) {
 						if (content[quality]) {
 							targetUrl = content[quality];
-							targetQuality = quality === 'converted_hls_url' ? 'auto' : quality.replace('video_', '');
+if (quality === 'converted_hls_url') {
+    targetQuality = 'auto';
+} else if (quality.startsWith('video_')) {
+    targetQuality = quality.replace('video_', '');
+} else if (quality.startsWith('audio_')) {
+    targetQuality = quality.replace('audio_', '');
+}
 							break;
 						}
 					}
-				} else if (qualitySetting === 'saver') {
-					// Find lowest quality available
-					const saverOrder = ['video_240p', 'video_360p', 'video_480p', 'video_720p', 'converted_hls_url'];
+} else if (qualitySetting === 'saver') {
+    // Find lowest quality available
+    const isAudio = this.isAudioContent(content);
+    const saverOrder = isAudio ? 
+        ['audio_24kb', 'audio_64kb', 'audio_128kb', 'converted_hls_url'] :
+        ['video_240p', 'video_360p', 'video_480p', 'video_720p', 'converted_hls_url'];
 					for (const quality of saverOrder) {
 						if (content[quality]) {
 							targetUrl = content[quality];
-							targetQuality = quality === 'converted_hls_url' ? 'auto' : quality.replace('video_', '');
+if (quality === 'converted_hls_url') {
+    targetQuality = 'auto';
+} else if (quality.startsWith('video_')) {
+    targetQuality = quality.replace('video_', '');
+} else if (quality.startsWith('audio_')) {
+    targetQuality = quality.replace('audio_', '');
+}
 							break;
 						}
 					}
-				} else {
-					// Auto - prefer HLS adaptive streaming
-					if (content.converted_hls_url) {
-						targetUrl = content.converted_hls_url;
-						targetQuality = 'auto';
-					} else {
-						// Fallback to best available
-						const fallbackOrder = ['video_480p', 'video_720p', 'video_360p', 'video_240p'];
+} else {
+    // Auto - prefer HLS adaptive streaming
+    if (content.converted_hls_url) {
+        targetUrl = content.converted_hls_url;
+        targetQuality = 'auto';
+    } else {
+        // Fallback to best available
+        const isAudio = this.isAudioContent(content);
+        const fallbackOrder = isAudio ? 
+            ['audio_64kb', 'audio_128kb', 'audio_24kb'] :
+            ['video_480p', 'video_720p', 'video_360p', 'video_240p'];
 						for (const quality of fallbackOrder) {
 							if (content[quality]) {
 								targetUrl = content[quality];
@@ -2726,13 +2747,22 @@ input:checked + .toggle-slider:before {
                 const content = episode.content || {};
                 
                 // Available qualities
-                const qualities = [
-                    { key: 'converted_hls_url', label: 'AUTO' },
-                    { key: 'video_720p', label: '720P' },
-                    { key: 'video_480p', label: '480P' },
-                    { key: 'video_360p', label: '360P' },
-                    { key: 'video_240p', label: '240P' }
-                ];
+// Check if this is audio content
+const isAudio = this.isAudioContent(content);
+
+// Available qualities based on content type
+const qualities = isAudio ? [
+    { key: 'converted_hls_url', label: 'AUTO' },
+    { key: 'audio_128kb', label: '128KB' },
+    { key: 'audio_64kb', label: '64KB' },
+    { key: 'audio_24kb', label: '24KB' }
+] : [
+    { key: 'converted_hls_url', label: 'AUTO' },
+    { key: 'video_720p', label: '720P' },
+    { key: 'video_480p', label: '480P' },
+    { key: 'video_360p', label: '360P' },
+    { key: 'video_240p', label: '240P' }
+];
                 
                 qualities.forEach(({ key, label }) => {
                     if (content[key]) {
@@ -2752,6 +2782,43 @@ input:checked + .toggle-slider:before {
                     }
                 });
             }
+			
+isAudioContent(content) {
+    // Check if content has audio quality keys
+    return !!(content.audio_128kb || content.audio_64kb || content.audio_24kb) && 
+           !(content.video_720p || content.video_480p || content.video_360p || content.video_240p);
+}	
+
+setAudioBackground() {
+    if (!this.currentShow || !this.currentShow.show) {
+        this.video.style.background = '#1a1a1a';
+        return;
+    }
+    
+    const show = this.currentShow.show;
+    let backgroundImage = null;
+    
+    // First try vertical_thumbnail_image_sizes
+    if (show.other_images?.vertical_thumbnail_image_sizes?.["480"]) {
+        backgroundImage = show.other_images.vertical_thumbnail_image_sizes["480"];
+    }
+    // Fallback to reel_image_sizes
+    else if (show.other_images?.reel_image_sizes?.["480"]) {
+        backgroundImage = show.other_images.reel_image_sizes["480"];
+    }
+    
+    if (backgroundImage && backgroundImage.trim() !== "") {
+        this.video.style.backgroundImage = `url("${backgroundImage}")`;
+        this.video.style.backgroundSize = 'contain';
+        this.video.style.backgroundPosition = 'center';
+        this.video.style.backgroundRepeat = 'no-repeat';
+        this.video.style.backgroundColor = '#1a1a1a'; // Fallback color
+    } else {
+        // No image available, use solid background
+        this.video.style.background = '#1a1a1a';
+        this.video.style.backgroundImage = 'none';
+    }
+}		
 
             changeQuality(quality, url) {
                 this.currentQuality = quality;
@@ -2799,8 +2866,11 @@ input:checked + .toggle-slider:before {
                     return episode.content[qualityKey];
                 }
 
-                // Fallback to available qualities
-                const availableQualities = ['converted_hls_url', 'video_720p', 'video_480p', 'video_360p', 'video_240p'];
+// Determine available qualities based on content type
+const isAudio = this.isAudioContent(episode.content);
+const availableQualities = isAudio ? 
+    ['converted_hls_url', 'audio_128kb', 'audio_64kb', 'audio_24kb'] :
+    ['converted_hls_url', 'video_720p', 'video_480p', 'video_360p', 'video_240p'];
                 for (const q of availableQualities) {
                     if (episode.content[q]) {
 						// Special case for auto
@@ -2821,6 +2891,17 @@ input:checked + .toggle-slider:before {
 
             loadVideoSource(source) {
                 this.showLoading();
+// Check if this is audio content and update video element accordingly
+if (this.currentEpisodes && this.currentEpisodes[this.currentEpisodeIndex]) {
+    const isAudio = this.isAudioContent(this.currentEpisodes[this.currentEpisodeIndex].content);
+    if (isAudio) {
+        this.setAudioBackground();
+    } else {
+        // Reset background for video content
+        this.video.style.background = '#000000';
+        this.video.style.backgroundImage = 'none';
+    }
+}				
 
                 // Clean up previous HLS instance
                 if (this.hls) {
@@ -3573,7 +3654,7 @@ input:checked + .toggle-slider:before {
 				console.log('Loading from URL params:', jsonFile, 'episode:', episodeIndex);
 
 				// 👇 decide folder based on language
-				const basePath = (lang === 'tamilaudio') ? 'audio/' : 'json/';
+				const basePath = (lang === 'tamilaudio') ? 'json/audio/' : 'json/';
 
 				fetch(`${basePath}${jsonFile}`)
 				.then(res => {
