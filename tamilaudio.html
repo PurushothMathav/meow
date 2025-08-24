@@ -1402,6 +1402,92 @@ body {
 .section.view-all-active ~ .lazy-sentinel {
   display: none !important;
 }
+
+/* Smooth section loading animations */
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sectionFadeIn 0.6s ease forwards;
+}
+
+@keyframes sectionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Prevent layout shift during loading */
+.lazy-sentinel {
+  height: 1px;
+  width: 100%;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Add loading placeholder for smoother transitions */
+.section-loading-placeholder {
+  height: 400px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.3; }
+}
+
+/* Smooth transitions for content changes */
+.main-content {
+  transition: all 0.3s ease;
+}
+
+#sectionsContainer {
+  transition: all 0.3s ease;
+}
+
+/* Prevent layout shift during loading */
+#sectionsContainer {
+  min-height: 100vh; /* Maintain minimum height */
+}
+
+/* Smooth height transitions */
+.section {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0); /* Force hardware acceleration */
+}
+
+/* Optimize image loading */
+.show-image {
+  transition: opacity 0.3s ease;
+}
+
+.show-image[src*="placeholder"] {
+  opacity: 0.7;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .section {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
 </style>
 </head>
 <body>
