@@ -309,6 +309,166 @@
   "title": "Updated Recently",
   "shows": [ 
     {
+      "id": "273135",
+      "title": "Sillunu Oru Kaadhal",
+      "slug": "a-double-heart",
+      "language": "tamil",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 47,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/059ff1641447447cb485f9e4ce82446b.png",
+      "description": "Akash has no mercy for lies. Aarthi, his girlfriend, has fooled him many times and got punished for her lies as well. To end it, she drags him to a psychologist.\r\nMid-session, Akash speaks in a FEMALE Voice, leaving everyone stunned. From there begins a journey into another life, where love, betrayal, and fate’s tight knots await.\r\n\r\nThis is a tale of love and rebirth. The storm is here, watch it now!",
+      "link": "/meow/json/a-double-heart-Tamil.json"
+    },
+    {
+      "id": "274665",
+      "title": "BABY ON BOARD",
+      "slug": "baby-on-board-2",
+      "language": "tamil",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 43,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/674afca3704e4f5dbd78901029e36fa3.png",
+      "description": "BABY ON BOARD",
+      "link": "/meow/json/baby-on-board-2-Tamil.json"
+    },
+    {
+      "id": "274669",
+      "title": "Billionaires Return",
+      "slug": "billionaires-return",
+      "language": "tamil",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 46,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/e0f632b6a447486485fa47bda15c5cbc.png",
+      "description": "It's a comeback of a great billionaire ",
+      "link": "/meow/json/billionaires-return-Tamil.json"
+    },
+    {
+      "id": "274663",
+      "title": "Dangerous Dad",
+      "slug": "dangerous-dad-2",
+      "language": "tamil",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/a07691bd-b420-4ac5-ad4d-82a5cb0078e8.png",
+      "description": "A cleaner, Aaryan, saves a rich girl, Avni, from the clutches of a wealthy man. Aaryan is actually a secret head of the syndicate and is called Ghost, but he has hidden this identity from everyone – even his own son. How will he navigate his life while also fighting his enemies on his journey? Watch now!",
+      "link": "/meow/json/dangerous-dad-2-Tamil.json"
+    },
+    {
+      "id": "273702",
+      "title": "Fake Marriage on Diwali",
+      "slug": "nilavidam-vaadagai-vaangi",
+      "language": "tamil",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5634b9a507b4418d94f7cb110de09e30.png",
+      "description": "Sarah brings Vikram into her family, but instead of safety she finds new dangers. With Vikram’s secrets and her family’s greed pulling them apart, will their love survive or break forever? Watch now!",
+      "link": "/meow/json/nilavidam-vaadagai-vaangi-Tamil.json"
+    },
+    {
+      "id": "188415",
+      "title": "Ramayanam",
+      "slug": "ramayanam-3",
+      "language": "tamil",
+      "genre": {
+        "id": 4,
+        "title": "धर्म",
+        "slug": "religion",
+        "uri": "app://app/genres/religion",
+        "web_uri": "/genres/religion"
+      },
+      "n_episodes": 76,
+      "n_seasons": 1,
+      "show_type": "cu_show",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a2366b44cd5e4c76ae927b4b72f3fb44.jpeg",
+      "description": "Indhiyavin miga mukkiyamaana kaaviyangalil ondraana Ramayanathai muzhumaiyaaga arinthu kolla elimaiyana vazhi intha audio puthagathai ketpathu thaan. Valmiki, Kambar, Thulasithasar ena Palveru Kalakattathil Palar ezhuthiya Ramayanathin verupatta palveru pathippugalai aarainthu uruvaakka patta muzhumaiyana Ramayanam ithu. Kelungal.",
+      "link": "/meow/json/ramayanam-3-Tamil.json"
+    },
+    {
+      "id": "274726",
+      "title": "Final Betrayal",
+      "slug": "the-final-betrayal-4",
+      "language": "tamil",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 46,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a1efa51ff29f44259b78c346919535b2.png",
+      "description": "Final Betrayal",
+      "link": "/meow/json/the-final-betrayal-4-Tamil.json"
+    },
+    {
+      "id": "274572",
+      "title": "Ultimate Khiladi",
+      "slug": "ultimate-khiladi-4",
+      "language": "tamil",
+      "genre": {
+        "id": 3,
+        "title": "प्यार",
+        "slug": "love",
+        "uri": "app://app/genres/love",
+        "web_uri": "/genres/love"
+      },
+      "n_episodes": 46,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/3b36e7cdd4fd4dbeb62715922e44edcc.png",
+      "description": "After Sameer, the biggest tech hotshot in all of Bangalore, gets sacked by his CEO's son Arnav, he joins forces with Sayyeda the beautiful CEO of his old company's competitor. This causes his former employer to go bankrupt, and when Arnav realizes he's fired the wrong guy, it's already too late.",
+      "link": "/meow/json/ultimate-khiladi-4-Tamil.json"
+    },  
+    {
       "id": "270505",
       "title": "Cloaked in Power His Secret Identity",
       "slug": "cloaked-in-power-his-secret-identity-5",
@@ -326,7 +486,7 @@
       "is_adult_content": false,
       "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a4b3e9c0e12e4c10ad0cf1c033445611.png",
       "description": "He is no ordinary man; he has a mysterious past where he had superpower. But in the daily life he wishes to live an ordinary life as a driver. He accidentally meets a beautiful woman, a CEO, and that eventually leads to a one nightstand, leading towards thrilling twists and turns.\r\n",
-      "link": "final14/Cloaked in Power His Secret Identity-Tamil.json"
+      "link": "/meow/json/Cloaked in Power His Secret Identity-Tamil.json"
     },
     {
       "id": "270011",
@@ -346,7 +506,7 @@
       "is_adult_content": false,
       "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/dba4572cebe94dad961d0d5f74ac7868.png",
       "description": "He’s actually a powerful CEO—living in disguise as a security guard for reasons only he knows. Just as fate would have it, a bold young woman arrives to protect a village… and unknowingly, his heart. A heartwarming tale of secrets, destiny, and a romance that asks: will their bond lead to marriage?",
-      "link": "final14/Madam your CEO Husband will save your village-Tamil.json"
+      "link": "/meow/json/Madam your CEO Husband will save your village-Tamil.json"
     },
     {
       "id": "261752",
@@ -366,7 +526,7 @@
       "is_adult_content": false,
       "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/593feaa7ac8346bea5aca55c513e895d.png",
       "description": "The fool has become the richest man in the world, and he will give all the best resources to wife!",
-      "link": "final14/Mr. Idiot, Hero Husband-Tamil.json"
+      "link": "/meow/json/Mr. Idiot, Hero Husband-Tamil.json"
     },
     {
       "id": "262173",
@@ -386,7 +546,7 @@
       "is_adult_content": false,
       "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a914eef9d2da4217b3a7ab3a52debdc4.png",
       "description": "A modern food delivery man transported to ancient times uses his wit to survive as a fake eunuch, navigate palace intrigues, and win the hearts of the royal harem.",
-      "link": "final14/The First Prince of DAXIA-Tamil.json"
+      "link": "/meow/json/The First Prince of DAXIA-Tamil.json"
     },
     {
       "id": "273717",
@@ -406,7 +566,7 @@
       "is_adult_content": false,
       "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/3e28029800c44fb9a92bbd4234859e3a.png",
       "description": "A newlywed grandfather and Lu Zhui—they plundered the Lin family's property like cunning rogues. This entire plot has so many roller coaster rides. There are so many nail biting moments were take part in these plot. Watch now..",
-      "link": "final14/The Return of the Heiress_ Discernment of Pearls-Tamil.json"
+      "link": "/meow/json/The Return of the Heiress_ Discernment of Pearls-Tamil.json"
     },
     {
       "id": "271961",
@@ -426,7 +586,7 @@
       "is_adult_content": false,
       "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/47292e2bcded41d9bb8cdb0c231d85db.png",
       "description": "A girl gets seriously injured in an accident and is admitted to the hospital. Nearing death, she overhears her husband on the phone from the hospital saying, \"Let me know if she dies.\" The helpless girl thinks that in her life, she only loved her father and her husband—but both of them cheated on her. Her father married another woman, and her husband got involved with his general manager. Just three months before her death, she suddenly gets reborn—all her memories intact. This time, she's not weak; she signs the divorce papers lying by her bedside and sends them to her husband, who once used them to threaten her. A new game begins—she returns every one of her husband's actions back to him. But instead of revenge, love slowly blossoms—and a new story begins.",
-      "link": "final14/The Spoiled Billionaire Daughter's Secret Identity Exposed-Tamil.json"
+      "link": "/meow/json/The Spoiled Billionaire Daughter's Secret Identity Exposed-Tamil.json"
     },
     {
       "id": "261777",
@@ -446,7 +606,7 @@
       "is_adult_content": false,
       "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9778f8a8d43f4a64879a13e69360e386.png",
       "description": "On the eve of the decisive battle of Borodino, Napoleon's secret agent steals a Russian battle plan. This fact is known to General Kutuzov (Head of Russian forces), thanks to a young nobleman Alexey Tarusov.",
-      "link": "final14/Ulanskaya Ballada-Tamil.json"
+      "link": "/meow/json/Ulanskaya Ballada-Tamil.json"
     },
     {
       "id": "261991",
@@ -466,7 +626,7 @@
       "is_adult_content": false,
       "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a290e739a8754134978cf748429180ca.png",
       "description": "Heartbroken by her husband's betrayal, Jiang Muxue plots revenge by infiltrating his mistress's life, only to join forces with her and a supportive childhood friend to reclaim her independence.",
-      "link": "final14/Unforgivable-Tamil.json"
+      "link": "/meow/json/Unforgivable-Tamil.json"
     },  
     {
       "id": "273700",

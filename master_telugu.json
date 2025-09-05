@@ -306,6 +306,231 @@
    ]
   },
     {
+      "title": "Updated Recently",
+      "shows": [  
+    {
+      "id": "274660",
+      "title": "Anaganaga O Naanna",
+      "slug": "anaganaga-o-naanna",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 25,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b1824c67ad5a4567b781cca52e33a560.png",
+      "description": "రైల్వే ఉద్యోగి జీవితంలో జరిగిన సంఘటనల సమాహారమే అనగనగా ఓ నాన్న. పిల్లలు, సమాజం కలిసి మనిషిని ఏ విధంగా మార్చాయన్నది ఇక్కడ తెలుసుకోండి.  ",
+      "link": "/meow/json/anaganaga-o-naanna-Telugu.json"
+    },
+    {
+      "id": "274666",
+      "title": "Baby on Board",
+      "slug": "baby-on-board-1",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 43,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/93514fd3f64347a79e10d11fa6ec923c.png",
+      "description": "Baby on Board",
+      "link": "/meow/json/baby-on-board-1-Telugu.json"
+    },
+    {
+      "id": "274725",
+      "title": "Dangerous Dad",
+      "slug": "dangerous-dad-4",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/21f16de2c96b4549b8e3034e6b0772ef.jpeg",
+      "description": "Dangerous Dad - Telugu",
+      "link": "/meow/json/dangerous-dad-4-Telugu.json"
+    },
+    {
+      "id": "274793",
+      "title": "Finding Us Again",
+      "slug": "finding-us-again-1",
+      "language": "telugu",
+      "genre": {
+        "id": 3,
+        "title": "प्यार",
+        "slug": "love",
+        "uri": "app://app/genres/love",
+        "web_uri": "/genres/love"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/7e853454-4c4f-4c06-a3b8-6fe188b65d82.png",
+      "description": "అజయ్ తన బాల్యపు ప్రేమ ఆరాధ్య మళ్లీ తన జీవితంలోకి వస్తుందని ఇరవై ఏళ్లుగా ఎదురుచూస్తూ ఉంటాడు. కానీ ఆరాధ్య తన జీవితంలో ముందుకు సాగిపోయింది, తనకంటూ కష్టాలు ఉన్నాయి. అనుకోకుండా అజయ్ – ఆరాధ్య మళ్లీ కలిసినప్పుడు, వారి ప్రేమకథ అనుకోని మలుపు తిరుగుతుంది. కానీ జీవితం మాత్రం వాళ్లిద్దరినీ మళ్లీ కలిపేలా తన సొంత ప్లాన్ వేసుకుంది.\r\n\r\nచూడండి “Finding Us Again” మైక్రో డ్రామా సిరీస్, కేవలం KUKU TVలో.",
+      "link": "/meow/json/finding-us-again-1-Telugu.json"
+    },
+    {
+      "id": "274800",
+      "title": "Maa Naanna ki Pelli",
+      "slug": "maa-naanna-ki-pelli",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/9dbf491426784a2f9289276bda5543d5.png",
+      "description": "Maa Naanna ki Pelli",
+      "link": "/meow/json/maa-naanna-ki-pelli-Telugu.json"
+    },
+    {
+      "id": "274702",
+      "title": "Mom of three Billionaires",
+      "slug": "mom-of-three-billionaires",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 43,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/6525a80f94a548b5bc776d3a497d2f3b.png",
+      "description": "ఒంటరిగా ముగ్గురు విజయవంతమైన బిలియనీర్లను పెంచిన తల్లి, తండ్రి జన్మదినం కోసం తన ఇంటికి తిరిగి వస్తుంది.\r\nఅక్కడ ఆమె జీవన నిర్ణయాలపై, సింగిల్ మదర్‌గా ఉన్నందుకు బంధువుల విమర్శలు, అవమానాలు ఎదుర్కొంటుంది.\r\nఆమె ధైర్యం, సంకల్పంతో ఆ విషపూరిత వాతావరణాన్ని ఎదుర్కొని, తన సంతోషానికి కొత్త మార్గాన్ని కనుగొంటుంది.",
+      "link": "/meow/json/mom-of-three-billionaires-Telugu.json"
+    },
+    {
+      "id": "274661",
+      "title": "Okkasaari Cheppaleva",
+      "slug": "okkasaari-cheppaleva",
+      "language": "telugu",
+      "genre": {
+        "id": 3,
+        "title": "प्यार",
+        "slug": "love",
+        "uri": "app://app/genres/love",
+        "web_uri": "/genres/love"
+      },
+      "n_episodes": 46,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/61df632f2b554d36aabd28cbad3b231a.png",
+      "description": "జిలేబీలు, మిక్చర్ పొట్లాలు అమ్ముకునే అమ్మాయి ప్రేమించకూడదా..? మరెందుకు ఆమెకు ఒక అబ్బాయితో బ్రేకప్ అయ్యింది. బిచ్చగాడు ఆమె జీవితంలోకి ఎలా వచ్చాడు. ఆసక్తికరమైన మలుపులతో అందమైన ప్రేమకథ \" ఒక్కసారి చెప్పలెవా\" మీ కుకు టీవీలో. ",
+      "link": "/meow/json/okkasaari-cheppaleva-Telugu.json"
+    },
+    {
+      "id": "274798",
+      "title": "Oops, Not a Gold Digger",
+      "slug": "oops-not-a-gold-digger-3",
+      "language": "telugu",
+      "genre": {
+        "id": 3,
+        "title": "प्यार",
+        "slug": "love",
+        "uri": "app://app/genres/love",
+        "web_uri": "/genres/love"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/084f4839793442b19981f0b7ac179084.png",
+      "description": "ఆ అమ్మాయికి అర్జంటుగా 50లక్షలు కావాలి. ఏం చేయాలా అని ఆలోచిస్తుంటే ఒక దారి దొరికింది. ఆ దారిలో వెళ్తే జీవితానికి ఏదైనా అవుతుందేమోనన్న భయం ఉన్నా కూడా ఒప్పుకుంది. నిజంగానే ఆమెకు కావాల్సిన డబ్బులు దొరికాయా.. ఆ తర్వాత ఏం జరిగింది. చూడండి.. మీ కుకు టీవీలో. ",
+      "link": "/meow/json/oops-not-a-gold-digger-3-Telugu.json"
+    },
+    {
+      "id": "274658",
+      "title": "Raaja Re-Entry",
+      "slug": "raaja-re-entry",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 46,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/d7c1a4d1aaf64a1e96e2a90d68fb6519.png",
+      "description": "A businessman celebrates 25 years of his company, Patel Tech, which grew from nothing to a multimillion-dollar firm. He acknowledges the hard work of himself and his family. Now, he decides to return to India permanently to be with his wife and two sons after years of absence. He entrusts the company’s future and the launch of a new product to his team, assuring them they are capable of running it. While concerns are raised about his security as one of the world’s richest men, he stresses that his only wish is to spend the rest of his life with his family as an ordinary man.",
+      "link": "/meow/json/raaja-re-entry-Telugu.json"
+    },
+    {
+      "id": "188703",
+      "title": "Ramayanam",
+      "slug": "ramayanam-4",
+      "language": "telugu",
+      "genre": {
+        "id": 10,
+        "title": "प्रेरणा",
+        "slug": "motivation",
+        "uri": "app://app/genres/motivation",
+        "web_uri": "/genres/motivation"
+      },
+      "n_episodes": 122,
+      "n_seasons": 1,
+      "show_type": "cu_show",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/105aaa90af9c4eeab1c3a63ce3e7d0b1.png",
+      "description": "రామాయణం అంటే  ఒక  దేవుడికి  సంభందించిన కథ కాదు, అది ఒక దేశానికి మాత్రమే పరిమితమైన కథ అంతకన్నా   కాదు. రామాయణం అనేది మానవ జాతిని సన్మార్గంలో నడిపే ఒక మహా కావ్యం. ఇందులోని పాత్రలు మనిషి ఎలా   ఉండాలో  చెప్పే పాఠాలు. రండి  రామాయణాన్ని విని ఆ కోదండరాముని కృపకు పాత్రులవుదాం.",
+      "link": "/meow/json/ramayanam-4-Telugu.json"
+    },
+    {
+      "id": "273157",
+      "title": "Khaidhi",
+      "slug": "under-cover-prison-king",
+      "language": "telugu",
+      "genre": {
+        "id": 33,
+        "title": "अपराध",
+        "slug": "crime",
+        "uri": "app://app/genres/crime",
+        "web_uri": "/genres/crime"
+      },
+      "n_episodes": 30,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/5ab6bb1d656447158de42245ffb2a7eb.png",
+      "description": "Vishal Sheth, a fearless undercover cop, is chosen for his most dangerous mission yet. Disguised as a hardened prisoner, he must infiltrate the criminal underworld from within, gain the trust of ruthless gang lords, and uncover the powerful masterminds pulling the strings behind bars. One wrong move could blow his cover—and cost him his life.",
+      "link": "/meow/json/under-cover-prison-king-Telugu.json"
+    }  
+   ]
+  },  
+    {
       "title": "New Releases",
       "shows": [
         {
