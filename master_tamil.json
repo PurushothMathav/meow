@@ -409,24 +409,24 @@
       "link": "/meow/json/nilavidam-vaadagai-vaangi-Tamil.json"
     },
     {
-      "id": "188415",
-      "title": "Ramayanam",
-      "slug": "ramayanam-3",
+      "id": "274667",
+      "title": "Ramayanam ",
+      "slug": "ramayanam-9",
       "language": "tamil",
       "genre": {
-        "id": 4,
-        "title": "धर्म",
-        "slug": "religion",
-        "uri": "app://app/genres/religion",
-        "web_uri": "/genres/religion"
+        "id": 31,
+        "title": "ऐतिहासिक",
+        "slug": "historical",
+        "uri": "app://app/genres/historical",
+        "web_uri": "/genres/historical"
       },
-      "n_episodes": 76,
+      "n_episodes": 45,
       "n_seasons": 1,
-      "show_type": "cu_show",
+      "show_type": "reel",
       "is_adult_content": false,
-      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/a2366b44cd5e4c76ae927b4b72f3fb44.jpeg",
-      "description": "Indhiyavin miga mukkiyamaana kaaviyangalil ondraana Ramayanathai muzhumaiyaaga arinthu kolla elimaiyana vazhi intha audio puthagathai ketpathu thaan. Valmiki, Kambar, Thulasithasar ena Palveru Kalakattathil Palar ezhuthiya Ramayanathin verupatta palveru pathippugalai aarainthu uruvaakka patta muzhumaiyana Ramayanam ithu. Kelungal.",
-      "link": "/meow/json/ramayanam-3-Tamil.json"
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/b850ca747a9c43b7bfdc9354a7613d35.png",
+      "description": "When King Dashrath announces the coronation of his son Ram, Kaikeyi and Manthara’s deceit leads to Ram being sent into exile for 14 years. Along with Sita and Lakshman, Ram embarks on a journey of penance and sacrifice for the sake of dharma—a journey that becomes an eternal symbol of love, sacrifice, and righteousness. Start watching now and immerse yourself in the devotion of Lord Ram.",
+      "link": "final14/ramayanam-9-Tamil.json"
     },
     {
       "id": "274726",

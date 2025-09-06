@@ -489,24 +489,24 @@
       "link": "/meow/json/raaja-re-entry-Telugu.json"
     },
     {
-      "id": "188703",
+      "id": "274668",
       "title": "Ramayanam",
-      "slug": "ramayanam-4",
+      "slug": "ramayan-41",
       "language": "telugu",
       "genre": {
-        "id": 10,
-        "title": "प्रेरणा",
-        "slug": "motivation",
-        "uri": "app://app/genres/motivation",
-        "web_uri": "/genres/motivation"
+        "id": 14,
+        "title": "पौराणिक कथा",
+        "slug": "mythology",
+        "uri": "app://app/genres/mythology",
+        "web_uri": "/genres/mythology"
       },
-      "n_episodes": 122,
+      "n_episodes": 45,
       "n_seasons": 1,
-      "show_type": "cu_show",
+      "show_type": "reel",
       "is_adult_content": false,
-      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/105aaa90af9c4eeab1c3a63ce3e7d0b1.png",
-      "description": "రామాయణం అంటే  ఒక  దేవుడికి  సంభందించిన కథ కాదు, అది ఒక దేశానికి మాత్రమే పరిమితమైన కథ అంతకన్నా   కాదు. రామాయణం అనేది మానవ జాతిని సన్మార్గంలో నడిపే ఒక మహా కావ్యం. ఇందులోని పాత్రలు మనిషి ఎలా   ఉండాలో  చెప్పే పాఠాలు. రండి  రామాయణాన్ని విని ఆ కోదండరాముని కృపకు పాత్రులవుదాం.",
-      "link": "/meow/json/ramayanam-4-Telugu.json"
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://s3.ap-south-1.amazonaws.com/kukufm/channel_icons/bd18d3d2d0354987be795ac34f8b83d3.png",
+      "description": "Ramayanam",
+      "link": "final14/ramayan-41-Telugu.json"
     },
     {
       "id": "273157",
