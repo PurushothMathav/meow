@@ -12,8 +12,8 @@ let deferredPrompt = null;
 
 async function registerServiceWorker() {
   try {
-    const registration = await navigator.serviceWorker.register('/meow/service-worker.js', {
-      scope: '/meow/'
+    const registration = await navigator.serviceWorker.register('/service-worker.js', {
+      scope: '/'
     });
     
     console.log('SW registered:', registration);
