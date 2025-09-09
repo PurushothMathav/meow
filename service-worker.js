@@ -1,7 +1,7 @@
 // Optimized Service Worker for Meow Streaming Site
 // service-worker.js
 
-const CACHE_VERSION = 'v0609250850';
+const CACHE_VERSION = '0909251250';
 const CACHE_NAMES = {
   STATIC: `meow-static-${CACHE_VERSION}`,
   DYNAMIC: `meow-dynamic-${CACHE_VERSION}`,
@@ -12,18 +12,18 @@ const CACHE_NAMES = {
 
 // Static assets to cache immediately
 const STATIC_CACHE_URLS = [
-  '/meow/',
-  '/meow/index.html',
-  '/meow/telugu.html',
-  '/meow/malayalam.html',
-  '/meow/kannada.html',
-  '/meow/hindi.html',
-  '/meow/bengali.html',
-  '/meow/english.html',
-  '/meow/tamilaudio.html',
-  '/meow/sw-register.js',
-  '/meow/manifest.json',
-  '/meow/favicon.ico'
+  '/',
+  '/index.html',
+  '/telugu.html',
+  '/malayalam.html',
+  '/kannada.html',
+  '/hindi.html',
+  '/bengali.html',
+  '/english.html',
+  '/tamilaudio.html',
+  '/sw-register.js',
+  '/manifest.json',
+  '/favicon.ico'
 ];
 
 // Dynamic assets that should be cached on first request

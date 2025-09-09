@@ -3,14 +3,14 @@
   "short_name": "Meow",
   "description": "Stream your favorite shows and episodes anywhere, anytime with Meow.",
   "version": "1.0.0",
-  "start_url": "/meow/index.html",
+  "start_url": "/index.html",
   "display_override": ["fullscreen", "minimal-ui"],
   "display": "minimal-ui",
   "orientation": "portrait-primary",
   "theme_color": "#0a0a0a",
   "background_color": "#0a0a0a",
   "lang": "en",
-  "scope": "/meow/",
+  "scope": "/",
   "categories": ["entertainment", "multimedia"],
   "prefer_related_applications": false,
   "shortcuts": [
@@ -21,7 +21,7 @@
       "url": "/?section=continue",
       "icons": [
         {
-          "src": "/meow/icons/favicon-96x96.png",
+          "src": "/icons/favicon-96x96.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -34,7 +34,7 @@
       "url": "/?section=browse",
       "icons": [
         {
-          "src": "/meow/icons/favicon-96x96.png",
+          "src": "/icons/favicon-96x96.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -43,37 +43,37 @@
   ],
   "icons": [
 	{
-      "src": "/meow/icons/favicon-48x48.png",
+      "src": "/icons/favicon-48x48.png",
       "sizes": "48x48",
       "type": "image/png",
       "purpose": "any"
     },  
     {
-      "src": "/meow/icons/favicon-72x72.png",
+      "src": "/icons/favicon-72x72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/meow/icons/favicon-96x96.png",
+      "src": "/icons/favicon-96x96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/meow/icons/favicon-144x144.png",
+      "src": "/icons/favicon-144x144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/meow/icons/favicon-192x192.png",
+      "src": "/icons/favicon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/meow/icons/favicon-512x512.png",
+      "src": "/icons/favicon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
