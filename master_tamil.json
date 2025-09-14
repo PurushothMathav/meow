@@ -309,6 +309,26 @@
   "title": "Updated Recently",
   "shows": [ 
     {
+      "id": "274777",
+      "title": "Oops , Not A Gold Digger",
+      "slug": "oops-not-a-gold-digger-1",
+      "language": "tamil",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/4eb458fb-7179-4a6d-bf98-6e75a54a8ef9.png",
+      "description": "When spirited delivery girl Disha rescues feisty Suman Dadi from a taxi spat, she has no idea it will lead to an accidental marriage with charming yet mysterious Vikrant, a man she thinks is just a broke caretaker, but who’s actually heir to a billionaire empire. Between office politics, spoiled rivals like Tia, hidden identities, and Dadi’s matchmaking mischief, Disha must protect her dreams, her dignity, and maybe her heart. Watch Now!\r\n",
+      "link": "/json/oops-not-a-gold-digger-1-Tamil.json"
+    },  
+    {
       "id": "274937",
       "title": "Billion Dollor Mess",
       "slug": "billion-dollor-mess",

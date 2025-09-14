@@ -4,6 +4,26 @@
 	"title": "New Releases",
   "shows": [
     {
+      "id": "274771",
+      "title": "Oops, Not A Gold Digger",
+      "slug": "oops-not-a-gold-digger",
+      "language": "kannada",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/d697cac6-0a9f-4742-96c4-591198849efd.png",
+      "description": "Watch family entertainment show 'Oops, Not A Gold Digger'. Only on KukuTV",
+      "link": "/json/oops-not-a-gold-digger-Kannada.json"
+    },  
+    {
       "id": "274879",
       "title": "Billion Dollar Mess",
       "slug": "billion-dollar-mess-2",
