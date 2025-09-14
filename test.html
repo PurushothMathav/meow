@@ -3581,9 +3581,9 @@ fallbackToAutoQuality() {
     
 				if (this.currentEpisodeIndex < this.currentEpisodes.length - 1) {
 					this.showToast('Playing next episode...');
-					setTimeout(() => {
+					//setTimeout(() => {
 						this.nextEpisode();
-					}, 1000);
+					//}, 1000);
 				} else if (autoplayEnabled) {
 					this.showToast('Loading next show...');
 					this.loadRandomShow();
