@@ -309,6 +309,66 @@
   "title": "Updated Recently",
   "shows": [ 
     {
+      "id": "274937",
+      "title": "Billion Dollor Mess",
+      "slug": "billion-dollor-mess",
+      "language": "tamil",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 53,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/dd6d81e7-9007-4a61-a751-7387d7ae1447.png",
+      "description": "An airline tycoon falls for a dazzling air hostess, believing he has found his perfect match.\r\nBut when his unsuspecting parents board a flight to meet their future daughter-in-law, a shocking web of arrogance, deceit, and humiliation unravels mid-air.\r\nWhat began as love soon turns into the costliest mistake of his life.",
+      "link": "/json/billion-dollor-mess-Tamil.json"
+    },
+    {
+      "id": "274450",
+      "title": "Enga Veetu Pillai",
+      "slug": "return-of-the-rightful-heir",
+      "language": "tamil",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 56,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/6ff54e5b-9db3-432a-8eb4-ab91d81da74b.jpg",
+      "description": "20 varushathukku munnadi tholanju pona paiyana kashta pattu kandupidikuraaru oru CEO. But anga oru twist nadakkuthu. Ipdi twist mela twist neranja drama thaan ithu. ",
+      "link": "/json/return-of-the-rightful-heir-Tamil.json"
+    },
+    {
+      "id": "274936",
+      "title": "The Ultimate Boss",
+      "slug": "ultimate-boss",
+      "language": "tamil",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 48,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/e8a50e79-9ce8-4149-9c1f-c6efca81d938.png",
+      "description": "Vedant, a hidden billionaire, sacrifices his identity for love—only to be betrayed by the very woman he trusted most. Fate binds him to powerful businesswoman Tara in a contract marriage, where love, revenge, and secrets collide. In this storm of emotions, emerges… The Ultimate Boss.",
+      "link": "/json/ultimate-boss-Tamil.json"
+    },  
+    {
       "id": "273135",
       "title": "Sillunu Oru Kaadhal",
       "slug": "a-double-heart",

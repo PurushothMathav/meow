@@ -305,9 +305,169 @@
     }		
    ]
   },
-    {
+  {
       "title": "Updated Recently",
-      "shows": [  
+      "shows": [
+    {
+      "id": "274872",
+      "title": "Billion Dollar Mess",
+      "slug": "billion-dollar-mess",
+      "language": "telugu",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 53,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/99319337-4c42-4d04-8eb1-514ec75a8520.png",
+      "description": "ఎయిర్‌లైన్ వ్యాపార మేధావి వీర్ చోప్రా ఆకర్షణీయమైన ఎయిర్ హోస్టెస్ లారా స్మిత్‌పై ప్రేమలో పడతాడు. తాను తనకు సరైన జోడీని కనుగొన్నానని భావిస్తాడు. కానీ, తన అమాయక తల్లిదండ్రులు రాజేశ్ మరియు వినీతా చోప్రా, భవిష్యత్తు కోడలిని కలిసేందుకు విమానంలోకి ఎక్కినప్పుడు, అహంకారం, మోసం, అవమానం అనే షాకింగ్ జాలం మధ్యలోనే బయటపడుతుంది. ఆ క్షణంలోనే ప్రేమ వీర్ జీవితంలో అత్యంత ఖరీదైన తప్పిదంగా మారిపోతుంది.",
+      "link": "/json/billion-dollar-mess-Telugu.json"
+    },
+    {
+      "id": "274926",
+      "title": "Chinna Raju Vachinadu",
+      "slug": "chinna-raju-vachinadu",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/dc4d63c0-e381-4122-8cd2-53fd31c472c8.png",
+      "description": "ఒక బిలియనీర్ తన అసలు గుర్తింపును దాచిపెట్టి సాధారణ యువతిని పెళ్లి చేసుకుంటాడు. నిజమైన ప్రేమ అర్థం తెలుసుకోవడానికే ఈ అడుగు. కానీ ఆమె కుటుంబ అనుమానాలు, ఓ క్రూరమైన ప్రత్యర్థి పిచ్చి వీరిద్దరినీ దూరం చేయాలని బెదిరించినప్పుడు, అతను ఇంతకుముందెన్నడూ లేని విధంగా పోరాడాల్సి వస్తుంది. మోసం, నిబద్ధత, లోభంపై విజయం సాధించిన ప్రేమ గాథ ఇది.",
+      "link": "/json/chinna-raju-vachinadu-Telugu.json"
+    },
+    {
+      "id": "272703",
+      "title": "Couple Friendly",
+      "slug": "couple-friendly",
+      "language": "telugu",
+      "genre": {
+        "id": 3,
+        "title": "प्यार",
+        "slug": "love",
+        "uri": "app://app/genres/love",
+        "web_uri": "/genres/love"
+      },
+      "n_episodes": 59,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/b9852994-7db2-4b82-a965-92642c4549d3.png",
+      "description": "అనిష్‌ – కృతిల మధ్య అపార్ట్‌మెంట్‌ సమస్యతో మొదలైన పరిచయం క్రమంగా అనుకోని బంధంగా మారుతుంది. తప్పుబాట్లు, అబద్ధాలు, ఆర్థిక ఒత్తిడులు వీరిద్దరినీ మరింత చిక్కుల్లో పడేస్తాయి.\r\nవ్యక్తిగత రహస్యాలు బయటపడటంతో నమ్మకం దెబ్బతింటుంది, వారి సంబంధం సంక్లిష్టమవుతుంది\r\nచివరికి, ఈ కలయిక వారిని విడదీయగలదా లేక కొత్త దారిని చూపుతుందా అన్నదే కథ ప్రధానాంశం.",
+      "link": "/json/couple-friendly-Telugu.json"
+    },
+    {
+      "id": "274600",
+      "title": "మీ జాతకంలో కీలకమైన దశల గురించి మీకు తెలుసా?",
+      "slug": "dasha-in-astrology",
+      "language": "telugu",
+      "genre": {
+        "id": 182,
+        "title": "Spirituality",
+        "slug": "spirituality",
+        "uri": "app://app/genres/spirituality",
+        "web_uri": "/genres/spirituality"
+      },
+      "n_episodes": 12,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/3ee9e23c-622a-451f-8c8d-5d69911a420d.png",
+      "description": "మీ జాతకంలో కీలకమైన దశల గురించి మీకు తెలుసా?",
+      "link": "/json/dasha-in-astrology-Telugu.json"
+    },
+    {
+      "id": "273144",
+      "title": "Mounaragam",
+      "slug": "obssesed-with-his-silent-bride",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/5e0203de-4634-4f77-a144-41d9f22f1041.png",
+      "description": "మౌనం చాలా భావాలను మోస్తుంది. మౌనాన్నే ఆభరణంగా చేసుకున్న నిత్య జీవితం కూడా అంతే. ఎప్పుడు ఎలా మారతాడో తెలియని భర్త చరణ్ నుండి విడిపోవాలని ఆమె అనుకుంది. చిన్నప్పటి నుండి నిత్యని ప్రేమించిన చరణ్.. ఎందుకు మారాడు. ప్రేమ గొప్పదైనపుడు, అర్థం చేసుకునే మనిషి ఎదురుగా ఉన్నప్పుడు మౌనంలోనే కోట్ల మాటలు వినిపిస్తాయి. \"మౌనరాగం\" అలాంటి కథే. ప్రేమలో తడిసిపోవడానికి \"మౌనరాగం\" చూడండి మీ కుకు టీవీలో. ",
+      "link": "/json/obssesed-with-his-silent-bride-Telugu.json"
+    },
+    {
+      "id": "273155",
+      "title": "Telusa Manasa",
+      "slug": "secret-empire-3",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/77ceaf9a-c9b8-4f25-ab9e-578f753473ea.png",
+      "description": "కొంతకాలం క్రితం మనస్పర్థలతో దూరమైన ఇద్దరు ప్రేమికులు… కొన్నేళ్ల తర్వాత మళ్లీ ఎదురెదురవుతారు. ఆమె ఒంటరిగా ఒక బిడ్డను పెంచుతోంది. అతను ఇప్పుడు కోట్లాది అభిమానుల గుండెల్లో చోటు సంపాదించిన ఒక స్టార్. కానీ ఒక రహస్యం వారిని మళ్లీ దగ్గర చేస్తుంది— ఆ బిడ్డ నిజానికి అతనిదే అన్న సత్యం! ఇక ముందు వారి జీవితాలు ఏ దిశగా వెళ్లబోతున్నాయి? ప్రేమ గెలుస్తుందా, లేక గతం వారిని మరల వేరు చేస్తుందా?",
+      "link": "/json/secret-empire-3-Telugu.json"
+    },
+    {
+      "id": "275015",
+      "title": "Vaikuntapuramlo",
+      "slug": "vaikuntapuramlo",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 56,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/13dbaced-ab7d-43e0-9cd4-26a40bce155e.png",
+      "description": "20 ఏళ్ల క్రితం తప్పిపోయిన తన కుమారుడిని అనేక కష్టాల తర్వాత కనుగొన్న విజయవంతమైన CEO. కానీ అప్పుడు జరిగే ట్విస్ట్‌లు అతని జీవితాన్నే తలకిందులు చేస్తాయి. ఇది ట్విస్ట్ మీద ట్విస్ట్, సస్పెన్స్‌తో నిండిన ఫ్యామిలీ డ్రామా.",
+      "link": "/json/vaikuntapuramlo-Telugu.json"
+    },
+    {
+      "id": "273149",
+      "title": "Secretary Rosie",
+      "slug": "when-silence-breaks-3",
+      "language": "telugu",
+      "genre": {
+        "id": 3,
+        "title": "प्यार",
+        "slug": "love",
+        "uri": "app://app/genres/love",
+        "web_uri": "/genres/love"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/39c1234a-be0d-4bd0-8c3a-7eb5d8e59b0d.png",
+      "description": "ఆమె ఒక సెక్రటరీ మాత్రమే కాదు… ఆకర్షణతో ముడిపడిన మాయగుర్తి. ప్రతి చిరునవ్వులో ప్రలోభం, ప్రతి స్పర్శలో కుతంత్రం. భర్త–భార్యల మధ్య నమ్మకాన్ని నెమ్మదిగా చెరిపేస్తూ, ఇంటిని యుద్ధభూమిగా మార్చింది. ఆమె ఎంత దూరం వెళ్తుంది? అతని ఆస్తి మీద హక్కు సాధించడానికి? భార్య స్థానాన్ని దక్కించుకోవడానికి? లేక అతని సామ్రాజ్యాన్ని తన పేరుతో ముద్ర వేసుకోవడానికి?",
+      "link": "/json/when-silence-breaks-3-Telugu.json"
+    },	  
     {
       "id": "274660",
       "title": "Anaganaga O Naanna",

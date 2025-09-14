@@ -4,6 +4,26 @@
 	"title": "New Releases",
   "shows": [
     {
+      "id": "274908",
+      "title": "Secret Life Of A Mafia Sweetheart",
+      "slug": "secret-life-of-a-mafia-sweetheart",
+      "language": "english",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 50,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/666cc582-0b5a-42e1-bd42-132a4b999d55.png",
+      "description": "A deadly mafia assassin living a double life as a flower shop owner falls in love with a man who hides an even darker secret — he’s the heir to her family’s greatest enemy.",
+      "link": "/json/secret-life-of-a-mafia-sweetheart-English.json"
+    },  
+    {
       "id": "274354",
       "title": "After the divorce, the heiress takes it all",
       "slug": "after-the-divorce-the-heiress-takes-it-all-1",

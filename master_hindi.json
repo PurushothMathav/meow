@@ -4,6 +4,166 @@
 	"title": "New Releases",
   "shows": [
     {
+      "id": "272079",
+      "title": "Badla Legacy",
+      "slug": "badla-legacy",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 41,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/0c004816-b17f-43dc-ba9a-80bff6eff9f1.png",
+      "description": "Framed for a crime he never committed, Arjun Choudhary is betrayed by his own family and abandoned by his fiancée Ritika Bajaj. Stripped of his powers and hunted by his brother Ravi and father Rajveer Choudhary, Arjun must rise from ashes with the help of allies like Dhaani Bajaj and the mysterious Amar Betaal. Caught between love, loyalty, and vengeance, Arjun’s battle will decide not just his honor—but the fate of the entire Choudhary legacy. Watch Now!",
+      "link": "/json/badla-legacy-Hindi.json"
+    },
+    {
+      "id": "274252",
+      "title": "Invisible Jassi",
+      "slug": "jassi-jaisi-koi-nhi",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/ac7f87a7-c8bd-4a07-8533-f5d815764bd8.png",
+      "description": "assi is a sweet, innocent, yet highly intelligent girl who longs for genuine friendships. However, she's constantly ignored and humiliated by those around her simply because she doesn't fit society's conventional standards of beauty. With braces on her teeth, a unique sense of style, and an unconventional haircut, Jassi is often judged by her appearance rather than her character.",
+      "link": "/json/jassi-jaisi-koi-nhi-Hindi.json"
+    },
+    {
+      "id": "274248",
+      "title": "Death Countdown",
+      "slug": "jungle-se-aya-mera-dost",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 60,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/a49c03f0-026b-4ee1-b0a1-1c9070d9b470.png",
+      "description": "What if you could see the exact moment someone will die?\r\nUday Mehra, an ordinary man, has a terrifying gift, he can see a death countdown of people. When he warns strangers about their fate, no one believes him… until a shocking plane crash proves him right.Now, caught between destiny and his desperate attempts to save her lover, Uday finds himself battling time, love, betrayal, and a deadly conspiracy. The clock is ticking. Will he save them… or lose everything? Watch now! ",
+      "link": "/json/jungle-se-aya-mera-dost-Hindi.json"
+    },
+    {
+      "id": "274133",
+      "title": "Maids Plan",
+      "slug": "maids-plan",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/273898ff-6912-44e5-84ec-0a1496a9c415.png",
+      "description": "Maids Plan is a dramatic family thriller about greed, betrayal, and hidden agendas. When Rani, a maid in the wealthy Hinduja household, uncovers secrets of theft, lies, and lust within the mansion, she becomes both a pawn and a player in a dangerous game. But as the staff secretly plot to usurp the empire, loyalties are tested, and one shocking twist could turn servants into masters.",
+      "link": "/json/maids-plan-Hindi.json"
+    },
+    {
+      "id": "274844",
+      "title": "Marshal Fu's favor Love",
+      "slug": "marshal-fus-favor-love",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 99,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/99f9235f-0d5f-4dfc-a278-e7478d82b2ca.png",
+      "description": "Marshal Fu's favor Love",
+      "link": "/json/marshal-fus-favor-love-Hindi.json"
+    },
+    {
+      "id": "274134",
+      "title": "Chaprasi Bana Prince Charming",
+      "slug": "nerd-billionaire",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/c2946bb5-1aaa-4485-b686-c439422b9e66.png",
+      "description": "A poor young man, mocked for his looks and status, dares to dream beyond his limits. His journey from humiliation to power unfolds as he battles the rich, wins respect, and chases love against all odds.",
+      "link": "/json/nerd-billionaire-Hindi.json"
+    },
+    {
+      "id": "274238",
+      "title": "Restarting Life From Zero",
+      "slug": "restarting-life-from-zero",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/156e33e3-9f82-46b7-81e2-f211079c8871.png",
+      "description": "Restarting Life From Zero\" follows Nikhil, a shrewd businessman betrayed by his greedy wife Sushma and her family, as he loses everything but discovers hope again with Deepika, a selfless young woman who teaches him love and resilience. Amidst Sushma’s schemes, her foolish son Nihal, brother Mitesh, and manipulative mother Bharti, Nikhil fights to rebuild his world from scratch turning betrayal into strength, and revenge into a new beginning. Watch Now!",
+      "link": "/json/restarting-life-from-zero-Hindi.json"
+    },
+    {
+      "id": "274130",
+      "title": "Saas Bahu Billionaire",
+      "slug": "saas-bahu-billionaire",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/e216860f-03f2-4b3b-9d08-4dc4c8c1f577.png",
+      "description": "When Neena Lamba and her ailing husband Sanjay arrive at their son Rahul Lamba’s luxury resort, they expect a peaceful anniversary. Instead, they fall prey to Lisa D’Souza’s ruthless ambition. Between Rahul, his sister Simran, and brother Arjun, the Lamba family must survive betrayal, greed, and deception in a high-stakes battle for dignity and power.",
+      "link": "/json/saas-bahu-billionaire-Hindi.json"
+    },  
+    {
       "id": "272663",
       "title": "Ramayan",
       "slug": "ramayan-39",

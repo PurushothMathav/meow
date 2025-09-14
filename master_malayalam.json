@@ -1,8 +1,68 @@
 {
-  "sections": [
+  "sections": [  
 	{
 	  "title": "New Releases",
 	  "shows": [
+    {
+      "id": "274947",
+      "title": "Billion Dollar Mess",
+      "slug": "billion-dollar-mess-1",
+      "language": "malayalam",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 53,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/c3fb9a56-be18-4623-9e42-37d15e40953d.png",
+      "description": "An airline tycoon falls for a dazzling air hostess, believing he has found his perfect match.\r\nBut when his unsuspecting parents board a flight to meet their future daughter-in-law, a shocking web of arrogance, deceit, and humiliation unravels mid-air.\r\nWhat began as love soon turns into the costliest mistake of his life.",
+      "link": "/json/billion-dollar-mess-1-Malayalam.json"
+    },
+    {
+      "id": "273145",
+      "title": " CEO in Love",
+      "slug": "forced-to-love-the-ruthless-ceo",
+      "language": "malayalam",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 51,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/bd0baa2b-413a-49f1-a970-4ee9cfef3df0.jpg",
+      "description": "A desperate young woman seeking to save her mother’s life crosses paths with a powerful and enigmatic CEO from her haunting past — triggering a spiraling chain of secrets, betrayal, obsession, and a twisted love triangle where trust is the deadliest gamble. A suspense-filled romantic thriller packed with twists, emotional betrayals, and a haunting past that refuses to stay buried.",
+      "link": "/json/forced-to-love-the-ruthless-ceo-Malayalam.json"
+    },
+    {
+      "id": "274829",
+      "title": "Papa's Perfect Match",
+      "slug": "papas-perfect-match-2",
+      "language": "malayalam",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/f18aa22e-f382-43c1-bfc5-ea499d7706cc.png",
+      "description": "A billionaire hiding behind a false identity and a strong single mother fighting for survival are brought together by the innocent wish of a child.\r\nAs love blossoms amidst lies, broken dreams find hope again—but the truth about who “Mr. Oberoi” really is could shatter it all.\r\nThis is a heartwarming tale of family, deception, and the courage to begin again.",
+      "link": "/json/papas-perfect-match-2-Malayalam.json"
+    },	  
     {
       "id": "274809",
       "title": "Baby Onboard",

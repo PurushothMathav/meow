@@ -4,6 +4,146 @@
 	"title": "New Releases",
   "shows": [
     {
+      "id": "274879",
+      "title": "Billion Dollar Mess",
+      "slug": "billion-dollar-mess-2",
+      "language": "kannada",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 53,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/c5832ba1-655f-443c-ab16-ef066667e189.png",
+      "description": "Watch family entertainment micro series 'Billion Dollar Mess'. Only on KukuTV",
+      "link": "/json/billion-dollar-mess-2-Kannada.json"
+    },
+    {
+      "id": "274927",
+      "title": "Billion Dollar Waiter",
+      "slug": "billion-dollar-waiter-2",
+      "language": "kannada",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 42,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/d0511c6c-952f-46b2-a569-b165eed270c3.png",
+      "description": "Watch Family Entertainment Show 'Billion Dollar Waiter' Show. Only on KukuTV",
+      "link": "/json/billion-dollar-waiter-2-Kannada.json"
+    },
+    {
+      "id": "274876",
+      "title": "Code War ",
+      "slug": "code-war",
+      "language": "kannada",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 46,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/fa9988a3-37d7-4dba-b829-28222d4258cf.jpg",
+      "description": "When a massive cyberattack cripples India’s defense, an unsung AI genius secretly prevents disaster—only to be betrayed by those he saved. Left broken and discarded, he rises from the ashes, reclaiming his brilliance to build an empire that rewrites the rules of power. This is a saga of revenge, vision, and redemption—where technology becomes both a weapon and salvation.",
+      "link": "/json/code-war-Kannada.json"
+    },
+    {
+      "id": "274949",
+      "title": "Still Waiting for Love",
+      "slug": "still-waiting-for-love-2",
+      "language": "kannada",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/6aa760cd-0c54-4eab-acdf-02ea61e09f74.png",
+      "description": "Still Waiting for Love",
+      "link": "/json/still-waiting-for-love-2-Kannada.json"
+    },
+    {
+      "id": "273125",
+      "title": "Love me If You Dare",
+      "slug": "taming-mr-black",
+      "language": "kannada",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/03133b6e-4217-4916-9087-b11374854201.png",
+      "description": "Love me If You Dare",
+      "link": "/json/taming-mr-black-Kannada.json"
+    },
+    {
+      "id": "274869",
+      "title": "The Prince",
+      "slug": "the-prince-3",
+      "language": "kannada",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/dd167639-aeec-43ac-9db5-434db1865477.png",
+      "description": "A billionaire in disguise marries a simple woman to discover the true meaning of love. But when her family’s doubts and a ruthless rival’s obsession threaten to tear them apart, he must fight harder than ever. A heartfelt saga of deception, loyalty, and the triumph of love over greed.",
+      "link": "/json/the-prince-3-Kannada.json"
+    },
+    {
+      "id": "273128",
+      "title": "Love Reloaded",
+      "slug": "waiting-for-love-5",
+      "language": "kannada",
+      "genre": {
+        "id": 3,
+        "title": "प्यार",
+        "slug": "love",
+        "uri": "app://app/genres/love",
+        "web_uri": "/genres/love"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/0b9f5f31-9d49-4d21-85be-4b4cae4dc08f.png",
+      "description": "Raman Mahadeva, a wealthy but lonely businessman, hides his true identity in search of genuine love. Radha, a resilient food stall owner scarred by betrayal and loss, crosses his path with her strength and determination. Their bond deepens into something when Radha’s search for her daughter—lost years ago—intertwines with Raman’s world. As destiny brings them closer through Jaanu, secrets unfold, love is tested, and broken relationships find new meaning. Watch \"Love Reloaded\" only on KUKU TV!",
+      "link": "/json/waiting-for-love-5-Kannada.json"
+    },  
+    {
       "id": "271696",
       "title": "A Deal Signed in Love",
       "slug": "a-deal-signed-in-love",
