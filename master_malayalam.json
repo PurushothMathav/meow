@@ -4,6 +4,86 @@
 	  "title": "New Releases",
 	  "shows": [
     {
+      "id": "275016",
+      "title": "Billion Dollar Waiter",
+      "slug": "billion-dollar-waiter-3",
+      "language": "malayalam",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 43,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/9a7c958a-b9a2-4de1-b3f7-1a971c928e4f.png",
+      "description": "On the day of her wedding, Riya Kashyap’s world shatters when she discovers her fiancé cheating with her step-sister, who wants to steal both her love and her family empire. A year later, destiny leads Riya to Vedant Mehra — India’s richest businessman disguised as a simple waiter. What begins as a desperate lie soon turns into a high-stakes contract marriage, where love, betrayal, and hidden identities collide.",
+      "link": "/json/billion-dollar-waiter-3-Malayalam.json"
+    },
+    {
+      "id": "275118",
+      "title": "Finding us Again",
+      "slug": "finding-us-again-3",
+      "language": "malayalam",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/ba702ec4-ae32-4638-a088-7e8525657475.png",
+      "description": "Two souls, once bound by childhood love, cross paths again after twenty long years.\r\nWhile she has moved on, burdened by life’s struggles, he still waits—clinging to memories of a single, painful day.\r\nFinding Us Again is a tender micro-drama about second chances, unfinished emotions, and destiny’s mysterious plans—only on KUKU TV.\r\n\r\n",
+      "link": "/json/finding-us-again-3-Malayalam.json"
+    },
+    {
+      "id": "275119",
+      "title": "Still Waiting For Love",
+      "slug": "still-waiting-for-love-4",
+      "language": "malayalam",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/4ef8c498-9259-4736-abbb-3945e8bcaf2b.png",
+      "description": "He waited twenty years for his childhood love to return, holding on to the memory of one tragic day.\r\nShe moved on, weighed down by her own struggles, until fate brought them face-to-face again.\r\nFinding Us Again is a heart-touching tale of second chances, unfinished emotions, and love rediscovered—only on KUKU TV.",
+      "link": "/json/still-waiting-for-love-4-Malayalam.json"
+    },
+    {
+      "id": "275014",
+      "title": "The Ultimate Boss",
+      "slug": "the-ultimate-boss-3",
+      "language": "malayalam",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 48,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/f58808d2-638b-431f-bfb4-4d28cf803b08.png",
+      "description": "A billionaire in disguise sacrifices his identity for love—only to be betrayed by the one he trusted most.\r\nBound by fate in a contract marriage with a powerful woman, he finds himself torn between revenge and desire.\r\nThe Ultimate Boss is a storm of secrets, ambition, and unexpected passion where power and love collide.",
+      "link": "/json/the-ultimate-boss-3-Malayalam.json"
+    },	  
+    {
       "id": "274769",
       "title": "Oops, Not a Gold Digger",
       "slug": "oops-not-a-gold-digger-2",

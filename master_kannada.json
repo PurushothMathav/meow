@@ -4,6 +4,46 @@
 	"title": "New Releases",
   "shows": [
     {
+      "id": "274876",
+      "title": "Code War ",
+      "slug": "code-war",
+      "language": "kannada",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 46,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/fa9988a3-37d7-4dba-b829-28222d4258cf.jpg",
+      "description": "When a massive cyberattack cripples India’s defense, an unsung AI genius secretly prevents disaster—only to be betrayed by those he saved. Left broken and discarded, he rises from the ashes, reclaiming his brilliance to build an empire that rewrites the rules of power. This is a saga of revenge, vision, and redemption—where technology becomes both a weapon and salvation.",
+      "link": "/json/code-war-Kannada.json"
+    },
+    {
+      "id": "274943",
+      "title": "The Ultimate Boss",
+      "slug": "the-ultimate-boss-2",
+      "language": "kannada",
+      "genre": {
+        "id": 116,
+        "title": "एंटरटेनमेंट",
+        "slug": "entertainment",
+        "uri": "app://app/genres/entertainment",
+        "web_uri": "/genres/entertainment"
+      },
+      "n_episodes": 48,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/98404082-e858-4762-9b5b-93d82d601f03.png",
+      "description": "The Ultimate Boss",
+      "link": "/json/the-ultimate-boss-2-Kannada.json"
+    },  
+    {
       "id": "274771",
       "title": "Oops, Not A Gold Digger",
       "slug": "oops-not-a-gold-digger",

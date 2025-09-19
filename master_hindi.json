@@ -4,6 +4,166 @@
 	"title": "New Releases",
   "shows": [
     {
+      "id": "274027",
+      "title": "The Perfect Revenge",
+      "slug": "badla-5",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 57,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/b58eb0d4-c7ae-4509-b163-ae2363346c93.png",
+      "description": "A mother’s love, a husband’s betrayal, and a friend’s darkest secret! The Perfect Revenge is a storm of revenge, deceit, and shattered relationships that will keep you on the edge of your seat. Will truth win over lies, or will greed destroy it all? Watch now.",
+      "link": "/json/badla-5-Hindi.json"
+    },
+    {
+      "id": "270272",
+      "title": "CEO'S LOST BRIDE",
+      "slug": "ceos-lost-bride",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/097ded1a-cb52-46d9-a011-9d08854d70a5.png",
+      "description": "Bride",
+      "link": "/json/ceos-lost-bride-Hindi.json"
+    },
+    {
+      "id": "274863",
+      "title": "Deep Mountain",
+      "slug": "deep-mountain",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 35,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/cedc1f5b-13a4-4c43-abce-042d7a286860.png",
+      "description": "Deep Mountain",
+      "link": "/json/deep-mountain-Hindi.json"
+    },
+    {
+      "id": "274763",
+      "title": "Flash Marriage Husband ",
+      "slug": "flash-marriage-husband",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 80,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/c1de524d-13d2-4fcc-bc58-2ba8d5f79843.png",
+      "description": " Watch \"Flash Marriage Husband\" Only on Kuku TV!",
+      "link": "/json/flash-marriage-husband-Hindi.json"
+    },
+    {
+      "id": "274138",
+      "title": "Forced To Marry Rich",
+      "slug": "forced-to-marry-rich",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 45,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/14e25316-e30e-4c6c-a1ff-a7d4643a9cf4.png",
+      "description": "A middle-class girl is forced into a marriage with a billionaire heir, torn between her lost love and a life of luxury bound by conditions. But behind the glittering walls of wealth lies betrayal, jealousy, and a dangerous secret that could shatter everything.",
+      "link": "/json/forced-to-marry-rich-Hindi.json"
+    },
+    {
+      "id": "272398",
+      "title": "Love, Lies Aur Dhokha",
+      "slug": "love-lies-aur-dhokha",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 33,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/1b46018c-eb79-45a5-af86-435c49ca6025.png",
+      "description": "Naina Malhotra, trapped in a loveless marriage with Shreyash, battles betrayal, abuse, and the poisonous schemes of Misty. Just when she stands on the edge of breaking, her childhood protector Dhruv returns bringing hope, strength, and a chance to reclaim her dignity. “Only You” is a tale of love, betrayal, and the courage to rise against cruelty.",
+      "link": "/json/love-lies-aur-dhokha-Hindi.json"
+    },
+    {
+      "id": "275020",
+      "title": "No Carriages or Horses in This Poor Place",
+      "slug": "no-carriages-or-horses-in-this-poor-place",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 30,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/d542d7e2-0b84-4a15-8217-5572a3f31d11.png",
+      "description": "A poignant period drama set in a struggling rural town where survival outweighs luxury. Without riches, carriages, or horses, families battle poverty, pride, and fate, proving that true wealth lies in resilience, unity, and hope.",
+      "link": "/json/no-carriages-or-horses-in-this-poor-place-Hindi.json"
+    },
+    {
+      "id": "275093",
+      "title": "The Strongest Eunuch",
+      "slug": "the-strongest-eunuch",
+      "language": "hindi",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 100,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/85f158a6-b6d5-461e-8b42-ea101cd1d303.png",
+      "description": "The Strongest Eunuch",
+      "link": "/json/the-strongest-eunuch-Hindi.json"
+    },  
+    {
       "id": "272079",
       "title": "Badla Legacy",
       "slug": "badla-legacy",

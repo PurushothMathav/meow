@@ -693,6 +693,46 @@
     {
       "title": "New Releases",
       "shows": [
+	{
+      "id": "275099",
+      "title": "My Toxic Love",
+      "slug": "my-toxic-love",
+      "language": "telugu",
+      "genre": {
+        "id": 3,
+        "title": "प्यार",
+        "slug": "love",
+        "uri": "app://app/genres/love",
+        "web_uri": "/genres/love"
+      },
+      "n_episodes": 46,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/5c6dff22-cb24-42cb-839d-9eb8e305710e.png",
+      "description": "ఏది ఎక్కువైనా కష్టమే. ప్రేమ కూడా. దివ్య ప్రేమ అర్జున్ ని ఎలాంటి పరిస్థితుల్లో పడేసింది? అర్జున్ ఎలాంటి ఇబ్బందులు పడ్డాడో తెలియాలంటే చూడండి \" My Toxic Love\"  మీ కుకు టీవీలో.  ",
+      "link": "/json/my-toxic-love-Telugu.json"
+    },
+    {
+      "id": "275081",
+      "title": "The Call Boy I Met in Chennai",
+      "slug": "the-call-boy-i-met-in-chennai-1",
+      "language": "telugu",
+      "genre": {
+        "id": 80,
+        "title": "नाटक",
+        "slug": "drama_",
+        "uri": "app://app/genres/drama_",
+        "web_uri": "/genres/drama_"
+      },
+      "n_episodes": 51,
+      "n_seasons": 1,
+      "show_type": "reel",
+      "is_adult_content": false,
+      "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/31a6f3dd-8d32-4ffa-9c53-19b0c2843176.png",
+      "description": "అనుకోకుండా కాల్ బాయ్ విశాల్ ని కలిసిన ఆ అమ్మాయి, అతన్నే పెళ్ళి చేసుకుంటుంది. కోట్లకు వారసురాలయిన ఆ అమ్మాయి, కాల్ బాయ్ ని ఎందుకు పెళ్ళి చేసుకుంది? చూడండి \"The Call Boy I met in Chennai\" మీ కుకు టీవీలో. ",
+      "link": "/json/the-call-boy-i-met-in-chennai-1-Telugu.json"
+    },    
         {
           "id": "268830",
           "title": "The Arrogant Tyrant's Runaway Wife",

@@ -13,7 +13,7 @@
     "language": "telugu",
     "published_on": "2025-09-09T14:03:43.440725+00:00",
     "status": "live",
-    "n_listens": 156173,
+    "n_listens": 242774,
     "is_verified": false,
     "dynamic_link": "https://links.kukufm.com/X5LYN7",
     "uri": "app://kukufm/show/chinna-raju-vachinadu/",
@@ -21,8 +21,8 @@
     "share_image_url": "https://images.cdn.kukufm.com/w:300/f:webp/q:85/https://kukufm.s3.amazonaws.com/banners/dc4d63c0-e381-4122-8cd2-53fd31c472c8.png",
     "cover_type": null,
     "is_premium": true,
-    "overall_rating": null,
-    "n_reviews": 0,
+    "overall_rating": 5,
+    "n_reviews": 1,
     "is_fictional": true,
     "duration_s": 6068,
     "n_episodes": 45,
@@ -157,8 +157,8 @@
       },
       "n_likes": 0,
       "n_shares": 0,
-      "n_plays": 5310,
-      "n_listens": 5310,
+      "n_plays": 8082,
+      "n_listens": 8082,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -197,7 +197,7 @@
       "web_uri": "/genres/drama_"
     },
     "credits": {
-      "production_houses": [
+      "dubbing_studios": [
         {
           "id": 105520478,
           "full_name": "Mohammed Mubeena",
@@ -207,9 +207,24 @@
             "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/df4eda547c3443bdb11b734866fd0f16.png"
           },
           "n_followers": 57,
-          "contribution_type": "production_house",
-          "is_primary_creator": true,
+          "contribution_type": "dubbing_studio",
+          "is_primary_creator": false,
           "badge_type": "popular",
+          "is_followed": false
+        }
+      ],
+      "directors": [
+        {
+          "id": 90250745,
+          "full_name": "Sai Charan S S",
+          "avatar": {
+            "16": "https://images.cdn.kukufm.com/w:16/q:85/https://kukufm.s3.amazonaws.com/avatars/af4c6aff3c5446fabec8cd0ca171b27b.jpg",
+            "64": "https://images.cdn.kukufm.com/w:64/q:85/https://kukufm.s3.amazonaws.com/avatars/af4c6aff3c5446fabec8cd0ca171b27b.jpg",
+            "256": "https://images.cdn.kukufm.com/w:256/q:85/https://kukufm.s3.amazonaws.com/avatars/af4c6aff3c5446fabec8cd0ca171b27b.jpg"
+          },
+          "n_followers": 249,
+          "contribution_type": "director",
+          "is_primary_creator": true,
           "is_followed": false
         }
       ]
@@ -241,7 +256,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 5300,
+      "n_listens": 8037,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -295,7 +310,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4390,
+      "n_listens": 6664,
       "n_comments": 0,
       "cover_type": "from_cms",
       "content": {
@@ -349,7 +364,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4000,
+      "n_listens": 6079,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -403,7 +418,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3953,
+      "n_listens": 6074,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -457,7 +472,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3939,
+      "n_listens": 5843,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -510,7 +525,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3593,
+      "n_listens": 5512,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -564,7 +579,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3710,
+      "n_listens": 5595,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -618,7 +633,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3931,
+      "n_listens": 5959,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -672,7 +687,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3989,
+      "n_listens": 6020,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -726,7 +741,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3690,
+      "n_listens": 5743,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -779,7 +794,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3459,
+      "n_listens": 5345,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -833,7 +848,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3501,
+      "n_listens": 5372,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -887,7 +902,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3367,
+      "n_listens": 5139,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -941,7 +956,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3696,
+      "n_listens": 5479,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -995,7 +1010,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3355,
+      "n_listens": 5175,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1049,7 +1064,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3201,
+      "n_listens": 4806,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1103,7 +1118,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3106,
+      "n_listens": 4809,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1157,7 +1172,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2862,
+      "n_listens": 4278,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1211,7 +1226,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3043,
+      "n_listens": 4767,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1265,7 +1280,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3264,
+      "n_listens": 4857,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1319,7 +1334,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3614,
+      "n_listens": 5572,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1372,7 +1387,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2704,
+      "n_listens": 4151,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1426,7 +1441,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2577,
+      "n_listens": 4034,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1480,7 +1495,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2955,
+      "n_listens": 4586,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1534,7 +1549,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2911,
+      "n_listens": 4523,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1588,7 +1603,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2582,
+      "n_listens": 3993,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1641,7 +1656,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2642,
+      "n_listens": 4035,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1695,7 +1710,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2793,
+      "n_listens": 4283,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1749,7 +1764,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3154,
+      "n_listens": 4865,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1803,7 +1818,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2939,
+      "n_listens": 4592,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1857,7 +1872,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 2803,
+      "n_listens": 4342,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1911,7 +1926,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4553,
+      "n_listens": 7011,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -1964,7 +1979,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4180,
+      "n_listens": 6436,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2018,7 +2033,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3669,
+      "n_listens": 5659,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2072,7 +2087,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3407,
+      "n_listens": 5280,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2125,7 +2140,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3395,
+      "n_listens": 5312,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2179,7 +2194,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3204,
+      "n_listens": 4866,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2233,7 +2248,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3346,
+      "n_listens": 5182,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2287,7 +2302,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3278,
+      "n_listens": 4979,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2341,7 +2356,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3028,
+      "n_listens": 4672,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2394,7 +2409,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3497,
+      "n_listens": 5396,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2447,7 +2462,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3791,
+      "n_listens": 5815,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2501,7 +2516,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 3835,
+      "n_listens": 5980,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2555,7 +2570,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4159,
+      "n_listens": 6533,
       "n_comments": 0,
       "cover_type": null,
       "content": {
@@ -2609,7 +2624,7 @@
       "n_likes": 0,
       "n_shares": 0,
       "n_plays": null,
-      "n_listens": 4761,
+      "n_listens": 9825,
       "n_comments": 0,
       "cover_type": null,
       "content": {
